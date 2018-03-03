@@ -47,8 +47,7 @@ Temporary Items
 .apdisk
 
 # Ren'py
-
-*.rpy[b]
+*.rpy[bc]
 *.bak
 **/tmp/*
 **/log.txt
@@ -56,6 +55,5 @@ Temporary Items
 **/errors.txt
 **/traceback.txt
 *-dists/*
-*.rpyc
-*.rpy~
+**/*.mp4
 *.mpg
