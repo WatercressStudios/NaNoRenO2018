@@ -425,45 +425,45 @@ screen game_menu(title, scroll=None, yinitial=0.0):
     frame:
         style "game_menu_outer_frame"
 
-        hbox:
+        #hbox:
 
-            ## Reserve space for the navigation section.
-            frame:
-                style "game_menu_navigation_frame"
+        ## Reserve space for the navigation section.
+        #frame:
+        #    style "game_menu_navigation_frame"
 
-            frame:
-                style "game_menu_content_frame"
+        frame:
+            style "game_menu_content_frame"
 
-                if scroll == "viewport":
+            if scroll == "viewport":
 
-                    viewport:
-                        yinitial yinitial
-                        scrollbars "vertical"
-                        mousewheel True
-                        draggable True
+                viewport:
+                    yinitial yinitial
+                    scrollbars "vertical"
+                    mousewheel True
+                    draggable True
 
-                        side_yfill True
+                    side_yfill True
 
-                        vbox:
-                            transclude
-
-                elif scroll == "vpgrid":
-
-                    vpgrid:
-                        cols 1
-                        yinitial yinitial
-
-                        scrollbars "vertical"
-                        mousewheel True
-                        draggable True
-
-                        side_yfill True
-
+                    vbox:
                         transclude
 
-                else:
+            elif scroll == "vpgrid":
+
+                vpgrid:
+                    cols 1
+                    yinitial yinitial
+
+                    scrollbars "vertical"
+                    mousewheel True
+                    draggable True
+
+                    side_yfill True
 
                     transclude
+
+            else:
+
+                transclude
 
     #use navigation
 
@@ -494,8 +494,10 @@ style return_button_text is navigation_button_text
 style game_menu_outer_frame:
     bottom_padding 45
     top_padding 180
+    xpadding 200
 
-    background "gui/overlay/game_menu.png"
+    #background "gui/overlay/game_menu.png"
+    background '#000000CC'
 
 style game_menu_navigation_frame:
     xsize 420
@@ -715,10 +717,11 @@ screen preferences():
     tag menu
 
     use game_menu(_("Preferences"), scroll="viewport"):
-
         vbox:
+            xalign 0.5
 
             hbox:
+                xalign 0.5
                 box_wrap True
                 spacing 50
 
@@ -750,6 +753,7 @@ screen preferences():
             null height (4 * gui.pref_spacing)
 
             hbox:
+                xalign 0.5
                 style_prefix "slider"
                 box_wrap True
 
