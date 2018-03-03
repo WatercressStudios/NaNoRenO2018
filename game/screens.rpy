@@ -293,7 +293,7 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
+        xalign gui.navigation_xalign
         yalign 0.5
 
         spacing gui.navigation_spacing
@@ -465,7 +465,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
                     transclude
 
-    use navigation
+    #use navigation
 
     textbutton _("Return"):
         style "return_button"
@@ -525,7 +525,7 @@ style game_menu_label_text:
     yalign 0.5
 
 style return_button:
-    xpos gui.navigation_xpos
+    xalign gui.navigation_xalign
     yalign 1.0
     yoffset -45
 
