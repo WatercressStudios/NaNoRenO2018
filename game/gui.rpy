@@ -147,7 +147,9 @@ define gui.dialogue_text_xalign = 0.0
 ## The width and height of a button, in pixels. If None, Ren'Py computes a size.
 define gui.button_width = None
 define gui.button_height = None
-define gui.navigation_button_width = 500
+define gui.navigation_button_width = 350
+define gui.radio_button_width = 320
+define gui.check_button_width = 320
 
 ## The borders on each side of the button, in left, top, right, bottom order.
 define gui.button_borders = Borders(25, 25, 25, 25)
@@ -268,7 +270,7 @@ define gui.pref_button_spacing = 0
 define gui.page_spacing = 0
 
 ## The spacing between file slots.
-define gui.slot_spacing = 15
+define gui.slot_spacing = 5
 
 ## The position of the main menu text.
 define gui.main_menu_text_xalign = 1.0

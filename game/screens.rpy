@@ -624,7 +624,7 @@ screen file_slots(title):
                 style_prefix "slot"
 
                 xalign 0.5
-                yalign 0.5
+                yalign 0.3
 
                 spacing gui.slot_spacing
 
@@ -652,7 +652,7 @@ screen file_slots(title):
                 style_prefix "page"
 
                 xalign 0.5
-                yalign 1.0
+                yalign 0.85
 
                 spacing gui.page_spacing
 
@@ -720,6 +720,7 @@ screen preferences():
 
             hbox:
                 box_wrap True
+                spacing 50
 
                 if renpy.variant("pc"):
 
@@ -976,7 +977,7 @@ screen help():
         style_prefix "help"
 
         vbox:
-            spacing 23
+            spacing 15
 
             hbox:
 
