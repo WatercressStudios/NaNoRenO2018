@@ -320,37 +320,41 @@ screen navigation():
 
         spacing gui.navigation_spacing
 
-        if main_menu:
+        hbox:
+            spacing 150
+            textbutton _("New Story") action Start() at anim
+            textbutton _("Continue Story") action ShowMenu("load") at anim
 
-            textbutton _("Start") action Start() at anim
+        null height 50
 
-        else:
+        hbox:
+            spacing 150
+            textbutton _("Preferences") action ShowMenu("preferences") at anim
+            textbutton _("About") action ShowMenu("about") at anim
 
-            textbutton _("History") action ShowMenu("history") at anim
-
-            textbutton _("Save") action ShowMenu("save") at anim
-
-        textbutton _("Load") action ShowMenu("load") at anim
-
-        textbutton _("Preferences") action ShowMenu("preferences") at anim
-
-        if _in_replay:
-
-            textbutton _("End Replay") action EndReplay(confirm=True) at anim
-
-        elif not main_menu:
-
-            textbutton _("Main Menu") action MainMenu() at anim
-
-        textbutton _("About") action ShowMenu("about") at anim
-
-        if renpy.variant("pc"):
-
-            ## Help isn't necessary or relevant to mobile devices.
+        hbox:
+            spacing 150
             textbutton _("Help") action ShowMenu("help") at anim
-
-            ## The quit button is banned on iOS and unnecessary on Android.
             textbutton _("Quit") action Quit(confirm=not main_menu) at anim
+
+        #if main_menu:
+        #    textbutton _("Start") action Start() at anim
+        #else:
+        #
+        #    textbutton _("History") action ShowMenu("history") at anim
+        #    textbutton _("Save") action ShowMenu("save") at anim
+        #textbutton _("Load") action ShowMenu("load") at anim
+        #textbutton _("Preferences") action ShowMenu("preferences") at anim
+        #if _in_replay:
+        #    textbutton _("End Replay") action EndReplay(confirm=True) at anim
+        #elif not main_menu:
+        #    textbutton _("Main Menu") action MainMenu() at anim
+        #textbutton _("About") action ShowMenu("about") at anim
+        #if renpy.variant("pc"):
+        #    ## Help isn't necessary or relevant to mobile devices.
+        #    textbutton _("Help") action ShowMenu("help") at anim
+        #    ## The quit button is banned on iOS and unnecessary on Android.
+        #    textbutton _("Quit") action Quit(confirm=not main_menu) at anim
 
 
 style navigation_button is gui_button
@@ -400,7 +404,7 @@ screen main_menu():
             add "gui/book.png"
             use navigation
         else:
-            add "gui/book.png" at animelem(0.0, time=0.5, endx=0.0, starty=500.0)
+            add "gui/book.png" at animelem(0.0, time=0.5, endx=0.0, starty=800.0)
             use navigation
             $ anim = animelem(0.0, endx=0.0)
             $ shown_book = True
@@ -456,51 +460,51 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     if main_menu:
         add gui.main_menu_background
+        add "gui/book.png"
     else:
         add gui.game_menu_background
 
     frame:
         style "game_menu_outer_frame"
 
-        #hbox:
+        vbox:
 
-        ## Reserve space for the navigation section.
-        #frame:
-        #    style "game_menu_navigation_frame"
+            ## Reserve space for the title.
+            null height 80
 
-        frame:
-            style "game_menu_content_frame"
+            frame:
+                style "game_menu_content_frame"
 
-            if scroll == "viewport":
+                if scroll == "viewport":
 
-                viewport:
-                    yinitial yinitial
-                    scrollbars "vertical"
-                    mousewheel True
-                    draggable True
+                    viewport:
+                        yinitial yinitial
+                        scrollbars "vertical"
+                        mousewheel True
+                        draggable True
 
-                    side_yfill True
+                        side_yfill True
 
-                    vbox:
+                        vbox:
+                            transclude
+
+                elif scroll == "vpgrid":
+
+                    vpgrid:
+                        cols 1
+                        yinitial yinitial
+
+                        scrollbars "vertical"
+                        mousewheel True
+                        draggable True
+
+                        side_yfill True
+
                         transclude
 
-            elif scroll == "vpgrid":
-
-                vpgrid:
-                    cols 1
-                    yinitial yinitial
-
-                    scrollbars "vertical"
-                    mousewheel True
-                    draggable True
-
-                    side_yfill True
+                else:
 
                     transclude
-
-            else:
-
-                transclude
 
     #use navigation
 
@@ -509,7 +513,9 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
         action Return()
 
-    label title
+    label title:
+        xpos 260
+        ypos 100
 
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")

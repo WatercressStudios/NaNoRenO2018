@@ -6,6 +6,7 @@
 define e = Character("Eileen")
 image menu_fireplace = "gui/main_menu.png"
 image book = "gui/book.png"
+image storyselect = "gui/storyselect.png"
 
 ###############################
 #
@@ -28,10 +29,12 @@ screen storyselect:
 label start:
     scene menu_fireplace
     show book
-    "Test the image map."
 
     hide book with easeoutbottom
-    scene menu_fireplace
+    scene storyselect with dissolve
+
+    "Talky talky prologue."
+
     call screen storyselect with dissolve
 
 label start_letgo:
