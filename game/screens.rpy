@@ -4,6 +4,28 @@
 
 init offset = -1
 
+init:
+    python:
+        navigation_shown = False
+        current_page = None
+
+        class ShowMenuWrapper(ShowMenu):
+            current_screen = None
+            screen_changed = False
+
+            def __call__(self):
+                ShowMenuWrapper.screen_changed = not ShowMenuWrapper.current_screen == self.screen
+                super(ShowMenuWrapper, self).__call__()
+                ShowMenuWrapper.current_screen = self.screen
+                
+
+    transform animelem(delay=0.0, startx=0.0, endx=50.0, starty=0.0, endy=0.0, starta=0.0, enda=1.0, startzoom=1.0, endzoom=1.0, time=0.5):
+        xoffset startx yoffset starty alpha starta zoom startzoom
+        pause delay
+        ease time xoffset endx yoffset endy zoom endzoom alpha enda
+        
+        on replaced:
+            ease time xoffset startx yoffset starty zoom startzoom alpha starta
 
 ################################################################################
 ## Styles
@@ -300,35 +322,35 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            textbutton _("Start") action Start() at anim
 
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            textbutton _("History") action ShowMenu("history") at anim
 
-            textbutton _("Save") action ShowMenu("save")
+            textbutton _("Save") action ShowMenu("save") at anim
 
-        textbutton _("Load") action ShowMenu("load")
+        textbutton _("Load") action ShowMenu("load") at anim
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Preferences") action ShowMenu("preferences") at anim
 
         if _in_replay:
 
-            textbutton _("End Replay") action EndReplay(confirm=True)
+            textbutton _("End Replay") action EndReplay(confirm=True) at anim
 
         elif not main_menu:
 
-            textbutton _("Main Menu") action MainMenu()
+            textbutton _("Main Menu") action MainMenu() at anim
 
-        textbutton _("About") action ShowMenu("about")
+        textbutton _("About") action ShowMenu("about") at anim
 
         if renpy.variant("pc"):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+            textbutton _("Help") action ShowMenu("help") at anim
 
             ## The quit button is banned on iOS and unnecessary on Android.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            textbutton _("Quit") action Quit(confirm=not main_menu) at anim
 
 
 style navigation_button is gui_button
@@ -348,6 +370,15 @@ style navigation_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
+init python:
+    clicked_to_continue = False
+    shown_book = False
+    anim = animelem(0.5, endx=0.0)
+    
+    def ClickedToContinue():
+        global clicked_to_continue
+        clicked_to_continue = True
+
 screen main_menu():
 
     ## This ensures that any other menu screen is replaced.
@@ -358,21 +389,27 @@ screen main_menu():
     add gui.main_menu_background
 
     ## This empty frame darkens the main menu.
-    frame:
-        pass
+    #frame:
+    #    pass
 
-    ## The use statement includes another screen inside this one. The actual
-    ## contents of the main menu are in the navigation screen.
-    use navigation
+    if clicked_to_continue:
 
-    if gui.show_name:
+        ## The use statement includes another screen inside this one. The actual
+        ## contents of the main menu are in the navigation screen.
+        if shown_book:
+            add "gui/book.png"
+            use navigation
+        else:
+            add "gui/book.png" at animelem(0.0, time=0.5, endx=0.0, starty=500.0)
+            use navigation
+            $ anim = animelem(0.0, endx=0.0)
+            $ shown_book = True
 
-        vbox:
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
+    
+    else:
+        textbutton _("Click to continue"):
+            style "return_button"
+            action ClickedToContinue, ShowMenu("main_menu")
 
 
 style main_menu_frame is empty
@@ -497,7 +534,7 @@ style game_menu_outer_frame:
     xpadding 200
 
     #background "gui/overlay/game_menu.png"
-    background '#000000CC'
+    #background '#000000CC'
 
 style game_menu_navigation_frame:
     xsize 420
