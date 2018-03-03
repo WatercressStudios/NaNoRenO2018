@@ -4,30 +4,48 @@
 # name of the character.
 
 define e = Character("Eileen")
+image menu_fireplace = "gui/main_menu.png"
+#image storyselect = "gui/storyselect.png"
 
+###############################
+#
+# STORY SELECT IMAGE MAP
+#
+###############################
+
+screen storyselect:
+    imagemap:
+        ground "gui/main_menu.png"
+        idle "gui/storyselect.png"
+        hover "gui/storyselect_hover.png"
+
+        hotspot (266, 280, 500, 800) action Jump("start_letgo")
+        hotspot (777, 280, 500, 800) action Jump("start_spirits")
+        hotspot (1280, 280, 500, 800) action Jump("start_flood")
 
 # The game starts here.
 
 label start:
+    scene menu_fireplace
+    "Test the image map."
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    scene menu_fireplace
+    call screen storyselect with dissolve
 
-    scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
-
+label start_letgo:
+    scene black with dissolve
+    "Let Go story started"
+    
+    return
+    
+label start_spirits:
+    scene black with dissolve
+    "Spirits story started"
+    
+    return
+    
+label start_flood:
+    scene black with dissolve
+    "Flood story started"
+    
     return
