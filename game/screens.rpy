@@ -23,9 +23,14 @@ init:
         xoffset startx yoffset starty alpha starta zoom startzoom
         pause delay
         ease time xoffset endx yoffset endy zoom endzoom alpha enda
+
+
+    transform pulseelem(starta=1.0, enda=0.5, startzoom=1.0, endzoom=0.95, time=1.0):
+        alpha starta zoom startzoom
+        ease time alpha enda zoom endzoom
+        ease time alpha starta zoom startzoom
+        repeat
         
-        on replaced:
-            ease time xoffset startx yoffset starty zoom startzoom alpha starta
 
 ################################################################################
 ## Styles
@@ -411,8 +416,17 @@ screen main_menu():
 
     
     else:
-        textbutton _("Click to continue"):
-            style "return_button"
+        text "Click to Continue":
+            size 40
+            xalign 0.5
+            yalign 0.95
+            color '#FFF'
+            outlines [ (absolute(3), "#333", absolute(0), absolute(0)) ]
+            at pulseelem()
+        button:
+            background '#FFFFFF00'
+            xsize 1920
+            ysize 1080
             action ClickedToContinue, ShowMenu("main_menu")
 
 

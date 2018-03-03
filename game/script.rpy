@@ -34,23 +34,24 @@ label start:
     scene storyselect with dissolve
 
     "Talky talky prologue."
+    "Choose a story."
 
     call screen storyselect with dissolve
 
 label start_letgo:
     scene black with dissolve
-    "Let Go story started"
+    "Let Go story chosen"
     
     return
     
 label start_spirits:
     scene black with dissolve
-    "Spirits story started"
+    "Spirits story chosen"
     
     return
     
 label start_flood:
     scene black with dissolve
-    "Flood story started"
+    "Flood story chosen"
     
     return
