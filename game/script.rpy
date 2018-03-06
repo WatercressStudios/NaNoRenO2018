@@ -31,7 +31,7 @@ label start:
     show book
 
     hide book with easeoutbottom
-    scene storyselect with dissolve
+    show storyselect with dissolve
 
     "Talky talky prologue."
     "Choose a story."
