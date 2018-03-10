@@ -474,7 +474,12 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     if main_menu:
         add gui.main_menu_background
-        add "gui/book.png"
+        if title == "Help" or title == "Load":
+            add "gui/book2.png"
+        elif title == "About":
+            add "gui/book3.png"
+        else:
+            add "gui/book.png"
     else:
         add gui.game_menu_background
 
@@ -524,11 +529,16 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     textbutton _("Return"):
         style "return_button"
+        if title == "About":
+            xalign 0.5
 
         action Return()
 
     label title:
-        xpos 300
+        if title == "About":
+            xalign 0.5
+        else:
+            xpos 300
         ypos 200
 
     if main_menu:
@@ -607,16 +617,14 @@ screen about():
         style_prefix "about"
 
         hbox:
+            null width 375
             vbox:
                 null height 100
                 xsize 630
+                xalign 0.5
                 label "[config.name!t]"
                 text _("Version [config.version!t]\n")
 
-            null width 120
-
-            vbox:
-                xsize 630
                 if gui.about:
                     text "[gui.about!t]\n"
 
@@ -630,8 +638,12 @@ style about_label is gui_label
 style about_label_text is gui_label_text
 style about_text is gui_text
 
+style about_text:
+    color "#ddd"
+
 style about_label_text:
     size gui.label_text_size
+    color "#ddd"
 
 
 ## Load and Save screens #######################################################
