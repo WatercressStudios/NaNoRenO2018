@@ -539,7 +539,10 @@ screen game_menu(title, scroll=None, yinitial=0.0):
             xalign 0.5
         else:
             xpos 300
-        ypos 200
+        if main_menu:
+            ypos 200
+        else:
+            ypos 0
 
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
@@ -1033,6 +1036,7 @@ style history_text:
     min_width gui.history_text_width
     text_align gui.history_text_xalign
     layout ("subtitle" if gui.history_text_xalign else "tex")
+    color "#ddd"
 
 style history_label:
     xfill True
@@ -1233,7 +1237,7 @@ screen confirm(message, yes_action, no_action):
     add "gui/overlay/confirm.png"
 
     frame:
-
+        at animelem(time=0.3, endx=0, starty=200, startzoom=0.3)
         vbox:
             xalign .5
             yalign .5
