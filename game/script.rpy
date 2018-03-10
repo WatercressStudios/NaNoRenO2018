@@ -4,6 +4,8 @@
 # name of the character.
 
 define e = Character("Eileen")
+image white = "#fff"
+image splashscreen_title = "gui/splashscreen_title.png"
 image menu_fireplace = "gui/main_menu.png"
 image book = "gui/book.png"
 image story_menu = "gui/story_menu.png"
@@ -66,6 +68,22 @@ screen storyselect_flood:
         hotspot (1389, 225, 408, 451):
             unhovered Jump("unhovered_storyselect")
             clicked Jump("start_flood")
+
+###############################
+#
+# SPLASH SCREEN
+#
+###############################
+label splashscreen:
+    scene black
+    show splashscreen_title with dissolve:
+        yalign 0.0
+        easein 20.0 yalign 1.0
+    pause 20.0
+    scene white with dissolve
+    hide splashscreen_title with dissolve
+    scene menu_fireplace with Dissolve(2.0)
+    return   
 
 ###############################
 #
