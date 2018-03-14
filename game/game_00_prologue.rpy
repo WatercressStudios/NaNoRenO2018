@@ -1,7 +1,8 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+﻿###############################
+#
+# MAIN MENU DEFINITIONS GO IN HERE
+#
+###############################
 
 define e = Character("Eileen")
 image white = "#fff"
@@ -15,7 +16,7 @@ image flood_select = "gui/flood_select.png"
 
 ###############################
 #
-# STORY SELECT IMAGE MAP
+# STORY SELECT IMAGE MAPS
 #
 ###############################
 
@@ -125,18 +126,18 @@ label start_spirits:
     scene black with dissolve
     "Spirits story chosen"
     
-    return
+    jump spirits_000
 
 label start_letgo:
     scene letgo_select
     scene black with dissolve
     "Let Go story chosen"
     
-    return
+    jump letgo_000
     
 label start_flood:
     scene flood_select
     scene black with dissolve
     "Flood story chosen"
     
-    return
+    jump flood_000
