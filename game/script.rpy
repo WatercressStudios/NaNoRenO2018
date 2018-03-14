@@ -11,7 +11,7 @@ image book = "gui/book.png"
 image story_menu = "gui/story_menu.png"
 image spirits_select = "gui/spirits_select.png"
 image letgo_select = "gui/letgo_select.png"
-image flood_select = "gui/story_menu.png"
+image flood_select = "gui/flood_select.png"
 
 ###############################
 #
@@ -61,9 +61,9 @@ screen storyselect_letgo:
 screen storyselect_flood:
     tag storyselect
     imagemap:
-        ground "gui/story_menu.png"
-        idle "gui/storyselect.png"
-        hover "gui/storyselect_hover.png"
+        ground "gui/flood_select.png"
+        idle "gui/flood_select.png"
+        hover "gui/flood_select.png"
 
         hotspot (1389, 225, 408, 451):
             unhovered Jump("unhovered_storyselect")
