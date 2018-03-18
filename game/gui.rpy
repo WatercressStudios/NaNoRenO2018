@@ -30,10 +30,10 @@ define gui.idle_color = '#333333'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = '#aaaaaa'
+define gui.idle_small_color = '#ffffff'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#000000'
+define gui.hover_color = gui.accent_color
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -49,7 +49,7 @@ define gui.hover_muted_color = '#005b7a'
 
 ## The colors used for dialogue and menu choice text.
 define gui.text_color = '#ffffff'
-define gui.interface_text_color = '#ffffff'
+define gui.interface_text_color = '#333333'
 
 
 ## Fonts and Font Sizes ########################################################
@@ -86,7 +86,8 @@ define gui.title_text_size = 75
 
 ## The images used for the main and game menus.
 define gui.main_menu_background = "gui/main_menu.png"
-define gui.game_menu_background = "gui/game_menu.png"
+#define gui.game_menu_background = "gui/game_menu.png"
+define gui.game_menu_background = "#000c"
 
 
 ## Dialogue ####################################################################
@@ -147,9 +148,12 @@ define gui.dialogue_text_xalign = 0.0
 ## The width and height of a button, in pixels. If None, Ren'Py computes a size.
 define gui.button_width = None
 define gui.button_height = None
+define gui.navigation_button_width = 350
+define gui.radio_button_width = 320
+define gui.check_button_width = 320
 
 ## The borders on each side of the button, in left, top, right, bottom order.
-define gui.button_borders = Borders(25, 25, 25, 25)
+define gui.button_borders = Borders(20, 20, 20, 20)
 
 ## If True, the background image will be tiled. If False, the background image
 ## will be linearly scaled.
@@ -184,7 +188,8 @@ define gui.check_button_borders = Borders(27, 6, 6, 6)
 
 define gui.confirm_button_text_xalign = 0.5
 
-define gui.page_button_borders = Borders(15, 6, 15, 6)
+define gui.page_button_borders = Borders(20, 20, 20, 20)
+define gui.page_button_text_size = 24
 
 define gui.quick_button_borders = Borders(15, 6, 15, 0)
 define gui.quick_button_text_size = 21
@@ -220,20 +225,20 @@ define gui.choice_button_text_hover_color = "#ffffff"
 ## image files in gui/button, like the other kinds of buttons.
 
 ## The save slot button.
-define gui.slot_button_width = 414
-define gui.slot_button_height = 269
-define gui.slot_button_borders = Borders(25, 25, 25, 25)
+define gui.slot_button_width = 300
+define gui.slot_button_height = 230
+define gui.slot_button_borders = Borders(35, 25, 25, 25)
 define gui.slot_button_text_size = 21
 define gui.slot_button_text_xalign = 0.5
 define gui.slot_button_text_idle_color = gui.idle_small_color
 
 ## The width and height of thumbnails used by the save slots.
-define config.thumbnail_width = 364
-define config.thumbnail_height = 196
+define config.thumbnail_width = 230
+define config.thumbnail_height = 130
 
 ## The number of columns and rows in the grid of save slots.
-define gui.file_slot_cols = 3
-define gui.file_slot_rows = 2
+define gui.file_slot_cols = 2
+define gui.file_slot_rows = 3
 
 
 ## Positioning and Spacing #####################################################
@@ -243,7 +248,7 @@ define gui.file_slot_rows = 2
 
 ## The position of the left side of the navigation buttons, relative to the left
 ## side of the screen.
-define gui.navigation_xpos = 60
+define gui.navigation_xalign = 0.5
 
 ## The vertical position of the skip indicator.
 define gui.skip_ypos = 15
@@ -267,7 +272,7 @@ define gui.pref_button_spacing = 0
 define gui.page_spacing = 0
 
 ## The spacing between file slots.
-define gui.slot_spacing = 15
+define gui.slot_spacing = 5
 
 ## The position of the main menu text.
 define gui.main_menu_text_xalign = 1.0
