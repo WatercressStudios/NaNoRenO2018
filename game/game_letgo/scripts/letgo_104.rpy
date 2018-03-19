@@ -1,0 +1,90 @@
+﻿label letgo_104:
+    scene parknight with dissolve
+
+    play ambience "game_letgo/ambience/Park Night.ogg"
+
+    "We eventually get up and start heading home."
+
+    "The night was darkening, allowing the moon to come out and light the sidewalk beneath our feet."
+
+    scene roadsnight with dissolve
+
+    play music "game_letgo/music/A Macabre Comedy Loop.ogg"
+    play ambience "game_letgo/ambience/Roads Night.ogg"
+
+    "The sounds of people in the different buildings we pass change the farther we go."
+
+    "We’d normally go our separate ways soon, so now’s the time to say something."
+
+    eli "Can I walk you home tonight?"
+
+    may "Sure, I’d like that."
+
+    "She smiles up at me and takes my hand."
+
+    "Alright, now’s the best time. Try to remember what you were going to say at the tree, dammit!"
+
+    "Everything’s alright, just explain how you feel - in full this time."
+
+    "You know she has feelings for you too. Just ask her out or something!"
+
+    "Keep things simple; don’t go full out..."
+
+    "Or maybe I should spill it all? Tell her I love her more than life and would do anything for her?"
+
+    "Is that coming on too strong? Is strong even good? Oh jeez, say something before we’re on her doorstep!"
+
+    eli "So, Maya… Uhm, I guess I just wanted to clarify what happened earlier…"
+
+    may "You mean when you confessed your feelings for beautiful, funny trees that have always been there for you?"
+
+    eli "Yes, well.. uh, that. See, what I was trying to say was that I really care about you."
+
+    may "Oh really?"
+
+    "I patiently wait for her to continue. My feet move on their own and I avoid eye contact."
+
+    "Did I do something wrong?"
+
+    "Should I have said it differently? The important thing is I said it, right? Or maybe it just wasn’t enough..."
+
+    "Just calm down; focus on getting her home safely. Watch the sidewalk, watch the car moving this way, watch her eyelashes as she blinks in the bright headlights..."
+
+    may "All I can say is that I’ve only wanted you too. I guess I just never knew how to say--"
+
+    #play sound "game_letgo/sfx/Ice Slip.ogg"
+    "Before she can finish, the car catches some ice on the road."
+
+    stop music
+    #play sound "game_letgo/sfx/Car Screeching.ogg"
+    "Tires screech, and the lights dance."
+
+    may "Oh my god, watch out!"
+
+    "The car hits the curb - then comes over the edge toward us."
+
+    #play sound "game_letgo/sfx/Punch,Shove Serious.ogg"
+    "I push Maya off to the left.."
+
+    "The driver’s completely lost control."
+
+    "I look over to see that Maya is on the ground a few feet away, trying to get up..."
+
+    "The headlights are blinding."
+
+    "It’s moving too fast."
+
+    "Is Maya okay?"
+
+    eli "Maya--"
+
+    "The lights are everywhere."
+
+    #play sound "game_letgo/sfx/Punch,Shove.ogg"
+    stop ambience
+    scene black
+    "And then, there’s nothing."
+
+    play sound "game_letgo/sfx/Disturbing Bass.ogg"
+    scene red with Dissolve(9.5)
+    jump letgo_201
