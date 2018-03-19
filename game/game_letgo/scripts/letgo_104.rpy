@@ -1,4 +1,4 @@
-﻿label letgo_104:
+label letgo_104:
     scene parknight with dissolve
 
     play ambience "game_letgo/ambience/Park Night.ogg"
@@ -9,7 +9,7 @@
 
     scene roadsnight with dissolve
 
-    play music "game_letgo/music/A Macabre Comedy Loop.ogg"
+    play music "game_letgo/music/Romantic Date.ogg"
     play ambience "game_letgo/ambience/Roads Night.ogg"
 
     "The sounds of people in the different buildings we pass change the farther we go."
@@ -85,6 +85,6 @@
     scene black
     "And then, there’s nothing."
 
-    play sound "game_letgo/sfx/Disturbing Bass.ogg"
+    play audio "game_letgo/sfx/Disturbing Bass.ogg"
     scene red with Dissolve(9.5)
     jump letgo_201
