@@ -54,6 +54,23 @@ image eli goofy1 close = CSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png"
 
 ###############################
 #
+# MAY POSE 1 SPRITES
+#
+###############################
+
+image may normal1 = CSprite("may", "game_letgo/sprites/May/Pose 1/base.png", size=(496, 920), eyes="may eyes normal1", mouth="may mouth smile1")
+
+image may normal1 close = CSprite("may", "game_letgo/sprites/May/Pose 1/base.png", size=(496, 920), eyes="game_letgo/sprites/May/Pose 1/eyes normal close.png", mouth="may mouth smile1")
+
+image may shout1 = CSprite("may", "game_letgo/sprites/May/Pose 1/base.png", size=(496, 920), eyes="may eyes angry1", mouth="may mouth shout1")
+
+image may sadshout1 = CSprite("may", "game_letgo/sprites/May/Pose 1/base.png", size=(496, 920), eyes="may eyes sad1", mouth="may mouth shout1")
+
+image may shout1 close = CSprite("may", "game_letgo/sprites/May/Pose 1/base.png", size=(496, 920), eyes="game_letgo/sprites/May/Pose 1/eyes angry close.png", mouth="may mouth shout1")
+
+
+###############################
+#
 # ELI POSE 1 COMPOSITE PARTS
 #
 ###############################
@@ -71,6 +88,35 @@ image eli mouth sad1 = FlapMouth("eli", "game_letgo/sprites/Eli/Pose 1/mouth nor
 image eli mouth smile1 = FlapMouth("eli", "game_letgo/sprites/Eli/Pose 1/mouth close.png", "game_letgo/sprites/Eli/Pose 1/mouth smile open.png")
 
 image eli mouth happy1 = FlapMouth("eli", "game_letgo/sprites/Eli/Pose 1/mouth smile open.png", "game_letgo/sprites/Eli/Pose 1/mouth close.png")
+
+
+###############################
+#
+# MAYA POSE 1 COMPOSITE PARTS
+#
+###############################
+
+image may eyes normal1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes normal open.png", "game_letgo/sprites/May/Pose 1/eyes normal close.png")
+
+image may eyes squint1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes normal squint.png", "game_letgo/sprites/May/Pose 1/eyes normal close.png")
+
+image may eyes worried1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes worry squint.png", "game_letgo/sprites/May/Pose 1/eyes worry close.png")
+
+image may eyes angry1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes angry open.png", "game_letgo/sprites/May/Pose 1/eyes angry close.png")
+
+image may eyes sad1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes angry squint.png", "game_letgo/sprites/May/Pose 1/eyes angry close.png")
+
+image may mouth angry1 = FlapMouth("may", "game_letgo/sprites/May/Pose 1/mouth frown close.png", "game_letgo/sprites/May/Pose 1/mouth big open.png")
+
+image may mouth pout1 = FlapMouth("may", "game_letgo/sprites/May/Pose 1/mouth frown close.png", "game_letgo/sprites/May/Pose 1/mouth small open.png")
+
+image may mouth sad1 = FlapMouth("may", "game_letgo/sprites/May/Pose 1/mouth small open.png", "game_letgo/sprites/May/Pose 1/mouth frown close.png")
+
+image may mouth shout1 = FlapMouth("may", "game_letgo/sprites/May/Pose 1/mouth small open.png", "game_letgo/sprites/May/Pose 1/mouth big open.png")
+
+image may mouth smile1 = FlapMouth("may", "game_letgo/sprites/May/Pose 1/mouth smile close.png", "game_letgo/sprites/May/Pose 1/mouth small open.png")
+
+image may mouth happy1 = FlapMouth("may", "game_letgo/sprites/May/Pose 1/mouth smile close.png", "game_letgo/sprites/May/Pose 1/mouth big open.png")
 
 
 ###############################
@@ -99,10 +145,27 @@ label letgo_000:
             jump letgo_501a4
         "End of Bad Ending Loop 5":
             jump letgo_502
-        "Show Eli's expressions":
-            jump letgo_eli_expressions
+        "Show Eli and May's expressions":
+            jump letgo_expressions
 
-label letgo_eli_expressions:
+label letgo_expressions:
+    show may normal1
+    may "eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... "
+
+    show may normal1 close
+    may "eli normal1 close... eli normal1 close... eli normal1 close... eli normal1 close... eli normal1 close... eli normal1 close... eli normal1 close... "
+
+    show may shout1
+    may "eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... "
+
+    show may sadshout1
+    may "eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... "
+
+    show may shout1 close
+    may "eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... "
+
+    hide may
+
     show eli normal1
     eli "eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... "
 

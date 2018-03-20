@@ -182,6 +182,8 @@ label letgo_101:
 
     "A pang hits my stomach. Maybe I should start over and confess to her for real? I may have ruined the initial attempt, but she'd probably want one nonetheless."
 
+    ### Do slowfade to the clocktower scene here, while playing the 3PM bells
+
     "I pull back slightly, holding her face in my mitts, looking directly into her eyes..."
 
     voice "C-101-48.mp3" #Elijah (Michael Potok)
