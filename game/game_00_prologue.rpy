@@ -4,6 +4,27 @@
 #
 ###############################
 
+init:
+    transform blinkeyes(eyes1, eyes2):
+        eyes1
+        choice:
+            3.5
+        choice:
+            2.5
+        choice:
+            1.5
+        # This randomizes the time between blinking.
+        eyes2
+        .25
+        repeat
+
+    transform flapmouth(mouth1, mouth2):
+        mouth1
+        .2
+        mouth2
+        .2
+        repeat
+
 init python:
     renpy.music.register_channel("ambience", mixer="sfx", loop=True, stop_on_mute=True, tight=True, file_prefix='', file_suffix='', buffer_queue=True, movie=False)
   
@@ -40,6 +61,42 @@ init python:
   
     # Curried form of the same.
     speaker = renpy.curry(speaker_callback)
+
+    def FlapMouth(cha, mouth1, mouth2):
+        mouth = flapmouth(mouth1, mouth2)
+        return WhileSpeaking(cha, mouth, mouth1)
+
+    def CSprite(cha, base, size=None, eyes=None, eyes2=None, mouth=None, mouth2=None):
+        if size == None:
+            return base
+        else:
+            if not eyes == None and not eyes2 == None and type(eyes) == str and type(eyes2) == str:
+                eyes = blinkeyes(eyes, eyes2)
+            if not mouth == None and not mouth2 == None and type(mouth) == str and type(mouth2) == str:
+                mouth = FlapMouth(cha, mouth, mouth2)
+            if not eyes == None and not mouth == None:
+                return LiveComposite(
+                        size,
+                        (0, 0), base,
+                        (0, 0), eyes,
+                        (0, 0), mouth,
+                    )
+            elif not eyes == None and mouth == None:
+                return LiveComposite(
+                        size,
+                        (0, 0), base,
+                        (0, 0), eyes,
+                    )
+            elif eyes == None and not mouth == None:
+                return LiveComposite(
+                        size,
+                        (0, 0), base,
+                        (0, 0), mouth,
+                    )
+            else:
+                return base
+
+
 
 image white = "#fff"
 image red = "#600"
@@ -168,7 +225,6 @@ label start_spirits:
 label start_letgo:
     scene letgo_select
     scene black with dissolve
-    "Let Go story chosen"
     
     jump letgo_000
     
