@@ -10,6 +10,7 @@ define om = Character("Old Man")
 define ow = Character("Old Woman")
 define dude = Character("Some Dude")
 define kid = Character("Some Kid")
+define mom = Character("Mom")
 
 image white = "#fff"
 
