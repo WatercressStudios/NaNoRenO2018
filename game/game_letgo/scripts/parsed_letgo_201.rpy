@@ -22,22 +22,22 @@ label letgo_201:
 
     if test == 2:
         menu:
-            "Great time to make snow angels?":
+            "Don't have coffee":
                 pass
     elif test == 3:
         menu:
-            "Great time for coffee (disabled)":
+            "Let's have coffee (disabled)":
                 pass
-            "Great time to make snow angels":
+            "Don't have coffee":
                 pass
     elif test == 4:
         menu:
-            "Great time for coffee?":
+            "Let's have coffee":
                 "She brings me into another embrace, and then she grabs my hand. She motions towards the cafe, and I begin to walk with her."
 
                 "Today's going to be a good day, a happy day. For both of us."
                 jump letgo_102
-            "Great time to make snow angels":
+            "Don't have coffee":
                 pass
 
     eli "It’s a great time to make snow angels?"
