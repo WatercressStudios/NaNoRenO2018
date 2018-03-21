@@ -33,18 +33,18 @@
 
     "She pulls back, gasping for air, finally calm enough to sit still."
 
-    voice "C-402-1.mp3" #Maya (shiena)
+    #voice "C-402-1.mp3" #Maya (shiena)
     may "What am I going to do without you?"
 
-    voice "C-402-2.mp3" #Elijah (Michael Potok)
+    #voice "C-402-2.mp3" #Elijah (Michael Potok)
     eli "What you've always done. You're going to live. I mean it; don't just survive."
 
     "She nods, falling back against her bed."
 
-    voice "C-402-3.mp3" #Maya (shiena)
+    #voice "C-402-3.mp3" #Maya (shiena)
     may "I love you, Eli."
 
-    voice "C-402-4.mp3" #Elijah (Michael Potok)
+    #voice "C-402-4.mp3" #Elijah (Michael Potok)
     eli "I love you too, May."
 
     "The atmosphere subtly changes. It's no longer dark…"
@@ -55,31 +55,31 @@
 
     "Leaning up towards me, she gives me a sad look."
 
-    voice "C-402-5.mp3" #Maya (shiena)
+    #voice "C-402-5.mp3" #Maya (shiena)
     may "This is around the time you usually die."
 
     "I have no response but to nod."
 
     "Right. I should get going."
 
-    voice "C-402-6.mp3" #Elijah (Michael Potok)
+    #voice "C-402-6.mp3" #Elijah (Michael Potok)
     eli "Promise me something, May. Promise me that you won't have to watch me die again."
 
     "Staring at me, she shakes her head and squeezes her eyes shut to keep the tears away."
 
-    voice "C-402-7.mp3" #Maya (shiena)
+    #voice "C-402-7.mp3" #Maya (shiena)
     may "No, of course not."
 
     "Now I must walk away from the one I love." 
 
     "Standing up, each footstep I take is thunderous - each movement strained. I now realize that this may be the last time I ever get to see her."
 
-    voice "C-402-8.mp3" #Maya (shiena)
+    #voice "C-402-8.mp3" #Maya (shiena)
     may "Hey, Eli?"
 
     "I turn back to her, now at her door."
 
-    voice "C-402-9.mp3" #Maya (shiena)
+    #voice "C-402-9.mp3" #Maya (shiena)
     may "...Thank you for the flowers."
 
     "..."
@@ -94,13 +94,13 @@
 
     "While that's an eventuality that hurts, my desire for her to find happiness outweighs this sadness."
 
-    voice "C-402-10.mp3" #Elijah (Michael Potok)
+    #voice "C-402-10.mp3" #Elijah (Michael Potok)
     eli "I'll be waiting for you - and please, remember that I'm a patient man."
 
-    voice "C-402-11.mp3" #Elijah (Michael Potok)
+    #voice "C-402-11.mp3" #Elijah (Michael Potok)
     eli "I want to see you again, when it's the right time."
 
-    voice "C-402-12.mp3" #Elijah (Michael Potok)
+    #voice "C-402-12.mp3" #Elijah (Michael Potok)
     eli "Goodbye, Maya."
 
     "With that, I turn my back on her and leave her behind."
@@ -158,5 +158,9 @@
     "Everything around me minimizes, and my worldly worries dissipate."
 
     "With one last smile, I'm gone."
+
+    # Might not need this?
+    play audio "game_letgo/sfx/Disturbing Bass.ogg"
+    scene red with Dissolve(9.5)
 
     jump letgo_501a1

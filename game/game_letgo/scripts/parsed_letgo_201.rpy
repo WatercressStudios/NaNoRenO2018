@@ -20,25 +20,11 @@ label letgo_201:
 
     "{i}Perfect?{/i} This is a complete and utter {i}mess{/i} - but she looks so happy, how can I make her mad by arguing against that?"
 
-    if test == 2:
-        menu:
-            "Don't have coffee":
-                pass
-    elif test == 3:
-        menu:
-            "Let's have coffee (disabled)":
-                pass
-            "Don't have coffee":
-                pass
-    elif test == 4:
-        menu:
-            "Let's have coffee":
-                "She brings me into another embrace, and then she grabs my hand. She motions towards the cafe, and I begin to walk with her."
-
-                "Today's going to be a good day, a happy day. For both of us."
-                jump letgo_102
-            "Don't have coffee":
-                pass
+    menu:
+        "Let's have coffee (disabled)":
+            pass
+        "Don't have coffee":
+            pass
 
     eli "It’s a great time to make snow angels?"
 

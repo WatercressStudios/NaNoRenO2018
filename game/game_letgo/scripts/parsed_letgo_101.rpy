@@ -260,6 +260,10 @@ label letgo_101:
     voice "C-101-65.mp3" #Maya (shiena)
     may "You worry too much. Don't worry, I love it. Super thoughtful, as always, Eli."
 
+    menu:
+        "Let's have coffee":
+            pass
+
     "She brings me into another embrace, and then she grabs my hand. She motions towards the cafe, and I begin to walk with her."
 
     "Today's going to be a good day, a happy day. For both of us."

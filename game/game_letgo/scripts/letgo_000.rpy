@@ -139,30 +139,32 @@ label letgo_000:
             jump letgo_204
         "End of Loop 3":
             jump letgo_303
-        "End of Loop 4":
+        "The Choice in Loop 4 (one goes to Bad Ending)":
+            jump letgo_401
+        "End of Loop 4 (towards Good Ending)":
             jump letgo_402
-        "End of Good Ending Loop 5":
+        "Good Ending Loop 5":
             jump letgo_501a4
-        "End of Bad Ending Loop 5":
+        "Bad Ending Loop 5":
             jump letgo_502
         "Show Eli and May's expressions":
             jump letgo_expressions
 
 label letgo_expressions:
     show may normal1
-    may "eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... "
+    may "may normal1... may normal1... may normal1... may normal1... may normal1... may normal1... may normal1... may normal1... may normal1... may normal1... may normal1... "
 
     show may normal1 close
-    may "eli normal1 close... eli normal1 close... eli normal1 close... eli normal1 close... eli normal1 close... eli normal1 close... eli normal1 close... "
+    may "may normal1 close... may normal1 close... may normal1 close... may normal1 close... may normal1 close... may normal1 close... may normal1 close... "
 
     show may shout1
-    may "eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... "
+    may "may shout1... may shout1... may shout1... may shout1... may shout1... may shout1... may shout1... may shout1... may shout1... may shout1... may shout1... "
 
     show may sadshout1
-    may "eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... "
+    may "may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... "
 
     show may shout1 close
-    may "eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... eli normal1... "
+    may "may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... "
 
     hide may
 

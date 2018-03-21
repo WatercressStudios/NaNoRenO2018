@@ -107,4 +107,4 @@
     # I’m thinking credits should be each significant scene or CG + our names
     # definitely with a 1 min sentimental music track (are we sure it can’t be with vocals?)
 
-    #jump letgo_601
+    jump letgo_601

@@ -116,17 +116,6 @@ label letgo_104:
     #voice "C-104-9.mp3" #Elijah (Michael Potok)
     eli "Maya--"
 
-    "DEBUG TIME - QSAVE HERE FOR QUICK TESTING"
-    menu:
-        "(DEBUG) Test 1 - No choice":
-            $ test = 1
-        "(DEBUG) Test 2 - Single choice":
-            $ test = 2
-        "(DEBUG) Test 3 - Two choices, one faded":
-            $ test = 3
-        "(DEBUG) Test 4 - Two available choices":
-            $ test = 4
-
     "The lights are everywhere."
 
     play sound "game_letgo/sfx/Car Screeching.ogg"
