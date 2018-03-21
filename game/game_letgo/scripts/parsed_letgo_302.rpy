@@ -215,8 +215,6 @@ label letgo_302softdrink:
     voice "C-302-46.mp3" #Elijah (Michael Potok)
     eli "May, listen, I--"
 
-    dude "Woah!"
-
     #sfx thud
 
     #If there’s some trend we do with deaths (blackouts, cutting music, etc), do it here
@@ -232,11 +230,9 @@ label letgo_302softdrink:
 
     "Seems he spilled soda on me."
 
-    dude "Sorry, dude! Didn’t watch where I was goin’!"
+    "With an apology, he helps me up."
 
-    "He helps me up."
-
-    dude "Totes in a rush right now, but here’s something for ruining your shirt, man."
+    "He explains himself being in a rush, apologizing again."
 
     "He hands me five dollars and runs off into the distance."
 

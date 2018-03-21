@@ -82,8 +82,6 @@
 
     "Ack! Since when is she a pro-baseballer!? It’s like she’s been practicing this for days!"
 
-    kid "Owww!"
-
     "Hearing a yelp behind me, I spin around and spot a random kid with snow all over his face. He glances down at the snowball in my hands and starts gathering his own."
 
     #voice "C-501a1-11.mp3" #Elijah (Michael Potok)
