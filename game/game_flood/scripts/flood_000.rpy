@@ -7,6 +7,7 @@
 define oph = Character("Ophelia")
 define oli = Character("Oliver")
 define dai = Character("Daisy")
+define hop = Character("Hope")
 
 
 ###############################
