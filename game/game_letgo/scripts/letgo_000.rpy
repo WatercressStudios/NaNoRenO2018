@@ -53,7 +53,7 @@ image eli goofy1 close = EliPose1("game_letgo/sprites/Eli/Pose 1/eyes angry clos
 #
 ###############################
 init python:
-    EliPose2 = BaseCSprite("eli", "game_letgo/sprites/Eli/Pose 2/base.png", (578, 1080))
+    EliPose2 = BaseCSprite("eli", "game_letgo/sprites/Eli/Pose 2/base.png", (615, 1080))
 
 image eli normal2 = EliPose2("eli eyes normal2", "eli mouth normal2")
 image eli normal2 close = EliPose2("game_letgo/sprites/Eli/Pose 2/eyes normal close.png", "eli mouth normal2")
@@ -125,7 +125,7 @@ image eli eyes angry2 = blinkeyes("game_letgo/sprites/Eli/Pose 2/eyes angry open
 
 image eli mouth normal2 = FlapMouth("eli", "game_letgo/sprites/Eli/Pose 2/mouth normal.png", "game_letgo/sprites/Eli/Pose 2/mouth open normal.png")
 
-image eli mouth sad2 = FlapMouth("eli", "game_letgo/sprites/Eli/Pose 2/mouth open normal.png", "game_letgo/sprites/Eli/Pose 2/mouth frown.png")
+image eli mouth sad2 = FlapMouth("eli", "game_letgo/sprites/Eli/Pose 2/mouth frown.png", "game_letgo/sprites/Eli/Pose 2/mouth open normal.png")
 
 image eli mouth smile2 = FlapMouth("eli", "game_letgo/sprites/Eli/Pose 2/mouth normal.png", "game_letgo/sprites/Eli/Pose 2/mouth open smile.png")
 
@@ -288,7 +288,7 @@ label letgo_expressions:
     show eli cool2
     eli "eli cool2... eli cool2... eli cool2... eli cool2... eli cool2... eli cool2... eli cool2... eli cool2... eli cool2... eli cool2... eli cool2... eli cool2... "
 
-    show wli cool2 close
+    show eli cool2 close
     eli "eli cool2 close... eli cool2 close... eli cool2 close... eli cool2 close... eli cool2 close... eli cool2 close... eli cool2 close... eli cool2 close... "
 
     hide eli
