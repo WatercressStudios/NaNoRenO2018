@@ -14,6 +14,10 @@ define caex = Character("Hallway Boy") #Caelum
 define ama = Character("Mama")
 define Dad = Character("Papa")
 define n = Character(None, kind=nvl)
+define cxx = Character("Caelum?") #Caelum
+define gez = Character("Genevieve")
+define gex = Character("Genevieve")
+define nurse = Character("Nurse")
 
 
 ###############################
