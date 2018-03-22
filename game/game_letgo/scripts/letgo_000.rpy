@@ -86,9 +86,65 @@ init python:
 image may normal1 = MayPose1("may eyes normal1", "may mouth smile1")
 image may normal1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes normal close.png", "may mouth smile1")
 
+image may frown1 = MayPose1("may eyes normal1", "may mouth pout1")
+image may frown1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes normal close.png", "may mouth pout1")
+
+image may adore1 = MayPose1("may eyes squint1", "may mouth smile1")
+image may adore1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes normal close.png", "may mouth smile1")
+
+image may confused1 = MayPose1("may eyes squint1", "may mouth sad1")
+image may confused1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes normal close.png", "may mouth sad1")
+
+image may aww1 = MayPose1("may eyes worried1", "may mouth happy1")
+image may aww1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes worry close.png", "may mouth happy1")
+
+image may worried1 = MayPose1("may eyes worried1", "may mouth angry1")
+image may worried1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes worry close.png", "may mouth angry1")
+
+image may sad1 = MayPose1("may eyes worried1", "may mouth sad1")
+image may sad1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes worry close.png", "may mouth sad1")
+
+image may challenge1 = MayPose1("may eyes angry1", "may mouth happy1")
+image may challenge1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth happy1")
+
+image may cheeky1 = MayPose1("may eyes sad1", "may mouth happy1")
+image may cheeky1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth happy1")
+
+image may angry1 = MayPose1("may eyes angry1", "may mouth angry1")
+image may angry1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth angry1")
+
 image may shout1 = MayPose1("may eyes angry1", "may mouth shout1")
-image may sadshout1 = MayPose1("may eyes sad1", "may mouth shout1")
 image may shout1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth shout1")
+
+image may sadshout1 = MayPose1("may eyes sad1", "may mouth shout1")
+image may sadshout1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth shout1")
+
+image may forcedsmile1 = MayPose1("may eyes sad1", "may mouth smile1")
+image may forcedsmile1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth smile1")
+
+image may suspicious1 = MayPose1("may eyes sad1", "may mouth sad1")
+image may suspicious1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth sad1")
+
+
+###############################
+#
+# MAY POSE 2 SPRITES
+#
+###############################
+
+init python:
+    MayPose2 = BaseCSprite("may", "game_letgo/sprites/May/Pose 2/base.png", (420, 915))
+
+
+
+###############################
+#
+# MAY POSE 3 SPRITES
+#
+###############################
+
+init python:
+    MayPose2 = BaseCSprite("may", "game_letgo/sprites/May/Pose 3/base.png", (507, 930))
 
 
 ###############################
@@ -196,14 +252,83 @@ label letgo_expressions:
     show may normal1 close
     may "may normal1 close... may normal1 close... may normal1 close... may normal1 close... may normal1 close... may normal1 close... may normal1 close... "
 
+    show may frown1
+    may "may frown1... may frown1... may frown1... may frown1... may frown1... may frown1... may frown1... may frown1... may frown1... may frown1... may frown1... "
+
+    show may frown1 close
+    may "may frown1 close... may frown1 close... may frown1 close... may frown1 close... may frown1 close... may frown1 close... may frown1 close... may frown1 close... "
+
+    show may adore1
+    may "may adore1... may adore1... may adore1... may adore1... may adore1... may adore1... may adore1... may adore1... may adore1... may adore1... may adore1... "
+
+    show may adore1 close
+    may "may adore1 close... may adore1 close... may adore1 close... may adore1 close... may adore1 close... may adore1 close... may adore1 close... may adore1 close... "
+
+    show may confused1
+    may "may confused1... may confused1... may confused1... may confused1... may confused1... may confused1... may confused1... may confused1... may confused1... "
+
+    show may confused1 close
+    may "may confused1 close... may confused1 close... may confused1 close... may confused1 close... may confused1 close... may confused1 close... may confused1 close... "
+
+    show may aww1
+    may "may aww1... may aww1... may aww1... may aww1... may aww1... may aww1... may aww1... may aww1... may aww1... may aww1... may aww1... may aww1... may aww1... "
+
+    show may aww1 close
+    may "may aww1 close... may aww1 close... may aww1 close... may aww1 close... may aww1 close... may aww1 close... may aww1 close... may aww1 close... may aww1 close... "
+
+    show may worried1
+    may "may worried1... may worried1... may worried1... may worried1... may worried1... may worried1... may worried1... may worried1... may worried1... may worried1... "
+
+    show may worried1 close
+    may "may worried1 close... may worried1 close... may worried1 close... may worried1 close... may worried1 close... may worried1 close... may worried1 close... "
+
+    show may sad1
+    may "may sad1... may sad1... may sad1... may sad1... may sad1... may sad1... may sad1... may sad1... may sad1... may sad1... may sad1... may sad1... may sad1... "
+
+    show may sad1 close
+    may "may sad1 close... may sad1 close... may sad1 close... may sad1 close... may sad1 close... may sad1 close... may sad1 close... may sad1 close... may sad1 close... "
+
+    show may challenge1
+    may "may challenge1... may challenge1... may challenge1... may challenge1... may challenge1... may challenge1... may challenge1... may challenge1... may challenge1... "
+
+    show may challenge1 close
+    may "may challenge1 close... may challenge1 close... may challenge1 close... may challenge1 close... may challenge1 close... may challenge1 close... "
+
+    show may cheeky1
+    may "may cheeky1... may cheeky1... may cheeky1... may cheeky1... may cheeky1... may cheeky1... may cheeky1... may cheeky1... may cheeky1... may cheeky1... may cheeky1... "
+
+    show may cheeky1 close
+    may "may cheeky1 close... may cheeky1 close... may cheeky1 close... may cheeky1 close... may cheeky1 close... may cheeky1 close... may cheeky1 close... "
+
+    show may angry1
+    may "may angry1... may angry1... may angry1... may angry1... may angry1... may angry1... may angry1... may angry1... may angry1... may angry1... may angry1... "
+
+    show may angry1 close
+    may "may angry1 close... may angry1 close... may angry1 close... may angry1 close... may angry1 close... may angry1 close... may angry1 close... may angry1 close... "
+
     show may shout1
     may "may shout1... may shout1... may shout1... may shout1... may shout1... may shout1... may shout1... may shout1... may shout1... may shout1... may shout1... "
+
+    show may shout1 close
+    may "may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... "
 
     show may sadshout1
     may "may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... "
 
-    show may shout1 close
-    may "may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... "
+    show may sadshout1 close
+    may "may sadshout1 close... may sadshout1 close... may sadshout1 close... may sadshout1 close... may sadshout1 close... may sadshout1 close... may sadshout1 close... "
+
+    show may forcedsmile1
+    may "may forcedsmile1... may forcedsmile1... may forcedsmile1... may forcedsmile1... may forcedsmile1... may forcedsmile1... may forcedsmile1... may forcedsmile1... "
+
+    show may forcedsmile1 close
+    may "may forcedsmile1 close... may forcedsmile1 close... may forcedsmile1 close... may forcedsmile1 close... may forcedsmile1 close... may forcedsmile1 close... "
+
+    show may suspicious1
+    may "may suspicious1... may suspicious1... may suspicious1... may suspicious1... may suspicious1... may suspicious1... may suspicious1... may suspicious1... "
+
+    show may suspicious1 close
+    may "may suspicious1 close... may suspicious1 close... may suspicious1 close... may suspicious1 close... may suspicious1 close... may suspicious1 close... "
 
     hide may
 
