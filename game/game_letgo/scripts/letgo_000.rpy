@@ -43,9 +43,36 @@ image eli angry1 close = EliPose1("game_letgo/sprites/Eli/Pose 1/eyes angry clos
 
 image eli cool1 = EliPose1("eli eyes angry1", "eli mouth smile1")
 image eli cool1 close = EliPose1("game_letgo/sprites/Eli/Pose 1/eyes angry close.png", "eli mouth smile1")
-    
+
 image eli goofy1 = EliPose1("eli eyes angry1", "eli mouth happy1")
 image eli goofy1 close = EliPose1("game_letgo/sprites/Eli/Pose 1/eyes angry close.png", "eli mouth happy1")
+
+###############################
+#
+# ELI POSE 2 SPRITES
+#
+###############################
+init python:
+    EliPose2 = BaseCSprite("eli", "game_letgo/sprites/Eli/Pose 2/base.png", (578, 1080))
+
+image eli normal2 = EliPose2("eli eyes normal2", "eli mouth normal2")
+image eli normal2 close = EliPose2("game_letgo/sprites/Eli/Pose 2/eyes normal close.png", "eli mouth normal2")
+
+image eli smile2 = EliPose2("eli eyes normal2", "eli mouth smile2")
+image eli smile2 close = EliPose2("game_letgo/sprites/Eli/Pose 2/eyes normal close.png", "eli mouth smile2")
+
+image eli sad2 = EliPose2("eli eyes worried2", "eli mouth sad2")
+image eli sad2 close = EliPose2("game_letgo/sprites/Eli/Pose 2/eyes worry close.png", "eli mouth sad2")
+
+image eli worried2 = EliPose2("eli eyes worried2", "eli mouth normal2")
+image eli worried2 close = EliPose2("game_letgo/sprites/Eli/Pose 2/eyes worry close.png", "eli mouth normal2")
+
+image eli angry2 = EliPose2("eli eyes angry2", "eli mouth sad2")
+image eli angry2 close = EliPose2("game_letgo/sprites/Eli/Pose 2/eyes angry close.png", "eli mouth sad2")
+
+image eli cool2 = EliPose2("eli eyes angry2", "eli mouth smile2")
+image eli cool2 close = EliPose2("game_letgo/sprites/Eli/Pose 2/eyes angry close.png", "eli mouth smile2")
+
 
 ###############################
 #
@@ -84,6 +111,23 @@ image eli mouth smile1 = FlapMouth("eli", "game_letgo/sprites/Eli/Pose 1/mouth c
 
 image eli mouth happy1 = FlapMouth("eli", "game_letgo/sprites/Eli/Pose 1/mouth smile open.png", "game_letgo/sprites/Eli/Pose 1/mouth close.png")
 
+###############################
+#
+# ELI POSE 2 COMPOSITE PARTS
+#
+###############################
+
+image eli eyes normal2 = blinkeyes("game_letgo/sprites/Eli/Pose 2/eyes normal open.png", "game_letgo/sprites/Eli/Pose 2/eyes normal close.png")
+
+image eli eyes worried2 = blinkeyes("game_letgo/sprites/Eli/Pose 2/eyes worry open.png", "game_letgo/sprites/Eli/Pose 2/eyes worry close.png")
+
+image eli eyes angry2 = blinkeyes("game_letgo/sprites/Eli/Pose 2/eyes angry open.png", "game_letgo/sprites/Eli/Pose 2/eyes angry close.png")
+
+image eli mouth normal2 = FlapMouth("eli", "game_letgo/sprites/Eli/Pose 2/mouth normal.png", "game_letgo/sprites/Eli/Pose 2/mouth open normal.png")
+
+image eli mouth sad2 = FlapMouth("eli", "game_letgo/sprites/Eli/Pose 2/mouth open normal.png", "game_letgo/sprites/Eli/Pose 2/mouth frown.png")
+
+image eli mouth smile2 = FlapMouth("eli", "game_letgo/sprites/Eli/Pose 2/mouth normal.png", "game_letgo/sprites/Eli/Pose 2/mouth open smile.png")
 
 ###############################
 #
@@ -122,7 +166,7 @@ image may mouth happy1 = FlapMouth("may", "game_letgo/sprites/May/Pose 1/mouth s
 
 label letgo_000:
     $ persistent.last_story = "letgo"
-    
+
     #jump letgo_101
 
     menu:
@@ -210,6 +254,42 @@ label letgo_expressions:
 
     show eli goofy1 close
     eli "eli goofy1 close... eli goofy1 close... eli goofy1 close... eli goofy1 close... eli goofy1 close... eli goofy1 close... eli goofy1 close... eli goofy1 close... "
+
+    show eli normal2
+    eli "eli normal2... eli normal2... eli normal2... eli normal2... eli normal2... eli normal2... eli normal2... eli normal2... eli normal2... eli normal2... "
+
+    show eli normal2 close
+    eli "eli normal2 close... eli normal2 close... eli normal2 close... eli normal2 close... eli normal2 close... eli normal2 close... eli normal2 close... eli normal2 close... "
+
+    show eli smile2
+    eli "eli smile2... eli smile2... eli smile2... eli smile2... eli smile2... eli smile2... eli smile2... eli smile2... eli smile2... eli smile2... eli smile2... "
+
+    show eli smile2 close
+    eli "eli smile2 close... eli smile2 close... eli smile2 close... eli smile2 close... eli smile2 close... eli smile2 close... eli smile2 close... eli smile2 close... "
+
+    show eli sad2
+    eli "eli sad2... eli sad2... eli sad2... eli sad2... eli sad2... eli sad2... eli sad2... eli sad2... eli sad2... eli sad2... eli sad2... eli sad2... eli sad2... "
+
+    show eli sad2 close
+    eli "eli sad2 close... eli sad2 close... eli sad2 close... eli sad2 close... eli sad2 close... eli sad2 close... eli sad2 close... eli sad2 close... eli sad2 close... "
+
+    show eli worried2
+    eli "eli worried2... eli worried2... eli worried2... eli worried2... eli worried2... eli worried2... eli worried2... eli worried2... eli worried2... eli worried2... "
+
+    show eli worried2 close
+    eli "eli worried2 close... eli worried2 close... eli worried2 close... eli worried2 close... eli worried2 close... eli worried2 close... eli worried2 close... "
+
+    show eli angry2
+    eli "eli angry2... eli angry2... eli angry2... eli angry2... eli angry2... eli angry2... eli angry2... eli angry2... eli angry2... eli angry2... eli angry2... "
+
+    show eli angry2 close
+    eli "eli angry2 close... eli angry2 close... eli angry2 close... eli angry2 close... eli angry2 close... eli angry2 close... eli angry2 close... eli angry2 close... "
+
+    show eli cool2
+    eli "eli cool2... eli cool2... eli cool2... eli cool2... eli cool2... eli cool2... eli cool2... eli cool2... eli cool2... eli cool2... eli cool2... eli cool2... "
+
+    show wli cool2 close
+    eli "eli cool2 close... eli cool2 close... eli cool2 close... eli cool2 close... eli cool2 close... eli cool2 close... eli cool2 close... eli cool2 close... "
 
     hide eli
     jump letgo_000
