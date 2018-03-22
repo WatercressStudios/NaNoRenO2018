@@ -13,6 +13,7 @@
 ## The _() surrounding the string marks it as eligible for translation.
 
 define config.name = _("NaNoRenO-2018")
+define config.developer = "True"
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
