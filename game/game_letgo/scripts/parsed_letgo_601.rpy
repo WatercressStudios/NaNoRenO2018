@@ -115,7 +115,7 @@
 
     "Quietly, I sob into her shoulder."
 
-    "I'm glad she got to the point, though. I'm tired of not knowing."
+    "I'm glad she got to the point, though. I'm tired of not knowing." 
 
     "I'm tired of that sick anticipation - that panic attack that happens just before you get news you know you are going to get, but desperately want to avoid."
 
