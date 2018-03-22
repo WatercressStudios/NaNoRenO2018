@@ -67,10 +67,11 @@ label spirits_a1s0:
 
     "A text from my grandmother rouses me from my reverie."
 
-    #Naniji  "{i}Are you okay, Alex?  Your flight’s in two hours.{/i}"
+    "{i}Are you okay, Alex?  Your flight’s in two hours.{/i}"
 
     "By the time I’ve finished reading it, there’s a second one."
-    #Naniji "We don’t have as much time as usual."
+    
+    "{i}We don’t have as much time as usual.{/i}"
 
     "I text back with my other hand."
 
