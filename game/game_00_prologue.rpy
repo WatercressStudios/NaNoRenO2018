@@ -96,6 +96,14 @@ init python:
             else:
                 return base
 
+    class BaseCSprite:
+        def __init__(self, cha, basesprite, size):
+            self.cha = cha
+            self.basesprite = basesprite
+            self.size = size
+        
+        def __call__(self, eyes, mouth, eyes2=None, mouth2=None):
+            return CSprite(self.cha, self.basesprite, size=self.size, eyes=eyes, eyes2=eyes2, mouth=mouth, mouth2=mouth2)
 
 
 image white = "#fff"

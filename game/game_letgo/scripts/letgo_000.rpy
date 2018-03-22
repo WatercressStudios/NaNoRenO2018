@@ -20,37 +20,32 @@ image white = "#fff"
 #
 ###############################
 
-image eli normal1 = CSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", size=(578, 1080), eyes="eli eyes normal1", mouth="eli mouth normal1")
+init python:
+    EliPose1 = BaseCSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", (578, 1080))
 
-image eli normal1 close = CSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", size=(578, 1080), eyes="game_letgo/sprites/Eli/Pose 1/eyes normal close.png", mouth="eli mouth normal1")
+image eli normal1 = EliPose1("eli eyes normal1", "eli mouth normal1")
+image eli normal1 close = EliPose1("game_letgo/sprites/Eli/Pose 1/eyes normal close.png", "eli mouth normal1")
 
-image eli smile1 = CSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", size=(578, 1080), eyes="eli eyes normal1", mouth="eli mouth smile1")
+image eli smile1 = EliPose1("eli eyes normal1", "eli mouth smile1")
+image eli smile1 close = EliPose1("game_letgo/sprites/Eli/Pose 1/eyes normal close.png", "eli mouth smile1")
 
-image eli smile1 close = CSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", size=(578, 1080), eyes="game_letgo/sprites/Eli/Pose 1/eyes normal close.png", mouth="eli mouth smile1")
+image eli happy1 = EliPose1("eli eyes normal1", "eli mouth happy1")
+image eli happy1 close = EliPose1("game_letgo/sprites/Eli/Pose 1/eyes normal close.png", "eli mouth happy1")
 
-image eli happy1 = CSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", size=(578, 1080), eyes="eli eyes normal1", mouth="eli mouth happy1")
+image eli sad1 = EliPose1("eli eyes worried1", "eli mouth sad1")
+image eli sad1 close = EliPose1("game_letgo/sprites/Eli/Pose 1/eyes worry close.png", "eli mouth sad1")
 
-image eli happy1 close = CSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", size=(578, 1080), eyes="game_letgo/sprites/Eli/Pose 1/eyes normal close.png", mouth="eli mouth happy1")
+image eli worried1 = EliPose1("eli eyes worried1", "eli mouth smile1")
+image eli worried1 close = EliPose1("game_letgo/sprites/Eli/Pose 1/eyes worry close.png", "eli mouth smile1")
 
-image eli sad1 = CSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", size=(578, 1080), eyes="eli eyes worried1", mouth="eli mouth sad1")
+image eli angry1 = EliPose1("eli eyes angry1", "eli mouth sad1")
+image eli angry1 close = EliPose1("game_letgo/sprites/Eli/Pose 1/eyes angry close.png", "eli mouth sad1")
 
-image eli sad1 close = CSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", size=(578, 1080), eyes="game_letgo/sprites/Eli/Pose 1/eyes worry close.png", mouth="eli mouth sad1")
-
-image eli worried1 = CSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", size=(578, 1080), eyes="eli eyes worried1", mouth="eli mouth smile1")
-
-image eli worried1 close = CSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", size=(578, 1080), eyes="game_letgo/sprites/Eli/Pose 1/eyes worry close.png", mouth="eli mouth smile1")
-
-image eli angry1 = CSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", size=(578, 1080), eyes="eli eyes angry1", mouth="eli mouth sad1")
-
-image eli angry1 close = CSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", size=(578, 1080), eyes="game_letgo/sprites/Eli/Pose 1/eyes angry close.png", mouth="eli mouth sad1")
-
-image eli cool1 = CSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", size=(578, 1080), eyes="eli eyes angry1", mouth="eli mouth smile1")
-
-image eli cool1 close = CSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", size=(578, 1080), eyes="game_letgo/sprites/Eli/Pose 1/eyes angry close.png", mouth="eli mouth smile1")
+image eli cool1 = EliPose1("eli eyes angry1", "eli mouth smile1")
+image eli cool1 close = EliPose1("game_letgo/sprites/Eli/Pose 1/eyes angry close.png", "eli mouth smile1")
     
-image eli goofy1 = CSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", size=(578, 1080), eyes="eli eyes angry1", mouth="eli mouth happy1")
-
-image eli goofy1 close = CSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", size=(578, 1080), eyes="game_letgo/sprites/Eli/Pose 1/eyes angry close.png", mouth="eli mouth happy1")
+image eli goofy1 = EliPose1("eli eyes angry1", "eli mouth happy1")
+image eli goofy1 close = EliPose1("game_letgo/sprites/Eli/Pose 1/eyes angry close.png", "eli mouth happy1")
 
 ###############################
 #
@@ -58,15 +53,15 @@ image eli goofy1 close = CSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png"
 #
 ###############################
 
-image may normal1 = CSprite("may", "game_letgo/sprites/May/Pose 1/base.png", size=(496, 920), eyes="may eyes normal1", mouth="may mouth smile1")
+init python:
+    MayPose1 = BaseCSprite("may", "game_letgo/sprites/May/Pose 1/base.png", (496, 920))
 
-image may normal1 close = CSprite("may", "game_letgo/sprites/May/Pose 1/base.png", size=(496, 920), eyes="game_letgo/sprites/May/Pose 1/eyes normal close.png", mouth="may mouth smile1")
+image may normal1 = MayPose1("may eyes normal1", "may mouth smile1")
+image may normal1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes normal close.png", "may mouth smile1")
 
-image may shout1 = CSprite("may", "game_letgo/sprites/May/Pose 1/base.png", size=(496, 920), eyes="may eyes angry1", mouth="may mouth shout1")
-
-image may sadshout1 = CSprite("may", "game_letgo/sprites/May/Pose 1/base.png", size=(496, 920), eyes="may eyes sad1", mouth="may mouth shout1")
-
-image may shout1 close = CSprite("may", "game_letgo/sprites/May/Pose 1/base.png", size=(496, 920), eyes="game_letgo/sprites/May/Pose 1/eyes angry close.png", mouth="may mouth shout1")
+image may shout1 = MayPose1("may eyes angry1", "may mouth shout1")
+image may sadshout1 = MayPose1("may eyes sad1", "may mouth shout1")
+image may shout1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth shout1")
 
 
 ###############################
