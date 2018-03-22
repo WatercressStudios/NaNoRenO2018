@@ -74,8 +74,12 @@ with open(inputFilePath, 'r', encoding="utf8") as infile, open(outputFilePath, '
             outfile.write('    voice "' + routeTag + '-' + sceneNumber + '-' + str(lineCount) + '.mp3" #Caelum (Daniel Acosta)\n')
             outfile.write(line)
             lineCount += 1
+        elif '    caex' in line[:8]:
+            outfile.write('    voice "' + routeTag + '-' + sceneNumber + '-' + str(lineCount) + '.mp3" #Caelum (Daniel Acosta)\n')
+            outfile.write(line)
+            lineCount += 1
         elif '    hmom' in line[:8]:
-            outfile.write('    voice "' + routeTag + '-' + sceneNumber + '-' + str(lineCount) + '.mp3" #House Mother (Vivi)\n')
+            outfile.write('    voice "' + routeTag + '-' + sceneNumber + '-' + str(lineCount) + '.mp3" #House Mother "Jianmei" (Vivi)\n')
             outfile.write(line)
             lineCount += 1
         elif '    gen' in line[:7]:
