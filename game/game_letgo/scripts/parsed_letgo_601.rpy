@@ -29,6 +29,38 @@
 
     "He was right."
 
+    #Internal monologue from this point onto the next comment is only to appear of Scene 502 was the scene you received, rather than 501
+
+    "After so much time..."
+
+    "Years and years."
+
+    "Decades, even."
+
+    "Probably more..."
+
+    "I'm finaly free from the hell that was that day."
+
+    "I'm sorry, Eli. I couldn't save you."
+
+    "You were right, you know. From the very beginning, you were right. I failed, in the end, as you knew I would."
+
+    "You're dead and gone."
+
+    "Forever."
+
+    "I... hurt. So much."
+
+    "Time does that to a soul."
+
+    "I may be a young woman in body, but of soul?"
+
+    "No, of soul I'm old. I'm {i}ancient{/i}."
+
+    "It took me so long to come to the same conclusion you did. I'm here now, though. And I remember that promise I made so, so long ago."
+
+    #This is the end of the 502 specific monologue.
+
     "My hair tangles around me, and I haphazardly comb it with my cold hands."
 
     "I'm a mess."
@@ -83,7 +115,7 @@
 
     "Quietly, I sob into her shoulder."
 
-    "I'm glad she got to the point, though. I'm tired of not knowing." 
+    "I'm glad she got to the point, though. I'm tired of not knowing."
 
     "I'm tired of that sick anticipation - that panic attack that happens just before you get news you know you are going to get, but desperately want to avoid."
 
