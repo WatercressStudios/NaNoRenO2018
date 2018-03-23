@@ -112,11 +112,27 @@
 
 ### play music ###
 
+# play music bgmletgo_intro noloop fadeout 1.0
+# queue music bgmletgo_loop loop
+
+# play music bgmloop1comedy_intro noloop fadeout 1.0
+# queue music bgmloop1comedy_loop loop
+
+# play music bgmloop1romantic_intro noloop fadeout 1.0
+# queue music bgmloop1romantic_loop loop
+
+# play music bgmloop2distorted_intro noloop fadeout 1.0
+# queue music bgmloop2distorted_loop loop
+
 # play music bgmloop3comedy_intro noloop fadeout 1.0
 # queue music bgmloop3comedy_loop loop
+
 # play music bgmloop4reveal fadeout 1.0
+
 # play music bgmloop5kite fadeout 1.0
+
 # play music bgmloop5bye_intro noloop fadeout 1.0
+
 # queue music bgmloop5bye_loop loop
 
 
@@ -178,6 +194,14 @@ define mom = Character("Mom")
 
 image white = "#fff"
 
+define bgmletgo_intro = "game_letgo/music/Let Go. (INTRO).ogg"
+define bgmletgo_loop = "game_letgo/music/Let Go. (LOOP).ogg"
+define bgmloop1comedy_intro = "game_letgo/music/Comedic Date (INTRO).ogg"
+define bgmloop1comedy_loop = "game_letgo/music/Comedic Date (LOOP).ogg"
+define bgmloop1romantic_intro = "game_letgo/music/Romantic Date (INTRO).ogg"
+define bgmloop1romantic_loop = "game_letgo/music/Romantic Date (LOOP).ogg"
+define bgmloop2distorted_intro = "game_letgo/music/Distorted Date (INTRO).ogg"
+define bgmloop2distorted_loop = "game_letgo/music/Distorted Date (LOOP).ogg"
 define bgmloop3comedy_intro = "game_letgo/music/A Macabre Comedy Intro.ogg"
 define bgmloop3comedy_loop = "game_letgo/music/A Macabre Comedy Loop.ogg"
 define bgmloop4reveal = "game_letgo/music/The Truth.ogg"

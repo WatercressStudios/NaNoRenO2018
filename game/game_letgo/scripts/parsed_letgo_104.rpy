@@ -9,7 +9,8 @@ label letgo_104:
 
     scene letgo road long with dissolve
 
-    #play music "game_letgo/music/Romantic Date.ogg" fadeout 2.0
+    play music bgmloop1romantic_intro noloop fadeout 1.0
+    queue music bgmloop1romantic_loop loop
     play ambience "game_letgo/ambience/Roads Night.ogg" fadeout 2.0 fadein 2.0
 
     "The sounds of people in the different buildings we pass change the farther we go."
