@@ -1,5 +1,5 @@
 label letgo_201:
-    scene clocktower
+    scene letgo townsquare1
     
     play sound "game_letgo/sfx/Clocktower 3PM.ogg"
     play ambience "game_letgo/ambience/Town Center Plaza.ogg" fadeout 0.1 fadein 0.1
