@@ -306,178 +306,178 @@ label flood_000:
 
 label flood_expressions:
     show oph neutral
-    oph "oph normal1... oph normal1... oph normal1... oph normal1... oph normal1... oph normal1... oph normal1... oph normal1... oph normal1... oph normal1... "
+    oph "oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... "
 
     show oph neutral close
-    oph "oph normal1 close... oph normal1 close... oph normal1 close... oph normal1 close... oph normal1 close... oph normal1 close... oph normal1 close... oph normal1 close... "
+    oph "oph neutral close... oph neutral close... oph neutral close... oph neutral close... oph neutral close... oph neutral close... oph neutral close... "
 
     show oph defensive
-    oph "oph defensive1... oph defensive1... oph defensive1... oph defensive1... oph defensive1... oph defensive1... oph defensive1... oph defensive1... oph defensive1... "
+    oph "oph defensive... oph defensive... oph defensive... oph defensive... oph defensive... oph defensive... oph defensive... oph defensive... oph defensive... "
 
     show oph defensive close
-    oph "oph defensive1 close... oph defensive1 close... oph defensive1 close... oph defensive1 close... oph defensive1 close... oph defensive1 close... oph defensive1 close... "
+    oph "oph defensive close... oph defensive close... oph defensive close... oph defensive close... oph defensive close... oph defensive close... oph defensive close... "
 
     show oph irritated
-    oph "oph irritated1... oph irritated1... oph irritated1... oph irritated1... oph irritated1... oph irritated1... oph irritated1... oph irritated1... oph irritated1... "
+    oph "oph irritated... oph irritated... oph irritated... oph irritated... oph irritated... oph irritated... oph irritated... oph irritated... oph irritated... "
 
     show oph irritated close
-    oph "oph irritated1 close... oph irritated1 close... oph irritated1 close... oph irritated1 close... oph irritated1 close... oph irritated1 close... oph irritated1 close... "
+    oph "oph irritated close... oph irritated close... oph irritated close... oph irritated close... oph irritated close... oph irritated close... oph irritated close... "
 
     show oph scared
-    oph "oph scared1... oph scared1... oph scared1... oph scared1... oph scared1... oph scared1... oph scared1... oph scared1... oph scared1... oph scared1... "
+    oph "oph scared... oph scared... oph scared... oph scared... oph scared... oph scared... oph scared... oph scared... oph scared... oph scared... oph scared... "
 
     show oph scared close
-    oph "oph scared1 close... oph scared1 close... oph scared1 close... oph scared1 close... oph scared1 close... oph scared1 close... oph scared1 close... oph scared1 close... "
+    oph "oph scared close... oph scared close... oph scared close... oph scared close... oph scared close... oph scared close... oph scared close... oph scared close... "
 
     show oph smile
-    oph "oph smile... oph happy1... oph happy1... oph happy1... oph happy1... oph happy1... oph happy1... oph happy1... oph happy1... oph happy1... oph happy1... "
+    oph "oph smile... oph smile... oph smile... oph smile... oph smile... oph smile... oph smile... oph smile... oph smile... oph smile... oph smile... oph smile... oph smile... "
 
     show oph smile close
-    oph "oph smile close... oph happy1 close... oph happy1 close... oph happy1 close... oph happy1 close... oph happy1 close... oph happy1 close... oph happy1 close... "
+    oph "oph smile close... oph smile close... oph smile close... oph smile close... oph smile close... oph smile close... oph smile close... oph smile close... "
 
     show oph surprised
-    oph "oph surprised... oph surprised1... oph surprised1... oph surprised1... oph surprised1... oph surprised1... oph surprised1... oph surprised1... oph surprised1... "
+    oph "oph surprised... oph surprised... oph surprised... oph surprised... oph surprised... oph surprised... oph surprised... oph surprised... oph surprised... "
 
     show oph surprised close
-    oph "oph surprised close... oph surprised1 close... oph surprised1 close... oph surprised1 close... oph surprised1 close... oph surprised1 close... oph surprised1 close... "
+    oph "oph surprised close... oph surprised close... oph surprised close... oph surprised close... oph surprised close... oph surprised close... oph surprised close... "
 
     show oph tiredsmile
-    oph "oph tiredsmile... oph tired1... oph tired1... oph tired1... oph tired1... oph tired1... oph tired1... oph tired1... oph tired1... oph tired1... oph tired1... "
+    oph "oph tiredsmile... oph tiredsmile... oph tiredsmile... oph tiredsmile... oph tiredsmile... oph tiredsmile... oph tiredsmile... oph tiredsmile... oph tiredsmile... "
 
     show oph tiredsmile close
-    oph "oph tiredsmile close... oph tired1 close... oph tired1 close... oph tired1 close... oph tired1 close... oph tired1 close... oph tired1 close... oph tired1 close... "
+    oph "oph tiredsmile close... oph tiredsmile close... oph tiredsmile close... oph tiredsmile close... oph tiredsmile close... oph tiredsmile close... "
 
     show oph weirdedout
-    oph "oph weirdedout... oph weirdedout1... oph weirdedout1... oph weirdedout1... oph weirdedout1... oph weirdedout1... oph weirdedout1... oph weirdedout1... oph weirdedout1... "
+    oph "oph weirdedout... oph weirdedout... oph weirdedout... oph weirdedout... oph weirdedout... oph weirdedout... oph weirdedout... oph weirdedout... oph weirdedout... "
 
     show oph weirdedout close
-    oph "oph weirdedout close... oph weirdedout1 close... oph weirdedout1 close... oph weirdedout1 close... oph weirdedout1 close... oph weirdedout1 close... oph weirdedout1 close... "
+    oph "oph weirdedout close... oph weirdedout close... oph weirdedout close... oph weirdedout close... oph weirdedout close... oph weirdedout close... "
 
     hide oph
 
     show oli cheerful smile
-    oli "oli normal1... oli normal1... oli normal1... oli normal1... oli normal1... oli normal1... oli normal1... oli normal1... oli normal1... oli normal1... oli normal1... "
+    oli "oli cheerful smile... oli cheerful smile... oli cheerful smile... oli cheerful smile... oli cheerful smile... oli cheerful smile... oli cheerful smile... "
 
     show oli cheerful smile close
-    oli "oli normal1 close... oli normal1 close... oli normal1 close... oli normal1 close... oli normal1 close... oli normal1 close... oli normal1 close... oli normal1 close... "
+    oli "oli cheerful smile close... oli cheerful smile close... oli cheerful smile close... oli cheerful smile close... oli cheerful smile close... "
 
     show oli cheerful grin
-    oli "oli happy1... oli happy1... oli happy1... oli happy1... oli happy1... oli happy1... oli happy1... oli happy1... oli happy1... oli happy1... oli happy1... "
+    oli "oli cheerful grin... oli cheerful grin... oli cheerful grin... oli cheerful grin... oli cheerful grin... oli cheerful grin... oli cheerful grin... "
 
     show oli cheerful grin close
-    oli "oli happy1 close... oli happy1 close... oli happy1 close... oli happy1 close... oli happy1 close... oli happy1 close... oli happy1 close... oli happy1 close... "
+    oli "oli cheerful grin close... oli cheerful grin close... oli cheerful grin close... oli cheerful grin close... oli cheerful grin close... oli cheerful grin close... "
 
     show oli smile noflower
-    oli "oli normal2... oli normal2... oli normal2... oli normal2... oli normal2... oli normal2... oli normal2... oli normal2... oli normal2... oli normal2... oli normal2... "
+    oli "oli smile noflower... oli smile noflower... oli smile noflower... oli smile noflower... oli smile noflower... oli smile noflower... oli smile noflower... "
 
     show oli smile noflower close
-    oli "oli normal2 close... oli normal2 close... oli normal2 close... oli normal2 close... oli normal2 close... oli normal2 close... oli normal2 close... oli normal2 close... "
+    oli "oli smile noflower close... oli smile noflower close... oli smile noflower close... oli smile noflower close... oli smile noflower close... "
 
     show oli serious noflower
-    oli "oli serious1... oli serious1... oli serious1... oli serious1... oli serious1... oli serious1... oli serious1... oli serious1... oli serious1... oli serious1... "
+    oli "oli serious noflower... oli serious noflower... oli serious noflower... oli serious noflower... oli serious noflower... oli serious noflower... "
 
     show oli serious noflower close
-    oli "oli serious1 close... oli serious1 close... oli serious1 close... oli serious1 close... oli serious1 close... oli serious1 close... oli serious1 close... oli serious1 close... "
+    oli "oli serious noflower close... oli serious noflower close... oli serious noflower close... oli serious noflower close... oli serious noflower close... "
 
     show oli smile
-    oli "oli normal2F... oli normal2F... oli normal2F... oli normal2F... oli normal2F... oli normal2F... oli normal2F... oli normal2F... oli normal2F... oli normal2F... "
+    oli "oli smile... oli smile... oli smile... oli smile... oli smile... oli smile... oli smile... oli smile... oli smile... oli smile... oli smile... oli smile... oli smile... "
 
     show oli smile close
-    oli "oli normal2F close... oli normal2F close... oli normal2F close... oli normal2F close... oli normal2F close... oli normal2F close... oli normal2F close... oli normal2F close... "
+    oli "oli smile close... oli smile close... oli smile close... oli smile close... oli smile close... oli smile close... oli smile close... oli smile close... "
 
     show oli serious
-    oli "oli serious1F... oli serious1F... oli serious1F... oli serious1F... oli serious1F... oli serious1F... oli serious1F... oli serious1F... oli serious1F... "
+    oli "oli serious... oli serious... oli serious... oli serious... oli serious... oli serious... oli serious... oli serious... oli serious... oli serious... oli serious... "
 
     show oli serious close
-    oli "oli serious1F close... oli serious1F close... oli serious1F close... oli serious1F close... oli serious1F close... oli serious1F close... oli serious1F close... "
+    oli "oli serious close... oli serious close... oli serious close... oli serious close... oli serious close... oli serious close... oli serious close... "
 
     hide oli
 
     show dai neutral
-    dai "dai normal1... dai normal1... dai normal1... dai normal1... dai normal1... dai normal1... dai normal1... dai normal1... dai normal1... dai normal1... dai normal1... "
+    dai "dai neutral... dai neutral... dai neutral... dai neutral... dai neutral... dai neutral... dai neutral... dai neutral... dai neutral... dai neutral... dai neutral... "
 
     show dai neutral close
-    dai "dai normal1 close... dai normal1 close... dai normal1 close... dai normal1 close... dai normal1 close... dai normal1 close... dai normal1 close... dai normal1 close... "
+    dai "dai neutral close... dai neutral close... dai neutral close... dai neutral close... dai neutral close... dai neutral close... dai neutral close... "
 
     show dai smile
-    dai "dai happy1... dai happy1... dai happy1... dai happy1... dai happy1... dai happy1... dai happy1... dai happy1... dai happy1... dai happy1... dai happy1... dai happy1... "
+    dai "dai smile... dai smile... dai smile... dai smile... dai smile... dai smile... dai smile... dai smile... dai smile... dai smile... dai smile... dai smile... dai smile... "
 
     show dai smile close
-    dai "dai happy1 close... dai happy1 close... dai happy1 close... dai happy1 close... dai happy1 close... dai happy1 close... dai happy1 close... dai happy1 close... "
+    dai "dai smile close... dai smile close... dai smile close... dai smile close... dai smile close... dai smile close... dai smile close... dai smile close... "
 
     show dai confident
-    dai "dai confident1... dai confident1... dai confident1... dai confident1... dai confident1... dai confident1... dai confident1... dai confident1... dai confident1... "
+    dai "dai confident... dai confident... dai confident... dai confident... dai confident... dai confident... dai confident... dai confident... dai confident... "
 
     show dai confident close
-    dai "dai confident1 close... dai confident1 close... dai confident1 close... dai confident1 close... dai confident1 close... dai confident1 close... dai confident1 close... "
+    dai "dai confident close... dai confident close... dai confident close... dai confident close... dai confident close... dai confident close... dai confident close... "
 
     show dai hopeful
-    dai "dai hopeful1... dai hopeful1... dai hopeful1... dai hopeful1... dai hopeful1... dai hopeful1... dai hopeful1... dai hopeful1... dai hopeful1... dai hopeful1... "
+    dai "dai hopeful... dai hopeful... dai hopeful... dai hopeful... dai hopeful... dai hopeful... dai hopeful... dai hopeful... dai hopeful... dai hopeful... dai hopeful... "
 
     show dai hopeful close
-    dai "dai hopeful1 close... dai hopeful1 close... dai hopeful1 close... dai hopeful1 close... dai hopeful1 close... dai hopeful1 close... dai hopeful1 close... "
+    dai "dai hopeful close... dai hopeful close... dai hopeful close... dai hopeful close... dai hopeful close... dai hopeful close... dai hopeful close... "
 
     show dai disappointed
-    dai "dai disappointed1... dai disappointed1... dai disappointed1... dai disappointed1... dai disappointed1... dai disappointed1... dai disappointed1... dai disappointed1... "
+    dai "dai disappointed... dai disappointed... dai disappointed... dai disappointed... dai disappointed... dai disappointed... dai disappointed... dai disappointed... "
 
     show dai disappointed close
-    dai "dai disappointed1 close... dai disappointed1 close... dai disappointed1 close... dai disappointed1 close... dai disappointed1 close... dai disappointed1 close... "
+    dai "dai disappointed close... dai disappointed close... dai disappointed close... dai disappointed close... dai disappointed close... dai disappointed close... "
 
     show dai disappointedside
-    dai "dai disappointedside1... dai disappointedside1... dai disappointedside1... dai disappointedside1... dai disappointedside1... dai disappointedside1... dai disappointedside1... "
+    dai "dai disappointedside... dai disappointedside... dai disappointedside... dai disappointedside... dai disappointedside... dai disappointedside... "
 
     show dai disappointedside close
-    dai "dai disappointedside1 close... dai disappointedside1 close... dai disappointedside1 close... dai disappointedside1 close... dai disappointedside1 close... dai disappointedside1 close... "
+    dai "dai disappointedside close... dai disappointedside close... dai disappointedside close... dai disappointedside close... dai disappointedside close... "
 
     show dai distant neutral
-    dai "dai normal2... dai normal2... dai normal2... dai normal2... dai normal2... dai normal2... dai normal2... dai normal2... dai normal2... dai normal2... dai normal2... "
+    dai "dai distant neutral... dai distant neutral... dai distant neutral... dai distant neutral... dai distant neutral... dai distant neutral... dai distant neutral... "
 
     show dai distant neutral close
-    dai "dai normal2 close... dai normal2 close... dai normal2 close... dai normal2 close... dai normal2 close... dai normal2 close... dai normal2 close... dai normal2 close... "
+    dai "dai distant neutral close... dai distant neutral close... dai distant neutral close... dai distant neutral close... dai distant neutral close... "
 
     show dai distant frown
-    dai "dai sad1... dai sad1... dai sad1... dai sad1... dai sad1... dai sad1... dai sad1... dai sad1... dai sad1... dai sad1... dai sad1... dai sad1... dai sad1... "
+    dai "dai distant frown... dai distant frown... dai distant frown... dai distant frown... dai distant frown... dai distant frown... dai distant frown... "
 
     show dai distant frown close
-    dai "dai sad1 close... dai sad1 close... dai sad1 close... dai sad1 close... dai sad1 close... dai sad1 close... dai sad1 close... dai sad1 close... dai sad1 close... "
+    dai "dai distant frown close... dai distant frown close... dai distant frown close... dai distant frown close... dai distant frown close... dai distant frown close... "
 
     hide dai
 
     show hop neutral
-    hop "hop normal1... hop normal1... hop normal1... hop normal1... hop normal1... hop normal1... hop normal1... hop normal1... hop normal1... hop normal1... hop normal1... "
+    hop "hop neutral... hop neutral... hop neutral... hop neutral... hop neutral... hop neutral... hop neutral... hop neutral... hop neutral... hop neutral... hop neutral... "
 
     show hop neutral close
-    hop "hop normal1 close... hop normal1 close... hop normal1 close... hop normal1 close... hop normal1 close... hop normal1 close... hop normal1 close... hop normal1 close... "
+    hop "hop neutral close... hop neutral close... hop neutral close... hop neutral close... hop neutral close... hop neutral close... hop neutral close... "
 
     show hop happy
-    hop "hop happy1... hop happy1... hop happy1... hop happy1... hop happy1... hop happy1... hop happy1... hop happy1... hop happy1... hop happy1... hop happy1... hop happy1... "
+    hop "hop happy... hop happy... hop happy... hop happy... hop happy... hop happy... hop happy... hop happy... hop happy... hop happy... hop happy... hop happy... hop happy... "
 
     show hop happy close
-    hop "hop happy1 close... hop happy1 close... hop happy1 close... hop happy1 close... hop happy1 close... hop happy1 close... hop happy1 close... hop happy1 close... "
+    hop "hop happy close... hop happy close... hop happy close... hop happy close... hop happy close... hop happy close... hop happy close... hop happy close... "
 
     show hop angry
-    hop "hop angry1... hop angry1... hop angry1... hop angry1... hop angry1... hop angry1... hop angry1... hop angry1... hop angry1... hop angry1... hop angry1... "
+    hop "hop angry... hop angry... hop angry... hop angry... hop angry... hop angry... hop angry... hop angry... hop angry... hop angry... hop angry... hop angry... hop angry... "
 
     show hop angry close
-    hop "hop angry1 close... hop angry1 close... hop angry1 close... hop angry1 close... hop angry1 close... hop angry1 close... hop angry1 close... hop angry1 close... "
+    hop "hop angry close... hop angry close... hop angry close... hop angry close... hop angry close... hop angry close... hop angry close... hop angry close... "
 
     show hop angry clench
-    hop "hop angry2... hop angry2... hop angry2... hop angry2... hop angry2... hop angry2... hop angry2... hop angry2... hop angry2... hop angry2... hop angry2... "
+    hop "hop angry clench... hop angry clench... hop angry clench... hop angry clench... hop angry clench... hop angry clench... hop angry clench... hop angry clench... "
 
     show hop angry clench close
-    hop "hop angry2 close... hop angry2 close... hop angry2 close... hop angry2 close... hop angry2 close... hop angry2 close... hop angry2 close... hop angry2 close... "
+    hop "hop angry clench close... hop angry clench close... hop angry clench close... hop angry clench close... hop angry clench close... hop angry clench close... "
 
     show hop hurt downtrodden
-    hop "hop normal2... hop normal2... hop normal2... hop normal2... hop normal2... hop normal2... hop normal2... hop normal2... hop normal2... hop normal2... hop normal2... "
+    hop "hop hurt downtrodden... hop hurt downtrodden... hop hurt downtrodden... hop hurt downtrodden... hop hurt downtrodden... hop hurt downtrodden... hop hurt downtrodden... "
 
     show hop hurt downtrodden close
-    hop "hop normal2 close... hop normal2 close... hop normal2 close... hop normal2 close... hop normal2 close... hop normal2 close... hop normal2 close... hop normal2 close... "
+    hop "hop hurt downtrodden close... hop hurt downtrodden close... hop hurt downtrodden close... hop hurt downtrodden close... hop hurt downtrodden close... "
 
     show hop hurt embarrassed
-    hop "hop embarrassed2... hop embarrassed2... hop embarrassed2... hop embarrassed2... hop embarrassed2... hop embarrassed2... hop embarrassed2... hop embarrassed2... "
+    hop "hop hurt embarrassed... hop hurt embarrassed... hop hurt embarrassed... hop hurt embarrassed... hop hurt embarrassed... hop hurt embarrassed... hop hurt embarrassed... "
 
     show hop hurt embarrassed close
-    hop "hop embarrassed2 close... hop embarrassed2 close... hop embarrassed2 close... hop embarrassed2 close... hop embarrassed2 close... hop embarrassed2 close... "
+    hop "hop hurt embarrassed close... hop hurt embarrassed close... hop hurt embarrassed close... hop hurt embarrassed close... hop hurt embarrassed close... "
 
     hide hop
     #jump flood_000
