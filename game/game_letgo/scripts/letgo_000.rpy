@@ -1,5 +1,125 @@
 ﻿###############################
 #
+# CHEAT SHEET
+#
+###############################
+
+### show eli ###
+
+# normal1
+# smile1
+# happy1
+# sad1
+# worried1
+# angry1
+# cool1
+# goofy1
+
+# normal2
+# smile2
+# sad2
+# worried2
+# angry2
+# cool2
+
+
+### show may ###
+
+# normal1
+# frown1
+# adore1
+# confused1
+# aww1
+# worried1
+# sad1
+# challenge1
+# cheeky1
+# angry1
+# shout1
+# sadshout1
+# forcedsmile1
+# suspicious1
+
+# normal2
+# happy2
+# worried2
+# nervous2
+# aww2
+# sheepish2
+# angry2
+# frustrated2
+# proud2
+# cheeky2
+
+# normal3
+# smile3
+# forcedsmile3
+# happy3
+# sigh3
+# sad3
+# tired3
+# angry3
+# proud3
+# frustrated3
+
+# normal4
+# smile4
+# forcedsmile4
+# sad4
+# angry4
+# frustrated4
+
+
+### scene background ###
+
+# city nearby sunset
+# city outlook night
+# downtown bridge night
+# downtown cafe inside
+# downtown cafe outside
+# downtown nice night
+# downtown night
+# downtown1
+# downtown2
+# lights1 night
+# lights2 night
+# mall escalator
+# mall1
+# mall2
+# park hill night
+# park lake
+# park lake path
+# park lake sunset
+# park podium
+# park road
+# park road night
+# park swing
+# park trees sunset
+# road long
+# road night
+# suburb house
+# suburb night
+# suburb1
+# suburb2
+# suburb3
+# town night
+# townsquare cafe inside
+# townsquare cafe outside
+# townsquare night
+# townsquare1
+# townsquare2
+
+### play music ###
+
+
+### play ambience ###
+
+
+### play sound ###
+
+
+###############################
+#
 # LET GO DEFINITIONS GO IN HERE
 #
 ###############################
@@ -13,6 +133,22 @@ define kid = Character("Some Kid")
 define mom = Character("Mom")
 
 image white = "#fff"
+
+init python:
+    import os
+    def define_images(imageFolder, excludeFirstXFolders=0, flip=True, prepend=[]):
+        for path in renpy.list_files():
+            if path.startswith(imageFolder + "/"):
+                path_list = path.split("/")
+                if ' ' in path_list[-1]:
+                    path_list = path_list[0:-1] + path_list[-1].split()
+                path_list[-1] = os.path.splitext(path_list[-1])[0]
+                path_list = tuple(prepend + path_list[excludeFirstXFolders:])
+                renpy.image(path_list, path)
+                if flip:
+                    renpy.image(path_list + ("flip", ), im.Flip(path, horizontal=True))
+    
+    define_images("game_letgo/bgs", 2, False, ["letgo"])
 
 ###############################
 #
@@ -147,8 +283,8 @@ image may worried2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes worried 
 image may nervous2 = MayPose2("may eyes worried2", "may mouth normal2")
 image may nervous2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes worried close.png", "may mouth normal2")
 
-image may conciliatory2 = MayPose2("may eyes worried2", "may mouth happy2")
-image may conciliatory2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes worried close.png", "may mouth happy2")
+image may aww2 = MayPose2("may eyes worried2", "may mouth happy2")
+image may aww2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes worried close.png", "may mouth happy2")
 
 image may sheepish2 = MayPose2("may eyes sheepish2", "may mouth happy2")
 image may sheepish2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes worried close 2.png", "may mouth happy2")
@@ -156,14 +292,14 @@ image may sheepish2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes worried
 image may angry2 = MayPose2("may eyes angry2", "may mouth displeased2")
 image may angry2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry close.png", "may mouth displeased2")
 
-image may exasperated2 = MayPose2("may eyes exasperated2", "may mouth displeased2")
-image may exasperated2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry close 2.png", "may mouth displeased2")
+image may frustrated2 = MayPose2("may eyes frustrated2", "may mouth displeased2")
+image may frustrated2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry close 2.png", "may mouth displeased2")
 
 image may proud2 = MayPose2("may eyes angry2", "may mouth happy2")
 image may proud2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry close.png", "may mouth happy2")
 
-image may mischievous2 = MayPose2("may eyes exasperated2", "may mouth happy2")
-image may mischievous2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry close 2.png", "may mouth happy2")
+image may cheeky2 = MayPose2("may eyes frustrated2", "may mouth happy2")
+image may cheeky2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry close 2.png", "may mouth happy2")
 
 ###############################
 #
@@ -313,7 +449,7 @@ image may eyes sheepish2 = blinkeyes("game_letgo/sprites/May/Pose 2/eyes worried
 
 image may eyes angry2 = blinkeyes("game_letgo/sprites/May/Pose 2/eyes angry open.png", "game_letgo/sprites/May/Pose 2/eyes angry close.png")
 
-image may eyes exasperated2 = blinkeyes("game_letgo/sprites/May/Pose 2/eyes angry open.png", "game_letgo/sprites/May/Pose 2/eyes angry close 2.png")
+image may eyes frustrated2 = blinkeyes("game_letgo/sprites/May/Pose 2/eyes angry open.png", "game_letgo/sprites/May/Pose 2/eyes angry close 2.png")
 
 image may mouth normal2 = FlapMouth("may", "game_letgo/sprites/May/Pose 2/mouth smile close.png", "game_letgo/sprites/May/Pose 2/mouth small open.png")
 
@@ -505,11 +641,11 @@ label letgo_expressions:
     show may nervous2 close
     may "may nervous2 close... may nervous2 close... may nervous2 close... may nervous2 close... may nervous2 close... may nervous2 close... may nervous2 close..."
 
-    show may conciliatory2
-    may "may conciliatory2... may conciliatory2... may conciliatory2... may conciliatory2... may conciliatory2... may conciliatory2... may conciliatory2..."
+    show may aww2
+    may "may aww2... may aww2... may aww2... may aww2... may aww2... may aww2... may aww2..."
 
-    show may conciliatory2 close
-    may "may conciliatory2 close... may conciliatory2 close... may conciliatory2 close... may conciliatory2 close... may conciliatory2 close... may conciliatory2 close..."
+    show may aww2 close
+    may "may aww2 close... may aww2 close... may aww2 close... may aww2 close... may aww2 close... may aww2 close..."
 
     show may sheepish2
     may "may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2..."
@@ -523,11 +659,11 @@ label letgo_expressions:
     show may angry2 close
     may "may angry2 close... may angry2 close... may angry2 close... may angry2 close... may angry2 close... may angry2 close... may angry2 close... may angry2 close..."
 
-    show may exasperated2
-    may "may exasperated2... may exasperated2... may exasperated2... may exasperated2... may exasperated2... may exasperated2... may exasperated2... may exasperated2..."
+    show may frustrated2
+    may "may frustrated2... may frustrated2... may frustrated2... may frustrated2... may frustrated2... may frustrated2... may frustrated2... may frustrated2..."
 
-    show may exasperated2 close
-    may "may exasperated2 close... may exasperated2 close... may exasperated2 close... may exasperated2 close... may exasperated2 close... may exasperated2 close..."
+    show may frustrated2 close
+    may "may frustrated2 close... may frustrated2 close... may frustrated2 close... may frustrated2 close... may frustrated2 close... may frustrated2 close..."
 
     show may proud2
     may "may proud2... may proud2... may proud2... may proud2... may proud2... may proud2... may proud2... may proud2..."
@@ -535,11 +671,11 @@ label letgo_expressions:
     show may proud2 close
     may "may proud2 close... may proud2 close... may proud2 close... may proud2 close... may proud2 close... may proud2 close..."
 
-    show may mischievous2
-    may "may mischievous2... may mischievous2... may mischievous2... may mischievous2... may mischievous2... may mischievous2... may mischievous2... may mischievous2..."
+    show may cheeky2
+    may "may cheeky2... may cheeky2... may cheeky2... may cheeky2... may cheeky2... may cheeky2... may cheeky2... may cheeky2..."
 
-    show may mischievous2 close
-    may "may mischievous2 close... may mischievous2 close... may mischievous2 close... may mischievous2 close... may mischievous2 close... may mischievous2 close..."
+    show may cheeky2 close
+    may "may cheeky2 close... may cheeky2 close... may cheeky2 close... may cheeky2 close... may cheeky2 close... may cheeky2 close..."
 
     show may normal3
     may "may normal3... may normal3... may normal3... may normal3... may normal3... may normal3... may normal3... may normal3... may normal3... may normal3... may normal3... "

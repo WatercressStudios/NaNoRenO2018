@@ -1,5 +1,5 @@
 label letgo_104:
-    scene parknight with dissolve
+    scene letgo park trees sunset with dissolve
 
     play ambience "game_letgo/ambience/Park Night.ogg" fadeout 2.0 fadein 2.0
 
