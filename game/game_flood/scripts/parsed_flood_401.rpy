@@ -57,21 +57,27 @@ label flood_401:
     "Silly Ophelia and your ridiculous daydreams."
 
     #tone - worried
+    voice "C-401-1.mp3" #Oliver (Matt Armstrong)
     old "Excuse me, miss?"
 
     "I whip back around to face the voice"
 
     #sprite Oliver 1 (serious)
 
+    voice "C-401-2.mp3" #Oliver (Matt Armstrong)
     old "Is everything all right? You look rather troubled."
 
+    voice "C-401-3.mp3" #Ophelia (Cospcaptor)
     oph "W-Who wouldn't be?! A strange man approaching a woman in the middle of the night?!"
 
+    voice "C-401-4.mp3" #Ophelia (Cospcaptor)
     oph "What's more, don't you think it's a little creepy how slow you were going? Anybody would get nervous being watched like that!"
 
     #sprite Oliver 2 (big smile)
+    voice "C-401-5.mp3" #Oliver (Matt Armstrong)
     old "Oh, in that case I'm probably not helping."
 
+    voice "C-401-6.mp3" #Oliver (Matt Armstrong)
     old "I'm sorry to have bothered you, young lady."
     #remove sprite
 

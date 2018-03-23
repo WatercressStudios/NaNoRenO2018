@@ -14,8 +14,8 @@ define ama = Character("Mama")
 define Dad = Character("Papa")
 define n = Character(None, kind=nvl)
 define cxx = Character("Caelum...?") #Caelum voice
-define gez = Character("Genevieve") #Not voiced
-define gex = Character("Genevieve") #Not voiced
+define gez = Character("Genevieve") #Mix voiced
+define gex = Character("Genevieve") #Mix voiced
 define nurse = Character("Nurse")
 
 
