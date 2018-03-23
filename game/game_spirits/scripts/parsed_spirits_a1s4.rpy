@@ -71,16 +71,20 @@ label spirits_a1s4:
 
     "God, it hurts!" 
 
+    voice "C-5-1.mp3" #Genevieve (Lasli Tran)
     gen "Please." 
 
     "{b}{i}It’s not there!{/i}{/b} No one is there!"
 
     "I don’t want to talk to it. Talking to {i}them{/i} never leads to anything good!"
 
+    voice "C-5-2.mp3" #Genevieve (Lasli Tran)
     gen "I know you can hear me." 
 
+    voice "C-5-3.mp3" #Genevieve (Lasli Tran)
     gen "You’re the only one who can." 
 
+    voice "C-5-4.mp3" #Genevieve (Lasli Tran)
     gen "Aren’t you curious?" 
 
     "God, it isn’t going to go away, is it?" 
@@ -93,6 +97,7 @@ label spirits_a1s4:
 
     #show alex pjs upset snarky/tense
 
+    voice "C-5-5.mp3" #Alex (Bonnie Mitchel)
     alx "Fine. You win… But can you let go?" 
 
     "The pressure stops, but this spirit… ghost… whatever it is, is still holding on."
@@ -146,6 +151,7 @@ label spirits_a1s4:
 
 label SpiritsHowded:
 
+    voice "C-5-6.mp3" #Alex (Bonnie Mitchel)
     alx "How did you die?" 
 
     #play sound gen scream 
@@ -169,8 +175,10 @@ label SpiritsUrname:
 
     #$ CorrectQuestions += 1
 
+    voice "C-5-7.mp3" #Alex (Bonnie Mitchel)
     alx "What is your name?" 
 
+    voice "C-5-8.mp3" #Genevieve (Lasli Tran)
     gen "Genevieve. Genevieve {i}Bourlon{/i}."
 
     "She spits the surname at me - but the hold on my hand softens like some sick sort of reward."
@@ -184,6 +192,7 @@ label SpiritsUrname:
     
 label SpiritsGTFO:
 
+    voice "C-5-9.mp3" #Alex (Bonnie Mitchel)
     alx "Why don’t you just cross over?" 
 
     "The spirits who come to me are stuck on Earth, held back by their lingering attachments to this material world."
@@ -209,12 +218,15 @@ label SpiritsWutUp:
 
     #$ CorrectQuestions += 1
 
+    voice "C-5-10.mp3" #Alex (Bonnie Mitchel)
     alx "How can I help you?" 
 
+    voice "C-5-11.mp3" #Genevieve (Lasli Tran)
     gen "Do what I ask." 
 
     "What does that mean? I’m trying, but I don’t know what she wants." 
 
+    voice "C-5-12.mp3" #Genevieve (Lasli Tran)
     gen "We don’t have much time." 
 
     #if GenevieveQuestions < 2:
@@ -224,16 +236,20 @@ label SpiritsWutUp:
 
 label SpiritsOnlyU:
 
+    voice "C-5-13.mp3" #Alex (Bonnie Mitchel)
     alx "Are you alone in this house?"
 
     "Her hand suddenly clutches my own with an anxious, aggravated pressure - but just as I’m about to yelp in pain, her grip completely slackens."
 
     "Maybe she’s had a sudden change of heart?"
 
+    voice "C-5-14.mp3" #Genevieve (Lasli Tran)
     gen "...No." 
 
+    voice "C-5-15.mp3" #Genevieve (Lasli Tran)
     gen "But you’re here to help {i}me{/i}."
 
+    voice "C-5-16.mp3" #Genevieve (Lasli Tran)
     gen "That’s all."
 
     "What’s that supposed to mean?"
@@ -249,12 +265,15 @@ label NoMoreQuestions:
     #else:
     #$ FirstTrueEndFlag = False
 
+    voice "C-5-17.mp3" #Genevieve (Lasli Tran)
     gen "I was killed, here, in my room."
 
     "Someone was murdered in the dormitory? This is supposed to be a {i}school{/i}, isn’t it?"
 
+    voice "C-5-18.mp3" #Genevieve (Lasli Tran)
     gen "I need you to help me get justice." 
 
+    voice "C-5-19.mp3" #Genevieve (Lasli Tran)
     gen "Please." 
 
     "What do I say? I’ve learned that helping them never leads to anything good - but not helping usually leads to something worse."

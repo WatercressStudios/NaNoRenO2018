@@ -9,14 +9,13 @@ define cae = Character("Caelum")
 define hmom = Character("Jianmei")
 define gen = Character("Genevieve")
 define wra = Character("Wraith")
-define Naniji = Character("Naniji")
-define caex = Character("Hallway Boy") #Caelum
+define caex = Character("Hallway Boy") #Caelum voice
 define ama = Character("Mama")
 define Dad = Character("Papa")
 define n = Character(None, kind=nvl)
-define cxx = Character("Caelum?") #Caelum
-define gez = Character("Genevieve")
-define gex = Character("Genevieve")
+define cxx = Character("Caelum...?") #Caelum voice
+define gez = Character("Genevieve") #Mix voiced
+define gex = Character("Genevieve") #Mix voiced
 define nurse = Character("Nurse")
 
 
