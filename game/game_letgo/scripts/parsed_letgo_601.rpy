@@ -87,11 +87,13 @@
 
     "I guess she's the messenger this time."
 
+    voice "C-601-1.mp3" #Mom (N/A)
     mom "Maya…"
 
-    #voice "C-601-1.mp3" #Maya (shiena)
+    voice "C-601-2.mp3" #Maya (shiena)
     may "Yes, Mom?"
 
+    voice "C-601-3.mp3" #Mom (N/A)
     mom "I have some…"
 
     "She looks away, her eyes red from tears."
@@ -100,15 +102,17 @@
 
     "She doesn't quite understand that I already know what she's going to tell me."
 
-    #voice "C-601-2.mp3" #Maya (shiena)
+    voice "C-601-4.mp3" #Maya (shiena)
     may "It's okay Mom, you can tell me."
 
+    voice "C-601-5.mp3" #Mom (N/A)
     mom "Eli… he passed away last night."
 
     "Dammit Maya, you've heard this a thousand times before - no, you've {i}seen{/i} this a thousand times before."
 
     "Why are you crying now?"
 
+    voice "C-601-6.mp3" #Mom (N/A)
     mom "I'm so sorry, I know you loved him very much."
 
     "She reaches in close for a hug, and I do nothing to stop her."
@@ -121,23 +125,24 @@
 
     "I hate that."
 
-    #voice "C-601-3.mp3" #Maya (shiena)
+    voice "C-601-7.mp3" #Maya (shiena)
     may "Did he suffer?"
 
+    voice "C-601-8.mp3" #Mom (N/A)
     mom "No. He died in his sleep - without any pain. That's all we know so far, but…"
 
-    #voice "C-601-4.mp3" #Maya (shiena)
+    voice "C-601-9.mp3" #Maya (shiena)
     may "That's enough. Just knowing he went peacefully, happy… That's all that matters."
 
-    #voice "C-601-5.mp3" #Maya (shiena)
+    voice "C-601-10.mp3" #Maya (shiena)
     may "We had a good day yesterday. He confessed to me, and we spent our entire day together."
 
     "Now it’s her turn to burst into tears - that strange, motherly empathy kicking in. She feels my pain in a way very few can."
 
-    #voice "C-601-6.mp3" #Maya (shiena)
+    voice "C-601-11.mp3" #Maya (shiena)
     may "The last thing he remembered - the last day he experienced - was a very, very happy one."
 
-    #voice "C-601-7.mp3" #Maya (shiena)
+    voice "C-601-12.mp3" #Maya (shiena)
     may "If nothing else, we can have solace in that."
 
     "My words seem cold, uncaring, unkind - but I mean them. I'm… broken, but I still have a heart."

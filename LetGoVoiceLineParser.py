@@ -19,7 +19,7 @@ lineCount = 1
 with open(inputFilePath, 'r', encoding="utf8") as infile, open(outputFilePath, 'w', encoding="utf8") as outfile:
     for line in infile:
         trimmedLine = line.replace(" ", "")
-		#Let Go
+	#Let Go
         if 'ow' in trimmedLine[:2]:
             leadingWhitespace = line.split('ow')[0]
             outfile.write(leadingWhitespace + 'voice "' + routeTag + '-' + sceneNumber + '-' + str(lineCount) + '.mp3" #Old Woman (Ashe Thurman)\n')
@@ -40,7 +40,7 @@ with open(inputFilePath, 'r', encoding="utf8") as infile, open(outputFilePath, '
             outfile.write(leadingWhitespace + 'voice "' + routeTag + '-' + sceneNumber + '-' + str(lineCount) + '.mp3" #Elijah (Michael Potok)\n')
             outfile.write(line)
             lineCount += 1
-		elif 'mom' in trimmedLine[:3]:
+        elif 'mom' in trimmedLine[:3]:
             leadingWhitespace = line.split('mom')[0]
             outfile.write(leadingWhitespace + 'voice "' + routeTag + '-' + sceneNumber + '-' + str(lineCount) + '.mp3" #Mom (N/A)\n')
             outfile.write(line)
