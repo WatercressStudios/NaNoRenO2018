@@ -5,6 +5,7 @@ label flood_501:
     "It's hard to keep my eyes open. It's a struggle just to stay awake."
     "I'm fine, I think, I just... need another dose of caffeine. Energy."
     "Maybe if I rest my eyes a little bit..."
+    voice "C-501-1.mp3" #Ophelia (Cospcaptor)
     oph "...Nn..."
     "No, {i}no{/i}, have to stay awake. Otherwise, the Flood is gonna..."
     "Just focus. One step in front of the other. Left, right, left, right."
@@ -19,6 +20,7 @@ label flood_501:
     "The tough concrete looks so inviting. I could just collapse, curl into a ball like a cat, and pass out right here."
     "But the idea of the Flood lingers in the back of my mind. And it's weighing my head down more and more."
     "...Those hated sensations play out across my fatigue mind, like phantom pains needling me further."
+    voice "C-501-2.mp3" #Ophelia (Cospcaptor)
     oph "!?"
     "My foot catches a divot and my body, without a response, begins to careen to the road beneath me."
     "In that moment, I realize the Flood will have finally won."
@@ -26,9 +28,13 @@ label flood_501:
     #scene black 
     #sfx thud
     "{b}THUD!{/b}"
+    voice "C-501-3.mp3" #Ophelia (Cospcaptor)
     oph "Ah!?"
+    voice "C-501-4.mp3" #Ophelia (Cospcaptor)
     oph "...Ow..."
+    voice "C-501-5.mp3" #Waitress (Allison Seils)
     wai "Hey, keep it down!"
+    voice "C-501-6.mp3" #Ophelia (Cospcaptor)
     oph "Huh?"
 
     #scene cafe with dissolve
@@ -59,6 +65,7 @@ label flood_501:
 
     #label outro:
 
+    voice "C-501-7.mp3" #Ophelia (Cospcaptor)
     oph "C'mon, pull it together..."
     #sfx slap
     "I slap my cheeks to try and jolt me awake. The effect is sharp, but fleeting, and I soon feel fatigued once more." 
@@ -73,6 +80,7 @@ label flood_501:
     "Ironically, they keep me pulled into the real world."
     "The houses along the sides of the street become more and more familiar." 
     "Familiar, identically-constructed houses. I was only looking for one, though."
+    voice "C-501-8.mp3" #Ophelia (Cospcaptor)
     oph "Home."
     "Spotting the familiar, two-storey house, my pace quickened a bit, stumbling further along the sidewalk, up the driveway."
     #sfx key jingle
@@ -110,6 +118,7 @@ label flood_501:
     "There's... too much I could do, I guess. Where would I even start?"
     "I feel like I should've figured things out ages ago, but I got... fixated on stuff that, well, didn't matter at all."
     "What was I doing outside all night? Was there a point? Did I just... need to escape?"
+    voice "C-501-9.mp3" #Ophelia (Cospcaptor)
     oph "..."
     "I guess I can figure it out later. It might be easier to; sleep might even come a bit easier now."
     "I met some weird people last night, too."
