@@ -109,13 +109,57 @@
 # townsquare1
 # townsquare2
 
+
 ### play music ###
+
+# play music bgmloop3comedy_intro noloop fadeout 1.0
+# queue music bgmloop3comedy_loop loop
+# play music bgmloop4reveal fadeout 1.0
+# play music bgmloop5kite fadeout 1.0
+# play music bgmloop5bye_intro noloop fadeout 1.0
+# queue music bgmloop5bye_loop loop
 
 
 ### play ambience ###
 
+# play ambience "game_letgo/ambience/Bus Drive.ogg" fadeout 2.0 fadein 2.0
+# play ambience "game_letgo/ambience/Cafe.ogg" fadeout 2.0 fadein 2.0
+# play ambience "game_letgo/ambience/Downtown Day.ogg" fadeout 2.0 fadein 2.0
+# play ambience "game_letgo/ambience/Downtown Night.ogg" fadeout 2.0 fadein 2.0
+# play ambience "game_letgo/ambience/Mall.ogg" fadeout 2.0 fadein 2.0
+# play ambience "game_letgo/ambience/Near Downtown Bridge Night.ogg" fadeout 2.0 fadein 2.0
+# play ambience "game_letgo/ambience/Outlook Night.ogg" fadeout 2.0 fadein 2.0
+# play ambience "game_letgo/ambience/Park Day.ogg" fadeout 2.0 fadein 2.0
+# play ambience "game_letgo/ambience/Park Night.ogg" fadeout 2.0 fadein 2.0
+# play ambience "game_letgo/ambience/Roads Night.ogg" fadeout 2.0 fadein 2.0
+# play ambience "game_letgo/ambience/Suburban Houses.ogg" fadeout 2.0 fadein 2.0
+# play ambience "game_letgo/ambience/Town Center Plaza.ogg" fadeout 2.0 fadein 2.0
+# play ambience "game_letgo/ambience/Town Center Plaza Night.ogg" fadeout 2.0 fadein 2.0
+
 
 ### play sound ###
+
+# play sound "game_letgo/sfx/Car Screeching.ogg"
+# play sound "game_letgo/sfx/Climbing up Stairs.ogg"
+# play sound "game_letgo/sfx/Clocktower 3PM.ogg"
+# play sound "game_letgo/sfx/Clothes Shuffle.ogg"
+# play sound "game_letgo/sfx/Crush.ogg"
+# play sound "game_letgo/sfx/Disturbing Bass.ogg"
+# play sound "game_letgo/sfx/Ice Slip.ogg"
+# play sound "game_letgo/sfx/Kettle Rustle.ogg"
+# play sound "game_letgo/sfx/Key fumble,open door.ogg"
+# play sound "game_letgo/sfx/Manhole Thud.ogg"
+# play sound "game_letgo/sfx/May Eli Run.ogg"
+# play sound "game_letgo/sfx/Piano Crash.ogg"
+# play sound "game_letgo/sfx/Pouring Two Cups of Tea.ogg"
+# play sound "game_letgo/sfx/Punch,Shove Serious.ogg"
+# play sound "game_letgo/sfx/Punch,Shove.ogg"
+# play sound "game_letgo/sfx/Rope Snap.ogg"
+# play sound "game_letgo/sfx/Sirens.ogg"
+# play sound "game_letgo/sfx/Snow Footsteps.ogg"
+# play sound "game_letgo/sfx/Snowball.ogg"
+# play sound "game_letgo/sfx/Tumbling Down.ogg"
+# play sound "game_letgo/sfx/Wind Gust.ogg"
 
 
 ###############################
@@ -133,6 +177,14 @@ define kid = Character("Some Kid")
 define mom = Character("Mom")
 
 image white = "#fff"
+
+define bgmloop3comedy_intro = "game_letgo/music/A Macabre Comedy Intro.ogg"
+define bgmloop3comedy_loop = "game_letgo/music/A Macabre Comedy Loop.ogg"
+define bgmloop4reveal = "game_letgo/music/The Truth.ogg"
+define bgmloop5kite = "game_letgo/music/Soaring.ogg"
+define bgmloop5bye_intro = "game_letgo/music/This is Goodbye Intro.ogg"
+define bgmloop5bye_loop = "game_letgo/music/This is Goodbye Loop.ogg"
+
 
 init python:
     define_images("game_letgo/bgs", 2, False, ["letgo"])
