@@ -172,7 +172,7 @@ image may mischievous2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes angr
 ###############################
 
 init python:
-    MayPose2 = BaseCSprite("may", "game_letgo/sprites/May/Pose 3/base.png", (507, 930))
+    MayPose3 = BaseCSprite("may", "game_letgo/sprites/May/Pose 3/base.png", (507, 930))
 
 
 ###############################
