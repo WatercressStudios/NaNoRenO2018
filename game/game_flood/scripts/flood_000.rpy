@@ -191,7 +191,7 @@ image oph eyes defensive1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes de
 
 image oph mouth normal1 = FlapMouth("oph", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png")
 
-image oph mouth scared1 = FlapMouth("oph", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png", "game_flood/sprites/Ophelia/Pose 1/mouth scared open.png")
+image oph mouth scared1 = FlapMouth("oph", "game_flood/sprites/Ophelia/Pose 1/mouth scared open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
 
 image oph mouth weirded1 = FlapMouth("oph", "game_flood/sprites/Ophelia/Pose 1/mouth weirded close.png", "game_flood/sprites/Ophelia/Pose 1/mouth weirded open.png")
 
