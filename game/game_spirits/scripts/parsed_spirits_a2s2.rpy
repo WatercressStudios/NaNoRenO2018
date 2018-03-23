@@ -35,10 +35,12 @@ label spirits_a2s2:
 
     "Oh, I… actually have one. It’s school stuff, of course - but I suppose it’s better than nothing."
 
+    voice "C-10-1.mp3" #Alex (Bonnie Mitchel)
     alx "Inspections?"
 
     "Well, okay? I didn’t really expect them this early, but I guess they were going to happen regardless."
 
+    voice "C-10-2.mp3" #Alex (Bonnie Mitchel)
     alx "Oh well."
 
     "I close my laptop and look at the rest of the room. Honestly, I just want to nestle against the mattress; there’s no harm in checking everything else, though."
@@ -47,6 +49,7 @@ label spirits_a2s2:
 
     "I stand up, take a few steps, and look around."
 
+    voice "C-10-3.mp3" #Alex (Bonnie Mitchel)
     alx "What the--"
 
     "The gun is back in the box."
@@ -63,12 +66,14 @@ label spirits_a2s2:
 
     "But it’s fine. I just need to breathe, remove the gun again, put it somewhere else, and--"
 
+    voice "C-10-4.mp3" #Genevieve (Lasli Tran)
     gen "It'll keep coming back."
 
     "My body jolts and jumps. Immediately, a bitingly cold and bitterly uncomfortable feeling washes over me."
 
     "I look around, trying to find the voice; I can almost remember the face I’d seen it talk with bef--"
 
+    voice "C-10-5.mp3" #Genevieve (Lasli Tran)
     gen "I'll keep putting it there."
 
     "She’s there in front of me. Blonde ringlets, blue eyes, a nightgown… and of course, an ethereal silver tinge."
@@ -79,26 +84,33 @@ label spirits_a2s2:
 
     "Why is she here? And more importantly: why did she do this?"
 
+    voice "C-10-6.mp3" #Genevieve (Lasli Tran)
     gen "Until you find my killer, I'll keep putting it back."
 
     "I remember what she said, back… then, when we had spoken for the first time."
 
     "She was murdered, and wanted me to help her get justice - but…"
 
+    voice "C-10-7.mp3" #Alex (Bonnie Mitchel)
     alx "How?"
 
     "The spirit doesn't respond. She just looks at me, a confused expression on her face."
 
     "It’s as if she doesn't understand what I said. I get it... I guess I can explain."
 
+    voice "C-10-8.mp3" #Alex (Bonnie Mitchel)
     alx "How do I help? How do I find your killer?"
 
+    voice "C-10-9.mp3" #Genevieve (Lasli Tran)
     gen "..."
 
+    voice "C-10-10.mp3" #Genevieve (Lasli Tran)
     gen "Look under the last step."
 
+    voice "C-10-11.mp3" #Alex (Bonnie Mitchel)
     alx "...What?"
 
+    voice "C-10-12.mp3" #Alex (Bonnie Mitchel)
     alx "What do you mean? How do I--"
 
     "I’m not graced with a response. Before I can finish - or ask any further questions - she vanishes; it’s as if she wasn’t there in the first place."

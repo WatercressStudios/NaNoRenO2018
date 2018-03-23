@@ -23,34 +23,46 @@ label spirits_a2s1:
 
     "I breathe in one more time and twist my doorknob..."
 
+    voice "C-9-1.mp3" #Caelum (Daniel Acosta)
     cae "OH MY GOD, ALEX."
 
     "Caelum rushes into my room and doesn’t even give me a chance to speak. He almost knocks me over - and just as I’m about to yell at him; I notice his expression…"
 
+    voice "C-9-2.mp3" #Caelum (Daniel Acosta)
     cae "When I left your room last night, I was walking in the hallway. There’s was no one around."
 
+    voice "C-9-3.mp3" #Caelum (Daniel Acosta)
     cae "But I felt this cold breeze and there were chills going down my spine."
 
+    voice "C-9-4.mp3" #Caelum (Daniel Acosta)
     cae "I saw it:  a monster, a huge smoke cloud."
 
+    voice "C-9-5.mp3" #Caelum (Daniel Acosta)
     cae "It was coming after me. It knows me, and it wants me under its grip."
 
+    voice "C-9-6.mp3" #Caelum (Daniel Acosta)
     cae "I held out my crucifix, since I didn’t know what else to do, and when I turned around, it was {i}charging{/i} toward me--"
 
+    voice "C-9-7.mp3" #Caelum (Daniel Acosta)
     cae "And it was holding up something…. sharp? Almost like a spade, I think?"
 
+    voice "C-9-8.mp3" #Caelum (Daniel Acosta)
     cae "And I didn't even think. I just hurled my crucifix at it and ran."
 
     "Caelum is wearing a mixture of confusion and fear; he’s second-guessing everything he has just seen - but I believe him. After what I’ve experienced, I almost have to."
 
+    voice "C-9-9.mp3" #Caelum (Daniel Acosta)
     cae "N - no biggie, I mean, that crucifix was just a gift from my dad anyway, so I was going to pawn it off first chance I got…"
 
     "I lead him to my bed, give him pillows, and an animal plush… but nothing’s working."
 
+    voice "C-9-10.mp3" #Caelum (Daniel Acosta)
     cae "Alex, I don’t completely know what you’re going through and I don’t think anyone else will believe it - but I want you to know that I do."
 
+    voice "C-9-11.mp3" #Caelum (Daniel Acosta)
     cae "I don’t know what’s going to happen after this."
 
+    voice "C-9-12.mp3" #Caelum (Daniel Acosta)
     cae "Can I just stay here for awhile?"
 
     "I want to say that he shouldn’t be here, but I let him stay anyway."
@@ -78,8 +90,10 @@ label spirits_a2s1:
 
     "...And Mom, and Dad too."
 
+    voice "C-9-13.mp3" #Papa (N/A)
     Dad "Oooooh, it’s the curse of \"constantly forgetting to lock your door!\""
 
+    voice "C-9-14.mp3" #Papa (N/A)
     Dad "{i}Ooooooooh!{/i}"
 
     "...Fuck."

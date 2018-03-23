@@ -47,6 +47,7 @@ label spirits_a2s3:
 
             #$ HasDiary = True
 
+            voice "C-11-1.mp3" #Alex (Bonnie Mitchel)
             alx "Ugh, fine. At least if I do this, she can't say I didn't."
 
             "I place my food atop an old table and lean down to fiddle with the bottom step."
@@ -69,6 +70,7 @@ label spirits_a2s3:
 
             "But let’s be real, it’s a diary. It’s {i}always{/i} a diary."
 
+            voice "C-11-2.mp3" #Alex (Bonnie Mitchel)
             alx "And I guess now I have to read it…"
 
             "Setting the board back into place, I shove the book into my pocket, grab my food, and head back upstairs."
@@ -91,6 +93,7 @@ label spirits_a2s3:
 
     "I walk up and give a light - but hesitant - knock."
 
+    voice "C-11-3.mp3" #Alex (Bonnie Mitchel)
     alx "Caelum? Are you there?"
 
     "No answer…"
@@ -200,6 +203,7 @@ label spirits_a2s3:
 
     "By the time I’ve finished licking my fingers, I still have about thirty minutes left before class."
 
+    voice "C-11-4.mp3" #Alex (Bonnie Mitchel)
     alx "I should probably call Naniji, since I haven’t really spoken to her in a few days…"
 
     "It’ll be nice to hear her voice. I miss her already."
@@ -208,12 +212,16 @@ label spirits_a2s3:
 
     "It’s so reassuring to hear her voice after everything I’ve been through these last couple days. I almost wish I was back with her."
 
+    voice "C-11-5.mp3" #Alex (Bonnie Mitchel)
     alx "...Yes, um, my classes are a lot of fun, actually. We’re keeping bees…"
 
+    voice "C-11-6.mp3" #Alex (Bonnie Mitchel)
     alx "Well, I guess I’ve made one friend. His name’s Caelum…"
 
+    voice "C-11-7.mp3" #Alex (Bonnie Mitchel)
     alx "No, Naniji, it’s not anything like that…"
 
+    voice "C-11-8.mp3" #Alex (Bonnie Mitchel)
     alx "Uh, Catholic, maybe? Oh my god, why are you even asking?"
     
     #if CaelumLives = True

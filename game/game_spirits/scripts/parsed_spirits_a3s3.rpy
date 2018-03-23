@@ -43,24 +43,30 @@ label spirits_a3s3:
 
     "My face seems alarmed at the contact, though, as though she wasn’t expecting it."
 
+    voice "C-18-1.mp3" #Genevieve (Lasli Tran and Other)
     gex "Oh, there you are."
 
+    voice "C-18-2.mp3" #Genevieve (Lasli Tran and Other)
     gex "God, that’s disorienting."
 
     "She meets my eyes now, and I’m so, so confused; is this a mirror or not? What's happening?"
 
     "Why is this--"
 
+    voice "C-18-3.mp3" #Genevieve (Lasli Tran and Other)
     gex "Thank you."
 
     "What?"
 
     "Why-- {i}how{/i} am I speaking?"
 
+    voice "C-18-4.mp3" #Genevieve (Lasli Tran and Other)
     gex "Oh… You’re not angry?"
 
+    voice "C-18-5.mp3" #Genevieve (Lasli Tran and Other)
     gex "Ah, I see what’s going on. Unfortunate."
 
+    voice "C-18-6.mp3" #Genevieve (Lasli Tran and Other)
     gex "Alexandra, look down at yourself."
 
     "As I-- as {i}it{/i} says that, I can feel a bitter realization crashing down on me. I’d never even stopped to consider my body, but..."
@@ -83,18 +89,23 @@ label spirits_a3s3:
 
     "I don't get this at all."
 
+    voice "C-18-7.mp3" #Genevieve (Lasli Tran and Other)
     gex "So you're figuring it out."
 
+    voice "C-18-8.mp3" #Alex (Bonnie Mitchel)
     alx "I'm not, I can't--"
 
+    voice "C-18-9.mp3" #Genevieve (Lasli Tran and Other)
     gex "...?"
 
     "She - {i}it{/i} - looks at me, confused. There's nothing I can respond with. No way to…"
 
     "..."
 
+    voice "C-18-10.mp3" #Genevieve (Lasli Tran and Other)
     gex "You don't remember?"
 
+    voice "C-18-11.mp3" #Alex (Bonnie Mitchel)
     alx "No, I don't, I…"
 
     "Why aren't the memories coming back to me?"
@@ -107,22 +118,28 @@ label spirits_a3s3:
 
     "I look to the other me, hoping it'll give me an answer."
 
+    voice "C-18-12.mp3" #Genevieve (Lasli Tran and Other)
     gex "So this is what the decay looks like on the outside…? This is what happened to me?"
 
+    voice "C-18-13.mp3" #Alex (Bonnie Mitchel)
     alx "Decay?"
 
     "Silence - cold, uncomfortable silence - fills the room in the following seconds. Alex - the other me, the Not-Me - makes full eye contact."
 
+    voice "C-18-14.mp3" #Genevieve (Lasli Tran and Other)
     gex "Suppose I'll have to fill in the blanks for you. Maybe it’ll ease the pain, to understand."
 
+    voice "C-18-15.mp3" #Genevieve (Lasli Tran and Other)
     gex "This was your body. Now it's mine."
 
     "I feel as if a pit in my stomach should have opened up, but my body doesn't even feel numb. I don't feel the crawling dread I should be, either."
 
     "My body - or what's left of it - only feels nothing."
 
+    voice "C-18-16.mp3" #Genevieve (Lasli Tran and Other)
     gex "Now that you're like I was, you're starting to fade."
 
+    voice "C-18-17.mp3" #Genevieve (Lasli Tran and Other)
     gex "Before long, you’ll become like me. Like I was."
 
     "Like her?"
@@ -135,6 +152,7 @@ label spirits_a3s3:
 
     "I can't remember."
 
+    voice "C-18-18.mp3" #Genevieve (Lasli Tran and Other)
     gex "Your memories will go first. Your… {i}self{/i} will go next. You will erode. Your ego is dying."
 
     "Become... just like her?"
@@ -145,14 +163,17 @@ label spirits_a3s3:
 
     "I don't know."
 
+    voice "C-18-19.mp3" #Alex (Bonnie Mitchel)
     alx "You did this…?"
 
+    voice "C-18-20.mp3" #Genevieve (Lasli Tran and Other)
     gex "I did."
 
     "I feel as if my body should be freezing up. I feel as if there should be something crawling up my arms, or my stomach."
 
     "I don't."
 
+    voice "C-18-21.mp3" #Alex (Bonnie Mitchel)
     alx "Why?"
 
     "I - the {i}thing{/i}, the Not-Me - stands there, unresponsive."
@@ -161,34 +182,43 @@ label spirits_a3s3:
 
     "I grip her shimmering hand; it’s solid in a way nothing else is. I bury my nails deep inside the warm flesh and angry black tendrils suddenly dance across the luminous skin."
 
+    voice "C-18-22.mp3" #Genevieve (Lasli Tran and Other)
     gex "Unngh…! Augh! Damn this body!"
 
     "Though it’s so hard to feel anything, I relish in the sight of her anguished expression. It feels… cathartic somehow, though I can’t even imagine why.."
 
     "But then her grimace twists into a mordant smirk."
 
+    voice "C-18-23.mp3" #Genevieve (Lasli Tran and Other)
     gex "I’m a fool for not anticipating that."
 
+    voice "C-18-24.mp3" #Genevieve (Lasli Tran and Other)
     gex "Well, enjoy your little victory while there’s still some to go around, I guess."
 
     "She laughs - though it’s a hollow, bitter sound."
 
     "Even though I can't feel the anger at first - even though I could barely even tell it was there - it eventually comes through."
 
+    voice "C-18-25.mp3" #Alex (Bonnie Mitchel)
     alx "…Fuck you."
 
     "She looks at me, with a… stern? Furious? I don’t know what it is, but there’s a {i}look{/i} in her eye. She sneers at me as she speaks, my own face making strange, unfamiliar expressions."
 
+    voice "C-18-26.mp3" #Genevieve (Lasli Tran and Other)
     gex "You only have yourself to blame for this, you know. All I wanted was to cross over, but you ignored me."
 
+    voice "C-18-27.mp3" #Genevieve (Lasli Tran and Other)
     gex "But, well, there’s more than one way to take care of unfinished business. If I’ll never have justice, a new life will do just fine."
 
     "She shrugs, the expression on her face becoming more smug."
 
+    voice "C-18-28.mp3" #Genevieve (Lasli Tran and Other)
     gex "What’s so wrong with that?"
 
+    voice "C-18-29.mp3" #Alex (Bonnie Mitchel)
     alx "So what, you're just going to run away with my body? Act as if there's no problem with that?"
 
+    voice "C-18-30.mp3" #Genevieve (Lasli Tran and Other)
     gex "Yes, I will. Just watch me."
 
     "As if to punctuate that sentiment, Genevieve snatches her spectral hand back and curtly turns away, stomping laboriously to the door."
@@ -201,24 +231,32 @@ label spirits_a3s3:
 
     "How…?"
 
+    voice "C-18-31.mp3" #Alex (Bonnie Mitchel)
     alx "Wait! Where are you going?!"
 
+    voice "C-18-32.mp3" #Genevieve (Lasli Tran and Other)
     gex "Anywhere but here. I’ve spent enough time in this prison of a house.."
 
+    voice "C-18-33.mp3" #Alex (Bonnie Mitchel)
     alx "No! You can’t! You can’t!"
 
     "She sighs, turning around."
 
+    voice "C-18-34.mp3" #Genevieve (Lasli Tran and Other)
     gex "For what it’s worth, I’m sorry our paths had to cross. I’ve spent enough time in this body to have a better understanding of who you are - who you were."
 
+    voice "C-18-35.mp3" #Genevieve (Lasli Tran and Other)
     gex "I don’t forgive you for ignoring me, but I think I understand why you did. And now… now I can’t ever forget."
 
     "She looks genuinely remorseful as she says those words with my stolen voice, and I see her bring her hand to her temple. Finally, she sighs."
 
+    voice "C-18-36.mp3" #Genevieve (Lasli Tran and Other)
     gex "Someday, I’m going to see this house burned to the ground. If you’re still here, maybe that will free you."
 
+    voice "C-18-37.mp3" #Genevieve (Lasli Tran and Other)
     gex "But if your soul should linger even then… I’ll pray for peace, for both of us."
 
+    voice "C-18-38.mp3" #Genevieve (Lasli Tran and Other)
     gex "Goodbye, Alexandra. And good luck."
 
     "She steps out of the room, and the door slams shut."

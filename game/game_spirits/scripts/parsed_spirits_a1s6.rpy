@@ -64,34 +64,43 @@ label spirits_a1s6:
 
     "Maybe I should make up for that? Or maybe it’s better to just let it slide."
 
+    voice "C-7-1.mp3" #Caelum (Daniel Acosta)
     cae "Figured you might want some of these."
 
     "Well, at least we have something to talk about so we aren’t sitting in total silence."
 
+    voice "C-7-2.mp3" #Alex (Bonnie Mitchel)
     alx "Where did you get these?"
 
+    voice "C-7-3.mp3" #Caelum (Daniel Acosta)
     cae "Jianmei. You missed out on dessert last night when you left."
 
     "He briefly pauses as he moves to sit next to me."
 
+    voice "C-7-4.mp3" #Caelum (Daniel Acosta)
     cae "Honestly, I could’ve just taken them for myself - but… these cookies are {i}sort of{/i} the best, so I figured you’d be bummed out."
 
+    voice "C-7-5.mp3" #Alex (Bonnie Mitchel)
     alx "I, um, thanks then."
 
     "I pause for a moment."
 
+    voice "C-7-6.mp3" #Alex (Bonnie Mitchel)
     alx "So are these, uh, really for me? Or do I have to, like, share?"
 
+    voice "C-7-7.mp3" #Caelum (Daniel Acosta)
     cae "Yes."
 
     "..."
 
+    voice "C-7-8.mp3" #Alex (Bonnie Mitchel)
     alx "Excuse me?"
 
     "He laughs. I don’t know whether he's doing it {i}at{/i} me or attempting to do it {i}with{/i} me, but it’s okay."
 
     "Worse yet, I don’t know what the joke is. Eventually, Caelum continues talking."
 
+    voice "C-7-9.mp3" #Caelum (Daniel Acosta)
     cae "In all seriousness, they’re yours. I'd… {i}like{/i} it if you shared with me because I really like those cookies, but it’s your choice."
 
     "There's silence between us for a few seconds."
@@ -102,20 +111,26 @@ label spirits_a1s6:
 
     "And I {i}guess{/i} sharing is what friends do?"
 
+    voice "C-7-10.mp3" #Alex (Bonnie Mitchel)
     alx "Sure."
 
+    voice "C-7-11.mp3" #Caelum (Daniel Acosta)
     cae "Huh?"
 
+    voice "C-7-12.mp3" #Alex (Bonnie Mitchel)
     alx "You can have some. Maybe not right {i}now,{/i} but…"
 
+    voice "C-7-13.mp3" #Alex (Bonnie Mitchel)
     alx "After class, I guess."
 
     "As he responds, Caelum gives a… sort-of smile - as if this was his plan all along."
 
+    voice "C-7-14.mp3" #Caelum (Daniel Acosta)
     cae "Awesome. Thanks."
 
     "Somewhere, in some deep and miniscule part of me, an iota of regret flares up."
 
+    voice "C-7-15.mp3" #Alex (Bonnie Mitchel)
     alx "You're, um… welcome."
 
     "Another voice - louder than the cacophony around me - booms from the front of the classroom. The teacher, Mrs… still something I can’t remember, announces her presence."

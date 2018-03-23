@@ -1,12 +1,16 @@
 label spirits_a3s4:
     #scene alex’s bedroom v1
 
+    voice "C-19-1.mp3" #Alex (Bonnie Mitchel)
     alx "I’ll see you later!"
 
+    voice "C-19-2.mp3" #Alex (Bonnie Mitchel)
     alx "{i}Don’t go.{/i}"
 
+    voice "C-19-3.mp3" #Caelum (Daniel Acosta)
     cae "Are you sure you’ll be okay?"
 
+    voice "C-19-4.mp3" #Alex (Bonnie Mitchel)
     alx "Mmhm."
 
     "After giving a small nod, Caelum moves to leave."
