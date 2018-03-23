@@ -27,6 +27,7 @@ label spirits_a1s0:
 
     #scene graveyard cg 
 
+    voice "C-1-1.mp3" #Alex (Bonnie Mitchel)
     alx "Hey. Mom, Dad... How are you doing?"
 
     "I kneel down next to a large, two-person gravestone. My parents’ names are inscribed on it in a mother tongue I can barely recognize."
@@ -75,6 +76,7 @@ label spirits_a1s0:
 
     "I text back with my other hand."
 
+    voice "C-1-2.mp3" #Alex (Bonnie Mitchel)
     alx "Thx. Otw."
 
     "I get up and walk back down the hill. I make it back to the car in no time at all, and climb in beside my Naniji."

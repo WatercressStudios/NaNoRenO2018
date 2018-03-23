@@ -19,8 +19,8 @@ lineCount = 1
 with open(inputFilePath, 'r', encoding="utf8") as infile, open(outputFilePath, 'w', encoding="utf8") as outfile:
     for line in infile:
         trimmedLine = line.replace(" ", "")
-		#Spirits
-        elif 'alx' in trimmedLine[:3]:
+	#Spirits
+        if 'alx' in trimmedLine[:3]:
             leadingWhitespace = line.split('alx')[0]
             outfile.write(leadingWhitespace + 'voice "' + routeTag + '-' + sceneNumber + '-' + str(lineCount) + '.mp3" #Alex (Bonnie Mitchel)\n')
             outfile.write(line)
@@ -50,32 +50,32 @@ with open(inputFilePath, 'r', encoding="utf8") as infile, open(outputFilePath, '
             outfile.write(leadingWhitespace + 'voice "' + routeTag + '-' + sceneNumber + '-' + str(lineCount) + '.mp3" #Wraith (Kenneth Faircloth)\n')
             outfile.write(line)
             lineCount += 1
-		elif 'ama' in trimmedLine[:3]:
+        elif 'ama' in trimmedLine[:3]:
             leadingWhitespace = line.split('ama')[0]
             outfile.write(leadingWhitespace + 'voice "' + routeTag + '-' + sceneNumber + '-' + str(lineCount) + '.mp3" #Mama (N/A)\n')
             outfile.write(line)
             lineCount += 1
-		elif 'Dad' in trimmedLine[:3]:
+        elif 'Dad' in trimmedLine[:3]:
             leadingWhitespace = line.split('Dad')[0]
             outfile.write(leadingWhitespace + 'voice "' + routeTag + '-' + sceneNumber + '-' + str(lineCount) + '.mp3" #Papa (N/A)\n')
             outfile.write(line)
             lineCount += 1
-		elif 'cxx' in trimmedLine[:3]:
+        elif 'cxx' in trimmedLine[:3]:
             leadingWhitespace = line.split('cxx')[0]
             outfile.write(leadingWhitespace + 'voice "' + routeTag + '-' + sceneNumber + '-' + str(lineCount) + '.mp3" #Caelum (Daniel Acosta)\n')
             outfile.write(line)
             lineCount += 1
-		elif 'gez' in trimmedLine[:3]:
+        elif 'gez' in trimmedLine[:3]:
             leadingWhitespace = line.split('gez')[0]
             outfile.write(leadingWhitespace + 'voice "' + routeTag + '-' + sceneNumber + '-' + str(lineCount) + '.mp3" #Genevieve (Lasli Tran and Other)\n')
             outfile.write(line)
             lineCount += 1
-		elif 'gex' in trimmedLine[:3]:
+        elif 'gex' in trimmedLine[:3]:
             leadingWhitespace = line.split('gex')[0]
             outfile.write(leadingWhitespace + 'voice "' + routeTag + '-' + sceneNumber + '-' + str(lineCount) + '.mp3" #Genevieve (Lasli Tran and Other)\n')
             outfile.write(line)
             lineCount += 1
-		elif 'nurse' in trimmedLine[:3]:
+        elif 'nurse' in trimmedLine[:3]:
             leadingWhitespace = line.split('nurse')[0]
             outfile.write(leadingWhitespace + 'voice "' + routeTag + '-' + sceneNumber + '-' + str(lineCount) + '.mp3" #Nurse ()\n')
             outfile.write(line)
