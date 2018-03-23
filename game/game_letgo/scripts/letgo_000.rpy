@@ -135,7 +135,35 @@ image may suspicious1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry
 init python:
     MayPose2 = BaseCSprite("may", "game_letgo/sprites/May/Pose 2/base.png", (420, 915))
 
+image may neutral2 = MayPose2("may eyes normal2", "may mouth normal2")
+image may neutral2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes normal close.png", "may mouth normal2")
 
+image may happy2 = MayPose2("may eyes happy2", "may mouth happy2")
+image may happy2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes normal close 2.png", "may mouth happy2")
+
+image may worried2 = MayPose2("may eyes worried2", "may mouth displeased2")
+image may worried2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes worried close.png", "may mouth displeased2")
+
+image may nervous2 = MayPose2("may eyes worried2", "may mouth normal2")
+image may nervous2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes worried close.png", "may mouth normal2")
+
+image may conciliatory2 = MayPose2("may eyes worried2", "may mouth happy2")
+image may conciliatory2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes worried close.png", "may mouth happy2")
+
+image may sheepish2 = MayPose2("may eyes sheepish2", "may mouth happy2")
+image may sheepish2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes worried close 2.png", "may mouth happy2")
+
+image may angry2 = MayPose2("may eyes angry2", "may mouth displeased2")
+image may angry2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry close.png", "may mouth displeased2")
+
+image may exasperated2 = MayPose2("may eyes exasperated2", "may mouth displeased2")
+image may exasperated2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry close 2.png", "may mouth displeased2")
+
+image may proud2 = MayPose2("may eyes angry2", "may mouth happy2")
+image may proud2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry close.png", "may mouth happy2")
+
+image may mischievous2 = MayPose2("may eyes exasperated2", "may mouth happy2")
+image may mischievous2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry close 2.png", "may mouth happy2")
 
 ###############################
 #
@@ -213,6 +241,29 @@ image may mouth smile1 = FlapMouth("may", "game_letgo/sprites/May/Pose 1/mouth s
 
 image may mouth happy1 = FlapMouth("may", "game_letgo/sprites/May/Pose 1/mouth smile close.png", "game_letgo/sprites/May/Pose 1/mouth big open.png")
 
+###############################
+#
+# MAYA POSE 2 COMPOSITE PARTS
+#
+###############################
+
+image may eyes normal2 = blinkeyes("game_letgo/sprites/May/Pose 2/eyes normal open.png", "game_letgo/sprites/May/Pose 2/eyes normal close.png")
+
+image may eyes happy2 = blinkeyes("game_letgo/sprites/May/Pose 2/eyes normal open.png", "game_letgo/sprites/May/Pose 2/eyes normal close 2.png")
+
+image may eyes worried2 = blinkeyes("game_letgo/sprites/May/Pose 2/eyes worried open.png", "game_letgo/sprites/May/Pose 2/eyes worried close.png")
+
+image may eyes sheepish2 = blinkeyes("game_letgo/sprites/May/Pose 2/eyes worried open.png", "game_letgo/sprites/May/Pose 2/eyes worried close 2.png")
+
+image may eyes angry2 = blinkeyes("game_letgo/sprites/May/Pose 2/eyes angry open.png", "game_letgo/sprites/May/Pose 2/eyes angry close.png")
+
+image may eyes exasperated2 = blinkeyes("game_letgo/sprites/May/Pose 2/eyes angry open.png", "game_letgo/sprites/May/Pose 2/eyes angry close 2.png")
+
+image may mouth normal2 = FlapMouth("may", "game_letgo/sprites/May/Pose 2/mouth smile close.png", "game_letgo/sprites/May/Pose 2/mouth small open.png")
+
+image may mouth happy2 = FlapMouth("may", "game_letgo/sprites/May/Pose 2/mouth smile close.png", "game_letgo/sprites/May/Pose 2/mouth big open.png")
+
+image may mouth displeased2 = FlapMouth("may", "game_letgo/sprites/May/Pose 2/mouth frown close.png", "game_letgo/sprites/May/Pose 2/mouth small open.png")
 
 ###############################
 #
@@ -329,6 +380,66 @@ label letgo_expressions:
 
     show may suspicious1 close
     may "may suspicious1 close... may suspicious1 close... may suspicious1 close... may suspicious1 close... may suspicious1 close... may suspicious1 close... "
+    
+    show may neutral2
+    may "may neutral2... may neutral2... may neutral2... may neutral2... may neutral2... may neutral2... may neutral2... may neutral2... may neutral2..."
+
+    show may neutral2 close
+    may "may neutral2 close... may neutral2 close... may neutral2 close... may neutral2 close... may neutral2 close... may neutral2 close..."
+
+    show may happy2
+    may "may happy2... may happy2... may happy2... may happy2... may happy2... may happy2... may happy2... may happy2... may happy2... may happy2... may happy2..."
+
+    show may happy2 close
+    may "may happy2 close... may happy2 close... may happy2 close... may happy2 close... may happy2 close... may happy2 close... may happy2 close... may happy2 close..."
+
+    show may worried2
+    may "may worried2... may worried2... may worried2... may worried2... may worried2... may worried2... may worried2... may worried2... may worried2..."
+
+    show may worried2 close
+    may "may worried2 close... may worried2 close... may worried2 close... may worried2 close... may worried2 close... may worried2 close... may worried2 close..."
+
+    show may nervous2
+    may "may nervous2... may nervous2... may nervous2... may nervous2... may nervous2... may nervous2... may nervous2... may nervous2... may nervous2..."
+
+    show may nervous2 close
+    may "may nervous2 close... may nervous2 close... may nervous2 close... may nervous2 close... may nervous2 close... may nervous2 close... may nervous2 close..."
+
+    show may conciliatory2
+    may "may conciliatory2... may conciliatory2... may conciliatory2... may conciliatory2... may conciliatory2... may conciliatory2... may conciliatory2..."
+
+    show may conciliatory2 close
+    may "may conciliatory2 close... may conciliatory2 close... may conciliatory2 close... may conciliatory2 close... may conciliatory2 close... may conciliatory2 close..."
+
+    show may sheepish2
+    may "may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2..."
+
+    show may sheepish2 close
+    may "may sheepish2 close... may sheepish2 close... may sheepish2 close... may sheepish2 close... may sheepish2 close... may sheepish2 close..."
+
+    show may angry2
+    may "may angry2... may angry2... may angry2... may angry2... may angry2... may angry2... may angry2... may angry2... may angry2... may angry2... may angry2..."
+
+    show may angry2 close
+    may "may angry2 close... may angry2 close... may angry2 close... may angry2 close... may angry2 close... may angry2 close... may angry2 close... may angry2 close..."
+
+    show may exasperated2
+    may "may exasperated2... may exasperated2... may exasperated2... may exasperated2... may exasperated2... may exasperated2... may exasperated2... may exasperated2..."
+
+    show may exasperated2 close
+    may "may exasperated2 close... may exasperated2 close... may exasperated2 close... may exasperated2 close... may exasperated2 close... may exasperated2 close..."
+
+    show may proud2
+    may "may proud2... may proud2... may proud2... may proud2... may proud2... may proud2... may proud2... may proud2..."
+
+    show may proud2 close
+    may "may proud2 close... may proud2 close... may proud2 close... may proud2 close... may proud2 close... may proud2 close..."
+
+    show may mischievous2
+    may "may mischievous2... may mischievous2... may mischievous2... may mischievous2... may mischievous2... may mischievous2... may mischievous2... may mischievous2..."
+
+    show may mischievous2 close
+    may "may mischievous2 close... may mischievous2 close... may mischievous2 close... may mischievous2 close... may mischievous2 close... may mischievous2 close..."
 
     hide may
 
