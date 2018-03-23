@@ -71,7 +71,7 @@ image oli normal2 = OliPose2("oli eyes normal2", "oli mouth normal2")
 image oli normal2 close = OliPose2("game_flood/sprites/Oliver/Pose 2/eyes normal open.png", "oli mouth normal2") #No eye close art
 
 image oli serious1 = OliPose2("oli eyes serious1", "oli mouth serious1")
-image oli serious1 close = ("game_flood/sprites/Oliver/Pose 2/eyes normal open.png", "oli mouth serious1") #No eye close art
+image oli serious1 close = OliPose2("game_flood/sprites/Oliver/Pose 2/eyes normal open.png", "oli mouth serious1") #No eye close art
 
 ###############################
 #
@@ -112,11 +112,11 @@ image dai confident2 close = DaiPose1("game_flood/sprites/Daisy/Pose 1/eyes norm
 image dai hopeful1 = DaiPose1("dai eyes hopeful1", "dai mouth smile1")
 image dai hopeful1 close = DaiPose1("game_flood/sprites/Daisy/Pose 1/eyes normal close.png", "dai mouth smile1")
 
-image dai dissapointed1 = DaiPose1("dai eyes dissapointed1", "dai mouth sad1")
-image dai dissapointed1 close = DaiPose1("game_flood/sprites/Daisy/Pose 1/eyes normal close.png", "dai mouth sad1")
+image dai disappointed1 = DaiPose1("dai eyes disappointed1", "dai mouth sad1")
+image dai disappointed1 close = DaiPose1("game_flood/sprites/Daisy/Pose 1/eyes normal close.png", "dai mouth sad1")
 
-image dai dissapointed2 = DaiPose1("dai eyes dissapointed2", "dai mouth sad1")
-image dai dissapointed2 close = DaiPose1("game_flood/sprites/Daisy/Pose 1/eyes normal close.png", "dai mouth sad1")
+image dai disappointed2 = DaiPose1("dai eyes disappointed2", "dai mouth sad1")
+image dai disappointed2 close = DaiPose1("game_flood/sprites/Daisy/Pose 1/eyes normal close.png", "dai mouth sad1")
 
 ###############################
 #
@@ -231,9 +231,9 @@ image dai eyes normal1 = blinkeyes("game_flood/sprites/Daisy/Pose 1/eyes normal 
 
 image dai eyes hopeful1 = blinkeyes("game_flood/sprites/Daisy/Pose 1/eyes hopeful open.png", "game_flood/sprites/Daisy/Pose 1/eyes normal close.png")
 
-image dai eyes dissapointed1 = blinkeyes("game_flood/sprites/Daisy/Pose 1/eyes dissapointed open.png", "game_flood/sprites/Daisy/Pose 1/eyes normal close.png")
+image dai eyes disappointed1 = blinkeyes("game_flood/sprites/Daisy/Pose 1/eyes dissapointed open.png", "game_flood/sprites/Daisy/Pose 1/eyes normal close.png")
 
-image dai eyes dissapointed2 = blinkeyes("game_flood/sprites/Daisy/Pose 1/eyes dissapointedside open.png", "game_flood/sprites/Daisy/Pose 1/eyes normal close.png")
+image dai eyes disappointed2 = blinkeyes("game_flood/sprites/Daisy/Pose 1/eyes dissapointedside open.png", "game_flood/sprites/Daisy/Pose 1/eyes normal close.png")
 
 image dai mouth normal1 = FlapMouth("dai", "game_flood/sprites/Daisy/Pose 1/mouth normal open.png", "game_flood/sprites/Daisy/Pose 1/mouth normal close.png")
 
@@ -301,9 +301,9 @@ label flood_000:
     $ persistent.last_story = "flood"
     #jump flood_101
 
-    #menu:
-    #    "Show everyone's expressions"
-    #        jump flood_expressions
+    menu:
+        "Show everyone's expressions":
+            jump flood_expressions
 
 label flood_expressions:
     show oph normal1
@@ -424,17 +424,17 @@ label flood_expressions:
     show dai hopeful1 close
     dai "dai hopeful1 close... dai hopeful1 close... dai hopeful1 close... dai hopeful1 close... dai hopeful1 close... dai hopeful1 close... dai hopeful1 close... "
 
-    show dai dissapointed1
-    dai "dai dissapointed1... dai dissapointed1... dai dissapointed1... dai dissapointed1... dai dissapointed1... dai dissapointed1... dai dissapointed1... dai dissapointed1... "
+    show dai disappointed1
+    dai "dai disappointed1... dai disappointed1... dai disappointed1... dai disappointed1... dai disappointed1... dai disappointed1... dai disappointed1... dai disappointed1... "
 
-    show dai dissapointed1 close
-    dai "dai dissapointed1 close... dai dissapointed1 close... dai dissapointed1 close... dai dissapointed1 close... dai dissapointed1 close... dai dissapointed1 close... "
+    show dai disappointed1 close
+    dai "dai disappointed1 close... dai disappointed1 close... dai disappointed1 close... dai disappointed1 close... dai disappointed1 close... dai disappointed1 close... "
 
-    show dai dissapointed2
-    dai "dai dissapointed2... dai dissapointed2... dai dissapointed2... dai dissapointed2... dai dissapointed2... dai dissapointed2... dai dissapointed2... dai dissapointed2... "
+    show dai disappointed2
+    dai "dai disappointed2... dai disappointed2... dai disappointed2... dai disappointed2... dai disappointed2... dai disappointed2... dai disappointed2... dai disappointed2... "
 
-    show dai dissapointed2 close
-    dai "dai dissapointed2 close... dai dissapointed2 close... dai dissapointed2 close... dai dissapointed2 close... dai dissapointed2 close... dai dissapointed2 close... "
+    show dai disappointed2 close
+    dai "dai disappointed2 close... dai disappointed2... dai disappointed2... dai disappointed2... dai disappointed2... dai disappointed2... dai disappointed2... dai disappointed2... "
 
     show dai normal2
     dai "dai normal2... dai normal2... dai normal2... dai normal2... dai normal2... dai normal2... dai normal2... dai normal2... dai normal2... dai normal2... dai normal2... "
