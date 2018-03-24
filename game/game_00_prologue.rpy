@@ -28,6 +28,19 @@ init:
         xzoom -1.0
 
 init python:
+    import os
+    def define_images(imageFolder, excludeFirstXFolders=0, flip=True, prepend=[]):
+        for path in renpy.list_files():
+            if path.startswith(imageFolder + "/"):
+                path_list = path.split("/")
+                if ' ' in path_list[-1]:
+                    path_list = path_list[0:-1] + path_list[-1].split()
+                path_list[-1] = os.path.splitext(path_list[-1])[0]
+                path_list = tuple(prepend + path_list[excludeFirstXFolders:])
+                renpy.image(path_list, path)
+                if flip:
+                    renpy.image(path_list + ("flip", ), im.Flip(path, horizontal=True))
+
     renpy.music.register_channel("ambience", mixer="sfx", loop=True, stop_on_mute=True, tight=True, file_prefix='', file_suffix='', buffer_queue=True, movie=False)
   
   

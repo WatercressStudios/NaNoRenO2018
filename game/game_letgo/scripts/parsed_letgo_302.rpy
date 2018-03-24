@@ -114,7 +114,7 @@
 
     menu:
 
-        "Stay at the bridge.":
+        "Stay at the bridge. (disabled)":
             jump letgo_302
 
         "Onward!":
@@ -396,7 +396,7 @@ label letgo_302escalator:
 
     menu:
 
-        "Keep going.":
+        "Keep going. (disabled)":
             jump letgo_302escalator
 
         "Stay here for a bit.":

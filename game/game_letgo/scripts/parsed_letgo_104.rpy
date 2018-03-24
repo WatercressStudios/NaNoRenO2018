@@ -1,5 +1,5 @@
 label letgo_104:
-    scene parknight with dissolve
+    scene letgo park trees sunset with dissolve
 
     play ambience "game_letgo/ambience/Park Night.ogg" fadeout 2.0 fadein 2.0
 
@@ -7,9 +7,10 @@ label letgo_104:
 
     "The night was darkening, allowing the moon to come out and light the sidewalk beneath our feet."
 
-    scene roadsnight with dissolve
+    scene letgo road long with dissolve
 
-    #play music "game_letgo/music/Romantic Date.ogg" fadeout 2.0
+    play music bgmloop1romantic_intro noloop fadeout 1.0
+    queue music bgmloop1romantic_loop loop
     play ambience "game_letgo/ambience/Roads Night.ogg" fadeout 2.0 fadein 2.0
 
     "The sounds of people in the different buildings we pass change the farther we go."
@@ -19,13 +20,13 @@ label letgo_104:
     show eli cool1 with dissolve:
         align (0.35, 1.0)
 
-    #voice "C-104-1.mp3" #Elijah (Michael Potok)
+    voice "C-104-1.mp3" #Elijah (Michael Potok)
     eli "Can I walk you home tonight?"
 
-    show may normal1 with dissolve:
+    show may adore1 with dissolve:
         align (0.65, 1.0)
 
-    #voice "C-104-2.mp3" #Maya (shiena)
+    voice "C-104-2.mp3" #Maya (shiena)
     may "Sure, I’d like that."
 
     "She smiles up at me and takes my hand."
@@ -42,24 +43,24 @@ label letgo_104:
 
     "Is that coming on too strong? Is strong even good? Oh jeez, say something before we’re on her doorstep!"
 
-    show eli worried1
+    show eli worried2 with dissolve
 
-    #voice "C-104-3.mp3" #Elijah (Michael Potok)
+    voice "C-104-3.mp3" #Elijah (Michael Potok)
     eli "So, Maya… Uhm, I guess I just wanted to clarify what happened earlier…"
 
-    show may normal1 close
+    show may cheeky2 with dissolve
 
-    #voice "C-104-4.mp3" #Maya (shiena)
+    voice "C-104-4.mp3" #Maya (shiena)
     may "You mean when you confessed your feelings for beautiful, funny trees that have always been there for you?"
 
-    show eli smile1
+    show eli smile1 with dissolve
 
-    #voice "C-104-5.mp3" #Elijah (Michael Potok)
+    voice "C-104-5.mp3" #Elijah (Michael Potok)
     eli "Yes, well.. uh, that. See, what I was trying to say was that I really care about you."
 
-    show may shout1 close
+    show may shout1 close with dissolve
 
-    #voice "C-104-6.mp3" #Maya (shiena)
+    voice "C-104-6.mp3" #Maya (shiena)
     may "Oh really?"
 
     "I patiently wait for her to continue. My feet move on their own and I avoid eye contact."
@@ -68,14 +69,17 @@ label letgo_104:
 
     "Should I have said it differently? The important thing is I said it, right? Or maybe it just wasn’t enough..."
 
+    scene letgo road night with dissolve
+
     "Just calm down; focus on getting her home safely. Watch the sidewalk, watch the car moving this way, watch her eyelashes as she blinks in the bright headlights..."
 
-    show may normal1
+    show eli smile1 with dissolve:
+        align (0.35, 1.0)
+    show may nervous2 with dissolve:
+        align (0.65, 1.0)
 
-    #voice "C-104-7.mp3" #Maya (shiena)
+    voice "C-104-7.mp3" #Maya (shiena)
     may "All I can say is that I’ve only wanted you too. I guess I just never knew how to say--"
-
-    play sound "game_letgo/sfx/Ice Slip.ogg"
 
     "Before she can finish, the car catches some ice on the road."
 
@@ -87,7 +91,7 @@ label letgo_104:
     show may shout1
     show eli angry1
 
-    #voice "C-104-8.mp3" #Maya (shiena)
+    voice "C-104-8.mp3" #Maya (shiena)
     may "Oh my god, watch out!"
 
     "The car hits the curb - then comes over the edge toward us."
@@ -105,6 +109,8 @@ label letgo_104:
 
     "The driver’s completely lost control."
 
+    show eli sad1 with dissolve
+
     "I look over to see that Maya is on the ground a few feet away, trying to get up..."
 
     "The headlights are blinding."
@@ -113,7 +119,7 @@ label letgo_104:
 
     "Is Maya okay?"
 
-    #voice "C-104-9.mp3" #Elijah (Michael Potok)
+    voice "C-104-9.mp3" #Elijah (Michael Potok)
     eli "Maya--"
 
     "The lights are everywhere."
