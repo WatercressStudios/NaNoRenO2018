@@ -230,6 +230,7 @@ label spirits_a2s6:
                 alx "…I'm going to reincarnate, just like they have. We're {i}Hindu{/i}."
 
             if duties > 0:
+                $ secondTrueEndFlag = True
 
                 "She silently considers my words with a plaintive frown, clutching a lock of her spectral curls."
 
@@ -264,6 +265,8 @@ label spirits_a2s6:
                     "Despite myself, I feel a proud little smile curling on my face."
 
             else:
+                $ secondTrueEndFlag = False            
+            
                 voice "C-14-51.mp3" #Alex (Bonnie Mitchel)
                 alx "Look, maybe I'll help you cross over and maybe I won't. It's not your choice to make for me."
 
