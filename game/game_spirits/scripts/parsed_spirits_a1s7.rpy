@@ -352,14 +352,14 @@ label BuddingRelationship:
         voice "C-8-74.mp3" #Alex (Bonnie Mitchel)
         alx "I don’t know her name, but she’s been messing with me ever since I came here."
 
-        voice "C-8-75.mp3" #Alex (Bonnie Mitchel)
-        alx "And she was murdered here. In this room. The person responsible may even still be around, and a danger to all of us."
+    voice "C-8-75.mp3" #Alex (Bonnie Mitchel)
+    alx "And she was murdered here. In this room. The person responsible may even still be around, and a danger to all of us."
 
-        voice "C-8-76.mp3" #Alex (Bonnie Mitchel)
-        alx "She begged me to help her get justice, but… I don’t even know if that’s possible anymore."
+    voice "C-8-76.mp3" #Alex (Bonnie Mitchel)
+    alx "She begged me to help her get justice, but… I don’t even know if that’s possible anymore."
 
-        voice "C-8-77.mp3" #Alex (Bonnie Mitchel)
-        alx "God, really, I know how this all sounds, but I promise you…"
+    voice "C-8-77.mp3" #Alex (Bonnie Mitchel)
+    alx "God, really, I know how this all sounds, but I promise you…"
 
     voice "C-8-78.mp3" #Caelum (Daniel Acosta)
     cae "What can I do to help?"
