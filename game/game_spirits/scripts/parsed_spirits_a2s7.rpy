@@ -270,7 +270,7 @@ label spirits_a2s7:
         voice "C-15-25.mp3" #Alex (Bonnie Mitchel)
         alx "I know what you are." 
 
-        if duties = 3:
+        if duties == 3:
 
             voice "C-15-26.mp3" #Caelum (Daniel Acosta)
             cae "You killed your own daughter. You locked her up like an {i}animal{/i}."
@@ -590,7 +590,7 @@ label spirits_a2s7:
             voice "C-15-96.mp3" #Alex (Bonnie Mitchel)
             alx "Let’s… let’s just head back up to the room for now."
             
-            if firstTrueEndFlag = True and secondTrueEndFlag = True and duties < 3:
+            if firstTrueEndFlag == True and secondTrueEndFlag == True and duties < 3:
                 jump spirits_a3s1 ## Demolition Ending
                 
             jump spirits_a3s4 ##Surrender Ending; formerly called the Hospitalization ending
@@ -700,7 +700,7 @@ label spirits_a2s7:
 
         "I have to do something." 
 
-        if hasAmmo = True:
+        if hasAmmo == True:
 
             "The gun is in my back pocket and the ammo is in my other one. I’d forgotten about it, somehow, with everything that’s happened." 
 
