@@ -394,7 +394,7 @@ label spirits_a2s7:
             
             jump spirits_a3s4 ##Surrender Ending; formerly called the Hospitalization ending
 
-       else:
+        else:
             voice "C-15-46.mp3" #Caelum (Daniel Acosta)
             cae "You killed your own daughter. You locked her up like an {i}animal{/i}."
 
