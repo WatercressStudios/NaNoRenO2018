@@ -205,11 +205,11 @@ label spirits_a1s7:
 
     menu:
         "It’s fine. I’ll be fine.":
-            $ caleumAlive = False
+            $ caelumAlive = False
             jump CaelumIsDead
 
         "Wait… I’m not being completely honest with you.":
-            $ caleumAlive = True
+            $ caelumAlive = True
             jump BuddingRelationship
 
 label CaelumIsDead:

@@ -1,5 +1,5 @@
 label spirits_a2s1:
-    if caleumAlive == True:
+    if caelumAlive == True:
         jump spirits_a2s1_alive
     jump spirits_a2s1_dead
     
