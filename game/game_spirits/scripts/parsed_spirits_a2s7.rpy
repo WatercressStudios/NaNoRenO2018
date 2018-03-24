@@ -5,7 +5,7 @@ label spirits_a2s7:
 
     #play music house 
 
-    if life == 1:
+    if life == 3:
         "Sitting down at my desk, I pull up one of my assigned readings for English. I’m behind, but if I work hard, I can catch up." 
 
         "After several minutes of reading, I feel....{i}her{/i} tugging at my arm again." 
@@ -95,6 +95,11 @@ label spirits_a2s7:
         "Suddenly she comes {i}crashing{/i} back, even faster than before. Oh my god, at this rate--"
 
         "{size=-10}No...{size=-10}"
+        
+        if caelumAlive = True:
+            jump spirits_a3s2 ##Sacrifice Ending (previously called Caelum Possessed)
+        else:
+            jump spirits_a3s3 ##Forever Ending (previously called Alex Possessed)
 
     else:
         "Sitting down at my desk, I mull over my case notes." 
@@ -103,13 +108,13 @@ label spirits_a2s7:
 
         "Genevieve’s father acted erratically, and the house servants were concerned for his daughter’s safety." 
 
-    #If HasLetter = True:
+    if hasLetter == True:
 
-        #"He didn’t think she was really his daughter. He was so suspicious of his wife, he wrote to her friends asking if they’d seen her cheating." 
+        "He didn’t think she was really his daughter. He was so suspicious of his wife, he wrote to her friends asking if they’d seen her cheating." 
 
-    #If HasAmmo = True:
+    if hasAmmo == True:
 
-        #"There was ammunition hidden in a bookcase." 
+        "There was ammunition hidden in a bookcase." 
 
     "Genevieve was locked her in her room - this room - and her father wouldn’t let her out." 
 
@@ -265,129 +270,131 @@ label spirits_a2s7:
         voice "C-15-25.mp3" #Alex (Bonnie Mitchel)
         alx "I know what you are." 
 
-        #if duty = 3 
+        if duties = 3:
 
-        voice "C-15-26.mp3" #Caelum (Daniel Acosta)
-        cae "You killed your own daughter. You locked her up like an {i}animal{/i}."
+            voice "C-15-26.mp3" #Caelum (Daniel Acosta)
+            cae "You killed your own daughter. You locked her up like an {i}animal{/i}."
 
-        voice "C-15-27.mp3" #Caelum (Daniel Acosta)
-        cae "Do you know how deeply it cuts to realize your parent {i}hates{/i} you? What gives you the right to judge someone like that?"
+            voice "C-15-27.mp3" #Caelum (Daniel Acosta)
+            cae "Do you know how deeply it cuts to realize your parent {i}hates{/i} you? What gives you the right to judge someone like that?"
 
-        voice "C-15-28.mp3" #Wraith (Kenneth Faircloth)
-        wra "You do not know what you speak of. She was no child of mine." 
+            voice "C-15-28.mp3" #Wraith (Kenneth Faircloth)
+            wra "You do not know what you speak of. She was no child of mine." 
 
-        voice "C-15-29.mp3" #Alex (Bonnie Mitchel)
-        alx "You were real worried about that, huh? Wrote around asking all your wife’s friends if she was sleeping around?" 
+            voice "C-15-29.mp3" #Alex (Bonnie Mitchel)
+            alx "You were real worried about that, huh? Wrote around asking all your wife’s friends if she was sleeping around?" 
 
-        voice "C-15-30.mp3" #Wraith (Kenneth Faircloth)
-        wra "You insolent child, you know {i}nothing{/i} of--" 
+            voice "C-15-30.mp3" #Wraith (Kenneth Faircloth)
+            wra "You insolent child, you know {i}nothing{/i} of--" 
 
-        voice "C-15-31.mp3" #Alex (Bonnie Mitchel)
-        alx "What does it matter? Family isn’t blood. She was raised in your home, born to your wife. You couldn’t find it in your heart to love her?" 
+            voice "C-15-31.mp3" #Alex (Bonnie Mitchel)
+            alx "What does it matter? Family isn’t blood. She was raised in your home, born to your wife. You couldn’t find it in your heart to love her?" 
 
-        voice "C-15-32.mp3" #Wraith (Kenneth Faircloth)
-        wra "You know nothing of honor, of the pressures to uphold your name--" 
+            voice "C-15-32.mp3" #Wraith (Kenneth Faircloth)
+            wra "You know nothing of honor, of the pressures to uphold your name--" 
 
-        voice "C-15-33.mp3" #Caelum (Daniel Acosta)
-        cae "That’s bullshit! You cared more about your family name than your own daughter?" 
+            voice "C-15-33.mp3" #Caelum (Daniel Acosta)
+            cae "That’s bullshit! You cared more about your family name than your own daughter?" 
 
-        "I’m angrier than I’ve been in a long, long time. I can’t tell if that’s him messing with my emotions, or if it’s just how I feel." 
+            "I’m angrier than I’ve been in a long, long time. I can’t tell if that’s him messing with my emotions, or if it’s just how I feel." 
 
-        "He’s in my way. I need to do this, or else everything was for nothing - and what purpose do I have anymore, if that’s the case?" 
+            "He’s in my way. I need to do this, or else everything was for nothing - and what purpose do I have anymore, if that’s the case?" 
 
-        voice "C-15-34.mp3" #Wraith (Kenneth Faircloth)
-        wra "Stop this. You will never leave this place alive." 
+            voice "C-15-34.mp3" #Wraith (Kenneth Faircloth)
+            wra "Stop this. You will never leave this place alive." 
 
-        "I have to do something." 
+            "I have to do something." 
 
-        "The gun is in my back pocket… and the ammo is in my other one. I’d forgotten about it, somehow, with everything that’d happened." 
+            "The gun is in my back pocket… and the ammo is in my other one. I’d forgotten about it, somehow, with everything that’d happened." 
 
-        "This world - the one I’ve been forced to deal with ever since the accident on the tracks…" 
+            "This world - the one I’ve been forced to deal with ever since the accident on the tracks…" 
 
-        "If they can hurt me, why can’t I hurt them?"
+            "If they can hurt me, why can’t I hurt them?"
 
-        voice "C-15-35.mp3" #Caelum (Daniel Acosta)
-        cae "You think if we go missing, they won’t look for us? They’ll find this place and the world will know what you did." 
+            voice "C-15-35.mp3" #Caelum (Daniel Acosta)
+            cae "You think if we go missing, they won’t look for us? They’ll find this place and the world will know what you did." 
 
-        "My fingers shake as I push the bullets into the barrel." 
+            "My fingers shake as I push the bullets into the barrel." 
 
-        voice "C-15-36.mp3" #Wraith (Kenneth Faircloth)
-        wra "You think I will let them find you?" 
+            voice "C-15-36.mp3" #Wraith (Kenneth Faircloth)
+            wra "You think I will let them find you?" 
 
-        "I carefully set the gun into my prosthetic hand and point it at the wraith, pulling the hammer back. Caelum stares at me like I’ve lost my mind. I think I have." 
+            "I carefully set the gun into my prosthetic hand and point it at the wraith, pulling the hammer back. Caelum stares at me like I’ve lost my mind. I think I have." 
 
-        voice "C-15-37.mp3" #Wraith (Kenneth Faircloth)
-        wra "What are you doing, girl?" 
+            voice "C-15-37.mp3" #Wraith (Kenneth Faircloth)
+            wra "What are you doing, girl?" 
 
-        voice "C-15-38.mp3" #Alex (Bonnie Mitchel)
-        alx "If you can hurt me, then I can hurt you." 
+            voice "C-15-38.mp3" #Alex (Bonnie Mitchel)
+            alx "If you can hurt me, then I can hurt you." 
 
-        voice "C-15-39.mp3" #Wraith (Kenneth Faircloth)
-        wra "Put it down, girl. You stupid girl, put it down, put it--"
+            voice "C-15-39.mp3" #Wraith (Kenneth Faircloth)
+            wra "Put it down, girl. You stupid girl, put it down, put it--"
 
-        #play sound gunshot 
+            #play sound gunshot 
 
-        #scene black
+            #scene black
 
-        #scene cellar
+            #scene cellar
 
-        #play music hospitalization 
+            #play music hospitalization 
 
-        #show alex shocked/unnerved
+            #show alex shocked/unnerved
 
-        #show caelum surprised/shocked
+            #show caelum surprised/shocked
 
-        "What did I do?" 
+            "What did I do?" 
 
-        voice "C-15-40.mp3" #Caelum (Daniel Acosta)
-        cae "Alex…" 
+            voice "C-15-40.mp3" #Caelum (Daniel Acosta)
+            cae "Alex…" 
 
-        voice "C-15-41.mp3" #Alex (Bonnie Mitchel)
-        alx "I don’t know. I don’t know." 
+            voice "C-15-41.mp3" #Alex (Bonnie Mitchel)
+            alx "I don’t know. I don’t know." 
 
-        voice "C-15-42.mp3" #Alex (Bonnie Mitchel)
-        alx "Can we just leave? Please." 
+            voice "C-15-42.mp3" #Alex (Bonnie Mitchel)
+            alx "Can we just leave? Please." 
 
-        #show caelum worried
+            #show caelum worried
 
-        voice "C-15-43.mp3" #Caelum (Daniel Acosta)
-        cae "Alright." 
+            voice "C-15-43.mp3" #Caelum (Daniel Acosta)
+            cae "Alright." 
 
-        #scene black
+            #scene black
 
-        "Caelum goes first this time, crawling down the tunnel and lighting the way. I follow after him, still shaking." 
+            "Caelum goes first this time, crawling down the tunnel and lighting the way. I follow after him, still shaking." 
 
-        "Why did I do that? Without thinking, I just… shot him. He was dead, but I used a gun. And he’s gone."
+            "Why did I do that? Without thinking, I just… shot him. He was dead, but I used a gun. And he’s gone."
 
-        #scene alex’s bedroom v1 
+            #scene alex’s bedroom v1 
 
-        #show alex sad
+            #show alex sad
 
-        #show caelum worried
+            #show caelum worried
 
-        "I can feel Genevieve holding my hand, clutching it tightly - but not painfully or possessively." 
+            "I can feel Genevieve holding my hand, clutching it tightly - but not painfully or possessively." 
 
-        #show genevieve neutral/happy
+            #show genevieve neutral/happy
 
-        voice "C-15-44.mp3" #Genevieve (Lasli Tran)
-        gen "Thank you." 
+            voice "C-15-44.mp3" #Genevieve (Lasli Tran)
+            gen "Thank you." 
 
-        "Caelum can’t see her, but I stare off into space long enough and far enough for him to guess what’s happening. He says nothing, and I appreciate that." 
+            "Caelum can’t see her, but I stare off into space long enough and far enough for him to guess what’s happening. He says nothing, and I appreciate that." 
 
-        #hide genevieve
+            #hide genevieve
 
-        "And, without another word, she vanishes. I can’t feel her, see her, or hear her…" 
+            "And, without another word, she vanishes. I can’t feel her, see her, or hear her…" 
 
-        "I sink down onto my bed, suddenly overcome by a crushing loneliness."
+            "I sink down onto my bed, suddenly overcome by a crushing loneliness."
 
-        "What do I do now? What… am I?" 
+            "What do I do now? What… am I?" 
 
-        voice "C-15-45.mp3" #Caelum (Daniel Acosta)
-        cae "I’m going to go get Jianmei, alright?" 
+            voice "C-15-45.mp3" #Caelum (Daniel Acosta)
+            cae "I’m going to go get Jianmei, alright?" 
 
-        "All I can do is nod." 
+            "All I can do is nod." 
+            
+            jump spirits_a3s4 ##Surrender Ending; formerly called the Hospitalization ending
 
-        if firstTrueEndFlag == True: 
+       else:
             voice "C-15-46.mp3" #Caelum (Daniel Acosta)
             cae "You killed your own daughter. You locked her up like an {i}animal{/i}."
 
@@ -582,6 +589,11 @@ label spirits_a2s7:
 
             voice "C-15-96.mp3" #Alex (Bonnie Mitchel)
             alx "Let’s… let’s just head back up to the room for now."
+            
+            if firstTrueEndFlag = True and secondTrueEndFlag = True and duties < 3:
+                jump spirits_a3s1 ## Demolition Ending
+                
+            jump spirits_a3s4 ##Surrender Ending; formerly called the Hospitalization ending
 
     else:
         "Genevieve wanted me to find this. This ends now. I can finish this."
@@ -688,177 +700,178 @@ label spirits_a2s7:
 
         "I have to do something." 
 
-        #If HasAmmo = True:
+        if hasAmmo = True:
 
-        "The gun is in my back pocket and the ammo is in my other one. I’d forgotten about it, somehow, with everything that’s happened." 
+            "The gun is in my back pocket and the ammo is in my other one. I’d forgotten about it, somehow, with everything that’s happened." 
 
-        "This world - the one I’ve been forced to deal with ever since the accident on the tracks…" 
+            "This world - the one I’ve been forced to deal with ever since the accident on the tracks…" 
 
-        "If they can hurt me, why can’t I hurt them?"
+            "If they can hurt me, why can’t I hurt them?"
 
-        voice "C-15-113.mp3" #Wraith (Kenneth Faircloth)
-        wra "I will rip you apart." 
+            voice "C-15-113.mp3" #Wraith (Kenneth Faircloth)
+            wra "I will rip you apart." 
 
-        "My fingers are steady as I push the bullets into the barrel." 
+            "My fingers are steady as I push the bullets into the barrel." 
 
-        voice "C-15-114.mp3" #Wraith (Kenneth Faircloth)
-        wra "You think I will let them find you?" 
+            voice "C-15-114.mp3" #Wraith (Kenneth Faircloth)
+            wra "You think I will let them find you?" 
 
-        "I carefully set the gun into my prosthetic hand and point it at the wraith, pulling the hammer back. I don’t know what I’m doing - but at the same time, I’ve never been more sure of myself."
+            "I carefully set the gun into my prosthetic hand and point it at the wraith, pulling the hammer back. I don’t know what I’m doing - but at the same time, I’ve never been more sure of myself."
 
-        voice "C-15-115.mp3" #Wraith (Kenneth Faircloth)
-        wra "What are you doing, girl?" 
+            voice "C-15-115.mp3" #Wraith (Kenneth Faircloth)
+            wra "What are you doing, girl?" 
 
-        voice "C-15-116.mp3" #Alex (Bonnie Mitchel)
-        alx "If you can hurt me, then I can hurt you." 
+            voice "C-15-116.mp3" #Alex (Bonnie Mitchel)
+            alx "If you can hurt me, then I can hurt you." 
 
-        voice "C-15-117.mp3" #Wraith (Kenneth Faircloth)
-        wra "Put it down, girl. You stupid girl, put it down, put it--"
+            voice "C-15-117.mp3" #Wraith (Kenneth Faircloth)
+            wra "Put it down, girl. You stupid girl, put it down, put it--"
 
-        #play sound gunshot 
+            #play sound gunshot 
 
-        #scene black
+            #scene black
 
-        #scene cellar
+            #scene cellar
 
-        #play music genevieve 
+            #play music genevieve 
 
-        #show alex tense
+            #show alex tense
 
-        #show genevieve happy 
+            #show genevieve happy 
 
-        voice "C-15-118.mp3" #Genevieve (Lasli Tran)
-        gen "I can’t thank you enough, Alex." 
+            voice "C-15-118.mp3" #Genevieve (Lasli Tran)
+            gen "I can’t thank you enough, Alex." 
 
-        voice "C-15-119.mp3" #Genevieve (Lasli Tran)
-        gen "You’ve saved me from this-- this hell." 
+            voice "C-15-119.mp3" #Genevieve (Lasli Tran)
+            gen "You’ve saved me from this-- this hell." 
 
-        "I’m still reeling from what just happened. Did that really work?" 
+            "I’m still reeling from what just happened. Did that really work?" 
 
-        #else:
-        "This… it can’t end like this."
+        else:
+        
+            "This… it can’t end like this."
 
-        "This {i}bastard{/i} killed my only friend. I can’t stand the sight of him."
+            "This {i}bastard{/i} killed my only friend. I can’t stand the sight of him."
 
-        "No. I won’t! I won’t let this floating garbage dump get away with everything he’s done."
+            "No. I won’t! I won’t let this floating garbage dump get away with everything he’s done."
 
-        "I’m going to hurt him worse than he’s ever hurt anyone."
+            "I’m going to hurt him worse than he’s ever hurt anyone."
 
-        voice "C-15-120.mp3" #Wraith (Kenneth Faircloth)
-        wra "Heh heh heh… So juvenile. Such impotent rage."
+            voice "C-15-120.mp3" #Wraith (Kenneth Faircloth)
+            wra "Heh heh heh… So juvenile. Such impotent rage."
 
-        voice "C-15-121.mp3" #Wraith (Kenneth Faircloth)
-        wra "I’ll decorate this chamber with your entrails."
+            voice "C-15-121.mp3" #Wraith (Kenneth Faircloth)
+            wra "I’ll decorate this chamber with your entrails."
 
-        voice "C-15-122.mp3" #Wraith (Kenneth Faircloth)
-        wra "If I kill you violently enough, perhaps you’ll do us the honor of joining us forever--"
+            voice "C-15-122.mp3" #Wraith (Kenneth Faircloth)
+            wra "If I kill you violently enough, perhaps you’ll do us the honor of joining us forever--"
 
-        voice "C-15-123.mp3" #Alex (Bonnie Mitchel)
-        alx "Yyaaaaaaaaaaahhhhhhhhhhhhh!"
+            voice "C-15-123.mp3" #Alex (Bonnie Mitchel)
+            alx "Yyaaaaaaaaaaahhhhhhhhhhhhh!"
 
-        "My body moves as if on its own. Ironically, as if possessed."
+            "My body moves as if on its own. Ironically, as if possessed."
 
-        "I don’t remember having picked up the spade, but my prosthetic hand drives it straight into the phantom’s chest."
+            "I don’t remember having picked up the spade, but my prosthetic hand drives it straight into the phantom’s chest."
 
-        "Rather than go straight through, it finds the spectral mass of Mr. Bourlon’s sternum and smashes his gaseous body into the wall. His translucent bones rattle like the model in a biology classroom."
+            "Rather than go straight through, it finds purchase in the spectral mass of Mr. Bourlon’s sternum and smashes his gaseous body into the wall. His translucent bones rattle like the model in a biology classroom."
 
-        voice "C-15-124.mp3" #Wraith (Kenneth Faircloth)
-        wra "Urrk… What…"
+            voice "C-15-124.mp3" #Wraith (Kenneth Faircloth)
+            wra "Urrk… What…"
 
-        voice "C-15-125.mp3" #Alex (Bonnie Mitchel)
-        alx "Cross over, you piece of shit."
+            voice "C-15-125.mp3" #Alex (Bonnie Mitchel)
+            alx "Cross over, you piece of shit."
 
-        "I withdraw the spade, and his gaseous form clatters to the dirt."
+            "I withdraw the spade, and his gaseous form clatters to the dirt."
 
-        "I don’t allow him even a moment to breathe - or whatever it is a ghost would do. I smash his bones with the spade again and again and again."
+            "I don’t allow him even a moment to breathe - or whatever it is a ghost would do. I smash his bones with the spade again and again and again."
 
-        voice "C-15-126.mp3" #Alex (Bonnie Mitchel)
-        alx "Cross over!"
+            voice "C-15-126.mp3" #Alex (Bonnie Mitchel)
+            alx "Cross over!"
 
-        #play sound sfx crunch
+            #play sound sfx crunch
 
-        voice "C-15-127.mp3" #Alex (Bonnie Mitchel)
-        alx "Cross over! Cross over!"
+            voice "C-15-127.mp3" #Alex (Bonnie Mitchel)
+            alx "Cross over! Cross over!"
 
-        #play sound sfx crunch
+            #play sound sfx crunch
 
-        #pause 0.2
+            #pause 0.2
 
-        #play sound sfx crunch
+            #play sound sfx crunch
 
-        voice "C-15-128.mp3" #Alex (Bonnie Mitchel)
-        alx "You fucker, cross {i}over{/i}!"
+            voice "C-15-128.mp3" #Alex (Bonnie Mitchel)
+            alx "You fucker, cross {i}over{/i}!"
 
-        #play sound sfx crunch
+            #play sound sfx crunch
 
-        "His bones are snapping under the sheer force of my blows."
+            "His bones are snapping under the sheer force of my blows."
 
-        "At some point, the old spade snaps in half at the wooden handle - and, caught off-balance, I come tumbling down onto the smoking pile of broken bones."
+            "At some point, the old spade snaps in half at the wooden handle - and, caught off-balance, I come tumbling down onto the smoking pile of broken bones."
 
-        "But the fire inside me doesn’t pale even for a moment. I drive my prosthetic into what remains of the skull, the plastic bending and cracking under the weight of my strikes."
+            "But the fire inside me doesn’t pale even for a moment. I drive my prosthetic into what remains of the skull, the plastic bending and cracking under the weight of my strikes."
 
-        voice "C-15-129.mp3" #Alex (Bonnie Mitchel)
-        alx "Crossovercrossovercrossovercrossover {i}yyyyyyyyaaaaaaaaaaaaaaaaaahhhhhh!!!!{/i}"
+            voice "C-15-129.mp3" #Alex (Bonnie Mitchel)
+            alx "Crossovercrossovercrossovercrossover {i}yyyyyyyyaaaaaaaaaaaaaaaaaahhhhhh!!!!{/i}"
 
-        "I hit him one last time - and my prosthesis blasts apart, along with the dome of his skull."
+            "I hit him one last time - and my prosthesis blasts apart, along with the dome of his skull."
 
-        "It’s just bones now. The gaseous miasma that remains is more like the shadow of an extinguished match."
+            "It’s just bones now. The gaseous miasma that remains is more like the shadow of an extinguished match."
 
-        "My whole body aches… My heart is pounding at a million beats per second..."
+            "My whole body aches… My heart is pounding at a million beats per second..."
 
-        "...Did I win?"
+            "...Did I win?"
 
-        "No… There’s an inky, string-like miasma unraveling out of the ground… surrounding him…"
+            "No… There’s an inky, string-like miasma unraveling out of the ground… surrounding him…"
 
-        "He’s recovering. I only disabled him."
+            "He’s recovering. I only disabled him."
 
-        voice "C-15-130.mp3" #Alex (Bonnie Mitchel)
-        alx "No…"
+            voice "C-15-130.mp3" #Alex (Bonnie Mitchel)
+            alx "No…"
 
-        "Oh… wait… what?"
+            "Oh… wait… what?"
 
-        "More of the inky, abyssal thread spools out, wrapping around the broken heap. Soon, it’s as though he’s mummified in shadow."
+            "More of the inky, abyssal thread spools out, wrapping around the broken heap. Soon, it’s as though he’s mummified in shadow."
 
-        "And then…"
+            "And then…"
 
-        "As though trapped in a tar pit, the umbral cocoon sinks into the earth."
+            "As though trapped in a tar pit, the umbral cocoon sinks into the earth."
 
-        "After a moment, a cool, clear serenity passes over me. I can’t feel the ghost’s presence at all."
+            "After a moment, a cool, clear serenity passes over me. I can’t feel the ghost’s presence at all."
 
-        voice "C-15-131.mp3" #Alex (Bonnie Mitchel)
-        alx "Does that mean…?"
+            voice "C-15-131.mp3" #Alex (Bonnie Mitchel)
+            alx "Does that mean…?"
 
-        #play music genevieve
+            #play music genevieve
 
-        #show alex tense
+            #show alex tense
 
-        #show genevieve happy
+            #show genevieve happy
 
-        voice "C-15-132.mp3" #Genevieve (Lasli Tran)
-        gen "He’s… he’s finally descended into Perdition."
+            voice "C-15-132.mp3" #Genevieve (Lasli Tran)
+            gen "He’s… he’s finally descended into Perdition."
 
-        voice "C-15-133.mp3" #Genevieve (Lasli Tran)
-        gen "How did you know your arm could rend his spirit?"
+            voice "C-15-133.mp3" #Genevieve (Lasli Tran)
+            gen "How did you know your arm could rend his spirit?"
 
-        voice "C-15-134.mp3" #Alex (Bonnie Mitchel)
-        alx "Honestly, I didn’t give it a lot of thought."
+            voice "C-15-134.mp3" #Alex (Bonnie Mitchel)
+            alx "Honestly, I didn’t give it a lot of thought."
 
-        voice "C-15-135.mp3" #Genevieve (Lasli Tran)
-        gen "I don’t even know what to say. You’re magnificent! You’ve freed me."
+            voice "C-15-135.mp3" #Genevieve (Lasli Tran)
+            gen "I don’t even know what to say. You’re magnificent! You’ve freed me."
 
-        voice "C-15-136.mp3" #Alex (Bonnie Mitchel)
-        alx "..."
+            voice "C-15-136.mp3" #Alex (Bonnie Mitchel)
+            alx "..."
 
-        voice "C-15-137.mp3" #Genevieve (Lasli Tran)
-        gen "Are you… are you alright?"
+            voice "C-15-137.mp3" #Genevieve (Lasli Tran)
+            gen "Are you… are you alright?"
 
-        voice "C-15-138.mp3" #Alex (Bonnie Mitchel)
-        alx "I don’t know yet."
+            voice "C-15-138.mp3" #Alex (Bonnie Mitchel)
+            alx "I don’t know yet."
 
-        "I sigh, feeling like I haven’t slept in years."
+            "I sigh, feeling like I haven’t slept in years."
 
-        voice "C-15-139.mp3" #Alex (Bonnie Mitchel)
-        alx "Caelum’s still dead, so I guess not."
+            voice "C-15-139.mp3" #Alex (Bonnie Mitchel)
+            alx "Caelum’s still dead, so I guess not."
 
         voice "C-15-140.mp3" #Genevieve (Lasli Tran)
         gen "Your friend has passed. I cannot sense him. This is a good thing." 
@@ -898,5 +911,7 @@ label spirits_a2s7:
         "It’s about time I leaned into it." 
 
         #scene black
+        
+        jump spirits_a3s5 ##Servitude ending
 
     jump spirits_a3s1
