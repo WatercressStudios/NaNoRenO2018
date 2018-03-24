@@ -38,6 +38,9 @@ label spirits_a2s3:
     "Maybe I shouldn't do this right now… I mean, I've got all this food…"
 
     "On the other hand, with migraines like mine, having free time isn’t always a guarantee..."
+    
+    $ duties = 0
+    $ life = 0
 
     menu:
 
