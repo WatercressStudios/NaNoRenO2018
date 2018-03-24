@@ -332,42 +332,42 @@ label spirits_a1s1:
     "Why is it here? I sure as hell didn’t bring it."
 
     "Does it belong to the school? More importantly: how did it hit my head?"
-
-    "..."
-
+    
     #choice, open the box or don’t open.
+    menu:
+        "..."
 
-    #if don’t open
+        "Open it.":
+            #play relaxed/school
 
-    #show alex flustered 
+            "...There shouldn’t be anything dangerous in there; it’s just a silly box."
 
-    "N-No. It’s impolite to just go looking around like that."
+            #Choose to open
 
-    #play relaxed/school
+            "..."
 
-    "...There shouldn’t be anything dangerous in there; it’s just a silly box."
+            #some sort of a heartbeat sound effect
 
-    #Choose to open
+            "..."
 
-    "..."
+            "I click the lock on it open and raise the top..."
 
-    #some sort of a heartbeat sound effect
+            #scene open box
 
-    "..."
+            "..."
 
-    "I click the lock on it open and raise the top..."
+            "...It’s empty."
 
-    #scene open box 
+            #show alex awkward
 
-    "..."
+            #play relaxed/school
 
-    "...It’s empty."
+            "Thank god for that. I didn’t know if I was about to scream or not."
 
-    #show alex awkward
+        "Don't open it.":
+            #show alex flustered
 
-    #play relaxed/school
-
-    "Thank god for that. I didn’t know if I was about to scream or not."
+            "N-No. It’s impolite to just go looking around like that."
 
     "I need to stop freaking out. I’m overreacting to everything."
 
