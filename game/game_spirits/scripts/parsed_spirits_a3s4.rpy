@@ -132,8 +132,16 @@ label spirits_a3s4:
     "Should I really be doing this?"
 
     "{i}I have to.{/i}"
+    
+    if hasAmmo = False:
+        "Last night, I discovered that old pine box hadn't been so empty, after all."
+        
+        "Like serendipity, I found a single, lone bullet tucked away under the loose velvet lining of the interior compartment."
+        
+        "Who else would that be meant for, if not me?"
 
-    "A single shot was all it took to free {i}them{/i}, so why not me?"
+    else:
+        "A single shot was all it took to free {i}them{/i}, so why not me?"
 
     "With several deep breaths, I slowly bring the gun to my head."
 
