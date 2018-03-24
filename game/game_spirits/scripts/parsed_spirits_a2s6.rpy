@@ -70,6 +70,7 @@ label spirits_a2s6:
         "Fine.":
             $ hasAmmo = True
             $ duties += 1        
+            $ secondTrueEndFlag = False  
             "…Fine. Whatever. There's no hope at fighting her."
 
             "The sooner I get this done, the sooner she'll leave me alone."
