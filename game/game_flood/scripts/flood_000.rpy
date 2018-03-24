@@ -317,6 +317,9 @@ label flood_expressions:
     show oph neutral
     oph "oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... "
 
+    show oph neutral at flip
+    oph "oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... oph neutral... "
+
     show oph neutral close
     oph "oph neutral close... oph neutral close... oph neutral close... oph neutral close... oph neutral close... oph neutral close... oph neutral close... "
 

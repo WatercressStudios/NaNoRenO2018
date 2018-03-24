@@ -24,6 +24,8 @@ init:
         mouth2
         .2
         repeat
+    transform flip:
+        xzoom -1.0
 
 init python:
     renpy.music.register_channel("ambience", mixer="sfx", loop=True, stop_on_mute=True, tight=True, file_prefix='', file_suffix='', buffer_queue=True, movie=False)
