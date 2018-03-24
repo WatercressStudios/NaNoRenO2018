@@ -1,5 +1,5 @@
 ﻿label letgo_401:
-    #All va lines from here up to the next comment are the same exact ones as in the first scene
+    #All va lines from here up to the next comment are the same exact ones as in the first scene letgo
 
     play sound "game_letgo/sfx/Clocktower 3PM.ogg"
     play ambience "game_letgo/ambience/Town Center Plaza.ogg" fadeout 0.1 fadein 0.1
@@ -26,7 +26,7 @@
     voice "C-401-6.mp3" #Elijah (Michael Potok)
     eli "Breathe. Relax."
 
-    scene townsquare2 with dissolve
+    scene letgo townsquare2 with dissolve
     show eli cool2 with dissolve:
         align (0.35, 1.0)
 
@@ -95,7 +95,6 @@
 
     "Dying? What the hell?"
 
-    scene road long
     hide eli
     hide may
     "She drags me through the alley and the road, down streets and around corners. At first I'm utterly disoriented, completely lost - but after a while, I understand."
@@ -112,11 +111,11 @@
 
     "She tears open the apartment complex’s door, leading me to the staircase. She stomps up them, and I'm half-tempted to ask her to quiet down for her neighbors' sake - but I don't think that would be appropriate."
 
-    #Show maya room with dissolve
+    scene letgo house hallway with dissolve
     "Fumbling for her keys, she opens the door and thrusts me inside."
 
     "Rushing past me, I follow her into the bedroom. Other than a messy bed, it looks just like it always has."
-
+    scene letgo house bedroom with dissolve
     "She turns to me, tears in her eyes."
     show may tired3 with dissolve:
         align (0.65, 1.0)
@@ -262,7 +261,7 @@
     "I love her, after all."
     hide may with dissolve
     hide eli with dissolve
-    #scene may kitchen with dissolve
+    scene letgo house kitchen with dissolve
     show eli sad1
     play music bgmletgo_intro noloop fadein 2.0 fadeout 1.0
     queue music bgmletgo_loop loop
@@ -299,6 +298,7 @@
     "With slow, deliberate actions, I retrieve the tea and catch the kettle before it screams at me."
 
     "I pour two cups and dip the tea bags in. With a single moment of hesitation, I move to her bedroom."
+    scene letgo house bedroom with dissolve
     hide eli
     show may sad3 with dissolve:
         align (0.65, 1.0)
@@ -404,7 +404,6 @@
 
     voice "C-401-64.mp3" #Elijah (Michael Potok)
     eli "You have to make the choice, Maya."
-    stop music fadeout 2.0
     menu:
         "Let Go.":
             jump letgo_402

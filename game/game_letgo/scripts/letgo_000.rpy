@@ -71,6 +71,9 @@
 
 
 ### scene background ###
+#formatting below
+#scene letgo [name here] with dissolve
+#Example: scene letgo city nearby sunset with dissolve
 
 # city nearby sunset
 # city outlook night
@@ -680,7 +683,7 @@ label letgo_expressions:
 
     show may suspicious1 close
     may "may suspicious1 close... may suspicious1 close... may suspicious1 close... may suspicious1 close... may suspicious1 close... may suspicious1 close... "
-    
+
     show may normal2
     may "may normal2... may normal2... may normal2... may normal2... may normal2... may normal2... may normal2... may normal2... may normal2..."
 
