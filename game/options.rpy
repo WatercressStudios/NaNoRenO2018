@@ -15,6 +15,8 @@
 define config.name = _("NaNoRenO-2018")
 define config.developer = "True"
 
+define config.debug_sound = False
+
 
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.

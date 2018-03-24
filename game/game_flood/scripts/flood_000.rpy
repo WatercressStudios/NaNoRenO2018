@@ -4,10 +4,22 @@
 #
 ###############################
 
-define oph = Character("Ophelia", callback=speaker("oph"))
-define oli = Character("Oliver", callback=speaker("oli"))
-define dai = Character("Daisy", callback=speaker("dai"))
-define hop = Character("Hope", callback=speaker("hop"))
+
+define oph = Character("Ophelia")
+define oli = Character("Oliver")
+define dai = Character("Daisy")
+define hop = Character("Hope")
+define wai = Character("Waitress")
+define grl = Character("Little Girl") #Hope
+define vce = Character("Voice") #Hope's Dad
+define dad = Character("Dad")
+define mom = Character("Mom")
+define sis = Character("Sister")
+define ogl = Character("Other Girl")
+define per = Character("Performer") #Daisy
+define dsy = Character("Daisy") #idk why there are two daisy tags
+define old = Character("Old Man") #Oliver
+define mgr = Character("Manager")
 
 ###############################
 #
@@ -288,8 +300,6 @@ image hop eyes embarrassed2 = blinkeyes("game_flood/sprites/Hope/Pose 2/eyes emb
 
 image hop mouth normal2 = FlapMouth("hop", "game_flood/sprites/Hope/Pose 2/mouth normal close.png", "game_flood/sprites/Hope/Pose 2/mouth normal open.png")
 
-
-
 ###############################
 #
 # FLOOD STORY START
@@ -298,7 +308,6 @@ image hop mouth normal2 = FlapMouth("hop", "game_flood/sprites/Hope/Pose 2/mouth
 
 label flood_000:
     $ persistent.last_story = "flood"
-    #jump flood_101
 
     menu:
         "Show everyone's expressions":
@@ -480,6 +489,6 @@ label flood_expressions:
     hop "hop hurt embarrassed close... hop hurt embarrassed close... hop hurt embarrassed close... hop hurt embarrassed close... hop hurt embarrassed close... "
 
     hide hop
-    #jump flood_000
+    jump flood_101
 
     "FLOOD END (remove once scripts are in)"
