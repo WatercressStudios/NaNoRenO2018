@@ -68,6 +68,9 @@ label spirits_a2s6:
     menu:
 
         "Fine.":
+            $ hasAmmo = True
+            $ duties += 1        
+            $ secondTrueEndFlag = False  
             "…Fine. Whatever. There's no hope at fighting her."
 
             "The sooner I get this done, the sooner she'll leave me alone."
@@ -158,6 +161,8 @@ label spirits_a2s6:
             "Not like any of this matters anyway."
 
         "No!":
+            $ hasAmmo = False
+            $ life += 1        
             "You know what? I think I've had enough of this."
 
             "With all my strength, I forcefully, violently rip my arm back."
@@ -226,6 +231,7 @@ label spirits_a2s6:
                 alx "…I'm going to reincarnate, just like they have. We're {i}Hindu{/i}."
 
             if duties > 0:
+                $ secondTrueEndFlag = True
 
                 "She silently considers my words with a plaintive frown, clutching a lock of her spectral curls."
 
@@ -260,6 +266,8 @@ label spirits_a2s6:
                     "Despite myself, I feel a proud little smile curling on my face."
 
             else:
+                $ secondTrueEndFlag = False            
+            
                 voice "C-14-51.mp3" #Alex (Bonnie Mitchel)
                 alx "Look, maybe I'll help you cross over and maybe I won't. It's not your choice to make for me."
 

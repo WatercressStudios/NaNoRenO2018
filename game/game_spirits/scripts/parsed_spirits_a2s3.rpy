@@ -5,7 +5,7 @@ label spirits_a2s3:
 
     "It's a nice alternative to the much richer fare they serve in the cafeteria."
 
-    if caelumAlive == True:
+    if caelumAlive == False:
 
         "Caelum didn't turn up in any of our morning classes, so I'm hoping to find him around here…"
 
@@ -38,6 +38,9 @@ label spirits_a2s3:
     "Maybe I shouldn't do this right now… I mean, I've got all this food…"
 
     "On the other hand, with migraines like mine, having free time isn’t always a guarantee..."
+    
+    $ duties = 0
+    $ life = 0
 
     menu:
 
@@ -46,6 +49,8 @@ label spirits_a2s3:
         "If I just look…":
 
             $ hasDiary = True
+            
+            $ duties += 1
 
             voice "C-11-1.mp3" #Alex (Bonnie Mitchel)
             alx "Ugh, fine. At least if I do this, she can't say I didn't."
@@ -78,6 +83,8 @@ label spirits_a2s3:
         "No. This can wait.":
 
             $ hasDiary = False
+            
+            $ life += 1
 
             "I don’t want to do this right now. I’d feel ridiculous."
 
@@ -112,7 +119,7 @@ label spirits_a2s3:
 
         "I gently flip through the pages. They’re all written in the same hand, and entries end about a third of the way through."
 
-        "The first is dated January 1918 - which is helpful - but it mostly complaints about servants."
+        "The first is dated January 1918 - which is helpful - but it's mostly complaints about servants."
 
         "Skimming through the next few entries, I think the woman who wrote this was a servant herself… but it also seems she presided over the others."
 
