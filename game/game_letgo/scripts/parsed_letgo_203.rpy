@@ -1,4 +1,4 @@
-﻿label letgo_203:
+label letgo_203:
     # define ow character "Old Woman"
     # define om character "Old Man"
 
@@ -28,7 +28,7 @@
     eli "How can you tell?"
 
     voice "C-203-8.mp3" #Old Man (Adam Warren)
-    om "Just by looking, you seem happy and excited. And where you look doesn’t hurt either, haha~!"
+    om "Just by looking, you tell me you're happy and excited. And where you look, haha!"
 
     voice "C-203-9.mp3" #Old Woman (Ashe Thurman)
     ow "Oh, honey… don’t tease them too much!"
@@ -57,7 +57,7 @@
     "That would be worth the world to me."
 
     voice "C-203-15.mp3" #Old Woman (Ashe Thurman)
-    ow "Still, young lady, would you like something to drink? It's actual cocoa in the white cups, but the ones with a black band are made from the sugar-free powder."
+    ow "So, young lady, would you like something to drink? It's actual cocoa in the white cups, but the ones with a black band are made from the sugar-free powder."
 
     voice "C-203-16.mp3" #Maya (shiena)
     may "Ooh, do you have marshmallows?"
@@ -75,7 +75,7 @@
     eli "First dates are kind of a big deal, haha~! Anyone’s going to be a bit nervous."
 
     voice "C-203-19.mp3" #Old Man (Adam Warren)
-    om "Oh my. And to think, when I first met my wife, there was a big hullabaloo! Well, son. You have good reason to be."
+    om "Oh my. And to think, when I first met my wife, there was a big hullabaloo! Well, son. There's good reason to be tense."
 
     voice "C-203-20.mp3" #Elijah (Michael Potok)
     eli "Isn't some confidence-building in order?"
@@ -85,13 +85,13 @@
     "You know, they kind of remind me of us - but the old lady’s black and the man seems… I dunno, Scandinavian?" 
 
     voice "C-203-21.mp3" #Old Man (Adam Warren)
-    om "A lot of couples don't make it. This is what it looks like to beat the odds! Hahaha!"
+    om "A lot of couples don't make it. But this is what it looks like to beat the odds! Hahaha!"
 
     voice "C-203-22.mp3" #Elijah (Michael Potok)
     eli "Oh. That's… nice?"
 
     voice "C-203-23.mp3" #Old Man (Adam Warren)
-    om "So you’re a new couple, eh?"
+    om "I hazard that you're a new couple, yes?"
 
     voice "C-203-24.mp3" #Elijah (Michael Potok)
     eli "Yeah, just today! We’ve been friends for a long time; we’ve worked together..." 
@@ -106,7 +106,7 @@
     eli "And what’s that?"
 
     voice "C-203-28.mp3" #Old Man (Adam Warren)
-    om "If you don’t make the time to be together, you’ll never find it. So many youngsters forget that they’ve got to make room for the special moments. We only ever have so many - and I can prove it at my ripe old age!"
+    om "If you don’t make the time, you’ll never find the time to be together. So many young men forget that they’ve got to make room for the special moments. We only ever have so many - and I say that at my ripe old age!"
 
     "You know, that made a lot of sense to me." 
 
@@ -120,10 +120,11 @@
     eli "What’s that over there? A fan of a certain old musical?"
 
     voice "C-203-30.mp3" #Old Man (Adam Warren)
-    om "Oh! That was one of the first kites I made when I met my dear wife. It wasn’t the best I had, but I kept it." 
+    om "Oh! That was one of the first kites I made when I met my dear wife. It wasn’t the best I'd made, but I kept it."
 
-    om "And that one? That was the day I first knew I loved her. A plane can float along the breeze, free as it can be - but a kite, well. It needs a connection. We each fly because the string holds our sails taut. We help each other be free."
-
+    voice "C-203-30-2.mp3" #Old Man (Adam Warren)
+    om "That one? That was the day I first knew I loved her. A plane can float along the breeze, free as it can be - but a kite, well. It needs a connection. We each fly because the string holds our sails taut. We help each other be free."
+    
     "I hadn’t thought about our new relationship like that. Some of my friends often moan and groan about things tying them down, but May..."
 
     voice "C-203-31.mp3" #Elijah (Michael Potok)

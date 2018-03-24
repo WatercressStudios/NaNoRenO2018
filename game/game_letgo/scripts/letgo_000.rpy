@@ -81,6 +81,9 @@
 # downtown night
 # downtown1
 # downtown2
+# house bedroom
+# house hallway
+# house kitchen
 # lights1 night
 # lights2 night
 # mall escalator
