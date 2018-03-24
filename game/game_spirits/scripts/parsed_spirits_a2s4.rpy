@@ -1,10 +1,13 @@
 label spirits_a2s4:
-    #label CaelumIsDeadX:
+    if caelumAlive == True:
+        jump BuddingRelationshipX
+    jump CaelumIsDeadX
 
-    #if HasDiary = False:
-    "I’m reviewing the diary a second time - trying to more clearly visualize the timeline of events they describe - when I hear a knocking on the doorframe of my room."
-    #else:
-    "I’m just saying my goodbyes to Naniji and relaxing into my soft mattress when I hear a knocking on the doorframe."
+label CaelumIsDeadX:
+    if hasDiary == False:
+        "I’m reviewing the diary a second time - trying to more clearly visualize the timeline of events they describe - when I hear a knocking on the doorframe of my room."
+    else:
+        "I’m just saying my goodbyes to Naniji and relaxing into my soft mattress when I hear a knocking on the doorframe."
 
     "I turn my head to see Jianmei standing in the doorway, looking more concerned than I’ve ever seen her."
 
@@ -150,231 +153,228 @@ label spirits_a2s4:
 
     "The first friend I’ve made in as long as I can remember, and now he’s gone."
 
-    #if HasDiary = False:
-    "Maybe there’s no hope; maybe this is the world telling me I don’t get to be happy."
+    if hasDiary == False:
+        "Maybe there’s no hope; maybe this is the world telling me I don’t get to be happy."
 
-    voice "C-12-22.mp3" #Alex (Bonnie Mitchel)
-    alx "Dammit, what’s the point of anything?"
+        voice "C-12-22.mp3" #Alex (Bonnie Mitchel)
+        alx "Dammit, what’s the point of anything?"
 
-    voice "C-12-23.mp3" #Alex (Bonnie Mitchel)
-    alx "Why… why can’t I just live?"
-    #else:
-    "It’s the spirits inhabiting this house. They took my friend from me. They’ll take {i}everything{/i} if I let them."
+        voice "C-12-23.mp3" #Alex (Bonnie Mitchel)
+        alx "Why… why can’t I just live?"
+    else:
+        "It’s the spirits inhabiting this house. They took my friend from me. They’ll take {i}everything{/i} if I let them."
 
-    voice "C-12-24.mp3" #Alex (Bonnie Mitchel)
-    alx "No. That isn’t going to happen."
+        voice "C-12-24.mp3" #Alex (Bonnie Mitchel)
+        alx "No. That isn’t going to happen."
 
-    voice "C-12-25.mp3" #Alex (Bonnie Mitchel)
-    alx "I’m going to put an end to you. I’ll make you all pay!"
+        voice "C-12-25.mp3" #Alex (Bonnie Mitchel)
+        alx "I’m going to put an end to you. I’ll make you all pay!"
 
-    "I’m going to rid this whole fucking planet of you."
+        "I’m going to rid this whole fucking planet of you."
 
-    #label BuddingRelationshipX:
+label BuddingRelationshipX:
+    if hasDiary == False:
+        "I’m just saying my goodbyes to Naniji when I notice Caelum hovering in the doorway. I motion for him to come in and he does, leaning against the wall."
 
-    #if HasDiary = False:
+        voice "C-12-26.mp3" #Caelum (Daniel Acosta)
+        cae "That was your grandma?"
 
-    "I’m just saying my goodbyes to Naniji when I notice Caelum hovering in the doorway. I motion for him to come in and he does, leaning against the wall."
+        voice "C-12-27.mp3" #Alex (Bonnie Mitchel)
+        alx "Yep! I was just calling her to tell her how I was settling in."
 
-    voice "C-12-26.mp3" #Caelum (Daniel Acosta)
-    cae "That was your grandma?"
+        voice "C-12-28.mp3" #Caelum (Daniel Acosta)
+        cae "You lived with her, right? Do you guys get along?"
 
-    voice "C-12-27.mp3" #Alex (Bonnie Mitchel)
-    alx "Yep! I was just calling her to tell her how I was settling in."
+        voice "C-12-29.mp3" #Alex (Bonnie Mitchel)
+        alx "Mm-hmm! I mean, as much as anybody can get along with their guardian."
 
-    voice "C-12-28.mp3" #Caelum (Daniel Acosta)
-    cae "You lived with her, right? Do you guys get along?"
+        voice "C-12-30.mp3" #Alex (Bonnie Mitchel)
+        alx "She grew up in Delhi, though, so… she definitely has a different cultural outlook than I do."
 
-    voice "C-12-29.mp3" #Alex (Bonnie Mitchel)
-    alx "Mm-hmm! I mean, as much as anybody can get along with their guardian."
+        voice "C-12-31.mp3" #Caelum (Daniel Acosta)
+        cae "Do you have any other friends or relatives that you call? I don’t really see you on the phone that often…"
 
-    voice "C-12-30.mp3" #Alex (Bonnie Mitchel)
-    alx "She grew up in Delhi, though, so… she definitely has a different cultural outlook than I do."
+        voice "C-12-32.mp3" #Alex (Bonnie Mitchel)
+        alx "Yeah, um… well…"
 
-    voice "C-12-31.mp3" #Caelum (Daniel Acosta)
-    cae "Do you have any other friends or relatives that you call? I don’t really see you on the phone that often…"
+        voice "C-12-33.mp3" #Alex (Bonnie Mitchel)
+        alx "You see… I had friends before the accident - but afterwards, it wasn’t the same, and moving away didn’t really help."
 
-    voice "C-12-32.mp3" #Alex (Bonnie Mitchel)
-    alx "Yeah, um… well…"
+        voice "C-12-34.mp3" #Alex (Bonnie Mitchel)
+        alx "I spent so long in the hospital, and then I was homeschooled afterwards, so… I mean, all the encounters with ghosts certainly haven’t helped my social life."
 
-    voice "C-12-33.mp3" #Alex (Bonnie Mitchel)
-    alx "You see… I had friends before the accident - but afterwards, it wasn’t the same, and moving away didn’t really help."
+        "It feels so hard to admit…"
 
-    voice "C-12-34.mp3" #Alex (Bonnie Mitchel)
-    alx "I spent so long in the hospital, and then I was homeschooled afterwards, so… I mean, all the encounters with ghosts certainly haven’t helped my social life."
+        "After a while, I stopped even trying. It just seemed like an uphill battle. I always had some new excuse to avoid others."
 
-    "It feels so hard to admit…"
+        voice "C-12-35.mp3" #Caelum (Daniel Acosta)
+        cae "Yeah, well. I understand being lonely."
 
-    "After a while, I stopped even trying. It just seemed like an uphill battle. I always had some new excuse to avoid others."
+        "He purses his lips contemplatively, his eyes flitting off to some point in the distance."
 
-    voice "C-12-35.mp3" #Caelum (Daniel Acosta)
-    cae "Yeah, well. I understand being lonely."
+        voice "C-12-36.mp3" #Caelum (Daniel Acosta)
+        cae "I have a large family, I guess - but it’s never really felt like it. It’s just been me and my mom for the last couple years."
 
-    "He purses his lips contemplatively, his eyes flitting off to some point in the distance."
+        voice "C-12-37.mp3" #Alex (Bonnie Mitchel)
+        alx "Huh? You’re an only child too?"
 
-    voice "C-12-36.mp3" #Caelum (Daniel Acosta)
-    cae "I have a large family, I guess - but it’s never really felt like it. It’s just been me and my mom for the last couple years."
+        voice "C-12-38.mp3" #Caelum (Daniel Acosta)
+        cae "Nah, youngest, but my older sisters are \"Daddy’s Girls…\" We don’t talk."
 
-    voice "C-12-37.mp3" #Alex (Bonnie Mitchel)
-    alx "Huh? You’re an only child too?"
+        voice "C-12-39.mp3" #Caelum (Daniel Acosta)
+        cae "All in all, my family hasn’t been too great about… you know."
 
-    voice "C-12-38.mp3" #Caelum (Daniel Acosta)
-    cae "Nah, youngest, but my older sisters are \"Daddy’s Girls…\" We don’t talk."
+        "He gestures to himself with a dramatic sweep for emphasis."
 
-    voice "C-12-39.mp3" #Caelum (Daniel Acosta)
-    cae "All in all, my family hasn’t been too great about… you know."
+        voice "C-12-40.mp3" #Alex (Bonnie Mitchel)
+        alx "Right…"
 
-    "He gestures to himself with a dramatic sweep for emphasis."
+        voice "C-12-41.mp3" #Caelum (Daniel Acosta)
+        cae "It’s fine. Screw ‘em. Friends are the only family I’ll ever really need."
 
-    voice "C-12-40.mp3" #Alex (Bonnie Mitchel)
-    alx "Right…"
+        voice "C-12-42.mp3" #Caelum (Daniel Acosta)
+        cae "I know you don’t really know them yet and it’s kinda freaky, but the girls here are pretty cool when you get to know them."
 
-    voice "C-12-41.mp3" #Caelum (Daniel Acosta)
-    cae "It’s fine. Screw ‘em. Friends are the only family I’ll ever really need."
+        voice "C-12-43.mp3" #Caelum (Daniel Acosta)
+        cae "Sammi’s a really talented artist, Ashton does archery on horseback, Lexa’s bizarrely obsessed with professional wrestling…"
 
-    voice "C-12-42.mp3" #Caelum (Daniel Acosta)
-    cae "I know you don’t really know them yet and it’s kinda freaky, but the girls here are pretty cool when you get to know them."
+        voice "C-12-44.mp3" #Caelum (Daniel Acosta)
+        cae "You’d like them, I think."
 
-    voice "C-12-43.mp3" #Caelum (Daniel Acosta)
-    cae "Sammi’s a really talented artist, Ashton does archery on horseback, Lexa’s bizarrely obsessed with professional wrestling…"
+        voice "C-12-45.mp3" #Alex (Bonnie Mitchel)
+        alx "Hmm…"
 
-    voice "C-12-44.mp3" #Caelum (Daniel Acosta)
-    cae "You’d like them, I think."
+        "God, I’d almost forgotten, in the wake of all this crap with the ghost."
 
-    voice "C-12-45.mp3" #Alex (Bonnie Mitchel)
-    alx "Hmm…"
+        "The whole reason I’d been so excited to attend this school in the first place was because I wanted to start living a normal life again; I wanted to make friends and be {i}functional.{/i}"
 
-    "God, I’d almost forgotten, in the wake of all this crap with the ghost."
+        "That’s what I want - what I need. Then I started getting harassed again, and closed myself off to everyone but Caelum…"
 
-    "The whole reason I’d been so excited to attend this school in the first place was because I wanted to start living a normal life again; I wanted to make friends and be {i}functional.{/i}"
+        "I can’t forget to live."
+        
+    else:
+        "I’m staring dumbfoundedly at the diary when Caelum steps into the room."
 
-    "That’s what I want - what I need. Then I started getting harassed again, and closed myself off to everyone but Caelum…"
+        voice "C-12-46.mp3" #Caelum (Daniel Acosta)
+        cae "Alex, you okay?"
 
-    "I can’t forget to live."
+        voice "C-12-47.mp3" #Alex (Bonnie Mitchel)
+        alx "Y-Yeah…"
 
-    #if HasDiary = True:
+        voice "C-12-48.mp3" #Alex (Bonnie Mitchel)
+        alx "Uh, why don’t you come in?"
 
-    "I’m staring dumbfoundedly at the diary when Caelum steps into the room."
+        "Caelum blinks at me worriedly and takes a few tentative steps into my room, running his hand through his hair."
 
-    voice "C-12-46.mp3" #Caelum (Daniel Acosta)
-    cae "Alex, you okay?"
+        voice "C-12-49.mp3" #Caelum (Daniel Acosta)
+        cae "What is it you’re reading?"
 
-    voice "C-12-47.mp3" #Alex (Bonnie Mitchel)
-    alx "Y-Yeah…"
+        voice "C-12-50.mp3" #Alex (Bonnie Mitchel)
+        alx "The… The diary of a servant that used to work in this house; it’s pretty bad."
 
-    voice "C-12-48.mp3" #Alex (Bonnie Mitchel)
-    alx "Uh, why don’t you come in?"
+        voice "C-12-51.mp3" #Alex (Bonnie Mitchel)
+        alx "That girl - Genevieve - her father locked her in her room for weeks. And then one day, he just walked into her room - {i}this{/i} room - and butchered her."
 
-    "Caelum blinks at me worriedly and takes a few tentative steps into my room, running his hand through his hair."
+        voice "C-12-52.mp3" #Caelum (Daniel Acosta)
+        cae "Jesus {i}fuck{/i}. Are you serious?"
 
-    voice "C-12-49.mp3" #Caelum (Daniel Acosta)
-    cae "What is it you’re reading?"
+        voice "C-12-53.mp3" #Alex (Bonnie Mitchel)
+        alx "Yes… And she wasn’t the only one."
 
-    voice "C-12-50.mp3" #Alex (Bonnie Mitchel)
-    alx "The… The diary of a servant that used to work in this house; it’s pretty bad."
+        voice "C-12-54.mp3" #Alex (Bonnie Mitchel)
+        alx "The servants all started disappearing after that… This diary just ends after a random entry."
 
-    voice "C-12-51.mp3" #Alex (Bonnie Mitchel)
-    alx "That girl - Genevieve - her father locked her in her room for weeks. And then one day, he just walked into her room - {i}this{/i} room - and butchered her."
+        voice "C-12-55.mp3" #Alex (Bonnie Mitchel)
+        alx "I think… I think he killed them all."
 
-    voice "C-12-52.mp3" #Caelum (Daniel Acosta)
-    cae "Jesus {i}fuck{/i}. Are you serious?"
+        "I feel… I feel so overwhelmed. I’ve been to places with a miasma hanging over them before - but this is a house where a {i}massacre{/i} happened…"
 
-    voice "C-12-53.mp3" #Alex (Bonnie Mitchel)
-    alx "Yes… And she wasn’t the only one."
+        "God, what am I going to do?"
 
-    voice "C-12-54.mp3" #Alex (Bonnie Mitchel)
-    alx "The servants all started disappearing after that… This diary just ends after a random entry."
+        "Frowning, Caelum steps over and takes a seat beside me." 
 
-    voice "C-12-55.mp3" #Alex (Bonnie Mitchel)
-    alx "I think… I think he killed them all."
+        voice "C-12-56.mp3" #Caelum (Daniel Acosta)
+        cae "Alex."
 
-    "I feel… I feel so overwhelmed. I’ve been to places with a miasma hanging over them before - but this is a house where a {i}massacre{/i} happened…"
+        voice "C-12-57.mp3" #Alex (Bonnie Mitchel)
+        alx "Hmm?"
 
-    "God, what am I going to do?"
+        voice "C-12-58.mp3" #Caelum (Daniel Acosta)
+        cae "I don’t… Um, do you really feel like you have to do this? I mean, you have the diary; can’t you just give it to the authorities and let them figure things out from here?"
 
-    "Frowning, Caelum steps over and takes a seat beside me." 
+        "Tempting though that is, I shake my head."
 
-    voice "C-12-56.mp3" #Caelum (Daniel Acosta)
-    cae "Alex."
+        voice "C-12-59.mp3" #Alex (Bonnie Mitchel)
+        alx "This thing’s like a hundred years old. You think they’ll even care?"
 
-    voice "C-12-57.mp3" #Alex (Bonnie Mitchel)
-    alx "Hmm?"
+        voice "C-12-60.mp3" #Caelum (Daniel Acosta)
+        cae "So, what, it has to be you?"
 
-    voice "C-12-58.mp3" #Caelum (Daniel Acosta)
-    cae "I don’t… Um, do you really feel like you have to do this? I mean, you have the diary; can’t you just give it to the authorities and let them figure things out from here?"
+        voice "C-12-61.mp3" #Alex (Bonnie Mitchel)
+        alx "I-I guess. Nobody else can do what I do, so…"
 
-    "Tempting though that is, I shake my head."
+        voice "C-12-62.mp3" #Caelum (Daniel Acosta)
+        cae "But what do you even {i}owe{/i} this ghost? It’s not like she’s treated you with any respect."
 
-    voice "C-12-59.mp3" #Alex (Bonnie Mitchel)
-    alx "This thing’s like a hundred years old. You think they’ll even care?"
+        voice "C-12-63.mp3" #Alex (Bonnie Mitchel)
+        alx "It… it isn’t about whether or not she’s {i}nice{/i}."
 
-    voice "C-12-60.mp3" #Caelum (Daniel Acosta)
-    cae "So, what, it has to be you?"
+        voice "C-12-64.mp3" #Alex (Bonnie Mitchel)
+        alx "I’m never going to have a moment’s peace unless I can get these spirits to leave me alone."
 
-    voice "C-12-61.mp3" #Alex (Bonnie Mitchel)
-    alx "I-I guess. Nobody else can do what I do, so…"
+        voice "C-12-65.mp3" #Alex (Bonnie Mitchel)
+        alx "And even if these people are long-dead, they still deserve justice."
 
-    voice "C-12-62.mp3" #Caelum (Daniel Acosta)
-    cae "But what do you even {i}owe{/i} this ghost? It’s not like she’s treated you with any respect."
+        voice "C-12-66.mp3" #Caelum (Daniel Acosta)
+        cae "So you have to put your entire life on hold until all the ghosts are happy?"
 
-    voice "C-12-63.mp3" #Alex (Bonnie Mitchel)
-    alx "It… it isn’t about whether or not she’s {i}nice{/i}."
+        voice "C-12-67.mp3" #Alex (Bonnie Mitchel)
+        alx "{i}Yes{/i}, Caelum."
 
-    voice "C-12-64.mp3" #Alex (Bonnie Mitchel)
-    alx "I’m never going to have a moment’s peace unless I can get these spirits to leave me alone."
+        "I let out a sigh, sinking my arms backwards into the mattress."
 
-    voice "C-12-65.mp3" #Alex (Bonnie Mitchel)
-    alx "And even if these people are long-dead, they still deserve justice."
+        voice "C-12-68.mp3" #Alex (Bonnie Mitchel)
+        alx "Dammit, I’m so exhausted…"
 
-    voice "C-12-66.mp3" #Caelum (Daniel Acosta)
-    cae "So you have to put your entire life on hold until all the ghosts are happy?"
+        voice "C-12-69.mp3" #Alex (Bonnie Mitchel)
+        alx "You don’t get it. You don’t know what it’s like."
 
-    voice "C-12-67.mp3" #Alex (Bonnie Mitchel)
-    alx "{i}Yes{/i}, Caelum."
+        voice "C-12-70.mp3" #Alex (Bonnie Mitchel)
+        alx "I often wonder if I’ll ever just have a chance to {i}rest{/i}. Ugh, probably not."
 
-    "I let out a sigh, sinking my arms backwards into the mattress."
+        voice "C-12-71.mp3" #Caelum (Daniel Acosta)
+        cae "Alex…"
 
-    voice "C-12-68.mp3" #Alex (Bonnie Mitchel)
-    alx "Dammit, I’m so exhausted…"
+        voice "C-12-72.mp3" #Alex (Bonnie Mitchel)
+        alx "I really thought this school was going to be a clean slate for me, but it seems like there’s some new horde of ghosts jumping at the chance to take advantage of me around every corner…"
 
-    voice "C-12-69.mp3" #Alex (Bonnie Mitchel)
-    alx "You don’t get it. You don’t know what it’s like."
+        voice "C-12-73.mp3" #Alex (Bonnie Mitchel)
+        alx "I hoped this school would be a sanctuary from it all - but maybe that doesn’t exist."
 
-    voice "C-12-70.mp3" #Alex (Bonnie Mitchel)
-    alx "I often wonder if I’ll ever just have a chance to {i}rest{/i}. Ugh, probably not."
+        voice "C-12-74.mp3" #Caelum (Daniel Acosta)
+        cae "We’ll make it exist."
 
-    voice "C-12-71.mp3" #Caelum (Daniel Acosta)
-    cae "Alex…"
+        voice "C-12-75.mp3" #Alex (Bonnie Mitchel)
+        alx "Will we?"
 
-    voice "C-12-72.mp3" #Alex (Bonnie Mitchel)
-    alx "I really thought this school was going to be a clean slate for me, but it seems like there’s some new horde of ghosts jumping at the chance to take advantage of me around every corner…"
+        voice "C-12-76.mp3" #Caelum (Daniel Acosta)
+        cae "If the alternative is you seeing yourself as just some instrument at the spirit world’s disposal? Fuck yeah, we will."
 
-    voice "C-12-73.mp3" #Alex (Bonnie Mitchel)
-    alx "I hoped this school would be a sanctuary from it all - but maybe that doesn’t exist."
+        voice "C-12-77.mp3" #Caelum (Daniel Acosta)
+        cae "But… you have to take that step, Alex. You shouldn’t have to feel like you’re always waiting to begin living. You deserve to do things for yourself."
 
-    voice "C-12-74.mp3" #Caelum (Daniel Acosta)
-    cae "We’ll make it exist."
+        voice "C-12-78.mp3" #Caelum (Daniel Acosta)
+        cae "Don’t hold yourself to their schedule. Justice can wait."
 
-    voice "C-12-75.mp3" #Alex (Bonnie Mitchel)
-    alx "Will we?"
+        "I almost want to tell him about the inspection, but I can’t bring myself to quite yet…"
 
-    voice "C-12-76.mp3" #Caelum (Daniel Acosta)
-    cae "If the alternative is you seeing yourself as just some instrument at the spirit world’s disposal? Fuck yeah, we will."
+        voice "C-12-79.mp3" #Caelum (Daniel Acosta)
+        cae "After all, it’s not like they’re gonna die of old age."
 
-    voice "C-12-77.mp3" #Caelum (Daniel Acosta)
-    cae "But… you have to take that step, Alex. You shouldn’t have to feel like you’re always waiting to begin living. You deserve to do things for yourself."
+        voice "C-12-80.mp3" #Alex (Bonnie Mitchel)
+        alx "Heh…"
 
-    voice "C-12-78.mp3" #Caelum (Daniel Acosta)
-    cae "Don’t hold yourself to their schedule. Justice can wait."
-
-    "I almost want to tell him about the inspection, but I can’t bring myself to quite yet…"
-
-    voice "C-12-79.mp3" #Caelum (Daniel Acosta)
-    cae "After all, it’s not like they’re gonna die of old age."
-
-    voice "C-12-80.mp3" #Alex (Bonnie Mitchel)
-    alx "Heh…"
-
-    voice "C-12-81.mp3" #Alex (Bonnie Mitchel)
-    alx "We’ll see."
+        voice "C-12-81.mp3" #Alex (Bonnie Mitchel)
+        alx "We’ll see."
 
     jump spirits_a2s5

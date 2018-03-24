@@ -5,19 +5,19 @@ label spirits_a2s3:
 
     "It's a nice alternative to the much richer fare they serve in the cafeteria."
 
-    #if CaelumLives = False:
+    if caelumAlive == True:
 
-    "Caelum didn't turn up in any of our morning classes, so I'm hoping to find him around here…"
+        "Caelum didn't turn up in any of our morning classes, so I'm hoping to find him around here…"
 
-    "Maybe I'll knock on his bedroom door."
+        "Maybe I'll knock on his bedroom door."
 
-    #else:
+    else:
 
-    "I invited Caelum with me, but he told me he was skipping his lunch period to look up the history of Artemis Hall."
+        "I invited Caelum with me, but he told me he was skipping his lunch period to look up the history of Artemis Hall."
 
-    "It isn’t significant enough to have any plaques out front - so as far as I can tell, it’s just an old manor-style house that was bought up with the land under it when the academy expanded."
+        "It isn’t significant enough to have any plaques out front - so as far as I can tell, it’s just an old manor-style house that was bought up with the land under it when the academy expanded."
 
-    "I think Caelum might (understandably) be a little reticent to hang around here, too, after last night…"
+        "I think Caelum might (understandably) be a little reticent to hang around here, too, after last night…"
 
     "There are a couple of other girls coming back with me down the walkway, but I don't know any of them. One of them waves at me when she notices me looking, so I tentatively wave back."
 
@@ -45,7 +45,7 @@ label spirits_a2s3:
 
         "If I just look…":
 
-            #$ HasDiary = True
+            $ hasDiary = True
 
             voice "C-11-1.mp3" #Alex (Bonnie Mitchel)
             alx "Ugh, fine. At least if I do this, she can't say I didn't."
@@ -77,7 +77,7 @@ label spirits_a2s3:
 
         "No. This can wait.":
 
-            #$ HasDiary = False
+            $ hasDiary = False
 
             "I don’t want to do this right now. I’d feel ridiculous."
 
@@ -85,148 +85,143 @@ label spirits_a2s3:
 
             "Sighing, I take my food and ascend the staircase, leaving the problem behind me."
 
-    #if CaelumLives = False:
+    if caelumAlive == False:
 
-    "As I walk past Caelum’s bedroom, I notice that the door is closed."
+        "As I walk past Caelum’s bedroom, I notice that the door is closed."
 
-    "That’s mildly distressing; I certainly thought he’d just be sick in bed or something."
+        "That’s mildly distressing; I certainly thought he’d just be sick in bed or something."
 
-    "I walk up and give a light - but hesitant - knock."
+        "I walk up and give a light - but hesitant - knock."
 
-    voice "C-11-3.mp3" #Alex (Bonnie Mitchel)
-    alx "Caelum? Are you there?"
+        voice "C-11-3.mp3" #Alex (Bonnie Mitchel)
+        alx "Caelum? Are you there?"
 
-    "No answer…"
+        "No answer…"
 
-    "Maybe he just had a doctor’s appointment or something? With an endocrinologist or therapist?"
+        "Maybe he just had a doctor’s appointment or something? With an endocrinologist or therapist?"
 
-    "Something like that, I hope. I’ll ask Jianmei later."
+        "Something like that, I hope. I’ll ask Jianmei later."
 
-    #if HasDiary == True:
+    if hasDiary == True:
 
-    "Walking into my room, I sit down at the desk, set my lunch aside for a moment, and crack open the diary."
+        "Walking into my room, I sit down at the desk, set my lunch aside for a moment, and crack open the diary."
 
-    "The paper is musty and smells disgusting - but there’s fewer rat droppings on it than expected, so that’s something, I guess?"
+        "The paper is musty and smells disgusting - but there’s fewer rat droppings on it than expected, so that’s something, I guess?"
 
-    "I’m {i}definitely{/i} going to wash my hands after this."
+        "I’m {i}definitely{/i} going to wash my hands after this."
 
-    "I gently flip through the pages. They’re all written in the same hand, and entries end about a third of the way through."
+        "I gently flip through the pages. They’re all written in the same hand, and entries end about a third of the way through."
 
-    "The first is dated January 1918 - which is helpful - but it mostly complaints about servants."
+        "The first is dated January 1918 - which is helpful - but it mostly complaints about servants."
 
-    "Skimming through the next few entries, I think the woman who wrote this was a servant herself… but it also seems she presided over the others."
+        "Skimming through the next few entries, I think the woman who wrote this was a servant herself… but it also seems she presided over the others."
 
-    nvl clear
+        nvl clear
 
-    n "{i}\"March 3: Genevieve didn’t come down from her room today. Mr. Bourlon says she has suddenly taken ill. \"{/i}"
+        n "{i}\"March 3: Genevieve didn’t come down from her room today. Mr. Bourlon says she has suddenly taken ill. \"{/i}"
 
-    n "{i}\"I find that quite difficult to believe. His daughter has always been such a hale and hearty girl. Just yesterday, she was running around outside, climbing trees.\"{/i}"
+        n "{i}\"I find that quite difficult to believe. His daughter has always been such a hale and hearty girl. Just yesterday, she was running around outside, climbing trees.\"{/i}"
 
-    nvl clear
+        nvl clear
 
-    #if 'urname' in SpiritsReadFlags:
-    #"Genevieve Bourlon… that’s what the ghost told me her name was."
-    #else:
-    #"Genevieve Bourlon… could that be the demanding ghost’s name?"
+        if 'urname' in questionFlags:
+            "Genevieve Bourlon… that’s what the ghost told me her name was."
+        else:
+            "Genevieve Bourlon… could that be the demanding ghost’s name?"
 
-    nvl clear
+        nvl clear
 
-    n "{i}\"I’d hoped to check on the young miss, but Mr. Bourlon has insisted she be quarantined until her fever breaks. He says that with so many servants in the house, he fears a larger outbreak.\"{/i}"
+        n "{i}\"I’d hoped to check on the young miss, but Mr. Bourlon has insisted she be quarantined until her fever breaks. He says that with so many servants in the house, he fears a larger outbreak.\"{/i}"
 
-    n "{i}\"He’s even confiscated all the keys to her room. We aren’t to come to the second floor anymore - not without his escort.\"{/i}"
+        n "{i}\"He’s even confiscated all the keys to her room. We aren’t to come to the second floor anymore - not without his escort.\"{/i}"
 
-    n "{i}\"It all just seems a little strange to me. I suppose he hasn’t acted quite right since Mrs. Bourlon passed...\"{/i}"
+        n "{i}\"It all just seems a little strange to me. I suppose he hasn’t acted quite right since Mrs. Bourlon passed...\"{/i}"
 
-    "Geez… what the heck could have happened? I skim ahead a few pages, looking for any other mention of Genevieve’s name."
+        "Geez… what the heck could have happened? I skim ahead a few pages, looking for any other mention of Genevieve’s name."
 
-    nvl clear
+        nvl clear
 
-    n "{i}\"March 14: I probably risk my life by even writing this. \"{/i}"
+        n "{i}\"March 14: I probably risk my life by even writing this. \"{/i}"
 
-    n "{i}\"Genevieve is dead. Of that, I am certain. \"{/i}"
+        n "{i}\"Genevieve is dead. Of that, I am certain. \"{/i}"
 
-    n "{i}\"Late last night, quite discomforted, I emerged from my quarters to brew a bit of tea. As I passed the master’s study, I noticed his pistol and sword had been removed from their display above the fireplace.\"{/i}"
+        n "{i}\"Late last night, quite discomforted, I emerged from my quarters to brew a bit of tea. As I passed the master’s study, I noticed his pistol and sword had been removed from their display above the fireplace.\"{/i}"
 
-    n "{i}\"I heard movement in the upper story - but as I crept to the staircase, I could see no candlelight. I suspected an intruder was in the house. \"{/i}"
+        n "{i}\"I heard movement in the upper story - but as I crept to the staircase, I could see no candlelight. I suspected an intruder was in the house. \"{/i}"
 
-    n "{i}\"Then, I heard the most ghastly shriek.\"{/i}"
-    
-    n "{i}\"I grabbed the poker from the fireplace and made my way up the stairs, lest the young lady be debauched.\"{/i}"
+        n "{i}\"Then, I heard the most ghastly shriek.\"{/i}"
+        
+        n "{i}\"I grabbed the poker from the fireplace and made my way up the stairs, lest the young lady be debauched.\"{/i}"
 
-    n "{i}\"But what I saw in the moonlight was unspeakable.\"{/i}"
+        n "{i}\"But what I saw in the moonlight was unspeakable.\"{/i}"
 
-    n "{i}\"Genevieve was beyond my help. She had been impaled, right through the heart, by her father’s sword.\"{/i}"
+        n "{i}\"Genevieve was beyond my help. She had been impaled, right through the heart, by her father’s sword.\"{/i}"
 
-    n "{i}\"But that wasn’t the end of it. As though possessed by the devil himself, Mr. Bourlon pulled out his blade with a sickening squelch and--\"{/i}"
+        n "{i}\"But that wasn’t the end of it. As though possessed by the devil himself, Mr. Bourlon pulled out his blade with a sickening squelch and--\"{/i}"
 
-    nvl clear
+        nvl clear
 
-    "Crap crap crap crap… I have had {i}quite{/i} enough of that."
+        "Crap crap crap crap… I have had {i}quite{/i} enough of that."
 
-    "Ugh. I guess that ends the mystery of what happened to Genevieve."
+        "Ugh. I guess that ends the mystery of what happened to Genevieve."
 
-    "Locked in her room and murdered by her father… Why? For what reason?"
+        "Locked in her room and murdered by her father… Why? For what reason?"
 
-    "I skip to the last entry, hoping it has some answers; unfortunately, it’s just more of the same."
+        "I skip to the last entry, hoping it has some answers; unfortunately, it’s just more of the same."
 
-    nvl clear
+        nvl clear
 
-    n "{i}\"March 21: Everyone is dead. \"{/i}"
+        n "{i}\"March 21: Everyone is dead. \"{/i}"
 
-    n "{i}\"He slew the manservants first. God only knows why. \"{/i}"
+        n "{i}\"He slew the manservants first. God only knows why. \"{/i}"
 
-    n "{i}\"He claimed he relieved them of duty, but I heard the gunshots go off somewhere deep in the bowels of the house. \"{/i}"
+        n "{i}\"He claimed he relieved them of duty, but I heard the gunshots go off somewhere deep in the bowels of the house. \"{/i}"
 
-    n "{i}\"Every night since then, another maidservant has vanished. I pray that at least some of them have simply escaped this horrible place in the night - but in my heart I hold little hope. \"{/i}"
+        n "{i}\"Every night since then, another maidservant has vanished. I pray that at least some of them have simply escaped this horrible place in the night - but in my heart I hold little hope. \"{/i}"
 
-    n "{i}\"If only he hadn’t sold the horses, I’d have some hope at freedom… But there’s none to be found, and no way of taking the automobile. \"{/i}"
+        n "{i}\"If only he hadn’t sold the horses, I’d have some hope at freedom… But there’s none to be found, and no way of taking the automobile. \"{/i}"
 
-    n "{i}\"If I want to live, I’m going to have to kill Mr. Bourlon before he has a chance to kill me. \"{/i}"
+        n "{i}\"If I want to live, I’m going to have to kill Mr. Bourlon before he has a chance to kill me. \"{/i}"
 
-    n "{i}\"Everett, if I fail in my task, know that you’re the only man I ever loved. \"{/i}"
+        n "{i}\"Everett, if I fail in my task, know that you’re the only man I ever loved. \"{/i}"
 
-    nvl clear
+        nvl clear
 
-    "I… I get the feeling she didn’t succeed."
+        "I… I get the feeling she didn’t succeed."
 
-    "Dammit. Just how many people died in this house?"
+        "Dammit. Just how many people died in this house?"
 
-    #else: 
+    else: 
 
-    "Walking to my room, I put on a classical literature podcast and sit down at my desk with my food."
+        "Walking to my room, I put on a classical literature podcast and sit down at my desk with my food."
 
-    "It feels nice to just relax - and I actually have an appetite for the first time in what feels like forever! I’m going to gobble down as much as I can before the nausea sets in…"
+        "It feels nice to just relax - and I actually have an appetite for the first time in what feels like forever! I’m going to gobble down as much as I can before the nausea sets in…"
 
-    "I should really do this more often. Jianmei’s whatever-sandwiches are every bit as good as her dinners."
+        "I should really do this more often. Jianmei’s whatever-sandwiches are every bit as good as her dinners."
 
-    "..."
+        "..."
 
-    "By the time I’ve finished licking my fingers, I still have about thirty minutes left before class."
+        "By the time I’ve finished licking my fingers, I still have about thirty minutes left before class."
 
-    voice "C-11-4.mp3" #Alex (Bonnie Mitchel)
-    alx "I should probably call Naniji, since I haven’t really spoken to her in a few days…"
+        voice "C-11-4.mp3" #Alex (Bonnie Mitchel)
+        alx "I should probably call Naniji, since I haven’t really spoken to her in a few days…"
 
-    "It’ll be nice to hear her voice. I miss her already."
+        "It’ll be nice to hear her voice. I miss her already."
 
-    "Grabbing my phone, I find Naniji in my contacts and dial her number."
+        "Grabbing my phone, I find Naniji in my contacts and dial her number."
 
-    "It’s so reassuring to hear her voice after everything I’ve been through these last couple days. I almost wish I was back with her."
+        "It’s so reassuring to hear her voice after everything I’ve been through these last couple days. I almost wish I was back with her."
 
-    voice "C-11-5.mp3" #Alex (Bonnie Mitchel)
-    alx "...Yes, um, my classes are a lot of fun, actually. We’re keeping bees…"
+        voice "C-11-5.mp3" #Alex (Bonnie Mitchel)
+        alx "...Yes, um, my classes are a lot of fun, actually. We’re keeping bees…"
 
-    voice "C-11-6.mp3" #Alex (Bonnie Mitchel)
-    alx "Well, I guess I’ve made one friend. His name’s Caelum…"
+        voice "C-11-6.mp3" #Alex (Bonnie Mitchel)
+        alx "Well, I guess I’ve made one friend. His name’s Caelum…"
 
-    voice "C-11-7.mp3" #Alex (Bonnie Mitchel)
-    alx "No, Naniji, it’s not anything like that…"
+        voice "C-11-7.mp3" #Alex (Bonnie Mitchel)
+        alx "No, Naniji, it’s not anything like that…"
 
-    voice "C-11-8.mp3" #Alex (Bonnie Mitchel)
-    alx "Uh, Catholic, maybe? Oh my god, why are you even asking?"
-    
-    #if CaelumLives = True
-    #jump BuddingRelationshipX
-    #else
-    #jump CaelumIsDeadX
+        voice "C-11-8.mp3" #Alex (Bonnie Mitchel)
+        alx "Uh, Catholic, maybe? Oh my god, why are you even asking?"
 
     jump spirits_a2s4
