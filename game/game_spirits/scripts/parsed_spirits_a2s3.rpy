@@ -46,6 +46,8 @@ label spirits_a2s3:
         "If I just look…":
 
             $ hasDiary = True
+            
+            $ duties += 1
 
             voice "C-11-1.mp3" #Alex (Bonnie Mitchel)
             alx "Ugh, fine. At least if I do this, she can't say I didn't."
@@ -78,6 +80,8 @@ label spirits_a2s3:
         "No. This can wait.":
 
             $ hasDiary = False
+            
+            $ life += 1
 
             "I don’t want to do this right now. I’d feel ridiculous."
 
