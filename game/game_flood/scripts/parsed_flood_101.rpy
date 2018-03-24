@@ -1,7 +1,7 @@
 label flood_101:
     #ambient: dripping in an echo
 
-    #scene black
+    scene black with dissolve
 
     "I'm here again; a familiar sight, a familiar setting, a familiar sound..."
 
@@ -24,7 +24,7 @@ label flood_101:
 
     "I force my eyes open. I guess there’s no avoiding it now..."
 
-    #show cg dream (depending on how many variants we get we'll adjust how this plays out)
+    scene flood sunrise with dissolve #show cg dream (depending on how many variants we get we'll adjust how this plays out)
 
     "I'm in my room, but something is different - {i}wrong.{/i}"
 

@@ -4,7 +4,6 @@
 #
 ###############################
 
-
 define oph = Character("Ophelia")
 define oli = Character("Oliver")
 define dai = Character("Daisy")
@@ -20,6 +19,12 @@ define per = Character("Performer") #Daisy
 define dsy = Character("Daisy") #idk why there are two daisy tags
 define old = Character("Old Man") #Oliver
 define mgr = Character("Manager")
+
+image white = "#fff"
+
+init python:
+    define_images("game_flood/bgs", 2, False, ["flood"])
+    define_images("game_flood/cgs", 2, False, ["flood"])
 
 ###############################
 #
