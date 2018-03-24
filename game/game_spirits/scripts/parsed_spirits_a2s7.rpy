@@ -96,7 +96,7 @@ label spirits_a2s7:
 
         "{size=-10}No...{size=-10}"
         
-        if caelumAlive = True:
+        if caelumAlive == True:
             jump spirits_a3s2 ##Sacrifice Ending (previously called Caelum Possessed)
         else:
             jump spirits_a3s3 ##Forever Ending (previously called Alex Possessed)
