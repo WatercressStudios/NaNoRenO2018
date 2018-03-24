@@ -406,6 +406,8 @@
     eli "You have to make the choice, Maya."
     menu:
         "Let Go.":
+            stop music fadeout 2.0
             jump letgo_402
         "It can't end like this.":
+            stop music fadeout 2.0
             jump letgo_502

@@ -1,4 +1,9 @@
 ﻿label letgo_402:
+    play music bgmloop5bye_intro noloop fadeout 1.0
+    queue music bgmloop5bye_loop loop
+    hide may
+    hide eli
+    scene black
     "Lunging forward, she kisses me. Her arms wrap around my chest, and she desperately squeezes me tight."
 
     "The moment is a long one, with her cold lips on mine - but it isn't quite passionate."
@@ -32,7 +37,12 @@
     "It's just Maya and Elijah."
 
     "She pulls back, gasping for air, finally calm enough to sit still."
+    scene letgo house bedroom with dissolve
+    show may sad3 with dissolve:
+        align (0.65, 1.0)
 
+    show eli sad1 with dissolve:
+        align (0.35, 1.0)
     voice "C-402-1.mp3" #Maya (shiena)
     may "What am I going to do without you?"
 
@@ -46,6 +56,8 @@
 
     voice "C-402-4.mp3" #Elijah (Michael Potok)
     eli "I love you too, May."
+    show eli sad2
+    show may forcedsmile4
 
     "The atmosphere subtly changes. It's no longer dark…"
 
@@ -54,7 +66,7 @@
     "With lethargic movements, she grabs her phone and now-drinkable tea."
 
     "Leaning up towards me, she gives me a sad look."
-
+    show may tired3
     voice "C-402-5.mp3" #Maya (shiena)
     may "This is around the time you usually die."
 
@@ -62,23 +74,26 @@
 
     "Right. I should get going."
 
+    show eli worried2
+
     voice "C-402-6.mp3" #Elijah (Michael Potok)
     eli "Promise me something, May. Promise me that you won't have to watch me die again."
 
     "Staring at me, she shakes her head and squeezes her eyes shut to keep the tears away."
-
+    show may normal4
     voice "C-402-7.mp3" #Maya (shiena)
     may "No, of course not."
 
-    "Now I must walk away from the one I love." 
+    "Now I must walk away from the one I love."
 
     "Standing up, each footstep I take is thunderous - each movement strained. I now realize that this may be the last time I ever get to see her."
-
+    show eli sad2
+    show may sad4
     voice "C-402-8.mp3" #Maya (shiena)
     may "Hey, Eli?"
 
     "I turn back to her, now at her door."
-
+    show may forcedsmile4
     voice "C-402-9.mp3" #Maya (shiena)
     may "...Thank you for the flowers."
 
@@ -93,7 +108,7 @@
     "I hope this is a sign that she'll be able to move on."
 
     "While that's an eventuality that hurts, my desire for her to find happiness outweighs this sadness."
-
+    show eli normal2
     voice "C-402-10.mp3" #Elijah (Michael Potok)
     eli "I'll be waiting for you - and please, remember that I'm a patient man."
 
@@ -102,7 +117,9 @@
 
     voice "C-402-12.mp3" #Elijah (Michael Potok)
     eli "Goodbye, Maya."
-
+    hide may
+    hide eli
+    scene black
     "With that, I turn my back on her and leave her behind."
 
     "So this is the end, huh?"
@@ -114,7 +131,7 @@
     "But that's not an option now, is it?"
 
     "I guess I'll go to a place that I've always loved - a little piece of nature, where I fed the ducks with May shortly after we met."
-
+    scene benchcg
     "In time, I reach the park and the bench that we used to share growing up…"
 
     "If this weren't wintertime, I'd hear birds chirping, dogs barking, children playing near the park, and their parents yelling after them."
@@ -156,7 +173,7 @@
     "The darkness definitely helps soothe me into a deep, deep sleep."
 
     "Everything around me minimizes, and my worldly worries dissipate."
-
+    stop music fadeout 2.0
     "With one last smile, I'm gone."
 
     # Might not need this?
