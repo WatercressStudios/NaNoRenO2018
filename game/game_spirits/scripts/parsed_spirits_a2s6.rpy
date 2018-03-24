@@ -22,13 +22,13 @@ label spirits_a2s6:
     voice "C-14-1.mp3" #Genevieve (Lasli Tran)
     gen "I’ve got something for you."
 
-    #if CaelumLives = False:
-    voice "C-14-2.mp3" #Alex (Bonnie Mitchel)
-    alx "Whatever."
+    if caelumAlive == False:
+        voice "C-14-2.mp3" #Alex (Bonnie Mitchel)
+        alx "Whatever."
 
-    #else:
-    voice "C-14-3.mp3" #Alex (Bonnie Mitchel)
-    alx "‘Kay. Gimme a sec."
+    else:
+        voice "C-14-3.mp3" #Alex (Bonnie Mitchel)
+        alx "‘Kay. Gimme a sec."
 
     "That doesn’t seem to sit well with her. Genevieve doesn’t rake my arm, but she {i}does{/i} pick it up and bounce it repeatedly against the keyboard."
 
@@ -181,121 +181,116 @@ label spirits_a2s6:
             voice "C-14-32.mp3" #Genevieve (Lasli Tran)
             gen "How cavalier of you. If you even knew how much I've suffered--"
 
-            #If CaelumLives = False:
+            if caelumAlive == False:
+                voice "C-14-33.mp3" #Alex (Bonnie Mitchel)
+                alx "You wanna know who’s suffered? My friend. Caelum Bentley. He’s gone missing, and his room reeks of death."
 
-            voice "C-14-33.mp3" #Alex (Bonnie Mitchel)
-            alx "You wanna know who’s suffered? My friend. Caelum Bentley. He’s gone missing, and his room reeks of death."
+                voice "C-14-34.mp3" #Alex (Bonnie Mitchel)
+                alx "You wouldn’t happen to know anything about that, would you?"
 
-            voice "C-14-34.mp3" #Alex (Bonnie Mitchel)
-            alx "You wouldn’t happen to know anything about that, would you?"
+                "This time, her grip parts entirely. I almost think I’ve ended the conversation right there - but it returns after a few moments, and her outline again materializes into view."
 
-            "This time, her grip parts entirely. I almost think I’ve ended the conversation right there - but it returns after a few moments, and her outline again materializes into view."
+                "Genevieve looks uncomfortable with the subject."
 
-            "Genevieve looks uncomfortable with the subject."
+                voice "C-14-35.mp3" #Genevieve (Lasli Tran)
+                gen "I… was uncertain. But I did suspect."
 
-            voice "C-14-35.mp3" #Genevieve (Lasli Tran)
-            gen "I… was uncertain. But I did suspect."
+                voice "C-14-36.mp3" #Genevieve (Lasli Tran)
+                gen "It was the other who killed him. I… my memory fails me often, but I’m certain I’ve never taken a life."
 
-            voice "C-14-36.mp3" #Genevieve (Lasli Tran)
-            gen "It was the other who killed him. I… my memory fails me often, but I’m certain I’ve never taken a life."
+                voice "C-14-37.mp3" #Alex (Bonnie Mitchel)
+                alx "Why should I trust any of you? Do you have any idea what you and your kind have put me through?"
 
-            voice "C-14-37.mp3" #Alex (Bonnie Mitchel)
-            alx "Why should I trust any of you? Do you have any idea what you and your kind have put me through?"
+                "Again, a sizzling, trenchant pain feathers along my wrist - and I have to bite my lip to avoid screaming."
 
-            "Again, a sizzling, trenchant pain feathers along my wrist - and I have to bite my lip to avoid screaming."
+                voice "C-14-38.mp3" #Genevieve (Lasli Tran)
+                gen "Don’t forget: I still have the power to get you expelled from your beloved academy."
 
-            voice "C-14-38.mp3" #Genevieve (Lasli Tran)
-            gen "Don’t forget: I still have the power to get you expelled from your beloved academy."
+                voice "C-14-39.mp3" #Alex (Bonnie Mitchel)
+                alx "More threats. Way to reassure me you’re not a murderer."
 
-            voice "C-14-39.mp3" #Alex (Bonnie Mitchel)
-            alx "More threats. Way to reassure me you’re not a murderer."
+            else:
+                voice "C-14-40.mp3" #Alex (Bonnie Mitchel)
+                alx "You think you're the only one who's suffered? Hey, I have to put up with {i}your{/i} bullshit every day."
 
-            #else:
+                voice "C-14-41.mp3" #Alex (Bonnie Mitchel)
+                alx "Yours and every {i}other{/i} ghost’s."
 
-            voice "C-14-40.mp3" #Alex (Bonnie Mitchel)
-            alx "You think you're the only one who's suffered? Hey, I have to put up with {i}your{/i} bullshit every day."
+                voice "C-14-42.mp3" #Alex (Bonnie Mitchel)
+                alx "Hell, at least you'll {i}get{/i} to see your mom again. My parents are gone."
 
-            voice "C-14-41.mp3" #Alex (Bonnie Mitchel)
-            alx "Yours and every {i}other{/i} ghost’s."
+                voice "C-14-43.mp3" #Genevieve (Lasli Tran)
+                gen "…What? False. When you pass…"
 
-            voice "C-14-42.mp3" #Alex (Bonnie Mitchel)
-            alx "Hell, at least you'll {i}get{/i} to see your mom again. My parents are gone."
+                voice "C-14-44.mp3" #Alex (Bonnie Mitchel)
+                alx "…I'm going to reincarnate, just like they have. We're {i}Hindu{/i}."
 
-            voice "C-14-43.mp3" #Genevieve (Lasli Tran)
-            gen "…What? False. When you pass…"
+            if duties > 0:
 
-            voice "C-14-44.mp3" #Alex (Bonnie Mitchel)
-            alx "…I'm going to reincarnate, just like they have. We're {i}Hindu{/i}."
+                "She silently considers my words with a plaintive frown, clutching a lock of her spectral curls."
 
-            #If AlexDuty > 0:
+                voice "C-14-45.mp3" #Alex (Bonnie Mitchel)
+                alx "I'm here for you. I'm going to help you cross over. But don't you dare forget whose life this is, and who's living it - not for one second." 
 
-            "She silently considers my words with a plaintive frown, clutching a lock of her spectral curls."
+                voice "C-14-46.mp3" #Genevieve (Lasli Tran)
+                gen "Hmmph. You're more of a bearcat than I took you for."
 
-            voice "C-14-45.mp3" #Alex (Bonnie Mitchel)
-            alx "I'm here for you. I'm going to help you cross over. But don't you dare forget whose life this is, and who's living it - not for one second." 
+                voice "C-14-47.mp3" #Alex (Bonnie Mitchel)
+                alx "I don't know what that means, but sure, thanks."
 
-            voice "C-14-46.mp3" #Genevieve (Lasli Tran)
-            gen "Hmmph. You're more of a bearcat than I took you for."
+                voice "C-14-48.mp3" #Genevieve (Lasli Tran)
+                gen "I’ll… leave you be, then. For the moment."
 
-            voice "C-14-47.mp3" #Alex (Bonnie Mitchel)
-            alx "I don't know what that means, but sure, thanks."
+                voice "C-14-49.mp3" #Genevieve (Lasli Tran)
+                gen "But you should prepare yourself. We'll be putting an end to all of this shortly."
 
-            voice "C-14-48.mp3" #Genevieve (Lasli Tran)
-            gen "I’ll… leave you be, then. For the moment."
+                voice "C-14-50.mp3" #Alex (Bonnie Mitchel)
+                alx "Fine. Noted."
 
-            voice "C-14-49.mp3" #Genevieve (Lasli Tran)
-            gen "But you should prepare yourself. We'll be putting an end to all of this shortly."
+                "She dissipates, and I can feel the sensation of her hand evaporating on the spectral residue of my arm."
 
-            voice "C-14-50.mp3" #Alex (Bonnie Mitchel)
-            alx "Fine. Noted."
+                "I actually won this round…"
 
-            "She dissipates, and I can feel the sensation of her hand evaporating on the spectral residue of my arm."
+                "Maybe I don't have to be pushed around anymore…"
 
-            "I actually won this round…"
+                if caelumAlive == False:
+                    "Maybe it’s time for me to be {i}doing{/i} the pushing."
 
-            "Maybe I don't have to be pushed around anymore…"
+                else:
+                    "Despite myself, I feel a proud little smile curling on my face."
 
-            #If CaelumLives = False:
+            else:
+                voice "C-14-51.mp3" #Alex (Bonnie Mitchel)
+                alx "Look, maybe I'll help you cross over and maybe I won't. It's not your choice to make for me."
 
-            "Maybe it’s time for me to be {i}doing{/i} the pushing."
+                voice "C-14-52.mp3" #Alex (Bonnie Mitchel)
+                alx "But this is {i}my{/i} time on this earth, and you will not arbitrate how I spend it."
 
-            #else:
+                "That makes her dig in more deeply than she has before - easily enough to break the skin, if there was actually any there."
 
-            "Despite myself, I feel a proud little smile curling on my face."
+                "I can literally see my plastic prosthetic warping under the pressure."
 
-            #else:
+                voice "C-14-53.mp3" #Alex (Bonnie Mitchel)
+                alx "Aaaaiiiiee!"
 
-            voice "C-14-51.mp3" #Alex (Bonnie Mitchel)
-            alx "Look, maybe I'll help you cross over and maybe I won't. It's not your choice to make for me."
+                "But then, all the pain suddenly stops."
 
-            voice "C-14-52.mp3" #Alex (Bonnie Mitchel)
-            alx "But this is {i}my{/i} time on this earth, and you will not arbitrate how I spend it."
+                voice "C-14-54.mp3" #Genevieve (Lasli Tran)
+                gen "You know… I've just realized something."
 
-            "That makes her dig in more deeply than she has before - easily enough to break the skin, if there was actually any there."
+                voice "C-14-55.mp3" #Genevieve (Lasli Tran)
+                gen "I thought I needed your help to get out of this blasted mausoleum."
 
-            "I can literally see my plastic prosthetic warping under the pressure."
+                voice "C-14-56.mp3" #Genevieve (Lasli Tran)
+                gen "But I can do it all on my own."
 
-            voice "C-14-53.mp3" #Alex (Bonnie Mitchel)
-            alx "Aaaaiiiiee!"
+                voice "C-14-57.mp3" #Genevieve (Lasli Tran)
+                gen "Goodbye for now. Enjoy your precious free time."
 
-            "But then, all the pain suddenly stops."
+                "She vanishes, and I can't help but feel a bit nervous."
 
-            voice "C-14-54.mp3" #Genevieve (Lasli Tran)
-            gen "You know… I've just realized something."
+                "It can't have been as easy as that, can it?"
 
-            voice "C-14-55.mp3" #Genevieve (Lasli Tran)
-            gen "I thought I needed your help to get out of this blasted mausoleum."
-
-            voice "C-14-56.mp3" #Genevieve (Lasli Tran)
-            gen "But I can do it all on my own."
-
-            voice "C-14-57.mp3" #Genevieve (Lasli Tran)
-            gen "Goodbye for now. Enjoy your precious free time."
-
-            "She vanishes, and I can't help but feel a bit nervous."
-
-            "It can't have been as easy as that, can it?"
-
-            "Am I free?"
+                "Am I free?"
 
     jump spirits_a2s7

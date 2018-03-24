@@ -71,7 +71,7 @@ label spirits_a2s5:
 
     menu: 
         "Read the note.":
-            #$duties +=1
+            $ duties = 1
             "{i}To My Dearest Cornelius Bourlon,{/i}"
 
             "{i}I hope this letter finds you well. I must admit, I was quite shocked when I received 
@@ -91,8 +91,7 @@ label spirits_a2s5:
             "{i}Sincerely, Mrs. Jonathan Balister{/i}"
 
         "Check it later.":
-            #$life +=1
-
+            $ life = 1
             "I decide to put one box down and pick up the paper. I want to hurry up because I have other, more important things to do - but…"
 
     voice "C-13-3.mp3" #House Mother "Jianmei" (Vivi)
