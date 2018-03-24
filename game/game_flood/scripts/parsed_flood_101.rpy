@@ -15,6 +15,7 @@ label flood_101:
 
     #voice: grunt, groan, trying to sleep
 
+    voice "C-101-1.mp3" #Ophelia (Cospcaptor)
     oph "Nn..."
 
     "I shift underneath the covers. It's no use; I can't ignore what transpires all around me."
@@ -92,12 +93,14 @@ label flood_101:
 
     "Some of the time, at least."
 
+    voice "C-101-2.mp3" #Ophelia (Cospcaptor)
     oph "I want to go back to my own room - my own bed. My nice, warm, {i}dry{/i} bed..."
 
     "I repeat this to myself over and over; I take deep breaths..."
 
     "In... out... In... And out..."
 
+    voice "C-101-3.mp3" #Ophelia (Cospcaptor)
     oph "A-Ah..?"
 
     "My breath catches in my throat."
@@ -128,6 +131,7 @@ label flood_101:
     "Paddling as best as I can in nothing but a thoroughly soaked pair of pajamas, I desperately flub to the top."
 
     "My head breaches the surface just below the roof."
+    voice "C-101-4.mp3" #Ophelia (Cospcaptor)
     oph "{b}GASP!{/b} {i}Cough, cough...{/i}"
     "I take in huge gulps of air, successfully managing to avoid drowning for now..."
     "My heart's racing. The water level is still rising quickly!"
@@ -150,12 +154,14 @@ label flood_101:
     "I reach for my desk in an effort to hold on tight and resist the draw of the Flood."
     "It's no good... I can feel my fingers slipping. The current is too strong!"
     #voice gasp
+    voice "C-101-5.mp3" #Ophelia (Cospcaptor)
     oph "!"
     "My grip finally gives, and I slip out of my room, through the window."
     #scene black with dissolve
     "I cover my eyes and assume the fetal position as I'm assaulted on all sides by the pounding currents."
     "It feels like I'm stuck in a washing machine. It's so dizzying, and disorienting, and I'm losing all sense of direction."
     "I try to take control of my dream again. This is too much."
+    voice "C-101-6.mp3" #Ophelia (Cospcaptor)
     oph "Please, stop, no more..."
     "I repeat this, over and over. In time, the spinning ceases."
     "I open my mouth, and close. My chest rises and falls; I think I'm breathing."
@@ -166,6 +172,7 @@ label flood_101:
 
     #show cg stormyflood with dissolve
 
+    voice "C-101-7.mp3" #Ophelia (Cospcaptor)
     oph "A-ah!?"
     "Gripping the sides of my bed, I realize I'm surrounded by crashing waves."
     "This is bad. This is really, really bad." 

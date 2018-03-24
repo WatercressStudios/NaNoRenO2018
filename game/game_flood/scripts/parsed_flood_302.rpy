@@ -3,6 +3,7 @@ label flood_302:
 
     "I am not old enough for this kind of thing yet, but I shouldn’t let that stop me, should I?"
 
+    voice "C-302-1.mp3" #Daisy (Haley C. McCarthy)
     dsy "You’ll be alright with me."
 
     "Hah, as if she read my mind."
@@ -25,10 +26,12 @@ label flood_302:
 
     "The girl gestures the box towards Daisy who shakes her head and declines the offer."
 
+    voice "C-302-2.mp3" #Daisy (Haley C. McCarthy)
     dsy "I don't smoke. Thanks though." 
 
     "She catches my eye, seeing the cigarette to my mouth."
 
+    voice "C-302-3.mp3" #Daisy (Haley C. McCarthy)
     dsy "That stuff's bad for you, you know…"
 
     "I feel my face turn red."
@@ -47,44 +50,61 @@ label flood_302:
 
     "She catches me looking at her and takes the chance to speak up."
 
+    voice "C-302-4.mp3" #Daisy (Haley C. McCarthy)
     dsy "Do you know what is special about everybody here?"
 
     #Wolf's part
 
+    voice "C-302-5.mp3" #Ophelia (Cospcaptor)
     oph "Umm… they all have a story to tell?"
 
+    voice "C-302-6.mp3" #Daisy (Haley C. McCarthy)
     dsy "Well, yes, but that's not everything."
 
+    voice "C-302-7.mp3" #Daisy (Haley C. McCarthy)
     dsy "Look around you. You see all these people?"
 
     "She waves her hand in the direction of the room, emphasizing her point."
 
+    voice "C-302-8.mp3" #Daisy (Haley C. McCarthy)
     dsy "They, at first glance, have nothing in common. They all come from seemingly random places, with unique histories."
 
+    voice "C-302-9.mp3" #Daisy (Haley C. McCarthy)
     dsy "This is true, and yet, they all gather here… in this one spot."
 
+    voice "C-302-10.mp3" #Daisy (Haley C. McCarthy)
     dsy "It doesn't matter why they ended up here, it's only important that they are here {i}now{/i}."
 
+    voice "C-302-11.mp3" #Daisy (Haley C. McCarthy)
     dsy "They are here to find support, and to support each other. They surround themselves with people who don't look for their backstories."
 
+    voice "C-302-12.mp3" #Daisy (Haley C. McCarthy)
     dsy "They want people who are interested in who they are {i}now{/i}."
 
+    voice "C-302-13.mp3" #Daisy (Haley C. McCarthy)
     dsy "It doesn't matter where you come from. Remember that, Ophelia. I won't pretend to understand just what your situation is, or who you are, but it's apparent that you're at a… crossroads, so to speak."
 
+    voice "C-302-14.mp3" #Daisy (Haley C. McCarthy)
     dsy "You're trying to find yourself. You don't need to do it alone, and you don't need to do it based on what society expects of you."
 
+    voice "C-302-15.mp3" #Daisy (Haley C. McCarthy)
     dsy "Just be you, and don't be afraid to look at your own flaws, and work on them. Don't be afraid to love yourself, either."
 
+    voice "C-302-16.mp3" #Daisy (Haley C. McCarthy)
     dsy "It's just like this little moth friend of yours."
 
+    voice "C-302-17.mp3" #Daisy (Haley C. McCarthy)
     dsy "Do you think he cares about any of that bullshit? No. He's here, just along for the ride."
 
     "Daisy stretches, reaching her legs out onto an adjacent chair, leaning back."
 
+    voice "C-302-18.mp3" #Daisy (Haley C. McCarthy)
     dsy "Anyways, that's enough soapboxing for tonight."
 
+    voice "C-302-19.mp3" #Daisy (Haley C. McCarthy)
     dsy "Just enjoy yourself a little, okay?"
 
+    voice "C-302-20.mp3" #Ophelia (Cospcaptor)
     oph "...Okay."
 
     "I don't know what to say. I feel like she's told me something very important, but it hasn't quite sunk in yet."
@@ -119,10 +139,13 @@ label flood_302:
 
     "Daisy prods at my shoulder."
 
+    voice "C-302-21.mp3" #Daisy (Haley C. McCarthy)
     dsy "Hey, Ophelia, I've gotta head home. I'm taking the bus, you coming with?"
 
+    voice "C-302-22.mp3" #Ophelia (Cospcaptor)
     oph "Not yet. I'll walk with you there, but I'm gonna walk around a bit longer."
 
+    voice "C-302-23.mp3" #Daisy (Haley C. McCarthy)
     dsy "If that's what you want, sounds good to me."
 
     "She gathers herself, pushing in the chairs she had been using for her casual visit."
@@ -133,22 +156,28 @@ label flood_302:
 
     "The bus is already waiting for her, and Daisy jogs up to it."
 
+    voice "C-302-24.mp3" #Daisy (Haley C. McCarthy)
     dsy "This is my ride. I hope you find what you're looking for. Feel free to stop by whenever, I'm sure you'll see me around here somewhere."
 
     "I nod to her. I'm sad that our time together was so short, but…"
 
     "She's right. I'm sure we'll see each other again. If not, it's okay. It doesn't sour the experience."
 
+    voice "C-302-25.mp3" #Ophelia (Cospcaptor)
     oph "Yeah, I'll be around too. Probably not around here as much, but I'll find you. Goodnight!"
 
+    voice "C-302-26.mp3" #Daisy (Haley C. McCarthy)
     dsy "Oh! And before I leave, I want you to have something."
 
+    voice "C-302-27.mp3" #Ophelia (Cospcaptor)
     oph "Uh, okay?"
 
     "Daisy hands me a little trinket - a small saxophone, one that you'd clip to your backpack. Why a woman her age has this, I have no idea."
 
+    voice "C-302-28.mp3" #Daisy (Haley C. McCarthy)
     dsy "I've always found things like this cute. If we never meet again, at least you'll have this!"
 
+    voice "C-302-29.mp3" #Ophelia (Cospcaptor)
     oph "Oh, well, thank you. It is pretty cute."
 
     "With that, she walks to the bus."

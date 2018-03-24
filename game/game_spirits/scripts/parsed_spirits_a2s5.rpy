@@ -43,12 +43,14 @@ label spirits_a2s5:
 
     "Jianmei hears me come out and looks over, sweat dripping down her forehead. She must be getting one hell of a workout"
 
+    voice "C-13-1.mp3" #Alex (Bonnie Mitchel)
     alx "Would you like some help? You’re struggling a lot."
 
     "Maybe if I do, I’ll get some peace and quiet."
 
     "Besides, no one should have to deal with that much work. It’s inhumane."
 
+    voice "C-13-2.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Oh yes! Please, please!"
 
     "Jianmei pulls out a cloth and dabs her forehead. I climb up the ladder and see the attic for the first time."
@@ -93,8 +95,10 @@ label spirits_a2s5:
 
             "I decide to put one box down and pick up the paper. I want to hurry up because I have other, more important things to do - but…"
 
+    voice "C-13-3.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Watch your step! It’s a long way down."
 
+    voice "C-13-4.mp3" #Alex (Bonnie Mitchel)
     alx "Ha, I’ll try."
 
     "Eventually, we clean out the attic - and by the time we’re done, I’m itching all over from the dust and filth."
