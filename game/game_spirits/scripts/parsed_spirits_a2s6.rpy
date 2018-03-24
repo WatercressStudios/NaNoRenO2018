@@ -68,6 +68,8 @@ label spirits_a2s6:
     menu:
 
         "Fine.":
+            $ hasAmmo = True
+            $ duties += 1        
             "…Fine. Whatever. There's no hope at fighting her."
 
             "The sooner I get this done, the sooner she'll leave me alone."
@@ -158,6 +160,8 @@ label spirits_a2s6:
             "Not like any of this matters anyway."
 
         "No!":
+            $ hasAmmo = False
+            $ life += 1        
             "You know what? I think I've had enough of this."
 
             "With all my strength, I forcefully, violently rip my arm back."
