@@ -97,6 +97,7 @@
 
     hide eli
     hide may
+    play sound "game_letgo/sfx/May Eli Run.ogg"
     "She drags me through the alley and the road, down streets and around corners. At first I'm utterly disoriented, completely lost - but after a while, I understand."
 
     "We're on our way to her apartment. It's been a while since I've been there…"
@@ -110,7 +111,7 @@
     "My heart beats faster, and the pit in my stomach only grows worse. With all of the possibilities flying through my head, I feel sick."
 
     "She tears open the apartment complex’s door, leading me to the staircase. She stomps up them, and I'm half-tempted to ask her to quiet down for her neighbors' sake - but I don't think that would be appropriate."
-
+    play sound "game_letgo/sfx/Key fumble,open door.ogg"
     scene letgo house hallway with dissolve
     "Fumbling for her keys, she opens the door and thrusts me inside."
 
@@ -168,7 +169,7 @@
     "What's going on? What did I do?"
 
     "She looks like a ghost. The tears begin to stream down her face - and they don't stop no matter how many times she uses the cuff of her jacket to wipe them away."
-
+    play sound "game_letgo/sfx/Punch,Shove Serious.ogg"
     "I reach forward to help her, but she shoves my hand away."
 
     voice "C-401-24.mp3" #Elijah (Michael Potok)
@@ -268,7 +269,7 @@
     "After one final lingering stare, I leave the room and go through her cabinets. I find the kettle in no time at all, since it’s nestled away in the same cabinet it's always been in."
 
     "She's nothing if not a creature of habit."
-
+    play sound "game_letgo/sfx/Kettle Rustle.ogg"
     "The metal object rattles in my hands."
     show eli worried1
     "I can't seem to stop it from doing so. My hands are shaking."
@@ -296,7 +297,7 @@
     "I struggle to keep myself from thinking about literally anything, as I need to be {i}present{/i} for her; I can't be my usual \"head in the clouds, too fast to follow\" self."
     show eli cool1
     "With slow, deliberate actions, I retrieve the tea and catch the kettle before it screams at me."
-
+    play sound "game_letgo/sfx/Pouring Two Cups of Tea.ogg"
     "I pour two cups and dip the tea bags in. With a single moment of hesitation, I move to her bedroom."
     scene letgo house bedroom with dissolve
     hide eli
