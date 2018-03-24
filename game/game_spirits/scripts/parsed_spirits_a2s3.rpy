@@ -5,7 +5,7 @@ label spirits_a2s3:
 
     "It's a nice alternative to the much richer fare they serve in the cafeteria."
 
-    if caelumAlive == True:
+    if caelumAlive == False:
 
         "Caelum didn't turn up in any of our morning classes, so I'm hoping to find him around here…"
 
@@ -112,7 +112,7 @@ label spirits_a2s3:
 
         "I gently flip through the pages. They’re all written in the same hand, and entries end about a third of the way through."
 
-        "The first is dated January 1918 - which is helpful - but it mostly complaints about servants."
+        "The first is dated January 1918 - which is helpful - but it's mostly complaints about servants."
 
         "Skimming through the next few entries, I think the woman who wrote this was a servant herself… but it also seems she presided over the others."
 
