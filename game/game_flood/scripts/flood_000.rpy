@@ -1,5 +1,45 @@
 ﻿###############################
 #
+# CHEAT SHEET
+#
+###############################
+
+### show [character] ###
+#formatting below
+#show [character] [emotion] with dissolve
+#Example: show oph neutral with dissolve
+
+#For list of emotions, see draz's list (or list them out here manually)
+
+
+### scene background or CGs ###
+#formatting below
+#scene flood [name here] with dissolve
+#Example: scene flood cafe with dissolve
+
+#For list of BG and CGs, see folder (or list them out here manually)
+
+
+### play music ###
+
+# play music "game_flood/music/[introname].ogg" noloop fadeout 1.0
+# queue music "game_flood/music/[loopname].ogg" loop
+
+# play music "game_flood/music/[noloopname].ogg" fadeout 1.0
+
+
+### play ambience ###
+
+# play ambience "game_flood/ambience/[ambiencename].ogg" fadeout 2.0 fadein 2.0
+
+
+### play sound ###
+
+# play sound "game_flood/sfx/[sfxname].ogg"
+
+
+###############################
+#
 # FLOOD DEFINITIONS GO IN HERE
 #
 ###############################
