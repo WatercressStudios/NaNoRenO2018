@@ -122,7 +122,7 @@ label letgo_104:
     voice "C-104-9.mp3" #Elijah (Michael Potok)
     eli "Maya--"
 
-    "The lights are everywhere."
+    #"The lights are everywhere."
 
     play sound "game_letgo/sfx/Car Screeching.ogg"
     pause 1.3
