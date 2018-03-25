@@ -38,7 +38,7 @@
 
     "She pulls back, gasping for air, finally calm enough to sit still."
     scene letgo house bedroom with dissolve
-    show may sad3 with dissolve:
+    show may sad3 cry with dissolve:
         align (0.65, 1.0)
 
     show eli sad1 with dissolve:
@@ -57,7 +57,7 @@
     voice "C-402-4.mp3" #Elijah (Michael Potok)
     eli "I love you too, May."
     show eli sad2
-    show may forcedsmile4
+    show may forcedsmile4 cry
 
     "The atmosphere subtly changes. It's no longer dark…"
 
@@ -66,7 +66,7 @@
     "With lethargic movements, she grabs her phone and now-drinkable tea."
 
     "Leaning up towards me, she gives me a sad look."
-    show may tired3
+    show may tired3 cry
     voice "C-402-5.mp3" #Maya (shiena)
     may "This is around the time you usually die."
 
@@ -80,7 +80,7 @@
     eli "Promise me something, May. Promise me that you won't have to watch me die again."
 
     "Staring at me, she shakes her head and squeezes her eyes shut to keep the tears away."
-    show may normal4
+    show may normal4 cry
     voice "C-402-7.mp3" #Maya (shiena)
     may "No, of course not."
 
@@ -88,12 +88,12 @@
 
     "Standing up, each footstep I take is thunderous - each movement strained. I now realize that this may be the last time I ever get to see her."
     show eli sad2
-    show may sad4
+    show may sad4 cry
     voice "C-402-8.mp3" #Maya (shiena)
     may "Hey, Eli?"
 
     "I turn back to her, now at her door."
-    show may forcedsmile4
+    show may forcedsmile4 cry
     voice "C-402-9.mp3" #Maya (shiena)
     may "...Thank you for the flowers."
 

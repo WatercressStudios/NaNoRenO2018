@@ -1,4 +1,7 @@
 ﻿label letgo_601:
+    scene black
+    play music bgmletgo_intro noloop fadeout 1.0
+    queue music bgmletgo_loop loop
     "I pull a pillow around my head, straining against the sun. Please, {i}please{/i}, don't make me wake up."
 
     "I don't want to."
@@ -12,7 +15,7 @@
     "Fine. I submit."
 
     #Open eyes, Maya's room
-
+    scene letgo house bedroom with dissolve
     "Opening my eyes, I struggle and swing my feet down to the floor."
 
     "My phone's screen is black - and I'm tempted to keep it that way forever. But…"
@@ -66,7 +69,7 @@
     "I'm a mess."
 
     "His flowers mock me."
-
+    #Put CG Here
     "Pulling them close, I study each petal in great detail. Plastic, obviously, since I'm allergic to most flowers; this is the last trace of him that I have in my life now."
 
     "Sure, he could have lived - but I know deep down that that's not the case."
@@ -119,7 +122,7 @@
 
     "Quietly, I sob into her shoulder."
 
-    "I'm glad she got to the point, though. I'm tired of not knowing." 
+    "I'm glad she got to the point, though. I'm tired of not knowing."
 
     "I'm tired of that sick anticipation - that panic attack that happens just before you get news you know you are going to get, but desperately want to avoid."
 

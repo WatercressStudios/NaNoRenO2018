@@ -190,7 +190,7 @@
     show eli worried1 with dissolve
     voice "C-401-26.mp3" #Elijah (Michael Potok)
     eli "What? Of course not. I’d never think that!"
-    show may sad4 with dissolve
+    show may sad4 cry with dissolve
     "She hugs herself even harder, her knuckles whitening, and she sobs."
 
     show eli:
@@ -209,17 +209,17 @@
     "Wait, what!?"
 
     voice "C-401-28.mp3" #Maya (shiena)
-    show may frustrated4 with dissolve
+    show may frustrated4 cry with dissolve
     may "I've tried so, so many times - but no matter what I do, you always die. Be it in a car crash, or by a fall, or by some other stupid fucking thing, you {i}always{/i} die."
 
     "She's not making any sense. Has she been having..."
     show eli worried2 with dissolve
     voice "C-401-29.mp3" #Elijah (Michael Potok)
     eli "Nightmares?"
-    show may angry4 with dissolve
+    show may angry4 cry with dissolve
     voice "C-401-30.mp3" #Maya (shiena)
     may "Reality {i}is{/i} the nightmare, Eli. I'm stuck in a loop, reliving the same day over, and over, and over, and over and over again."
-    show may sad4 with dissolve
+    show may sad4 cry with dissolve
     voice "C-401-31.mp3" #Maya (shiena)
     may "I swear, I've been trying to save you for years."
 
@@ -231,7 +231,7 @@
     "I really don't. This is completely unexpected. She's gotta be joking, right?"
 
     "She looks up at me with her racoon eyes."
-    show may frustrated4 with dissolve
+    show may frustrated4 cry with dissolve
     voice "C-401-33.mp3" #Maya (shiena)
     may "Of course you don't believe me. You {i}never{/i} do."
 
@@ -251,7 +251,7 @@
     voice "C-401-35.mp3" #Elijah (Michael Potok)
     eli "But you're obviously torn up about this. I believe you, and we can work through this together, okay?"
     show eli smile1 with dissolve
-    show may smile4 with dissolve
+    show may smile4 cry with dissolve
     "I reach up, gently trailing my fingers through her hair, pulling her up towards me. I kiss her on her forehead and hug her tightly."
 
     voice "C-401-36.mp3" #Elijah (Michael Potok)
@@ -275,8 +275,7 @@
     "I love her, after all."
     scene letgo house kitchen with dissolve
     show eli sad1 with dissolve
-    play music bgmletgo_intro noloop fadein 2.0 fadeout 1.0
-    queue music bgmletgo_loop loop
+    stop music fadeout 2.0
     "After one final lingering stare, I leave the room and go through her cabinets. I find the kettle in no time at all, since it’s nestled away in the same cabinet it's always been in."
 
     "She's nothing if not a creature of habit."
@@ -315,7 +314,7 @@
 
     "I pour two cups and dip the tea bags in. With a single moment of hesitation, I move to her bedroom."
     scene letgo house bedroom with dissolve
-    show may sad3 with dissolve:
+    show may cry sad3 with dissolve:
         align (0.65, 1.0)
 
     show eli cool1 with dissolve:
@@ -329,7 +328,7 @@
 
     voice "C-401-37.mp3" #Elijah (Michael Potok)
     eli "I wish I could understand the gravity of this situation, but I really can't… Regardless, I'm still going to try my damndest to help you."
-    show may tired3 with dissolve
+    show may tired3 cry with dissolve
     voice "C-401-38.mp3" #Maya (shiena)
     may "...There's nothing you can help me with. I wanted to tell you about what's happening to me, but I don’t really know what you can do."
 
@@ -344,7 +343,7 @@
 
     voice "C-401-42.mp3" #Elijah (Michael Potok)
     eli "Maybe you haven't tried everything, Maya."
-    show may angry4 with dissolve
+    show may angry4 cry with dissolve
     voice "C-401-43.mp3" #Maya (shiena)
     may "Of course I've tried everything! I've spent an endless amount of time trying new things, but there aren't any choices open to me."
 
@@ -352,7 +351,7 @@
     eli "Maya."
     show eli normal1 with dissolve
     "I speak out with a finality, my words reaching her, commanding her to slow down - to listen."
-    show may sad4 with dissolve
+    show may sad4 cry with dissolve
     "She looks up to me, her hands buried in her ragged hair."
 
     voice "C-401-45.mp3" #Maya (shiena)
@@ -366,13 +365,13 @@
 
     voice "C-401-48.mp3" #Elijah (Michael Potok)
     eli "Think about what you've been trying to do each time."
-    show may angry4 with dissolve
+    show may angry4 cry with dissolve
     voice "C-401-49.mp3" #Maya (shiena)
     may "I've been trying to save yo-- No!"
 
     voice "C-401-50.mp3" #Elijah (Michael Potok)
     eli "Maya."
-    show may frustrated4 with dissolve
+    show may frustrated4 cry with dissolve
     voice "C-401-51.mp3" #Maya (shiena)
     may "That's {i}not{/i} an option."
 
@@ -384,12 +383,12 @@
 
     voice "C-401-54.mp3" #Elijah (Michael Potok)
     eli "Maybe you have to let me die."
-    show may sad4 with dissolve
+    show may sad4 cry with dissolve
     show eli sad2 with dissolve
     voice "C-401-55.mp3" #Elijah (Michael Potok)
     eli "Maybe you have to let me go."
 
-    show may angry4 with dissolve
+    show may angry4 cry with dissolve
     voice "C-401-56.mp3" #Maya (shiena)
     may "No no no! No no no no no. I refuse!"
     voice "C-401-57.mp3" #Elijah (Michael Potok)
@@ -397,7 +396,7 @@
 
     voice "C-401-58.mp3" #Maya (shiena)
     may "Please God… No."
-    show may sad4 with dissolve
+    show may sad4 cry with dissolve
     "I grab her by the shoulder, crouching down in front of her. She gives up on wiping her face, again succumbing to the tears."
 
     voice "C-401-59.mp3" #Elijah (Michael Potok)
@@ -424,5 +423,4 @@
             stop music fadeout 2.0
             jump letgo_402
         "It can't end like this.":
-            stop music fadeout 2.0
             jump letgo_502
