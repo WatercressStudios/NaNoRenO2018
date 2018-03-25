@@ -121,7 +121,7 @@ label flood_102:
     "Every night, the water rises a little bit higher, and every night I slip a little more into the deep end."
     "What's going to happen if the Flood consumed everything? Would I be okay?"
     
-    scene cafe with dissolve
+    scene flood cafe with dissolve
     show oph scared
     
     voice "C-102-30.mp3" #Waitress (Allison Seils)
@@ -141,7 +141,7 @@ label flood_102:
 
     hide oph
 
-    scene streets with dissolve
+    scene flood cafe outside with dissolve
     #ambient crickets/traffic/wind
 
     show oph neutral

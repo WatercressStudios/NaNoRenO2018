@@ -1,8 +1,9 @@
 label flood_201:
-    scene flood street with dissolve
+
     show oph neutral
     "Yeah, that's what I'll do. Maybe I can live this potentially last night in willful ignorance. I can pretend that the night's just like every other night, and that my dreams are meaningless."
-
+    
+    scene flood street with dissolve
     "Walking down the street, I can feel the cold front moving in. It's a nice feeling, refreshing despite the oppressive humidity that follows."
 
     "My footsteps make a light splashing sound, as the ground is still wet from the last rain we had. A nice reflection comes off of it, illuminating the world around me with the light from the nearby lamps."
