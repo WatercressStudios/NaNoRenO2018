@@ -133,6 +133,6 @@ label letgo_104:
     "And then, there’s nothing."
 
     play audio "game_letgo/sfx/Disturbing Bass.ogg"
-    scene red with Dissolve(9.5)
+    scene letgo rewind with Dissolve(9.5)
 
     jump letgo_201

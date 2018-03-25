@@ -212,9 +212,34 @@ define bgmloop5kite = "game_letgo/music/Soaring.ogg"
 define bgmloop5bye_intro = "game_letgo/music/This is Goodbye Intro.ogg"
 define bgmloop5bye_loop = "game_letgo/music/This is Goodbye Loop.ogg"
 
+image letgo rewindoverlay:
+    "letgo redoverlay2"
+    pause 0.05
+    "letgo redoverlay"
+    pause 0.05
+    "letgo redoverlay2"
+    pause 0.05
+    "letgo redoverlay"
+    pause 0.05
+    "letgo redoverlay2"
+    pause 0.05
+    "letgo redoverlay"
+    pause 0.05
+    "letgo redoverlay3"
+    pause 0.05
+    "letgo redoverlay2"
+    pause 0.05
+    "letgo redoverlay3"
+    pause 0.05
+    "letgo redoverlay2"
+    pause 0.05
+    repeat
+image letgo rewind:
+    LiveComposite((1920,1080), (0,0), "letgo redbench", (0,0), "letgo rewindoverlay")
 
 init python:
     define_images("game_letgo/bgs", 2, False, ["letgo"])
+    define_images("game_letgo/cgs", 2, False, ["letgo"])
 
 ###############################
 #
