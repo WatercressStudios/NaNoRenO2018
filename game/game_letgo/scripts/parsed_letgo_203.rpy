@@ -120,7 +120,7 @@
 
     "As I sip on it, I turn around."
 
-    show eli
+    show eli at flip with dissolve
 
     voice "C-203-17.mp3" #Old Man (Adam Warren)
     om "You look… relieved, young man - and tense!"
@@ -175,7 +175,7 @@
         xalign 0.8
         ease 0.6 xalign 0.2 yalign 0.8
     with dissolve
-    show may happy2 close:
+    show may happy2 close at flip:
         xanchor 0.5
         yalign 1.0
         xpos 0.3
@@ -240,8 +240,7 @@
     may "That-- That would be..."
 
     show may sad1 close:
-        xpos 0.25
-    with ease
+        easein .35 xpos 0.25
 
     pause 1.0
 
@@ -250,6 +249,7 @@
     show may aww1 with dissolve
     show may:
         xpos 0.2
+    with ease
 
     voice "C-203-35.mp3" #Maya (shiena)
     may "That would be all I could ever ask for and so much more, Eli - except, maybe you could accept pineapple as a pizza topping."
