@@ -297,15 +297,16 @@
     show may normal1 close at flip
     with dissolve
 
-    "We have a good laugh about it and make our way onward, toward May’s supposed plan."
-
     show may:
         ease 0.8 align (0.0, 1.0) alpha 0
     show eli:
-        ease 0.8 align (0.0, 1.0) alpha 0    
+        ease 0.8 align (0.0, 1.0) alpha 0
 
     scene black with dissolve
 
+    "We have a good laugh about it and make our way onward, toward May’s supposed plan."
+
     scene letgo city nearby sunset with dissolve
+    play ambience "game_letgo/ambience/Near Downtown Bridge Night.ogg" fadeout 0.1 fadein 0.1
 
     jump letgo_302
