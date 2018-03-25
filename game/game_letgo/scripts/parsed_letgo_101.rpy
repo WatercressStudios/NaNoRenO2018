@@ -2,8 +2,8 @@ label letgo_101:
     #black screen
     #note: May is pronounced like 'my'
 
-    # play music bgmletgo_intro noloop fadeout 1.0
-    # queue music bgmletgo_loop loop
+    #play music bgmletgo_intro noloop fadeout 1.0
+    #queue music bgmletgo_loop loop
     scene black with Dissolve(5.0)
 
     voice "C-101-1.mp3" #Elijah (Michael Potok)
@@ -25,7 +25,10 @@ label letgo_101:
     eli "Breathe. Relax."
 
     #show bg + Eli
-    scene letgo park podium with dissolve
+    scene letgo townsquare2 with dissolve
+
+    show eli worried2 with dissolve:
+        align (0.35, 1.0)
 
     "I lean against the tall tree next to me, my winter coat padding my shoulder from the rough bark. It's a nice, large, and sturdy - as it always has been."
 
@@ -41,12 +44,21 @@ label letgo_101:
     voice "C-101-8.mp3" #Elijah (Michael Potok)
     eli "Right."
 
+    show eli worried2 close with dissolve:
+        align (0.35, 1.0)
+
     "I slap myself around a bit with my mitts, amping up. I close my eyes in anticipation."
+
+    show eli cool1 close with dissolve:
+        align (0.35, 1.0)
 
     voice "C-101-9.mp3" #Elijah (Michael Potok)
     eli "Let's do this."
 
     "Breathing in through my nose and slowly out through my mouth, the world around me disappears; it's just me and the tree."
+
+    show eli cool1 with dissolve:
+        align (0.35, 1.0)
 
     "I open my eyes, staring at its bark, noting how beautiful it looks in the white landscape."
 
@@ -86,6 +98,12 @@ label letgo_101:
     may "Is that so?"
 
     #show maya
+
+    show may cheeky1 with dissolve:
+        align (0.65, 1.0)
+
+    show eli worried2 with dissolve:
+        align (0.35, 1.0)
 
     voice "C-101-19.mp3" #Elijah (Michael Potok)
     eli "Wait, May! It's not what it looks like, I swear!"
@@ -189,7 +207,10 @@ label letgo_101:
     "A pang hits my stomach. Maybe I should start over and confess to her for real? I may have ruined the initial attempt, but she'd probably want one nonetheless."
 
     ### Do slowfade to the clocktower scene here, while playing the 3PM bells
-    #scene letgo [clocktower] with slowfade
+
+    scene black with Dissolve(3.0) #replace with clocktower cg
+    hide may
+    hide eli
     play sound "game_letgo/sfx/Clocktower 3PM.ogg"
 
     "I pull back slightly, holding her face in my mitts, looking directly into her eyes..."
@@ -271,6 +292,8 @@ label letgo_101:
     menu:
         "Let's have coffee":
             pass
+
+    scene letgo townsquare1 with dissolve
 
     "She brings me into another embrace, and then she grabs my hand. She motions towards the cafe, and I begin to walk with her."
 
