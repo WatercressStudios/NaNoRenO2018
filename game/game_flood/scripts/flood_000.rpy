@@ -79,25 +79,25 @@ image oph neutral = OphPose1("oph eyes normal1", "oph mouth normal1")
 image oph neutral close = OphPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "oph mouth normal1")
 
 image oph defensive = OphPose1("oph eyes defensive1", "oph mouth normal1")
-image oph defensive close = OphPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "oph mouth normal1")
+image oph defensive close = OphPose1("game_flood/sprites/Ophelia/Pose 1/eyes defensive close.png", "oph mouth normal1")
 
 image oph irritated = OphPose1("oph eyes irritated1", "oph mouth normal1")
-image oph irritated close = OphPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "oph mouth normal1")
+image oph irritated close = OphPose1("game_flood/sprites/Ophelia/Pose 1/eyes defensive close.png", "oph mouth normal1")
 
 image oph scared = OphPose1("oph eyes scared1", "oph mouth scared1")
-image oph scared close = OphPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "oph mouth scared1")
+image oph scared close = OphPose1("game_flood/sprites/Ophelia/Pose 1/eyes scared close.png", "oph mouth scared1")
 
 image oph smile = OphPose1("oph eyes normal1", "oph mouth smile1")
 image oph smile close = OphPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "oph mouth smile1")
 
 image oph surprised = OphPose1("oph eyes scared1", "oph mouth normal1")
-image oph surprised close = OphPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "oph mouth normal1")
+image oph surprised close = OphPose1("game_flood/sprites/Ophelia/Pose 1/eyes scared close.png", "oph mouth normal1")
 
 image oph tiredsmile = OphPose1("oph eyes tired1", "oph mouth smile1")
-image oph tiredsmile close = OphPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "oph mouth smile1")
+image oph tiredsmile close = OphPose1("game_flood/sprites/Ophelia/Pose 1/eyes tired close.png", "oph mouth smile1")
 
 image oph weirdedout = OphPose1("oph eyes weirded1", "oph mouth weirded1")
-image oph weirdedout close = OphPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "oph mouth weirded1")
+image oph weirdedout close = OphPose1("game_flood/sprites/Ophelia/Pose 1/eyes weirded close.png", "oph mouth weirded1")
 
 
 ###############################
@@ -125,10 +125,10 @@ init python:
     OliPose2 = BaseCSprite("oli", "game_flood/sprites/Oliver/Pose 2/basenoflower.png", (696, 1080))
 
 image oli smile noflower = OliPose2("oli eyes normal2", "oli mouth normal2")
-image oli smile noflower close = OliPose2("game_flood/sprites/Oliver/Pose 2/eyes normal open.png", "oli mouth normal2") #No eye close art
+image oli smile noflower close = OliPose2("game_flood/sprites/Oliver/Pose 2/eyes normal close.png", "oli mouth normal2") #No eye close art
 
 image oli serious noflower = OliPose2("oli eyes serious2", "oli mouth serious2")
-image oli serious noflower close = OliPose2("game_flood/sprites/Oliver/Pose 2/eyes normal open.png", "oli mouth serious2") #No eye close art
+image oli serious noflower close = OliPose2("game_flood/sprites/Oliver/Pose 2/eyes serious close.png", "oli mouth serious2") #No eye close art
 
 ###############################
 #
@@ -140,10 +140,10 @@ init python:
     OliPose2F = BaseCSprite("oli", "game_flood/sprites/Oliver/Pose 2/baseflower.png", (696, 1080))
 
 image oli smile = OliPose2F("oli eyes normal2", "oli mouth normal2")
-image oli smile close = OliPose2F("game_flood/sprites/Oliver/Pose 2/eyes normal open.png", "oli mouth normal2") #No eye close art
+image oli smile close = OliPose2F("game_flood/sprites/Oliver/Pose 2/eyes normal close.png", "oli mouth normal2") #No eye close art
 
 image oli serious = OliPose2F("oli eyes serious2", "oli mouth serious2")
-image oli serious close = OliPose2F("game_flood/sprites/Oliver/Pose 2/eyes normal open.png", "oli mouth serious2") #No eye close art
+image oli serious close = OliPose2F("game_flood/sprites/Oliver/Pose 2/eyes serious close.png", "oli mouth serious2") #No eye close art
 
 ###############################
 #
@@ -155,7 +155,7 @@ init python:
     DaiPose1 = BaseCSprite("dai", "game_flood/sprites/Daisy/Pose 1/base.png", (450, 1080))
 
 image dai neutral = DaiPose1("dai eyes normal1", "dai mouth normal1")
-image dai neutral close = DaiPose1("game_flood/sprites/Daisy/Pose 1/eyes normal close.png", "dai mouth normal1")
+image dai neutral close = DaiPose1("game_flood/sprites/Daisy/Pose 1/eyes neutral close.png", "dai mouth normal1")
 
 image dai smile = DaiPose1("dai eyes normal1", "dai mouth smile1")
 image dai smile close = DaiPose1("game_flood/sprites/Daisy/Pose 1/eyes normal close.png", "dai mouth smile1")
@@ -167,10 +167,10 @@ image dai hopeful = DaiPose1("dai eyes hopeful1", "dai mouth smile1")
 image dai hopeful close = DaiPose1("game_flood/sprites/Daisy/Pose 1/eyes normal close.png", "dai mouth smile1")
 
 image dai disappointed = DaiPose1("dai eyes disappointed1", "dai mouth sad1")
-image dai disappointed close = DaiPose1("game_flood/sprites/Daisy/Pose 1/eyes normal close.png", "dai mouth sad1")
+image dai disappointed close = DaiPose1("game_flood/sprites/Daisy/Pose 1/eyes disappointed close.png", "dai mouth sad1")
 
 image dai disappointedside = DaiPose1("dai eyes disappointedside1", "dai mouth sad1")
-image dai disappointedside close = DaiPose1("game_flood/sprites/Daisy/Pose 1/eyes normal close.png", "dai mouth sad1")
+image dai disappointedside close = DaiPose1("game_flood/sprites/Daisy/Pose 1/eyes disappointed close.png", "dai mouth sad1")
 
 ###############################
 #
@@ -182,10 +182,10 @@ init python:
     DaiPose2 = BaseCSprite("dai", "game_flood/sprites/Daisy/Pose 2/base.png", (450, 1080))
 
 image dai distant neutral = DaiPose2("dai eyes normal2", "dai mouth normal2")
-image dai distant neutral close = DaiPose2("game_flood/sprites/Daisy/Pose 2/eyes normal open.png", "dai mouth normal2") #No eye close art
+image dai distant neutral close = DaiPose2("game_flood/sprites/Daisy/Pose 2/eyes normal close.png", "dai mouth normal2") #No eye close art
 
 image dai distant frown = DaiPose2("dai eyes sad1", "dai mouth sad2")
-image dai distant frown close = DaiPose2("game_flood/sprites/Daisy/Pose 2/eyes frown open.png", "dai mouth sad2") #No eye close art
+image dai distant frown close = DaiPose2("game_flood/sprites/Daisy/Pose 2/eyes frown close.png", "dai mouth sad2") #No eye close art
 
 ###############################
 #
@@ -197,16 +197,16 @@ init python:
     HopPose1 = BaseCSprite("hop", "game_flood/sprites/Hope/Pose 1/base.png", (425, 1080))
 
 image hop neutral = HopPose1("hop eyes normal1", "hop mouth normal1")
-image hop neutral close = HopPose1("game_flood/sprites/Hope/Pose 1/eyes normal open.png", "hop mouth normal1") #No eye close art
+image hop neutral close = HopPose1("game_flood/sprites/Hope/Pose 1/eyes normal close.png", "hop mouth normal1") #No eye close art
 
 image hop happy = HopPose1("hop eyes happy1", "hop mouth smile1")
-image hop happy = HopPose1("game_flood/sprites/Hope/Pose 1/eyes smile open.png", "hop mouth smile1") #No eye close art
+image hop happy close = HopPose1("game_flood/sprites/Hope/Pose 1/eyes smile close.png", "hop mouth smile1") #No eye close art
 
 image hop angry = HopPose1("hop eyes angry1", "hop mouth angry1")
-image hop angry close = HopPose1("game_flood/sprites/Hope/Pose 1/eyes angry open.png", "hop mouth angry1") #No eye close art
+image hop angry close = HopPose1("game_flood/sprites/Hope/Pose 1/eyes angry close.png", "hop mouth angry1") #No eye close art
 
 image hop angry clench = HopPose1("hop eyes angry1", "hop mouth angryclench1")
-image hop angry clench close = HopPose1("game_flood/sprites/Hope/Pose 1/eyes angry open.png", "hop mouth angryclench1") #No eye close art
+image hop angry clench close = HopPose1("game_flood/sprites/Hope/Pose 1/eyes angry close.png", "hop mouth angryclench1") #No eye close art
 
 ###############################
 #
@@ -218,10 +218,10 @@ init python:
     HopPose2 = BaseCSprite("hop", "game_flood/sprites/Hope/Pose 2/base.png", (425, 1080))
 
 image hop hurt downtrodden = HopPose2("hop eyes normal2", "hop mouth normal2")
-image hop hurt downtrodden close = HopPose2("game_flood/sprites/Hope/Pose 2/eyes normal open.png", "hop mouth normal2") #No eye close art
+image hop hurt downtrodden close = HopPose2("game_flood/sprites/Hope/Pose 2/eyes normal close.png", "hop mouth normal2") #No eye close art
 
 image hop hurt embarrassed = HopPose2("hop eyes embarrassed2", "hop mouth normal2")
-image hop hurt embarrassed close = HopPose2("game_flood/sprites/Hope/Pose 2/eyes embarrassed open.png", "hop mouth normal2") #No eye close art
+image hop hurt embarrassed close = HopPose2("game_flood/sprites/Hope/Pose 2/eyes embarrassed close.png", "hop mouth normal2") #No eye close art
 
 
 
@@ -233,15 +233,15 @@ image hop hurt embarrassed close = HopPose2("game_flood/sprites/Hope/Pose 2/eyes
 
 image oph eyes normal1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
 
-image oph eyes tired1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes tired open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image oph eyes tired1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes tired open.png", "game_flood/sprites/Ophelia/Pose 1/eyes tired close.png")
 
-image oph eyes scared1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes scared open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image oph eyes scared1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes scared open.png", "game_flood/sprites/Ophelia/Pose 1/eyes scared close.png")
 
-image oph eyes weirded1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes weirded open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image oph eyes weirded1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes weirded open.png", "game_flood/sprites/Ophelia/Pose 1/eyes weirded close.png")
 
-image oph eyes irritated1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes irritated open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image oph eyes irritated1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes irritated open.png", "game_flood/sprites/Ophelia/Pose 1/eyes defensive close.png")
 
-image oph eyes defensive1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes defensive open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image oph eyes defensive1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes defensive open.png", "game_flood/sprites/Ophelia/Pose 1/eyes defensive close.png")
 
 image oph mouth normal1 = FlapMouth("oph", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png")
 
@@ -269,9 +269,9 @@ image oli mouth smile1 = FlapMouth("oli", "game_flood/sprites/Oliver/Pose 1/mout
 #
 ###############################
 
-image oli eyes normal2 = blinkeyes("game_flood/sprites/Oliver/Pose 2/eyes normal open.png", "game_flood/sprites/Oliver/Pose 2/eyes normal open.png")
+image oli eyes normal2 = blinkeyes("game_flood/sprites/Oliver/Pose 2/eyes normal open.png", "game_flood/sprites/Oliver/Pose 2/eyes normal close.png")
 
-image oli eyes serious2 = blinkeyes("game_flood/sprites/Oliver/Pose 2/eyes serious open.png", "game_flood/sprites/Oliver/Pose 2/eyes serious open.png")
+image oli eyes serious2 = blinkeyes("game_flood/sprites/Oliver/Pose 2/eyes serious open.png", "game_flood/sprites/Oliver/Pose 2/eyes serious close.png")
 
 image oli mouth normal2 = FlapMouth("oli", "game_flood/sprites/Oliver/Pose 2/mouth normal close.png", "game_flood/sprites/Oliver/Pose 2/mouth normal open.png")
 
@@ -283,13 +283,13 @@ image oli mouth serious2 = FlapMouth("oli", "game_flood/sprites/Oliver/Pose 2/mo
 #
 ###############################
 
-image dai eyes normal1 = blinkeyes("game_flood/sprites/Daisy/Pose 1/eyes normal open.png", "game_flood/sprites/Daisy/Pose 1/eyes normal close.png")
+image dai eyes normal1 = blinkeyes("game_flood/sprites/Daisy/Pose 1/eyes normal open.png", "game_flood/sprites/Daisy/Pose 1/eyes neutral close.png")
 
-image dai eyes hopeful1 = blinkeyes("game_flood/sprites/Daisy/Pose 1/eyes hopeful open.png", "game_flood/sprites/Daisy/Pose 1/eyes normal close.png")
+image dai eyes hopeful1 = blinkeyes("game_flood/sprites/Daisy/Pose 1/eyes hopeful open.png", "game_flood/sprites/Daisy/Pose 1/eyes neutral close.png")
 
-image dai eyes disappointed1 = blinkeyes("game_flood/sprites/Daisy/Pose 1/eyes disappointed open.png", "game_flood/sprites/Daisy/Pose 1/eyes normal close.png")
+image dai eyes disappointed1 = blinkeyes("game_flood/sprites/Daisy/Pose 1/eyes disappointed open.png", "game_flood/sprites/Daisy/Pose 1/eyes disappointed close.png")
 
-image dai eyes disappointedside1 = blinkeyes("game_flood/sprites/Daisy/Pose 1/eyes disappointedside open.png", "game_flood/sprites/Daisy/Pose 1/eyes normal close.png")
+image dai eyes disappointedside1 = blinkeyes("game_flood/sprites/Daisy/Pose 1/eyes disappointedside open.png", "game_flood/sprites/Daisy/Pose 1/eyes disappointed close.png")
 
 image dai mouth normal1 = FlapMouth("dai", "game_flood/sprites/Daisy/Pose 1/mouth normal close.png", "game_flood/sprites/Daisy/Pose 1/mouth normal open.png")
 
@@ -305,9 +305,9 @@ image dai mouth smile1 = FlapMouth("dai", "game_flood/sprites/Daisy/Pose 1/mouth
 #
 ###############################
 
-image dai eyes normal2 = blinkeyes("game_flood/sprites/Daisy/Pose 2/eyes normal open.png", "game_flood/sprites/Daisy/Pose 2/eyes normal open.png")
+image dai eyes normal2 = blinkeyes("game_flood/sprites/Daisy/Pose 2/eyes normal open.png", "game_flood/sprites/Daisy/Pose 2/eyes normal close.png")
 
-image dai eyes sad1 = blinkeyes("game_flood/sprites/Daisy/Pose 2/eyes frown open.png", "game_flood/sprites/Daisy/Pose 2/eyes frown open.png")
+image dai eyes sad1 = blinkeyes("game_flood/sprites/Daisy/Pose 2/eyes frown open.png", "game_flood/sprites/Daisy/Pose 2/eyes frown close.png")
 
 image dai mouth normal2 = FlapMouth("dai", "game_flood/sprites/Daisy/Pose 2/mouth normal close.png", "game_flood/sprites/Daisy/Pose 2/mouth normal open.png")
 
@@ -319,11 +319,11 @@ image dai mouth sad2 = FlapMouth("dai", "game_flood/sprites/Daisy/Pose 2/mouth f
 #
 ###############################
 
-image hop eyes normal1 = blinkeyes("game_flood/sprites/Hope/Pose 1/eyes normal open.png", "game_flood/sprites/Hope/Pose 1/eyes normal open.png")
+image hop eyes normal1 = blinkeyes("game_flood/sprites/Hope/Pose 1/eyes normal open.png", "game_flood/sprites/Hope/Pose 1/eyes normal close.png")
 
-image hop eyes angry1 = blinkeyes("game_flood/sprites/Hope/Pose 1/eyes angry open.png", "game_flood/sprites/Hope/Pose 1/eyes angry open.png")
+image hop eyes angry1 = blinkeyes("game_flood/sprites/Hope/Pose 1/eyes angry open.png", "game_flood/sprites/Hope/Pose 1/eyes angry close.png")
 
-image hop eyes happy1 = blinkeyes("game_flood/sprites/Hope/Pose 1/eyes smile open.png", "game_flood/sprites/Hope/Pose 1/eyes smile open.png")
+image hop eyes happy1 = blinkeyes("game_flood/sprites/Hope/Pose 1/eyes smile open.png", "game_flood/sprites/Hope/Pose 1/eyes smile close.png")
 
 image hop mouth normal1 = FlapMouth("hop", "game_flood/sprites/Hope/Pose 1/mouth normal close.png", "game_flood/sprites/Hope/Pose 1/mouth normal open.png")
 
@@ -339,9 +339,9 @@ image hop mouth angryclench1 = FlapMouth("hop", "game_flood/sprites/Hope/Pose 1/
 #
 ###############################
 
-image hop eyes normal2 = blinkeyes("game_flood/sprites/Hope/Pose 2/eyes normal open.png", "game_flood/sprites/Hope/Pose 2/eyes normal open.png")
+image hop eyes normal2 = blinkeyes("game_flood/sprites/Hope/Pose 2/eyes normal open.png", "game_flood/sprites/Hope/Pose 2/eyes normal close.png")
 
-image hop eyes embarrassed2 = blinkeyes("game_flood/sprites/Hope/Pose 2/eyes embarrassed open.png", "game_flood/sprites/Hope/Pose 2/eyes embarrassed open.png")
+image hop eyes embarrassed2 = blinkeyes("game_flood/sprites/Hope/Pose 2/eyes embarrassed open.png", "game_flood/sprites/Hope/Pose 2/eyes embarrassed close.png")
 
 image hop mouth normal2 = FlapMouth("hop", "game_flood/sprites/Hope/Pose 2/mouth normal close.png", "game_flood/sprites/Hope/Pose 2/mouth normal open.png")
 
