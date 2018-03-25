@@ -51,7 +51,7 @@
 
     "..."
 
-    scene plaza with dissolve
+    scene letgo townsquare1 with Dissolve
     show eli goofy1 with dissolve:
         align (0.35, 1.0)
 
@@ -154,7 +154,10 @@
     may "I like you too, Eli."
 
     scene black
-
+    show may happy2:
+        align (0.65, 1.0)
+    show eli smile1:
+        align (0.35, 1.0)
     "The entire world falls away at that moment until it’s just the two of us left. We slowly smile at each other, and I feel a warmth rising in my chest."
 
     "Nothing can distract me now."
