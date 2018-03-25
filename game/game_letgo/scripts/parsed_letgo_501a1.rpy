@@ -27,7 +27,7 @@
     "I quickly swipe the icy crystals away from my beanie. None of the bypassers seem to mind me talking to myself - or maybe they do just aren’t showing it."
     show eli normal2 with dissolve
     voice "C-501a1-3.mp3" #Elijah (Michael Potok)
-    eli "Naw, you’re right. I don’t wanna appear too needy. She probably didn’t see the time or something. She does that sometimes - let’s time slip through her fingers."
+    eli "Naw, you’re right. I don’t wanna appear too needy. She probably didn’t see the time or something. She does that sometimes - lets time slip through her fingers."
 
     voice "C-501a1-4.mp3" #Elijah (Michael Potok)
     eli "At least I have you for company..."

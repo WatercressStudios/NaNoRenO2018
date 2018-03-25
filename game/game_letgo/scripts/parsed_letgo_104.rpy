@@ -29,6 +29,11 @@ label letgo_104:
     voice "C-104-2.mp3" #Maya (shiena)
     may "Sure, I’d like that."
 
+    show eli:
+        align (0.35, 1.0)
+    show may:
+        align (0.55, 1.0)
+
     "She smiles up at me and takes my hand."
 
     "Alright, now’s the best time. Try to remember what you were going to say at the tree, dammit!"
@@ -105,6 +110,9 @@ label letgo_104:
     show may shout1 close:
         ease 0.6 align (1.0, 1.0) alpha 0
 
+    play music bgmloop1death_intro noloop fadeout 1.0
+    queue music bgmloop1deah_loop loop
+
     "I push Maya off to the left."
 
     "The driver’s completely lost control."
@@ -128,6 +136,7 @@ label letgo_104:
     pause 1.3
     play sound "game_letgo/sfx/Punch,Shove.ogg"
     stop ambience fadeout 0.1
+    stop music fadeout 0.1
     scene black
 
     "And then, there’s nothing."

@@ -121,14 +121,22 @@
 # play music bgmletgo_intro noloop fadeout 1.0
 # queue music bgmletgo_loop loop
 
+# play music bgmletgo_credits fadeout 1.0
+
 # play music bgmloop1comedy_intro noloop fadeout 1.0
 # queue music bgmloop1comedy_loop loop
 
 # play music bgmloop1romantic_intro noloop fadeout 1.0
 # queue music bgmloop1romantic_loop loop
 
+# play music bgmloop1death_intro noloop fadeout 1.0
+# queue music bgmloop1deah_loop loop
+
 # play music bgmloop2distorted_intro noloop fadeout 1.0
 # queue music bgmloop2distorted_loop loop
+
+# play music bgmloop2death_intro noloop fadeout 1.0
+# queue music bgmloop2deah_loop loop
 
 # play music bgmloop3comedy_intro noloop fadeout 1.0
 # queue music bgmloop3comedy_loop loop
@@ -199,12 +207,17 @@ image white = "#fff"
 
 define bgmletgo_intro = "game_letgo/music/Let Go. (INTRO).ogg"
 define bgmletgo_loop = "game_letgo/music/Let Go. (LOOP).ogg"
+define bgmletgo_credits = "game_letgo/music/Let Go Credits.ogg"
 define bgmloop1comedy_intro = "game_letgo/music/Comedic Date (INTRO).ogg"
 define bgmloop1comedy_loop = "game_letgo/music/Comedic Date (LOOP).ogg"
 define bgmloop1romantic_intro = "game_letgo/music/Romantic Date (INTRO).ogg"
 define bgmloop1romantic_loop = "game_letgo/music/Romantic Date (LOOP).ogg"
+define bgmloop1death_intro = "game_letgo/music/I Lost Him Again (INTRO).ogg"
+define bgmloop1death_loop = "game_letgo/music/I Lost Him Again (LOOP).ogg"
 define bgmloop2distorted_intro = "game_letgo/music/Distorted Date (INTRO).ogg"
 define bgmloop2distorted_loop = "game_letgo/music/Distorted Date (LOOP).ogg"
+define bgmloop2death_intro = "game_letgo/music/I Lost Him Again (INTRO).ogg"
+define bgmloop2death_loop = "game_letgo/music/I Lost Him Again (LOOP).ogg"
 define bgmloop3comedy_intro = "game_letgo/music/A Macabre Comedy Intro.ogg"
 define bgmloop3comedy_loop = "game_letgo/music/A Macabre Comedy Loop.ogg"
 define bgmloop4reveal = "game_letgo/music/The Truth.ogg"
