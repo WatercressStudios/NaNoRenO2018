@@ -2,6 +2,10 @@ label letgo_101:
     #black screen
     #note: May is pronounced like 'my'
 
+    # play music bgmletgo_intro noloop fadeout 1.0
+    # queue music bgmletgo_loop loop
+    scene black with Dissolve(5.0)
+
     voice "C-101-1.mp3" #Elijah (Michael Potok)
     eli "Okay, Eli, relax. This isn't something you haven't done before."
 
@@ -21,6 +25,7 @@ label letgo_101:
     eli "Breathe. Relax."
 
     #show bg + Eli
+    scene letgo park podium with dissolve
 
     "I lean against the tall tree next to me, my winter coat padding my shoulder from the rough bark. It's a nice, large, and sturdy - as it always has been."
 
@@ -75,6 +80,7 @@ label letgo_101:
     eli "The only girl I've ever wanted was you."
 
     #walking in snow sfx
+    play sound "game_letgo/sfx/Snow Footsteps.ogg"
 
     voice "C-101-18.mp3" #Maya (shiena)
     may "Is that so?"
@@ -183,6 +189,8 @@ label letgo_101:
     "A pang hits my stomach. Maybe I should start over and confess to her for real? I may have ruined the initial attempt, but she'd probably want one nonetheless."
 
     ### Do slowfade to the clocktower scene here, while playing the 3PM bells
+    #scene letgo [clocktower] with slowfade
+    play sound "game_letgo/sfx/Clocktower 3PM.ogg"
 
     "I pull back slightly, holding her face in my mitts, looking directly into her eyes..."
 
@@ -207,7 +215,7 @@ label letgo_101:
     "The snow deafens the sounds of the city, holding the weight of my words for itself, ensuring that Maya and I are truly alone together."
 
     voice "C-101-52.mp3" #Maya (shiena)
-    may "That's…" 
+    may "That's…"
 
     "Wiping away at her eyes, May looks at me with an odd expression."
 
@@ -244,7 +252,7 @@ label letgo_101:
     voice "C-101-61.mp3" #Elijah (Michael Potok)
     eli "Deal."
 
-    "I still feel bad, but she's right." 
+    "I still feel bad, but she's right."
 
     "I lose myself in her eyes for a few minutes; the two of us stare at each other in bliss. A huge weight has been lifted from my shoulders, and I feel invincible."
 
@@ -267,5 +275,5 @@ label letgo_101:
     "She brings me into another embrace, and then she grabs my hand. She motions towards the cafe, and I begin to walk with her."
 
     "Today's going to be a good day, a happy day. For both of us."
-    
+
     jump letgo_102
