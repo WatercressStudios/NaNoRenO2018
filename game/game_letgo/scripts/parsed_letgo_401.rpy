@@ -115,7 +115,6 @@
     "She tears open the apartment complex’s door, leading me to the staircase. She stomps up them, and I'm half-tempted to ask her to quiet down for her neighbors' sake - but I don't think that would be appropriate."
     play sound "game_letgo/sfx/Key fumble,open door.ogg"
     scene letgo house hallway with dissolve
-    play sound "game_letgo/sfx/Key fumble,open door.ogg"
     "Fumbling for her keys, she opens the door and thrusts me inside."
 
     "Rushing past me, I follow her into the bedroom. Other than a messy bed, it looks just like it always has."
@@ -172,7 +171,13 @@
     "What's going on? What did I do?"
 
     "She looks like a ghost. The tears begin to stream down her face - and they don't stop no matter how many times she uses the cuff of her jacket to wipe them away."
+    show eli:
+        ease 1.0 align (0.4, 1.0)
+    pause 1.0
     play sound "game_letgo/sfx/Punch,Shove Serious.ogg"
+    show eli:
+        ease 0.3 align (0.35, 1.0)
+
     "I reach forward to help her, but she shoves my hand away."
 
     voice "C-401-24.mp3" #Elijah (Michael Potok)
@@ -303,9 +308,11 @@
 
     "I struggle to keep myself from thinking about literally anything, as I need to be {i}present{/i} for her; I can't be my usual \"head in the clouds, too fast to follow\" self."
     show eli cool1 with dissolve
-    "With slow, deliberate actions, I retrieve the tea and catch the kettle before it screams at me."
 
     play sound "game_letgo/sfx/Pouring Two Cups of Tea.ogg"
+
+    "With slow, deliberate actions, I retrieve the tea and catch the kettle before it screams at me."
+
     "I pour two cups and dip the tea bags in. With a single moment of hesitation, I move to her bedroom."
     scene letgo house bedroom with dissolve
     show may sad3 with dissolve:
