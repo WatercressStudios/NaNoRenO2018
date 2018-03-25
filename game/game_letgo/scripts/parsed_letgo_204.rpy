@@ -1,19 +1,29 @@
 ﻿label letgo_204:
-    #black scene
+    pause 1.0
+    stop ambience
+    play ambience "game_letgo/ambience/Outlook Night.ogg" fadeout 2.0 fadein 2.0
 
-    #snow crunching
+    play sound "game_letgo/sfx/Snow Footsteps.ogg"
 
     "We leave the old neighborhood behind and start climbing the big hill in town. It’s a bit more difficult than usual - probably because it’s darker than I’m used to."
 
     #fade in appropriate bg
+    scene letgo park hill night with dissolve
 
-    "It’s a surprisingly nice night for a walk - and doubly nice to see Maya snuggling into her scarf. I’m not sure she realizes she’s doing, it but I’m not about to stop her."
+    "It’s a surprisingly nice night for a walk - and doubly nice to see Maya snuggling into her scarf. I’m not sure she realizes she’s doing it, but I’m not about to stop her."
+
+    play sound "game_letgo/sfx/Wind Gust.ogg"
 
     "We’re still holding hands as we walk - though I have my left hand in her right, with our close arms around each other’s backs. I can hear our feet crunching through the snow on the ground while a playful wind gathers and sends stray snowflakes around us."
 
     "If there’s glass out there, please don’t tap it because that would be annoying!"
 
     #may at left
+    show may happy2:
+        xanchor 0.5
+        yalign 1.0
+        xpos 0.65
+    with dissolve
 
     voice "C-204-1.mp3" #Maya (shiena)
     may "This… I can get used to this."
@@ -21,15 +31,35 @@
     "No kidding."
 
     #eli at right
+    show eli cool1 behind may:
+        xanchor 0.5
+        yalign 1.0
+        xpos 0.8
+    with dissolve
+
+    #eli at right
     voice "C-204-2.mp3" #Elijah (Michael Potok)
     eli "Same, for sure. We’ll take our time to do this in every season."
+
+    show may sadshout1 with dissolve
+    pause 0.5
+    show may normal1 close with dissolve
 
     "She gets this weird look, but then smiles brilliantly."
 
     voice "C-204-3.mp3" #Elijah (Michael Potok)
     eli "There you are."
 
+    show eli:
+        easein 0.7 xpos 0.69 ypos 1.07
+    pause 0.5
+    show eli:
+        xpos 0.8 ypos 1.0
+    with ease
+
     "I take a moment to kiss her forehead, which causes her to snort."
+
+    show may adore1 with dissolve
 
     voice "C-204-4.mp3" #Maya (shiena)
     may "Wow, is it second grade?"
@@ -37,24 +67,39 @@
     voice "C-204-5.mp3" #Elijah (Michael Potok)
     eli "Pffft-- no, not at all! I’d already be at home doing chores if it was second grade."
 
+    show may happy2 with dissolve
+
     voice "C-204-6.mp3" #Maya (shiena)
     may "Well, we should find a bench. I think there’s a place where we can see the whole city."
 
-    "We walk a bit farther - though she breaks off and runs ahead of me.."
+    "We walk a bit farther - though she breaks off and runs ahead of me."
+
 
     voice "C-204-7.mp3" #Maya (shiena)
     may "Bet you can’t catch me before the end of the block!"
 
+    hide may cheeky2 with easeoutright
+
     voice "C-204-8.mp3" #Elijah (Michael Potok)
     eli "Bet you I can!"
 
+    hide eli cool1 with easeoutright
     #both of them laughing
+
+    scene black with dissolve
+
+    play sound "game_letgo/sfx/May Eli Run.ogg"
+
+    stop music fadeout 10.0
 
     "The air is a bit more biting as I run for her."
 
     "Everything feels so slow, like the world is trying hard to give me one more minute - one more moment to see her happy face looking back as I press on."
+    stop sound fadeout 5.0
 
     "This feels so familiar - but I catch up, pulling her off the ground and twirling her; she gives a small giggle."
+
+    scene letgo city outlook night
 
     voice "C-204-9.mp3" #Maya (shiena)
     may "Okay, okay! You got me!"
@@ -144,6 +189,7 @@
     voice "C-204-26.mp3" #Maya (shiena)
     may "Come on, come on! Don’t do this!"
 
+    play music "game_letgo/sfx/Sirens.ogg" fadein 8.0
     #sirens that grow increasingly loud
 
     voice "C-204-27.mp3" #Maya (shiena)
@@ -163,6 +209,14 @@
 
     "..."
 
+    stop music fadeout 1.0
+
+    scene black
+    with Dissolve(3.0)
+
+    stop ambience
+    play ambience "game_letgo/ambience/Downtown Night.ogg" fadeout 2.0 fadein 2.0
+
     voice "C-204-31.mp3" #Maya (shiena)
     may "...We ended up at the hospital."
 
@@ -181,6 +235,7 @@
     voice "C-204-36.mp3" #Maya (shiena)
     may "I’m sorry, Elijah. I’m so sorry…"
 
+    stop ambience
     #rewind
     play audio "game_letgo/sfx/Disturbing Bass.ogg"
     scene red with Dissolve(9.5)

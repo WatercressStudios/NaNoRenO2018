@@ -138,7 +138,6 @@
 # play music bgmloop5kite fadeout 1.0
 
 # play music bgmloop5bye_intro noloop fadeout 1.0
-
 # queue music bgmloop5bye_loop loop
 
 

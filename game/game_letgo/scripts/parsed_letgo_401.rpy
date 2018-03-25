@@ -98,7 +98,7 @@
 
     hide eli with dissolve
     hide may with dissolve
-    play sound "game_letgo/sfx/Snow Footsteps.ogg"
+    play sound "game_letgo/sfx/May Eli Run.ogg"
     "She drags me through the alley and the road, down streets and around corners. At first I'm utterly disoriented, completely lost - but after a while, I understand."
 
     "We're on our way to her apartment. It's been a while since I've been there…"
@@ -113,7 +113,7 @@
 
     play sound "game_letgo/sfx/Climbing up Stairs.ogg"
     "She tears open the apartment complex’s door, leading me to the staircase. She stomps up them, and I'm half-tempted to ask her to quiet down for her neighbors' sake - but I don't think that would be appropriate."
-
+    play sound "game_letgo/sfx/Key fumble,open door.ogg"
     scene letgo house hallway with dissolve
     play sound "game_letgo/sfx/Key fumble,open door.ogg"
     "Fumbling for her keys, she opens the door and thrusts me inside."
@@ -172,7 +172,7 @@
     "What's going on? What did I do?"
 
     "She looks like a ghost. The tears begin to stream down her face - and they don't stop no matter how many times she uses the cuff of her jacket to wipe them away."
-
+    play sound "game_letgo/sfx/Punch,Shove Serious.ogg"
     "I reach forward to help her, but she shoves my hand away."
 
     voice "C-401-24.mp3" #Elijah (Michael Potok)
@@ -414,6 +414,8 @@
     eli "You have to make the choice, Maya."
     menu:
         "Let Go.":
+            stop music fadeout 2.0
             jump letgo_402
         "It can't end like this.":
+            stop music fadeout 2.0
             jump letgo_502
