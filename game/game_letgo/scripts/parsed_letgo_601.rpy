@@ -1,5 +1,4 @@
 ﻿label letgo_601:
-    scene black
     play music bgmletgo_intro noloop fadeout 1.0
     queue music bgmletgo_loop loop
     "I pull a pillow around my head, straining against the sun. Please, {i}please{/i}, don't make me wake up."
@@ -34,33 +33,34 @@
 
     #Internal monologue from this point onto the next comment is only to appear of Scene 502 was the scene you received, rather than 501
 
-    "After so much time..."
+    if letgo_badending:
+        "After so much time..."
 
-    "Years and years."
+        "Years and years."
 
-    "Decades, even."
+        "Decades, even."
 
-    "Probably more..."
+        "Probably more..."
 
-    "I'm finaly free from the hell that was that day."
+        "I'm finaly free from the hell that was that day."
 
-    "I'm sorry, Eli. I couldn't save you."
+        "I'm sorry, Eli. I couldn't save you."
 
-    "You were right, you know. From the very beginning, you were right. I failed, in the end, as you knew I would."
+        "You were right, you know. From the very beginning, you were right. I failed, in the end, as you knew I would."
 
-    "You're dead and gone."
+        "You're dead and gone."
 
-    "Forever."
+        "Forever."
 
-    "I... hurt. So much."
+        "I... hurt. So much."
 
-    "Time does that to a soul."
+        "Time does that to a soul."
 
-    "I may be a young woman in body, but of soul?"
+        "I may be a young woman in body, but of soul?"
 
-    "No, of soul I'm old. I'm {i}ancient{/i}."
+        "No, of soul I'm old. I'm {i}ancient{/i}."
 
-    "It took me so long to come to the same conclusion you did. I'm here now, though. And I remember that promise I made so, so long ago."
+        "It took me so long to come to the same conclusion you did. I'm here now, though. And I remember that promise I made so, so long ago."
 
     #This is the end of the 502 specific monologue.
 
@@ -137,13 +137,15 @@
     voice "C-601-9.mp3" #Maya (shiena)
     may "That's enough. Just knowing he went peacefully, happy… That's all that matters."
 
-    voice "C-601-10.mp3" #Maya (shiena)
-    may "We had a good day yesterday. He confessed to me, and we spent our entire day together."
+    if not letgo_badending:
 
-    "Now it’s her turn to burst into tears - that strange, motherly empathy kicking in. She feels my pain in a way very few can."
+        voice "C-601-10.mp3" #Maya (shiena)
+        may "We had a good day yesterday. He confessed to me, and we spent our entire day together."
 
-    voice "C-601-11.mp3" #Maya (shiena)
-    may "The last thing he remembered - the last day he experienced - was a very, very happy one."
+        "Now it’s her turn to burst into tears - that strange, motherly empathy kicking in. She feels my pain in a way very few can."
+
+        voice "C-601-11.mp3" #Maya (shiena)
+        may "The last thing he remembered - the last day he experienced - was a very, very happy one."
 
     voice "C-601-12.mp3" #Maya (shiena)
     may "If nothing else, we can have solace in that."

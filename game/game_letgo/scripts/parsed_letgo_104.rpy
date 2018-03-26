@@ -1,17 +1,15 @@
 label letgo_104:
-    scene letgo park trees sunset with dissolve
-
-    play ambience "game_letgo/ambience/Park Night.ogg" fadeout 2.0 fadein 2.0
-
     "We eventually get up and start heading home."
 
-    "The night was darkening, allowing the moon to come out and light the sidewalk beneath our feet."
+    play sound "game_letgo/sfx/Snow Footsteps.ogg"
 
-    scene letgo road long with dissolve
+    play ambience "game_letgo/ambience/Roads Night.ogg" fadeout 2.0 fadein 2.0
+    scene letgo park road night with Dissolve(2.0)
 
     play music bgmloop1death_intro noloop fadeout 1.0
     queue music bgmloop1death_loop loop
-    play ambience "game_letgo/ambience/Roads Night.ogg" fadeout 2.0 fadein 2.0
+
+    "The sky was darkening, allowing the moon to come out and light the sidewalk beneath our feet."
 
     "The sounds of people in the different buildings we pass change the farther we go."
 

@@ -106,7 +106,7 @@
     show eli:
         ease 0.8 align (0.0, 1.0) alpha 0
 
-    scene letgo mall2
+    scene letgo mall2 with dissolve
     play ambience "game_letgo/ambience/Mall.ogg" fadeout 0.1 fadein 0.1
 
     show eli normal1 at flip:
@@ -118,8 +118,7 @@
 
     "I wave goodbye with my free hand and disappear into the mall."
 
-    scene letgo mall1
-    play ambience "game_letgo/ambience/Mall.ogg" fadeout 0.1 fadein 0.1
+    scene letgo mall1 with dissolve
 
     show eli normal1:
         xanchor 0.5

@@ -1,4 +1,5 @@
 ﻿label letgo_402:
+    $ letgo_badending = False
     play music bgmloop5bye_intro noloop fadeout 1.0
     queue music bgmloop5bye_loop loop
     scene black
