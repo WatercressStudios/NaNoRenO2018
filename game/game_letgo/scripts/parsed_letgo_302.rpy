@@ -580,7 +580,7 @@ label letgo_302escalator:
     scene letgo rewind with dissolve
 
     play ambience "game_letgo/ambience/Downtown Night.ogg" fadeout 0.1 fadein 0.1
-    scene letgo downtown night with dissolve
+    scene letgo downtown night 
 
     show eli smile2 at flip:
         xanchor 0.5
@@ -592,6 +592,7 @@ label letgo_302escalator:
         yalign 1.0
         xpos 0.35
         ypos 1.03
+    with dissolve        
 
     #Do the rewind thing up to the 302escalator label
 
