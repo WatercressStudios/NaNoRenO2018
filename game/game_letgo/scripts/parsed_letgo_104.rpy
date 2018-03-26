@@ -9,8 +9,8 @@ label letgo_104:
 
     scene letgo road long with dissolve
 
-    play music bgmloop1romantic_intro noloop fadeout 1.0
-    queue music bgmloop1romantic_loop loop
+    play music bgmloop1death_intro noloop fadeout 1.0
+    queue music bgmloop1death_loop loop
     play ambience "game_letgo/ambience/Roads Night.ogg" fadeout 2.0 fadein 2.0
 
     "The sounds of people in the different buildings we pass change the farther we go."
@@ -29,10 +29,8 @@ label letgo_104:
     voice "C-104-2.mp3" #Maya (shiena)
     may "Sure, I’d like that."
 
-    show eli:
-        align (0.35, 1.0)
     show may:
-        align (0.55, 1.0)
+        ease 1.0 align (0.55, 1.0)
 
     "She smiles up at me and takes my hand."
 
@@ -109,9 +107,6 @@ label letgo_104:
 
     show may shout1 close:
         ease 0.6 align (1.0, 1.0) alpha 0
-
-    play music bgmloop1death_intro noloop fadeout 1.0
-    queue music bgmloop1deah_loop loop
 
     "I push Maya off to the left."
 

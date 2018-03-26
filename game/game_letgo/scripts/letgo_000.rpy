@@ -130,13 +130,13 @@
 # queue music bgmloop1romantic_loop loop
 
 # play music bgmloop1death_intro noloop fadeout 1.0
-# queue music bgmloop1deah_loop loop
+# queue music bgmloop1death_loop loop
 
 # play music bgmloop2distorted_intro noloop fadeout 1.0
 # queue music bgmloop2distorted_loop loop
 
 # play music bgmloop2death_intro noloop fadeout 1.0
-# queue music bgmloop2deah_loop loop
+# queue music bgmloop2death_loop loop
 
 # play music bgmloop3comedy_intro noloop fadeout 1.0
 # queue music bgmloop3comedy_loop loop

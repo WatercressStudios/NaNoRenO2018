@@ -68,8 +68,9 @@ label letgo_201:
     eli "I didn’t forget the other part: plastic and silk; they’ll last forever and won’t give you allergies."
 
     #Maya sprite gets close to Elijah’s
+    show may adore1 with dissolve
     play sound "game_letgo/sfx/Punch,Shove Serious.ogg"
-    show may adore1 with dissolve:
+    show may:
         ease 0.5 align (0.5, 1.0)
 
     "She accepts them and hugs me tight, almost jumping onto me."
@@ -85,7 +86,8 @@ label letgo_201:
     may "Deal with it, because they’re wonderful! You always remember the important things when it matters."
 
     #maya sprite moves back
-    show may normal1 with dissolve:
+    show may normal1 with dissolve
+    show may:
         ease 1.5 align (0.65, 1.0)
 
     "She wraps her arm around mine, shaking her boots free from the snow; it falls around her in tight, wet chunks."

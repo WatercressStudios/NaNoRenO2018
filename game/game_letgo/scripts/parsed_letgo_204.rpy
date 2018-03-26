@@ -1,20 +1,21 @@
 ﻿label letgo_204:
-    pause 1.0
-    stop ambience
-    play ambience "game_letgo/ambience/Outlook Night.ogg" fadeout 2.0 fadein 2.0
-
-    play sound "game_letgo/sfx/Snow Footsteps.ogg"
+    scene letgo city nearby sunset with Dissolve(1.0)
+    play music bgmloop2death_intro noloop fadeout 1.0
+    queue music bgmloop2death_loop loop
 
     "We leave the old neighborhood behind and start climbing the big hill in town. It’s a bit more difficult than usual - probably because it’s darker than I’m used to."
 
     #fade in appropriate bg
+    play sound "game_letgo/sfx/Snow Footsteps.ogg"
+    play ambience "game_letgo/ambience/Outlook Night.ogg" fadeout 2.0 fadein 2.0
     scene letgo park hill night with dissolve
 
     "It’s a surprisingly nice night for a walk - and doubly nice to see Maya snuggling into her scarf. I’m not sure she realizes she’s doing it, but I’m not about to stop her."
 
     play sound "game_letgo/sfx/Wind Gust.ogg"
 
-    "We’re still holding hands as we walk - though I have my left hand in her right, with our close arms around each other’s backs. I can hear our feet crunching through the snow on the ground while a playful wind gathers and sends stray snowflakes around us."
+    "We’re still holding hands as we walk - though I have my left hand in her right, with our close arms around each other’s backs."
+    "I can hear our feet crunching through the snow on the ground while a playful wind gathers and sends stray snowflakes around us."
 
     "If there’s glass out there, please don’t tap it because that would be annoying!"
 
@@ -89,8 +90,6 @@
     scene black with dissolve
 
     play sound "game_letgo/sfx/May Eli Run.ogg"
-
-    stop music fadeout 10.0
 
     "The air is a bit more biting as I run for her."
 
@@ -171,6 +170,8 @@
 
     "..."
 
+    stop music fadeout 10.0
+
     voice "C-204-21.mp3" #Maya (shiena)
     may "Come on, Eli. Let’s go."
 
@@ -214,7 +215,11 @@
     scene black
     with Dissolve(3.0)
 
-    stop ambience
+    stop ambience fadeout 2.0
+    play sound "game_letgo/sfx/Sirens.ogg"
+    
+    pause 2.0
+
     play ambience "game_letgo/ambience/Downtown Night.ogg" fadeout 2.0 fadein 2.0
 
     voice "C-204-31.mp3" #Maya (shiena)
@@ -235,9 +240,9 @@
     voice "C-204-36.mp3" #Maya (shiena)
     may "I’m sorry, Elijah. I’m so sorry…"
 
-    stop ambience
+    stop ambience fadeout 0.1
     #rewind
     play audio "game_letgo/sfx/Disturbing Bass.ogg"
-    scene red with Dissolve(9.5)
+    scene letgo rewind with Dissolve(9.5)
 
     jump letgo_301
