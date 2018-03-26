@@ -2,7 +2,7 @@
     #Continues directly from somewhere in 101 or 102, right after the cafe is mentioned
     #We’ll probably edit the transition later because yeah
 
-    scene clocktower
+    scene letgo clocktower eli may
 
     play sound "game_letgo/sfx/Clocktower 3PM.ogg"
     play ambience "game_letgo/ambience/Town Center Plaza.ogg" fadeout 0.1 fadein 0.1
@@ -21,7 +21,10 @@
         "Let's head downtown":
             pass
 
-    scene letgo townsquare1
+    play music bgmloop2distorted_intro noloop fadeout 1.0
+    queue music bgmloop2distorted_loop loop
+
+    scene letgo townsquare2 with dissolve
     show eli normal1 at flip:
         xanchor 0.5
         yalign 1.0
@@ -82,7 +85,7 @@
     may "Great!"
 
     hide may
-    hide eli worried1
+    hide eli
     with easeoutleft
 
     scene black with Dissolve (1.0)
@@ -92,10 +95,7 @@
     #black screen
     #BUS NOISES
 
-    "Without time to think, I find myself headed downtown with May."
-
-    #I know damn well from Nano 2017 that having character sprites in a vehicle is impossible, so we should probably keep this to a black screen
-    #or just don’t have sprites I guess
+    "Without time to think, I find myself on a bus headed downtown with May."
 
     "Soon enough, we get to another stop. I start to stand."
 

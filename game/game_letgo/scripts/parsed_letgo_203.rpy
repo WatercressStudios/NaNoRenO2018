@@ -121,7 +121,7 @@
 
     "As I sip on it, I turn around."
 
-    #show eli at flip with dissolve
+    show eli at flip with dissolve
 
     voice "C-203-17.mp3" #Old Man (Adam Warren)
     om "You look… relieved, young man - and tense!"
@@ -182,8 +182,7 @@
         xalign 0.8
         ease 0.6 xalign 0.2 yalign 0.8
     with dissolve
-    #show may happy2 close at flip:
-    show may happy2 close:
+    show may happy2 close at flip:
         xanchor 0.5
         yalign 1.0
         xpos 0.3

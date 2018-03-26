@@ -1,5 +1,5 @@
 label letgo_201:
-    scene letgo townsquare1
+    scene letgo clocktower eli may
     
     play sound "game_letgo/sfx/Clocktower 3PM.ogg"
     play ambience "game_letgo/ambience/Town Center Plaza.ogg" fadeout 0.1 fadein 0.1
@@ -10,6 +10,7 @@ label letgo_201:
 
     "How long have we worked together, anyway? Sheesh, I’m still babbling at May like an idiot!"
 
+    scene letgo townsquare2 with dissolve
     show eli sad1 with dissolve:
         align (0.35, 1.0)
 

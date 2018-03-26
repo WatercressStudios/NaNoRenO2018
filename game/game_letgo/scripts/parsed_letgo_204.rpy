@@ -190,8 +190,8 @@
     voice "C-204-26.mp3" #Maya (shiena)
     may "Come on, come on! Don’t do this!"
 
-    play music "game_letgo/sfx/Sirens.ogg" fadein 8.0
     #sirens that grow increasingly loud
+    play sound "game_letgo/sfx/Sirens.ogg"
 
     voice "C-204-27.mp3" #Maya (shiena)
     may "Why? Why like this?"
@@ -214,11 +214,6 @@
 
     scene black
     with Dissolve(3.0)
-
-    stop ambience fadeout 2.0
-    play sound "game_letgo/sfx/Sirens.ogg"
-    
-    pause 2.0
 
     play ambience "game_letgo/ambience/Downtown Night.ogg" fadeout 2.0 fadein 2.0
 

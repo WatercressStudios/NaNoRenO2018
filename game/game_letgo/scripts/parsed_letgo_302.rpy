@@ -121,7 +121,7 @@
     voice "C-302-23.mp3" #Elijah (Michael Potok)
     eli "Ha. Yeah, you’re right. I’m worried about n--"
 
-    stop ambience
+    stop music fadeout 0.1
 
     play sound "game_letgo/sfx/Punch,Shove Serious.ogg"
 
@@ -150,23 +150,17 @@
     voice "C-302-25.mp3" #Maya (shiena)
     may "Are you {i}kidding{/i} me!?"
 
-    stop ambience
-
-    scene red with dissolve
-
-    play sound "game_letgo/sfx/Disturbing Bass.ogg"
+    play sound "game_letgo/sfx/Disturbing Bass Short.ogg"
+    scene letgo rewind with dissolve
 
     #Do the um... The rewind thing. I have no idea how we’re coding this. The rewind point is to the start of 302.
 
-    pause 1.0
+    scene letgo city nearby sunset with dissolve
 
-    stop sound fadeout 0.5
-    scene black with dissolve
+    play music bgmloop3comedy_intro noloop fadeout 1.0
+    queue music bgmloop3comedy_loop loop
 
     "We have a good laugh about it and make our way onward, toward May’s supposed plan."
-
-    scene letgo city nearby sunset with dissolve
-    play ambience "game_letgo/ambience/Near Downtown Bridge Night.ogg" fadeout 0.1 fadein 0.1
 
     "She’s been pretty secretive about this. Where are we even going?"
 
@@ -541,8 +535,8 @@ label letgo_302escalator:
     eli "But if anything’s on your mind, just know th--"
 
     stop ambience fadeout 0.5
-    play music bgmloop3comedy_intro noloop fadeout 1.0
-    queue music bgmloop3comedy_loop loop
+#     play music bgmloop3comedy_intro noloop fadeout 1.0
+#     queue music bgmloop3comedy_loop loop
 
     show eli sad1:
         easein 0.3 ypos 1.15
@@ -582,15 +576,11 @@ label letgo_302escalator:
     voice "C-302-78.mp3" #Maya (shiena)
     may "Come on!"
 
-    scene black with dissolve
-
-    play sound "game_letgo/sfx/Disturbing Bass.ogg"
-    scene red with Dissolve(1.5)
-
-    stop sound
+    play sound "game_letgo/sfx/Disturbing Bass Short.ogg"
+    scene letgo rewind with dissolve
 
     play ambience "game_letgo/ambience/Downtown Night.ogg" fadeout 0.1 fadein 0.1
-    scene letgo downtown night
+    scene letgo downtown night with dissolve
 
     show eli smile2 at flip:
         xanchor 0.5
@@ -646,7 +636,7 @@ label letgo_302cocoa:
 
     scene letgo downtown cafe outside
 
-    stop music fadeout 3.0
+    stop music fadeout 20.0
 
     show eli smile2:
         xanchor 0.5
@@ -955,8 +945,6 @@ label letgo_302manhole:
 
     "I let go."
 
-    stop music fadeout 4.0
-
     scene letgo downtown nice night
 
     show eli sad2:
@@ -970,7 +958,6 @@ label letgo_302manhole:
         yalign 1.0
         xpos 0.55
         ypos 1.03
-
     with dissolve
 
     voice "C-302-129.mp3" #Elijah (Michael Potok)
@@ -991,6 +978,8 @@ label letgo_302manhole:
     voice "C-302-134.mp3" #Maya (shiena)
     may "Okay?"
 
+    stop music fadeout 4.0
+
     "..."
 
     show may at flip with dissolve
@@ -1006,6 +995,9 @@ label letgo_302manhole:
     voice "C-302-136.mp3" #Elijah (Michael Potok)
     eli "I believe y--"
 
+    play music bgmloop3comedy_intro noloop fadeout 1.0
+    queue music bgmloop3comedy_loop loop
+
     #oops he’s dying make the screen black or something
 
     show eli sad1:
@@ -1020,9 +1012,6 @@ label letgo_302manhole:
     eli "Woah!"
 
     scene black
-
-    play music bgmloop3comedy_intro noloop fadeout 1.0
-    queue music bgmloop3comedy_loop loop
 
     play sound "game_letgo/sfx/Ice Slip.ogg"
 
@@ -1045,9 +1034,7 @@ label letgo_302manhole:
     voice "C-302-140.mp3" #Maya (shiena)
     may "{i}Why!?{/i}"
 
-    play sound "game_letgo/sfx/Disturbing Bass.ogg"
-    scene red with Dissolve(1.5)
-
-    stop sound
+    play sound "game_letgo/sfx/Disturbing Bass Short.ogg"
+    scene letgo rewind with dissolve
 
     jump letgo_303

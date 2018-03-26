@@ -4,7 +4,7 @@
     play sound "game_letgo/sfx/Clocktower 3PM.ogg"
     play ambience "game_letgo/ambience/Town Center Plaza.ogg" fadeout 0.1 fadein 0.1
 
-    scene black with dissolve
+    scene letgo clocktower eli
 
     "..."
 
@@ -96,9 +96,10 @@
 
     "Dying? What the hell?"
 
-    hide eli with dissolve
-    hide may with dissolve
     play sound "game_letgo/sfx/May Eli Run.ogg"
+
+    scene letgo townsquare1 with dissolve
+
     "She drags me through the alley and the road, down streets and around corners. At first I'm utterly disoriented, completely lost - but after a while, I understand."
 
     "We're on our way to her apartment. It's been a while since I've been there…"
@@ -285,6 +286,7 @@
     show eli worried1 with dissolve
     "I can't seem to stop it from doing so. My hands are shaking."
 
+
     "It's my turn to focus on my breathing, slowing it down. Seeing her so distraught has me shaking. I don't like this, and the pit's still there."
 
     "The concept of a Groundhog Day scenario is so foreign - so alien - to me that I don't even know where to begin. Even theorycrafting, how would it work? What's the way to escape it?"
@@ -301,18 +303,24 @@
 
     "Right?"
 
+    play sound "game_letgo/sfx/Clothes Shuffle.ogg"
+
     "I sit back against the countertop, silently thinking to myself as the pot warms up. I'll make her some soothing citrus tea. That should help her a little bit."
 
     "Really, it's to keep her hands - to keep her - busy. The warm drink and the subtle movements will help keep her mind off of the big issue. It'll also help her feel at home, as if this is just another day."
 
     "I struggle to keep myself from thinking about literally anything, as I need to be {i}present{/i} for her; I can't be my usual \"head in the clouds, too fast to follow\" self."
-    show eli cool1 with dissolve
 
     play sound "game_letgo/sfx/Pouring Two Cups of Tea.ogg"
+
+    show eli cool1 with dissolve
 
     "With slow, deliberate actions, I retrieve the tea and catch the kettle before it screams at me."
 
     "I pour two cups and dip the tea bags in. With a single moment of hesitation, I move to her bedroom."
+
+    play music bgmloop4reveal fadein 2.0 fadeout 1.0
+
     scene letgo house bedroom with dissolve
     show may cry sad3 with dissolve:
         align (0.65, 1.0)
@@ -321,7 +329,6 @@
         align (0.35, 1.0)
 
     "She's still in the same stance from  when I left."
-    play music bgmloop4reveal fadein 2.0 fadeout 1.0
     "She's still crying - and while her breathing is a bit slower, it immediately hastens as I enter the room."
     show eli sad1 with dissolve
     "My hand hovers nearby, offering the drink - but she's too lost to accept it right now. Electing to place it on the nearby nightstand, I walk opposite her and lean against the wall."

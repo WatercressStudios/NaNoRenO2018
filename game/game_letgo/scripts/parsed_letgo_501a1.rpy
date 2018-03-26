@@ -2,8 +2,7 @@
     play sound "game_letgo/sfx/Clocktower 3PM.ogg"
     play ambience "game_letgo/ambience/Town Center Plaza.ogg" fadeout 0.1 fadein 0.1
 
-    scene letgo townsquare1 with Dissolve(3.0)
-    show eli normal1 with dissolve
+    scene letgo clocktower eli with Dissolve(3.0)
     "..."
 
     "I rub my arms and shake the snow off my boots. It’s getting chilly around here…"
@@ -14,6 +13,8 @@
     
     play music bgmletgo_intro noloop fadeout 1.0
     queue music bgmletgo_loop loop
+
+    scene letgo townsquare2 with dissolve
 
     show eli normal2 with dissolve
     voice "C-501a1-1.mp3" #Elijah (Michael Potok)
@@ -211,6 +212,7 @@
 
     image letgo townsquare1 black = "#000"
 
+    stop ambience fadeout 3.0
     play music bgmloop1romantic_intro noloop fadeout 1.0
     queue music bgmloop1romantic_loop loop
 

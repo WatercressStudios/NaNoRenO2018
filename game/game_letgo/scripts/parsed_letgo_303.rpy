@@ -1,5 +1,5 @@
 ﻿label letgo_303:
-    scene letgo downtown cafe outside
+    scene letgo downtown cafe outside with dissolve
 
     stop music fadeout 3.0
 
@@ -32,6 +32,9 @@
         easein 1.1 xpos 0.42
 
     "I take her hand."
+
+    play music bgmloop2death_intro noloop fadeout 1.0
+    queue music bgmloop2death_loop loop
 
     show eli smile2 with dissolve
 
@@ -127,16 +130,13 @@
     "I check the brand to make sure I stop by the same coffee shop May went to."
 
     scene letgo downtown cafe inside
-
     with dissolve
 
     "It turns out \"the best hot chocolate five dollars can buy\" is pretty extravagant."
 
     play ambience "game_letgo/ambience/Downtown Night.ogg" fadeout 0.1 fadein 0.1
 
-    scene letgo downtown cafe outside
-
-    stop music fadeout 3.0
+    scene letgo downtown cafe outside with dissolve
 
     show may sad1 at flip:
         xanchor 0.5
@@ -283,6 +283,8 @@
 
     voice "C-303-38.mp3" #Elijah (Michael Potok)
     eli "May?"
+
+    stop music fadeout 5.0
 
     voice "C-303-39.mp3" #Maya (shiena)
     may "Yeah. Sure. Ski trip. Fine. Because everything’s gonna be okay, and we’ll wrap it all up with a hunky-dory goddamn ski trip."
@@ -475,6 +477,8 @@
     voice "C-303-78.mp3" #Maya (shiena)
     may "..."
 
+    stop music fadeout 10.0
+
     voice "C-303-79.mp3" #Maya (shiena)
     may "...I can’t."
 
@@ -488,6 +492,6 @@
     may "I can’t take this anymore."
 
     play audio "game_letgo/sfx/Disturbing Bass.ogg"
-    scene red with Dissolve(9.5)
+    scene letgo rewind with Dissolve(9.5)
 
     jump letgo_401

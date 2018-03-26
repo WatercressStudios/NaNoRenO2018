@@ -25,6 +25,9 @@ init:
         .2
         repeat
 
+    transform flip:
+        xzoom -1.0
+
 init python:
     import os
     def define_images(imageFolder, excludeFirstXFolders=0, flip=True, prepend=[]):
