@@ -24,6 +24,8 @@ init:
         mouth2
         .2
         repeat
+    transform flip:
+        xzoom -1.0
 
     transform flip:
         xzoom -1.0
