@@ -236,7 +236,13 @@ screen choice(items):
 
     vbox:
         for i in items:
-            textbutton i.caption action i.action
+            if i.action:
+                if " (disabled)" in i.caption:
+                    textbutton i.caption.replace(" (disabled)", "")
+                else:
+                    textbutton i.caption action i.action
+            else:
+                textbutton i.caption
 
 
 ## When this is true, menu captions will be spoken by the narrator. When false,
