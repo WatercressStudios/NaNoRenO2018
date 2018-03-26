@@ -68,6 +68,16 @@ init python:
 
 ###############################
 #
+# FLAGS
+#
+###############################
+
+default hope = False
+default daisy = False
+default oliver = False
+
+###############################
+#
 # OPH POSE 1 SPRITES
 #
 ###############################

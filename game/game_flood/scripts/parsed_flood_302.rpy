@@ -233,4 +233,4 @@ label flood_302:
     scene black with dissolve
     "The lamps around me illuminate the way, and I begin the search for the next destination."
 
-    jump flood_401
+    jump hopcheck   

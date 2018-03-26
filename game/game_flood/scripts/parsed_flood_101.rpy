@@ -110,7 +110,7 @@ label flood_101:
 
     "{i}I can't breathe!{/i}"
 
-    scene bedroom with dissolve
+    scene flood bedroom dream with dissolve
 
     "Forcing my eyes open, I realize what's happened."
 

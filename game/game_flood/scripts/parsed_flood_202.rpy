@@ -438,4 +438,4 @@ label flood_202:
     show oph smile
     "My companion flutters his wings against the streetlamp above. I wonder how long he's been there."
 
-    jump flood_301
+    jump hopcheck

@@ -3,15 +3,19 @@ label flood_301:
 
     #Scene: Street background, night
 
-    "He leaps from the lamp into the air, catching the warm breeze under his wings."
+    "Downtown isn't far from here. I should stay the course and keep heading this way."
+    
+    "The moth leaps from the lamp into the air, catching the warm breeze under his wings."
 
+    scene flood street2 with dissolve
     "One step after another, I follow the lamps, drifting down the dark street, careful not to lose sight of my little companion."
      
     "The city, the sounds, the streets, they all fall out of focus."
 
     "In this moment, it's just me and the moth floating through the night like feathers in the wind."
 
-    show oph smile 
+    show oph smile with dissolve:
+        align (0.35, 1.0)
     "I wonder if this is what every day is like for my companion? Just bouncing from place to place in search of the light."
 
     "What a wonderful life, I think. To be guided only by the most basic of senses. Sight, touch, sound…"
@@ -55,7 +59,6 @@ label flood_301:
     hide oph with easeoutright
     "I beckon my companion to follow me around the corner." 
 
-    scene flood street2 with dissolve
     "Over the pavement my humble steps turn to strides, and before I even realize I'm running at full speed."
 
     "I'm away from the main road now, chasing the sweet notes through dark passages between buildings, the kind of alleys a girl should never go through alone."
