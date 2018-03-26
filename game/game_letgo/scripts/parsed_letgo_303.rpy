@@ -135,7 +135,7 @@
 
     play ambience "game_letgo/ambience/Downtown Night.ogg" fadeout 0.1 fadein 0.1
 
-    scene letgo downtown cafe outside with dissolve
+    scene letgo downtown cafe outside
 
     show may sad1 at flip:
         xanchor 0.5
