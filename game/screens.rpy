@@ -552,6 +552,13 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
+    else:
+        textbutton _("Main Menu"):
+            yalign 1.0
+            action MainMenu() at anim
+        textbutton _("Load Story"):
+            yalign 0.93
+            action ShowMenu("load") at anim
 
 
 style game_menu_outer_frame is empty
