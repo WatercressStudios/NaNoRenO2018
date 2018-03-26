@@ -593,15 +593,15 @@ image eli mouth smile2 = FlapMouth("eli", "game_letgo/sprites/Eli/Pose 2/mouth n
 #
 ###############################
 
-image may eyes normal1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes normal open.png", "game_letgo/sprites/May/Pose 1/eyes normal close.png")
+image may eyes normal1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes normal open.png", "game_letgo/sprites/May/Pose 1/eyes normal blink.png")
 
-image may eyes squint1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes normal squint.png", "game_letgo/sprites/May/Pose 1/eyes normal close.png")
+image may eyes squint1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes normal squint.png", "game_letgo/sprites/May/Pose 1/eyes normal blink.png")
 
-image may eyes worried1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes worry squint.png", "game_letgo/sprites/May/Pose 1/eyes worry close.png")
+image may eyes worried1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes worry squint.png", "game_letgo/sprites/May/Pose 1/eyes worry blink.png")
 
-image may eyes angry1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes angry open.png", "game_letgo/sprites/May/Pose 1/eyes angry close.png")
+image may eyes angry1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes angry open.png", "game_letgo/sprites/May/Pose 1/eyes angry blink.png")
 
-image may eyes sad1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes angry squint.png", "game_letgo/sprites/May/Pose 1/eyes angry close.png")
+image may eyes sad1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes angry squint.png", "game_letgo/sprites/May/Pose 1/eyes angry blink.png")
 
 image may mouth angry1 = FlapMouth("may", "game_letgo/sprites/May/Pose 1/mouth frown close.png", "game_letgo/sprites/May/Pose 1/mouth big open.png")
 
