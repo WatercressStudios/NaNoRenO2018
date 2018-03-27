@@ -1,17 +1,15 @@
 label spirits_a1s0:
-    #scene black
+    scene black
 
     "It’s a quiet day in early autumn, just a few hours before noon. I’m alone in a graveyard at the top of a hill."
 
     #play music main theme
 
-    #play sound wind effect 
+    #play sound wind effect
 
-    #fade to white 
+    scene white with Dissolve(3.0)
 
-    #scene autumn tree 
-
-    #show alex neutral 
+    #show alex neutral
 
     "Leaves of red and orange fall from the trees; sunlight shines through the canopy created by various branches."
 
@@ -25,7 +23,8 @@ label spirits_a1s0:
 
     "It’s the first time I’ve been here in my new uniform: a red shirt and red tie, with a grey checkered skirt - and the mark of a school I hadn’t heard of until earlier this week."
 
-    #scene graveyard cg 
+    scene spirits test pattern with Dissolve(3.0)
+    #scene graveyard cg
 
     voice "C-1-1.mp3" #Alex (Bonnie Mitchel)
     alx "Hey. Mom, Dad... How are you doing?"
@@ -60,21 +59,23 @@ label spirits_a1s0:
 
     "Should I be glad that they weren’t there, or not?"
 
-    #scene fade to black
+    scene black with Dissolve(3.0)
 
     "The seconds drag on into minutes until--"
 
-    #play text message sound
+    play sound "game_spirits/sfx/Text Received.ogg"
 
     "A text from my grandmother rouses me from my reverie."
 
     "{i}Are you okay, Alex?  Your flight’s in two hours.{/i}"
 
     "By the time I’ve finished reading it, there’s a second one."
-    
+
     "{i}We don’t have as much time as usual.{/i}"
 
     "I text back with my other hand."
+
+    play sound "game_spirits/sfx/Text Send.ogg"
 
     voice "C-1-2.mp3" #Alex (Bonnie Mitchel)
     alx "Thx. Otw."
@@ -82,12 +83,16 @@ label spirits_a1s0:
     "I get up and walk back down the hill. I make it back to the car in no time at all, and climb in beside my Naniji."
 
     #play locking sound effect
+    play sound "game_spirits/sfx/Car Door Open Shut.ogg"
 
     "There’s silence between us - and we probably won’t break it until we say goodbye."
 
     "In just a few short hours, my new life begins."
 
+    pause 2.0
+
     #Some sort of a louder, much more ominous locking sound, more like a jail cell or a dungeon.
+    play sound "game_spirits/sfx/Dungeon Door Slam.ogg"
 
     #DRAMATIC TITLE SPLASH
 

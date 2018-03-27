@@ -1,7 +1,7 @@
 label spirits_a1s6:
     #scene bg school hall
 
-    #sfx hubbub
+    play ambience "game_spirits/ambience/Classroom.ogg" fadeout 2.0 fadein 2.0
 
     #show alex neutral
 
@@ -15,7 +15,7 @@ label spirits_a1s6:
 
     "Before I know it, I’m there."
 
-    #scene bg classroom 
+    #scene bg classroom
 
     "First period: Living-Learning, with Mrs…"
 
@@ -57,7 +57,7 @@ label spirits_a1s6:
 
     "I look upwards to find out who is giving them to me, and…"
 
-    #show caelum smile 
+    #show caelum smile
     "It’s Caelum, right? The guy from yesterday."
 
     "Also the guy I sort of abandoned when the weird noises started."
@@ -141,14 +141,16 @@ label spirits_a1s6:
 
     "I turn and keep my attention rapt. Time to learn about beekeeping!"
 
-    #scene black 
+    stop ambience fadeout 3.0
+    #scene black
 
     "The day passes by surprisingly fast; the teachers are kind and accommodating, the classes are interesting, and everyone seems nice enough."
 
     "After another delicious dinner, I clean my room - finishing just in time to get some homework done."
 
-    "Despite everything that happened last night, I think I can be happy here." 
+    "Despite everything that happened last night, I think I can be happy here."
 
     "Overall, though, I’m eager to get to bed."
+
 
     jump spirits_a1s7
