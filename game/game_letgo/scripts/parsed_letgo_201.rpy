@@ -1,10 +1,12 @@
 label letgo_201:
-    scene letgo clocktower eli may
-    
+    scene letgo clocktower
+
     play sound "game_letgo/sfx/Clocktower 3PM.ogg"
     play ambience "game_letgo/ambience/Town Center Plaza.ogg" fadeout 0.1 fadein 0.1
 
     "..."
+
+    scene letgo clocktower eli may with Dissolve(3.0)
 
     "The snow-heavy tree I’d confessed to was a very patient - if not very talkative - witness when I got tongue-tied. That must really come from what, hundreds of years of being alive?"
 

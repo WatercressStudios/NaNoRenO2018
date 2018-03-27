@@ -1,9 +1,12 @@
 ﻿label letgo_501a1:
+    scene letgo clocktower
+
     play sound "game_letgo/sfx/Clocktower 3PM.ogg"
     play ambience "game_letgo/ambience/Town Center Plaza.ogg" fadeout 0.1 fadein 0.1
 
-    scene letgo clocktower eli with Dissolve(3.0)
     "..."
+
+    scene letgo clocktower eli with Dissolve(3.0)
 
     "I rub my arms and shake the snow off my boots. It’s getting chilly around here…"
 
@@ -57,7 +60,7 @@
 
     "My thoughts are interrupted by a snowball."
 
-    scene letgo townsquare1 with dissolve
+    scene letgo townsquare2 with dissolve
     show eli goofy1 with dissolve:
         align (0.0, 1.0)
 
