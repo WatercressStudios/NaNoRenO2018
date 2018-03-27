@@ -1259,6 +1259,15 @@ screen confirm(message, yes_action, no_action):
 
     frame:
         at animelem(time=0.3, endx=0, starty=200, startzoom=0.3)
+        if current_story == None:
+            background Image("gui/textbox.png", xalign=0.5, yalign=0.5)
+        elif current_story == "flood":
+            background Image("gui/textbox_canvas.png", xalign=0.5, yalign=0.5)
+        elif current_story == "letgo":
+            background Image("gui/textbox_hazy.png", xalign=0.5, yalign=0.5)
+        elif current_story == "spirits":
+            background Image("gui/textbox_bloodstain.png", xalign=0.5, yalign=0.5)
+
         vbox:
             xalign .5
             yalign .5
@@ -1286,13 +1295,14 @@ style confirm_button is gui_medium_button
 style confirm_button_text is gui_medium_button_text
 
 style confirm_frame:
-    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+    #background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
     padding gui.confirm_frame_borders.padding
     xalign .5
     yalign .5
 
 style confirm_prompt_text:
     text_align 0.5
+    color "#fff"
     layout "subtitle"
 
 style confirm_button:
