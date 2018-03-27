@@ -12,6 +12,7 @@
 # angry1
 # bitter1
 # scared1
+# surprised1
 
 
 ### show cae ###
@@ -107,25 +108,28 @@ init python:
 ###############################
 
 init python:
-    AlxPose1 = BaseCSprite("alx", "game_flood/sprites/Ophelia/Pose 1/base.png", (414, 1080))
+    AlxPose1 = BaseCSprite("alx", "game_spirits/sprites/Alex/Pose 1/base.png", (414, 1080))
 
 image alx neutral1 = AlxPose1("alx eyes neutral1", "alx mouth neutral1")
-image alx neutral1 close = AlxPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "alx mouth neutral1")
+image alx neutral1 close = AlxPose1("game_spirits/sprites/Alex/Pose 1/eyes happy close.png", "alx mouth neutral1")
 
 image alx happy1 = AlxPose1("alx eyes happy1", "alx mouth happy1")
-image alx happy1 close = AlxPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "alx mouth happy1")
+image alx happy1 close = AlxPose1("game_spirits/sprites/Alex/Pose 1/eyes happy close.png", "alx mouth happy1")
 
 image alx sad1 = AlxPose1("alx eyes sad1", "alx mouth sad1")
-image alx sad1 close = AlxPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "alx mouth sad1")
+image alx sad1 close = AlxPose1("game_spirits/sprites/Alex/Pose 1/eyes happy close.png", "alx mouth sad1")
 
 image alx angry1 = AlxPose1("alx eyes angry1", "alx mouth angry1")
-image alx angry1 close = AlxPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "alx mouth angry1")
+image alx angry1 close = AlxPose1("game_spirits/sprites/Alex/Pose 1/eyes happy close.png", "alx mouth angry1")
 
-image alx bitter1 = AlxPose1("alx eyes bitter1", "alx mouth bitter1")
-image alx bitter1 close = AlxPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "alx mouth bitter1")
+image alx bitter1 = AlxPose1("alx eyes angry1", "alx mouth bitter1")
+image alx bitter1 close = AlxPose1("game_spirits/sprites/Alex/Pose 1/eyes happy close.png", "alx mouth bitter1")
 
 image alx scared1 = AlxPose1("alx eyes scared1", "alx mouth scared1")
-image alx scared1 close = AlxPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "alx mouth scared1")
+image alx scared1 close = AlxPose1("game_spirits/sprites/Alex/Pose 1/eyes happy close.png", "alx mouth scared1")
+
+image alx surprised1 = AlxPose1("alx eyes surprised1", "alx mouth scared1")
+image alx surprised1 close = AlxPose1("game_spirits/sprites/Alex/Pose 1/eyes happy close.png", "alx mouth scared1")
 
 ###############################
 #
@@ -214,29 +218,29 @@ image gen scared1 close = GenPose1("game_flood/sprites/Ophelia/Pose 1/eyes norma
 #
 ###############################
 
-image alx eyes neutral1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image alx eyes neutral1 = blinkeyes("game_spirits/sprites/Alex/Pose 1/eyes neutral open.png", "game_spirits/sprites/Alex/Pose 1/eyes happy close.png")
 
-image alx eyes happy1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image alx eyes happy1 = blinkeyes("game_spirits/sprites/Alex/Pose 1/eyes happy close.png", "game_spirits/sprites/Alex/Pose 1/eyes happy close.png")
 
-image alx eyes sad1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image alx eyes sad1 = blinkeyes("game_spirits/sprites/Alex/Pose 1/eyes sad open.png", "game_spirits/sprites/Alex/Pose 1/eyes happy close.png")
 
-image alx eyes angry1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image alx eyes angry1 = blinkeyes("game_spirits/sprites/Alex/Pose 1/eyes angry open.png", "game_spirits/sprites/Alex/Pose 1/eyes happy close.png")
 
-image alx eyes bitter1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image alx eyes scared1 = blinkeyes("game_spirits/sprites/Alex/Pose 1/eyes scared open.png", "game_spirits/sprites/Alex/Pose 1/eyes happy close.png")
 
-image alx eyes scared1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image alx eyes surprised1 = blinkeyes("game_spirits/sprites/Alex/Pose 1/eyes surprised open.png", "game_spirits/sprites/Alex/Pose 1/eyes happy close.png")
 
-image alx mouth neutral1 = FlapMouth("alx", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
+image alx mouth neutral1 = FlapMouth("alx", "game_spirits/sprites/Alex/Pose 1/mouth neutral close.png", "game_spirits/sprites/Alex/Pose 1/mouth neutral close.png")
 
-image alx mouth happy1 = FlapMouth("alx", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
+image alx mouth happy1 = FlapMouth("alx", "game_spirits/sprites/Alex/Pose 1/mouth happy close.png", "game_spirits/sprites/Alex/Pose 1/mouth happy close.png")
 
-image alx mouth sad1 = FlapMouth("alx", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
+image alx mouth sad1 = FlapMouth("alx", "game_spirits/sprites/Alex/Pose 1/mouth sad close.png", "game_spirits/sprites/Alex/Pose 1/mouth sad close.png")
 
-image alx mouth angry1 = FlapMouth("alx", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
+image alx mouth angry1 = FlapMouth("alx", "game_spirits/sprites/Alex/Pose 1/mouth angry close.png", "game_spirits/sprites/Alex/Pose 1/mouth angry close.png")
 
-image alx mouth bitter1 = FlapMouth("alx", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
+image alx mouth bitter1 = FlapMouth("alx", "game_spirits/sprites/Alex/Pose 1/mouth bitter close.png", "game_spirits/sprites/Alex/Pose 1/mouth bitter close.png")
 
-image alx mouth scared1 = FlapMouth("alx", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
+image alx mouth scared1 = FlapMouth("alx", "game_spirits/sprites/Alex/Pose 1/mouth scared open.png", "game_spirits/sprites/Alex/Pose 1/mouth neutral close.png")
 ###############################
 #
 # CAE POSE 1 COMPOSITE PARTS
@@ -383,6 +387,12 @@ label spirits_expressions:
 
     show alx scared1 close
     alx "alx scared1 close... alx scared1 close... alx scared1 close... alx scared1 close... alx scared1 close... alx scared1 close... alx scared1 close... alx scared1 close... alx scared1 close... "
+
+    show alx surprised1
+    alx "alx surprised1... alx surprised1... alx surprised1... alx surprised1... alx surprised1... alx surprised1... alx surprised1... alx surprised1... alx surprised1... alx surprised1... alx surprised1... "
+
+    show alx surprised1 close
+    alx "alx surprised1 close... alx surprised1 close... alx surprised1 close... alx surprised1 close... alx surprised1 close... alx surprised1 close... alx surprised1 close... alx surprised1 close... "
 
     hide alx
 
