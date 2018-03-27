@@ -29,16 +29,6 @@ init:
         
         
 init python:
-    def callback_transition(event, interact=True, **kwargs):
-        if event == "begin":
-            renpy.transition(Dissolve(0.3), layer="master")
-
-    config.all_character_callbacks = [callback_transition]
-
-    transform flip:
-        xzoom -1.0
-
-init python:
     import os
     def define_images(imageFolder, excludeFirstXFolders=0, flip=True, prepend=[]):
         for path in renpy.list_files():
@@ -53,7 +43,13 @@ init python:
                     renpy.image(path_list + ("flip", ), im.Flip(path, horizontal=True))
 
     renpy.music.register_channel("ambience", mixer="sfx", loop=True, stop_on_mute=True, tight=True, file_prefix='', file_suffix='', buffer_queue=True, movie=False)
-  
+
+#     def callback_transition(event, interact=True, **kwargs):
+#         if event == "begin":
+#             renpy.transition(Dissolve(0.3), layer="master")
+# 
+#     config.all_character_callbacks = [callback_transition]
+
   
     # This is set to the name of the character that is speaking, or
     # None if no character is currently speaking.
