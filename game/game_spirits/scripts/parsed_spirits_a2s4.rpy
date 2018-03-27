@@ -171,6 +171,8 @@ label CaelumIsDeadX:
         alx "I’m going to put an end to you. I’ll make you all pay!"
 
         "I’m going to rid this whole fucking planet of you."
+        
+        jump spirits_a2s5
 
 label BuddingRelationshipX:
     if hasDiary == False:
