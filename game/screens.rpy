@@ -1405,6 +1405,7 @@ style notify_frame:
 
 style notify_text:
     properties gui.text_properties("notify")
+    color "#fff"
 
 
 ## NVL screen ##################################################################
