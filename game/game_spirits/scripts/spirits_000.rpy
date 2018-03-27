@@ -1,4 +1,42 @@
-﻿###############################
+###############################
+#
+# CHEAT SHEET
+#
+###############################
+
+### scene background ###
+#formatting below
+#scene spirits [name here] with dissolve
+#Example: scene spirits alex bedroom clean with dissolve
+
+# alex bedroom clean
+# alex bedroom empty
+# alex bedroom messy
+# alex bedroom night clean
+# alex bedroom night messy
+# autumn
+# box closed
+# box open
+# caelum bedroom
+# cellar
+# city street
+# classroom
+# courtyard
+# emergency room
+# foyer
+# loft
+# school hallway
+# stairs
+
+### play music ###
+
+# play
+
+### play sound ###
+
+# play sound ""
+
+##############################
 #
 # SPIRITS DEFINITIONS GO IN HERE
 #
@@ -27,6 +65,6 @@ define nurse = Character("Nurse")
 
 label spirits_000:
     $ persistent.last_story = "spirits"
-    
+
     jump spirits_a1s0
     "SPIRITS END (remove once scripts are in)"
