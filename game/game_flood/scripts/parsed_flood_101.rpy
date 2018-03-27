@@ -1,7 +1,7 @@
 label flood_101:
     #ambient: dripping in an echo
 
-    #scene black
+    scene black with dissolve
 
     "I'm here again; a familiar sight, a familiar setting, a familiar sound..."
 
@@ -24,7 +24,7 @@ label flood_101:
 
     "I force my eyes open. I guess there’s no avoiding it now..."
 
-    #show cg dream (depending on how many variants we get we'll adjust how this plays out)
+    scene flood sunrise with dissolve #show cg dream (depending on how many variants we get we'll adjust how this plays out)
 
     "I'm in my room, but something is different - {i}wrong.{/i}"
 
@@ -45,7 +45,7 @@ label flood_101:
 
     "...Well there {i}is{/i} plenty of fresh water. At least I won't die of thirst."
 
-    "There are children in Africa with nothing to drink; I should be grateful."
+    "There are children in Africa with nothing to drink; I should be grateful." #Flood waters are NOT drinkable sources of fresh water what are you saying
 
     "My bed is as it's always been. Thick blankets, soft pillows - all hand-me-downs from my beloved mother and father."
 
@@ -84,6 +84,7 @@ label flood_101:
     "The water levels rose constantly throughout my adolescence. A puddle turned to a pond, a pond into a lake, a lake into a sea..."
 
     #hide cg
+    scene black with dissolve
 
     "I close my eyes. If I focus, I can take control."
 
@@ -109,7 +110,7 @@ label flood_101:
 
     "{i}I can't breathe!{/i}"
 
-    #scene bedroom with dissolve
+    scene flood bedroom dream with dissolve
 
     "Forcing my eyes open, I realize what's happened."
 
@@ -157,7 +158,7 @@ label flood_101:
     voice "C-101-5.mp3" #Ophelia (Cospcaptor)
     oph "!"
     "My grip finally gives, and I slip out of my room, through the window."
-    #scene black with dissolve
+    scene black with dissolve
     "I cover my eyes and assume the fetal position as I'm assaulted on all sides by the pounding currents."
     "It feels like I'm stuck in a washing machine. It's so dizzying, and disorienting, and I'm losing all sense of direction."
     "I try to take control of my dream again. This is too much."
@@ -170,7 +171,7 @@ label flood_101:
     #ambient: ocean/crashing waves/storm
     "Cautiously, I reopen my eyes..."
 
-    #show cg stormyflood with dissolve
+    scene flood flood with dissolve
 
     voice "C-101-7.mp3" #Ophelia (Cospcaptor)
     oph "A-ah!?"

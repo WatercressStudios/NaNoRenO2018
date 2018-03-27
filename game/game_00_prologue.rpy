@@ -26,10 +26,30 @@ init:
         repeat
     transform flip:
         xzoom -1.0
-
+        
+        
 init python:
+    import os
+    def define_images(imageFolder, excludeFirstXFolders=0, flip=True, prepend=[]):
+        for path in renpy.list_files():
+            if path.startswith(imageFolder + "/"):
+                path_list = path.split("/")
+                if ' ' in path_list[-1]:
+                    path_list = path_list[0:-1] + path_list[-1].split()
+                path_list[-1] = os.path.splitext(path_list[-1])[0]
+                path_list = tuple(prepend + path_list[excludeFirstXFolders:])
+                renpy.image(path_list, path)
+                if flip:
+                    renpy.image(path_list + ("flip", ), im.Flip(path, horizontal=True))
+
     renpy.music.register_channel("ambience", mixer="sfx", loop=True, stop_on_mute=True, tight=True, file_prefix='', file_suffix='', buffer_queue=True, movie=False)
-  
+
+#     def callback_transition(event, interact=True, **kwargs):
+#         if event == "begin":
+#             renpy.transition(Dissolve(0.3), layer="master")
+# 
+#     config.all_character_callbacks = [callback_transition]
+
   
     # This is set to the name of the character that is speaking, or
     # None if no character is currently speaking.
@@ -68,7 +88,7 @@ init python:
         mouth = flapmouth(mouth1, mouth2)
         return WhileSpeaking(cha, mouth, mouth1)
 
-    def CSprite(cha, base, size=None, eyes=None, eyes2=None, mouth=None, mouth2=None):
+    def CSprite(cha, base, size=None, eyes=None, eyes2=None, mouth=None, mouth2=None, overlay=None):
         if size == None:
             return base
         else:
@@ -76,24 +96,52 @@ init python:
                 eyes = blinkeyes(eyes, eyes2)
             if not mouth == None and not mouth2 == None and type(mouth) == str and type(mouth2) == str:
                 mouth = FlapMouth(cha, mouth, mouth2)
-            if not eyes == None and not mouth == None:
+            if not eyes == None and not mouth == None and not overlay == None:
+                return LiveComposite(
+                        size,
+                        (0, 0), base,
+                        (0, 0), eyes,
+                        (0, 0), mouth,
+                        (0, 0), overlay,
+                    )
+            elif not eyes == None and not mouth == None and overlay == None:
                 return LiveComposite(
                         size,
                         (0, 0), base,
                         (0, 0), eyes,
                         (0, 0), mouth,
                     )
-            elif not eyes == None and mouth == None:
+            elif not eyes == None and mouth == None and not overlay == None:
+                return LiveComposite(
+                        size,
+                        (0, 0), base,
+                        (0, 0), eyes,
+                        (0, 0), overlay,
+                    )
+            elif eyes == None and not mouth == None and not overlay == None:
+                return LiveComposite(
+                        size,
+                        (0, 0), base,
+                        (0, 0), mouth,
+                        (0, 0), overlay,
+                    )
+            elif not eyes == None and mouth == None and overlay == None:
                 return LiveComposite(
                         size,
                         (0, 0), base,
                         (0, 0), eyes,
                     )
-            elif eyes == None and not mouth == None:
+            elif eyes == None and not mouth == None and overlay == None:
                 return LiveComposite(
                         size,
                         (0, 0), base,
                         (0, 0), mouth,
+                    )
+            elif eyes == None and mouth == None and not overlay == None:
+                return LiveComposite(
+                        size,
+                        (0, 0), base,
+                        (0, 0), overlay,
                     )
             else:
                 return base
@@ -104,8 +152,8 @@ init python:
             self.basesprite = basesprite
             self.size = size
         
-        def __call__(self, eyes, mouth, eyes2=None, mouth2=None):
-            return CSprite(self.cha, self.basesprite, size=self.size, eyes=eyes, eyes2=eyes2, mouth=mouth, mouth2=mouth2)
+        def __call__(self, eyes, mouth, overlay=None, eyes2=None, mouth2=None):
+            return CSprite(self.cha, self.basesprite, size=self.size, eyes=eyes, eyes2=eyes2, mouth=mouth, mouth2=mouth2, overlay=overlay)
 
 
 image white = "#fff"
