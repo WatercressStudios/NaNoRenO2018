@@ -6,7 +6,7 @@ init offset = -1
 
 init:
     $ _game_menu_screen = "ingamemenu"
-    $ _rollback = False
+    $ _rollback = True
     $ _history = False
     $ current_story = None
 
@@ -299,7 +299,7 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            #textbutton _("Back") action Rollback()
+            textbutton _("Back") action Rollback()
             #textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
@@ -1505,6 +1505,7 @@ style skip_frame:
 
 style skip_text:
     size gui.notify_text_size
+    color "#fff"
 
 style skip_triangle:
     ## We have to use a font that has the BLACK RIGHT-POINTING SMALL TRIANGLE
