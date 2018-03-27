@@ -1,17 +1,15 @@
 label letgo_104:
-    scene letgo park trees sunset with dissolve
-
-    play ambience "game_letgo/ambience/Park Night.ogg" fadeout 2.0 fadein 2.0
-
     "We eventually get up and start heading home."
 
-    "The night was darkening, allowing the moon to come out and light the sidewalk beneath our feet."
+    play sound "game_letgo/sfx/Snow Footsteps.ogg"
 
-    scene letgo road long with dissolve
-
-    play music bgmloop1romantic_intro noloop fadeout 1.0
-    queue music bgmloop1romantic_loop loop
     play ambience "game_letgo/ambience/Roads Night.ogg" fadeout 2.0 fadein 2.0
+    scene letgo park road night with Dissolve(2.0)
+
+    play music bgmloop1death_intro noloop fadeout 1.0
+    queue music bgmloop1death_loop loop
+
+    "The sky was darkening, allowing the moon to come out and light the sidewalk beneath our feet."
 
     "The sounds of people in the different buildings we pass change the farther we go."
 
@@ -28,6 +26,9 @@ label letgo_104:
 
     voice "C-104-2.mp3" #Maya (shiena)
     may "Sure, I’d like that."
+
+    show may:
+        ease 1.0 align (0.55, 1.0)
 
     "She smiles up at me and takes my hand."
 
@@ -122,17 +123,18 @@ label letgo_104:
     voice "C-104-9.mp3" #Elijah (Michael Potok)
     eli "Maya--"
 
-    "The lights are everywhere."
+    #"The lights are everywhere."
 
     play sound "game_letgo/sfx/Car Screeching.ogg"
     pause 1.3
     play sound "game_letgo/sfx/Punch,Shove.ogg"
     stop ambience fadeout 0.1
+    stop music fadeout 0.1
     scene black
 
     "And then, there’s nothing."
 
     play audio "game_letgo/sfx/Disturbing Bass.ogg"
-    scene red with Dissolve(9.5)
+    scene letgo rewind with Dissolve(9.5)
 
     jump letgo_201

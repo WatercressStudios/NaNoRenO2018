@@ -7,7 +7,10 @@ label spirits_a2s2:
 
     "I suppose I can say that's comforting."
 
-    "But he wasn’t in class today, though. I suppose he could just be sick, but… it worries me."
+    if caelumAlive == False:
+        "But he wasn’t in class today, though. I suppose he could just be sick, but… it worries me."
+    else:
+        "He definitely seemed a little on-edge this morning, though, after his close call last night with... {i}whatever{/i} that was. I'm a little concerned for him."
 
     "I guess it’s probably nothing - for now, anyway. I have a free period now, and although I have my homework - different duties hanging over me - I can push them aside, at least for a while."
 

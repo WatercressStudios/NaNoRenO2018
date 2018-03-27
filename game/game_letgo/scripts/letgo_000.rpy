@@ -121,14 +121,22 @@
 # play music bgmletgo_intro noloop fadeout 1.0
 # queue music bgmletgo_loop loop
 
+# play music bgmletgo_credits fadeout 1.0
+
 # play music bgmloop1comedy_intro noloop fadeout 1.0
 # queue music bgmloop1comedy_loop loop
 
 # play music bgmloop1romantic_intro noloop fadeout 1.0
 # queue music bgmloop1romantic_loop loop
 
+# play music bgmloop1death_intro noloop fadeout 1.0
+# queue music bgmloop1death_loop loop
+
 # play music bgmloop2distorted_intro noloop fadeout 1.0
 # queue music bgmloop2distorted_loop loop
+
+# play music bgmloop2death_intro noloop fadeout 1.0
+# queue music bgmloop2death_loop loop
 
 # play music bgmloop3comedy_intro noloop fadeout 1.0
 # queue music bgmloop3comedy_loop loop
@@ -138,7 +146,6 @@
 # play music bgmloop5kite fadeout 1.0
 
 # play music bgmloop5bye_intro noloop fadeout 1.0
-
 # queue music bgmloop5bye_loop loop
 
 
@@ -200,12 +207,17 @@ image white = "#fff"
 
 define bgmletgo_intro = "game_letgo/music/Let Go. (INTRO).ogg"
 define bgmletgo_loop = "game_letgo/music/Let Go. (LOOP).ogg"
+define bgmletgo_credits = "game_letgo/music/Let Go Credits.ogg"
 define bgmloop1comedy_intro = "game_letgo/music/Comedic Date (INTRO).ogg"
 define bgmloop1comedy_loop = "game_letgo/music/Comedic Date (LOOP).ogg"
 define bgmloop1romantic_intro = "game_letgo/music/Romantic Date (INTRO).ogg"
 define bgmloop1romantic_loop = "game_letgo/music/Romantic Date (LOOP).ogg"
+define bgmloop1death_intro = "game_letgo/music/I Lost Him (INTRO).ogg"
+define bgmloop1death_loop = "game_letgo/music/I Lost Him (LOOP).ogg"
 define bgmloop2distorted_intro = "game_letgo/music/Distorted Date (INTRO).ogg"
 define bgmloop2distorted_loop = "game_letgo/music/Distorted Date (LOOP).ogg"
+define bgmloop2death_intro = "game_letgo/music/I Lost Him Again (INTRO).ogg"
+define bgmloop2death_loop = "game_letgo/music/I Lost Him Again (LOOP).ogg"
 define bgmloop3comedy_intro = "game_letgo/music/A Macabre Comedy Intro.ogg"
 define bgmloop3comedy_loop = "game_letgo/music/A Macabre Comedy Loop.ogg"
 define bgmloop4reveal = "game_letgo/music/The Truth.ogg"
@@ -213,9 +225,34 @@ define bgmloop5kite = "game_letgo/music/Soaring.ogg"
 define bgmloop5bye_intro = "game_letgo/music/This is Goodbye Intro.ogg"
 define bgmloop5bye_loop = "game_letgo/music/This is Goodbye Loop.ogg"
 
+image letgo rewindoverlay:
+    "letgo redoverlay2"
+    pause 0.05
+    "letgo redoverlay"
+    pause 0.05
+    "letgo redoverlay2"
+    pause 0.05
+    "letgo redoverlay"
+    pause 0.05
+    "letgo redoverlay2"
+    pause 0.05
+    "letgo redoverlay"
+    pause 0.05
+    "letgo redoverlay3"
+    pause 0.05
+    "letgo redoverlay2"
+    pause 0.05
+    "letgo redoverlay3"
+    pause 0.05
+    "letgo redoverlay2"
+    pause 0.05
+    repeat
+image letgo rewind:
+    LiveComposite((1920,1080), (0,0), "letgo redbench", (0,0), "letgo rewindoverlay")
 
 init python:
     define_images("game_letgo/bgs", 2, False, ["letgo"])
+    define_images("game_letgo/cgs", 2, False, ["letgo"])
 
 ###############################
 #
@@ -288,45 +325,73 @@ init python:
 
 image may normal1 = MayPose1("may eyes normal1", "may mouth smile1")
 image may normal1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes normal close.png", "may mouth smile1")
+image may normal1 cry = MayPose1("may eyes normal1", "may mouth smile1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
+image may normal1 close cry = MayPose1("game_letgo/sprites/May/Pose 1/eyes normal close.png", "may mouth smile1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
 
 image may frown1 = MayPose1("may eyes normal1", "may mouth pout1")
 image may frown1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes normal close.png", "may mouth pout1")
+image may frown1 cry = MayPose1("may eyes normal1", "may mouth pout1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
+image may frown1 close cry = MayPose1("game_letgo/sprites/May/Pose 1/eyes normal close.png", "may mouth pout1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
 
 image may adore1 = MayPose1("may eyes squint1", "may mouth smile1")
 image may adore1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes normal close.png", "may mouth smile1")
+image may adore1 cry = MayPose1("may eyes squint1", "may mouth smile1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
+image may adore1 close cry = MayPose1("game_letgo/sprites/May/Pose 1/eyes normal close.png", "may mouth smile1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
 
 image may confused1 = MayPose1("may eyes squint1", "may mouth sad1")
 image may confused1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes normal close.png", "may mouth sad1")
+image may confused1 cry = MayPose1("may eyes squint1", "may mouth sad1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
+image may confused1 close cry = MayPose1("game_letgo/sprites/May/Pose 1/eyes normal close.png", "may mouth sad1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
 
 image may aww1 = MayPose1("may eyes worried1", "may mouth happy1")
 image may aww1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes worry close.png", "may mouth happy1")
+image may aww1 cry = MayPose1("may eyes worried1", "may mouth happy1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
+image may aww1 close cry = MayPose1("game_letgo/sprites/May/Pose 1/eyes worry close.png", "may mouth happy1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
 
 image may worried1 = MayPose1("may eyes worried1", "may mouth angry1")
 image may worried1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes worry close.png", "may mouth angry1")
+image may worried1 cry = MayPose1("may eyes worried1", "may mouth angry1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
+image may worried1 close cry = MayPose1("game_letgo/sprites/May/Pose 1/eyes worry close.png", "may mouth angry1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
 
 image may sad1 = MayPose1("may eyes worried1", "may mouth sad1")
 image may sad1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes worry close.png", "may mouth sad1")
+image may sad1 cry = MayPose1("may eyes worried1", "may mouth sad1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
+image may sad1 close cry = MayPose1("game_letgo/sprites/May/Pose 1/eyes worry close.png", "may mouth sad1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
 
 image may challenge1 = MayPose1("may eyes angry1", "may mouth happy1")
 image may challenge1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth happy1")
+image may challenge1 cry = MayPose1("may eyes angry1", "may mouth happy1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
+image may challenge1 close cry = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth happy1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
 
 image may cheeky1 = MayPose1("may eyes sad1", "may mouth happy1")
 image may cheeky1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth happy1")
+image may cheeky1 cry = MayPose1("may eyes sad1", "may mouth happy1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
+image may cheeky1 close cry = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth happy1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
 
 image may angry1 = MayPose1("may eyes angry1", "may mouth angry1")
 image may angry1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth angry1")
+image may angry1 cry = MayPose1("may eyes angry1", "may mouth angry1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
+image may angry1 close cry = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth angry1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
 
 image may shout1 = MayPose1("may eyes angry1", "may mouth shout1")
 image may shout1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth shout1")
+image may shout1 cry = MayPose1("may eyes angry1", "may mouth shout1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
+image may shout1 close cry = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth shout1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
 
 image may sadshout1 = MayPose1("may eyes sad1", "may mouth shout1")
 image may sadshout1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth shout1")
+image may sadshout1 cry = MayPose1("may eyes sad1", "may mouth shout1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
+image may sadshout1 close cry = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth shout1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
 
 image may forcedsmile1 = MayPose1("may eyes sad1", "may mouth smile1")
 image may forcedsmile1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth smile1")
+image may forcedsmile1 cry = MayPose1("may eyes sad1", "may mouth smile1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
+image may forcedsmile1 close cry = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth smile1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
 
 image may suspicious1 = MayPose1("may eyes sad1", "may mouth sad1")
 image may suspicious1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth sad1")
+image may suspicious1 cry = MayPose1("may eyes sad1", "may mouth sad1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
+image may suspicious1 close cry = MayPose1("game_letgo/sprites/May/Pose 1/eyes angry close.png", "may mouth sad1", "game_letgo/sprites/May/Pose 1/pose 1 tears.png")
 
 
 ###############################
@@ -340,33 +405,53 @@ init python:
 
 image may normal2 = MayPose2("may eyes normal2", "may mouth normal2")
 image may normal2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes normal close.png", "may mouth normal2")
+image may normal2 cry = MayPose2("may eyes normal2", "may mouth normal2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
+image may normal2 close cry = MayPose2("game_letgo/sprites/May/Pose 2/eyes normal close.png", "may mouth normal2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
 
 image may happy2 = MayPose2("may eyes happy2", "may mouth happy2")
 image may happy2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes normal close 2.png", "may mouth happy2")
+image may happy2 cry = MayPose2("may eyes happy2", "may mouth happy2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
+image may happy2 close cry = MayPose2("game_letgo/sprites/May/Pose 2/eyes normal close 2.png", "may mouth happy2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
 
 image may worried2 = MayPose2("may eyes worried2", "may mouth displeased2")
 image may worried2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes worried close.png", "may mouth displeased2")
+image may worried2 cry = MayPose2("may eyes worried2", "may mouth displeased2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
+image may worried2 close cry = MayPose2("game_letgo/sprites/May/Pose 2/eyes worried close.png", "may mouth displeased2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
 
 image may nervous2 = MayPose2("may eyes worried2", "may mouth normal2")
 image may nervous2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes worried close.png", "may mouth normal2")
+image may nervous2 cry = MayPose2("may eyes worried2", "may mouth normal2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
+image may nervous2 close cry = MayPose2("game_letgo/sprites/May/Pose 2/eyes worried close.png", "may mouth normal2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
 
 image may aww2 = MayPose2("may eyes worried2", "may mouth happy2")
 image may aww2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes worried close.png", "may mouth happy2")
+image may aww2 cry = MayPose2("may eyes worried2", "may mouth happy2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
+image may aww2 close cry = MayPose2("game_letgo/sprites/May/Pose 2/eyes worried close.png", "may mouth happy2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
 
 image may sheepish2 = MayPose2("may eyes sheepish2", "may mouth happy2")
 image may sheepish2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes worried close 2.png", "may mouth happy2")
+image may sheepish2 cry = MayPose2("may eyes sheepish2", "may mouth happy2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
+image may sheepish2 close cry = MayPose2("game_letgo/sprites/May/Pose 2/eyes worried close 2.png", "may mouth happy2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
 
 image may angry2 = MayPose2("may eyes angry2", "may mouth displeased2")
 image may angry2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry close.png", "may mouth displeased2")
+image may angry2 cry = MayPose2("may eyes angry2", "may mouth displeased2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
+image may angry2 close cry = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry close.png", "may mouth displeased2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
 
 image may frustrated2 = MayPose2("may eyes frustrated2", "may mouth displeased2")
 image may frustrated2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry close 2.png", "may mouth displeased2")
+image may frustrated2 cry = MayPose2("may eyes frustrated2", "may mouth displeased2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
+image may frustrated2 close cry = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry close 2.png", "may mouth displeased2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
 
 image may proud2 = MayPose2("may eyes angry2", "may mouth happy2")
 image may proud2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry close.png", "may mouth happy2")
+image may proud2 cry = MayPose2("may eyes angry2", "may mouth happy2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
+image may proud2 close cry = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry close.png", "may mouth happy2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
 
 image may cheeky2 = MayPose2("may eyes frustrated2", "may mouth happy2")
 image may cheeky2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry close 2.png", "may mouth happy2")
+image may cheeky2 cry = MayPose2("may eyes frustrated2", "may mouth happy2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
+image may cheeky2 close cry = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry close 2.png", "may mouth happy2", "game_letgo/sprites/May/Pose 2/pose 2 tears.png")
 
 ###############################
 #
@@ -379,30 +464,48 @@ init python:
 
 image may normal3 = MayPose3("may eyes normalaway3", "may mouth normal3")
 image may normal3 close = MayPose3("game_letgo/sprites/May/Pose 3/eyes normal close.png", "may mouth normal3")
+image may normal3 cry = MayPose3("may eyes normalaway3", "may mouth normal3", "game_letgo/sprites/May/Pose 3/pose 3 tears.png")
+image may normal3 close cry = MayPose3("game_letgo/sprites/May/Pose 3/eyes normal close.png", "may mouth normal3", "game_letgo/sprites/May/Pose 3/pose 3 tears.png")
 
 image may smile3 = MayPose3("may eyes frown3", "may mouth smile3")
 image may smile3 close = MayPose3("game_letgo/sprites/May/Pose 3/eyes frown close.png", "may mouth smile3")
+image may smile3 cry = MayPose3("may eyes frown3", "may mouth smile3", "game_letgo/sprites/May/Pose 3/pose 3 tears.png")
+image may smile3 close cry = MayPose3("game_letgo/sprites/May/Pose 3/eyes frown close.png", "may mouth smile3", "game_letgo/sprites/May/Pose 3/pose 3 tears.png")
 
 image may forcedsmile3 = MayPose3("may eyes frownaway3", "may mouth smile3")
 image may forcedsmile3 close = MayPose3("game_letgo/sprites/May/Pose 3/eyes frown close.png", "may mouth smile3")
+image may forcedsmile3 cry = MayPose3("may eyes frownaway3", "may mouth smile3", "game_letgo/sprites/May/Pose 3/pose 3 tears.png")
+image may forcedsmile3 close cry = MayPose3("game_letgo/sprites/May/Pose 3/eyes frown close.png", "may mouth smile3", "game_letgo/sprites/May/Pose 3/pose 3 tears.png")
 
 image may happy3 = MayPose3("may eyes normal3", "may mouth smile3")
 image may happy3 close = MayPose3("game_letgo/sprites/May/Pose 3/eyes normal close.png", "may mouth smile3")
+image may happy3 cry = MayPose3("may eyes normal3", "may mouth smile3", "game_letgo/sprites/May/Pose 3/pose 3 tears.png")
+image may happy3 close cry = MayPose3("game_letgo/sprites/May/Pose 3/eyes normal close.png", "may mouth smile3", "game_letgo/sprites/May/Pose 3/pose 3 tears.png")
 
 image may sigh3 = MayPose3("may eyes normalaway3", "may mouth smile3")
 image may sigh3 close = MayPose3("game_letgo/sprites/May/Pose 3/eyes normal close.png", "may mouth smile3")
+image may sigh3 cry = MayPose3("may eyes normalaway3", "may mouth smile3", "game_letgo/sprites/May/Pose 3/pose 3 tears.png")
+image may sigh3 close cry = MayPose3("game_letgo/sprites/May/Pose 3/eyes normal close.png", "may mouth smile3", "game_letgo/sprites/May/Pose 3/pose 3 tears.png")
 
 image may sad3 = MayPose3("may eyes frown3", "may mouth sad3")
 image may sad3 close = MayPose3("game_letgo/sprites/May/Pose 3/eyes frown close.png", "may mouth sad3")
+image may sad3 cry = MayPose3("may eyes frown3", "may mouth sad3", "game_letgo/sprites/May/Pose 3/pose 3 tears.png")
+image may sad3 close cry = MayPose3("game_letgo/sprites/May/Pose 3/eyes frown close.png", "may mouth sad3", "game_letgo/sprites/May/Pose 3/pose 3 tears.png")
 
 image may tired3 = MayPose3("may eyes frownaway3", "may mouth normal3")
 image may tired3 close = MayPose3("game_letgo/sprites/May/Pose 3/eyes frown close.png", "may mouth normal3")
+image may tired3 cry = MayPose3("may eyes frownaway3", "may mouth normal3", "game_letgo/sprites/May/Pose 3/pose 3 tears.png")
+image may tired3 close cry = MayPose3("game_letgo/sprites/May/Pose 3/eyes frown close.png", "may mouth normal3", "game_letgo/sprites/May/Pose 3/pose 3 tears.png")
 
 image may angry3 = MayPose3("may eyes angry3", "may mouth sad3")
 image may angry3 close = MayPose3("game_letgo/sprites/May/Pose 3/eyes angry close.png", "may mouth sad3")
+image may angry3 cry = MayPose3("may eyes angry3", "may mouth sad3", "game_letgo/sprites/May/Pose 3/pose 3 tears.png")
+image may angry3 close cry = MayPose3("game_letgo/sprites/May/Pose 3/eyes angry close.png", "may mouth sad3", "game_letgo/sprites/May/Pose 3/pose 3 tears.png")
 
 image may frustrated3 = MayPose3("may eyes angryaway3", "may mouth sad3")
 image may frustrated3 close = MayPose3("game_letgo/sprites/May/Pose 3/eyes angry close.png", "may mouth sad3")
+image may frustrated3 cry = MayPose3("may eyes angryaway3", "may mouth sad3", "game_letgo/sprites/May/Pose 3/pose 3 tears.png")
+image may frustrated3 close cry = MayPose3("game_letgo/sprites/May/Pose 3/eyes angry close.png", "may mouth sad3", "game_letgo/sprites/May/Pose 3/pose 3 tears.png")
 
 
 
@@ -417,21 +520,33 @@ init python:
 
 image may normal4 = MayPose4("may eyes frown4", "may mouth normal4")
 image may normal4 close = MayPose4("game_letgo/sprites/May/Pose 4/eyes frown close.png", "may mouth normal4")
+image may normal4 cry = MayPose4("may eyes frown4", "may mouth normal4", "game_letgo/sprites/May/Pose 4/pose 4 tears.png")
+image may normal4 close cry = MayPose4("game_letgo/sprites/May/Pose 4/eyes frown close.png", "may mouth normal4", "game_letgo/sprites/May/Pose 4/pose 4 tears.png")
 
 image may smile4 = MayPose4("may eyes frown4", "may mouth smile4")
 image may smile4 close = MayPose4("game_letgo/sprites/May/Pose 4/eyes frown close.png", "may mouth smile4")
+image may smile4 cry = MayPose4("may eyes frown4", "may mouth smile4", "game_letgo/sprites/May/Pose 4/pose 4 tears.png")
+image may smile4 close cry = MayPose4("game_letgo/sprites/May/Pose 4/eyes frown close.png", "may mouth smile4", "game_letgo/sprites/May/Pose 4/pose 4 tears.png")
 
 image may forcedsmile4 = MayPose4("may eyes frownaway4", "may mouth smile4")
 image may forcedsmile4 close = MayPose4("game_letgo/sprites/May/Pose 4/eyes frown close.png", "may mouth smile4")
+image may forcedsmile4 cry = MayPose4("may eyes frownaway4", "may mouth smile4", "game_letgo/sprites/May/Pose 4/pose 4 tears.png")
+image may forcedsmile4 close cry = MayPose4("game_letgo/sprites/May/Pose 4/eyes frown close.png", "may mouth smile4", "game_letgo/sprites/May/Pose 4/pose 4 tears.png")
 
 image may sad4 = MayPose4("may eyes frownaway4", "may mouth normal4")
 image may sad4 close = MayPose4("game_letgo/sprites/May/Pose 4/eyes frown close.png", "may mouth normal4")
+image may sad4 cry = MayPose4("may eyes frownaway4", "may mouth normal4", "game_letgo/sprites/May/Pose 4/pose 4 tears.png")
+image may sad4 close cry = MayPose4("game_letgo/sprites/May/Pose 4/eyes frown close.png", "may mouth normal4", "game_letgo/sprites/May/Pose 4/pose 4 tears.png")
 
 image may angry4 = MayPose4("may eyes angry4", "may mouth normal4")
 image may angry4 close = MayPose4("game_letgo/sprites/May/Pose 4/eyes angry close.png", "may mouth normal4")
+image may angry4 cry = MayPose4("may eyes angry4", "may mouth normal4", "game_letgo/sprites/May/Pose 4/pose 4 tears.png")
+image may angry4 close cry = MayPose4("game_letgo/sprites/May/Pose 4/eyes angry close.png", "may mouth normal4", "game_letgo/sprites/May/Pose 4/pose 4 tears.png")
 
 image may frustrated4 = MayPose4("may eyes angryaway4", "may mouth normal4")
 image may frustrated4 close = MayPose4("game_letgo/sprites/May/Pose 4/eyes angry close.png", "may mouth normal4")
+image may frustrated4 cry = MayPose4("may eyes angryaway4", "may mouth normal4", "game_letgo/sprites/May/Pose 4/pose 4 tears.png")
+image may frustrated4 close cry = MayPose4("game_letgo/sprites/May/Pose 4/eyes angry close.png", "may mouth normal4", "game_letgo/sprites/May/Pose 4/pose 4 tears.png")
 
 
 ###############################
@@ -478,15 +593,15 @@ image eli mouth smile2 = FlapMouth("eli", "game_letgo/sprites/Eli/Pose 2/mouth n
 #
 ###############################
 
-image may eyes normal1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes normal open.png", "game_letgo/sprites/May/Pose 1/eyes normal close.png")
+image may eyes normal1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes normal open.png", "game_letgo/sprites/May/Pose 1/eyes normal blink.png")
 
-image may eyes squint1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes normal squint.png", "game_letgo/sprites/May/Pose 1/eyes normal close.png")
+image may eyes squint1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes normal squint.png", "game_letgo/sprites/May/Pose 1/eyes normal blink.png")
 
-image may eyes worried1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes worry squint.png", "game_letgo/sprites/May/Pose 1/eyes worry close.png")
+image may eyes worried1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes worry squint.png", "game_letgo/sprites/May/Pose 1/eyes worry blink.png")
 
-image may eyes angry1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes angry open.png", "game_letgo/sprites/May/Pose 1/eyes angry close.png")
+image may eyes angry1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes angry open.png", "game_letgo/sprites/May/Pose 1/eyes angry blink.png")
 
-image may eyes sad1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes angry squint.png", "game_letgo/sprites/May/Pose 1/eyes angry close.png")
+image may eyes sad1 = blinkeyes("game_letgo/sprites/May/Pose 1/eyes angry squint.png", "game_letgo/sprites/May/Pose 1/eyes angry blink.png")
 
 image may mouth angry1 = FlapMouth("may", "game_letgo/sprites/May/Pose 1/mouth frown close.png", "game_letgo/sprites/May/Pose 1/mouth big open.png")
 
@@ -606,10 +721,22 @@ label letgo_expressions:
     show may normal1 close
     may "may normal1 close... may normal1 close... may normal1 close... may normal1 close... may normal1 close... may normal1 close... may normal1 close... "
 
+    show may normal1 cry
+    may "may normal1... may normal1... may normal1... may normal1... may normal1... may normal1... may normal1... may normal1... may normal1... may normal1... may normal1... "
+
+    show may normal1 close cry
+    may "may normal1 close... may normal1 close... may normal1 close... may normal1 close... may normal1 close... may normal1 close... may normal1 close... "
+
     show may frown1
     may "may frown1... may frown1... may frown1... may frown1... may frown1... may frown1... may frown1... may frown1... may frown1... may frown1... may frown1... "
 
     show may frown1 close
+    may "may frown1 close... may frown1 close... may frown1 close... may frown1 close... may frown1 close... may frown1 close... may frown1 close... may frown1 close... "
+
+    show may frown1 cry
+    may "may frown1... may frown1... may frown1... may frown1... may frown1... may frown1... may frown1... may frown1... may frown1... may frown1... may frown1... "
+
+    show may frown1 close cry
     may "may frown1 close... may frown1 close... may frown1 close... may frown1 close... may frown1 close... may frown1 close... may frown1 close... may frown1 close... "
 
     show may adore1
@@ -618,10 +745,22 @@ label letgo_expressions:
     show may adore1 close
     may "may adore1 close... may adore1 close... may adore1 close... may adore1 close... may adore1 close... may adore1 close... may adore1 close... may adore1 close... "
 
+    show may adore1 cry
+    may "may adore1... may adore1... may adore1... may adore1... may adore1... may adore1... may adore1... may adore1... may adore1... may adore1... may adore1... "
+
+    show may adore1 close cry
+    may "may adore1 close... may adore1 close... may adore1 close... may adore1 close... may adore1 close... may adore1 close... may adore1 close... may adore1 close... "
+
     show may confused1
     may "may confused1... may confused1... may confused1... may confused1... may confused1... may confused1... may confused1... may confused1... may confused1... "
 
     show may confused1 close
+    may "may confused1 close... may confused1 close... may confused1 close... may confused1 close... may confused1 close... may confused1 close... may confused1 close... "
+
+    show may confused1 cry
+    may "may confused1... may confused1... may confused1... may confused1... may confused1... may confused1... may confused1... may confused1... may confused1... "
+
+    show may confused1 close cry
     may "may confused1 close... may confused1 close... may confused1 close... may confused1 close... may confused1 close... may confused1 close... may confused1 close... "
 
     show may aww1
@@ -630,10 +769,22 @@ label letgo_expressions:
     show may aww1 close
     may "may aww1 close... may aww1 close... may aww1 close... may aww1 close... may aww1 close... may aww1 close... may aww1 close... may aww1 close... may aww1 close... "
 
+    show may aww1 cry
+    may "may aww1... may aww1... may aww1... may aww1... may aww1... may aww1... may aww1... may aww1... may aww1... may aww1... may aww1... may aww1... may aww1... "
+
+    show may aww1 close cry
+    may "may aww1 close... may aww1 close... may aww1 close... may aww1 close... may aww1 close... may aww1 close... may aww1 close... may aww1 close... may aww1 close... "
+
     show may worried1
     may "may worried1... may worried1... may worried1... may worried1... may worried1... may worried1... may worried1... may worried1... may worried1... may worried1... "
 
     show may worried1 close
+    may "may worried1 close... may worried1 close... may worried1 close... may worried1 close... may worried1 close... may worried1 close... may worried1 close... "
+
+    show may worried1 cry
+    may "may worried1... may worried1... may worried1... may worried1... may worried1... may worried1... may worried1... may worried1... may worried1... may worried1... "
+
+    show may worried1 close cry
     may "may worried1 close... may worried1 close... may worried1 close... may worried1 close... may worried1 close... may worried1 close... may worried1 close... "
 
     show may sad1
@@ -642,10 +793,22 @@ label letgo_expressions:
     show may sad1 close
     may "may sad1 close... may sad1 close... may sad1 close... may sad1 close... may sad1 close... may sad1 close... may sad1 close... may sad1 close... may sad1 close... "
 
+    show may sad1 cry
+    may "may sad1... may sad1... may sad1... may sad1... may sad1... may sad1... may sad1... may sad1... may sad1... may sad1... may sad1... may sad1... may sad1... "
+
+    show may sad1 close cry
+    may "may sad1 close... may sad1 close... may sad1 close... may sad1 close... may sad1 close... may sad1 close... may sad1 close... may sad1 close... may sad1 close... "
+
     show may challenge1
     may "may challenge1... may challenge1... may challenge1... may challenge1... may challenge1... may challenge1... may challenge1... may challenge1... may challenge1... "
 
     show may challenge1 close
+    may "may challenge1 close... may challenge1 close... may challenge1 close... may challenge1 close... may challenge1 close... may challenge1 close... "
+
+    show may challenge1 cry
+    may "may challenge1... may challenge1... may challenge1... may challenge1... may challenge1... may challenge1... may challenge1... may challenge1... may challenge1... "
+
+    show may challenge1 close cry
     may "may challenge1 close... may challenge1 close... may challenge1 close... may challenge1 close... may challenge1 close... may challenge1 close... "
 
     show may cheeky1
@@ -654,10 +817,22 @@ label letgo_expressions:
     show may cheeky1 close
     may "may cheeky1 close... may cheeky1 close... may cheeky1 close... may cheeky1 close... may cheeky1 close... may cheeky1 close... may cheeky1 close... "
 
+    show may cheeky1 cry
+    may "may cheeky1... may cheeky1... may cheeky1... may cheeky1... may cheeky1... may cheeky1... may cheeky1... may cheeky1... may cheeky1... may cheeky1... may cheeky1... "
+
+    show may cheeky1 close cry
+    may "may cheeky1 close... may cheeky1 close... may cheeky1 close... may cheeky1 close... may cheeky1 close... may cheeky1 close... may cheeky1 close... "
+
     show may angry1
     may "may angry1... may angry1... may angry1... may angry1... may angry1... may angry1... may angry1... may angry1... may angry1... may angry1... may angry1... "
 
     show may angry1 close
+    may "may angry1 close... may angry1 close... may angry1 close... may angry1 close... may angry1 close... may angry1 close... may angry1 close... may angry1 close... "
+
+    show may angry1 cry
+    may "may angry1... may angry1... may angry1... may angry1... may angry1... may angry1... may angry1... may angry1... may angry1... may angry1... may angry1... "
+
+    show may angry1 close cry
     may "may angry1 close... may angry1 close... may angry1 close... may angry1 close... may angry1 close... may angry1 close... may angry1 close... may angry1 close... "
 
     show may shout1
@@ -666,10 +841,22 @@ label letgo_expressions:
     show may shout1 close
     may "may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... "
 
+    show may shout1 cry
+    may "may shout1... may shout1... may shout1... may shout1... may shout1... may shout1... may shout1... may shout1... may shout1... may shout1... may shout1... "
+
+    show may shout1 close cry
+    may "may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... may shout1 close... "
+
     show may sadshout1
     may "may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... "
 
     show may sadshout1 close
+    may "may sadshout1 close... may sadshout1 close... may sadshout1 close... may sadshout1 close... may sadshout1 close... may sadshout1 close... may sadshout1 close... "
+
+    show may sadshout1 cry
+    may "may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... may sadshout1... "
+
+    show may sadshout1 close cry
     may "may sadshout1 close... may sadshout1 close... may sadshout1 close... may sadshout1 close... may sadshout1 close... may sadshout1 close... may sadshout1 close... "
 
     show may forcedsmile1
@@ -678,10 +865,22 @@ label letgo_expressions:
     show may forcedsmile1 close
     may "may forcedsmile1 close... may forcedsmile1 close... may forcedsmile1 close... may forcedsmile1 close... may forcedsmile1 close... may forcedsmile1 close... "
 
+    show may forcedsmile1 cry
+    may "may forcedsmile1... may forcedsmile1... may forcedsmile1... may forcedsmile1... may forcedsmile1... may forcedsmile1... may forcedsmile1... may forcedsmile1... "
+
+    show may forcedsmile1 close cry
+    may "may forcedsmile1 close... may forcedsmile1 close... may forcedsmile1 close... may forcedsmile1 close... may forcedsmile1 close... may forcedsmile1 close... "
+
     show may suspicious1
     may "may suspicious1... may suspicious1... may suspicious1... may suspicious1... may suspicious1... may suspicious1... may suspicious1... may suspicious1... "
 
     show may suspicious1 close
+    may "may suspicious1 close... may suspicious1 close... may suspicious1 close... may suspicious1 close... may suspicious1 close... may suspicious1 close... "
+
+    show may suspicious1 cry
+    may "may suspicious1... may suspicious1... may suspicious1... may suspicious1... may suspicious1... may suspicious1... may suspicious1... may suspicious1... "
+
+    show may suspicious1 close cry
     may "may suspicious1 close... may suspicious1 close... may suspicious1 close... may suspicious1 close... may suspicious1 close... may suspicious1 close... "
 
     show may normal2
@@ -690,10 +889,22 @@ label letgo_expressions:
     show may normal2 close
     may "may normal2 close... may normal2 close... may normal2 close... may normal2 close... may normal2 close... may normal2 close..."
 
+    show may normal2 cry
+    may "may normal2... may normal2... may normal2... may normal2... may normal2... may normal2... may normal2... may normal2... may normal2..."
+
+    show may normal2 close cry
+    may "may normal2 close... may normal2 close... may normal2 close... may normal2 close... may normal2 close... may normal2 close..."
+
     show may happy2
     may "may happy2... may happy2... may happy2... may happy2... may happy2... may happy2... may happy2... may happy2... may happy2... may happy2... may happy2..."
 
     show may happy2 close
+    may "may happy2 close... may happy2 close... may happy2 close... may happy2 close... may happy2 close... may happy2 close... may happy2 close... may happy2 close..."
+
+    show may happy2 cry
+    may "may happy2... may happy2... may happy2... may happy2... may happy2... may happy2... may happy2... may happy2... may happy2... may happy2... may happy2..."
+
+    show may happy2 close cry
     may "may happy2 close... may happy2 close... may happy2 close... may happy2 close... may happy2 close... may happy2 close... may happy2 close... may happy2 close..."
 
     show may worried2
@@ -702,10 +913,22 @@ label letgo_expressions:
     show may worried2 close
     may "may worried2 close... may worried2 close... may worried2 close... may worried2 close... may worried2 close... may worried2 close... may worried2 close..."
 
+    show may worried2 cry
+    may "may worried2... may worried2... may worried2... may worried2... may worried2... may worried2... may worried2... may worried2... may worried2..."
+
+    show may worried2 close cry
+    may "may worried2 close... may worried2 close... may worried2 close... may worried2 close... may worried2 close... may worried2 close... may worried2 close..."
+
     show may nervous2
     may "may nervous2... may nervous2... may nervous2... may nervous2... may nervous2... may nervous2... may nervous2... may nervous2... may nervous2..."
 
     show may nervous2 close
+    may "may nervous2 close... may nervous2 close... may nervous2 close... may nervous2 close... may nervous2 close... may nervous2 close... may nervous2 close..."
+
+    show may nervous2 cry
+    may "may nervous2... may nervous2... may nervous2... may nervous2... may nervous2... may nervous2... may nervous2... may nervous2... may nervous2..."
+
+    show may nervous2 close cry
     may "may nervous2 close... may nervous2 close... may nervous2 close... may nervous2 close... may nervous2 close... may nervous2 close... may nervous2 close..."
 
     show may aww2
@@ -714,10 +937,22 @@ label letgo_expressions:
     show may aww2 close
     may "may aww2 close... may aww2 close... may aww2 close... may aww2 close... may aww2 close... may aww2 close..."
 
+    show may aww2 cry
+    may "may aww2... may aww2... may aww2... may aww2... may aww2... may aww2... may aww2..."
+
+    show may aww2 close cry
+    may "may aww2 close... may aww2 close... may aww2 close... may aww2 close... may aww2 close... may aww2 close..."
+
     show may sheepish2
     may "may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2..."
 
     show may sheepish2 close
+    may "may sheepish2 close... may sheepish2 close... may sheepish2 close... may sheepish2 close... may sheepish2 close... may sheepish2 close..."
+
+    show may sheepish2 cry
+    may "may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2... may sheepish2..."
+
+    show may sheepish2 close cry
     may "may sheepish2 close... may sheepish2 close... may sheepish2 close... may sheepish2 close... may sheepish2 close... may sheepish2 close..."
 
     show may angry2
@@ -726,10 +961,22 @@ label letgo_expressions:
     show may angry2 close
     may "may angry2 close... may angry2 close... may angry2 close... may angry2 close... may angry2 close... may angry2 close... may angry2 close... may angry2 close..."
 
+    show may angry2 cry
+    may "may angry2... may angry2... may angry2... may angry2... may angry2... may angry2... may angry2... may angry2... may angry2... may angry2... may angry2..."
+
+    show may angry2 close cry
+    may "may angry2 close... may angry2 close... may angry2 close... may angry2 close... may angry2 close... may angry2 close... may angry2 close... may angry2 close..."
+
     show may frustrated2
     may "may frustrated2... may frustrated2... may frustrated2... may frustrated2... may frustrated2... may frustrated2... may frustrated2... may frustrated2..."
 
     show may frustrated2 close
+    may "may frustrated2 close... may frustrated2 close... may frustrated2 close... may frustrated2 close... may frustrated2 close... may frustrated2 close..."
+
+    show may frustrated2 cry
+    may "may frustrated2... may frustrated2... may frustrated2... may frustrated2... may frustrated2... may frustrated2... may frustrated2... may frustrated2..."
+
+    show may frustrated2 close cry
     may "may frustrated2 close... may frustrated2 close... may frustrated2 close... may frustrated2 close... may frustrated2 close... may frustrated2 close..."
 
     show may proud2
@@ -738,10 +985,22 @@ label letgo_expressions:
     show may proud2 close
     may "may proud2 close... may proud2 close... may proud2 close... may proud2 close... may proud2 close... may proud2 close..."
 
+    show may proud2 cry
+    may "may proud2... may proud2... may proud2... may proud2... may proud2... may proud2... may proud2... may proud2..."
+
+    show may proud2 close cry
+    may "may proud2 close... may proud2 close... may proud2 close... may proud2 close... may proud2 close... may proud2 close..."
+
     show may cheeky2
     may "may cheeky2... may cheeky2... may cheeky2... may cheeky2... may cheeky2... may cheeky2... may cheeky2... may cheeky2..."
 
     show may cheeky2 close
+    may "may cheeky2 close... may cheeky2 close... may cheeky2 close... may cheeky2 close... may cheeky2 close... may cheeky2 close..."
+
+    show may cheeky2 cry
+    may "may cheeky2... may cheeky2... may cheeky2... may cheeky2... may cheeky2... may cheeky2... may cheeky2... may cheeky2..."
+
+    show may cheeky2 close cry
     may "may cheeky2 close... may cheeky2 close... may cheeky2 close... may cheeky2 close... may cheeky2 close... may cheeky2 close..."
 
     show may normal3
@@ -750,10 +1009,22 @@ label letgo_expressions:
     show may normal3 close
     may "may normal3 close... may normal3 close... may normal3 close... may normal3 close... may normal3 close... may normal3 close... may normal3 close... "
 
+    show may normal3 cry
+    may "may normal3... may normal3... may normal3... may normal3... may normal3... may normal3... may normal3... may normal3... may normal3... may normal3... may normal3... "
+
+    show may normal3 close cry
+    may "may normal3 close... may normal3 close... may normal3 close... may normal3 close... may normal3 close... may normal3 close... may normal3 close... "
+
     show may smile3
     may "may smile3... may smile3... may smile3... may smile3... may smile3... may smile3... may smile3... may smile3... may smile3... may smile3... may smile3... "
 
     show may smile3 close
+    may "may smile3 close... may smile3 close... may smile3 close... may smile3 close... may smile3 close... may smile3 close... may smile3 close... may smile3 close... "
+
+    show may smile3 cry
+    may "may smile3... may smile3... may smile3... may smile3... may smile3... may smile3... may smile3... may smile3... may smile3... may smile3... may smile3... "
+
+    show may smile3 close cry
     may "may smile3 close... may smile3 close... may smile3 close... may smile3 close... may smile3 close... may smile3 close... may smile3 close... may smile3 close... "
 
     show may forcedsmile3
@@ -762,10 +1033,22 @@ label letgo_expressions:
     show may forcedsmile3 close
     may "may forcedsmile3 close... may forcedsmile3 close... may forcedsmile3 close... may forcedsmile3 close... may forcedsmile3 close... may forcedsmile3 close... "
 
+    show may forcedsmile3 cry
+    may "may forcedsmile3... may forcedsmile3... may forcedsmile3... may forcedsmile3... may forcedsmile3... may forcedsmile3... may forcedsmile3... may forcedsmile3... "
+
+    show may forcedsmile3 close cry
+    may "may forcedsmile3 close... may forcedsmile3 close... may forcedsmile3 close... may forcedsmile3 close... may forcedsmile3 close... may forcedsmile3 close... "
+
     show may happy3
     may "may happy3... may happy3... may happy3... may happy3... may happy3... may happy3... may happy3... may happy3... may happy3... may happy3... may happy3... "
 
     show may happy3 close
+    may "may happy3 close... may happy3 close... may happy3 close... may happy3 close... may happy3 close... may happy3 close... may happy3 close... may happy3 close... "
+
+    show may happy3 cry
+    may "may happy3... may happy3... may happy3... may happy3... may happy3... may happy3... may happy3... may happy3... may happy3... may happy3... may happy3... "
+
+    show may happy3 close cry
     may "may happy3 close... may happy3 close... may happy3 close... may happy3 close... may happy3 close... may happy3 close... may happy3 close... may happy3 close... "
 
     show may sigh3
@@ -774,10 +1057,22 @@ label letgo_expressions:
     show may sigh3 close
     may "may sigh3 close... may sigh3 close... may sigh3 close... may sigh3 close... may sigh3 close... may sigh3 close... may sigh3 close... may sigh3 close... "
 
+    show may sigh3 cry
+    may "may sigh3... may sigh3... may sigh3... may sigh3... may sigh3... may sigh3... may sigh3... may sigh3... may sigh3... may sigh3... may sigh3... may sigh3... may sigh3... "
+
+    show may sigh3 close cry
+    may "may sigh3 close... may sigh3 close... may sigh3 close... may sigh3 close... may sigh3 close... may sigh3 close... may sigh3 close... may sigh3 close... "
+
     show may sad3
     may "may sad3... may sad3... may sad3... may sad3... may sad3... may sad3... may sad3... may sad3... may sad3... may sad3... may sad3... may sad3... may sad3... "
 
     show may sad3 close
+    may "may sad3 close... may sad3 close... may sad3 close... may sad3 close... may sad3 close... may sad3 close... may sad3 close... may sad3 close... may sad3 close... "
+
+    show may sad3 cry
+    may "may sad3... may sad3... may sad3... may sad3... may sad3... may sad3... may sad3... may sad3... may sad3... may sad3... may sad3... may sad3... may sad3... "
+
+    show may sad3 close cry
     may "may sad3 close... may sad3 close... may sad3 close... may sad3 close... may sad3 close... may sad3 close... may sad3 close... may sad3 close... may sad3 close... "
 
     show may tired3
@@ -786,10 +1081,22 @@ label letgo_expressions:
     show may tired3 close
     may "may tired3 close... may tired3 close... may tired3 close... may tired3 close... may tired3 close... may tired3 close... may tired3 close... may tired3 close... "
 
+    show may tired3 cry
+    may "may tired3... may tired3... may tired3... may tired3... may tired3... may tired3... may tired3... may tired3... may tired3... may tired3... may tired3... "
+
+    show may tired3 close cry
+    may "may tired3 close... may tired3 close... may tired3 close... may tired3 close... may tired3 close... may tired3 close... may tired3 close... may tired3 close... "
+
     show may angry3
     may "may angry3... may angry3... may angry3... may angry3... may angry3... may angry3... may angry3... may angry3... may angry3... may angry3... may angry3... "
 
     show may angry3 close
+    may "may angry3 close... may angry3 close... may angry3 close... may angry3 close... may angry3 close... may angry3 close... may angry3 close... may angry3 close... "
+
+    show may angry3 cry
+    may "may angry3... may angry3... may angry3... may angry3... may angry3... may angry3... may angry3... may angry3... may angry3... may angry3... may angry3... "
+
+    show may angry3 close cry
     may "may angry3 close... may angry3 close... may angry3 close... may angry3 close... may angry3 close... may angry3 close... may angry3 close... may angry3 close... "
 
     show may frustrated3
@@ -798,10 +1105,22 @@ label letgo_expressions:
     show may frustrated3 close
     may "may frustrated3 close... may frustrated3 close... may frustrated3 close... may frustrated3 close... may frustrated3 close... may frustrated3 close... "
 
+    show may frustrated3 cry
+    may "may frustrated3... may frustrated3... may frustrated3... may frustrated3... may frustrated3... may frustrated3... may frustrated3... may frustrated3... "
+
+    show may frustrated3 close cry
+    may "may frustrated3 close... may frustrated3 close... may frustrated3 close... may frustrated3 close... may frustrated3 close... may frustrated3 close... "
+
     show may normal4
     may "may normal4... may normal4... may normal4... may normal4... may normal4... may normal4... may normal4... may normal4... may normal4... may normal4... may normal4... "
 
     show may normal4 close
+    may "may normal4 close... may normal4 close... may normal4 close... may normal4 close... may normal4 close... may normal4 close... may normal4 close... "
+
+    show may normal4 cry
+    may "may normal4... may normal4... may normal4... may normal4... may normal4... may normal4... may normal4... may normal4... may normal4... may normal4... may normal4... "
+
+    show may normal4 close cry
     may "may normal4 close... may normal4 close... may normal4 close... may normal4 close... may normal4 close... may normal4 close... may normal4 close... "
 
     show may smile4
@@ -810,10 +1129,22 @@ label letgo_expressions:
     show may smile4 close
     may "may smile4 close... may smile4 close... may smile4 close... may smile4 close... may smile4 close... may smile4 close... may smile4 close... may smile4 close... "
 
+    show may smile4 cry
+    may "may smile4... may smile4... may smile4... may smile4... may smile4... may smile4... may smile4... may smile4... may smile4... may smile4... may smile4... "
+
+    show may smile4 close cry
+    may "may smile4 close... may smile4 close... may smile4 close... may smile4 close... may smile4 close... may smile4 close... may smile4 close... may smile4 close... "
+
     show may forcedsmile4
     may "may forcedsmile4... may forcedsmile4... may forcedsmile4... may forcedsmile4... may forcedsmile4... may forcedsmile4... may forcedsmile4... may forcedsmile4... "
 
     show may forcedsmile4 close
+    may "may forcedsmile4 close... may forcedsmile4 close... may forcedsmile4 close... may forcedsmile4 close... may forcedsmile4 close... may forcedsmile4 close... "
+
+    show may forcedsmile4 cry
+    may "may forcedsmile4... may forcedsmile4... may forcedsmile4... may forcedsmile4... may forcedsmile4... may forcedsmile4... may forcedsmile4... may forcedsmile4... "
+
+    show may forcedsmile4 close cry
     may "may forcedsmile4 close... may forcedsmile4 close... may forcedsmile4 close... may forcedsmile4 close... may forcedsmile4 close... may forcedsmile4 close... "
 
     show may sad4
@@ -822,16 +1153,34 @@ label letgo_expressions:
     show may sad4 close
     may "may sad4 close... may sad4 close... may sad4 close... may sad4 close... may sad4 close... may sad4 close... may sad4 close... may sad4 close... may sad4 close... "
 
+    show may sad4 cry
+    may "may sad4... may sad4... may sad4... may sad4... may sad4... may sad4... may sad4... may sad4... may sad4... may sad4... may sad4... may sad4... may sad4... "
+
+    show may sad4 close cry
+    may "may sad4 close... may sad4 close... may sad4 close... may sad4 close... may sad4 close... may sad4 close... may sad4 close... may sad4 close... may sad4 close... "
+
     show may angry4
     may "may angry4... may angry4... may angry4... may angry4... may angry4... may angry4... may angry4... may angry4... may angry4... may angry4... may angry4... "
 
     show may angry4 close
     may "may angry4 close... may angry4 close... may angry4 close... may angry4 close... may angry4 close... may angry4 close... may angry4 close... may angry4 close... "
 
+    show may angry4 cry
+    may "may angry4... may angry4... may angry4... may angry4... may angry4... may angry4... may angry4... may angry4... may angry4... may angry4... may angry4... "
+
+    show may angry4 close cry
+    may "may angry4 close... may angry4 close... may angry4 close... may angry4 close... may angry4 close... may angry4 close... may angry4 close... may angry4 close... "
+
     show may frustrated4
     may "may frustrated4... may frustrated4... may frustrated4... may frustrated4... may frustrated4... may frustrated4... may frustrated4... may frustrated4... "
 
     show may frustrated4 close
+    may "may frustrated4 close... may frustrated4 close... may frustrated4 close... may frustrated4 close... may frustrated4 close... may frustrated4 close... "
+
+    show may frustrated4 cry
+    may "may frustrated4... may frustrated4... may frustrated4... may frustrated4... may frustrated4... may frustrated4... may frustrated4... may frustrated4... "
+
+    show may frustrated4 close cry
     may "may frustrated4 close... may frustrated4 close... may frustrated4 close... may frustrated4 close... may frustrated4 close... may frustrated4 close... "
 
     hide may

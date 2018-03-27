@@ -1,4 +1,8 @@
 ﻿label letgo_402:
+    $ letgo_badending = False
+    play music bgmloop5bye_intro noloop fadeout 1.0
+    queue music bgmloop5bye_loop loop
+    scene black
     "Lunging forward, she kisses me. Her arms wrap around my chest, and she desperately squeezes me tight."
 
     "The moment is a long one, with her cold lips on mine - but it isn't quite passionate."
@@ -32,20 +36,31 @@
     "It's just Maya and Elijah."
 
     "She pulls back, gasping for air, finally calm enough to sit still."
+    scene letgo house bedroom with dissolve
+    show may sad3 cry with dissolve:
+        align (0.2, 1.0)
 
+    show eli sad1 with dissolve:
+        align (0.5, 1.0)
     voice "C-402-1.mp3" #Maya (shiena)
     may "What am I going to do without you?"
 
     voice "C-402-2.mp3" #Elijah (Michael Potok)
     eli "What you've always done. You're going to live. I mean it; don't just survive."
 
+    show may:
+        ease 0.5 align (0.1, 1.0)
     "She nods, falling back against her bed."
 
     voice "C-402-3.mp3" #Maya (shiena)
     may "I love you, Eli."
 
+    show eli sad2 with dissolve
+
     voice "C-402-4.mp3" #Elijah (Michael Potok)
     eli "I love you too, May."
+
+    show may forcedsmile4 cry at flip with dissolve
 
     "The atmosphere subtly changes. It's no longer dark…"
 
@@ -54,7 +69,7 @@
     "With lethargic movements, she grabs her phone and now-drinkable tea."
 
     "Leaning up towards me, she gives me a sad look."
-
+    show may tired3 cry with dissolve
     voice "C-402-5.mp3" #Maya (shiena)
     may "This is around the time you usually die."
 
@@ -62,23 +77,26 @@
 
     "Right. I should get going."
 
+    show eli worried2 with dissolve
+
     voice "C-402-6.mp3" #Elijah (Michael Potok)
     eli "Promise me something, May. Promise me that you won't have to watch me die again."
 
     "Staring at me, she shakes her head and squeezes her eyes shut to keep the tears away."
-
+    show may normal4 cry with dissolve
     voice "C-402-7.mp3" #Maya (shiena)
     may "No, of course not."
 
-    "Now I must walk away from the one I love." 
+    "Now I must walk away from the one I love."
 
+    show eli sad2 with dissolve
     "Standing up, each footstep I take is thunderous - each movement strained. I now realize that this may be the last time I ever get to see her."
-
+    show may sad4 cry
     voice "C-402-8.mp3" #Maya (shiena)
     may "Hey, Eli?"
 
     "I turn back to her, now at her door."
-
+    show may forcedsmile4 cry at flip with dissolve
     voice "C-402-9.mp3" #Maya (shiena)
     may "...Thank you for the flowers."
 
@@ -93,7 +111,7 @@
     "I hope this is a sign that she'll be able to move on."
 
     "While that's an eventuality that hurts, my desire for her to find happiness outweighs this sadness."
-
+    show eli normal2 with dissolve
     voice "C-402-10.mp3" #Elijah (Michael Potok)
     eli "I'll be waiting for you - and please, remember that I'm a patient man."
 
@@ -103,23 +121,34 @@
     voice "C-402-12.mp3" #Elijah (Michael Potok)
     eli "Goodbye, Maya."
 
+    scene letgo town night with dissolve
     "With that, I turn my back on her and leave her behind."
 
     "So this is the end, huh?"
+
+    scene letgo townsquare night with dissolve
+    play ambience "game_letgo/ambience/Town Center Plaza Night.ogg" fadeout 2.0 fadein 2.0
 
     "What am I going to do in my last moments? Where am I going to go?"
 
     "Whenever I was asked what I’d do if I knew I was going to die, I'd always answer something simple, like \"enjoy it with my friends and family.\""
 
+    scene letgo park road night with dissolve
+    play ambience "game_letgo/ambience/Park Night.ogg" fadeout 2.0 fadein 2.0
+
     "But that's not an option now, is it?"
 
     "I guess I'll go to a place that I've always loved - a little piece of nature, where I fed the ducks with May shortly after we met."
+
+    scene letgo bench with dissolve
 
     "In time, I reach the park and the bench that we used to share growing up…"
 
     "If this weren't wintertime, I'd hear birds chirping, dogs barking, children playing near the park, and their parents yelling after them."
 
     "But it's dead now. The snow swallows my words - keeps my thoughts close to me. Sound doesn't travel as far in the void, and the park is completely silent."
+
+    scene letgo bench eli with Dissolve(2.0)
 
     "The bench is cold and wet, but I don't really care."
 
@@ -156,11 +185,13 @@
     "The darkness definitely helps soothe me into a deep, deep sleep."
 
     "Everything around me minimizes, and my worldly worries dissipate."
-
+    stop music fadeout 2.0
+    stop ambience fadeout 2.0
+    scene black with Dissolve(0.1)
     "With one last smile, I'm gone."
 
-    # Might not need this?
-    play audio "game_letgo/sfx/Disturbing Bass.ogg"
-    scene red with Dissolve(9.5)
+    # Might not need this?# 
+#     play audio "game_letgo/sfx/Disturbing Bass.ogg"
+#     scene red with Dissolve(9.5)
 
     jump letgo_501a1

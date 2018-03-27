@@ -205,9 +205,11 @@ label spirits_a1s7:
 
     menu:
         "It’s fine. I’ll be fine.":
+            $ caelumAlive = False
             jump CaelumIsDead
 
         "Wait… I’m not being completely honest with you.":
+            $ caelumAlive = True
             jump BuddingRelationship
 
 label CaelumIsDead:
@@ -342,13 +344,13 @@ label BuddingRelationship:
     voice "C-8-72.mp3" #Alex (Bonnie Mitchel)
     alx "…Yes. There’s at least one - a very nasty and demanding one."
 
-    #if 'urname' in SpiritsReadFlags:
-    voice "C-8-73.mp3" #Alex (Bonnie Mitchel)
-    alx "Her name is Genevieve Bourlon, and she’s been messing with me ever since I came here."
+    if 'urname' in questionFlags:
+        voice "C-8-73.mp3" #Alex (Bonnie Mitchel)
+        alx "Her name is Genevieve Bourlon, and she’s been messing with me ever since I came here."
 
-    #else:
-    voice "C-8-74.mp3" #Alex (Bonnie Mitchel)
-    alx "I don’t know her name, but she’s been messing with me ever since I came here."
+    else:
+        voice "C-8-74.mp3" #Alex (Bonnie Mitchel)
+        alx "I don’t know her name, but she’s been messing with me ever since I came here."
 
     voice "C-8-75.mp3" #Alex (Bonnie Mitchel)
     alx "And she was murdered here. In this room. The person responsible may even still be around, and a danger to all of us."
@@ -358,7 +360,6 @@ label BuddingRelationship:
 
     voice "C-8-77.mp3" #Alex (Bonnie Mitchel)
     alx "God, really, I know how this all sounds, but I promise you…"
-    ##end else
 
     voice "C-8-78.mp3" #Caelum (Daniel Acosta)
     cae "What can I do to help?"

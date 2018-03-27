@@ -1,7 +1,7 @@
 ﻿label letgo_203:
     scene black with dissolve
     pause 0.5
-    scene letgo suburb night with dissolve
+    scene letgo suburb house with dissolve
     # define ow character "Old Woman"
     # define om character "Old Man"
 
@@ -94,7 +94,8 @@
 
     "I had to laugh, though…"
 
-    "Growing old together... I hadn't really thought about it too much before. I can almost see it - and I hope she’s still smiling just as much as she is tonight when she gets wrinkles and white hair."
+    "Growing old together... I hadn't really thought about it too much before."
+    "I can almost see it - and I hope she’s still smiling just as much as she is tonight when she gets wrinkles and white hair."
 
     "That would be worth the world to me."
 
@@ -120,7 +121,7 @@
 
     "As I sip on it, I turn around."
 
-    show eli
+    show eli at flip with dissolve
 
     voice "C-203-17.mp3" #Old Man (Adam Warren)
     om "You look… relieved, young man - and tense!"
@@ -136,7 +137,8 @@
 
     show eli worried2 with dissolve
 
-    "I kind of laugh. After all, this isn’t exactly the sort of thing I expected upon setting out for a neighborhood’s yearly \"good natured\" competition to see who can raise their light bills the highest."
+    "I kind of laugh."
+    "After all, this isn’t exactly the sort of thing I expected at a neighborhood’s yearly \"good natured\" competition to see who can raise their light bills the highest."
 
     "You know, they kind of remind me of us - but the old lady’s black and the man seems… I dunno, Scandinavian?"
 
@@ -163,31 +165,38 @@
     voice "C-203-27.mp3" #Elijah (Michael Potok)
     eli "And what’s that?"
 
+    # HACK SPLIT THIS VOICE LINE INTO THREE PARTS
     voice "C-203-28.mp3" #Old Man (Adam Warren)
-    om "If you don’t make the time, you’ll never find the time to be together. So many young men forget that they’ve got to make room for the special moments. We only ever have so many - and I say that at my ripe old age!"
+    om "If you don’t make the time, you’ll never find the time to be together."
+    voice "C-203-28b.mp3" #Old Man (Adam Warren)
+    om "So many young men forget that they’ve got to make room for the special moments."
+    voice "C-203-28c.mp3" #Old Man (Adam Warren)
+    om "We only ever have so many - and I say that at my ripe old age!"
 
     "You know, that made a lot of sense to me."
 
     hide eli
 
-    show letgo suburb night:
+    show letgo suburb house:
         zoom 1.6
         xalign 0.8
         ease 0.6 xalign 0.2 yalign 0.8
     with dissolve
-    show may happy2 close:
+    show may happy2 close at flip:
         xanchor 0.5
         yalign 1.0
         xpos 0.3
     with dissolve
 
-    "I glance over at Maya, and she’s huddled with the old lady, talking up a storm - though I can’t really tell what they’re going on about. It’s kind of warbly. Maybe I have some wax in my ears?"
+    "I glance over at Maya, and she’s huddled with the old lady, talking up a storm."
+    "Though I can’t really tell what they’re going on about. It’s kind of warbly. Maybe I have some wax in my ears?"
 
     "The house seems warm, bright. The windows that I can see through are full of knick-knacks and pictures."
 
-    "For some reason, an old cloth kite was hung in one. It looked battered and like it had been sewn together in places, oiled with streamers still hanging, the tails looking as if they were still in flight."
+    "For some reason, an old cloth kite was hung in one."
+    "It looked battered and like it had been sewn together in places, oiled with streamers still hanging, the tails looking as if they were still in flight."
 
-    scene letgo suburb night
+    scene letgo suburb house
     show eli normal1:
         xanchor 0.5
         yalign 1.0
@@ -200,7 +209,9 @@
     voice "C-203-30.mp3" #Old Man (Adam Warren)
     om "Oh! That was one of the first kites I made when I met my dear wife. It wasn’t the best I'd made, but I kept it."
 
-    om "That one? That was the day I first knew I loved her. A plane can float along the breeze, free as it can be - but a kite, well. It needs a connection. We each fly because the string holds our sails taut. We help each other be free."
+    # HACK WHERE ARE THE VOICE LINES??
+    om "That one? That was the day I first knew I loved her. A plane can float along the breeze, free as it can be - but a kite, well."
+    om "It needs a connection. We each fly because the string holds our sails taut. We help each other be free."
 
     "I hadn’t thought about our new relationship like that. Some of my friends often moan and groan about things tying them down, but May..."
 
@@ -209,21 +220,22 @@
     voice "C-203-31.mp3" #Elijah (Michael Potok)
     eli "Light as a feather. That’s how she makes me feel. I hope I can make her feel like that, too."
 
-    scene black with dissolve
-    scene letgo suburb night
+    #scene black with dissolve
+    scene letgo suburb house
     show eli normal1:
         xanchor 0.5
         yalign 1.0
-        xpos 0.4
+        xpos 0.6
     show may normal1:
         xanchor 0.5
         yalign 1.0
-        xpos 0.2
+        xpos 0.4
+    with ease
 
     "She and I each grabbed a fresh cup when she came back, giving a few parting words to the friendly old couple."
 
     show eli normal1:
-        xpos 0.31
+        xpos 0.51
     with ease
 
     "I grasped her hand, feeling just... blown away by how lucky I am to have her with me. It seems like she felt the same for me..."
@@ -240,8 +252,7 @@
     may "That-- That would be..."
 
     show may sad1 close:
-        xpos 0.25
-    with ease
+        easein .35 xpos 0.45
 
     pause 1.0
 
@@ -249,7 +260,8 @@
 
     show may aww1 with dissolve
     show may:
-        xpos 0.2
+        xpos 0.4
+    with ease
 
     voice "C-203-35.mp3" #Maya (shiena)
     may "That would be all I could ever ask for and so much more, Eli - except, maybe you could accept pineapple as a pizza topping."
@@ -261,15 +273,12 @@
 
     "I hoped the day would never end - but the sun is painting the sky a beautiful burnt orange; lavender set in as the stars began peeking out. Then comes the moon."
 
-    hide may
-    hide eli
-    with easeoutleft
+    play ambience "game_letgo/ambience/Park Night.ogg" fadeout 2.0 fadein 2.0
+    stop music fadeout 2.0
+    scene letgo suburb night with Dissolve(1.0)
 
     "We leave the old couple, walking hand in hand, now up the way from what I hope will someday be our own future."
 
     "The lights continue creating a halo around us on this calm, snowy night."
-
-    scene black
-    with dissolve
 
     jump letgo_204
