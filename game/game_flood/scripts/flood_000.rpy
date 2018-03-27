@@ -44,10 +44,10 @@
 #
 ###############################
 
-define oph = Character("Ophelia")
-define oli = Character("Oliver")
-define dai = Character("Daisy")
-define hop = Character("Hope")
+define oph = Character("Ophelia", callback=speaker("oph"))
+define oli = Character("Oliver", callback=speaker("oli"))
+define dai = Character("Daisy", callback=speaker("dai"))
+define hop = Character("Hope", callback=speaker("hop"))
 define wai = Character("Waitress")
 define grl = Character("Little Girl") #Hope
 define vce = Character("Voice") #Hope's Dad
