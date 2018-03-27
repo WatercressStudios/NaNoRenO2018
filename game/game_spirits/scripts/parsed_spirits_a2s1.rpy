@@ -1,6 +1,9 @@
 label spirits_a2s1:
-    #Caelum is alive route
-
+    if caelumAlive == True:
+        jump spirits_a2s1_alive
+    jump spirits_a2s1_dead
+    
+label spirits_a2s1_alive:
     "When Caelum leaves, I realize I’m still nervous; it all returns in an instant - from the knot in my stomach to the lump in my throat."
 
     "What the spirit told me yesterday keeps echoing in my head; I even dreamed of searching for the \"last step.\""
@@ -72,10 +75,11 @@ label spirits_a2s1:
     "When he finally leaves, I watch him walk down the hall. He looks back at me as if fearing it’ll be the last time we ever see one another…"
 
     "But somehow, I don’t think so."
+    
+    jump spirits_a2s2
 
-    #Caulem is dead / is going to be dead route
 
-
+label spirits_a2s1_dead:
     #continuing from Act 1 Scene 7, fade into Genevieve’s theme
 
     "..."

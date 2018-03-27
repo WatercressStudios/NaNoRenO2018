@@ -112,41 +112,45 @@ label spirits_a1s4:
 
     #show alex pjs neutral
 
-    #$ GenevieveQuestions = 0 #Question Counter
+    $ questionCounter = 0 
 
-    #$ CorrectQuestions = 0 #Correct Question Counter for True Ending Flag
+    $ correctQuestions = 0
 
-    #$ SpiritsReadFlags = set()
+    $ questionFlags = set()
+    
+    jump questionMenu
 
-    #label .questionsmenu:
-
+label questionMenu:
+    
     menu:
-
+        
         "What questions do I even ask it?" 
 
-        "How did you die?":  #if 'howded' not in SpiritsReadFlags:
-        #$ GenevieveQuestions += 1
-        #$ SpiritsReadFlags.add('howded')
+        "How did you die?" if 'howded' not in questionFlags:
+            $ questionCounter += 1
+            $ questionFlags.add('howded')
             jump SpiritsHowded
 
-        "What is your name?":  #if 'urname' not in SpiritsReadFlags:
-        #$ GenevieveQuestions += 1
-        #$ SpiritsReadFlags.add('urname')
+        "What is your name?" if 'urname' not in questionFlags:
+            $ correctQuestions += 1
+            $ questionCounter += 1
+            $ questionFlags.add('urname')
             jump SpiritsUrname
 
-        "Why don’t you just cross over?": #if 'gtfo' not in SpiritsReadFlags:
-        #$ GenevieveQuestions += 1
-        #$ SpiritsReadFlags.add('gtfo')
+        "Why don’t you just cross over?" if 'gtfo' not in questionFlags:
+            $ questionCounter += 1
+            $ questionFlags.add('gtfo')
             jump SpiritsGTFO
 
-        "How can I help you?": #if 'wutup' not in SpiritsReadFlags:
-        #$ GenevieveQuestions += 1
-        #$ SpiritsReadFlags.add('wutup')
+        "How can I help you?" if 'wutup' not in questionFlags:
+            $ correctQuestions += 1
+            $ questionCounter += 1
+            $ questionFlags.add('wutup')
             jump SpiritsWutUp
 
-        "Are you alone?": #if 'onlyu' not in SpiritsReadFlags:
-        #$ GenevieveQuestions += 1
-        #$ SpiritsReadFlags.add('onlyu')
+        "Are you alone?" if 'onlyu' not in questionFlags:
+            $ questionCounter += 1
+            $ questionFlags.add('onlyu')
             jump SpiritsOnlyU
 
 label SpiritsHowded:
@@ -166,14 +170,12 @@ label SpiritsHowded:
 
     #show alex pjs neutral
 
-    #if GenevieveQuestions < 2:
-    #jump .questionsmenu
-    #else:
+    if questionCounter < 2:
+        jump questionMenu
+        
     jump NoMoreQuestions
     
 label SpiritsUrname:
-
-    #$ CorrectQuestions += 1
 
     voice "C-5-7.mp3" #Alex (Bonnie Mitchel)
     alx "What is your name?" 
@@ -185,9 +187,9 @@ label SpiritsUrname:
 
     "I guess I should be grateful."
 
-    #if GenevieveQuestions < 2:
-    #jump .questionsmenu
-    #else:
+    if questionCounter < 2:
+        jump questionMenu
+        
     jump NoMoreQuestions
     
 label SpiritsGTFO:
@@ -209,14 +211,12 @@ label SpiritsGTFO:
 
     #show alex pjs neutral
 
-    #if GenevieveQuestions < 2:
-    #jump .questionsmenu
-    #else:
+    if questionCounter < 2:
+        jump questionMenu
+
     jump NoMoreQuestions
     
 label SpiritsWutUp:
-
-    #$ CorrectQuestions += 1
 
     voice "C-5-10.mp3" #Alex (Bonnie Mitchel)
     alx "How can I help you?" 
@@ -229,9 +229,9 @@ label SpiritsWutUp:
     voice "C-5-12.mp3" #Genevieve (Lasli Tran)
     gen "We don’t have much time." 
 
-    #if GenevieveQuestions < 2:
-    #jump .questionsmenu
-    #else:
+    if questionCounter < 2:
+        jump questionMenu
+
     jump NoMoreQuestions
 
 label SpiritsOnlyU:
@@ -254,16 +254,16 @@ label SpiritsOnlyU:
 
     "What’s that supposed to mean?"
 
-    #if GenevieveQuestions < 2:
-    #jump .questionsmenu
-    #else:
+    if questionCounter < 2:
+        jump questionMenu
+
     jump NoMoreQuestions
 
 label NoMoreQuestions:
-    #if CorrectQuestions = 2:
-    #$ FirstTrueEndFlag = True
-    #else:
-    #$ FirstTrueEndFlag = False
+    if correctQuestions == 2:
+        $ firstTrueEndFlag = True
+    else:
+        $ firstTrueEndFlag = False
 
     voice "C-5-17.mp3" #Genevieve (Lasli Tran)
     gen "I was killed, here, in my room."

@@ -2,6 +2,8 @@ label letgo_101:
     #black screen
     #note: May is pronounced like 'my'
 
+    play ambience "game_letgo/ambience/Town Center Plaza.ogg" fadeout 2.0 fadein 2.0
+
     voice "C-101-1.mp3" #Elijah (Michael Potok)
     eli "Okay, Eli, relax. This isn't something you haven't done before."
 
@@ -21,6 +23,13 @@ label letgo_101:
     eli "Breathe. Relax."
 
     #show bg + Eli
+    play music bgmloop1comedy_intro noloop fadeout 1.0
+    queue music bgmloop1comedy_loop loop
+
+    scene letgo townsquare2 with dissolve
+
+    show eli worried1 with dissolve:
+        align (0.5, 1.0)
 
     "I lean against the tall tree next to me, my winter coat padding my shoulder from the rough bark. It's a nice, large, and sturdy - as it always has been."
 
@@ -36,12 +45,18 @@ label letgo_101:
     voice "C-101-8.mp3" #Elijah (Michael Potok)
     eli "Right."
 
+    show eli worried2 close with dissolve
+
     "I slap myself around a bit with my mitts, amping up. I close my eyes in anticipation."
+
+    show eli cool1 close with dissolve
 
     voice "C-101-9.mp3" #Elijah (Michael Potok)
     eli "Let's do this."
 
     "Breathing in through my nose and slowly out through my mouth, the world around me disappears; it's just me and the tree."
+
+    show eli cool1 with dissolve
 
     "I open my eyes, staring at its bark, noting how beautiful it looks in the white landscape."
 
@@ -55,6 +70,8 @@ label letgo_101:
 
     "How old is this tree again?"
 
+    show eli cool2 with dissolve
+
     voice "C-101-12.mp3" #Elijah (Michael Potok)
     eli "...Probably a few hundred years, now that I think about it. Anyway, not the point! I shouldn't comment on a tree's age, right?"
 
@@ -64,8 +81,12 @@ label letgo_101:
     voice "C-101-14.mp3" #Elijah (Michael Potok)
     eli "I've never really liked other girls, ya know? You'd always joke about how much of a bachelor I am, and how I can get any girl that I wanted--"
 
+    show eli worried2 with dissolve
+
     voice "C-101-15.mp3" #Elijah (Michael Potok)
     eli "Wait."
+
+    show eli happy1 with dissolve
 
     voice "C-101-16.mp3" #Elijah (Michael Potok)
     eli "Ooooh. Oh. {i}Oh!{/i} So that's why you used to say that."
@@ -75,26 +96,47 @@ label letgo_101:
     eli "The only girl I've ever wanted was you."
 
     #walking in snow sfx
+    play sound "game_letgo/sfx/Snow Footsteps.ogg"
 
     voice "C-101-18.mp3" #Maya (shiena)
     may "Is that so?"
 
     #show maya
 
+    show may cheeky1 with dissolve:
+        align (0.85, 1.0)
+
+    show eli worried2 with dissolve
+    show eli:
+        ease 0.3 align (0.42, 1.0)
+
     voice "C-101-19.mp3" #Elijah (Michael Potok)
     eli "Wait, May! It's not what it looks like, I swear!"
+
+    show may:
+        ease 1.0 align (0.75,1.0)
 
     voice "C-101-20.mp3" #Maya (shiena)
     may "Taking the whole \”Sitting in a tree, K-I-S-S-I-N-G\” thing to a whole new level, aren't you?"
 
+    show eli:
+        ease 0.3 align (0.35, 1.0)
+
     voice "C-101-21.mp3" #Elijah (Michael Potok)
     eli "I, wait, no, I'm not actually--"
+
+    show may:
+        ease 1.0 align (0.65,1.0)
 
     voice "C-101-22.mp3" #Maya (shiena)
     may "To think I'd be beat out by a tree. I'm happy for you two. You'll be a great couple!"
 
+    show eli sad1 with dissolve
+
     voice "C-101-23.mp3" #Elijah (Michael Potok)
     eli "May, I promise that I'm not falling for the tree. There's nothing between us, no chemistry!"
+
+    show may frustrated2 close with dissolve
 
     voice "C-101-24.mp3" #Maya (shiena)
     may "I dunno, the way you look at her? There's gotta be something there."
@@ -102,11 +144,17 @@ label letgo_101:
     voice "C-101-25.mp3" #Elijah (Michael Potok)
     eli "We're just friends! I promise. How would that even work?"
 
+    show may frustrated2 with dissolve
+
     voice "C-101-26.mp3" #Maya (shiena)
     may "Knowing you, you'd find a way. You're good like that."
 
+    show eli worried1 with dissolve
+
     voice "C-101-27.mp3" #Elijah (Michael Potok)
     eli "I am? But I don't even {i}like{/i} trees."
+
+    show may challenge1 with dissolve
 
     voice "C-101-28.mp3" #Maya (shiena)
     may "What? Trees are great!"
@@ -114,8 +162,12 @@ label letgo_101:
     voice "C-101-29.mp3" #Elijah (Michael Potok)
     eli "Well, yeah, but--"
 
+    show may cheeky1 with dissolve
+
     voice "C-101-30.mp3" #Maya (shiena)
     may "Oooh, you don't like {i}trees{/i}, huh?"
+
+    show eli sad1 with dissolve
 
     voice "C-101-31.mp3" #Elijah (Michael Potok)
     eli "What?"
@@ -126,11 +178,17 @@ label letgo_101:
     voice "C-101-33.mp3" #Elijah (Michael Potok)
     eli "Wait."
 
+    show may cheeky1 close with dissolve
+
     voice "C-101-34.mp3" #Maya (shiena)
     may "Thinking back on it, I guess it doesn't surprise me."
 
+    show eli worried2 with dissolve
+
     voice "C-101-35.mp3" #Elijah (Michael Potok)
     eli "May, please, I can explain! I don't like {i}this{/i} tree, but other trees are rather attractive, I promise!"
+
+    show may cheeky2 with dissolve
 
     voice "C-101-36.mp3" #Maya (shiena)
     may "Oh? What kind of trees?"
@@ -138,25 +196,41 @@ label letgo_101:
     voice "C-101-37.mp3" #Elijah (Michael Potok)
     eli "Ones that are cute, and, uh…"
 
+    show may sheepish2 close with dissolve
+
     voice "C-101-38.mp3" #Maya (shiena)
     may "Go on."
+
+    show eli smile2 with dissolve
 
     voice "C-101-39.mp3" #Elijah (Michael Potok)
     eli "Ones that like to joke around. Ones that, uh, are beautiful, and funny - ones that are always there for me. Ones that forget to wear scarves on cold days."
 
     "It's true, May is shivering; her coat isn’t quite enough to keep her warm - so I grab mine, pull it off, and wringing it with my hands."
 
+    show eli:
+        ease 1.0 align (0.43,1.0)
+
     "I'm really about to do this, huh?"
 
     voice "C-101-40.mp3" #Maya (shiena)
     may "Is that all? Any other juicy details you wanna te--"
 
+    show may:
+        ease 1.0 align (0.58,1.0)
+    pause 1.0
+    show may nervous2 with dissolve
+
     "I startle her, wrapping my scarf around her neck and bringing her close."
 
     "I hold her against me, wrapping my arm around her head, and I whisper into her ear."
 
+    show eli cool1 with dissolve
+
     voice "C-101-41.mp3" #Elijah (Michael Potok)
     eli "You know, trees are constantly being chopped down. The Amazon Rainforest is at a critically low density. I figured that I'd find myself a tree before they're all gone."
+
+    show may confused1 close with dissolve
 
     voice "C-101-42.mp3" #Maya (shiena)
     may "I-- wow, you sure know how to, what, {i}warm my globe?{/i} God, that sounds terrifying."
@@ -165,17 +239,27 @@ label letgo_101:
 
     "Maya starts to giggle, then explodes in laughter; I'm quick to follow."
 
+    show may happy2 close with dissolve
+
     voice "C-101-43.mp3" #Maya (shiena)
     may "What the fuck does that even {i}mean?{/i}"
+
+    show eli happy1 with dissolve
 
     voice "C-101-44.mp3" #Elijah (Michael Potok)
     eli "I really don't know, you weirdo."
 
+    show may suspicious1 with dissolve
+
     voice "C-101-45.mp3" #Maya (shiena)
     may "No, {i}you're{/i} the weird one. If I hadn't come as early as I did, you'd be making out with an oak tree, of all things!"
 
+    show eli smile2 with dissolve
+
     voice "C-101-46.mp3" #Elijah (Michael Potok)
     eli "Jealous?"
+
+    show may adore1 with dissolve
 
     voice "C-101-47.mp3" #Maya (shiena)
     may "A little."
@@ -184,12 +268,21 @@ label letgo_101:
 
     ### Do slowfade to the clocktower scene here, while playing the 3PM bells
 
+    stop music fadeout 3.0
+
+    scene letgo clocktower eli may with Dissolve(3.0)
+    play sound "game_letgo/sfx/Clocktower 3PM.ogg"
+
     "I pull back slightly, holding her face in my mitts, looking directly into her eyes..."
 
     voice "C-101-48.mp3" #Elijah (Michael Potok)
     eli "Well. Maya, I have something I've wanted to tell you for a long time."
 
     "Maya remains quiet in anticipation - her mouth slightly agape as her eyes widen. I'm sure she's expected this, but she's in awe nonetheless."
+
+    stop ambience fadeout 3.0
+    play music bgmloop1romantic_intro noloop fadeout 1.0
+    queue music bgmloop1romantic_loop loop
 
     voice "C-101-49.mp3" #Elijah (Michael Potok)
     eli "You see, I've never really liked any of the other girls."
@@ -207,7 +300,7 @@ label letgo_101:
     "The snow deafens the sounds of the city, holding the weight of my words for itself, ensuring that Maya and I are truly alone together."
 
     voice "C-101-52.mp3" #Maya (shiena)
-    may "That's…" 
+    may "That's…"
 
     "Wiping away at her eyes, May looks at me with an odd expression."
 
@@ -244,7 +337,7 @@ label letgo_101:
     voice "C-101-61.mp3" #Elijah (Michael Potok)
     eli "Deal."
 
-    "I still feel bad, but she's right." 
+    "I still feel bad, but she's right."
 
     "I lose myself in her eyes for a few minutes; the two of us stare at each other in bliss. A huge weight has been lifted from my shoulders, and I feel invincible."
 
@@ -260,6 +353,12 @@ label letgo_101:
     voice "C-101-65.mp3" #Maya (shiena)
     may "You worry too much. Don't worry, I love it. Super thoughtful, as always, Eli."
 
+    scene letgo townsquare2 with dissolve
+    show eli happy1 with dissolve:
+        align (0.35,1.0)
+    show may adore1 with dissolve:
+        align (0.65,1.0)
+
     menu:
         "Let's have coffee":
             pass
@@ -267,5 +366,5 @@ label letgo_101:
     "She brings me into another embrace, and then she grabs my hand. She motions towards the cafe, and I begin to walk with her."
 
     "Today's going to be a good day, a happy day. For both of us."
-    
+
     jump letgo_102
