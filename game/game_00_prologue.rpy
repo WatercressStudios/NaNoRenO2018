@@ -244,6 +244,7 @@ label splashscreen:
 #
 ###############################
 label start:
+    $ current_story = None
     scene menu_fireplace
     show book
 

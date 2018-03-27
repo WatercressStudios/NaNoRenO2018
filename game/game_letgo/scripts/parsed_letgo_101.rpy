@@ -23,8 +23,6 @@ label letgo_101:
     eli "Breathe. Relax."
 
     #show bg + Eli
-    play music bgmloop1comedy_intro noloop fadeout 1.0
-    queue music bgmloop1comedy_loop loop
 
     scene letgo townsquare2 with dissolve
 
@@ -53,6 +51,9 @@ label letgo_101:
 
     voice "C-101-9.mp3" #Elijah (Michael Potok)
     eli "Let's do this."
+
+    play music bgmloop1comedy_intro noloop fadeout 1.0
+    queue music bgmloop1comedy_loop loop
 
     "Breathing in through my nose and slowly out through my mouth, the world around me disappears; it's just me and the tree."
 
@@ -217,8 +218,8 @@ label letgo_101:
     may "Is that all? Any other juicy details you wanna te--"
 
     show may:
-        ease 1.0 align (0.58,1.0)
-    pause 1.0
+        ease 0.3 align (0.58,1.0)
+    pause 0.3
     show may nervous2 with dissolve
 
     "I startle her, wrapping my scarf around her neck and bringing her close."
@@ -268,10 +269,13 @@ label letgo_101:
 
     ### Do slowfade to the clocktower scene here, while playing the 3PM bells
 
-    stop music fadeout 3.0
+    stop music fadeout 6.0
+
+    play sound "game_letgo/sfx/Clocktower 3PM.ogg"
+    scene letgo clocktower with dissolve
+    pause 2.5
 
     scene letgo clocktower eli may with Dissolve(3.0)
-    play sound "game_letgo/sfx/Clocktower 3PM.ogg"
 
     "I pull back slightly, holding her face in my mitts, looking directly into her eyes..."
 

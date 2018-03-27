@@ -1,10 +1,12 @@
 label letgo_201:
-    scene letgo clocktower eli may
-    
+    scene letgo clocktower
+
     play sound "game_letgo/sfx/Clocktower 3PM.ogg"
     play ambience "game_letgo/ambience/Town Center Plaza.ogg" fadeout 0.1 fadein 0.1
 
     "..."
+
+    scene letgo clocktower eli may with Dissolve(3.0)
 
     "The snow-heavy tree I’d confessed to was a very patient - if not very talkative - witness when I got tongue-tied. That must really come from what, hundreds of years of being alive?"
 
@@ -33,6 +35,7 @@ label letgo_201:
     show eli smile2 with dissolve
 
     voice "C-201-2b.mp3" #Elijah (Michael Potok)
+    #voice "C-201-great-time-to-make-snow-angels.mp3" #Elijah (Michael Potok)
     eli "It’s a great time to make snow angels?"
 
     show may normal1 with dissolve

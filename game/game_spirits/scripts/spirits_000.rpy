@@ -1,4 +1,4 @@
-###############################
+﻿###############################
 #
 # CHEAT SHEET
 #
@@ -339,7 +339,8 @@ image gen mouth scared1 = FlapMouth("gen", "game_flood/sprites/Ophelia/Pose 1/mo
 
 label spirits_000:
     $ persistent.last_story = "spirits"
-
+    $ current_story = "spirits"
+    
     menu:
         "From beginning (Act 1)":
             jump spirits_a1s0
