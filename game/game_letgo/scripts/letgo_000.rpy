@@ -120,6 +120,7 @@ image may mouth happy1 = FlapMouth("may", "game_letgo/sprites/May/Pose 1/mouth s
 
 label letgo_000:
     $ persistent.last_story = "letgo"
+    $ current_story = "letgo"
     
     #jump letgo_101
 

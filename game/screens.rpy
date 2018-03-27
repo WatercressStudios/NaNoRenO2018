@@ -127,6 +127,14 @@ screen say(who, what):
 
     window:
         id "window"
+        if current_story == None:
+            background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+        elif current_story == "flood":
+            background Image("gui/textbox_canvas.png", xalign=0.5, yalign=1.0)
+        elif current_story == "letgo":
+            background Image("gui/textbox_hazy.png", xalign=0.5, yalign=1.0)
+        elif current_story == "spirits":
+            background Image("gui/textbox_bloodstain.png", xalign=0.5, yalign=1.0)
 
         if who is not None:
 
@@ -163,7 +171,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    #background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
 
 style namebox:
     xpos gui.name_xpos

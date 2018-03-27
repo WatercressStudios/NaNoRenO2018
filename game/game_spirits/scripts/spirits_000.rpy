@@ -27,6 +27,7 @@ define nurse = Character("Nurse")
 
 label spirits_000:
     $ persistent.last_story = "spirits"
+    $ current_story = "spirits"
     
     jump spirits_a1s0
     "SPIRITS END (remove once scripts are in)"
