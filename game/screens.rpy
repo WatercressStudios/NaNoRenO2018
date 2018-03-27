@@ -1266,7 +1266,7 @@ screen confirm(message, yes_action, no_action):
         elif current_story == "letgo":
             background Image("gui/textbox_hazy.png", xalign=0.5, yalign=0.5)
         elif current_story == "spirits":
-            background Image("gui/textbox_bloodstain.png", xalign=0.5, yalign=0.5)
+            background Image("gui/textbox_bloodstain.png", xalign=0.5, yalign=1.0)
 
         vbox:
             xalign .5
