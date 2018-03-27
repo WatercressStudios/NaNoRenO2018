@@ -5,6 +5,11 @@
 init offset = -1
 
 init:
+    $ _game_menu_screen = "ingamemenu"
+    $ _rollback = False
+    $ _history = False
+    $ current_story = None
+
     python:
         navigation_shown = False
         current_page = None
@@ -294,14 +299,15 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
+            #textbutton _("Back") action Rollback()
+            #textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
+            #textbutton _("Save") action ShowMenu('save')
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            #textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("Options") action ShowMenu('ingamemenu')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -330,6 +336,47 @@ style quick_button_text:
 ## This screen is included in the main and game menus, and provides navigation
 ## to other menus, and to start the game.
 
+screen ingamemenu():
+    tag menu
+
+    if current_story == None:
+        add gui.game_menu_background
+    elif current_story == "flood":
+        add "gui/flood_menu.png"
+    elif current_story == "letgo":
+        add "gui/letgo_menu.png"
+    elif current_story == "spirits":
+        add "gui/spirits_menu.png"
+    vbox:
+        style_prefix "ingamemenu"
+        if current_story == "letgo":
+            xalign 0.47
+        elif current_story == "flood":
+            xalign 0.95
+        elif current_story == "spirits":
+            xalign 0.05
+        else:
+            xalign 0.5
+        yalign 0.5
+        spacing 50
+
+        textbutton _("Save Story") action ShowMenu("save")
+        textbutton _("Load Story") action ShowMenu("load")
+        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Main Menu") action MainMenu()
+        textbutton _("Return") action Return()
+
+style ingamemenu_button is gui_button
+style ingamemenu_button_text is gui_button_text
+
+style ingamemenu_button:
+    size_group "ingamemenu"
+    properties gui.button_properties("navigation_button")
+
+style ingamemenu_button_text:
+    properties gui.button_text_properties("navigation_button")
+
+
 screen navigation():
     vbox:
         style_prefix "navigation"
@@ -349,11 +396,11 @@ screen navigation():
         hbox:
             textbutton _("Preferences") action ShowMenu("preferences") at anim
             null width 280
-            textbutton _("About") action ShowMenu("about") at anim
-
-        hbox:
-            textbutton _("Help") action ShowMenu("help") at anim
-            null width 280
+#             textbutton _("About") action ShowMenu("about") at anim
+# 
+#         hbox:
+#             textbutton _("Help") action ShowMenu("help") at anim
+#             null width 280
             textbutton _("Quit") action Quit(confirm=not main_menu) at anim
 
         #if main_menu:
@@ -495,7 +542,18 @@ screen game_menu(title, scroll=None, yinitial=0.0):
         else:
             add "gui/book.png"
     else:
-        add gui.game_menu_background
+        if current_story == None:
+            add gui.game_menu_background
+        elif current_story == "flood":
+            use ingamemenu
+            add "gui/flood_overlay.png"
+        elif current_story == "letgo":
+            add "gui/letgo_menu.png"
+            add "gui/letgo_overlay.png"
+        elif current_story == "spirits":
+            use ingamemenu
+            add "gui/spirits_overlay.png"
+
 
     frame:
         style "game_menu_outer_frame"
@@ -541,15 +599,21 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     #use navigation
 
-    textbutton _("Return"):
-        style "return_button"
-        if title == "About":
-            xalign 0.5
-
-        action Return()
+    if main_menu:
+        textbutton _("Return"):
+            style "return_button"
+            if title == "About":
+                xalign 0.5
+            action Return()
+    elif current_story == "letgo":
+        textbutton _("Back"):
+            style "return_button"
+            xalign 0.4
+            yalign 0.9
+            action ShowMenu("ingamemenu")
 
     label title:
-        if title == "About":
+        if title == "About" or current_story != None:
             xalign 0.5
         else:
             xpos 300
@@ -560,13 +624,6 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
-    else:
-        textbutton _("Main Menu"):
-            yalign 1.0
-            action MainMenu() at anim
-        textbutton _("Load Story"):
-            yalign 0.93
-            action ShowMenu("load") at anim
 
 
 style game_menu_outer_frame is empty
@@ -698,79 +755,157 @@ screen file_slots(title):
     default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
 
     use game_menu(title):
-        hbox:
-            vbox:
-                null height 150
-                xsize 630
+        if current_story != None:
+            hbox:
+                if current_story == "spirits":
+                    null width 800
+                elif current_story == "flood":
+                    null width 0
+                else:
+                    null width 800
+                vbox:
+                    null height -150
 
-                ## This ensures the input will get the enter event before any of the
-                ## buttons do.
-                order_reverse True
+                    ## This ensures the input will get the enter event before any of the
+                    ## buttons do.
+                    order_reverse True
 
-                ## The page name, which can be edited by clicking on a button.
-                button:
-                    style "page_label"
+                    ## The page name, which can be edited by clicking on a button.
+                    button:
+                        style "page_label"
 
-                    key_events True
-                    xalign 0.4
-                    action page_name_value.Toggle()
+                        key_events True
+                        xalign 0.4
+                        action page_name_value.Toggle()
 
-                    input:
-                        style "page_label_text"
-                        value page_name_value
+                        input:
+                            style "page_label_text"
+                            value page_name_value
 
-                null height 80
-                ## Buttons to access other pages.
-                hbox:
-                    null width -75
-                    style_prefix "page"
+                    null height 30
+                    ## Buttons to access other pages.
+                    hbox:
+                        null width -75
+                        style_prefix "page"
 
-                    spacing gui.page_spacing
+                        spacing gui.page_spacing
 
-                    textbutton _("<") action FilePagePrevious()
+                        textbutton _("<") action FilePagePrevious()
 
-                    if config.has_autosave:
-                        textbutton _("{#auto_page}A") action FilePage("auto")
+                        if config.has_autosave:
+                            textbutton _("{#auto_page}A") action FilePage("auto")
 
-                    if config.has_quicksave:
-                        textbutton _("{#quick_page}Q") action FilePage("quick")
+                        if config.has_quicksave:
+                            textbutton _("{#quick_page}Q") action FilePage("quick")
 
-                    ## range(1, 10) gives the numbers from 1 to 9.
-                    for page in range(1, 10):
-                        textbutton "[page]" action FilePage(page)
+                        ## range(1, 10) gives the numbers from 1 to 9.
+                        for page in range(1, 10):
+                            textbutton "[page]" action FilePage(page)
 
-                    textbutton _(">") action FilePageNext()
+                        textbutton _(">") action FilePageNext()
 
-            null width 120
+                    null height 50
 
-            vbox:
-                xsize 630
-                null height -50
-                ## The grid of file slots.
-                grid gui.file_slot_cols gui.file_slot_rows:
-                    style_prefix "slot"
-                    xalign 0.3
+                    ## The grid of file slots.
+                    grid gui.file_slot_cols gui.file_slot_rows:
+                        style_prefix "slot"
+                        xalign 0.3
 
-                    spacing gui.slot_spacing
+                        spacing gui.slot_spacing
 
-                    for i in range(gui.file_slot_cols * gui.file_slot_rows):
+                        for i in range(gui.file_slot_cols * gui.file_slot_rows):
 
-                        $ slot = i + 1
+                            $ slot = i + 1
 
-                        button:
-                            action FileAction(slot)
+                            button:
+                                action FileAction(slot)
 
-                            has vbox
+                                has vbox
 
-                            add FileScreenshot(slot) xalign 0.5
+                                add FileScreenshot(slot) xalign 0.5
 
-                            text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
-                                style "slot_time_text"
+                                text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                                    style "slot_time_text"
 
-                            text FileSaveName(slot):
-                                style "slot_name_text"
+                                text FileSaveName(slot):
+                                    style "slot_name_text"
 
-                            key "save_delete" action FileDelete(slot)
+                                key "save_delete" action FileDelete(slot)
+
+        else:
+            hbox:
+                vbox:
+                    null height 150
+                    xsize 630
+
+                    ## This ensures the input will get the enter event before any of the
+                    ## buttons do.
+                    order_reverse True
+
+                    ## The page name, which can be edited by clicking on a button.
+                    button:
+                        style "page_label"
+
+                        key_events True
+                        xalign 0.4
+                        action page_name_value.Toggle()
+
+                        input:
+                            style "page_label_text"
+                            value page_name_value
+
+                    null height 80
+                    ## Buttons to access other pages.
+                    hbox:
+                        null width -75
+                        style_prefix "page"
+
+                        spacing gui.page_spacing
+
+                        textbutton _("<") action FilePagePrevious()
+
+                        if config.has_autosave:
+                            textbutton _("{#auto_page}A") action FilePage("auto")
+
+                        if config.has_quicksave:
+                            textbutton _("{#quick_page}Q") action FilePage("quick")
+
+                        ## range(1, 10) gives the numbers from 1 to 9.
+                        for page in range(1, 10):
+                            textbutton "[page]" action FilePage(page)
+
+                        textbutton _(">") action FilePageNext()
+
+                null width 120
+
+                vbox:
+                    xsize 630
+                    null height -50
+                    ## The grid of file slots.
+                    grid gui.file_slot_cols gui.file_slot_rows:
+                        style_prefix "slot"
+                        xalign 0.3
+
+                        spacing gui.slot_spacing
+
+                        for i in range(gui.file_slot_cols * gui.file_slot_rows):
+
+                            $ slot = i + 1
+
+                            button:
+                                action FileAction(slot)
+
+                                has vbox
+
+                                add FileScreenshot(slot) xalign 0.5
+
+                                text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                                    style "slot_time_text"
+
+                                text FileSaveName(slot):
+                                    style "slot_name_text"
+
+                                key "save_delete" action FileDelete(slot)
 
 
 style page_label is gui_label
@@ -813,8 +948,14 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Preferences")):
         hbox:
+            if current_story == "flood":
+                null width -300
+            elif current_story == "spirits":
+                null width 300
+            elif current_story == "letgo":
+                null width 300
             xalign 0.5
 
             vbox:
@@ -851,7 +992,10 @@ screen preferences():
                     ## added here, to add additional creator-defined preferences.
 
             #null height (4 * gui.pref_spacing)
-            null width 180
+            if current_story != None:
+                null width 50
+            else:
+                null width 180
             vbox:
                 xsize 630
                 hbox:
