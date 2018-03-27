@@ -26,6 +26,14 @@ init:
         repeat
     transform flip:
         xzoom -1.0
+        
+        
+init python:
+    def callback_transition(event, interact=True, **kwargs):
+        if event == "begin":
+            renpy.transition(Dissolve(0.3), layer="master")
+
+    config.all_character_callbacks = [callback_transition]
 
     transform flip:
         xzoom -1.0
