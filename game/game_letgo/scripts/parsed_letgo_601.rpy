@@ -70,6 +70,7 @@
 
     "His flowers mock me."
     #Put CG Here
+    scene letgo flowers with Dissolve(2.0)
     "Pulling them close, I study each petal in great detail. Plastic, obviously, since I'm allergic to most flowers; this is the last trace of him that I have in my life now."
 
     "Sure, he could have lived - but I know deep down that that's not the case."
@@ -80,11 +81,15 @@
 
     "They still smell like him."
 
+    scene letgo flowers close with Dissolve(2.0)
+
     "I hug them close, pressing them so hard to my chest that I threaten to bend them myself."
 
     "I miss you, Eli."
 
     "I love you."
+
+    scene letgo flowers with dissolve
 
     "A light knocking on the door tears me from my thoughts - and I look up to see my mother walk in."
 
@@ -111,6 +116,8 @@
     voice "C-601-5.mp3" #Mom (N/A)
     mom "Eli… he passed away last night."
 
+    scene letgo flowers cry with dissolve
+
     "Dammit Maya, you've heard this a thousand times before - no, you've {i}seen{/i} this a thousand times before."
 
     "Why are you crying now?"
@@ -119,6 +126,8 @@
     mom "I'm so sorry, I know you loved him very much."
 
     "She reaches in close for a hug, and I do nothing to stop her."
+
+    scene letgo flowers close with dissolve
 
     "Quietly, I sob into her shoulder."
 
@@ -159,6 +168,11 @@
     "And in between us, Eli's flowers feel warm in my hands."
 
     "I made you a promise."
+
+    stop music fadeout 5.0
+    scene letgo flowers close sun with Dissolve(3.0)
+    scene letgo flowers cry sun with Dissolve(1.0)
+    scene letgo flowers sun with Dissolve(1.0)
 
     "I'll see you again one day. I swear it."
 

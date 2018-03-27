@@ -2,7 +2,7 @@
     #Continues directly from somewhere in 101 or 102, right after the cafe is mentioned
     #We’ll probably edit the transition later because yeah
 
-    scene letgo clocktower eli may
+    scene letgo clocktower
 
     play sound "game_letgo/sfx/Clocktower 3PM.ogg"
     play ambience "game_letgo/ambience/Town Center Plaza.ogg" fadeout 0.1 fadein 0.1

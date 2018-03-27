@@ -1,17 +1,25 @@
 label spirits_a1s7:
-    #scene black
+    scene black
+
+    play ambience "game_spirits/ambience/Heavy Rain.ogg" fadeout 2.0 fadein 2.0
 
     #play music [sound of heavy rain]
 
     voice "C-8-1.mp3" #Mama (N/A)
     ama "Honey, be careful!"
 
+    play sound "game_spirits/sfx/Car Horn Car Skid.ogg"
     #play sound [sound of a car horn, sound of a car skidding]
+
+    pause 6.0
 
     voice "C-8-2.mp3" #Mama (N/A)
     ama "\[sound of hyperventilation\]"
 
     #play sound [MUFFLED sound of a locked doorknob being shaken angrily]
+    play sound "game_spirits/sfx/Rattling Doorknob.ogg"
+
+    pause 2.0
 
     voice "C-8-3.mp3" #Mama (N/A)
     ama "...Oh my god."
@@ -26,6 +34,9 @@ label spirits_a1s7:
     ama "Is everyone okay!?"
 
     #play sound [MUFFLED sound of pounding on a door]
+    play sound "game_spirits/sfx/Banging on Door.ogg"
+
+    pause 3.0
 
     voice "C-8-7.mp3" #Mama (N/A)
     ama "Bitiyaa, are you doing okay back there?"
@@ -37,52 +48,65 @@ label spirits_a1s7:
     ama "Whew… Let’s just pull over and wait for the storm to--"
 
     #play sound [train horn]
+    play sound "game_spirits/sfx/Train Horn Distance.ogg"
 
     voice "C-8-10.mp3" #Mama (N/A)
     ama "{i}Look out!{/i}"
 
-    #scene white with Dissolve(3.0)
+    play sound "game_spirits/sfx/Alex Accident.ogg"
 
-    #play sound [sound of a car getting hit by a train]
+    pause 4.0
 
-    #pause 2.5
+    scene white with Dissolve(3.0)
+
+    pause 2.5
 
     #play music [EKG machine beeping a steady heart rate]
+    play ambience "game_spirits/ambience/Steady EKG.ogg"
+
+    pause 3.0
 
     #play sound [pounding angrily on a door]
+    play sound "game_spirits/sfx/Banging on Door 2.ogg"
 
     voice "C-8-11.mp3" #Genevieve (Lasli Tran)
     gen "Let me {i}{b}out!{/b}{/i}"
 
-    #play sound [scratching on walls]
+    play sound "game_spirits/sfx/Creepy Clawing.ogg"
+
+    pause 5.0
 
     voice "C-8-12.mp3" #Genevieve (Lasli Tran)
     gen "Let me out! Let me out! Let me out!"
 
     #play sound [Hammer of a gun being pulled back, then firing, and a body thumping to the ground]
+    play sound "Click Bang Thump.ogg"
 
     #stop music
 
-    #pause 0.5
+    pause 1.0
 
-    #play music [EKG gradually flatlining]
-
-    #queue music [EKG fully flatlined]
+    play ambience "game_spirits/ambience/EKG Batshit.ogg" noloop
 
     voice "C-8-13.mp3" #Genevieve (Lasli Tran)
     gen "Let me out! Let me out! Let me out--"
-
-    #play sound [Gun firing]
-
     #stop music
 
-    #pause 4.0
+    pause 2.0
 
     voice "C-8-14.mp3" #Genevieve (Lasli Tran)
     gen "...LETMEOUTLETMEOUTLETMEOUTLETMEOUTLETMEOUT!!!"
 
+    pause 1.5
+
+    play sound "game_spirits/sfx/Gunshot.ogg"
+
+    pause 3.0
+
     voice "C-8-15.mp3" #Genevieve (Lasli Tran)
     gen "LET ME OUT!"
+
+    play sound "game_spirits/sfx/Wraith Laughs.ogg"
 
     voice "C-8-16.mp3" #Alex (Bonnie Mitchel)
     alx "LET ME OUT LET ME OUT LET ME OUT!"
@@ -99,7 +123,7 @@ label spirits_a1s7:
     voice "C-8-20.mp3" #Alex (Bonnie Mitchel)
     alx "LET--"
 
-    #scene cg [Caelum waking up Alex]
+    show spirits test pattern with Dissolve (3.0)
 
     voice "C-8-21.mp3" #Alex (Bonnie Mitchel)
     alx "...Caelum?"
@@ -257,7 +281,7 @@ label CaelumIsDead:
     "I can’t risk damaging my reputation; if it got around that I believe in ghosts - that I’m constantly haunted - I’ll be spending the rest of my career as a pariah."
 
     "I just hope I did the right thing."
-    
+
     jump spirits_a2s1
 
 label BuddingRelationship:

@@ -46,7 +46,7 @@ label spirits_a1s1:
     voice "C-2-7.mp3" #House Mother "Jianmei" (Vivi)
     hmom "No, seriously! I can help! It must be hard with that arm, so I can assist you!"
 
-    #show alex exasperated 
+    #show alex exasperated
 
     voice "C-2-8.mp3" #Alex (Bonnie Mitchel)
     alx "You don’t need to, please! I’m used to it."
@@ -101,7 +101,7 @@ label spirits_a1s1:
     voice "C-2-16.mp3" #Alex (Bonnie Mitchel)
     alx "It’s… nice. I think I’ll be able to settle in here just fine."
 
-    #show house mother worried 
+    #show house mother worried
 
     voice "C-2-17.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Are you okay?"
@@ -142,7 +142,7 @@ label spirits_a1s1:
     #show house mother confused
 
     voice "C-2-25.mp3" #House Mother "Jianmei" (Vivi)
-    hmom "How so?" 
+    hmom "How so?"
 
     voice "C-2-26.mp3" #Alex (Bonnie Mitchel)
     alx  "Well, let’s say things... feel {i}off,{/i} somehow. Certain memories rile me up, so I’m still trying to relax and adjust."
@@ -170,7 +170,7 @@ label spirits_a1s1:
 
     "..."
 
-    #show alex awkward 
+    #show alex awkward
 
     "I curve my mouth upwards and into a smile."
 
@@ -204,11 +204,11 @@ label spirits_a1s1:
     voice "C-2-37.mp3" #House Mother "Jianmei" (Vivi)
     hmom "That’s fine, that’s fine!"
 
-    "I swear, she sounds disappointed." 
+    "I swear, she sounds disappointed."
 
-    #play sound door open
+    play sound "game_spirits/sfx/Open Door.ogg"
 
-    #scene alex’s bedroom v0 
+    #scene alex’s bedroom v0
 
     #play house theme
 
@@ -223,7 +223,7 @@ label spirits_a1s1:
     hmom "How do you like it? It’s a bit less renovated than the others, but we had to make do  since this was on such short notice."
 
     voice "C-2-40.mp3" #House Mother "Jianmei" (Vivi)
-    hmom "Don’t ask about the door; it’s been closed as long as I’ve been working here. I think it leads nowhere anyway, so… nothing to worry about!" 
+    hmom "Don’t ask about the door; it’s been closed as long as I’ve been working here. I think it leads nowhere anyway, so… nothing to worry about!"
 
     "That’s exactly what someone would say if there {i}was{/i} something to worry about."
 
@@ -274,7 +274,7 @@ label spirits_a1s1:
 
     "What the hell?"
 
-    #play genevieve’s theme 
+    #play genevieve’s theme
 
     "On closer inspection, the door is covered in scratches and claw marks."
 
@@ -298,9 +298,9 @@ label spirits_a1s1:
 
     "This shouldn’t--"
 
-    #cut OST, sound effect of the box hitting Alex’s head, 
+    play sound "game_letgo/sfx/Punch,Shove.ogg"
 
-    #quick white flash before screen cuts to black.  
+    #quick white flash before screen cuts to black.
 
     #show alex shocked/in pain
 
@@ -323,7 +323,7 @@ label spirits_a1s1:
 
     "I look up toward the ceiling. There’s nowhere for things to fall from."
 
-    #scene closed box 
+    #scene closed box
 
     "When I turn around, there’s an upturned box laying on the floor."
 
@@ -332,7 +332,7 @@ label spirits_a1s1:
     "Why is it here? I sure as hell didn’t bring it."
 
     "Does it belong to the school? More importantly: how did it hit my head?"
-    
+
     #choice, open the box or don’t open.
     menu:
         "..."

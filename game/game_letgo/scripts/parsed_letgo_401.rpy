@@ -1,12 +1,14 @@
 ﻿label letgo_401:
     #All va lines from here up to the next comment are the same exact ones as in the first scene letgo
 
+    scene letgo clocktower
+
     play sound "game_letgo/sfx/Clocktower 3PM.ogg"
     play ambience "game_letgo/ambience/Town Center Plaza.ogg" fadeout 0.1 fadein 0.1
 
-    scene letgo clocktower eli
-
     "..."
+
+    scene letgo clocktower eli with Dissolve(3.0)
 
     voice "C-401-1.mp3" #Elijah (Michael Potok)
     eli "Okay, Eli, relax. This isn't something you haven't done before."
