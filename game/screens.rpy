@@ -142,13 +142,15 @@ screen say(who, what):
             background Image("gui/textbox_bloodstain.png", xalign=0.5, yalign=1.0)
 
         if who is not None:
-
             window:
                 id "namebox"
                 style "namebox"
                 text who id "who"
 
-        text what id "what"
+        text what id "what":
+            if current_story == None:
+                color "#333"
+
 
 
     ## If there's a side image, display it above the text. Do not display on the
@@ -294,7 +296,10 @@ screen quick_menu():
     if quick_menu:
 
         hbox:
-            style_prefix "quick"
+            if current_story == None:
+                style_prefix "prologue_quick"
+            else:
+                style_prefix "quick"
 
             xalign 0.5
             yalign 1.0
@@ -317,12 +322,18 @@ init python:
 
 default quick_menu = True
 
+style prologue_quick_button is default
+style prologue_quick_button_text is button_text
 style quick_button is default
 style quick_button_text is button_text
 
+style prologue_quick_button:
+    properties gui.button_properties("quick_button")
 style quick_button:
     properties gui.button_properties("quick_button")
 
+style prologue_quick_button_text:
+    properties gui.button_text_properties("prologue_quick_button")
 style quick_button_text:
     properties gui.button_text_properties("quick_button")
 
@@ -561,7 +572,8 @@ screen game_menu(title, scroll=None, yinitial=0.0):
         vbox:
 
             ## Reserve space for the title.
-            null height 80
+            if main_menu:
+                null height 50
 
             frame:
                 style "game_menu_content_frame"
@@ -605,6 +617,12 @@ screen game_menu(title, scroll=None, yinitial=0.0):
             if title == "About":
                 xalign 0.5
             action Return()
+    elif current_story == None:
+        textbutton _("Back"):
+            style "return_button"
+            xalign 0.5
+            yalign 0.95
+            action ShowMenu("ingamemenu")
     elif current_story == "letgo":
         textbutton _("Back"):
             style "return_button"
@@ -621,6 +639,8 @@ screen game_menu(title, scroll=None, yinitial=0.0):
             ypos 200
         else:
             ypos 0
+        if main_menu and title != "Load":
+            text_color gui.alt_accent_color
 
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
@@ -756,81 +776,83 @@ screen file_slots(title):
 
     use game_menu(title):
         if current_story != None:
-            hbox:
-                if current_story == "spirits":
-                    null width 800
-                elif current_story == "flood":
-                    null width 0
-                else:
-                    null width 800
-                vbox:
-                    null height -150
+            vbox:
+                null height 80
+                hbox:
+                    if current_story == "spirits":
+                        null width 800
+                    elif current_story == "flood":
+                        null width 0
+                    else:
+                        null width 800
+                    vbox:
+                        null height -150
 
-                    ## This ensures the input will get the enter event before any of the
-                    ## buttons do.
-                    order_reverse True
+                        ## This ensures the input will get the enter event before any of the
+                        ## buttons do.
+                        order_reverse True
 
-                    ## The page name, which can be edited by clicking on a button.
-                    button:
-                        style "page_label"
+                        ## The page name, which can be edited by clicking on a button.
+                        button:
+                            style "page_label"
 
-                        key_events True
-                        xalign 0.4
-                        action page_name_value.Toggle()
+                            key_events True
+                            xalign 0.4
+                            action page_name_value.Toggle()
 
-                        input:
-                            style "page_label_text"
-                            value page_name_value
+                            input:
+                                style "page_label_text"
+                                value page_name_value
 
-                    null height 30
-                    ## Buttons to access other pages.
-                    hbox:
-                        null width -75
-                        style_prefix "page"
+                        null height 30
+                        ## Buttons to access other pages.
+                        hbox:
+                            null width -40
+                            style_prefix "page"
 
-                        spacing gui.page_spacing
+                            spacing gui.page_spacing
 
-                        textbutton _("<") action FilePagePrevious()
+                            textbutton _("<") action FilePagePrevious()
 
-                        if config.has_autosave:
-                            textbutton _("{#auto_page}A") action FilePage("auto")
+                            if config.has_autosave:
+                                textbutton _("{#auto_page}A") action FilePage("auto")
 
-                        if config.has_quicksave:
-                            textbutton _("{#quick_page}Q") action FilePage("quick")
+                            if config.has_quicksave:
+                                textbutton _("{#quick_page}Q") action FilePage("quick")
 
-                        ## range(1, 10) gives the numbers from 1 to 9.
-                        for page in range(1, 10):
-                            textbutton "[page]" action FilePage(page)
+                            ## range(1, 10) gives the numbers from 1 to 9.
+                            for page in range(1, 10):
+                                textbutton "[page]" action FilePage(page)
 
-                        textbutton _(">") action FilePageNext()
+                            textbutton _(">") action FilePageNext()
 
-                    null height 50
+                        null height 50
 
-                    ## The grid of file slots.
-                    grid gui.file_slot_cols gui.file_slot_rows:
-                        style_prefix "slot"
-                        xalign 0.3
+                        ## The grid of file slots.
+                        grid gui.file_slot_cols gui.file_slot_rows:
+                            style_prefix "slot"
+                            xalign 0.3
 
-                        spacing gui.slot_spacing
+                            spacing gui.slot_spacing
 
-                        for i in range(gui.file_slot_cols * gui.file_slot_rows):
+                            for i in range(gui.file_slot_cols * gui.file_slot_rows):
 
-                            $ slot = i + 1
+                                $ slot = i + 1
 
-                            button:
-                                action FileAction(slot)
+                                button:
+                                    action FileAction(slot)
 
-                                has vbox
+                                    has vbox
 
-                                add FileScreenshot(slot) xalign 0.5
+                                    add FileScreenshot(slot) xalign 0.5
 
-                                text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
-                                    style "slot_time_text"
+                                    text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                                        style "slot_time_text"
 
-                                text FileSaveName(slot):
-                                    style "slot_name_text"
+                                    text FileSaveName(slot):
+                                        style "slot_name_text"
 
-                                key "save_delete" action FileDelete(slot)
+                                    key "save_delete" action FileDelete(slot)
 
         else:
             hbox:
@@ -969,7 +991,10 @@ screen preferences():
                     if renpy.variant("pc"):
 
                         vbox:
-                            style_prefix "radio"
+                            if main_menu:
+                                style_prefix "altradio"
+                            else:
+                                style_prefix "radio"
                             label _("Display")
                             textbutton _("Window") action Preference("display", "window")
                             textbutton _("Fullscreen") action Preference("display", "fullscreen")
@@ -982,7 +1007,10 @@ screen preferences():
 #                         textbutton _("Right") action Preference("rollback side", "right")
 
                     vbox:
-                        style_prefix "check"
+                        if main_menu:
+                            style_prefix "altcheck"
+                        else:
+                            style_prefix "check"
                         label _("Skip")
                         textbutton _("Unseen Text") action Preference("skip", "toggle")
                         textbutton _("After Choices") action Preference("after choices", "toggle")
@@ -1000,7 +1028,10 @@ screen preferences():
                 xsize 630
                 hbox:
                     xalign 0.5
-                    style_prefix "slider"
+                    if main_menu:
+                        style_prefix "altslider"
+                    else:
+                        style_prefix "slider"
                     box_wrap True
 
                     vbox:
@@ -1058,11 +1089,19 @@ style radio_button is gui_button
 style radio_button_text is gui_button_text
 style radio_vbox is pref_vbox
 
+style altradio_label is radio_label
+style altradio_label_text:
+    color gui.alt_accent_color
+
 style check_label is pref_label
 style check_label_text is pref_label_text
 style check_button is gui_button
 style check_button_text is gui_button_text
 style check_vbox is pref_vbox
+
+style altcheck_label is check_label
+style altcheck_label_text:
+    color gui.alt_accent_color
 
 style slider_label is pref_label
 style slider_label_text is pref_label_text
@@ -1071,12 +1110,17 @@ style slider_button is gui_button
 style slider_button_text is gui_button_text
 style slider_pref_vbox is pref_vbox
 
+style altslider_label is slider_label
+style altslider_label_text:
+    color gui.alt_accent_color
+
 style mute_all_button is check_button
 style mute_all_button_text is check_button_text
 
 style pref_label:
     top_margin gui.pref_spacing
     bottom_margin 3
+    left_margin -50
 
 style pref_label_text:
     yalign 1.0
@@ -1089,7 +1133,7 @@ style radio_vbox:
 
 style radio_button:
     properties gui.button_properties("radio_button")
-    foreground "gui/button/check_[prefix_]foreground.png"
+    foreground HBox(Null(width=320), "gui/button/radio_[prefix_]foreground.png")
 
 style radio_button_text:
     properties gui.button_text_properties("radio_button")
@@ -1099,7 +1143,7 @@ style check_vbox:
 
 style check_button:
     properties gui.button_properties("check_button")
-    foreground "gui/button/check_[prefix_]foreground.png"
+    foreground HBox(Null(width=320), "gui/button/check_[prefix_]foreground.png")
 
 style check_button_text:
     properties gui.button_text_properties("check_button")
@@ -1418,7 +1462,10 @@ screen confirm(message, yes_action, no_action):
             spacing 45
 
             label _(message):
-                style "confirm_prompt"
+                if current_story == None:
+                    style "prologue_confirm_prompt"
+                else:
+                    style "confirm_prompt"
                 xalign 0.5
 
             hbox:
@@ -1437,6 +1484,9 @@ style confirm_prompt is gui_prompt
 style confirm_prompt_text is gui_prompt_text
 style confirm_button is gui_medium_button
 style confirm_button_text is gui_medium_button_text
+
+style prologue_confirm_prompt_text is gui_prompt_text:
+    color "#333"
 
 style confirm_frame:
     #background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
