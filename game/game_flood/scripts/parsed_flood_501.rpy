@@ -123,4 +123,36 @@ label flood_501:
     "I'll figure something out. I'm an adult. I'm not over the hill yet, not even close."
     "...Maybe, in all this anxiety, there's a tinge of excitement in me too. Just a bit."
 
+    jump floodMetaNarrative
+    
+label floodMetaNarrative:
+
+    scene menu_fireplace
+    show book
+
+    hide book with easeoutbottom
+
+    "If in Your Dreams; the Flood always confused me as a child. The ending, to me at least, always felt... inconclusive."
+
+    "I didn't understand it at all, back then. Now, though..."
+
+    "I guess recently I've grown up, just like Ophelia did. I only learned just recently what that really means."
+
+    "My time in the holding cell, losing my chance at my dream school, all of it is just another step in my journey."
+
+    "Avitus is giving me my second chance. The people I've met, and the people I will meet... just like in this story, I'll learn from them."
+
+    "Simply put, sometimes you just don't have the all of the answers. Sometimes you just have to go out and discover them for yourself."
+
+    "Try something new."
+
+    "I'm no longer afraid of my future, or of my mistakes."
+
+    "I'm going to try from here on out. I promise."
+    
+    $ persistent.storyCompletion.add('flood')
+    
+    if 'letgo' and 'flood' and 'spirits' in persistent.storyCompletion:
+        jump postCreditsNarrative
+    
     return
