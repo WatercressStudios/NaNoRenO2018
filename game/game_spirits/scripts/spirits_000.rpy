@@ -164,7 +164,7 @@ image alx surprised1 close blush = AlxPose1("game_spirits/sprites/Alex/Pose 1/ey
 ###############################
 
 init python:
-    CaePose1 = BaseCSprite("cae", "game_flood/sprites/Ophelia/Pose 1/base.png", (414, 1080))
+    CaePose1 = BaseCSprite("cae", "game_flood/sprites/Ophelia/Pose 1/base.png", (608, 1080))
 
 image cae neutral1 = CaePose1("cae eyes neutral1", "cae mouth neutral1")
 image cae neutral1 close = CaePose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "cae mouth neutral1")
