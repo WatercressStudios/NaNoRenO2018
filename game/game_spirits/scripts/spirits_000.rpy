@@ -223,10 +223,10 @@ image hmom happy1 = HmomPose1("hmom eyes happy1", "hmom mouth happy1")
 image hmom happy1 close = HmomPose1("game_spirits/sprites/Fang/Pose 1/eyes happy close.png", "hmom mouth happy1")
 
 image hmom sad1 = HmomPose1("hmom eyes sad1", "hmom mouth sad1")
-image hmom sad1 close = HmomPose1("game_spirits/sprites/Fang/Pose 1/eyes happy close.png", "hmom mouth sad1")
+image hmom sad1 close = HmomPose1("game_spirits/sprites/Fang/Pose 1/eyes sad close.png", "hmom mouth sad1")
 
 image hmom surprised1 = HmomPose1("hmom eyes surprised1", "hmom mouth surprised1")
-image hmom surprised1 close = HmomPose1("game_spirits/sprites/Fang/Pose 1/eyes happy close.png", "hmom mouth surprised1")
+image hmom surprised1 close = HmomPose1("game_spirits/sprites/Fang/Pose 1/eyes sad close.png", "hmom mouth surprised1")
 
 ###############################
 #
@@ -317,15 +317,15 @@ image hmom eyes neutral1 = blinkeyes("game_spirits/sprites/Fang/Pose 1/eyes neut
 
 image hmom eyes happy1 = blinkeyes("game_spirits/sprites/Fang/Pose 1/eyes happy open.png", "game_spirits/sprites/Fang/Pose 1/eyes happy close.png")
 
-image hmom eyes sad1 = blinkeyes("game_spirits/sprites/Fang/Pose 1/eyes sad open.png", "game_spirits/sprites/Fang/Pose 1/eyes happy close.png")
+image hmom eyes sad1 = blinkeyes("game_spirits/sprites/Fang/Pose 1/eyes sad open.png", "game_spirits/sprites/Fang/Pose 1/eyes sad close.png")
 
-image hmom eyes surprised1 = blinkeyes("game_spirits/sprites/Fang/Pose 1/eyes surprised open.png", "game_spirits/sprites/Fang/Pose 1/eyes happy close.png")
+image hmom eyes surprised1 = blinkeyes("game_spirits/sprites/Fang/Pose 1/eyes surprised open.png", "game_spirits/sprites/Fang/Pose 1/eyes sad close.png")
 
-image hmom mouth neutral1 = FlapMouth("hmom", "game_spirits/sprites/Fang/Pose 1/mouth neutral close.png", "game_spirits/sprites/Fang/Pose 1/mouth surprised open.png")
+image hmom mouth neutral1 = FlapMouth("hmom", "game_spirits/sprites/Fang/Pose 1/mouth neutral close.png", "game_spirits/sprites/Fang/Pose 1/mouth neutral open.png")
 
-image hmom mouth happy1 = FlapMouth("hmom", "game_spirits/sprites/Fang/Pose 1/mouth happy close.png", "game_spirits/sprites/Fang/Pose 1/mouth surprised open.png")
+image hmom mouth happy1 = FlapMouth("hmom", "game_spirits/sprites/Fang/Pose 1/mouth happy close.png", "game_spirits/sprites/Fang/Pose 1/mouth neutral open.png")
 
-image hmom mouth sad1 = FlapMouth("hmom", "game_spirits/sprites/Fang/Pose 1/mouth sad close.png", "game_spirits/sprites/Fang/Pose 1/mouth surprised open.png")
+image hmom mouth sad1 = FlapMouth("hmom", "game_spirits/sprites/Fang/Pose 1/mouth sad close.png", "game_spirits/sprites/Fang/Pose 1/mouth neutral open.png")
 
 image hmom mouth surprised1 = FlapMouth("hmom", "game_spirits/sprites/Fang/Pose 1/mouth surprised open.png", "game_spirits/sprites/Fang/Pose 1/mouth neutral close.png")
 
