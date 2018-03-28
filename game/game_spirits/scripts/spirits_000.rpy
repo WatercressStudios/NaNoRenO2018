@@ -100,6 +100,7 @@ define nurse = Character("Nurse")
 init python:
     define_images("game_spirits/bgs", 2, False, ["spirits"])
     define_images("game_spirits/cgs", 2, False, ["spirits"])
+    define_images("game_spirits/objects", 2, False, ["spirits"])       
 
 ###############################
 #
