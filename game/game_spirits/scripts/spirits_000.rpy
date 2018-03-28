@@ -88,10 +88,15 @@
 #
 ###############################
 
-define alx = Character("Alex", callback=speaker("alx"), color="#e95540")
-define cae = Character("Caelum", callback=speaker("cae"), color="#f7b857")
+init:
+    $ Alex = "Alex"
+    $ Caelum = "Hallway Boy"
+    $ Genevieve = "Ghost"
+
+define alx = Character("Alex", callback=speaker("alx"), color="#e95540", dynamic=True)
+define cae = Character("Caelum", callback=speaker("cae"), color="#f7b857", dynamic=True)
 define hmom = Character("Jianmei", callback=speaker("hmom"), color="#8cb180")
-define gen = Character("Genevieve", callback=speaker("gen"), color="#b7a295")
+define gen = Character("Genevieve", callback=speaker("gen"), color="#b7a295", dynamic=True)
 define wra = Character("Wraith", color="#ffffff")
 define caex = Character("Hallway Boy", callback=speaker("caex"), color="#f7b857") #Caelum voice
 define ama = Character("Mama", color="#ffffff")
