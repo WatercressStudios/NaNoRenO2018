@@ -616,6 +616,12 @@ screen game_menu(title, scroll=None, yinitial=0.0):
             if title == "About":
                 xalign 0.5
             action Return()
+    elif current_story == None:
+        textbutton _("Back"):
+            style "return_button"
+            xalign 0.5
+            yalign 0.95
+            action ShowMenu("ingamemenu")
     elif current_story == "letgo":
         textbutton _("Back"):
             style "return_button"
@@ -1088,6 +1094,7 @@ style mute_all_button_text is check_button_text
 style pref_label:
     top_margin gui.pref_spacing
     bottom_margin 3
+    left_margin -50
 
 style pref_label_text:
     yalign 1.0
@@ -1100,7 +1107,7 @@ style radio_vbox:
 
 style radio_button:
     properties gui.button_properties("radio_button")
-    foreground HBox(Null(width=320), "gui/button/check_[prefix_]foreground.png")
+    foreground HBox(Null(width=320), "gui/button/radio_[prefix_]foreground.png")
 
 style radio_button_text:
     properties gui.button_text_properties("radio_button")
