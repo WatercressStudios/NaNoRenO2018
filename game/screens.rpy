@@ -639,7 +639,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
             ypos 200
         else:
             ypos 0
-        if main_menu:
+        if main_menu and title != "Load":
             text_color gui.alt_accent_color
 
     if main_menu:
