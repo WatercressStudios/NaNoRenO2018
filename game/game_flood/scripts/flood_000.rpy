@@ -44,21 +44,21 @@
 #
 ###############################
 
-define oph = Character("Ophelia", who_color="#d68385",who_outlines=[ (2, "#ffffff") ])
-define oli = Character("Oliver", who_color="#aab421",who_outlines=[ (2, "#ffffff") ])
-define dai = Character("Daisy", who_color="#55b2ad",who_outlines=[ (2, "#ffffff") ])
-define hop = Character("Hope", who_color="#ca483d",who_outlines=[ (2, "#ffffff") ])
-define wai = Character("Waitress")
-define grl = Character("Little Girl") #Hope
-define vce = Character("Voice") #Hope's Dad
-define dad = Character("Dad")
-define mom = Character("Mom")
-define sis = Character("Sister")
-define ogl = Character("Other Girl")
-define per = Character("Performer") #Daisy
-define dsy = Character("Daisy") #idk why there are two daisy tags
-define old = Character("Old Man") #Oliver
-define mgr = Character("Manager")
+define oph = Character("Ophelia", color="#d68385")
+define oli = Character("Oliver", color="#aab421")
+define dai = Character("Daisy", color="#55b2ad")
+define hop = Character("Hope", color="#ca483d")
+define wai = Character("Waitress", color="#ddd")
+define grl = Character("Little Girl", color="#ddd") #Hope
+define vce = Character("Voice", color="#ddd") #Hope's Dad
+define dad = Character("Dad", color="#ddd")
+define mom = Character("Mom", color="#ddd")
+define sis = Character("Sister", color="#ddd")
+define ogl = Character("Other Girl", color="#ddd")
+define per = Character("Performer", color="#ddd") #Daisy
+define dsy = Character("Daisy", color="#ddd") #idk why there are two daisy tags
+define old = Character("Old Man", color="#ddd") #Oliver
+define mgr = Character("Manager", color="#ddd")
 
 image white = "#fff"
 
