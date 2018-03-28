@@ -149,8 +149,8 @@ define gui.dialogue_text_xalign = 0.0
 define gui.button_width = None
 define gui.button_height = None
 define gui.navigation_button_width = 350
-define gui.radio_button_width = 320
-define gui.check_button_width = 320
+define gui.radio_button_width = 300
+define gui.check_button_width = 300
 
 ## The borders on each side of the button, in left, top, right, bottom order.
 define gui.button_borders = Borders(20, 20, 20, 20)
@@ -182,9 +182,11 @@ define gui.button_text_xalign = 0.5
 ##
 ## These customizations are used by the default interface:
 
-define gui.radio_button_borders = Borders(27, 6, 6, 6)
+define gui.radio_button_borders = Borders(20, 20, 20, 20)
+define gui.radio_button_text_size = 32
 
-define gui.check_button_borders = Borders(27, 6, 6, 6)
+define gui.check_button_borders = Borders(20, 20, 20, 20)
+define gui.check_button_text_size = 32
 
 define gui.confirm_button_text_xalign = 0.5
 
