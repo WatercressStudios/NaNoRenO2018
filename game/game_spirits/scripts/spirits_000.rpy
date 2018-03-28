@@ -40,9 +40,10 @@
 # neutral1
 # happy1
 # sad1
-# angry1
-# bitter1
-# scared1
+# surprised1
+
+## additionally...
+# [emotion] close
 
 
 ### show gen ###
@@ -213,25 +214,19 @@ image cae surprised1 close blush = CaePose1("game_spirits/sprites/Caelum/Pose 1/
 ###############################
 
 init python:
-    HmomPose1 = BaseCSprite("hmom", "game_flood/sprites/Ophelia/Pose 1/base.png", (414, 1080))
+    HmomPose1 = BaseCSprite("hmom", "game_spirits/sprites/Fang/Pose 1/base.png", (608, 1080))
 
 image hmom neutral1 = HmomPose1("hmom eyes neutral1", "hmom mouth neutral1")
-image hmom neutral1 close = HmomPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "hmom mouth neutral1")
+image hmom neutral1 close = HmomPose1("game_spirits/sprites/Fang/Pose 1/eyes happy close.png", "hmom mouth neutral1")
 
 image hmom happy1 = HmomPose1("hmom eyes happy1", "hmom mouth happy1")
-image hmom happy1 close = HmomPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "hmom mouth happy1")
+image hmom happy1 close = HmomPose1("game_spirits/sprites/Fang/Pose 1/eyes happy close.png", "hmom mouth happy1")
 
 image hmom sad1 = HmomPose1("hmom eyes sad1", "hmom mouth sad1")
-image hmom sad1 close = HmomPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "hmom mouth sad1")
+image hmom sad1 close = HmomPose1("game_spirits/sprites/Fang/Pose 1/eyes happy close.png", "hmom mouth sad1")
 
-image hmom angry1 = HmomPose1("hmom eyes angry1", "hmom mouth angry1")
-image hmom angry1 close = HmomPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "hmom mouth angry1")
-
-image hmom bitter1 = HmomPose1("hmom eyes bitter1", "hmom mouth bitter1")
-image hmom bitter1 close = HmomPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "hmom mouth bitter1")
-
-image hmom scared1 = HmomPose1("hmom eyes scared1", "hmom mouth scared1")
-image hmom scared1 close = HmomPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "hmom mouth scared1")
+image hmom surprised1 = HmomPose1("hmom eyes surprised1", "hmom mouth surprised1")
+image hmom surprised1 close = HmomPose1("game_spirits/sprites/Fang/Pose 1/eyes happy close.png", "hmom mouth surprised1")
 
 ###############################
 #
@@ -318,29 +313,21 @@ image cae mouth scared1 = FlapMouth("cae", "game_spirits/sprites/Caelum/Pose 1/m
 #
 ###############################
 
-image hmom eyes neutral1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image hmom eyes neutral1 = blinkeyes("game_spirits/sprites/Fang/Pose 1/eyes neutral open.png", "game_spirits/sprites/Fang/Pose 1/eyes happy close.png")
 
-image hmom eyes happy1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image hmom eyes happy1 = blinkeyes("game_spirits/sprites/Fang/Pose 1/eyes happy open.png", "game_spirits/sprites/Fang/Pose 1/eyes happy close.png")
 
-image hmom eyes sad1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image hmom eyes sad1 = blinkeyes("game_spirits/sprites/Fang/Pose 1/eyes sad open.png", "game_spirits/sprites/Fang/Pose 1/eyes happy close.png")
 
-image hmom eyes angry1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image hmom eyes surprised1 = blinkeyes("game_spirits/sprites/Fang/Pose 1/eyes surprised open.png", "game_spirits/sprites/Fang/Pose 1/eyes happy close.png")
 
-image hmom eyes bitter1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image hmom mouth neutral1 = FlapMouth("hmom", "game_spirits/sprites/Fang/Pose 1/mouth neutral close.png", "game_spirits/sprites/Fang/Pose 1/mouth surprised open.png")
 
-image hmom eyes scared1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image hmom mouth happy1 = FlapMouth("hmom", "game_spirits/sprites/Fang/Pose 1/mouth happy close.png", "game_spirits/sprites/Fang/Pose 1/mouth surprised open.png")
 
-image hmom mouth neutral1 = FlapMouth("hmom", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
+image hmom mouth sad1 = FlapMouth("hmom", "game_spirits/sprites/Fang/Pose 1/mouth sad close.png", "game_spirits/sprites/Fang/Pose 1/mouth surprised open.png")
 
-image hmom mouth happy1 = FlapMouth("hmom", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
-
-image hmom mouth sad1 = FlapMouth("hmom", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
-
-image hmom mouth angry1 = FlapMouth("hmom", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
-
-image hmom mouth bitter1 = FlapMouth("hmom", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
-
-image hmom mouth scared1 = FlapMouth("hmom", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
+image hmom mouth surprised1 = FlapMouth("hmom", "game_spirits/sprites/Fang/Pose 1/mouth surprised open.png", "game_spirits/sprites/Fang/Pose 1/mouth neutral close.png")
 
 ###############################
 #
@@ -584,23 +571,11 @@ label spirits_expressions:
     show hmom sad1 close
     hmom "hmom sad1 close... hmom sad1 close... hmom sad1 close... hmom sad1 close... hmom sad1 close... hmom sad1 close... hmom sad1 close... hmom sad1 close... hmom sad1 close... hmom sad1 close... "
 
-    show hmom angry1
-    hmom "hmom angry1... hmom angry1... hmom angry1... hmom angry1... hmom angry1... hmom angry1... hmom angry1... hmom angry1... hmom angry1... hmom angry1... hmom angry1... hmom angry1... "
+    show hmom surprised1
+    hmom "hmom surprised1... hmom surprised1... hmom surprised1... hmom surprised1... hmom surprised1... hmom surprised1... hmom surprised1... hmom surprised1... hmom surprised1... hmom surprised1... "
 
-    show hmom angry1 close
-    hmom "hmom angry1 close... hmom angry1 close... hmom angry1 close... hmom angry1 close... hmom angry1 close... hmom angry1 close... hmom angry1 close... hmom angry1 close... hmom angry1 close... "
-
-    show hmom bitter1
-    hmom "hmom bitter1... hmom bitter1... hmom bitter1... hmom bitter1... hmom bitter1... hmom bitter1... hmom bitter1... hmom bitter1... hmom bitter1... hmom bitter1... hmom bitter1... hmom bitter1... "
-
-    show hmom bitter1 close
-    hmom "hmom bitter1 close... hmom bitter1 close... hmom bitter1 close... hmom bitter1 close... hmom bitter1 close... hmom bitter1 close... hmom bitter1 close... hmom bitter1 close... hmom bitter1 close... "
-
-    show hmom scared1
-    hmom "hmom scared1... hmom scared1... hmom scared1... hmom scared1... hmom scared1... hmom scared1... hmom scared1... hmom scared1... hmom scared1... hmom scared1... hmom scared1... hmom scared1... "
-
-    show hmom scared1 close
-    hmom "hmom scared1 close... hmom scared1 close... hmom scared1 close... hmom scared1 close... hmom scared1 close... hmom scared1 close... hmom scared1 close... hmom scared1 close... hmom scared1 close... "
+    show hmom surprised1 close
+    hmom "hmom surprised1 close... hmom surprised1 close... hmom surprised1 close... hmom surprised1 close... hmom surprised1 close... hmom surprised1 close... hmom surprised1 close... hmom surprised1 close... "
 
     hide hmom
 
