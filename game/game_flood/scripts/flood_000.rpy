@@ -44,10 +44,10 @@
 #
 ###############################
 
-define oph = Character("Ophelia")
-define oli = Character("Oliver")
-define dai = Character("Daisy")
-define hop = Character("Hope")
+define oph = Character("Ophelia", who_color="#d68385")
+define oli = Character("Oliver", who_color="#aab421")
+define dai = Character("Daisy", who_color="#55b2ad")
+define hop = Character("Hope", who_color="#ca483d")
 define wai = Character("Waitress")
 define grl = Character("Little Girl") #Hope
 define vce = Character("Voice") #Hope's Dad
