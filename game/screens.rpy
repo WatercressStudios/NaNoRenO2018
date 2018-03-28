@@ -142,13 +142,15 @@ screen say(who, what):
             background Image("gui/textbox_bloodstain.png", xalign=0.5, yalign=1.0)
 
         if who is not None:
-
             window:
                 id "namebox"
                 style "namebox"
                 text who id "who"
 
-        text what id "what"
+        text what id "what":
+            if current_story == None:
+                color "#333"
+
 
 
     ## If there's a side image, display it above the text. Do not display on the
@@ -294,7 +296,10 @@ screen quick_menu():
     if quick_menu:
 
         hbox:
-            style_prefix "quick"
+            if current_story == None:
+                style_prefix "prologue_quick"
+            else:
+                style_prefix "quick"
 
             xalign 0.5
             yalign 1.0
@@ -317,12 +322,18 @@ init python:
 
 default quick_menu = True
 
+style prologue_quick_button is default
+style prologue_quick_button_text is button_text
 style quick_button is default
 style quick_button_text is button_text
 
+style prologue_quick_button:
+    properties gui.button_properties("quick_button")
 style quick_button:
     properties gui.button_properties("quick_button")
 
+style prologue_quick_button_text:
+    properties gui.button_text_properties("prologue_quick_button")
 style quick_button_text:
     properties gui.button_text_properties("quick_button")
 
@@ -1418,7 +1429,10 @@ screen confirm(message, yes_action, no_action):
             spacing 45
 
             label _(message):
-                style "confirm_prompt"
+                if current_story == None:
+                    style "prologue_confirm_prompt"
+                else:
+                    style "confirm_prompt"
                 xalign 0.5
 
             hbox:
@@ -1437,6 +1451,9 @@ style confirm_prompt is gui_prompt
 style confirm_prompt_text is gui_prompt_text
 style confirm_button is gui_medium_button
 style confirm_button_text is gui_medium_button_text
+
+style prologue_confirm_prompt_text is gui_prompt_text:
+    color "#333"
 
 style confirm_frame:
     #background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
