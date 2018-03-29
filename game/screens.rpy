@@ -991,11 +991,10 @@ screen preferences():
                     if renpy.variant("pc"):
 
                         vbox:
-                            if main_menu:
-                                style_prefix "altradio"
-                            else:
-                                style_prefix "radio"
-                            label _("Display")
+                            style_prefix "radio"
+                            label _("Display"):
+                                if main_menu:
+                                    text_color gui.alt_accent_color
                             textbutton _("Window") action Preference("display", "window")
                             textbutton _("Fullscreen") action Preference("display", "fullscreen")
 
@@ -1007,11 +1006,10 @@ screen preferences():
 #                         textbutton _("Right") action Preference("rollback side", "right")
 
                     vbox:
-                        if main_menu:
-                            style_prefix "altcheck"
-                        else:
-                            style_prefix "check"
-                        label _("Skip")
+                        style_prefix "check"
+                        label _("Skip"):
+                                if main_menu:
+                                    text_color gui.alt_accent_color
                         textbutton _("Unseen Text") action Preference("skip", "toggle")
                         textbutton _("After Choices") action Preference("after choices", "toggle")
                         textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
@@ -1028,19 +1026,20 @@ screen preferences():
                 xsize 630
                 hbox:
                     xalign 0.5
-                    if main_menu:
-                        style_prefix "altslider"
-                    else:
-                        style_prefix "slider"
+                    style_prefix "slider"
                     box_wrap True
 
                     vbox:
 
-                        label _("Text Speed")
+                        label _("Text Speed"):
+                            if main_menu:
+                                text_color gui.alt_accent_color
 
                         bar value Preference("text speed")
 
-                        label _("Auto-Forward Time")
+                        label _("Auto-Forward Time"):
+                            if main_menu:
+                                text_color gui.alt_accent_color
 
                         bar value Preference("auto-forward time")
 
@@ -1054,14 +1053,18 @@ screen preferences():
                                 xalign 0.3
 
                         if config.has_music:
-                            label _("Music Volume")
+                            label _("Music Volume"):
+                                if main_menu:
+                                    text_color gui.alt_accent_color
 
                             hbox:
                                 bar value Preference("music volume")
 
                         if config.has_sound:
 
-                            label _("Sound Volume")
+                            label _("Sound Volume"):
+                                if main_menu:
+                                    text_color gui.alt_accent_color
 
                             hbox:
                                 bar value Preference("sound volume")
@@ -1071,7 +1074,9 @@ screen preferences():
 
 
                         if config.has_voice:
-                            label _("Voice Volume")
+                            label _("Voice Volume"):
+                                if main_menu:
+                                    text_color gui.alt_accent_color
 
                             hbox:
                                 bar value Preference("voice volume")
@@ -1089,19 +1094,11 @@ style radio_button is gui_button
 style radio_button_text is gui_button_text
 style radio_vbox is pref_vbox
 
-style altradio_label is radio_label
-style altradio_label_text:
-    color gui.alt_accent_color
-
 style check_label is pref_label
 style check_label_text is pref_label_text
 style check_button is gui_button
 style check_button_text is gui_button_text
 style check_vbox is pref_vbox
-
-style altcheck_label is check_label
-style altcheck_label_text:
-    color gui.alt_accent_color
 
 style slider_label is pref_label
 style slider_label_text is pref_label_text
@@ -1109,10 +1106,6 @@ style slider_slider is gui_slider
 style slider_button is gui_button
 style slider_button_text is gui_button_text
 style slider_pref_vbox is pref_vbox
-
-style altslider_label is slider_label
-style altslider_label_text:
-    color gui.alt_accent_color
 
 style mute_all_button is check_button
 style mute_all_button_text is check_button_text
