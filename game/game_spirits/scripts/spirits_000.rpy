@@ -52,8 +52,7 @@
 # happy1
 # sad1
 # angry1
-# bitter1
-# scared1
+# surprised1
 
 
 ### scene background ###
@@ -247,25 +246,17 @@ image hmom surprised1 close = HmomPose1("game_spirits/sprites/Fang/Pose 1/eyes s
 ###############################
 
 init python:
-    GenPose1 = BaseCSprite("gen", "game_flood/sprites/Ophelia/Pose 1/base.png", (414, 1080))
+    GenPose1 = BaseCSprite("gen", "game_spirits/sprites/Gene/Pose 1/base.png", (608, 1080))
 
-image gen neutral1 = GenPose1("gen eyes neutral1", "gen mouth neutral1")
-image gen neutral1 close = GenPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "gen mouth neutral1")
+image gen neutral1 = GenPose1("game_spirits/sprites/Gene/Pose 1/eyes neutral.png", "gen mouth neutral1")
 
-image gen happy1 = GenPose1("gen eyes happy1", "gen mouth happy1")
-image gen happy1 close = GenPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "gen mouth happy1")
+image gen happy1 = GenPose1("game_spirits/sprites/Gene/Pose 1/eyes neutral.png", "gen mouth happy1")
 
-image gen sad1 = GenPose1("gen eyes sad1", "gen mouth sad1")
-image gen sad1 close = GenPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "gen mouth sad1")
+image gen sad1 = GenPose1("game_spirits/sprites/Gene/Pose 1/eyes sad.png", "gen mouth sad1")
 
-image gen angry1 = GenPose1("gen eyes angry1", "gen mouth angry1")
-image gen angry1 close = GenPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "gen mouth angry1")
+image gen angry1 = GenPose1("game_spirits/sprites/Gene/Pose 1/eyes angry.png", "gen mouth angry1")
 
-image gen bitter1 = GenPose1("gen eyes bitter1", "gen mouth bitter1")
-image gen bitter1 = GenPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "gen mouth bitter1")
-
-image gen scared1 = GenPose1("gen eyes scared1", "gen mouth scared1")
-image gen scared1 close = GenPose1("game_flood/sprites/Ophelia/Pose 1/eyes normal close.png", "gen mouth scared1")
+image gen surprised1 = GenPose1("game_spirits/sprites/Gene/Pose 1/eyes surprised.png", "gen mouth surprised1")
 
 ###############################
 #
@@ -347,29 +338,15 @@ image hmom mouth surprised1 = FlapMouth("hmom", "game_spirits/sprites/Fang/Pose 
 #
 ###############################
 
-image gen eyes neutral1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image gen mouth neutral1 = FlapMouth("gen", "game_spirits/sprites/Gene/Pose 1/mouth neutral close.png", "game_spirits/sprites/Gene/Pose 1/mouth surprised open.png")
 
-image gen eyes happy1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image gen mouth happy1 = FlapMouth("gen", "game_spirits/sprites/Gene/Pose 1/mouth happy close.png", "game_spirits/sprites/Gene/Pose 1/mouth surprised open.png")
 
-image gen eyes sad1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image gen mouth sad1 = FlapMouth("gen", "game_spirits/sprites/Gene/Pose 1/mouth sad close.png", "game_spirits/sprites/Gene/Pose 1/mouth angry open.png")
 
-image gen eyes angry1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
+image gen mouth angry1 = FlapMouth("gen", "game_spirits/sprites/Gene/Pose 1/mouth angry open.png", "game_spirits/sprites/Gene/Pose 1/mouth neutral close.png")
 
-image gen eyes bitter1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
-
-image gen eyes scared1 = blinkeyes("game_flood/sprites/Ophelia/Pose 1/eyes normal open.png", "game_flood/sprites/Ophelia/Pose 1/eyes normal close.png")
-
-image gen mouth neutral1 = FlapMouth("gen", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
-
-image gen mouth happy1 = FlapMouth("gen", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
-
-image gen mouth sad1 = FlapMouth("gen", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
-
-image gen mouth angry1 = FlapMouth("gen", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
-
-image gen mouth bitter1 = FlapMouth("gen", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
-
-image gen mouth scared1 = FlapMouth("gen", "game_flood/sprites/Ophelia/Pose 1/mouth normal open.png", "game_flood/sprites/Ophelia/Pose 1/mouth normal close.png")
+image gen mouth surprised1 = FlapMouth("gen", "game_spirits/sprites/Gene/Pose 1/mouth surprised open.png", "game_spirits/sprites/Gene/Pose 1/mouth neutral close.png")
 
 ###############################
 #
@@ -594,38 +571,17 @@ label spirits_expressions:
     show gen neutral1
     gen "gen neutral1... gen neutral1... gen neutral1... gen neutral1... gen neutral1... gen neutral1... gen neutral1... gen neutral1... gen neutral1... gen neutral1... gen neutral1... gen neutral1... "
 
-    show gen neutral1 close
-    gen "gen neutral1 close... gen neutral1 close... gen neutral1 close... gen neutral1 close... gen neutral1 close... gen neutral1 close... gen neutral1 close... gen neutral1 close... gen neutral1 close..."
-
     show gen happy1
     gen "gen happy1... gen happy1... gen happy1... gen happy1... gen happy1... gen happy1... gen happy1... gen happy1... gen happy1... gen happy1... gen happy1... gen happy1... gen happy1... "
-
-    show gen happy1 close
-    gen "gen happy1 close... gen happy1 close... gen happy1 close... gen happy1 close... gen happy1 close... gen happy1 close... gen happy1 close... gen happy1 close... gen happy1 close... gen happy1 close... "
 
     show gen sad1
     gen "gen sad1... gen sad1... gen sad1... gen sad1... gen sad1... gen sad1... gen sad1... gen sad1... gen sad1... gen sad1... gen sad1... gen sad1... gen sad1... gen sad1... gen sad1... gen sad1... "
 
-    show gen sad1 close
-    gen "gen sad1 close... gen sad1 close... gen sad1 close... gen sad1 close... gen sad1 close... gen sad1 close... gen sad1 close... gen sad1 close... gen sad1 close... gen sad1 close... gen sad1 close... "
-
     show gen angry1
     gen "gen angry1... gen angry1... gen angry1... gen angry1... gen angry1... gen angry1... gen angry1... gen angry1... gen angry1... gen angry1... gen angry1... gen angry1... gen angry1... gen angry1... "
 
-    show gen angry1 close
-    gen "gen angry1 close... gen angry1 close... gen angry1 close... gen angry1 close... gen angry1 close... gen angry1 close... gen angry1 close... gen angry1 close... gen angry1 close... gen angry1 close... "
-
-    show gen bitter1
-    gen "gen bitter1... gen bitter1... gen bitter1... gen bitter1... gen bitter1... gen bitter1... gen bitter1... gen bitter1... gen bitter1... gen bitter1... gen bitter1... gen bitter1... gen bitter1... "
-
-    show gen bitter1 close
-    gen "gen bitter1 close... gen bitter1 close... gen bitter1 close... gen bitter1 close... gen bitter1 close... gen bitter1 close... gen bitter1 close... gen bitter1 close... gen bitter1 close... "
-
-    show gen scared1
-    gen "gen scared1... gen scared1... gen scared1... gen scared1... gen scared1... gen scared1... gen scared1... gen scared1... gen scared1... gen scared1... gen scared1... gen scared1... gen scared1... "
-
-    show gen scared1 close
-    gen "gen scared1 close... gen scared1 close... gen scared1 close... gen scared1 close... gen scared1 close... gen scared1 close... gen scared1 close... gen scared1 close... gen scared1 close... "
+    show gen surprised1
+    gen "gen surprised1... gen surprised1... gen surprised1... gen surprised1... gen surprised1... gen surprised1... gen surprised1... gen surprised1... gen surprised1... gen surprised1... gen surprised1... "
 
     hide gen
 
