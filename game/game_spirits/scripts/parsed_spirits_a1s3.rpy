@@ -11,14 +11,14 @@ label spirits_a1s3:
 
     "Everything looks so fragile… Would they charge me if I broke something?"
 
-    show alx happy1 with dissolve   
+    show alx happy1 with dissolve
 
     "There’s only seven other kids living here? Well, including Caelum. Oh thank god, he saved a seat for me!"
 
     show alx:
         ease 1.0 align (0.5,1.0)
     pause 1.0
-    
+
     show cae happy1 close at centerright with dissolve
 
     "I head over and sit down beside him; he smiles warmly at me."
@@ -35,7 +35,7 @@ label spirits_a1s3:
 
     #show alx happy
 
-    show alx happy1 close with dissolve   
+    show alx happy1 close with dissolve
     voice "C-4-2.mp3" #Alex (Bonnie Mitchel)
     alx "Thanks."
 
@@ -47,7 +47,7 @@ label spirits_a1s3:
     voice "C-4-3.mp3" #Caelum (Daniel Acosta)
     cae "So...you transferred two weeks into the school year?"
 
-    show alx happy1 with dissolve   
+    show alx happy1 with dissolve
     "I look over at Caelum. It’s an honest question, and he’s clearly trying to make conversation…"
 
     "In short, I appreciate it."
@@ -61,7 +61,7 @@ label spirits_a1s3:
     voice "C-4-5.mp3" #Caelum (Daniel Acosta)
     cae "Oh yeah, this place is ridiculous - but it’s better than home. For me, anyways."
 
-    show alx neutral1 with dissolve   
+    show alx neutral1 with dissolve
     #show Alex neutral
 
     voice "C-4-6.mp3" #Alex (Bonnie Mitchel)
@@ -75,7 +75,7 @@ label spirits_a1s3:
     voice "C-4-8.mp3" #Caelum (Daniel Acosta)
     cae "What about you?"
 
-    show alx bitter1 with dissolve   
+    show alx bitter1 with dissolve
     #show Alex tense/bitter
 
     voice "C-4-9.mp3" #Alex (Bonnie Mitchel)
@@ -100,7 +100,7 @@ label spirits_a1s3:
     voice "C-4-13.mp3" #Caelum (Daniel Acosta)
     cae "Grandmother, I know."
 
-    show alx happy1 with dissolve   
+    show alx happy1 with dissolve
     #show Alex happy/surprised
 
     voice "C-4-14.mp3" #Caelum (Daniel Acosta)
@@ -117,7 +117,7 @@ label spirits_a1s3:
 
     "That actually sounds pretty cool."
 
-    show alx happy1 close with dissolve   
+    show alx happy1 close with dissolve
     voice "C-4-17.mp3" #Alex (Bonnie Mitchel)
     alx "Of course I do! Is there a hive on campus?"
 
@@ -133,7 +133,7 @@ label spirits_a1s3:
 
     "There’s no way there’s any of {i}them{/i} here, right?"
 
-    show alx neutral1 with dissolve   
+    show alx neutral1 with dissolve
     #show Alex nervous/shy/neutral
 
     voice "C-4-19.mp3" #Alex (Bonnie Mitchel)
@@ -149,6 +149,9 @@ label spirits_a1s3:
 
     show alx surprised1
     show cae surprised1
+
+    pause 3.0
+
     show hmom surprised1 at left with easeinleft
 
     #show Alex shocked/surprised
@@ -159,8 +162,8 @@ label spirits_a1s3:
 
     #play music stranger things
 
-    "No. Please, not here!" 
-    
+    "No. Please, not here!"
+
     play music bgmspirits_sthings fadeout 0.5
 
     voice "C-4-21.mp3" #Caelum (Daniel Acosta)
