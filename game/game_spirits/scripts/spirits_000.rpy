@@ -118,6 +118,13 @@ init python:
     define_images("game_spirits/cgs", 2, False, ["spirits"])
     define_images("game_spirits/objects", 2, False, ["spirits"])
 
+define bgmspirits_cae = "game_spirits/music/Theme of Caelum.ogg"
+define bgmspirits_wra = "game_spirits/music/Theme of Cornelius.ogg"
+define bgmspirits_gen = "game_spirits/music/Theme of Genevieve.ogg"
+define bgmspirits_relax = "game_spirits/music/Relaxation (School).ogg"
+define bgmspirits_sthings = "game_spirits/music/Stranger Things.ogg"
+define bgmspirits_main = "game_spirits/music/Artemis Hall.ogg"
+
 ###############################
 #
 # ALX POSE 1 SPRITES
@@ -161,6 +168,11 @@ image alx surprised1 = AlxPose1("alx eyes neutral1", "alx mouth scared1")
 image alx surprised1 close = AlxPose1("game_spirits/sprites/Alex/Pose 1/eyes neutral close.png", "alx mouth scared1")
 image alx surprised1 blush = AlxPose1("alx eyes neutral1", "alx mouth scared1", "game_spirits/sprites/Alex/Pose 1/blush.png")
 image alx surprised1 close blush = AlxPose1("game_spirits/sprites/Alex/Pose 1/eyes neutral close.png", "alx mouth scared1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+
+image alx sheepish1 = AlxPose1("alx eyes sad1", "alx mouth happy1")
+image alx sheepish1 close = AlxPose1("game_spirits/sprites/Alex/Pose 1/eyes sad close.png", "alx mouth happy1")
+image alx sheepish1 blush = AlxPose1("alx eyes sad1", "alx mouth happy1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+image alx sheepish1 close blush = AlxPose1("game_spirits/sprites/Alex/Pose 1/eyes sad close.png", "alx mouth happy1", "game_spirits/sprites/Alex/Pose 1/blush.png")
 
 
 ###############################
