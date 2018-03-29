@@ -361,8 +361,10 @@ label spirits_000:
     menu:
         "From beginning (Act 1)":
             jump spirits_a1s0
-        "Act 2 (caelumAlive causing issues here for this shortcut)":
-            jump spirits_a2s1
+        "Act 1 Scene 7":
+            jump spirits_a1s7
+        "Act 2 Scene 2":
+            jump spirits_a2s2
         "Act 3":
             jump spirits_a3s1
         "Show everyone's expressions":
