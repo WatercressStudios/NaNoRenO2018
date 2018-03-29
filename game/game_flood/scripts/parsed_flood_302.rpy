@@ -4,7 +4,7 @@ label flood_302:
     "I am not old enough for this kind of thing yet, but I shouldn’t let that stop me, should I?"
 
     voice "C-302-1.mp3" #Daisy (Haley C. McCarthy)
-    dsy "You’ll be alright with me."
+    dai "You’ll be alright with me."
 
     "Hah, as if she read my mind."
 
@@ -37,13 +37,13 @@ label flood_302:
     show dai smile close with dissolve:
         align (0.65, 1.0)
     voice "C-302-2.mp3" #Daisy (Haley C. McCarthy)
-    dsy "I don't smoke. Thanks though." 
+    dai "I don't smoke. Thanks though." 
 
     "She catches my eye, seeing the cigarette to my mouth."
 
     show dai neutral
     voice "C-302-3.mp3" #Daisy (Haley C. McCarthy)
-    dsy "That stuff's bad for you, you know…"
+    dai "That stuff's bad for you, you know…"
 
     show oph irritated
     "I feel my face turn red."
@@ -69,7 +69,7 @@ label flood_302:
     "She catches me looking at her and takes the chance to speak up."
 
     voice "C-302-4.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Do you know what is special about everybody here?"
+    dai "Do you know what is special about everybody here?"
 
     #Wolf's part
 
@@ -79,60 +79,60 @@ label flood_302:
 
     show dai smile close
     voice "C-302-6.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Well, yes, but that's not everything."
+    dai "Well, yes, but that's not everything."
 
     show oph neutral
     show dai smile
     voice "C-302-7.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Look around you. You see all these people?"
+    dai "Look around you. You see all these people?"
 
     show dai distant neutral
     "She waves her hand in the direction of the room, emphasizing her point."
 
     voice "C-302-8.mp3" #Daisy (Haley C. McCarthy)
-    dsy "They, at first glance, have nothing in common. They all come from seemingly random places, with unique histories."
+    dai "They, at first glance, have nothing in common. They all come from seemingly random places, with unique histories."
 
     voice "C-302-9.mp3" #Daisy (Haley C. McCarthy)
-    dsy "This is true, and yet, they all gather here… in this one spot."
+    dai "This is true, and yet, they all gather here… in this one spot."
 
     show dai neutral
     voice "C-302-10.mp3" #Daisy (Haley C. McCarthy)
-    dsy "It doesn't matter why they ended up here, it's only important that they are here {i}now{/i}."
+    dai "It doesn't matter why they ended up here, it's only important that they are here {i}now{/i}."
 
     show oph surprised
     voice "C-302-11.mp3" #Daisy (Haley C. McCarthy)
-    dsy "They are here to find support, and to support each other. They surround themselves with people who don't look for their backstories."
+    dai "They are here to find support, and to support each other. They surround themselves with people who don't look for their backstories."
 
     show dai smile
     voice "C-302-12.mp3" #Daisy (Haley C. McCarthy)
-    dsy "They want people who are interested in who they are {i}now{/i}."
+    dai "They want people who are interested in who they are {i}now{/i}."
 
     show dai smile 
     voice "C-302-13.mp3" #Daisy (Haley C. McCarthy)
-    dsy "It doesn't matter where you come from. Remember that, Ophelia. I won't pretend to understand just what your situation is, or who you are, but it's apparent that you're at a… crossroads, so to speak."
+    dai "It doesn't matter where you come from. Remember that, Ophelia. I won't pretend to understand just what your situation is, or who you are, but it's apparent that you're at a… crossroads, so to speak."
 
     show dai neutral
     voice "C-302-14.mp3" #Daisy (Haley C. McCarthy)
-    dsy "You're trying to find yourself. You don't need to do it alone, and you don't need to do it based on what society expects of you."
+    dai "You're trying to find yourself. You don't need to do it alone, and you don't need to do it based on what society expects of you."
 
     voice "C-302-15.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Just be you, and don't be afraid to look at your own flaws, and work on them. Don't be afraid to love yourself, either."
+    dai "Just be you, and don't be afraid to look at your own flaws, and work on them. Don't be afraid to love yourself, either."
 
     show dai distant neutral
     voice "C-302-16.mp3" #Daisy (Haley C. McCarthy)
-    dsy "It's just like this little moth friend of yours."
+    dai "It's just like this little moth friend of yours."
 
     voice "C-302-17.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Do you think he cares about any of that bullshit? No. He's here, just along for the ride."
+    dai "Do you think he cares about any of that bullshit? No. He's here, just along for the ride."
 
     show dai smile
     "Daisy stretches, reaching her legs out onto an adjacent chair, leaning back."
 
     voice "C-302-18.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Anyways, that's enough soapboxing for tonight."
+    dai "Anyways, that's enough soapboxing for tonight."
 
     voice "C-302-19.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Just enjoy yourself a little, okay?"
+    dai "Just enjoy yourself a little, okay?"
 
     show oph smile
     voice "C-302-20.mp3" #Ophelia (Cospcaptor)
@@ -174,13 +174,13 @@ label flood_302:
 
     show dai smile with dissolve
     voice "C-302-21.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Hey, Ophelia, I've gotta head home. I'm taking the bus, you coming with?"
+    dai "Hey, Ophelia, I've gotta head home. I'm taking the bus, you coming with?"
 
     voice "C-302-22.mp3" #Ophelia (Cospcaptor)
     oph "Not yet. I'll walk with you there, but I'm gonna walk around a bit longer."
 
     voice "C-302-23.mp3" #Daisy (Haley C. McCarthy)
-    dsy "If that's what you want, sounds good to me."
+    dai "If that's what you want, sounds good to me."
 
     "She gathers herself, pushing in the chairs she had been using for her casual visit."
 
@@ -196,7 +196,7 @@ label flood_302:
     show dai smile with dissolve:
         align (0.65, 1.0)
     voice "C-302-24.mp3" #Daisy (Haley C. McCarthy)
-    dsy "This is my ride. I hope you find what you're looking for. Feel free to stop by whenever, I'm sure you'll see me around here somewhere."
+    dai "This is my ride. I hope you find what you're looking for. Feel free to stop by whenever, I'm sure you'll see me around here somewhere."
 
     "I nod to her. I'm sad that our time together was so short, but…"
 
@@ -207,7 +207,7 @@ label flood_302:
 
     show dai confident
     voice "C-302-26.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Oh! And before I leave, I want you to have something."
+    dai "Oh! And before I leave, I want you to have something."
 
     show oph surprised
     voice "C-302-27.mp3" #Ophelia (Cospcaptor)
@@ -217,7 +217,7 @@ label flood_302:
 
     show dai smile close
     voice "C-302-28.mp3" #Daisy (Haley C. McCarthy)
-    dsy "I've always found things like this cute. If we never meet again, at least you'll have this!"
+    dai "I've always found things like this cute. If we never meet again, at least you'll have this!"
 
     show oph smile
     voice "C-302-29.mp3" #Ophelia (Cospcaptor)

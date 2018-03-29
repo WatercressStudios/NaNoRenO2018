@@ -74,7 +74,7 @@ label flood_401:
         align (0.65, 1.0)
     #tone - worried
     voice "C-401-1.mp3" #Oliver (Matt Armstrong)
-    old "Excuse me, miss?"
+    oli "Excuse me, miss?"
 
     show oph surprised
     "I whip back around to face the voice"
@@ -82,7 +82,7 @@ label flood_401:
     #sprite Oliver 1 (serious)
 
     voice "C-401-2.mp3" #Oliver (Matt Armstrong)
-    old "Is everything all right? You look rather troubled."
+    oli "Is everything all right? You look rather troubled."
 
     show oph scared
     voice "C-401-3.mp3" #Ophelia (Cospcaptor)
@@ -94,10 +94,10 @@ label flood_401:
 
     show oli cheerful grin    #sprite Oliver 2 (big smile)
     voice "C-401-5.mp3" #Oliver (Matt Armstrong)
-    old "Oh, in that case I'm probably not helping."
+    oli "Oh, in that case I'm probably not helping."
 
     voice "C-401-6.mp3" #Oliver (Matt Armstrong)
-    old "I'm sorry to have bothered you, young lady."
+    oli "I'm sorry to have bothered you, young lady."
     #remove sprite
 
     hide oli with dissolve
@@ -113,7 +113,8 @@ label flood_401:
 
     "People, feral dogs, falling pianos. Even lightning isn't that far fetched in this crappy weather."
 
-    "At any moment, anything could come around and wipe your existence off the face of the planet. The people I see wandering about all share the same quality that I don't seem to have the slightest clue how to understand..."
+    "At any moment, anything could come around and wipe your existence off the face of the planet."
+    "The people I see wandering about all share the same quality that I don't seem to have the slightest clue how to understand..."
 
     "Peace."
 

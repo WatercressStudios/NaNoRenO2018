@@ -167,7 +167,8 @@ label flood_301:
     "Not at all like the music I had just heard."
 
     voice "C-301-12.mp3" #Daisy (Haley C. McCarthy)
-    per "...the problem with {i}some{/i} pig headed people." 
+    $ dai_name = "Performer"
+    dai "...the problem with {i}some{/i} pig headed people." 
 
     "I can hear her yelling now."
 
@@ -185,7 +186,7 @@ label flood_301:
     "The door slams behind the woman as she steps out onto the sidewalk." 
 
     voice "C-301-15.mp3" #Daisy (Haley C. McCarthy)
-    per "Bastard!" 
+    dai "Bastard!" 
 
     "The closed door doesn't answer."
 
@@ -220,7 +221,7 @@ label flood_301:
 
     show dai smile
     voice "C-301-16.mp3" #Daisy (Haley C. McCarthy)
-    per "It's a little different."
+    dai "It's a little different."
 
     "She's not looking at me, but out into the street. People walk by. They don't seem to notice us. Or if they do, they don't acknowledge us."
 
@@ -230,11 +231,11 @@ label flood_301:
 
     show dai neutral
     voice "C-301-18.mp3" #Daisy (Haley C. McCarthy)
-    per "Experimental, I guess. The song- a new type of piece. You're the first to hear it."
+    dai "Experimental, I guess. The song- a new type of piece. You're the first to hear it."
 
     show dai smile
     voice "C-301-19.mp3" #Daisy (Haley C. McCarthy)
-    per "Thank you."
+    dai "Thank you."
 
     show oph neutral
     "..."
@@ -243,18 +244,18 @@ label flood_301:
     oph "The first?"
 
     voice "C-301-21.mp3" #Daisy (Haley C. McCarthy)
-    per "Of course. See these guys?"
+    dai "Of course. See these guys?"
 
     show dai distant neutral
     "She waves her hand casually across the road in front of us."
 
     show dai distant close
     voice "C-301-22.mp3" #Daisy (Haley C. McCarthy)
-    per "They don't really listen. They hear it, I suppose, but they don't listen."
+    dai "They don't really listen. They hear it, I suppose, but they don't listen."
 
     show dai neutral
     voice "C-301-23.mp3" #Daisy (Haley C. McCarthy)
-    per "But you've been with me this whole time, haven't you?"
+    dai "But you've been with me this whole time, haven't you?"
 
     show oph weirdedout
     voice "C-301-24.mp3" #Ophelia (Cospcaptor)
@@ -262,19 +263,19 @@ label flood_301:
 
     show dai smile
     voice "C-301-25.mp3" #Daisy (Haley C. McCarthy)
-    per "Don't apologize." 
+    dai "Don't apologize." 
 
     show oph neutral
     voice "C-301-26.mp3" #Daisy (Haley C. McCarthy)
-    per "You wouldn't believe how happy that makes me."
+    dai "You wouldn't believe how happy that makes me."
 
     show dai smile close
     voice "C-301-27.mp3" #Daisy (Haley C. McCarthy)
-    per "I've never been one for words. I find that I can tell my stories more effectively through my music."
+    dai "I've never been one for words. I find that I can tell my stories more effectively through my music."
 
     show dai smile 
     voice "C-301-28.mp3" #Daisy (Haley C. McCarthy)
-    per "You stuck around to listen, so, thank you."
+    dai "You stuck around to listen, so, thank you."
 
     voice "C-301-29.mp3" #Ophelia (Cospcaptor)
     oph "I - uh…."
@@ -287,8 +288,9 @@ label flood_301:
 
     "She seems to notice him too, watching as he flew up to a lamp near where we sit."
 
+    $ dai_name = "Daisy"
     voice "C-301-31.mp3" #Daisy (Haley C. McCarthy)
-    per "I'm Daisy, by the way."
+    dai "I'm Daisy, by the way."
 
     "She looks back towards me, smiling warmly." 
 
@@ -296,11 +298,11 @@ label flood_301:
     oph "I'm Ophelia."
 
     voice "C-301-33.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Nice to meet you."
+    dai "Nice to meet you."
 
     show dai neutral
     voice "C-301-34.mp3" #Daisy (Haley C. McCarthy)
-    dsy "So what's your deal anyway? What's a kid like you doing in a place like this?"
+    dai "So what's your deal anyway? What's a kid like you doing in a place like this?"
 
     show oph neutral
     voice "C-301-35.mp3" #Ophelia (Cospcaptor)
@@ -310,11 +312,11 @@ label flood_301:
     "Daisy sighs, looking at me with a smirk."
 
     voice "C-301-36.mp3" #Daisy (Haley C. McCarthy)
-    dsy "It's not wise to let yourself be carried away so easily. Though I can't say I've never been there."
+    dai "It's not wise to let yourself be carried away so easily. Though I can't say I've never been there."
 
     show dai smile
     voice "C-301-37.mp3" #Daisy (Haley C. McCarthy)
-    dsy "That being said, it's quite late. Taking a walk on a cold night? No doubt, you've got something on your mind."
+    dai "That being said, it's quite late. Taking a walk on a cold night? No doubt, you've got something on your mind."
 
     show oph defensive close
     voice "C-301-38.mp3" #Ophelia (Cospcaptor)
@@ -322,7 +324,7 @@ label flood_301:
 
     show dai smile close
     voice "C-301-39.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Well, you heard my story, so it's only fair that I sit and listen to yours."
+    dai "Well, you heard my story, so it's only fair that I sit and listen to yours."
 
     show oph defensive
     voice "C-301-40.mp3" #Ophelia (Cospcaptor)
@@ -334,14 +336,14 @@ label flood_301:
     "Daisy's face swiftly changes from curiosity to abject horror."
 
     voice "C-301-41.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Jesus, something's really got you, huh?"
+    dai "Jesus, something's really got you, huh?"
 
     voice "C-301-42.mp3" #Daisy (Haley C. McCarthy)
-    dsy "I can see it all over you."
+    dai "I can see it all over you."
 
     show dai distant frown
     voice "C-301-43.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Of course nothing is forever, but that's fine."
+    dai "Of course nothing is forever, but that's fine."
 
     voice "C-301-44.mp3" #Ophelia (Cospcaptor)
     oph "I don't know… I thought I could run. I thought I could forget."
@@ -354,7 +356,7 @@ label flood_301:
     "Relief washes over her face, and she visibly switches to an air of understanding."
 
     voice "C-301-46.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Hey, you ever been to an open mic?"
+    dai "Hey, you ever been to an open mic?"
 
     show oph surprised
     voice "C-301-47.mp3" #Ophelia (Cospcaptor)
@@ -362,11 +364,11 @@ label flood_301:
 
     show dai smile
     voice "C-301-48.mp3" #Daisy (Haley C. McCarthy)
-    dsy "It's a place I know of, where you can make a flood of your own, in a way."
+    dai "It's a place I know of, where you can make a flood of your own, in a way."
 
     show dai smile close
     voice "C-301-49.mp3" #Daisy (Haley C. McCarthy)
-    dsy "A place where you can tell your stories freely, without shame or ridicule."
+    dai "A place where you can tell your stories freely, without shame or ridicule."
 
     show oph defensive
     voice "C-301-50.mp3" #Ophelia (Cospcaptor)
@@ -374,7 +376,7 @@ label flood_301:
 
     show dai confident 
     voice "C-301-51.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Come on. We'll check it out together."
+    dai "Come on. We'll check it out together."
 
     show oph scared
     voice "C-301-52.mp3" #Ophelia (Cospcaptor)
@@ -382,11 +384,11 @@ label flood_301:
 
     show dai smile close
     voice "C-301-53.mp3" #Daisy (Haley C. McCarthy)
-    dsy "You don't have to. That's the beauty of it. You can share if you want, and people will be there to listen."
+    dai "You don't have to. That's the beauty of it. You can share if you want, and people will be there to listen."
 
     show dai confident 
     voice "C-301-54.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Or you can keep chasing butterflies."
+    dai "Or you can keep chasing butterflies."
 
     show oph irritated
     voice "C-301-55.mp3" #Ophelia (Cospcaptor)
@@ -394,7 +396,7 @@ label flood_301:
 
     show dai smile close
     voice "C-301-56.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Same thing!"
+    dai "Same thing!"
 
     scene flood club outside
     "And so we went."

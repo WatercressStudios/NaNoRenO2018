@@ -19,7 +19,7 @@ label flood_402:
     show oli cheerful smile with easeinright:
         align (0.65, 1.0)
     voice "C-402-1.mp3" #Oliver (Matt Armstrong)
-    old "We meet once more!"
+    oli "We meet once more!"
 
     show oph scared
     voice "C-402-2.mp3" #Ophelia (Cospcaptor)
@@ -34,7 +34,7 @@ label flood_402:
 
     show oli cheerful smile close
     voice "C-402-4.mp3" #Oliver (Matt Armstrong)
-    old "Me again!"
+    oli "Me again!"
 
     show oph irritated close
     voice "C-402-5.mp3" #Ophelia (Cospcaptor)
@@ -43,7 +43,7 @@ label flood_402:
     show oli cheerful grin close
     #sprite oliver 1
     voice "C-402-6.mp3" #Oliver (Matt Armstrong)
-    old "Sure is. In fact, I'm starting to feel threatened. Should I call the police?"
+    oli "Sure is. In fact, I'm starting to feel threatened. Should I call the police?"
 
     show oph surprised
     voice "C-402-7.mp3" #Ophelia (Cospcaptor)
@@ -51,7 +51,7 @@ label flood_402:
 
     show oli cheerful grin
     voice "C-402-8.mp3" #Oliver (Matt Armstrong)
-    old "Calm down, young'un. This is my spot. What are you thinking, hanging around the city in the middle of the night? Anyone else but me and you really would have something to worry about."
+    oli "Calm down, young'un. This is my spot. What are you thinking, hanging around the city in the middle of the night? Anyone else but me and you really would have something to worry about."
 
     show oph irritated
     voice "C-402-9.mp3" #Ophelia (Cospcaptor)
@@ -59,7 +59,7 @@ label flood_402:
 
     show oli serious 
     voice "C-402-10.mp3" #Oliver (Matt Armstrong)
-    old "Oh, I'm sure you could. Nevertheless, you're trespassing and a lot of bums are territorial. Didn't your parents ever warn you not to explore condemned buildings?"
+    oli "Oh, I'm sure you could. Nevertheless, you're trespassing and a lot of bums are territorial. Didn't your parents ever warn you not to explore condemned buildings?"
 
     show oph close
     voice "C-402-11.mp3" #Ophelia (Cospcaptor)
@@ -71,7 +71,7 @@ label flood_402:
 
     show oli cheerful grin close
     voice "C-402-13.mp3" #Oliver (Matt Armstrong)
-    old "I suppose. But someone has to tend to the flowers."
+    oli "I suppose. But someone has to tend to the flowers."
 
     show oph surprised
     voice "C-402-14.mp3" #Ophelia (Cospcaptor)
@@ -79,16 +79,16 @@ label flood_402:
 
     show oli cheerful grin
     voice "C-402-15.mp3" #Oliver (Matt Armstrong)
-    old "Even bought the dirt they're growing in."
+    oli "Even bought the dirt they're growing in."
 
     show oli cheerful smile close
     #sprite oliver 2
     voice "C-402-16.mp3" #Oliver (Matt Armstrong)
-    old "Guess you're right about me not having anything better to do."
+    oli "Guess you're right about me not having anything better to do."
 
     show oli cheerful smile
     voice "C-402-17.mp3" #Oliver (Matt Armstrong)
-    old "By the way, I don't believe I caught your name?"
+    oli "By the way, I don't believe I caught your name?"
 
     show oph neutral
     voice "C-402-18.mp3" #Ophelia (Cospcaptor)
@@ -97,7 +97,8 @@ label flood_402:
     show oli cheerful grin
     #sprite oliver 1
     voice "C-402-19.mp3" #Oliver (Matt Armstrong)
-    old "Fair enough. I'm Oliver."
+    $ oli_name = "Oliver"
+    oli "Fair enough. I'm Oliver."
 
     show oli cheerful grin close
     voice "C-402-20.mp3" #Oliver (Matt Armstrong)

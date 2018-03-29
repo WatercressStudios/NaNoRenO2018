@@ -73,7 +73,8 @@ label flood_201:
     show hop hurt embarrassed closed with easeinright:
         align (1.0, 1.0)
     voice "C-201-21.mp3" #Hope (Dani Chambers)
-    grl "I-I'm fine!"
+    $ hop_name = "Little Girl"
+    hop "I-I'm fine!"
 
     show oph neutral
     "She's not fine."
@@ -83,7 +84,7 @@ label flood_201:
 
     show hop angry
     voice "C-201-23.mp3" #Hope (Dani Chambers)
-    grl "Says you? My parents told me not to talk to hobos like you! Get your own spot!"
+    hop "Says you? My parents told me not to talk to hobos like you! Get your own spot!"
 
     show hop angry clenched
     show oph tiredsmile
@@ -105,6 +106,7 @@ label flood_201:
     show hop neutral with easeinright:
         align (0.8, 1.0)
     show oph smile
+    $ hop_name = "Hope"
     voice "C-201-26.mp3" #Hope (Dani Chambers)
     hop "I'm Hope, and I've been doing what you're doing. Just… walking. I don't know where to go, so I came to the park my family comes to."
 
