@@ -1,15 +1,27 @@
 label spirits_a1s3:
+
+    scene spirits dorm dining room with Dissolve(1.0)
+    play music bgmspirits_relax fadeout 0.5
     #scene bg dining room
 
     #play music house
 
+    show alx surprised1 at centerleft with easeinleft
     #show alex nervous/shy
 
     "Wow, this place is really fancy! I know tuition’s ridiculous, but how the hell did they afford all this?"
 
     "Everything looks so fragile… Would they charge me if I broke something?"
 
+    show alx happy1 with dissolve   
+
     "There’s only seven other kids living here? Well, including Caelum. Oh thank god, he saved a seat for me!"
+
+    show alx:
+        ease 1.0 align (0.5,1.0)
+    pause 1.0
+    
+    show cae happy1 close at centerright with dissolve
 
     "I head over and sit down beside him; he smiles warmly at me."
 

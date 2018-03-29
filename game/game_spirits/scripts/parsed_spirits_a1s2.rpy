@@ -400,6 +400,7 @@ label spirits_a1s2:
 
     "I continue unpacking. I have way too many clothes; I really ought to give some away." 
 
+    stop music fadeout 5.0
     scene black with dissolve
     "The time quickly passes, and soon it’s six o’clock. I head downstairs for dinner."
 
