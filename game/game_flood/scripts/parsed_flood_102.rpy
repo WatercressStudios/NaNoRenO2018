@@ -1,9 +1,12 @@
 label flood_102:
     scene flood diner with dissolve
 
+    stop ambience
+    play sound "game_flood/sfx/splash.ogg"
     "{b}Splash!{/b}"
     #music jazz??? something for a run down coffee shop idk
     
+    play music "game_flood/music/cafe.mp3" noloop fadein 1.0
     show oph scared close
 
     voice "C-102-1.mp3" #Ophelia (Cospcaptor)
@@ -142,7 +145,7 @@ label flood_102:
     hide oph
 
     scene flood cafe outside with dissolve
-    #ambient crickets/traffic/wind
+    play ambience "game_flood/ambience/rain.ogg"
 
     show oph neutral
 
@@ -153,9 +156,9 @@ label flood_102:
     "I can't last like this, I need a game plan."
     "Seeking out a vending machine, I examine their selection."
     "Espresso shots, energy drinks, colas, some high-sugar fruit drinks."
-    #sfx loose change
+
     "Fiddling about with my wallet, I put enough loose change in to buy one of each."
-    #sfx vending machine
+    play sound "game_flood/sfx/vending.ogg"
     "And one by one, the machine dispenses each of them. Thankfully, my backpack has room to spare."
     "I don't want to go back to sleep. I can't. Because I can't shake the feeling that, if I do, something is going to go terribly wrong."
     "I look skywards, and see the hazy overcast of the clouds above. Mocking me with their presence." 
@@ -171,10 +174,13 @@ label flood_102:
 
     "My footsteps make a light splashing sound, as the ground is still wet from the last rain we had. A nice reflection comes off of it, illuminating the world around me with the light from the nearby lamps."
 
+    stop ambience
+    play sound "game_flood/sfx/soda.ogg"
     "I pop open my first can, drinking the acidic contents, shaking myself awake. I haven't slept well in a while, and I know that I mustn't sleep now."
 
     "I finish my sip, looking at the outside of the can, for the lack of anything better to do."
 
+    stop music fadeout 1.0
     show oph surprised
     voice "C-201-1.mp3" #Ophelia (Cospcaptor)
     oph "Ack!"
@@ -185,6 +191,8 @@ label flood_102:
     voice "C-201-2.mp3" #Ophelia (Cospcaptor)
     oph "A… a moth?"
 
+    play music "game_flood/music/moth.mp3" noloop fadein 1.0
+    
     "It didn't fly away with my sudden movement. Something must be wrong with it, right? In its eyes, I should be a predator."
 
     "A large, strange beast known to crush its fellow creatures."
@@ -216,6 +224,7 @@ label flood_102:
 
     "Walking over to a nearby light, I hold my hand up towards the bulbs."
 
+    play ambience "game_flood/ambience.moth.ogg"
     "Launching, it hovers around the light, bouncing between the three orbs. It doesn't quite touch them, though, as I'd expect a normal moth to."
 
     "Eventually, it leaves this one, flying towards the next."
@@ -298,11 +307,18 @@ label flood_102:
 
     "He and I are going to figure this mess out, together. I just don't quite know how, yet. But we'll get there, right?"
 
+    stop ambience 
     scene flood alley with dissolve
-    "It begins to jump up and down, getting restless again. That's my signal."
+    stop music fadeout 1.0
+    "It begins to jump up and down, getting restless again."
+    
+    play music "game_flood/music/city.mp3" noloop fadein 1.0
+    
+    "That's my signal. I take a look at my map."
     jump map
     
 label map:
+    play sound "game_flood/sfx/map.ogg"
     #Player gets the map
 
     show oph neutral with dissolve

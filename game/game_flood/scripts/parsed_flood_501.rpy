@@ -2,23 +2,28 @@ label hopcheck:
     if hope:
         jump daicheck
     else:
+        play music "game_flood/music/city.mp3" noloop fadein 1.0
         jump map
         
 label daicheck:
     if daisy:
         jump olicheck
     else:
+        play music "game_flood/music/city.mp3" noloop fadein 1.0
         jump map
         
 label olicheck:
     if oliver:
         jump flood_501
     else: 
+        play music "game_flood/music/city.mp3" noloop fadein 1.0
         jump map
 
 label flood_501:
     
     scene flood riverside with dissolve
+    play ambience "game_flood/ambience/river.ogg"
+    play music "game_flood/music/climax.mp3" noloop fadein 1.0
     "..."
     "... ..."
     "God, what time is it? How long have I been out here for?"
@@ -45,6 +50,7 @@ label flood_501:
     oph "C'mon, pull it together..."
     #sfx slap
     show oph irritated
+    
     "I slap my cheeks to try and jolt me awake. The effect is sharp, but fleeting, and I soon feel fatigued once more." 
     "I'm not passing out here. I haven't had much of any control over anything that's happened tonight..."
     "I can't control that the Flood will come, eventually, but I can at least determine it on my own terms. And I'm not passing out in the middle of the sidewalk."
@@ -56,31 +62,34 @@ label flood_501:
     "Taking a sharp breath, I lurch forward, step by step. The cold winds prop me up, keep me going."
     "Ironically, they keep me pulled into the real world."
     scene flood neighborhood with dissolve
+    stop ambience fadeout 1.0
     "The houses along the sides of the street become more and more familiar." 
     "Familiar, identically-constructed houses. I was only looking for one, though."
     voice "C-501-8.mp3" #Ophelia (Cospcaptor)
     show oph surprised with dissolve
     oph "Home."
     "Spotting the familiar, two-storey house, my pace quickened a bit, stumbling further along the sidewalk, up the driveway."
-    #sfx key jingle
+    play sound "game_flood/sfx/keys.ogg"
     "Fumbling with my keys, they nearly slip from my unresponsive fingers..."
-    #sfx door unlock
+    play sound "game_flood/sfx/unlock.ogg"
     "...But with some struggle, I wrest the door open. From there, a straight ascent upwards, round the corner, at the end of the hall, and..."
     
     scene flood bedroom with dissolve
     "...My room. No time to gawk at the familiar sights, dimly lit by the faint light of the coming dawn."
     "Trudging forward one, two more steps, I take no further care but to careen forward..."
-    #sfx bedsprings creak
+    play sound "game_flood/sfx/bed.ogg"
     "...And hit the bed, face first, fully clothed."
     #scene black with dissolve
     "Come what may, I'm tired of being afraid. I'm tired of bending over to this Flood."
     "...I'm so... so tired..."
     "When my head hit the pillow, I was already out like a light."
     scene black with dissolve
+    stop music fadeout 1.0
     "..."
     "... ..." 
     "... ... ..."
     "Today is my 18th birthday."
+    play music "game_flood/music/ending.mp3" noloop fadein 1.0
     "It's been... surprisingly uneventful. After my late-night adventures, I ended up sleeping until four in the afternoon."
     "Oversleeping like that's supposed to be bad for you, but... I feel better rested than I've been in a long time."
     "Mom and Dad're gonna throw me a party later. It's been pushed into the back of my mind."
@@ -89,7 +98,8 @@ label flood_501:
 
     "After a horrible sleep, I'd just... sit in bed, and vegetate for a while. Today, I just wanted to get out. See some things."
     "I guess my mind plays some tricks on me after all. How ironic."
-    show flood sunrise
+    show flood sunrise with dissolve
+    play ambience "game_flood/ambience/tide.ogg" fadein 1.0
     "I dream of the Flood again, but it's... different. Serene, peaceful. The gentle, lapping waves inspire a sense of zen, not dread."
     "Seeing this gets me thinking. The beach is nice this time of year. It'll be a bit before they get really crowded."
     "My eyes lowered on the coming and going tides. The way the hypnotic waves creep closer to shore..."
@@ -109,7 +119,7 @@ label flood_501:
     "Hope seemed lonely too... I hope she's doing better now."
     "I'll just enjoy the view a little bit longer. I can take it easy."
 
-    show flood sunrise zoomout
+    show flood sunrise zoomout with dissolve
 
     "It's weird. Seeing the sunset like this used to inspire so much dread."
     "I guess it still does. For so long, I'd have a feeling that the worst was yet to come."

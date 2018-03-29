@@ -2,6 +2,8 @@ label flood_101:
     #ambient: dripping in an echo
 
     scene black with dissolve
+    
+    play music "game_flood/music/flood.mp3" noloop fadein 1.0
 
     "I'm here again; a familiar sight, a familiar setting, a familiar sound..."
 
@@ -145,10 +147,10 @@ label flood_101:
     "...Screw it. I have to try. Taking one more gulp of air, I dive back down looking for a heavy object to smash with."
     "My eyes land on an antique lamp with a brass base. This'll be perfect!"
     "Reaching for it, I ready it like a spear, and thrust, bracing against the resistance."
-    #sfx window shatter
+    play sound "game_flood/sfx/glass.ogg"
     "{b}CRASH!{/b}"
     "Got it!"
-    #sfx rushing water (rapids?)
+    play ambience "game_flood/ambience/floodrush.ogg" fadeout 2.0 fadein 2.0
     "...? I feel a pulling sensation."
     "...Oh shit. The water's draining out of the window!"
     "I try to swim away with broad strokes, but with unpracticed motion, I can feel myself moving towards the window."
@@ -159,6 +161,7 @@ label flood_101:
     oph "!"
     "My grip finally gives, and I slip out of my room, through the window."
     scene black with dissolve
+    stop ambience fadeout 3.0
     "I cover my eyes and assume the fetal position as I'm assaulted on all sides by the pounding currents."
     "It feels like I'm stuck in a washing machine. It's so dizzying, and disorienting, and I'm losing all sense of direction."
     "I try to take control of my dream again. This is too much."
@@ -173,6 +176,7 @@ label flood_101:
 
     scene flood flood with dissolve
 
+    play ambience "game_flood/ambience/river.ogg"
     voice "C-101-7.mp3" #Ophelia (Cospcaptor)
     oph "A-ah!?"
     "Gripping the sides of my bed, I realize I'm surrounded by crashing waves."
@@ -184,6 +188,7 @@ label flood_101:
     "Grimacing, I turn my head to see."
     "It's a towering wave. It looked like it could wash out an entire coastline, but it only had one target."
     "I know exactly what's coming. Still, knowing never quite prepares you." 
+    stop music fadeout 1.0
     "I close my eyes tight, bracing for impact."
 
     jump flood_102

@@ -1,6 +1,7 @@
 label flood_302:
     #Scene transition
 
+    stop music fadeout 1.0
     "I am not old enough for this kind of thing yet, but I shouldn’t let that stop me, should I?"
 
     voice "C-302-1.mp3" #Daisy (Haley C. McCarthy)
@@ -10,6 +11,7 @@ label flood_302:
 
     "Her words don’t sound like they have any malicious intent so I decide to trust her and enter the club."
 
+    play music "game_flood/music/daisy.mp3" noloop fadein 1.0
     scene flood club with dissolve
     "Almost as soon as we enter, I am introduced to a new world - an unfamiliar yet surprisingly welcome one."
 
@@ -222,7 +224,8 @@ label flood_302:
     show oph smile
     voice "C-302-29.mp3" #Ophelia (Cospcaptor)
     oph "Oh, well, thank you. It is pretty cute."
-
+    
+    stop music fadeout 1.0
     hide dai with easeoutright
     "With that, she walks to the bus."
 

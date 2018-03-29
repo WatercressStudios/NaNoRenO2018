@@ -1,6 +1,7 @@
 label flood_401:
     scene flood bridge with dissolve
 
+    play music "game_flood/music/riverside.mp3" noloop fadein 1.0
     "Pacing myself, I make my way near the riverside. It's been an age since I last strolled through, but it's quiet here and right now I need time to think."
 
     "Together with the soft patter of raindrops, the river drowns out the noise pollution of the city."
@@ -33,7 +34,7 @@ label flood_401:
 
     "Damn it all."
 
-    #sfx footsteps
+    play ambience "game_flood/ambience/footsteps.ogg"
 
     show oph surprised
     "...footsteps?"
@@ -70,6 +71,7 @@ label flood_401:
     show oph irritated close
     "Silly Ophelia and your ridiculous daydreams."
 
+    stop ambience fadeout 1.0
     show oli serious with dissolve:
         align (0.65, 1.0)
     #tone - worried
@@ -148,10 +150,13 @@ label flood_401:
 
     "...Right, let's get this show on the road."
 
+    stop music fadeout 1.0
     "..."
 
+    play sound "game_flood/sfx/chainlink.ogg"
     "Squeezing through the fence is a piece of cake. Next - the door."
 
     "...Oh, it's not locked. Well, don't mind if I do~"
 
+    play sound "game_flood/sfx/operadoor.ogg"
     jump flood_402

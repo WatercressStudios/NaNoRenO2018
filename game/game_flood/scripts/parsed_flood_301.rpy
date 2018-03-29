@@ -20,7 +20,7 @@ label flood_301:
 
     "What a wonderful life, I think. To be guided only by the most basic of senses. Sight, touch, sound…"
 
-    #Maybe an SFX here?
+    stop music fadeout 1.0
     show oph surprised
     "An odd sound breaks apart the feeling of zen."
 
@@ -38,6 +38,7 @@ label flood_301:
 
     "Here we stand, silent as can be for just a moment." 
 
+    play music "game_flood/music/downtown.mp3" noloop fadein 1.0
     show oph defensive
     "And then I hear it." 
 
@@ -76,6 +77,7 @@ label flood_301:
     "Upon arriving at the end of the passage, I'm immediately overwhelmed by the sight before me."
 
     scene flood downtown with dissolve
+    play ambience "game_flood/ambience/crowd.ogg"
     "The street's basked in a bright orange light."
 
     "I shield myself from it as my eyes adjust to what I realize are hundreds of amber bulbs dangling over the road, swaying between the buildings like a web."
@@ -122,6 +124,7 @@ label flood_301:
 
     "Past the tables, towards the back of the venue, I see a small stage set against a brick wall."
 
+    stop ambience fadeout 3.0
     "Still further, on the stage, on a barstool, I finally see the performer."
 
     #CG: should we get a cg for this??
@@ -181,6 +184,7 @@ label flood_301:
     voice "C-301-14.mp3" #Manager (N/A)
     mgr " Get the fuck out'f my bar."
 
+    play sound "game_flood/sfx/doorslam.ogg"
     show dai distant frown with easeinright:
         align (0.65, 1.0)
     "The door slams behind the woman as she steps out onto the sidewalk." 
@@ -190,6 +194,7 @@ label flood_301:
 
     "The closed door doesn't answer."
 
+    play ambience "game_flood/ambience/rain.ogg"
     "From there, she quietly turns around, now covered with a black, fur lined coat. She's on the verge of tears."
 
     show dai neutral
@@ -401,6 +406,7 @@ label flood_301:
     scene flood club outside
     "And so we went."
 
+    stop ambience fadeout 3.0
     "Daisy beckons me to come into the building with her. A strange sort of place."
 
     jump flood_302

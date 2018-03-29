@@ -1,6 +1,7 @@
 label flood_403:
     scene flood cafe outside with dissolve
 
+    stop music fadeout 1.0
     "I don't know what to think anymore."
 
     "There are times when all feels hopeless and nothing is right, but in the midst of it all there's never once been a light shining through to guide me where I need to go."
@@ -33,6 +34,8 @@ label flood_403:
 
     "...My poor wallet..."
 
+    play music "game_flood/music/riverside.mp3" noloop fadein 1.0
+    play ambience "game_flood/ambience/rain.ogg"
     scene flood street3 with dissolve
     show oli cheerful smile with dissolve:
         align (0.65, 1.0)
@@ -253,6 +256,8 @@ label flood_403:
     voice "C-403-53.mp3" #Ophelia (Cospcaptor)
     oph "You know, I might just take that advice."
 
+    stop ambience fadeout 1.0
+    stop music fadeout 1.0
     scene flood street3 with dissolve
     "I wave goodbye as he trots off, a small spring in his step not seen before."
 

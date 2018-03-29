@@ -98,6 +98,7 @@ label flood_202:
 
     "I'm actually a bit impressed at how much she managed to pack into these bags."
 
+    play sound "game_flood/sfx/backpack.ogg"
     "She pulls out two more jars of beef jerky, a pack of cheese crackers, six cans of soda (half root beer and half orange soda), two stacks of cookies, a smashed loaf of bread, peanut butter, ketchup, and a Nintendo DS."
 
     show oph surprised
@@ -312,6 +313,7 @@ label flood_202:
     voice "C-202-61.mp3" #Hope (Dani Chambers)
     hop "Dad?!"
 
+    play sound "game_flood/sfx/carhorn.ogg"
     "She spins around. A green SUV has pulled in front of us, windows down, with a woman in the passenger seat. A blonde girl about my age sits in the back of the car."
 
     voice "C-202-62.mp3" #Sister (N/A)
@@ -432,10 +434,13 @@ label flood_202:
     voice "C-202-86.mp3" #Ophelia (Cospcaptor)
     oph "Yeah kid, me too."
 
+    stop music fadeout 1.0
     show oph neutral
     "They drive past, behind me down the hill, back towards the city. I'm left alone on the quiet neighborhood street. Well,{i}almost{/i} alone."
 
     show oph smile
-    "My companion flutters his wings against the streetlamp above. I wonder how long he's been there."
+    "My companion flutters his wings against the streetlamp above."
+    
+    "I wonder how long he's been there."
 
     jump hopcheck

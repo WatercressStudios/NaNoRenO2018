@@ -67,6 +67,9 @@ init python:
     define_images("game_flood/bgs", 2, False, ["flood"])
     define_images("game_flood/cgs", 2, False, ["flood"])
 
+init python:
+    renpy.music.set_volume(0.1, delay=0, channel='ambience')
+
 ###############################
 #
 # FLAGS

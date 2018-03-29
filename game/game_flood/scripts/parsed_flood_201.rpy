@@ -1,5 +1,6 @@
 label flood_201:
     scene flood street with dissolve
+    play ambience "game_flood/ambience/traffic.ogg" fadein 2.0
     "Having decided on where to go from here, I find myself in a busy part of town." 
 
     "Holding myself, I struggle to bear the storm of sounds and sights bombarding me. The night lights, the cars, the people, it all makes too much noise."
@@ -26,6 +27,7 @@ label flood_201:
 
     "With a contented sigh, I continue down the path, towards my little friend."
 
+    stop ambience fadeout 2.0
     scene flood park with dissolve
     "We happen upon a small park situated in the dead center of the neighborhood."
     "It's nice. Large enough for a good amount of children, but small enough not to impose itself upon the landscape."
@@ -36,8 +38,10 @@ label flood_201:
 
     show hop hurt downtrodden with dissolve:
         align (0.65, 1.0)
+    stop music fadeout 1.0
     "Before I get a chance to do something so cliché, however, I spot her."
 
+    play music "game_flood/music/hope.mp3" noloop fadein 1.0
     "A little girl. She can't be any older than ten."
 
     "What's even more odd's that she's alone, and attempting to assemble a tent."
@@ -194,6 +198,7 @@ label flood_201:
     show oph weirdedout
     "Hope crawls over me, picking up the cat."
 
+    play sound "game_flood/sfx/cat.ogg"
     "It hisses in protest, but Hope has an iron fist on the poor thing. She cuddles it, laying back on the ground, cat on her chest."
     show oph neutral with easeinright:
         align (0.35, 1.0)
