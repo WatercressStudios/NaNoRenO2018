@@ -280,7 +280,7 @@ label spirits_a1s2:
     show alx happy1 with dissolve
 
     voice "C-3-49.mp3" #Alex (Bonnie Mitchel)
-    alx " I’m Alex Kartha. I guess we’re going to be neighbors, huh?"
+    alx "I’m Alex Kartha. I guess we’re going to be neighbors, huh?"
 
     "Without thinking, I wave my left arm in greeting. His gaze catches on the bulky prosthesis, but he quickly recovers and meets my eyes again."
 
@@ -400,7 +400,6 @@ label spirits_a1s2:
 
     "I continue unpacking. I have way too many clothes; I really ought to give some away." 
 
-    stop music fadeout 5.0
     scene black with dissolve
     "The time quickly passes, and soon it’s six o’clock. I head downstairs for dinner."
 

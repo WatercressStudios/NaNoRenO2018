@@ -1,7 +1,5 @@
 label spirits_a1s3:
-
-    scene spirits dorm dining room with Dissolve(1.0)
-    play music bgmspirits_relax fadeout 0.5
+    scene spirits dining room with Dissolve(1.0)
     #scene bg dining room
 
     #play music house
@@ -29,6 +27,7 @@ label spirits_a1s3:
 
     "...Hopefully it’ll continue; the last thing I need is another {i}incident.{/i}"
 
+    show cae happy1 with dissolve
     #show caelum
 
     voice "C-4-1.mp3" #Caelum (Daniel Acosta)
@@ -36,6 +35,7 @@ label spirits_a1s3:
 
     #show alx happy
 
+    show alx happy1 close with dissolve   
     voice "C-4-2.mp3" #Alex (Bonnie Mitchel)
     alx "Thanks."
 
@@ -43,9 +43,11 @@ label spirits_a1s3:
 
     "It’s good, which surprises me. Growing up on Indian food makes everything else seem flavorless, but Jianmei certainly knows how to use her spices."
 
+    show cae happy1 close with dissolve
     voice "C-4-3.mp3" #Caelum (Daniel Acosta)
     cae "So...you transferred two weeks into the school year?"
 
+    show alx happy1 with dissolve   
     "I look over at Caelum. It’s an honest question, and he’s clearly trying to make conversation…"
 
     "In short, I appreciate it."
@@ -53,22 +55,27 @@ label spirits_a1s3:
     voice "C-4-4.mp3" #Alex (Bonnie Mitchel)
     alx "Yeah, I didn’t find out about my scholarship until a week ago - and otherwise, I couldn’t really afford this place. So..."
 
+    show cae angry1 close with dissolve
     #show caelum snarky/sly
 
     voice "C-4-5.mp3" #Caelum (Daniel Acosta)
     cae "Oh yeah, this place is ridiculous - but it’s better than home. For me, anyways."
 
+    show alx neutral1 with dissolve   
     #show Alex neutral
 
     voice "C-4-6.mp3" #Alex (Bonnie Mitchel)
     alx "You don’t get along with your parents?"
 
+    show cae angry1 with dissolve
     voice "C-4-7.mp3" #Caelum (Daniel Acosta)
     cae "Mom’s okay, I guess; she let me come here. Haven’t talked to my dad in years, and I couldn’t be happier."
 
+    show cae neutral1 with dissolve
     voice "C-4-8.mp3" #Caelum (Daniel Acosta)
     cae "What about you?"
 
+    show alx bitter1 with dissolve   
     #show Alex tense/bitter
 
     voice "C-4-9.mp3" #Alex (Bonnie Mitchel)
@@ -81,6 +88,7 @@ label spirits_a1s3:
     voice "C-4-10.mp3" #Alex (Bonnie Mitchel)
     alx "I lost more than my arm in the accident."
 
+    show cae sad1 blush with dissolve
     #show Caelum neutral/sad/awkward
 
     voice "C-4-11.mp3" #Caelum (Daniel Acosta)
@@ -92,6 +100,7 @@ label spirits_a1s3:
     voice "C-4-13.mp3" #Caelum (Daniel Acosta)
     cae "Grandmother, I know."
 
+    show alx happy1 with dissolve   
     #show Alex happy/surprised
 
     voice "C-4-14.mp3" #Caelum (Daniel Acosta)
@@ -100,6 +109,7 @@ label spirits_a1s3:
     voice "C-4-15.mp3" #Alex (Bonnie Mitchel)
     alx "That’s awesome."
 
+    show cae happy1 with dissolve
     #show Caelum happy/warm/kind
 
     voice "C-4-16.mp3" #Caelum (Daniel Acosta)
@@ -107,9 +117,11 @@ label spirits_a1s3:
 
     "That actually sounds pretty cool."
 
+    show alx happy1 close with dissolve   
     voice "C-4-17.mp3" #Alex (Bonnie Mitchel)
     alx "Of course I do! Is there a hive on campus?"
 
+    show cae happy1 close with dissolve
     #show Caelum excited
 
     voice "C-4-18.mp3" #Caelum (Daniel Acosta)
@@ -121,6 +133,7 @@ label spirits_a1s3:
 
     "There’s no way there’s any of {i}them{/i} here, right?"
 
+    show alx neutral1 with dissolve   
     #show Alex nervous/shy/neutral
 
     voice "C-4-19.mp3" #Alex (Bonnie Mitchel)
@@ -129,9 +142,14 @@ label spirits_a1s3:
     voice "C-4-20.mp3" #Caelum (Daniel Acosta)
     cae "You’re too nice. I’ve bought three jars and I’m hoarding all of them for tea."
 
+    stop music fadeout 0.2
     play sound "game_letgo/sfx/Crush.ogg"
     #play sound bang (like something dropping pls)
     #stop music
+
+    show alx surprised1
+    show cae surprised1
+    show hmom surprised1 at left with easeinleft
 
     #show Alex shocked/surprised
 
@@ -142,19 +160,25 @@ label spirits_a1s3:
     #play music stranger things
 
     "No. Please, not here!" 
+    
+    play music bgmspirits_sthings fadeout 0.5
 
     voice "C-4-21.mp3" #Caelum (Daniel Acosta)
     cae "What was that?"
 
+    show hmom neutral1 with dissolve
     voice "C-4-22.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Oh, I’m sure it was just the pipes or something. This old house makes so many noises."
 
+    show alx scared1 with dissolve
     #show Alex confused/tense
 
     voice "C-4-23.mp3" #Alex (Bonnie Mitchel)
     alx "The pipes?"
 
     "No one at the table seems convinced by the answer - but they don’t seem bothered enough to question it either."
+
+    show hmom happy1 with dissolve
 
     voice "C-4-24.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Maybe the heater, or something else. Don’t worry, Alex, dear; it’s really nothing to worry about."
@@ -163,17 +187,21 @@ label spirits_a1s3:
 
     "That’s {i}definitely{/i} something to worry about…"
 
+    show alx sad1 with dissolve
     voice "C-4-25.mp3" #Alex (Bonnie Mitchel)
     alx "I think I feel a migraine coming on. I should go to my room and lie down."
 
+    show hmom sad1 with dissolve
     #show House Mother endearing/concerned
 
     voice "C-4-26.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Oh really? Of course, but... do you need anything? Ice water?"
 
+    show alx sad1 close with dissolve
     voice "C-4-27.mp3" #Alex (Bonnie Mitchel)
     alx "No, I’m okay. I just need to go."
 
+    show cae neutral1 with dissolve
     #show Caelum neutral
 
     voice "C-4-28.mp3" #Caelum (Daniel Acosta)
@@ -184,6 +212,6 @@ label spirits_a1s3:
     voice "C-4-29.mp3" #Alex (Bonnie Mitchel)
     alx "Yeah, I-I will. Thanks."
 
-    #scene black
+    scene black with Dissolve(1.0)
 
     jump spirits_a1s4

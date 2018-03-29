@@ -1,5 +1,6 @@
 label spirits_a1s6:
-    #scene bg school hall
+    stop music fadeout 2.0
+    scene spirits school hallway
 
     play ambience "game_spirits/ambience/Classroom.ogg" fadeout 2.0 fadein 2.0
 
