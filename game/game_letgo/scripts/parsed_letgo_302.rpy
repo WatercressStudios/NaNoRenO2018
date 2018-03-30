@@ -62,7 +62,7 @@
         xpos 0.8
     with ease
 
-    hide maya
+    #hide may    
     show may worried1:
         xanchor 0.5
         yalign 1.0

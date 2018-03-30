@@ -160,7 +160,7 @@ label spirits_a2s5:
 
             "\"{i}Please pass along my dearest wishes to young Miss Genevieve.{/i}\""
 
-            "\"{i}Sincerely, Mrs. Jonathan Balister{/i\""
+            "\"{i}Sincerely, Mrs. Jonathan Balister{/i}\""
 
             if 'urname' not in questionFlags and hasDiary == False:
 

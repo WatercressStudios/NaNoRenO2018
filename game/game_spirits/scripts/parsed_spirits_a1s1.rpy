@@ -476,7 +476,7 @@ label spirits_a1s1:
     show alx angry1 with dissolve
 
     voice "C-2-48.mp3" #Alex (Bonnie Mitchel)
-    alx "That hurt! Like, {b}{i}really{/b}{/i} hurt."
+    alx "That hurt! Like, {b}{i}really{/i}{/b} hurt."
 
     "My head--"
 
@@ -519,7 +519,7 @@ label spirits_a1s1:
 
             "I click the lock on it open and raise the top..."
 
-            scene spirits box opened with dissolve
+            scene spirits box open with dissolve
 
             "..."
 

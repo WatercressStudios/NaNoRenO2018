@@ -221,7 +221,7 @@ label flood_102:
 
     "Walking over to a nearby light, I hold my hand up towards the bulbs."
 
-    play ambience "game_flood/ambience.moth.ogg"
+    play ambience "game_flood/ambience/moth.ogg"
     "Launching, it hovers around the light, bouncing between the three orbs. It doesn't quite touch them, though, as I'd expect a normal moth to."
 
     "Eventually, it leaves this one, flying towards the next."

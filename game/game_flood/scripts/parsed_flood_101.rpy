@@ -38,7 +38,7 @@ label flood_101:
 
     "{i}The Flood.{/i}"
     "It repeats like a mantra."
-    "{i}The Flood.{/i} {b}The Flood.{/b} {i}{b}The Flood.{/b}{/i} {b}{i}THE FLOOD.{/b}{/i}"
+    "{i}The Flood.{/i} {b}The Flood.{/b} {i}{b}The Flood.{/b}{/i} {b}{i}THE FLOOD.{/i}{/b}"
 
 
     "Gritting my teeth and combing my bedhead, I desperately try to fixate on an object in the distance."

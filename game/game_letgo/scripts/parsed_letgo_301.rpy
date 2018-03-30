@@ -140,7 +140,7 @@
 
     scene letgo downtown1
 
-    play ambience "game_letgo/ambience/Downtown Day﻿.ogg" fadeout 0.1 fadein 0.1
+    play ambience "game_letgo/ambience/Downtown Day.ogg" fadeout 0.1 fadein 0.1
 
     show eli smile1:
         xanchor 0.5

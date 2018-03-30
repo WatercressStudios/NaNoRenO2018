@@ -84,7 +84,7 @@ label spirits_a3s2:
     "She laughs at me as I stagger towards her, and it’s horrifying. Caelum’s face should {i}never{/i} laugh that way."
 
     voice "C-17-12.mp3" #Genevieve (Lasli Tran and Other)
-    cae "I’m not {i}possessing{/i} anyone. I’m inhabiting {i}my{i} body."
+    cae "I’m not {i}possessing{/i} anyone. I’m inhabiting {i}my{/i} body."
 
     #show alex angry
 

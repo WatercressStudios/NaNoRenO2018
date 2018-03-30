@@ -72,7 +72,7 @@ label spirits_a1s5:
         ypos 0.5
     with Dissolve(1.0)
 
-    "When I look again, there it is: a {b}{i}gun{/b}{/i}, in my room."
+    "When I look again, there it is: a {b}{i}gun{/i}{/b}, in my room."
 
     "I could be expelled for having this! I won’t be able to explain where it came from - and even if I did, no one would believe me."
 

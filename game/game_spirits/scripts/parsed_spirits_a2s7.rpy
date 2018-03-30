@@ -157,7 +157,7 @@ label spirits_a2s7:
         play sound "game_letgo/sfx/Punch,Shove.ogg"
         scene black with Dissolve(0.1)
 
-        "{size=-10}No...{size=-10}"
+        "{size=-10}No...{/size}"
         
         if caelumAlive == True:
             jump spirits_a3s2 ##Sacrifice Ending (previously called Caelum Possessed)
