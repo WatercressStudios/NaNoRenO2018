@@ -5,16 +5,35 @@ label spirits_a2s4:
 
 label CaelumIsDeadX:
     if hasDiary == True:
+        show alx angry1 with dissolve
+
+        play sound "game_spirits/sfx/banging on door.ogg"
+
         "I’m reviewing the diary a second time - trying to more clearly visualize the timeline of events they describe - when I hear a knocking on the doorframe of my room."
     else:
+        show alx happy1 with dissolve
+
+        play sound "game_spirits/sfx/banging on door.ogg"
+
         "I’m just saying my goodbyes to Naniji and relaxing into my soft mattress when I hear a knocking on the doorframe."
 
+    show alx surprised1 with dissolve:
+        ease 0.5 align (0.2,1.0)
+
+    show hmom sad1 at centerright with dissolve
+
     "I turn my head to see Jianmei standing in the doorway, looking more concerned than I’ve ever seen her."
+
+    show alx neutral1 with dissolve
 
     voice "C-12-1.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Alex, have you seen Caelum around anywhere?"
 
     ##MUSIC CHANGE
+    play music bgmspirits_cae
+
+    show alx sad1 with dissolve
+
     voice "C-12-2.mp3" #Alex (Bonnie Mitchel)
     alx "…"
 
@@ -34,11 +53,16 @@ label CaelumIsDeadX:
     voice "C-12-6.mp3" #House Mother "Jianmei" (Vivi)
     hmom "I’m… I’m going to go into his room. Maybe he’s just been sick?"
 
+    hide hmom with easeoutright
+
     "Looking like she’s just witnessed a plane crash, Jianmei turns around and drifts back into the hallway towards Caelum’s room."
 
     "I hop off the bed, urgently following behind her."
 
-    #scene hallway
+    scene spirits dorm hallway with dissolve
+
+    show hmom sad1 at centerleft with dissolve
+    show alx sad1 at centerright with dissolve
 
     "The closed door feels… ominous, in a way - like some kind of cyclopean monolith, tainted by echoes of ancient violence."
 
@@ -50,7 +74,7 @@ label CaelumIsDeadX:
 
     "Finally, the door unlocks, and it slowly creaks open."
 
-    #scene caelum_room
+    scene spirits caelum bedroom with dissolve
 
     "…"
 
@@ -58,10 +82,18 @@ label CaelumIsDeadX:
 
     "The bed is neatly made. There’s no signs at all that anything out of the ordinary has happened."
 
+    show hmom sad1 at centerright with dissolve
+
     voice "C-12-7.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Strange…"
 
+    show alx sad1 with dissolve:
+        align (1.0,1.0)
+        ease 0.5 align (0.2,1.0)
+
     "She gingerly steps into the room, but I storm in past her."
+
+    show alx surprised1 with dissolve
 
     "As soon as I cross the threshold, it feels like I’ve shoved my left arm - my lost arm - in a tub of ice water."
 
@@ -100,7 +132,7 @@ label CaelumIsDeadX:
     hmom "Honey, we’re going to do everything in our power to find him - but I have a feeling wherever he is, he doesn’t want to be found…"
 
     voice "C-12-14.mp3" #Alex (Bonnie Mitchel)
-    alx "What?" 
+    alx "What?"
 
     voice "C-12-15.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Caelum… had a lot of problems with his family. And the faculty at Oxton hasn’t been especially kind to him, either."
@@ -119,16 +151,23 @@ label CaelumIsDeadX:
     voice "C-12-19.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Hello, yes, this is the house mother, Fang Jianmei, calling from Artemis Hall at Oxton Academy. One of my residents has gone missing. He’s a minor."
 
+    hide hmom with easeoutright
+
     "She turns her back on me and steps out of the room, apparently intent on finishing the conversation in her office. She’s all business - as if I’m not even here."
+
+    show alx bitter1 with vpunch:
+        ypos (1.2)
 
     "When she vanishes down the corridor, the biting, screaming sensation of a migraine hits me in full force - so overwhelmingly devastating it forces me to my knees."
 
     "I feel something in the vestige of my arm, like somebody’s throwing a handful of sand at me. It lands on my arm and sticks, as if defying gravity."
 
+    show alx surprised1 with dissolve
+
     voice "C-12-20.mp3" #Alex (Bonnie Mitchel)
     alx "Eugh… what...?"
 
-    "I feel t his strange sensation, like vertigo; am I lying down or standing up? And then the \"sand\" hits me again, splashing against my back and coming to rest upon it."
+    "I feel this strange sensation, like vertigo; am I lying down or standing up? And then the \"sand\" hits me again, splashing against my back and coming to rest upon it."
 
     "There’s this wet, metallic smell filling my nostrils. Blood? It’s oozing everywhere…"
 
@@ -140,10 +179,19 @@ label CaelumIsDeadX:
 
     "No, not buried alive."
 
+    show alx scared1 with vpunch:
+        ypos (1.0)
+
     voice "C-12-21.mp3" #Alex (Bonnie Mitchel)
-    alx "::Screams::" 
+    alx "::Screams::"
 
     "For a moment, I snap back to reality; I’m standing here, warm and alive, in this abandoned room - and the terror is enough that I dash back across the hall."
+
+    hide alx with easeoutright
+
+    scene spirits alex bedroom clean with dissolve
+
+    show alx scared1 with dissolve
 
     "Once there, the miasma fades away. The migraine subsides into a light buzzing. I’m alone once again."
 
@@ -164,6 +212,8 @@ label CaelumIsDeadX:
     else:
         "It’s the spirits inhabiting this house. They took my friend from me. They’ll take {i}everything{/i} if I let them."
 
+        show alx angry1 with dissolve
+
         voice "C-12-24.mp3" #Alex (Bonnie Mitchel)
         alx "No. That isn’t going to happen."
 
@@ -171,12 +221,23 @@ label CaelumIsDeadX:
         alx "I’m going to put an end to you. I’ll make you all pay!"
 
         "I’m going to rid this whole fucking planet of you."
-        
+
     jump spirits_a2s5
 
 label BuddingRelationshipX:
     if hasDiary == False:
+        show alx happy1 with dissolve
+        show cae happy1 at right with easeinright
+
         "I’m just saying my goodbyes to Naniji when I notice Caelum hovering in the doorway. I motion for him to come in and he does, leaning against the wall."
+
+        play music bgmspirits_cae
+
+        show alx happy1 with dissolve:
+            ease 0.5 align (0.2,1.0)
+
+        show cae happy1 with dissolve:
+            ease 0.5 align (0.8,1.0)
 
         voice "C-12-26.mp3" #Caelum (Daniel Acosta)
         cae "That was your grandma?"
@@ -196,11 +257,15 @@ label BuddingRelationshipX:
         voice "C-12-31.mp3" #Caelum (Daniel Acosta)
         cae "Do you have any other friends or relatives that you call? I don’t really see you on the phone that often…"
 
+        show alx sad1 with dissolve
+
         voice "C-12-32.mp3" #Alex (Bonnie Mitchel)
         alx "Yeah, um… well…"
 
         voice "C-12-33.mp3" #Alex (Bonnie Mitchel)
         alx "You see… I had friends before the accident - but afterwards, it wasn’t the same, and moving away didn’t really help."
+
+        show cae sad1 with dissolve
 
         voice "C-12-34.mp3" #Alex (Bonnie Mitchel)
         alx "I spent so long in the hospital, and then I was homeschooled afterwards, so… I mean, all the encounters with ghosts certainly haven’t helped my social life."
@@ -231,8 +296,12 @@ label BuddingRelationshipX:
         voice "C-12-40.mp3" #Alex (Bonnie Mitchel)
         alx "Right…"
 
+        show cae happy1 with dissolve
+
         voice "C-12-41.mp3" #Caelum (Daniel Acosta)
         cae "It’s fine. Screw ‘em. Friends are the only family I’ll ever really need."
+
+        show alx neutral1 with dissolve
 
         voice "C-12-42.mp3" #Caelum (Daniel Acosta)
         cae "I know you don’t really know them yet and it’s kinda freaky, but the girls here are pretty cool when you get to know them."
@@ -253,12 +322,19 @@ label BuddingRelationshipX:
         "That’s what I want - what I need. Then I started getting harassed again, and closed myself off to everyone but Caelum…"
 
         "I can’t forget to live."
-        
+
     else:
+        show alx angry1 with dissolve
+        show cae sad1 at right with easeinright
+
         "I’m staring dumbfoundedly at the diary when Caelum steps into the room."
+
+        play music bgmspirits_cae
 
         voice "C-12-46.mp3" #Caelum (Daniel Acosta)
         cae "Alex, you okay?"
+
+        show alx neutral1 with dissolve
 
         voice "C-12-47.mp3" #Alex (Bonnie Mitchel)
         alx "Y-Yeah…"
@@ -267,6 +343,12 @@ label BuddingRelationshipX:
         alx "Uh, why don’t you come in?"
 
         "Caelum blinks at me worriedly and takes a few tentative steps into my room, running his hand through his hair."
+
+        show alx neutral1 with dissolve:
+            ease 0.5 align (0.2,1.0)
+
+        show cae sad1 with dissolve:
+            ease 0.5 align (0.8,1.0)
 
         voice "C-12-49.mp3" #Caelum (Daniel Acosta)
         cae "What is it you’re reading?"
@@ -277,8 +359,12 @@ label BuddingRelationshipX:
         voice "C-12-51.mp3" #Alex (Bonnie Mitchel)
         alx "That girl - Genevieve - her father locked her in her room for weeks. And then one day, he just walked into her room - {i}this{/i} room - and butchered her."
 
+        show cae surprised1 with dissolve
+
         voice "C-12-52.mp3" #Caelum (Daniel Acosta)
         cae "Jesus {i}fuck{/i}. Are you serious?"
+
+        show alx sad1 with dissolve
 
         voice "C-12-53.mp3" #Alex (Bonnie Mitchel)
         alx "Yes… And she wasn’t the only one."
@@ -293,7 +379,9 @@ label BuddingRelationshipX:
 
         "God, what am I going to do?"
 
-        "Frowning, Caelum steps over and takes a seat beside me." 
+        show cae angry1 with dissolve
+
+        "Frowning, Caelum steps over and takes a seat beside me."
 
         voice "C-12-56.mp3" #Caelum (Daniel Acosta)
         cae "Alex."
@@ -306,8 +394,12 @@ label BuddingRelationshipX:
 
         "Tempting though that is, I shake my head."
 
+        show cae neutral1 with dissolve
+
         voice "C-12-59.mp3" #Alex (Bonnie Mitchel)
         alx "This thing’s like a hundred years old. You think they’ll even care?"
+
+        show cae angry1 with dissolve
 
         voice "C-12-60.mp3" #Caelum (Daniel Acosta)
         cae "So, what, it has to be you?"
@@ -330,8 +422,12 @@ label BuddingRelationshipX:
         voice "C-12-66.mp3" #Caelum (Daniel Acosta)
         cae "So you have to put your entire life on hold until all the ghosts are happy?"
 
+        show alx angry1 with dissolve
+
         voice "C-12-67.mp3" #Alex (Bonnie Mitchel)
         alx "{i}Yes{/i}, Caelum."
+
+        show alx angry1 close with dissolve
 
         "I let out a sigh, sinking my arms backwards into the mattress."
 
@@ -343,6 +439,8 @@ label BuddingRelationshipX:
 
         voice "C-12-70.mp3" #Alex (Bonnie Mitchel)
         alx "I often wonder if I’ll ever just have a chance to {i}rest{/i}. Ugh, probably not."
+
+        show cae sad1 with dissolve
 
         voice "C-12-71.mp3" #Caelum (Daniel Acosta)
         cae "Alex…"
@@ -356,11 +454,17 @@ label BuddingRelationshipX:
         voice "C-12-74.mp3" #Caelum (Daniel Acosta)
         cae "We’ll make it exist."
 
+        show alx sad1 with dissolve
+
         voice "C-12-75.mp3" #Alex (Bonnie Mitchel)
         alx "Will we?"
 
+        show cae angry1 with dissolve
+
         voice "C-12-76.mp3" #Caelum (Daniel Acosta)
         cae "If the alternative is you seeing yourself as just some instrument at the spirit world’s disposal? Fuck yeah, we will."
+
+        show cae sad1 with dissolve
 
         voice "C-12-77.mp3" #Caelum (Daniel Acosta)
         cae "But… you have to take that step, Alex. You shouldn’t have to feel like you’re always waiting to begin living. You deserve to do things for yourself."
@@ -370,8 +474,12 @@ label BuddingRelationshipX:
 
         "I almost want to tell him about the inspection, but I can’t bring myself to quite yet…"
 
+        show cae happy1 with dissolve
+
         voice "C-12-79.mp3" #Caelum (Daniel Acosta)
         cae "After all, it’s not like they’re gonna die of old age."
+
+        show alx happy1 with dissolve
 
         voice "C-12-80.mp3" #Alex (Bonnie Mitchel)
         alx "Heh…"
