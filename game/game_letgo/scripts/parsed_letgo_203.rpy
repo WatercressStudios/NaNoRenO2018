@@ -1,4 +1,4 @@
-﻿label letgo_203:
+label letgo_203:
     scene black with dissolve
     pause 0.5
     scene letgo suburb house with dissolve
@@ -165,8 +165,8 @@
     voice "C-203-27.mp3" #Elijah (Michael Potok)
     eli "And what’s that?"
 
-    # HACK SPLIT THIS VOICE LINE INTO THREE PARTS
-    voice "C-203-28.mp3" #Old Man (Adam Warren)
+    # HACK SPLIT THIS VOICE LINE INTO THREE PARTS|(Done)
+    voice "C-203-28a.mp3" #Old Man (Adam Warren)
     om "If you don’t make the time, you’ll never find the time to be together."
     voice "C-203-28b.mp3" #Old Man (Adam Warren)
     om "So many young men forget that they’ve got to make room for the special moments."
@@ -209,8 +209,10 @@
     voice "C-203-30.mp3" #Old Man (Adam Warren)
     om "Oh! That was one of the first kites I made when I met my dear wife. It wasn’t the best I'd made, but I kept it."
 
-    # HACK WHERE ARE THE VOICE LINES??
-    om "That one? That was the day I first knew I loved her. A plane can float along the breeze, free as it can be - but a kite, well."
+　　# HACK WHERE ARE THE VOICE LINES??|Got you fam
+　　 voice "C-203-30-2a.mp3" #Old Man (Adam Warren)
+　　om "That one? That was the day I first knew I loved her. A plane can float along the breeze, free as it can be - but a kite, well."
+　　voice "C-203-30-2b.mp3" #Old Man (Adam Warren)
     om "It needs a connection. We each fly because the string holds our sails taut. We help each other be free."
 
     "I hadn’t thought about our new relationship like that. Some of my friends often moan and groan about things tying them down, but May..."
