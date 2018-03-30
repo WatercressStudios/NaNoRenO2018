@@ -20,31 +20,30 @@ label flood_301:
 
     "What a wonderful life, I think. To be guided only by the most basic of senses. Sight, touch, sound…"
 
-    #Maybe an SFX here?
+    stop music fadeout 1.0
     show oph surprised
     "An odd sound breaks apart the feeling of zen."
 
-    voice "C-301-1.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-1.ogg" #Ophelia (Cospcaptor)
     oph "What is that sound?"
 
     "I stop for a moment, watching as the moth flutters up to the dim lamp on a small newspaper stand."
 
     show oph neutral
-    voice "C-301-2.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-2.ogg" #Ophelia (Cospcaptor)
     oph "I thought I heard something? No, I'm sure I heard something!" 
 
     show oph neutral close
     "I listen carefully, attempting to push the sounds of the city aside to find the far away note that I'm sure I could hear just moments ago."
 
-    "Here we stand, silent as can be for just a moment." 
-
+    play music "game_flood/music/downtown.mp3" noloop fadein 1.0
     show oph defensive
     "And then I hear it." 
 
-    voice "C-301-3.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-3.ogg" #Ophelia (Cospcaptor)
     oph "There it is again!" 
 
-    voice "C-301-4.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-4.ogg" #Ophelia (Cospcaptor)
     oph "Can't you hear it too?"
 
     "The little guy flutters his wings in response."
@@ -54,7 +53,7 @@ label flood_301:
 
     "Music! Someone is playing music!"
 
-    voice "C-301-5.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-5.ogg" #Ophelia (Cospcaptor)
     oph "This way, come on!" 
     hide oph with easeoutright
     "I beckon my companion to follow me around the corner." 
@@ -76,6 +75,7 @@ label flood_301:
     "Upon arriving at the end of the passage, I'm immediately overwhelmed by the sight before me."
 
     scene flood downtown with dissolve
+    play ambience "game_flood/ambience/crowd.ogg"
     "The street's basked in a bright orange light."
 
     "I shield myself from it as my eyes adjust to what I realize are hundreds of amber bulbs dangling over the road, swaying between the buildings like a web."
@@ -90,7 +90,7 @@ label flood_301:
 
     show oph surprised with dissolve:
         align (0.35, 1.0)
-    voice "C-301-6.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-6.ogg" #Ophelia (Cospcaptor)
     oph "Oh, that's right! Where's it coming from?" 
 
     "The moth dances around the hanging bulbs. He seems to have lost interest in the music for the moment."
@@ -109,11 +109,11 @@ label flood_301:
     "I draw closer to the place. 'Dan's', the wooden sign reads. Nothing else, just that." 
 
     show oph neutral closed
-    voice "C-301-7.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-7.ogg" #Ophelia (Cospcaptor)
     oph "I'll just take a quick look through the window." 
 
     show oph neutral
-    voice "C-301-8.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-8.ogg" #Ophelia (Cospcaptor)
     oph "Just a peek. That's all I want."
 
     scene flood tavern with dissolve
@@ -122,6 +122,7 @@ label flood_301:
 
     "Past the tables, towards the back of the venue, I see a small stage set against a brick wall."
 
+    stop ambience fadeout 3.0
     "Still further, on the stage, on a barstool, I finally see the performer."
 
     #CG: should we get a cg for this??
@@ -133,7 +134,7 @@ label flood_301:
 
     "It sparkles as though it's made of pure gold, with a large \"S\" shaped horn extending down through countless bits of shining metal." 
 
-    voice "C-301-9.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-9.ogg" #Ophelia (Cospcaptor)
     oph "A saxophone!" 
 
     "Of course it's a saxophone. Of course that's the sound I heard, I knew that. I've heard it's sound before."
@@ -153,10 +154,10 @@ label flood_301:
      
     "The moth perches itself on the door lantern above me. I glance at him, then back towards the performer." 
 
-    voice "C-301-10.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-10.ogg" #Ophelia (Cospcaptor)
     oph "Oh, she's putting it away."
 
-    voice "C-301-11.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-11.ogg" #Ophelia (Cospcaptor)
     oph "I really wish she would keep playing."
 
     show dai disappointed
@@ -166,29 +167,32 @@ label flood_301:
 
     "Not at all like the music I had just heard."
 
-    voice "C-301-12.mp3" #Daisy (Haley C. McCarthy)
-    per "...the problem with {i}some{/i} pig headed people." 
+    voice "game_flood/voice/C-301-12.ogg" #Daisy (Haley C. McCarthy)
+    $ dai_name = "Performer"
+    dai "...the problem with {i}some{/i} pig headed people." 
 
     "I can hear her yelling now."
 
-    voice "C-301-13.mp3" #Manager (N/A)
+    voice "game_flood/voice/C-301-13.ogg" #Manager (N/A)
     mgr " Ah, fuck off. In this city, gals like you're a dime a dozen."
 
     "As they head for the door, I duck around the corner of the building." 
 
     scene flood downtown with dissolve
-    voice "C-301-14.mp3" #Manager (N/A)
+    voice "game_flood/voice/C-301-14.ogg" #Manager (N/A)
     mgr " Get the fuck out'f my bar."
 
+    play sound "game_flood/sfx/doorslam.ogg"
     show dai distant frown with easeinright:
         align (0.65, 1.0)
     "The door slams behind the woman as she steps out onto the sidewalk." 
 
-    voice "C-301-15.mp3" #Daisy (Haley C. McCarthy)
-    per "Bastard!" 
+    voice "game_flood/voice/C-301-15.ogg" #Daisy (Haley C. McCarthy)
+    dai "Bastard!" 
 
     "The closed door doesn't answer."
 
+    play ambience "game_flood/ambience/rain.ogg"
     "From there, she quietly turns around, now covered with a black, fur lined coat. She's on the verge of tears."
 
     show dai neutral
@@ -219,113 +223,114 @@ label flood_301:
     #She's playing sax on the street. Nobody is paying attention but she keeps going. You approach her and listen to her song for a bit. 
 
     show dai smile
-    voice "C-301-16.mp3" #Daisy (Haley C. McCarthy)
-    per "It's a little different."
+    voice "game_flood/voice/C-301-16.ogg" #Daisy (Haley C. McCarthy)
+    dai "It's a little different."
 
     "She's not looking at me, but out into the street. People walk by. They don't seem to notice us. Or if they do, they don't acknowledge us."
 
     show oph surprised
-    voice "C-301-17.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-17.ogg" #Ophelia (Cospcaptor)
     oph "...ah ...sorry?"
 
     show dai neutral
-    voice "C-301-18.mp3" #Daisy (Haley C. McCarthy)
-    per "Experimental, I guess. The song- a new type of piece. You're the first to hear it."
+    voice "game_flood/voice/C-301-18.ogg" #Daisy (Haley C. McCarthy)
+    dai "Experimental, I guess. The song- a new type of piece. You're the first to hear it."
 
     show dai smile
-    voice "C-301-19.mp3" #Daisy (Haley C. McCarthy)
-    per "Thank you."
+    voice "game_flood/voice/C-301-19.ogg" #Daisy (Haley C. McCarthy)
+    dai "Thank you."
 
     show oph neutral
     "..."
 
-    voice "C-301-20.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-20.ogg" #Ophelia (Cospcaptor)
     oph "The first?"
 
-    voice "C-301-21.mp3" #Daisy (Haley C. McCarthy)
-    per "Of course. See these guys?"
+    voice "game_flood/voice/C-301-21.ogg" #Daisy (Haley C. McCarthy)
+    dai "Of course. See these guys?"
 
     show dai distant neutral
     "She waves her hand casually across the road in front of us."
 
     show dai distant close
-    voice "C-301-22.mp3" #Daisy (Haley C. McCarthy)
-    per "They don't really listen. They hear it, I suppose, but they don't listen."
+    voice "game_flood/voice/C-301-22.ogg" #Daisy (Haley C. McCarthy)
+    dai "They don't really listen. They hear it, I suppose, but they don't listen."
 
     show dai neutral
-    voice "C-301-23.mp3" #Daisy (Haley C. McCarthy)
-    per "But you've been with me this whole time, haven't you?"
+    voice "game_flood/voice/C-301-23.ogg" #Daisy (Haley C. McCarthy)
+    dai "But you've been with me this whole time, haven't you?"
 
     show oph weirdedout
-    voice "C-301-24.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-24.ogg" #Ophelia (Cospcaptor)
     oph "...sorry?"
 
     show dai smile
-    voice "C-301-25.mp3" #Daisy (Haley C. McCarthy)
-    per "Don't apologize." 
+    voice "game_flood/voice/C-301-25.ogg" #Daisy (Haley C. McCarthy)
+    dai "Don't apologize." 
 
     show oph neutral
-    voice "C-301-26.mp3" #Daisy (Haley C. McCarthy)
-    per "You wouldn't believe how happy that makes me."
+    voice "game_flood/voice/C-301-26.ogg" #Daisy (Haley C. McCarthy)
+    dai "You wouldn't believe how happy that makes me."
 
     show dai smile close
-    voice "C-301-27.mp3" #Daisy (Haley C. McCarthy)
-    per "I've never been one for words. I find that I can tell my stories more effectively through my music."
+    voice "game_flood/voice/C-301-27.ogg" #Daisy (Haley C. McCarthy)
+    dai "I've never been one for words. I find that I can tell my stories more effectively through my music."
 
     show dai smile 
-    voice "C-301-28.mp3" #Daisy (Haley C. McCarthy)
-    per "You stuck around to listen, so, thank you."
+    voice "game_flood/voice/C-301-28.ogg" #Daisy (Haley C. McCarthy)
+    dai "You stuck around to listen, so, thank you."
 
-    voice "C-301-29.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-29.ogg" #Ophelia (Cospcaptor)
     oph "I - uh…."
 
     show oph smile
-    voice "C-301-30.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-30.ogg" #Ophelia (Cospcaptor)
     oph "...no problem, I guess."
 
     "She rests the sax against the bench. My companion flutters out of the way to make room."
 
     "She seems to notice him too, watching as he flew up to a lamp near where we sit."
 
-    voice "C-301-31.mp3" #Daisy (Haley C. McCarthy)
-    per "I'm Daisy, by the way."
+    $ dai_name = "Daisy"
+    voice "game_flood/voice/C-301-31.ogg" #Daisy (Haley C. McCarthy)
+    dai "I'm Daisy, by the way."
 
     "She looks back towards me, smiling warmly." 
 
-    voice "C-301-32.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-32.ogg" #Ophelia (Cospcaptor)
     oph "I'm Ophelia."
 
-    voice "C-301-33.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Nice to meet you."
+    voice "game_flood/voice/C-301-33.ogg" #Daisy (Haley C. McCarthy)
+    dai "Nice to meet you."
 
     show dai neutral
-    voice "C-301-34.mp3" #Daisy (Haley C. McCarthy)
-    dsy "So what's your deal anyway? What's a kid like you doing in a place like this?"
+    voice "game_flood/voice/C-301-34.ogg" #Daisy (Haley C. McCarthy)
+    dai "So what's your deal anyway? What's a kid like you doing in a place like this?"
 
     show oph neutral
-    voice "C-301-35.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-35.ogg" #Ophelia (Cospcaptor)
     oph "Hmm, I dunno really. I heard you playing."
 
     show dai smile close
     "Daisy sighs, looking at me with a smirk."
 
-    voice "C-301-36.mp3" #Daisy (Haley C. McCarthy)
-    dsy "It's not wise to let yourself be carried away so easily. Though I can't say I've never been there."
+    voice "game_flood/voice/C-301-36.ogg" #Daisy (Haley C. McCarthy)
+    dai "It's not wise to let yourself be carried away so easily. Though I can't say I've never been there."
 
     show dai smile
-    voice "C-301-37.mp3" #Daisy (Haley C. McCarthy)
-    dsy "That being said, it's quite late. Taking a walk on a cold night? No doubt, you've got something on your mind."
+    voice "game_flood/voice/C-301-37.ogg" #Daisy (Haley C. McCarthy)
+    dai "That being said, it's quite late. Taking a walk on a cold night? No doubt, you've got something on your mind."
 
     show oph defensive close
-    voice "C-301-38.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-38.ogg" #Ophelia (Cospcaptor)
     oph "Something… I suppose."
 
     show dai smile close
-    voice "C-301-39.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Well, you heard my story, so it's only fair that I sit and listen to yours."
+    voice "game_flood/voice/C-301-39.ogg" #Daisy (Haley C. McCarthy)
+    dai "Well, you heard my story, so it's only fair that I sit and listen to yours."
 
     show oph defensive
-    voice "C-301-40.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-40.ogg" #Ophelia (Cospcaptor)
     oph "I don't know. It's just... everything. It all ends soon. Everything."
 
     "In an instant, the thoughts came flooding back to me. The fear. That damn flood."
@@ -333,72 +338,73 @@ label flood_301:
     show dai distant frown
     "Daisy's face swiftly changes from curiosity to abject horror."
 
-    voice "C-301-41.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Jesus, something's really got you, huh?"
+    voice "game_flood/voice/C-301-41.ogg" #Daisy (Haley C. McCarthy)
+    dai "Jesus, something's really got you, huh?"
 
-    voice "C-301-42.mp3" #Daisy (Haley C. McCarthy)
-    dsy "I can see it all over you."
+    voice "game_flood/voice/C-301-42.ogg" #Daisy (Haley C. McCarthy)
+    dai "I can see it all over you."
 
     show dai distant frown
-    voice "C-301-43.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Of course nothing is forever, but that's fine."
+    voice "game_flood/voice/C-301-43.ogg" #Daisy (Haley C. McCarthy)
+    dai "Of course nothing is forever, but that's fine."
 
-    voice "C-301-44.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-44.ogg" #Ophelia (Cospcaptor)
     oph "I don't know… I thought I could run. I thought I could forget."
 
     show oph scared
-    voice "C-301-45.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-45.ogg" #Ophelia (Cospcaptor)
     oph "The flood is coming. {b}What am I going to do!{/b}"
 
     show dai neutral
     "Relief washes over her face, and she visibly switches to an air of understanding."
 
-    voice "C-301-46.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Hey, you ever been to an open mic?"
+    voice "game_flood/voice/C-301-46.ogg" #Daisy (Haley C. McCarthy)
+    dai "Hey, you ever been to an open mic?"
 
     show oph surprised
-    voice "C-301-47.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-47.ogg" #Ophelia (Cospcaptor)
     oph "What?"
 
     show dai smile
-    voice "C-301-48.mp3" #Daisy (Haley C. McCarthy)
-    dsy "It's a place I know of, where you can make a flood of your own, in a way."
+    voice "game_flood/voice/C-301-48.ogg" #Daisy (Haley C. McCarthy)
+    dai "It's a place I know of, where you can make a flood of your own, in a way."
 
     show dai smile close
-    voice "C-301-49.mp3" #Daisy (Haley C. McCarthy)
-    dsy "A place where you can tell your stories freely, without shame or ridicule."
+    voice "game_flood/voice/C-301-49.ogg" #Daisy (Haley C. McCarthy)
+    dai "A place where you can tell your stories freely, without shame or ridicule."
 
     show oph defensive
-    voice "C-301-50.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-50.ogg" #Ophelia (Cospcaptor)
     oph "I uh.... I don't really…"
 
     show dai confident 
-    voice "C-301-51.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Come on. We'll check it out together."
+    voice "game_flood/voice/C-301-51.ogg" #Daisy (Haley C. McCarthy)
+    dai "Come on. We'll check it out together."
 
     show oph scared
-    voice "C-301-52.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-52.ogg" #Ophelia (Cospcaptor)
     oph "Wait! I don't want to get on stage."
 
     show dai smile close
-    voice "C-301-53.mp3" #Daisy (Haley C. McCarthy)
-    dsy "You don't have to. That's the beauty of it. You can share if you want, and people will be there to listen."
+    voice "game_flood/voice/C-301-53.ogg" #Daisy (Haley C. McCarthy)
+    dai "You don't have to. That's the beauty of it. You can share if you want, and people will be there to listen."
 
     show dai confident 
-    voice "C-301-54.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Or you can keep chasing butterflies."
+    voice "game_flood/voice/C-301-54.ogg" #Daisy (Haley C. McCarthy)
+    dai "Or you can keep chasing butterflies."
 
     show oph irritated
-    voice "C-301-55.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-301-55.ogg" #Ophelia (Cospcaptor)
     oph "He's a moth."
 
     show dai smile close
-    voice "C-301-56.mp3" #Daisy (Haley C. McCarthy)
-    dsy "Same thing!"
+    voice "game_flood/voice/C-301-56.ogg" #Daisy (Haley C. McCarthy)
+    dai "Same thing!"
 
     scene flood club outside
     "And so we went."
 
+    stop ambience fadeout 3.0
     "Daisy beckons me to come into the building with her. A strange sort of place."
 
     jump flood_302

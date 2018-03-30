@@ -177,3 +177,6 @@
     "I'll see you again one day. I swear it."
 
     "Goodbye."
+
+    scene black with Dissolve(2.0)
+    scene menu_fireplace with Dissolve(2.0)

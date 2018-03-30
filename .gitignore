@@ -55,8 +55,9 @@ Temporary Items
 **/errors.txt
 **/traceback.txt
 *-dists/*
-**/*.mp4
+#**/*.mp4
 *.mpg
+*.rpymc
 *.rpymc
 *.rpymc
 *.rpymc
