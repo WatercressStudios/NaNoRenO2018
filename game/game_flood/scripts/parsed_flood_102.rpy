@@ -313,7 +313,45 @@ label flood_102:
     
     "That's my signal. I take a look at my map."
     jump map
-    
+
+screen flood_mapselect:
+    tag flood_mapselect
+    imagemap:
+        ground "flood map normal"
+        idle "flood mapmoth disabled"
+        hover "flood mapmoth hover"
+
+        hotspot (772, 0, 610, 426):
+            action Jump("flood_mappark")
+        hotspot (83, 269, 599, 558):
+            action Jump("flood_mapdowntown")
+        hotspot (725, 472, 652, 480):
+            action Jump("flood_mapriverside")
+
+label flood_mappark:
+    if hope:
+        "I've already been there. I should look somewhere else."
+        jump map
+    else:
+        $ hope = True
+        jump flood_201
+
+label flood_mapdowntown:
+    if daisy:
+        "I've already been there. I should look somewhere else."
+        jump map
+    else:
+        $ daisy = True
+        jump flood_301
+
+label flood_mapriverside:
+    if oliver:
+        "I've already been there. I should look somewhere else."
+        jump map
+    else:
+        $ oliver = True
+        jump flood_401
+
 label map:
     play sound "game_flood/sfx/map.ogg"
     #Player gets the map
@@ -322,25 +360,27 @@ label map:
     voice "game_flood/voice/C-201-19.ogg" #Ophelia (Cospcaptor)
     oph "Well, little one, where to next?"
 
-    menu:
-        "Head to the park.":
-            if hope:
-                "I've already been there. I should look somewhere else."
-                jump map
-            else:
-                $ hope = True
-                jump flood_201
-        "Check out downtown.":
-            if daisy:
-                "I've already been there. I should look somewhere else."
-                jump map
-            else:
-                $ daisy = True
-                jump flood_301
-        "See the riverside.":
-            if oliver:
-                "I've already been there. I should look somewhere else."
-                jump map
-            else:
-                $ oliver = True
-                jump flood_401
+    call screen flood_mapselect with dissolve
+
+#     menu:
+#         "Head to the park.":
+#             if hope:
+#                 "I've already been there. I should look somewhere else."
+#                 jump map
+#             else:
+#                 $ hope = True
+#                 jump flood_201
+#         "Check out downtown.":
+#             if daisy:
+#                 "I've already been there. I should look somewhere else."
+#                 jump map
+#             else:
+#                 $ daisy = True
+#                 jump flood_301
+#         "See the riverside.":
+#             if oliver:
+#                 "I've already been there. I should look somewhere else."
+#                 jump map
+#             else:
+#                 $ oliver = True
+#                 jump flood_401
