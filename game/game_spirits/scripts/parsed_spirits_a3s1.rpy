@@ -223,5 +223,53 @@ label spirits_a3s1:
     scene black with Dissolve(3.0)
     $ renpy.movie_cutscene("videos/Spirits Credits.mp4")
     "TRUE ENDING"
-    scene menu_fireplace with Dissolve(2.0)
-    #jump spirits_a3s2
+    jump spiritsMetaNarrative
+
+label spiritsMetaNarrative:
+    $ current_story = None
+
+    play music "music/Cautionary Tale (INTRO).ogg" noloop fadeout 2.0
+    queue music "music/Cautionary Tale (LOOP).ogg" loop
+
+    scene menu_fireplace
+    show book
+
+    hide book with easeoutbottom
+
+    "Well, it was questionable for Sydney's parents to read us 'Beyond Yesterday's Grasp' when we were so young..."
+
+    "But it's probably the most applicable story to me right now."
+
+    "While this isn't exactly a tragedy on the same level as the one in the story, my arrest certainly changed my worldview."
+
+    "Learning to move on from tragedy, and to live between tragic moments, that's an extremely important lesson for me right now."
+
+    "Not to mention, where I'm going? A school for reforming criminals, helping political outcasts, and supporting refugees?"
+
+    "I'll be encountering a lot of tragic stories there."
+
+    "There will be a lot of heartache. My time in Canada has been... sheltered, to say the least."
+
+    "I'm going to see my first real glimpse at what the real world actually is."
+
+    "This helps me understand what others are going through, and how to react. How to help them."
+
+    "And when not to."
+
+    "For not everyone wants help - nor do they always need it."
+
+    "Humans aren't broken toys to be fixed."
+
+    "Everyone has damage."
+
+    "I just need to focus on becoming a better person."
+
+    "I will be better, and I {i}am{/i} better, I swear it."
+
+    $ persistent.storyCompletion.add('spirits')
+    
+    if 'letgo' and 'flood' and 'spirits' in persistent.storyCompletion:
+        jump postCreditsNarrative
+    
+    return
+

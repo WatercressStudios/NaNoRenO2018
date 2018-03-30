@@ -171,6 +171,7 @@ image white = "#fff"
 image red = "#600"
 image splashscreen_title = "gui/splashscreen_title.png"
 image menu_fireplace = "gui/main_menu.png"
+image fireplace = "gui/game_menu.png"
 image book = "gui/book.png"
 image story_menu = "gui/story_menu.png"
 image spirits_select = "gui/spirits_select.png"
@@ -379,3 +380,15 @@ label after_load:
     elif current_story == "spirits":
         $ config.voice_filename_format = "game_spirits/voice/{filename}"
     $ persistent.last_story = current_story
+
+
+###############################
+#
+# BEFORE MAIN MENU MUSIC PLAY
+#
+###############################
+
+# label before_main_menu:
+#     play music "music/Cautionary Tale (INTRO).ogg" noloop fadeout 2.0
+#     queue music "music/Cautionary Tale (LOOP).ogg" loop
+

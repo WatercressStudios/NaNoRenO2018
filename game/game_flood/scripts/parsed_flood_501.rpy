@@ -140,6 +140,10 @@ label flood_501:
     jump floodMetaNarrative
     
 label floodMetaNarrative:
+    $ current_story = None
+
+    play music "music/Cautionary Tale (INTRO).ogg" noloop fadeout 2.0
+    queue music "music/Cautionary Tale (LOOP).ogg" loop
 
     scene menu_fireplace
     show book

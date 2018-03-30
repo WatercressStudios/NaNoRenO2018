@@ -1,10 +1,11 @@
 label postCreditsNarrative:
+#     scene menu_fireplace
+#     show book
+# 
+#     hide book with easeoutbottom
 
-    scene menu_fireplace
-    show book
+    scene fireplace with Dissolve(2.0)
 
-    hide book with easeoutbottom
-    
     "So, that's all of them."
 
     "The three stories that have made a lasting impact on my life."
@@ -28,5 +29,10 @@ label postCreditsNarrative:
     "I'll be sure to pass this kindness on."
 
     "Listen to others. Help others. Become a person worthy of this chance."
-    
-    return
+
+    stop ambience fadeout 3.0
+    stop music fadeout 3.0
+    scene black with Dissolve(3.0)
+    $ renpy.movie_cutscene("videos/Final Credits.mp4")
+    scene menu_fireplace with Dissolve(2.0)
+

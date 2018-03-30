@@ -371,6 +371,7 @@ label spirits_000:
     $ current_story = "spirits"
     $ config.voice_filename_format = "game_spirits/voice/{filename}"
 
+    jump spirits_a1s0
     menu:
         "From beginning (Act 1)":
             jump spirits_a1s0

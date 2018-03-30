@@ -12,17 +12,17 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("NaNoRenO-2018")
+define config.name = _("Cautionary Tales")
 define config.developer = "True"
 
-define config.debug_sound = True
+define config.debug_sound = False
 define config.voice_filename_format = "game_{current_story}/voice/{filename}"
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## The version of the game.
@@ -41,7 +41,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "NaNoRenO-2018"
+define build.name = "CautionaryTales-0.9"
 
 
 ## Sounds and music ############################################################
@@ -65,7 +65,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "music/Cautionary Tale (LOOP).ogg"
 
 
 ## Transitions #################################################################

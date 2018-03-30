@@ -1,5 +1,7 @@
 label spirits_a1s0:
     scene black
+    stop music fadeout 5.0
+    pause 5.0
 
     "It’s a quiet day in early autumn, just a few hours before noon. I’m alone in a graveyard at the top of a hill."
 

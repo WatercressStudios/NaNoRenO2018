@@ -82,5 +82,5 @@ label spirits_a3s5:
     scene black with Dissolve(3.0)
     $ renpy.movie_cutscene("videos/Spirits Credits No Music.mp4")
     "SERVITUDE ENDING"
-    scene menu_fireplace with Dissolve(2.0)
+    jump spiritsMetaNarrative
 

@@ -180,6 +180,11 @@
     jump letgoMetaNarrative
     
 label letgoMetaNarrative:
+    $ current_story = None
+
+    play music "music/Cautionary Tale (INTRO).ogg" noloop fadeout 2.0
+    queue music "music/Cautionary Tale (LOOP).ogg" loop
+
     scene black with Dissolve(2.0)
     scene menu_fireplace
     show book

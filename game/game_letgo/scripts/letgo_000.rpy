@@ -694,8 +694,7 @@ label letgo_000:
     $ current_story = "letgo"
     $ config.voice_filename_format = "game_letgo/voice/{filename}"
 
-    #jump letgo_101
-
+    jump letgo_101
     menu:
         "From beginning":
             jump letgo_101

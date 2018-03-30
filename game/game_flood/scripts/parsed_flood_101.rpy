@@ -1,7 +1,9 @@
 label flood_101:
     #ambient: dripping in an echo
 
-    scene black with dissolve
+    scene black
+    stop music fadeout 5.0
+    pause 5.0
     
     play music "game_flood/music/flood.mp3" noloop fadein 1.0
 

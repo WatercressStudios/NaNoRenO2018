@@ -377,6 +377,7 @@ label flood_000:
     $ current_story = "flood"
     $ config.voice_filename_format = "{filename}"
 
+    jump flood_101
     menu:
         "Show everyone's expressions":
             jump flood_expressions

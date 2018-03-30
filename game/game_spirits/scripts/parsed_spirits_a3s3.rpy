@@ -285,5 +285,4 @@ label spirits_a3s3:
     scene black with Dissolve(3.0)
     $ renpy.movie_cutscene("videos/Spirits Credits No Music.mp4")
     "FOREVER ENDING"
-    scene menu_fireplace with Dissolve(2.0)
-    #jump spirits_a3s4
+    jump spiritsMetaNarrative
