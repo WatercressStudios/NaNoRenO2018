@@ -112,16 +112,17 @@ define alx = Character("Alex", callback=speaker("alx"), color="#e95540", dynamic
 define cae = Character("Caelum", callback=speaker("cae"), color="#f7b857", dynamic=True)
 define hmom = Character("Jianmei", callback=speaker("hmom"), color="#8cb180")
 define gen = Character("Genevieve", callback=speaker("gen"), color="#b7a295", dynamic=True)
-define wra = Character("Wraith", color="#ffffff")
-define caex = Character("Hallway Boy", callback=speaker("caex"), color="#f7b857") #Caelum voice
-define ama = Character("Mama", color="#ffffff")
-define Dad = Character("Papa", color="#ffffff")
+define wra = Character("Wraith", callback=speaker("wra"), color="#ffffff")
+#define caex = Character("Hallway Boy", callback=speaker("caex"), color="#f7b857") #Caelum voice
+define ama = Character("Mama", callback=speaker("ama"), color="#ffffff")
+define Dad = Character("Papa", callback=speaker("Dad"), color="#ffffff")
 define n = Character(None, kind=nvl)
-define cxx = Character("Caelum...?", callback=speaker("cxx"), color="#f7b857") #Caelum voice
-define gez = Character("Genevieve", callback=speaker("gez"), color="#b7a295") #Mix voiced
-define gex = Character("Genevieve", callback=speaker("gex"), color="#b7a295") #Mix voiced
-define nurse = Character("Nurse", color="#ffffff")
-define gho = Character("Ghost", color="#b7a295")
+#define cxx = Character("Caelum...?", callback=speaker("cxx"), color="#f7b857") #Caelum voice
+#define gez = Character("Genevieve", callback=speaker("gez"), color="#b7a295") #Mix voiced
+#define gex = Character("Genevieve", callback=speaker("gex"), color="#b7a295") #Mix voiced
+define nurse = Character("Nurse", callback=speaker("nurse"), color="#ffffff")
+define gho = Character("Ghost", callback=speaker("gho"), color="#b7a295")
+define alx2 = Character("Alex", callback=speaker("alx2"), color="#e95540")
 
 init python:
     define_images("game_spirits/bgs", 2, False, ["spirits"])
