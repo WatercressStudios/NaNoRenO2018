@@ -15,7 +15,8 @@
 define config.name = _("NaNoRenO-2018")
 define config.developer = "True"
 
-define config.debug_sound = False
+define config.debug_sound = True
+define config.voice_filename_format = "game_{current_story}/voice/{filename}"
 
 
 ## Determines if the title given above is shown on the main menu screen. Set

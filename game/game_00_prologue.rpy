@@ -68,7 +68,7 @@ init python:
     # This returns speaking if the character is speaking, and done if the
     # character is not.
     def while_speaking(name, speak_d, done_d, st, at):
-        if speaking == name:
+        if renpy.music.is_playing('voice') and speaking == name:
             return speak_d, .1
         else:
             return done_d, None
@@ -83,13 +83,14 @@ init python:
     # This callback maintains the speaking variable.
     def speaker_callback(name, event, **kwargs):
         global speaking
+        speaking = name
 
-        if event == "show":
-            speaking = name
-        elif event == "slow_done":
-            speaking = None
-        elif event == "end":
-            speaking = None
+#         if event == "show":
+#             speaking = name
+#         elif event == "slow_done":
+#             speaking = None
+#         elif event == "end":
+#             speaking = None
 
     # Curried form of the same.
     speaker = renpy.curry(speaker_callback)
@@ -303,3 +304,19 @@ label start_flood:
     "Flood story chosen"
 
     jump flood_000
+
+
+###############################
+#
+# AFTER LOAD CONFIG FIXES
+#
+###############################
+
+label after_load:
+    if current_story == "letgo":
+        $ config.voice_filename_format = "game_letgo/voice/{filename}"
+    elif current_story == "flood":
+        $ config.voice_filename_format = "{filename}"
+    elif current_story == "spirits":
+        $ config.voice_filename_format = "game_spirits/voice/{filename}"
+    $ persistent.last_story = current_story
