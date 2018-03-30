@@ -44,10 +44,11 @@
 #
 ###############################
 
-define oph = Character("Ophelia", color="#d68385")
-define oli = Character("Oliver", color="#aab421")
-define dai = Character("Daisy", color="#55b2ad")
-define hop = Character("Hope", color="#ca483d")
+
+define oph = Character("oph_name", callback=speaker("oph"), color="#d68385", dynamic=True)
+define oli = Character("oli_name", callback=speaker("oli"), color="#aab421", dynamic=True)
+define dai = Character("dai_name", callback=speaker("dai"), color="#55b2ad", dynamic=True)
+define hop = Character("hop_name", callback=speaker("hop"), color="#ca483d", dynamic=True)
 define wai = Character("Waitress", color="#ddd")
 define grl = Character("Little Girl", color="#ddd") #Hope
 define vce = Character("Voice", color="#ddd") #Hope's Dad
@@ -66,6 +67,9 @@ init python:
     define_images("game_flood/bgs", 2, False, ["flood"])
     define_images("game_flood/cgs", 2, False, ["flood"])
 
+init python:
+    renpy.music.set_volume(0.1, delay=0, channel='ambience')
+
 ###############################
 #
 # FLAGS
@@ -75,6 +79,13 @@ init python:
 default hope = False
 default daisy = False
 default oliver = False
+
+init:
+    $ oph_name = "Ophelia"
+    $ oli_name = "Old Man"
+    $ dai_name = "Performer"
+    $ hop_name = "Little Girl"
+
 
 ###############################
 #
