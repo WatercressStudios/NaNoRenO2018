@@ -133,4 +133,8 @@ label flood_501:
     "I'll figure something out. I'm an adult. I'm not over the hill yet, not even close."
     "...Maybe, in all this anxiety, there's a tinge of excitement in me too. Just a bit."
 
-    return
+    stop ambience fadeout 3.0
+    stop music fadeout 3.0
+    scene black with Dissolve(3.0)
+    $ renpy.movie_cutscene("videos/Flood Credits.mp4")
+    scene menu_fireplace with Dissolve(2.0)
