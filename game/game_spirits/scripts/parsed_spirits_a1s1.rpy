@@ -1,15 +1,23 @@
 label spirits_a1s1:
     #do some sort of fading into the background from the title splash at the end of Scene 0.  Should be something outside related to the school or the dorm
 
+    pause 3.0
+
     #hang at the screen for a bit with either House or Relaxed/School music to set the tone before moving to the text
 
-    #play relaxed/school music
+    play music bgmspirits_relax
 
     "Our cab drives up to the school building, comes through the gates, and stops at the curb."
 
     "I grab my bags and walk into the dorm - only to run into a smiling woman the second I cross the threshold."
 
-    #scene artemis hall foyer
+    scene spirits foyer
+
+    show hmom happy1 at centerleft
+
+    show alx neutral1 at centerright
+
+    with dissolve
 
     #show hmom happy/welcoming
 
@@ -42,11 +50,13 @@ label spirits_a1s1:
     alx "N-No thanks; I’ve got it."
 
     #show house mother neutral/upset
+    show hmom sad1 with dissolve
 
     voice "C-2-7.mp3" #House Mother "Jianmei" (Vivi)
     hmom "No, seriously! I can help! It must be hard with that arm, so I can assist you!"
 
     #show alex exasperated
+    show alx sad1 with dissolve
 
     voice "C-2-8.mp3" #Alex (Bonnie Mitchel)
     alx "You don’t need to, please! I’m used to it."
@@ -54,7 +64,7 @@ label spirits_a1s1:
     voice "C-2-9.mp3" #House Mother "Jianmei" (Vivi)
     hmom "...Are you sure?"
 
-    #show alex tired
+    show alx bitter1 with dissolve
 
     voice "C-2-10.mp3" #Alex (Bonnie Mitchel)
     alx "Yes, absolutely."
@@ -67,25 +77,58 @@ label spirits_a1s1:
     hmom "...Okay."
 
     #show house mother welcoming/happy
+    show hmom happy1 with dissolve
 
     voice "C-2-12.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Regardless, welcome to Oxton again! Come now, hurry! Let’s get you to your room!"
 
+    show hmom:
+        easein 0.6 xpos 0.5
+
+    pause 1.5
+
     voice "C-2-13.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Alex, what are you waiting for!? You can move faster than-- Ah!"
+
+    show hmom:
+        rotate -5
+        ypos 1.1
+    with dissolve
+
+    play sound "game_spirits/sfx/Thud.ogg"
+
+    show hmom:
+        easein 0.2 ypos 1.8
+    with vpunch
+
+    pause 0.2
+
+    show alx sad1 with dissolve
+
+    hide hmom with easeoutbottom
 
     "Ah, she fell."
 
     #show house mother flustered
+    show hmom sad1 close at center with easeinbottom
 
     voice "C-2-14.mp3" #House Mother "Jianmei" (Vivi)
     hmom "I-I’m fine, everyone! I just tripped."
 
     "...Does this happen often?"
 
+    scene black with dissolve
+
+    pause 0.5
+
+    scene spirits upstairs lounge with dissolve
     #scene artemis house hallway
 
-    #show house mother happy
+    show hmom happy1 close at center
+
+    show alx neutral1 at centerright
+
+    with dissolve
 
     "Jianmei guides me through the carpeted halls; the floor below screams with every step as if it’ll crumble under our weight."
 
@@ -101,12 +144,12 @@ label spirits_a1s1:
     voice "C-2-16.mp3" #Alex (Bonnie Mitchel)
     alx "It’s… nice. I think I’ll be able to settle in here just fine."
 
-    #show house mother worried
+    show hmom sad1 with dissolve
 
     voice "C-2-17.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Are you okay?"
 
-    #show alex worried/confused
+    show alx sad1 with dissolve
 
     voice "C-2-18.mp3" #Alex (Bonnie Mitchel)
     alx "Well, yes. Why?"
@@ -114,13 +157,15 @@ label spirits_a1s1:
     voice "C-2-19.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Like… you seem sad somehow. - or tense. Anxious, maybe?  Un-relaxed."
 
+    show alx angry1 blush with dissolve
+
     voice "C-2-20.mp3" #Alex (Bonnie Mitchel)
     alx "R-Really, there’s no need to worry about that."
 
     voice "C-2-21.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Well, my instincts are rarely wrong. Are you uncomfortable?"
 
-    #show alex tired
+    show alx bitter1 close with dissolve
 
     voice "C-2-22.mp3" #Alex (Bonnie Mitchel)
     alx "I’m fine. Please."
@@ -136,6 +181,8 @@ label spirits_a1s1:
     voice "C-2-23.mp3" #House Mother "Jianmei" (Vivi)
     hmom "...You can talk to me if you want?"
 
+    show alx sheepish1 with dissolve
+
     voice "C-2-24.mp3" #Alex (Bonnie Mitchel)
     alx "It’s really nothing. Things at home just… get a little stressful is all."
 
@@ -150,6 +197,8 @@ label spirits_a1s1:
     voice "C-2-27.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Does it have to do with how you lost your arm?"
 
+    show alx bitter1 with dissolve
+
     "I can feel her {i}staring{/i} at it. Why does everyone always ask that? I’m sick of talking about it!"
 
     #show alex tense
@@ -157,6 +206,7 @@ label spirits_a1s1:
     voice "C-2-28.mp3" #Alex (Bonnie Mitchel)
     alx "I don’t want to talk about it."
 
+    show hmom happy1 with dissolve
     #show house mother smile
 
     voice "C-2-29.mp3" #House Mother "Jianmei" (Vivi)
@@ -168,13 +218,17 @@ label spirits_a1s1:
     voice "C-2-31.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Please, Alex? {i}Pleeeeease!{/i}"
 
+    show alx bitter1 close blush with dissolve
+
     "..."
 
-    #show alex awkward
+    show alx sheepish1 with Dissolve(1.5) #show alex awkward
 
     "I curve my mouth upwards and into a smile."
 
     "...It feels unnatural, like trying to screw in a nail with a rope."
+
+    show hmom happy1 close with dissolve
 
     voice "C-2-32.mp3" #House Mother "Jianmei" (Vivi)
     hmom "See? You look better already!"
@@ -189,32 +243,85 @@ label spirits_a1s1:
     voice "C-2-34.mp3" #House Mother "Jianmei" (Vivi)
     hmom "It’s at the end of this hall. Follow me!"
 
+    show alx sheepish1:
+        ease 0.6 align (1.0, 1.0) alpha 0
+    show hmom happy1:
+        ease 0.6 align (1.0, 1.0) alpha 0
+
+    pause 0.2
+
+    scene black with dissolve
+
     "We round another corner, and come across a hall that seems to go on for an eternity."
 
     "Each door that we pass by takes longer to reach than the last - until finally, we reach the end."
 
     "Jianmei stands by it, practically bouncing on her heels."
 
+    scene spirits dorm hallway
+
+    show hmom happy1 close: #show house mother happy
+        xanchor 0.5
+        yalign 1.0
+        xpos 0.4
+        ypos 1.03
+
+    show alx neutral1:
+        xanchor 0.5
+        yalign 1.0
+        xpos 0.6
+        ypos 1.03
+
+    with dissolve
+
+    pause 0.2
+
+    show hmom:
+        linear 0.1 ypos 1.0
+        linear 0.1 ypos 1.03
+
     voice "C-2-35.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Do you wanna open it, or should I?"
 
+    show alx sheepish1 with dissolve
+
     voice "C-2-36.mp3" #Alex (Bonnie Mitchel)
     alx "Can I?"
+
+    show hmom sad1 with dissolve
 
     voice "C-2-37.mp3" #House Mother "Jianmei" (Vivi)
     hmom "That’s fine, that’s fine!"
 
     "I swear, she sounds disappointed."
 
+    show alx neutral1 at right with ease
+
+    pause 0.2
+
     play sound "game_spirits/sfx/Open Door.ogg"
 
-    #scene alex’s bedroom v0
+    stop music fadeout 1.0
 
-    #play house theme
+    scene black with dissolve
+
+    scene spirits alex bedroom empty
+
+    with dissolve
+
+    show alx neutral1 at centerright with easeinright
+
+    pause 1.0
+
+    play music bgmspirits_main
 
     "The room is small, but nice. There’s a twin bed on one side, a closet next to the door, and some sort of… weird tiny door, too?"
 
-    #show alex confused
+    show alx sheepish1 at center with ease
+
+    pause 0.75
+
+    show hmom happy1 at right with easeinright
 
     voice "C-2-38.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Room 5-22, the twenty-second room in the fifth hall."
@@ -225,7 +332,11 @@ label spirits_a1s1:
     voice "C-2-40.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Don’t ask about the door; it’s been closed as long as I’ve been working here. I think it leads nowhere anyway, so… nothing to worry about!"
 
+    show alx scared1 with dissolve
+
     "That’s exactly what someone would say if there {i}was{/i} something to worry about."
+
+    show alx sheepish1 with dissolve
 
     voice "C-2-41.mp3" #Alex (Bonnie Mitchel)
     alx "...I like it. It’s quieter than something closer to the entrance, and it seems pretty comfortable."
@@ -233,11 +344,15 @@ label spirits_a1s1:
     voice "C-2-42.mp3" #House Mother "Jianmei" (Vivi)
     hmom "That’s great, Alex!  Do you need anything, or can you get things put away on your own?"
 
+    show alx happy1 with dissolve
+
     voice "C-2-43.mp3" #Alex (Bonnie Mitchel)
     alx "I’ll be fine. It’s easier to do this kind of stuff alone."
 
     voice "C-2-44.mp3" #House Mother "Jianmei" (Vivi)
     hmom "Alright, your room keys are on the desk. Have fun!"
+
+    hide hmom with easeoutright
 
     #hide house mother
 
@@ -245,8 +360,16 @@ label spirits_a1s1:
 
     "Jianmei closes the door behind her - and at long last, I’m left alone."
 
+    show alx sad1 with dissolve
+
     voice "C-2-45.mp3" #Alex (Bonnie Mitchel)
     alx "Finally…"
+
+    show alx sad1 at left with ease
+
+    pause 0.1
+
+    hide alx with dissolve
 
     "I crash onto the bare mattress as soon as I’m alone. That… was not very easy."
 
@@ -258,15 +381,31 @@ label spirits_a1s1:
 
     "She’d be laughing her head off and I’d never hear the end of it."
 
+    scene black with dissolve
+
     "After a few minutes of doing nothing, I get up and start pulling things out of my bags."
 
-    "I make the bed; hang up my clothes; and set my watercolours and used textbooks on the desk."
+    scene spirits alex bedroom clean
+
+    show alx happy1 at centerright
+
+    with dissolve
+
+    "I make the bed, hang up my clothes, and set my watercolours and used textbooks on the desk."
 
     "Come to think of it, Naniji and I bought these in quite a hurry… I haven’t even had time to look at them."
 
+    show alx neutral1 at center with ease
+
+    play sound "game_spirits/sfx/Thud.ogg"
+
+    pause 0.35
+
     "As I move closer to the tiny door from earlier, however, my prosthetic swings a little too enthusiastically and bangs against the lock."
 
-    #cut the ost
+    stop music
+
+    show alx scared1 with dissolve
 
     "My heart sinks and my stomach churns. It hasn’t done this since--"
 
@@ -274,7 +413,21 @@ label spirits_a1s1:
 
     "What the hell?"
 
-    #play genevieve’s theme
+    play music bgmspirits_gen
+
+    hide alx
+
+    show spirits alex bedroom clean:
+        zoom 2.5
+        ease 0.6 xalign 0.8 yalign 0.18
+
+    pause 0.65
+
+    show spirits clawmarks as claws:
+        xpos 0.515 ypos 0.09
+
+    with dissolve
+
 
     "On closer inspection, the door is covered in scratches and claw marks."
 
@@ -300,7 +453,17 @@ label spirits_a1s1:
 
     play sound "game_letgo/sfx/Punch,Shove.ogg"
 
+    scene white
+    pause 0.01
+    scene black
+
     #quick white flash before screen cuts to black.
+
+    scene spirits alex bedroom clean
+
+    show alx angry1 close at center
+
+    with dissolve
 
     #show alex shocked/in pain
 
@@ -310,6 +473,8 @@ label spirits_a1s1:
     voice "C-2-47.mp3" #Alex (Bonnie Mitchel)
     alx "Ugh..."
 
+    show alx angry1 with dissolve
+
     voice "C-2-48.mp3" #Alex (Bonnie Mitchel)
     alx "That hurt! Like, {b}{i}really{/b}{/i} hurt."
 
@@ -317,13 +482,15 @@ label spirits_a1s1:
 
     "This is going to trigger a migraine, isn’t it? It better not! I can’t deal with that today."
 
+    show alx sad1 with dissolve
+
     "What the hell hit me, anyway?"
 
     #show alex confused
 
     "I look up toward the ceiling. There’s nowhere for things to fall from."
 
-    #scene closed box
+    scene spirits box closed with dissolve
 
     "When I turn around, there’s an upturned box laying on the floor."
 
@@ -352,7 +519,7 @@ label spirits_a1s1:
 
             "I click the lock on it open and raise the top..."
 
-            #scene open box
+            scene spirits box opened with dissolve
 
             "..."
 
@@ -375,9 +542,26 @@ label spirits_a1s1:
 
     #merge paths here
 
+    scene spirits alex bedroom clean
+
+    show alx bitter1:
+        xanchor 0.5
+        yalign 1.0
+        xpos 0.6
+        ypos 1.3
+
+    pause 0.2
+
+    show alx bitter1:
+        easein 0.8 ypos 1.0
+
+    pause 0.2
+
     #scene alex’s bedroom v0
 
     #show alex relaxed
+
+    show alx sad1 at centerleft with ease
 
     "I slide the box under my bed for now. It seems like the best place for it, for the time being."
 
