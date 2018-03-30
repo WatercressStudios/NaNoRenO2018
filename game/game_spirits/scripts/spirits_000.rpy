@@ -111,6 +111,7 @@ define cxx = Character("Caelum...?", callback=speaker("cxx"), color="#f7b857") #
 define gez = Character("Genevieve", callback=speaker("gez"), color="#b7a295") #Mix voiced
 define gex = Character("Genevieve", callback=speaker("gex"), color="#b7a295") #Mix voiced
 define nurse = Character("Nurse", color="#ffffff")
+define gho = Character("Ghost", color="#b7a295")
 
 init python:
     define_images("game_spirits/bgs", 2, False, ["spirits"])
@@ -363,7 +364,11 @@ label spirits_000:
             jump spirits_a1s0
         "Act 1 Scene 7":
             jump spirits_a1s7
-        "Act 2 Scene 2":
+        "Act 2 Scene 2 (Caelum Alive)":
+            $ caelumAlive = True
+            jump spirits_a2s2
+        "Act 2 Scene 2 (Caelum Dead)":
+            $ caelumAlive = False
             jump spirits_a2s2
         "Act 3":
             jump spirits_a3s1

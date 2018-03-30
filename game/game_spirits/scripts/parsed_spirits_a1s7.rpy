@@ -25,7 +25,7 @@ label spirits_a1s7:
     ama "...Oh my god."
 
     voice "C-8-4.mp3" #Genevieve (Lasli Tran)
-    gen "{size=-15}Let me out.{/size}"
+    gho "{size=-15}Let me out.{/size}"
 
     voice "C-8-5.mp3" #Mama (N/A)
     ama "That was… Oh my god!"
@@ -42,7 +42,7 @@ label spirits_a1s7:
     ama "Bitiyaa, are you doing okay back there?"
 
     voice "C-8-8.mp3" #Genevieve (Lasli Tran)
-    gen "{size=-10}Let. Me. Out.{/size}"
+    gho "{size=-10}Let. Me. Out.{/size}"
 
     voice "C-8-9.mp3" #Mama (N/A)
     ama "Whew… Let’s just pull over and wait for the storm to--"
@@ -70,14 +70,14 @@ label spirits_a1s7:
     play sound "game_spirits/sfx/Banging on Door 2.ogg"
 
     voice "C-8-11.mp3" #Genevieve (Lasli Tran)
-    gen "Let me {i}{b}out!{/b}{/i}"
+    gho "Let me {i}{b}out!{/b}{/i}"
 
     play sound "game_spirits/sfx/Creepy Clawing.ogg"
 
     pause 5.0
 
     voice "C-8-12.mp3" #Genevieve (Lasli Tran)
-    gen "Let me out! Let me out! Let me out!"
+    gho "Let me out! Let me out! Let me out!"
 
     #play sound [Hammer of a gun being pulled back, then firing, and a body thumping to the ground]
     play sound "game_spirits/sfx/Click Bang Thump.ogg"
@@ -89,13 +89,13 @@ label spirits_a1s7:
     play ambience "game_spirits/ambience/EKG Batshit.ogg" noloop
 
     voice "C-8-13.mp3" #Genevieve (Lasli Tran)
-    gen "Let me out! Let me out! Let me out--"
+    gho "Let me out! Let me out! Let me out--"
     #stop music
 
     pause 2.0
 
     voice "C-8-14.mp3" #Genevieve (Lasli Tran)
-    gen "...LETMEOUTLETMEOUTLETMEOUTLETMEOUTLETMEOUT!!!"
+    gho "...LETMEOUTLETMEOUTLETMEOUTLETMEOUTLETMEOUT!!!"
 
     pause 1.5
 
@@ -104,7 +104,7 @@ label spirits_a1s7:
     pause 3.0
 
     voice "C-8-15.mp3" #Genevieve (Lasli Tran)
-    gen "LET ME OUT!"
+    gho "LET ME OUT!"
 
     play sound "game_spirits/sfx/Wraith Laughs.ogg"
 

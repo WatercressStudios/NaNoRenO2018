@@ -31,6 +31,7 @@ label spirits_a1s6:
     "Regardless, I step inside."
 
     stop ambience fadeout 1.0
+    play music bgmspirits_relax fadeout 0.5
 
     #scene bg classroom inside
     scene spirits classroom with dissolve
@@ -105,6 +106,8 @@ label spirits_a1s6:
     voice "C-7-6.mp3" #Alex (Bonnie Mitchel)
     alx "So are these, uh, really for me? Or do I have to, like, share?"
 
+    show cae happy1 close with dissolve
+
     voice "C-7-7.mp3" #Caelum (Daniel Acosta)
     cae "Yes."
 
@@ -148,7 +151,7 @@ label spirits_a1s6:
 
     "As he responds, Caelum gives a… sort-of smile - as if this was his plan all along."
 
-    show cae happy1 with dissolve
+    show cae happy1 close with dissolve
 
     voice "C-7-14.mp3" #Caelum (Daniel Acosta)
     cae "Awesome. Thanks."
@@ -167,6 +170,7 @@ label spirits_a1s6:
     "I turn and keep my attention rapt. Time to learn about beekeeping!"
 
     stop ambience fadeout 3.0
+    stop music fadeout 3.0
     #scene black
     scene black with Dissolve(3.0)
     "The day passes by surprisingly fast; the teachers are kind and accommodating, the classes are interesting, and everyone seems nice enough."
