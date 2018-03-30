@@ -81,14 +81,28 @@ label spirits_a2s3:
 
             "Aha! The floorboard slides right {i}under{/i} the last step."
 
+            show alx surprised1 with dissolve:
+                ease 0.5 align (0.2,1.0)
+
+            show spirits diary as diaryicon:
+                xanchor 0.5
+                yalign 1.0
+                xpos 0.5
+                ypos 0.5
+            with Dissolve(1.0)
+
             "Underneath the board is a small, leather-bound diary; its pages are browned and frayed."
 
             "I mean, I don’t have any proof it’s {i}actually{/i} a diary; it could be some kind of technical manual, for all I know - or even a phone book."
+
+            show alx neutral1 with dissolve
 
             "But let’s be real, it’s a diary. It’s {i}always{/i} a diary."
 
             voice "C-11-2.mp3" #Alex (Bonnie Mitchel)
             alx "And I guess now I have to read it…"
+
+            hide diaryicon
 
             "Setting the board back into place, I shove the book into my pocket, grab my food, and head back upstairs."
 
