@@ -98,6 +98,13 @@ init:
     $ Caelum = "Hallway Boy"
     $ Genevieve = "Ghost"
 
+    $ caelumAlive = True
+    $ firstTrueEndFlag = True
+    $ hasDiary = True
+    $ hasLetter = True
+    $ hasAmmo = True
+    $ secondTrueEndFlag = False  
+
 define alx = Character("Alex", callback=speaker("alx"), color="#e95540", dynamic=True)
 define cae = Character("Caelum", callback=speaker("cae"), color="#f7b857", dynamic=True)
 define hmom = Character("Jianmei", callback=speaker("hmom"), color="#8cb180")
@@ -370,6 +377,8 @@ label spirits_000:
         "Act 2 Scene 2 (Caelum Dead)":
             $ caelumAlive = False
             jump spirits_a2s2
+        "Diary Scene (for NVL test)":
+            jump spirits_a2s3
         "Act 3":
             jump spirits_a3s1
         "Show everyone's expressions":

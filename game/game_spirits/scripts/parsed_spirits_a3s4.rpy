@@ -1,3 +1,5 @@
+# SURRENDER/HOSPITALISATION ENDING
+
 label spirits_a3s4:
     #scene alex’s bedroom v1
 

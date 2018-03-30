@@ -1,3 +1,5 @@
+# FOREVER/ALEX POSSESSED ENDING
+
 label spirits_a3s3:
     "I can see my room."
 

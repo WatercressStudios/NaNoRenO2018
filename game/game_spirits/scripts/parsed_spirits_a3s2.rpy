@@ -1,3 +1,5 @@
+# SACRIFICE/CAELUM POSSESSED ENDING
+
 label spirits_a3s2:
     #scene black
 

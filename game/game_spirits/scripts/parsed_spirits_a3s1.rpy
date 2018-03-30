@@ -1,3 +1,5 @@
+# TRUE/DEMOLITION ENDING
+
 label spirits_a3s1:
     #scene sunlit_courtyard
      

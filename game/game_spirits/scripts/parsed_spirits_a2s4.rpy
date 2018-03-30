@@ -4,7 +4,7 @@ label spirits_a2s4:
     jump CaelumIsDeadX
 
 label CaelumIsDeadX:
-    if hasDiary == False:
+    if hasDiary == True:
         "I’m reviewing the diary a second time - trying to more clearly visualize the timeline of events they describe - when I hear a knocking on the doorframe of my room."
     else:
         "I’m just saying my goodbyes to Naniji and relaxing into my soft mattress when I hear a knocking on the doorframe."
@@ -172,7 +172,7 @@ label CaelumIsDeadX:
 
         "I’m going to rid this whole fucking planet of you."
         
-        jump spirits_a2s5
+    jump spirits_a2s5
 
 label BuddingRelationshipX:
     if hasDiary == False:

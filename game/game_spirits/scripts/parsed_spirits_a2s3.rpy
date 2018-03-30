@@ -134,6 +134,7 @@ label spirits_a2s3:
         if 'urname' in questionFlags:
             "Genevieve Bourlon… that’s what the ghost told me her name was."
         else:
+            $ Genevieve = "Genevieve"
             "Genevieve Bourlon… could that be the demanding ghost’s name?"
 
         nvl clear
