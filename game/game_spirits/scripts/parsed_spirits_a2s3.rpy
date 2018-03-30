@@ -1,4 +1,10 @@
 label spirits_a2s3:
+    play music bgmspirits_main fadeout 0.5
+
+    scene spirits school hallway with dissolve
+
+    show alx happy1 with dissolve
+
     "Lunches are provided in the dining hall, but it's just so crowded and raucous in there."
 
     "It’s easier to head back to Artemis Hall. Jianmei doesn’t make lunches, but she keeps an emergency stock of food in the fridge - whatever she feels like making on any given day, I guess."
@@ -21,7 +27,9 @@ label spirits_a2s3:
 
     "There are a couple of other girls coming back with me down the walkway, but I don't know any of them. One of them waves at me when she notices me looking, so I tentatively wave back."
 
-    #scene foyer 
+    scene spirits foyer with dissolve
+
+    show alx happy1 with dissolve
 
     "I think I'm going to eat in my bedroom today. It'll be nice to have a little time to myself."
 
@@ -29,16 +37,20 @@ label spirits_a2s3:
 
     "I grab a little variety pack from the fridge: an onigiri, a caesar wrap, and an egg roll; then, I head on my merry way."
 
+    show alx surprised1 with dissolve
+
     "It’s only when I’ve made it to the stairs that it finally clicks."
 
     "\"Check under the last step...\""
 
     "But under the bottom step of the main staircase? What is it she wants me to find?"
 
+    show alx neutral1 with dissolve
+
     "Maybe I shouldn't do this right now… I mean, I've got all this food…"
 
     "On the other hand, with migraines like mine, having free time isn’t always a guarantee..."
-    
+
     $ duties = 0
     $ life = 0
 
@@ -49,7 +61,7 @@ label spirits_a2s3:
         "If I just look…":
 
             $ hasDiary = True
-            
+
             $ duties += 1
 
             voice "C-11-1.mp3" #Alex (Bonnie Mitchel)
@@ -83,7 +95,7 @@ label spirits_a2s3:
         "No. This can wait.":
 
             $ hasDiary = False
-            
+
             $ life += 1
 
             "I don’t want to do this right now. I’d feel ridiculous."
@@ -94,7 +106,13 @@ label spirits_a2s3:
 
     if caelumAlive == False:
 
+        scene spirits dorm hallway with dissolve
+
+        show alx neutral1 with dissolve
+
         "As I walk past Caelum’s bedroom, I notice that the door is closed."
+
+        show alx sad1 with dissolve
 
         "That’s mildly distressing; I certainly thought he’d just be sick in bed or something."
 
@@ -111,11 +129,19 @@ label spirits_a2s3:
 
     if hasDiary == True:
 
+        scene spirits alex bedroom clean with dissolve
+
+        show alx neutral1 with dissolve
+
         "Walking into my room, I sit down at the desk, set my lunch aside for a moment, and crack open the diary."
 
         "The paper is musty and smells disgusting - but there’s fewer rat droppings on it than expected, so that’s something, I guess?"
 
+        show alx angry1 with dissolve
+
         "I’m {i}definitely{/i} going to wash my hands after this."
+
+        show alx neutral1 with dissolve
 
         "I gently flip through the pages. They’re all written in the same hand, and entries end about a third of the way through."
 
@@ -158,7 +184,7 @@ label spirits_a2s3:
         n "{i}\"I heard movement in the upper story - but as I crept to the staircase, I could see no candlelight. I suspected an intruder was in the house. \"{/i}"
 
         n "{i}\"Then, I heard the most ghastly shriek.\"{/i}"
-        
+
         n "{i}\"I grabbed the poker from the fireplace and made my way up the stairs, lest the young lady be debauched.\"{/i}"
 
         n "{i}\"But what I saw in the moonlight was unspeakable.\"{/i}"
@@ -195,11 +221,17 @@ label spirits_a2s3:
 
         nvl clear
 
+        show alx sad1 with dissolve
+
         "I… I get the feeling she didn’t succeed."
 
         "Dammit. Just how many people died in this house?"
 
-    else: 
+    else:
+
+        scene spirits alex bedroom clean with dissolve
+
+        show alx neutral1 with dissolve
 
         "Walking to my room, I put on a classical literature podcast and sit down at my desk with my food."
 
@@ -218,6 +250,8 @@ label spirits_a2s3:
 
         "Grabbing my phone, I find Naniji in my contacts and dial her number."
 
+        show alx happy1 with dissolve
+
         "It’s so reassuring to hear her voice after everything I’ve been through these last couple days. I almost wish I was back with her."
 
         voice "C-11-5.mp3" #Alex (Bonnie Mitchel)
@@ -225,6 +259,8 @@ label spirits_a2s3:
 
         voice "C-11-6.mp3" #Alex (Bonnie Mitchel)
         alx "Well, I guess I’ve made one friend. His name’s Caelum…"
+
+        show alx angry1 blush with dissolve
 
         voice "C-11-7.mp3" #Alex (Bonnie Mitchel)
         alx "No, Naniji, it’s not anything like that…"
