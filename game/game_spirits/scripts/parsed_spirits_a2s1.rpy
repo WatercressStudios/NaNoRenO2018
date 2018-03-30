@@ -44,6 +44,9 @@ label spirits_a2s1_alive:
 
     "I breathe in one more time and twist my doorknob..."
 
+    play sound "game_spirits/sfx/Open Door.ogg"
+    play music bgmspirits_cae
+
     show alx surprised1:
         ease 0.2 align (0.2,1.0)
 
@@ -111,13 +114,13 @@ label spirits_a2s1_alive:
 
     "But somehow, I don’t think so."
 
+    stop music
+
     jump spirits_a2s2
 
 
 label spirits_a2s1_dead:
     #continuing from Act 1 Scene 7, fade into Genevieve’s theme
-
-    play ambience "game_letgo/ambience/Park Night.ogg" fadein 0.1 fadeout 0.1
 
     scene spirits alex bedroom night clean with dissolve
 
@@ -199,26 +202,39 @@ label spirits_a2s1_dead:
 
     "If I can’t, I’ll just… relax until morning."
 
+    scene black with dissolve
+
     "I can figure out what to do then."
 
-    scene black with dissolve
-    pause 10
+    $renpy.pause(1.0, hard = True)
 
     #fade to black, hang here for a while
 
-    show red with dissolve:
-        alpha 0.2
-        linear 5 alpha 0.8
+    show red:
+        alpha 0.8
+
+    play sound "game_letgo/sfx/crush.ogg"
 
     #cut to bloody visual effect or tint the screen dark red with some screen shake, give a gruesome sound-effect like a shovel bashing into a head.
 
     #hang here for a bit more
 
+    $renpy.pause(1.0, hard = True)
+
     "What the hell?"
+
+    stop ambience
+
+    play music bgmspirits_wra
 
     #wraith’s theme
 
     "There’s a sound..."
+
+    play sound "game_letgo/sfx/crush.ogg"
+
+    show red
+    with hpunch
 
     #repeat screen shake and sound effect
 
@@ -228,13 +244,15 @@ label spirits_a2s1_dead:
 
     "Where it is coming from?"
 
-    #repeat repeatedly
+    play sound "game_letgo/sfx/crush.ogg"
 
     "It’s painful."
 
     "It hurts!"
 
     "What is this!?"
+
+    play sound "game_letgo/sfx/crush.ogg"
 
     #repeat repeatedly more
 
@@ -251,6 +269,8 @@ label spirits_a2s1_dead:
     "So painful..."
 
     "And it’s hateful, whatever it is."
+
+    play sound "game_letgo/sfx/crush.ogg"
 
     #repeat repeatedly
 
@@ -274,32 +294,46 @@ label spirits_a2s1_dead:
 
     "How much {i}hate{/i} can one sound hold?"
 
-    show spirits alex bedroom clean with dissolve
+    play sound "game_letgo/sfx/crush.ogg"
+
+    $renpy.pause(2.0, hard = True)
+
+    play sound "game_letgo/sfx/crush.ogg"
+
+    $renpy.pause(2.0, hard = True)
+
+    play sound "game_letgo/sfx/crush.ogg"
 
     #repeat repeatedly, before shifting back to Alex’s room BG
+
+    play music bgmspirits_main
+
+    show spirits alex bedroom clean with dissolve
 
     show alx sad1 close with dissolve
 
     "Morning."
 
-    #repeat again
+    play sound "game_letgo/sfx/crush.ogg" fadeout 1.0 fadein 1.0
 
     "The noise has slowed down…"
 
-    #repeat
+    play sound "game_letgo/sfx/crush.ogg" fadeout 1.0 fadein 1.0
 
     "But it refuses to stop."
 
-    #repeat
+    play sound "game_letgo/sfx/crush.ogg" fadeout 1.0 fadein 1.0
 
     "Why won’t it?"
 
-    #repeat
+    play sound "game_letgo/sfx/crush.ogg" fadeout 1.0 fadein 1.0
 
     "I get up and try to ignore it."
 
-    #repeat
+    play sound "game_letgo/sfx/crush.ogg" fadeout 1.0 fadein 1.0
 
     "It’s time to go to school."
+
+    stop music
 
     jump spirits_a2s2

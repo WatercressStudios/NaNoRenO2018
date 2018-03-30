@@ -103,7 +103,7 @@ init:
     $ hasDiary = True
     $ hasLetter = True
     $ hasAmmo = True
-    $ secondTrueEndFlag = False  
+    $ secondTrueEndFlag = False
 
 define alx = Character("Alex", callback=speaker("alx"), color="#e95540", dynamic=True)
 define cae = Character("Caelum", callback=speaker("cae"), color="#f7b857", dynamic=True)
@@ -383,6 +383,8 @@ label spirits_000:
             jump spirits_a2s3
         "Act 3":
             jump spirits_a3s1
+        "Act 3 Scene 4":
+            jump spirits_a3s4
         "Show everyone's expressions":
             jump spirits_expressions
 

@@ -2,6 +2,7 @@
 
 label spirits_a3s5:
     #scene black
+    scene black with dissolve
 
     "The freezing water runs through my hair and over my body, drenching me, cooling my core as it has the last hundred times."
 
@@ -18,6 +19,7 @@ label spirits_a3s5:
     "With my coat, gloves, and scarf on, I'm prepared for the hike it'll take to get to the right location."
 
     #show road bg
+    scene spirits city street with dissolve
 
     "It's a ways away, but not far enough to warrant driving. Gas, too, is expensive."
 
