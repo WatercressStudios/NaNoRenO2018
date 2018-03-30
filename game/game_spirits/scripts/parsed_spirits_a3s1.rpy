@@ -218,4 +218,10 @@ label spirits_a3s1:
     voice "C-16-55.mp3" #Alex (Bonnie Mitchel)
     alx "I know."
 
-    jump spirits_a3s2
+    stop ambience fadeout 3.0
+    stop music fadeout 3.0
+    scene black with Dissolve(3.0)
+    $ renpy.movie_cutscene("videos/Spirits Credits.mp4")
+    "TRUE ENDING"
+    scene menu_fireplace with Dissolve(2.0)
+    #jump spirits_a3s2

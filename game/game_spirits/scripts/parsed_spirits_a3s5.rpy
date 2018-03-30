@@ -77,4 +77,10 @@ label spirits_a3s5:
 
     "And so, with a grimace, I begin."
 
-    return
+    stop ambience fadeout 3.0
+    stop music fadeout 3.0
+    scene black with Dissolve(3.0)
+    $ renpy.movie_cutscene("videos/Spirits Credits No Music.mp4")
+    "SERVITUDE ENDING"
+    scene menu_fireplace with Dissolve(2.0)
+

@@ -262,4 +262,10 @@ label spirits_a3s2:
 
     "Can I even {i}call{/i} this living?"
 
-    jump spirits_a3s3
+    stop ambience fadeout 3.0
+    stop music fadeout 3.0
+    scene black with Dissolve(3.0)
+    $ renpy.movie_cutscene("videos/Spirits Credits No Music.mp4")
+    "SACRIFICE ENDING"
+    scene menu_fireplace with Dissolve(2.0)
+    #jump spirits_a3s3

@@ -280,4 +280,10 @@ label spirits_a3s3:
 
     "What could I ever have done to deserve this?"
 
-    jump spirits_a3s4
+    stop ambience fadeout 3.0
+    stop music fadeout 3.0
+    scene black with Dissolve(3.0)
+    $ renpy.movie_cutscene("videos/Spirits Credits No Music.mp4")
+    "FOREVER ENDING"
+    scene menu_fireplace with Dissolve(2.0)
+    #jump spirits_a3s4

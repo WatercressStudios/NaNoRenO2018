@@ -122,7 +122,7 @@ define n = Character(None, kind=nvl)
 #define gex = Character("Genevieve", callback=speaker("gex"), color="#b7a295") #Mix voiced
 define nurse = Character("Nurse", callback=speaker("nurse"), color="#ffffff")
 define gho = Character("Ghost", callback=speaker("gho"), color="#b7a295")
-define alx2 = Character("Alex", callback=speaker("alx2"), color="#e95540")
+define alx2 = Character("Alex", callback=speaker("alx2"), color="#b7a295")
 
 init python:
     define_images("game_spirits/bgs", 2, False, ["spirits"])
@@ -392,10 +392,16 @@ label spirits_000:
             $ duties = 2
             $ life = 1
             jump spirits_a2s7
-        "Act 3":
+        "True Ending":
             jump spirits_a3s1
-        "Act 3 Scene 4":
+        "Sacrifice Ending":
+            jump spirits_a3s2
+        "Forever Ending":
+            jump spirits_a3s3
+        "Surrender Ending":
             jump spirits_a3s4
+        "Servitude Ending":
+            jump spirits_a3s5
         "Show everyone's expressions":
             jump spirits_expressions
 
