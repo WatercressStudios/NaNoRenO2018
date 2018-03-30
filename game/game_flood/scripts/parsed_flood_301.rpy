@@ -36,8 +36,6 @@ label flood_301:
     show oph neutral close
     "I listen carefully, attempting to push the sounds of the city aside to find the far away note that I'm sure I could hear just moments ago."
 
-    "Here we stand, silent as can be for just a moment." 
-
     play music "game_flood/music/downtown.mp3" noloop fadein 1.0
     show oph defensive
     "And then I hear it." 
