@@ -2,6 +2,7 @@
 
 label spirits_a3s4:
     #scene alex’s bedroom v1
+    scene spirits alex bedroom clean with dissolve
 
     voice "C-19-1.mp3" #Alex (Bonnie Mitchel)
     alx "I’ll see you later!"
@@ -18,10 +19,12 @@ label spirits_a3s4:
     "After giving a small nod, Caelum moves to leave."
 
     #scene black
+    scene black with dissolve
 
     "I’m alone again."
 
     #scene alex’s bedroom v1
+    scene spirits alex bedroom clean with dissolve
 
     "I flick the lights on and immediately wither under their radiance."
 
@@ -104,8 +107,10 @@ label spirits_a3s4:
     "Sighing, I cross out the lines and start again."
 
     #scene black
-     
+    scene black with dissolve
+
     #scene alex’s bedroom v1
+    scene spirits alex bedroom clean with dissolve
 
     "By the time I’m finished, the paper is a nearly-illegible mess."
 
@@ -134,12 +139,12 @@ label spirits_a3s4:
     "Should I really be doing this?"
 
     "{i}I have to.{/i}"
-    
+
     if hasAmmo == False:
         "Last night, I discovered that old pine box hadn't been so empty, after all."
-        
+
         "Like serendipity, I found a single, lone bullet tucked away under the loose velvet lining of the interior compartment."
-        
+
         "Who else would that be meant for, if not me?"
 
     else:
@@ -150,6 +155,7 @@ label spirits_a3s4:
     "I close my eyes and wait."
 
     #scene black
+    scene black with dissolve
 
     "How long will it take me to find the nerve?"
 
@@ -158,6 +164,7 @@ label spirits_a3s4:
     "It grows louder, until at last, it consumes me; the world fades away."
 
     #scene alex’s bedroom v1
+    scene spirits alex bedroom clean with dissolve
 
     "And then suddenly, it’s all back."
 
@@ -168,6 +175,7 @@ label spirits_a3s4:
     "{i}Nothing.{/i}"
 
     #pause 10.0
+    pause(10.0)
 
     "No. Not like this."
 
@@ -186,10 +194,12 @@ label spirits_a3s4:
     "Before it can register, I’ve tossed the gun onto the bed and started walking away."
 
     #scene black
+    scene black with dissolve
 
     "Why am I here…?"
 
     #scene hospital
+    scene spirits emergency room with dissolve
 
     "The medicinal smell and pristine walls envelop my senses."
 
@@ -216,6 +226,7 @@ label spirits_a3s4:
     nurse "How can I help you today?"
 
     #scene black
+    scene black with dissolve
 
     "Before I know it, my mouth starts moving on its own."
 
