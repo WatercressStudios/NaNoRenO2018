@@ -206,12 +206,11 @@ label spirits_a2s1_dead:
 
     "I can figure out what to do then."
 
-    window hide
     $renpy.pause(1.0, hard = True)
 
     #fade to black, hang here for a while
 
-    show red with vpunch:
+    show red:
         alpha 0.8
 
     play sound "game_letgo/sfx/crush.ogg"
@@ -234,8 +233,8 @@ label spirits_a2s1_dead:
 
     play sound "game_letgo/sfx/crush.ogg"
 
-    show red with vpunch:
-        alpha 0.8
+    show red
+    with hpunch
 
     #repeat screen shake and sound effect
 
@@ -245,9 +244,7 @@ label spirits_a2s1_dead:
 
     "Where it is coming from?"
 
-    "Where it is coming from?"
-
-    #repeat repeatedly
+    play sound "game_letgo/sfx/crush.ogg"
 
     "It’s painful."
 
@@ -255,7 +252,7 @@ label spirits_a2s1_dead:
 
     "What is this!?"
 
-    "What is this!?"
+    play sound "game_letgo/sfx/crush.ogg"
 
     #repeat repeatedly more
 
@@ -273,7 +270,7 @@ label spirits_a2s1_dead:
 
     "And it’s hateful, whatever it is."
 
-    "And it’s hateful, whatever it is."
+    play sound "game_letgo/sfx/crush.ogg"
 
     #repeat repeatedly
 
@@ -297,11 +294,19 @@ label spirits_a2s1_dead:
 
     "How much {i}hate{/i} can one sound hold?"
 
-    "How much {i}hate{/i} can one sound hold?"
+    play sound "game_letgo/sfx/crush.ogg"
 
-    "How much {i}hate{/i} can one sound hold?"
+    $renpy.pause(2.0, hard = True)
+
+    play sound "game_letgo/sfx/crush.ogg"
+
+    $renpy.pause(2.0, hard = True)
+
+    play sound "game_letgo/sfx/crush.ogg"
 
     #repeat repeatedly, before shifting back to Alex’s room BG
+
+    play music bgmspirits_main
 
     show spirits alex bedroom clean with dissolve
 
@@ -309,23 +314,23 @@ label spirits_a2s1_dead:
 
     "Morning."
 
-    #repeat again
+    play sound "game_letgo/sfx/crush.ogg" fadeout 1.0 fadein 1.0
 
     "The noise has slowed down…"
 
-    #repeat
+    play sound "game_letgo/sfx/crush.ogg" fadeout 1.0 fadein 1.0
 
     "But it refuses to stop."
 
-    #repeat
+    play sound "game_letgo/sfx/crush.ogg" fadeout 1.0 fadein 1.0
 
     "Why won’t it?"
 
-    #repeat
+    play sound "game_letgo/sfx/crush.ogg" fadeout 1.0 fadein 1.0
 
     "I get up and try to ignore it."
 
-    #repeat
+    play sound "game_letgo/sfx/crush.ogg" fadeout 1.0 fadein 1.0
 
     "It’s time to go to school."
 
