@@ -209,10 +209,10 @@ label letgo_203:
     voice "C-203-30.mp3" #Old Man (Adam Warren)
     om "Oh! That was one of the first kites I made when I met my dear wife. It wasn’t the best I'd made, but I kept it."
 
-　　# HACK WHERE ARE THE VOICE LINES??|Got you fam
-　　 voice "C-203-30-2a.mp3" #Old Man (Adam Warren)
-　　om "That one? That was the day I first knew I loved her. A plane can float along the breeze, free as it can be - but a kite, well."
-　　voice "C-203-30-2b.mp3" #Old Man (Adam Warren)
+    # HACK WHERE ARE THE VOICE LINES??|Got you fam
+    voice "C-203-30-2a.mp3" #Old Man (Adam Warren)
+    om "That one? That was the day I first knew I loved her. A plane can float along the breeze, free as it can be - but a kite, well."
+    voice "C-203-30-2b.mp3" #Old Man (Adam Warren)
     om "It needs a connection. We each fly because the string holds our sails taut. We help each other be free."
 
     "I hadn’t thought about our new relationship like that. Some of my friends often moan and groan about things tying them down, but May..."

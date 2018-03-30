@@ -256,14 +256,73 @@ label splashscreen:
 ###############################
 label start:
     $ current_story = None
+    if not persistent.monologueFlag:
+        jump monologue
+    if 'letgo' and 'flood' and 'spirits' in persistent.storyCompletion:
+        jump completeDialogue
+    jump returnDialogue
+        
+label monologue:
+    
+    $ persistent.storyCompletion = set()
+    
     scene menu_fireplace
     show book
 
     hide book with easeoutbottom
 
-    "Talky talky prologue."
-    "Choose a story."
+    #This monologue happens when you first load up the game, before selecting a game to play.
+    "Did your parents ever read you bedtime stories? Fantasies, epics, poems? Mine never did."
 
+    "If I were weaker, I'd blame them for everything that's happened to me so far."
+
+    "However, I made a promise to myself and to Avitus University. I promised that I'd never blame others ever again. I'm better. I'm learning."
+
+    "I've had quite the amount of time to think, since the incident. The jail cell, the period of uncertainty after, and the plane ride over."
+
+    "In all of this time, you'd think that I'd be worried about my arrest, or my family, or something else entirely."
+
+    "However, here I am, thinking about childrens' stories. Those that my parents never told me."
+
+    "Sydney's parents, they were the ones who told me these stories."
+
+    "Gabe and I would visit them often and listen to them all."
+
+    "Three come to mind specifically."
+
+    "The one about coming to terms with your future, the one about living life beyond trauma, and the one about letting go."
+
+    "'If in Your Dreams; the Flood', 'Beyond Yesterday's Grasp', and 'Let Go.' respectively."
+
+    "Now, how did they go again?"
+
+    $ persistent.monologueFlag = True
+    
+    jump storyselect
+    
+label returnDialogue:
+    
+    scene menu_fireplace
+    show book
+
+    hide book with easeoutbottom
+    
+    "Now, where was I?"
+    
+    jump storyselect
+    
+label completeDialogue:
+    
+    scene menu_fireplace
+    show book
+
+    hide book with easeoutbottom
+    
+    "Time to go down memory lane again, huh?"
+    
+    jump storyselect
+
+label storyselect:
     scene story_menu with dissolve
     jump unhovered_storyselect
 

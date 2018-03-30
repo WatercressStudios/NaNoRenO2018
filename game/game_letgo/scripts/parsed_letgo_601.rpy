@@ -176,7 +176,43 @@
 
     "I'll see you again one day. I swear it."
 
-    "Goodbye."
-
+    "Goodbye."    
+    jump letgoMetaNarrative
+    
+label letgoMetaNarrative:
     scene black with Dissolve(2.0)
-    scene menu_fireplace with Dissolve(2.0)
+    scene menu_fireplace
+    show book
+
+    hide book with easeoutbottom
+
+    "For the longest time, Let Go. was a crutch for me. It was trying to tell me one thing, and yet I believed another."
+
+    "This story is about accepting the inevitable, and about how life is sometimes unforgiving, uncaring."
+
+    "I thought that this meant I could just be a bystander. I could look upon the world around me and accept it as it is."
+
+    "In reality, I should have fought."
+
+    "I should have been like Maya."
+
+    "Always try your hardest before submitting. Sometimes things can't be changed, like in this story."
+
+    "Other times, however..."
+
+    "When you think all is lost, it actually isn't. There's always a choice to be made. Sitting through life, allowing life to just {i}happen{/i} to you, that isn't the right choice."
+
+    "This is how I failed you, Sydney."
+
+    "Never again."
+
+    "From hereon out, I promise that I'm no longer a passive member of society."
+
+    "I'm now an active member of {b}my{/b} reality."
+    
+    $ persistent.storyCompletion.add('letgo')
+    
+    if 'letgo' and 'flood' and 'spirits' in persistent.storyCompletion:
+        jump postCreditsNarrative
+    
+    return
