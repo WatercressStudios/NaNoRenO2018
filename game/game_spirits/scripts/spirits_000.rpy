@@ -378,6 +378,8 @@ label spirits_000:
             $ caelumAlive = False
             jump spirits_a2s2
         "Diary Scene (for NVL test)":
+            scene spirits alex bedroom clean with dissolve
+            $ questionFlags = set()
             jump spirits_a2s3
         "Act 3":
             jump spirits_a3s1
