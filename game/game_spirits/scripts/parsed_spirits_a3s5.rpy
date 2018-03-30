@@ -2,7 +2,7 @@
 
 label spirits_a3s5:
     #scene black
-    scene black with dissolve
+    #scene black with dissolve
 
     "The freezing water runs through my hair and over my body, drenching me, cooling my core as it has the last hundred times."
 

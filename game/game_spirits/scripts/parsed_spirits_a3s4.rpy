@@ -2,7 +2,7 @@
 
 label spirits_a3s4:
     #scene alex’s bedroom v1
-    scene spirits alex bedroom clean with dissolve
+    #scene spirits alex bedroom clean with dissolve
 
     voice "C-19-1.mp3" #Alex (Bonnie Mitchel)
     alx "I’ll see you later!"
@@ -22,6 +22,8 @@ label spirits_a3s4:
     scene black with dissolve
 
     "I’m alone again."
+
+    play music bgmspirits_gen
 
     #scene alex’s bedroom v1
     scene spirits alex bedroom clean with dissolve
