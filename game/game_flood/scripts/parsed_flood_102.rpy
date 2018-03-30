@@ -9,20 +9,20 @@ label flood_102:
     play music "game_flood/music/cafe.mp3" noloop fadein 1.0
     show oph scared close
 
-    voice "C-102-1.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-102-1.ogg" #Ophelia (Cospcaptor)
     oph "{b}ACK!{/b} {i}Pbt, ptoo, ptooie...{/i}"
     #voice: annoyed
     
     show oph scared
     
-    voice "C-102-2.mp3" #Waitress (Allison Seils)
+    voice "game_flood/voice/C-102-2.ogg" #Waitress (Allison Seils)
     wai "There. You awake now, sweetcheeks?"
     "I sputter to life, cold ice water splashing down my rosy cheeks."
     
     show oph irritated
     
     "Through irritated eyes, I see a waitress standing across from me, an exasperated look painted on her face. Looking to be in about her mid-30s, bags were already forming under her eyes."
-    voice "C-102-3.mp3" #Waitress (Allison Seils)
+    voice "game_flood/voice/C-102-3.ogg" #Waitress (Allison Seils)
     wai "I hope you had a {i}pleasant{/i} nap."
         
     menu:
@@ -30,47 +30,47 @@ label flood_102:
             
             show oph weirdedout
             
-            voice "C-102-4.mp3" #Ophelia (Cospcaptor)
+            voice "game_flood/voice/C-102-4.ogg" #Ophelia (Cospcaptor)
             oph "Hey, what the hell was that!? You can't treat your customers like that!"
-            voice "C-102-5.mp3" #Waitress (Allison Seils)
+            voice "game_flood/voice/C-102-5.ogg" #Waitress (Allison Seils)
             wai "If you actually {i}bought{/i} anything, maybe you would've gotten the VIP treatment."
-            voice "C-102-6.mp3" #Ophelia (Cospcaptor)
+            voice "game_flood/voice/C-102-6.ogg" #Ophelia (Cospcaptor)
             oph "What VIP treatment!?"
-            voice "C-102-7.mp3" #Waitress (Allison Seils)
+            voice "game_flood/voice/C-102-7.ogg" #Waitress (Allison Seils)
             wai "I could've dumped premium, volcano-filtered water on your face instead."
-            voice "C-102-8.mp3" #Ophelia (Cospcaptor)
+            voice "game_flood/voice/C-102-8.ogg" #Ophelia (Cospcaptor)
             oph "Oh, that's tempting."
-            voice "C-102-9.mp3" #Waitress (Allison Seils)
+            voice "game_flood/voice/C-102-9.ogg" #Waitress (Allison Seils)
             wai "You want special treatment, go to Starbucks."
             
         "Nice to see you too...":
             
             show oph neutral
             
-            voice "C-102-10.mp3" #Ophelia (Cospcaptor)
+            voice "game_flood/voice/C-102-10.ogg" #Ophelia (Cospcaptor)
             oph "Morning to you too..."
-            voice "C-102-11.mp3" #Waitress (Allison Seils)
+            voice "game_flood/voice/C-102-11.ogg" #Waitress (Allison Seils)
             wai "The least you could do is pretend to smile."
-            voice "C-102-12.mp3" #Ophelia (Cospcaptor)
+            voice "game_flood/voice/C-102-12.ogg" #Ophelia (Cospcaptor)
             oph "Can't while my face is wet. It'd cause wrinkles."
-            voice "C-102-13.mp3" #Waitress (Allison Seils)
+            voice "game_flood/voice/C-102-13.ogg" #Waitress (Allison Seils)
             wai "You can borrow my rag."
-            voice "C-102-14.mp3" #Ophelia (Cospcaptor)
+            voice "game_flood/voice/C-102-14.ogg" #Ophelia (Cospcaptor)
             oph "I don't even know where your rag has been..."
             
         "Could you splash me with coffee instead?":
             
             show oph irritated
             
-            voice "C-102-15.mp3" #Ophelia (Cospcaptor)
+            voice "game_flood/voice/C-102-15.ogg" #Ophelia (Cospcaptor)
             oph "I need my caffeine fix, couldn't you have splashed me with coffee instead?"
-            voice "C-102-16.mp3" #Waitress (Allison Seils)
+            voice "game_flood/voice/C-102-16.ogg" #Waitress (Allison Seils)
             wai "That'd be 2.50."
-            voice "C-102-17.mp3" #Ophelia (Cospcaptor)
+            voice "game_flood/voice/C-102-17.ogg" #Ophelia (Cospcaptor)
             oph "I know you still have the same pot on from an hour ago. You barely ever change it."
-            voice "C-102-18.mp3" #Waitress (Allison Seils)
+            voice "game_flood/voice/C-102-18.ogg" #Waitress (Allison Seils)
             wai "It matures the flavour to keep it on."
-            voice "C-102-19.mp3" #Ophelia (Cospcaptor)
+            voice "game_flood/voice/C-102-19.ogg" #Ophelia (Cospcaptor)
             oph "That's a load of...  ugh, whatever."
 
     show oph neutral close at flip
@@ -80,36 +80,35 @@ label flood_102:
     show oph neutral
     
     "Right, I'm remembering now. I staggered into a late-night café. I must've taken a nap at the counter..."
-    voice "C-102-20.mp3" #Waitress (Allison Seils)
+    voice "game_flood/voice/C-102-20.ogg" #Waitress (Allison Seils)
     wai "We're closing soon. You should get packed up."
     
     show oph neutral close
     
     "I groan, burying my head in my hands."
-    voice "C-102-21.mp3" #Waitress (Allison Seils)
+    voice "game_flood/voice/C-102-21.ogg" #Waitress (Allison Seils)
     wai "Hey, no buts, alright? I gotta open in the morning too, and I don't need you keeping me here all night."
-    voice "C-102-22.mp3" #Waitress (Allison Seils)
+    voice "game_flood/voice/C-102-22.ogg" #Waitress (Allison Seils)
     wai "'Sides, shouldn't you be back home with your folks?"
     
     show oph defensive
     
-    voice "C-102-23.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-102-23.ogg" #Ophelia (Cospcaptor)
     oph "I'm almost 18, I can take care of myself..."
-    voice "C-102-24.mp3" #Waitress (Allison Seils)
+    voice "game_flood/voice/C-102-24.ogg" #Waitress (Allison Seils)
     wai "Coulda fooled me. You look like shit. Don't you get any real sleep?"
-    voice "C-102-25.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-102-25.ogg" #Ophelia (Cospcaptor)
     oph "...What do you care about my damn sleep schedule."
-    voice "C-102-26.mp3" #Waitress (Allison Seils)
-    wai "{i}Language{/i}, young lady."
-    "The waitress shrugged."
-    voice "C-102-27.mp3" #Waitress (Allison Seils)
+    voice "game_flood/voice/C-102-26.ogg" #Waitress (Allison Seils)
+    wai "Hey, keep it down!"
+    voice "game_flood/voice/C-102-27.ogg" #Waitress (Allison Seils)
     wai "I'm just trying to look out for you, alright? Go home, get some shut-eye. Dumb kids like you stay up late all the time, and it's murder on your growing bodies."
-    voice "C-102-28.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-102-28.ogg" #Ophelia (Cospcaptor)
     
     show oph irritated
     
     oph "Growing body- I {i}just said{/i} I'm 18."
-    voice "C-102-29.mp3" #Waitress (Allison Seils)
+    voice "game_flood/voice/C-102-29.ogg" #Waitress (Allison Seils)
     wai "So? Still growing."
     "She turned her back to me. I stuck out my tongue in turn, before burying my head in my hands."
     
@@ -127,7 +126,7 @@ label flood_102:
     scene flood diner with dissolve
     show oph scared
     
-    voice "C-102-30.mp3" #Waitress (Allison Seils)
+    voice "game_flood/voice/C-102-30.ogg" #Waitress (Allison Seils)
     wai "The weather's calling for rain overnight. You should go home, before it hits."
     
     show oph surprised
@@ -136,10 +135,8 @@ label flood_102:
     "Oh God... it can't be an omen, can it...?"
     "I can't stay here. I can't go home. I need to think."
     "Hoisting myself from the bar, I give the waitress a slight nod."
-    voice "C-102-31.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-102-31.ogg" #Ophelia (Cospcaptor)
     oph "...Thanks, I... good luck."
-    voice "C-102-32.mp3" #Waitress (Allison Seils)
-    wai "...Okay?"
     "The waitress didn't regard me, still washing a small pile of accumulated dishes. I shamble out the front door."
 
     hide oph
@@ -182,13 +179,13 @@ label flood_102:
 
     stop music fadeout 1.0
     show oph surprised
-    voice "C-201-1.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-1.ogg" #Ophelia (Cospcaptor)
     oph "Ack!"
 
     "Involuntarily leaping back, I stare at the creature that's landed upon my hand. It's a moth, small and fluffy, looking like a mote of dim color in the lamp's light."
 
     show oph weirdedout
-    voice "C-201-2.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-2.ogg" #Ophelia (Cospcaptor)
     oph "A… a moth?"
 
     play music "game_flood/music/moth.mp3" noloop fadein 1.0
@@ -203,18 +200,18 @@ label flood_102:
     show oph smile
     "It turns to me, the antennae on it twitching slightly. The large, black eyes stare into mine, the cute little legs crawling back and forth upon my finger."
 
-    voice "C-201-3.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-3.ogg" #Ophelia (Cospcaptor)
     oph "Hello, little guy. What're you looking for?"
 
     show oph neutral
-    voice "C-201-4.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-4.ogg" #Ophelia (Cospcaptor)
     oph "Some food? I dunno if this energy drink would be that good for you."
 
     show oph tiredsmile
-    voice "C-201-5.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-5.ogg" #Ophelia (Cospcaptor)
     oph "You don't seem very interested in it either."
 
-    voice "C-201-6.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-6.ogg" #Ophelia (Cospcaptor)
     oph "Hmm."
 
     hide oph with dissolve
@@ -230,7 +227,7 @@ label flood_102:
     "Eventually, it leaves this one, flying towards the next."
     
     show oph surprised
-    voice "C-201-7.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-7.ogg" #Ophelia (Cospcaptor)
     oph "Hey, hang on!"
     
     hide oph with easeoutright
@@ -244,51 +241,51 @@ label flood_102:
     "It's a wanderer."
 
     show oph tiredsmile with dissolve
-    voice "C-201-8.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-8.ogg" #Ophelia (Cospcaptor)
     oph "You don't like to sit still for too long, do you…"
 
     "I keep following it, the activity helping to keep me awake. It's good exercise, as it's not exactly a slow little guy."
 
     show oph neutral close
-    voice "C-201-9.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-9.ogg" #Ophelia (Cospcaptor)
     oph "Yeah, I feel ya. I'm never quite satisfied myself. No matter how beautiful these lights are, they just… they don't make me feel content."
 
     show oph defensive
-    voice "C-201-10.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-10.ogg" #Ophelia (Cospcaptor)
     oph "I guess I'm not quite okay with just being content, anyways. Who wants to be {i}just okay{/i} with their position in life?"
 
     show oph defensive close
-    voice "C-201-11.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-11.ogg" #Ophelia (Cospcaptor)
     oph "Nobody wants to settle. Right?"
 
     show oph irritated close
-    voice "C-201-12.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-12.ogg" #Ophelia (Cospcaptor)
     oph "Or everyone does, and I'm the odd one out."
 
     show oph smile
-    voice "C-201-13.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-13.ogg" #Ophelia (Cospcaptor)
     oph "I'm glad I'm not the only one, though. You're like me."
 
     show oph smile close
-    voice "C-201-14.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-14.ogg" #Ophelia (Cospcaptor)
     oph "It's good having someone else with you."
 
     show oph scared close
-    voice "C-201-15.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-15.ogg" #Ophelia (Cospcaptor)
     oph "Being alone… being alone is scary."
 
     "It's terrifying."
 
     show oph smile
-    voice "C-201-16.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-16.ogg" #Ophelia (Cospcaptor)
     oph "Well, that's why we should stick together! Just you and me, okay? Just for tonight."
 
     show oph smile close
-    voice "C-201-17.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-17.ogg" #Ophelia (Cospcaptor)
     oph "Then we can go our separate ways, bouncing from place to place, light to light as we always have."
 
     show oph smile
-    voice "C-201-18.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-18.ogg" #Ophelia (Cospcaptor)
     oph "That's okay, right?"
 
     scene flood moth with dissolve
@@ -322,7 +319,7 @@ label map:
     #Player gets the map
 
     show oph neutral with dissolve
-    voice "C-201-19.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-19.ogg" #Ophelia (Cospcaptor)
     oph "Well, little one, where to next?"
 
     menu:

@@ -75,7 +75,7 @@ label flood_401:
     show oli serious with dissolve:
         align (0.65, 1.0)
     #tone - worried
-    voice "C-401-1.mp3" #Oliver (Matt Armstrong)
+    voice "game_flood/voice/C-401-1.ogg" #Oliver (Matt Armstrong)
     oli "Excuse me, miss?"
 
     show oph surprised
@@ -83,22 +83,22 @@ label flood_401:
 
     #sprite Oliver 1 (serious)
 
-    voice "C-401-2.mp3" #Oliver (Matt Armstrong)
+    voice "game_flood/voice/C-401-2.ogg" #Oliver (Matt Armstrong)
     oli "Is everything all right? You look rather troubled."
 
     show oph scared
-    voice "C-401-3.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-401-3.ogg" #Ophelia (Cospcaptor)
     oph "W-Who wouldn't be?! A strange man approaching a woman in the middle of the night?!"
 
     show oph irritated
-    voice "C-401-4.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-401-4.ogg" #Ophelia (Cospcaptor)
     oph "What's more, don't you think it's a little creepy how slow you were going? Anybody would get nervous being watched like that!"
 
     show oli cheerful grin    #sprite Oliver 2 (big smile)
-    voice "C-401-5.mp3" #Oliver (Matt Armstrong)
+    voice "game_flood/voice/C-401-5.ogg" #Oliver (Matt Armstrong)
     oli "Oh, in that case I'm probably not helping."
 
-    voice "C-401-6.mp3" #Oliver (Matt Armstrong)
+    voice "game_flood/voice/C-401-6.ogg" #Oliver (Matt Armstrong)
     oli "I'm sorry to have bothered you, young lady."
     #remove sprite
 

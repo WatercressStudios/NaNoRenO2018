@@ -33,7 +33,7 @@ label flood_501:
     "I'm fine, I think, I just... need another dose of caffeine. Energy."
     "Maybe if I rest my eyes a little bit..."
     show oph defensive close with dissolve
-    voice "C-501-1.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-501-1.ogg" #Ophelia (Cospcaptor)
     oph "...Nn..."
     "No, {i}no{/i}, have to stay awake. Otherwise, the Flood is gonna..."
     "Just focus. One step in front of the other. Left, right, left, right."
@@ -46,7 +46,7 @@ label flood_501:
     "...Those hated sensations play out across my fatigue mind, like phantom pains needling me further."
 
     show oph irritated close
-    voice "C-501-7.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-501-7.ogg" #Ophelia (Cospcaptor)
     oph "C'mon, pull it together..."
     #sfx slap
     show oph irritated
@@ -65,7 +65,7 @@ label flood_501:
     stop ambience fadeout 1.0
     "The houses along the sides of the street become more and more familiar." 
     "Familiar, identically-constructed houses. I was only looking for one, though."
-    voice "C-501-8.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-501-8.ogg" #Ophelia (Cospcaptor)
     show oph surprised with dissolve
     oph "Home."
     "Spotting the familiar, two-storey house, my pace quickened a bit, stumbling further along the sidewalk, up the driveway."
@@ -111,7 +111,7 @@ label flood_501:
     "There's... too much I could do, I guess. Where would I even start?"
     "I feel like I should've figured things out ages ago, but I got... fixated on stuff that, well, didn't matter at all."
     "What was I doing outside all night? Was there a point? Did I just... need to escape?"
-    voice "C-501-9.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-501-9.ogg" #Ophelia (Cospcaptor)
     oph "..."
     "I guess I can figure it out later. It might be easier to; sleep might even come a bit easier now."
     "I met some weird people last night, too."
