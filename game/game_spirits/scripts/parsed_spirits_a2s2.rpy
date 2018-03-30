@@ -1,4 +1,7 @@
 label spirits_a2s2:
+
+    scene black with dissolve
+
     "School is… okay today, so far."
 
     "Honestly, there just isn’t a lot to talk about in regards to it. Now that I’ve been to all my classes, things have a chance at becoming routine."
@@ -18,7 +21,9 @@ label spirits_a2s2:
 
     "..."
 
-    #bg dorm
+    scene spirits dorm hallway with dissolve
+
+    show alx neutral1 with dissolve
 
     "I open the door to the dorms; the weight of my bag pulls down on my back."
 
@@ -26,11 +31,15 @@ label spirits_a2s2:
 
     "After a few minutes, I'm there."
 
-    #bg room
+    scene spirits alex bedroom clean with dissolve
+
+    show alx neutral1 with dissolve
 
     "The schoolbag immediately drops onto the floor. The door is rapidly closed behind me, too."
 
     "I resist the urge to flop onto the bed and begin my eternal slumber; it would just be filled with nightmares again - and the last thing I want is someone checking up on me."
+
+    show alx happy1 with dissolve
 
     "Once I check my computer, I can {i}finally{/i} unwind."
 
@@ -38,13 +47,19 @@ label spirits_a2s2:
 
     "Oh, I… actually have one. It’s school stuff, of course - but I suppose it’s better than nothing."
 
+    show alx surprised1 with dissolve
+
     voice "C-10-1.mp3" #Alex (Bonnie Mitchel)
     alx "Inspections?"
 
     "Well, okay? I didn’t really expect them this early, but I guess they were going to happen regardless."
 
+    show alx neutral1 close with dissolve
+
     voice "C-10-2.mp3" #Alex (Bonnie Mitchel)
     alx "Oh well."
+
+    show alx neutral1 with dissolve
 
     "I close my laptop and look at the rest of the room. Honestly, I just want to nestle against the mattress; there’s no harm in checking everything else, though."
 
@@ -52,8 +67,18 @@ label spirits_a2s2:
 
     "I stand up, take a few steps, and look around."
 
+    show alx surprised1 with dissolve:
+        ease 0.2 align (0.2,1.0)
+
     voice "C-10-3.mp3" #Alex (Bonnie Mitchel)
     alx "What the--"
+
+    show spirits gun as gunicon:
+        xanchor 0.5
+        yalign 1.0
+        xpos 0.5
+        ypos 0.5
+    with Dissolve(1.0)
 
     "The gun is back in the box."
 
@@ -67,10 +92,16 @@ label spirits_a2s2:
 
     "That's going to be a problem."
 
+    hide gunicon
+
+    show alx surprised1 close with dissolve:
+
     "But it’s fine. I just need to breathe, remove the gun again, put it somewhere else, and--"
 
     voice "C-10-4.mp3" #Genevieve (Lasli Tran)
     gen "It'll keep coming back."
+
+    show alx surprised1 with dissolve:
 
     "My body jolts and jumps. Immediately, a bitingly cold and bitterly uncomfortable feeling washes over me."
 
@@ -78,6 +109,10 @@ label spirits_a2s2:
 
     voice "C-10-5.mp3" #Genevieve (Lasli Tran)
     gen "I'll keep putting it there."
+
+    show gen neutral1 at centerright:
+        alpha 0.2
+        linear 2 alpha 1
 
     "She’s there in front of me. Blonde ringlets, blue eyes, a nightgown… and of course, an ethereal silver tinge."
 
@@ -116,7 +151,13 @@ label spirits_a2s2:
     voice "C-10-12.mp3" #Alex (Bonnie Mitchel)
     alx "What do you mean? How do I--"
 
+    show gen neutral1 at centerright:
+        alpha 1
+        linear 2 alpha 0
+
     "I’m not graced with a response. Before I can finish - or ask any further questions - she vanishes; it’s as if she wasn’t there in the first place."
+
+    hide gen
 
     "Almost as if I’ve just been talking to myself…"
 
