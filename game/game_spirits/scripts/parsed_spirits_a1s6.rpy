@@ -1,9 +1,11 @@
 label spirits_a1s6:
-    #scene bg school hall
+    stop music fadeout 2.0
+    scene spirits school hallway
 
     play ambience "game_spirits/ambience/Classroom.ogg" fadeout 2.0 fadein 2.0
 
     #show alex neutral
+    show alx neutral1 with dissolve
 
     "The box, the gun inside, the ghost - everything that has happened in the past twenty-four hours - is all I can think of as I trudge through the school’s long corridors."
 
@@ -17,6 +19,7 @@ label spirits_a1s6:
 
     #scene bg classroom
 
+
     "First period: Living-Learning, with Mrs…"
 
     "..."
@@ -27,7 +30,11 @@ label spirits_a1s6:
 
     "Regardless, I step inside."
 
+    stop ambience fadeout 1.0
+    play music bgmspirits_relax fadeout 0.5
+
     #scene bg classroom inside
+    scene spirits classroom with dissolve
 
     "I look around the room - and yep, that’s a classroom alright."
 
@@ -45,11 +52,16 @@ label spirits_a1s6:
 
     "I take a chair - completely unsure if it belongs to anyone or not - and plop down. I get my bag and takes my textbooks out…"
 
+    show alx neutral1 at centerleft with dissolve
+
     "Then, the waiting game begins. I watch the door, waiting for the teacher’s grand entrance."
 
     "...How long is this going to take? I know I was pretty early, but still - as I see the others come in, I can’t help but think that--"
 
     #sfx thump
+    play sound "game_letgo/sfx/Rope Snap.ogg"
+
+    show alx surprised1 with dissolve
 
     "I hear a sudden {i}thud{/i} beside me and a familiar jolt of surprise causes me to jerk toward it."
 
@@ -58,7 +70,11 @@ label spirits_a1s6:
     "I look upwards to find out who is giving them to me, and…"
 
     #show caelum smile
+    show cae happy1 at centerright with dissolve
+
     "It’s Caelum, right? The guy from yesterday."
+
+    show alx sad1 with dissolve
 
     "Also the guy I sort of abandoned when the weird noises started."
 
@@ -68,6 +84,8 @@ label spirits_a1s6:
     cae "Figured you might want some of these."
 
     "Well, at least we have something to talk about so we aren’t sitting in total silence."
+
+    show alx neutral1 with dissolve
 
     voice "C-7-2.mp3" #Alex (Bonnie Mitchel)
     alx "Where did you get these?"
@@ -88,10 +106,14 @@ label spirits_a1s6:
     voice "C-7-6.mp3" #Alex (Bonnie Mitchel)
     alx "So are these, uh, really for me? Or do I have to, like, share?"
 
+    show cae happy1 close with dissolve
+
     voice "C-7-7.mp3" #Caelum (Daniel Acosta)
     cae "Yes."
 
     "..."
+
+    show alx bitter1 with dissolve
 
     voice "C-7-8.mp3" #Alex (Bonnie Mitchel)
     alx "Excuse me?"
@@ -100,12 +122,16 @@ label spirits_a1s6:
 
     "Worse yet, I don’t know what the joke is. Eventually, Caelum continues talking."
 
+    show cae neutral1 with dissolve
+
     voice "C-7-9.mp3" #Caelum (Daniel Acosta)
     cae "In all seriousness, they’re yours. I'd… {i}like{/i} it if you shared with me because I really like those cookies, but it’s your choice."
 
     "There's silence between us for a few seconds."
 
     "As eccentric as he can be - as much as I {i}still{/i} don’t get the joke - he… has been pretty nice to me. He’s really the only person I’ve talked to since coming to Oxton."
+
+    show alx happy1 with dissolve
 
     "I guess that makes him my friend, or something."
 
@@ -125,6 +151,8 @@ label spirits_a1s6:
 
     "As he responds, Caelum gives a… sort-of smile - as if this was his plan all along."
 
+    show cae happy1 close with dissolve
+
     voice "C-7-14.mp3" #Caelum (Daniel Acosta)
     cae "Awesome. Thanks."
 
@@ -142,8 +170,9 @@ label spirits_a1s6:
     "I turn and keep my attention rapt. Time to learn about beekeeping!"
 
     stop ambience fadeout 3.0
+    stop music fadeout 3.0
     #scene black
-
+    scene black with Dissolve(3.0)
     "The day passes by surprisingly fast; the teachers are kind and accommodating, the classes are interesting, and everyone seems nice enough."
 
     "After another delicious dinner, I clean my room - finishing just in time to get some homework done."

@@ -26,8 +26,18 @@ init:
         repeat
     transform flip:
         xzoom -1.0
-        
-        
+    transform centerleft:
+        xpos 0.25
+        ypos 0.0
+        xanchor 0.5
+        yalign 1.0
+    transform centerright:
+        xpos 0.75
+        ypos 0.0
+        xanchor 0.5
+        yalign 1.0        
+
+
 init python:
     import os
     def define_images(imageFolder, excludeFirstXFolders=0, flip=True, prepend=[]):
@@ -47,14 +57,14 @@ init python:
 #     def callback_transition(event, interact=True, **kwargs):
 #         if event == "begin":
 #             renpy.transition(Dissolve(0.3), layer="master")
-# 
+#
 #     config.all_character_callbacks = [callback_transition]
 
-  
+
     # This is set to the name of the character that is speaking, or
     # None if no character is currently speaking.
     speaking = None
-  
+
     # This returns speaking if the character is speaking, and done if the
     # character is not.
     def while_speaking(name, speak_d, done_d, st, at):
@@ -62,25 +72,25 @@ init python:
             return speak_d, .1
         else:
             return done_d, None
-  
+
     # Curried form of the above.
     curried_while_speaking = renpy.curry(while_speaking)
-  
+
     # Displays speaking when the named character is speaking, and done otherwise.
     def WhileSpeaking(name, speaking_d, done_d=Null()):
         return DynamicDisplayable(curried_while_speaking(name, speaking_d, done_d))
-  
+
     # This callback maintains the speaking variable.
     def speaker_callback(name, event, **kwargs):
         global speaking
-       
+
         if event == "show":
             speaking = name
         elif event == "slow_done":
             speaking = None
         elif event == "end":
             speaking = None
-  
+
     # Curried form of the same.
     speaker = renpy.curry(speaker_callback)
 
@@ -151,7 +161,7 @@ init python:
             self.cha = cha
             self.basesprite = basesprite
             self.size = size
-        
+
         def __call__(self, eyes, mouth, overlay=None, eyes2=None, mouth2=None):
             return CSprite(self.cha, self.basesprite, size=self.size, eyes=eyes, eyes2=eyes2, mouth=mouth, mouth2=mouth2, overlay=overlay)
 
@@ -236,7 +246,7 @@ label splashscreen:
     scene white with dissolve
     hide splashscreen_title with dissolve
     scene menu_fireplace with Dissolve(2.0)
-    return   
+    return
 
 ###############################
 #
@@ -273,23 +283,23 @@ label hovered_flood:
 # STORY STARTS
 #
 ###############################
-    
+
 label start_spirits:
     scene spirits_select
     scene black with dissolve
     "Spirits story chosen"
-    
+
     jump spirits_000
 
 label start_letgo:
     scene letgo_select
     scene black with dissolve
-    
+
     jump letgo_000
-    
+
 label start_flood:
     scene flood_select
     scene black with dissolve
     "Flood story chosen"
-    
+
     jump flood_000

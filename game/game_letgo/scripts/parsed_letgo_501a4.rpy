@@ -144,6 +144,8 @@
 
     "With that, she turns around and leaves."
 
+    show eli cool2 close with dissolve
+
     "When she’s out of sight, I turn towards the night sky and close my eyes."
 
     "I made a lot of good memories today."
@@ -153,6 +155,8 @@
     stop ambience fadeout 5.0
     stop music fadeout 5.0
     scene black with Dissolve(5.0)
+
+    $ renpy.movie_cutscene("videos/Let Go Credits.mp4")
 
     # TODO: CREDITS
     # I’m thinking credits should be each significant scene or CG + our names

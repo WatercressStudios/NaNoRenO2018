@@ -88,4 +88,7 @@
 
     stop music fadeout 0.2
     pause 0.2
+
+    $ renpy.movie_cutscene("videos/Let Go Credits.mp4")
+    
     jump letgo_601
