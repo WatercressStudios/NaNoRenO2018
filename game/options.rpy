@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Cautionary Tales")
+define config.name = _("Cautionary Tale")
 define config.developer = "True"
 
 define config.debug_sound = False
@@ -41,7 +41,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "CautionaryTales-0.9"
+define build.name = "CautionaryTale-0.9"
 
 
 ## Sounds and music ############################################################

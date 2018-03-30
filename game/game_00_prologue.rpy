@@ -348,7 +348,6 @@ label hovered_flood:
 label start_spirits:
     scene spirits_select
     scene black with dissolve
-    "Spirits story chosen"
 
     jump spirits_000
 
@@ -361,7 +360,6 @@ label start_letgo:
 label start_flood:
     scene flood_select
     scene black with dissolve
-    "Flood story chosen"
 
     jump flood_000
 
