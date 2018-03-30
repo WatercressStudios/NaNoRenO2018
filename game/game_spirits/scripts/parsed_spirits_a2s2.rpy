@@ -21,6 +21,8 @@ label spirits_a2s2:
 
     "..."
 
+    play music bgmspirits_main
+
     scene spirits dorm hallway with dissolve
 
     show alx neutral1 with dissolve
@@ -98,6 +100,8 @@ label spirits_a2s2:
 
     "But it’s fine. I just need to breathe, remove the gun again, put it somewhere else, and--"
 
+    play music bgmspirits_gen fadeout 0.5
+
     voice "C-10-4.mp3" #Genevieve (Lasli Tran)
     gen "It'll keep coming back."
 
@@ -174,5 +178,7 @@ label spirits_a2s2:
     "I stand there, in my room, unable to relax. Unable to figure out anything."
 
     "I’m doomed, aren’t I?"
+
+    stop music
 
     jump spirits_a2s3
