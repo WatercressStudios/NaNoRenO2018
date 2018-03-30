@@ -369,6 +369,7 @@ image gen mouth surprised1 = FlapMouth("gen", "game_spirits/sprites/Gene/Pose 1/
 label spirits_000:
     $ persistent.last_story = "spirits"
     $ current_story = "spirits"
+    $ config.voice_filename_format = "game_spirits/voice/{filename}"
 
     menu:
         "From beginning (Act 1)":

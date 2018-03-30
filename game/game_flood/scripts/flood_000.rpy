@@ -375,6 +375,7 @@ image hop mouth normal2 = FlapMouth("hop", "game_flood/sprites/Hope/Pose 2/mouth
 label flood_000:
     $ persistent.last_story = "flood"
     $ current_story = "flood"
+    $ config.voice_filename_format = "{filename}"
 
     menu:
         "Show everyone's expressions":
