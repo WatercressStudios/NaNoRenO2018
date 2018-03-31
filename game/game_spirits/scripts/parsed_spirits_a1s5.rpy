@@ -37,7 +37,11 @@ label spirits_a1s5:
 
     "Or ever, really…"
 
+    show alx at centerleft with ease
+
     "But instead of her, it’s the box from yesterday. I kneel down and look inside to see…"
+
+    pause 1.0
 
     stop music fadeout 1.0
 
@@ -103,7 +107,7 @@ label spirits_a1s5:
             pause 0.5
             ease 0.5 alpha 0
     pause 0.5
-    
+
     scene spirits stairs with dissolve
 
     #hide alex

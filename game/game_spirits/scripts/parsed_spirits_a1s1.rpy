@@ -32,7 +32,7 @@ label spirits_a1s1:
     hmom "G-Greetings! I’m Fang Jianmei, the school’s housemother. You can call me Sam."
 
     voice "C-2-3.mp3" #House Mother "Jianmei" (Vivi)
-    hmom "...Or Jian, or Sam-Jian, or Mother. Anything will work, really!"
+    hmom "...Or Jianmei, or Sam-Jian, or Mother. Anything will work, really!"
 
     "Jianmei is youthful at a glance, but up close… she has enough wrinkles to be at least thirty or forty years old."
 
@@ -155,7 +155,7 @@ label spirits_a1s1:
     alx "Well, yes. Why?"
 
     voice "C-2-19.mp3" #House Mother "Jianmei" (Vivi)
-    hmom "Like… you seem sad somehow. - or tense. Anxious, maybe?  Un-relaxed."
+    hmom "Like… you seem sad somehow - or tense. Anxious, maybe?  Un-relaxed."
 
     show alx angry1 blush with dissolve
 
@@ -455,7 +455,6 @@ label spirits_a1s1:
 
     scene white
     pause 0.01
-    scene black
 
     #quick white flash before screen cuts to black.
 
@@ -492,9 +491,11 @@ label spirits_a1s1:
 
     scene spirits box closed with dissolve
 
-    "When I turn around, there’s an upturned box laying on the floor."
+    "When I turn around, there’s a box laying on the floor."
 
     "It has an arched lid and is made of pine, but there’s metal woven into the material."
+
+    "It didn't make much sound when it tumbled down, as though it's full of fabric on the inside."
 
     "Why is it here? I sure as hell didn’t bring it."
 
@@ -505,6 +506,8 @@ label spirits_a1s1:
         "..."
 
         "Open it.":
+            $ openedBox = True
+
             #play relaxed/school
 
             "...There shouldn’t be anything dangerous in there; it’s just a silly box."
@@ -531,10 +534,28 @@ label spirits_a1s1:
 
             "Thank god for that. I didn’t know if I was about to scream or not."
 
+            "It isn't completely hollow on the inside, though. There's lots of shaped velvet compartments."
+
+            "At very center is a large, oblong depression, shaped kind of like.. a gun?"
+
+            "..."
+
         "Don't open it.":
+            $ openedBox = False
+
             #show alex flustered
 
             "N-No. It’s impolite to just go looking around like that."
+
+            "Still, maybe I'll just...?"
+
+            "I open the lid just a crack - enough to see the old velvet lining on the inside."
+
+            "..."
+
+            "All the more reason not to go poking around! It's probably full of family heirlooms, or something."
+
+    play sound "game_spirits/sfx/Alex Sighs.ogg"
 
     "I need to stop freaking out. I’m overreacting to everything."
 

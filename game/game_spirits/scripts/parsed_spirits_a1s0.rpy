@@ -5,7 +5,7 @@ label spirits_a1s0:
 
     "It’s a quiet day in early autumn, just a few hours before noon. I’m alone in a graveyard at the top of a hill."
 
-    #play music main theme
+    play music bgmspirits_main
 
     #play sound wind effect
 
@@ -21,9 +21,9 @@ label spirits_a1s0:
 
     "Given it’s the closest thing to a goodbye in my life… I wish I could be at peace here - just once."
 
-    "I brush the leaves out of my hair and off my skirt as an excuse to shake the nervous energy away."
+    "I brush the leaves out of my hair and off my dress as an excuse to shake the nervous energy away."
 
-    "It’s the first time I’ve been here in my new uniform: a red shirt and red tie, with a grey checkered skirt - and the mark of a school I hadn’t heard of until earlier this week."
+    "It’s the last time I'll be here before donning my new uniform: a red shirt and red tie, with a grey checkered skirt - and the mark of a school I'd only ever dreamed of until earlier this week."
 
     #scene spirits test pattern with Dissolve(3.0)
     #scene graveyard cg
@@ -67,35 +67,45 @@ label spirits_a1s0:
 
     play sound "game_spirits/sfx/Text Received.ogg"
 
-    "A text from my grandmother rouses me from my reverie."
+    "A text from my Naniji rouses me from my reverie."
 
-    "{i}Are you okay, Alex?  Your flight’s in two hours.{/i}"
+    "\"{i}Are you okay, Alex?  Your flight’s in two hours.{/i}\""
 
     "By the time I’ve finished reading it, there’s a second one."
 
-    "{i}We don’t have as much time as usual.{/i}"
+    "\"{i}We don’t have as much time as usual.{/i}\""
 
     "I text back with my other hand."
 
     play sound "game_spirits/sfx/Text Send.ogg"
 
     #voice "C-1-2.mp3" #Alex (Bonnie Mitchel)
-    alx "Thx. Otw."
+    alx "\"Thx. Otw.\""
 
     "I get up and walk back down the hill. I make it back to the car in no time at all, and climb in beside my Naniji."
 
     #play locking sound effect
+
+    stop music fadeout 1.0
+
     play sound "game_spirits/sfx/Car Door Open Shut.ogg"
 
     "There’s silence between us - and we probably won’t break it until we say goodbye."
 
     "In just a few short hours, my new life begins."
 
+    scene black with dissolve
+
     pause 2.0
 
     #Some sort of a louder, much more ominous locking sound, more like a jail cell or a dungeon.
     play sound "game_spirits/sfx/Dungeon Door Slam.ogg"
 
+    show text "{size=+45}Beyond Yesterday's Grasp{/size}"
+
+    pause 3.0
+
+    scene black with Dissolve (3.0)
     #DRAMATIC TITLE SPLASH
 
     jump spirits_a1s1

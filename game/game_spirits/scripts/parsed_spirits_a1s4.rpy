@@ -130,7 +130,7 @@ label spirits_a1s4:
 
     "It’s {i}never{/i} any use."
 
-    show alx neutral1 with dissolve
+    show alx bitter1 with dissolve
     #show alex pjs neutral
 
     $ questionCounter = 0 
