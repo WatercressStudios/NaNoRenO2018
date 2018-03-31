@@ -133,8 +133,10 @@ define bgmspirits_cae = "game_spirits/music/Theme of Caelum.ogg"
 define bgmspirits_wra = "game_spirits/music/Theme of Cornelius.ogg"
 define bgmspirits_gen = "game_spirits/music/Theme of Genevieve.ogg"
 define bgmspirits_relax = "game_spirits/music/Relaxation (School).ogg"
-define bgmspirits_sthings = "game_spirits/music/Stranger Things.ogg"
+define bgmspirits_sthings = "game_spirits/music/Every Turned Corner.ogg"
 define bgmspirits_main = "game_spirits/music/Artemis Hall.ogg"
+define bgmspirits_end1alt = "game_spirits/music/End of a Tunnel.ogg"
+define bgmspirits_end45 = "game_spirits/music/The War Against Myself.ogg"
 
 ###############################
 #
