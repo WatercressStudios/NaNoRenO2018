@@ -339,7 +339,7 @@ label spirits_a2s7:
 
         stop music fadeout 2.0
         
-        play sound "game_letgo/sfx/Alex Scream.ogg"
+        play sound "game_spirits/sfx/Alex Scream.ogg"
         #play sound alex scream in pain
 
         show alx angry1 blush close with hpunch
@@ -949,7 +949,7 @@ label spirits_a2s7:
 
         stop music fadeout 2.0
         
-        play sound "game_letgo/sfx/Alex Scream.ogg"
+        play sound "game_spirits/sfx/Alex Scream.ogg"
         #play sound alex scream in pain
 
         show alx angry1 blush close with hpunch
