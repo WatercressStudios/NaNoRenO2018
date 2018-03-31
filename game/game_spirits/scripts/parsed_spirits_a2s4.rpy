@@ -30,7 +30,7 @@ label CaelumIsDeadX:
     hmom "Alex, have you seen Caelum around anywhere?"
 
     ##MUSIC CHANGE
-    play music bgmspirits_cae
+    play music bgmspirits_sthings
 
     show alx sad1 with dissolve
 
@@ -73,6 +73,8 @@ label CaelumIsDeadX:
     "Every little hesitation - the way she initially turns the key in the wrong direction, then turns it the right way but has to jiggle it - makes me want to just shove her out of the way and kick it down myself."
 
     "Finally, the door unlocks, and it slowly creaks open."
+
+    play sound "game_spirits/sfx/Open Door.ogg"
 
     scene spirits caelum bedroom with dissolve
 
@@ -155,7 +157,9 @@ label CaelumIsDeadX:
 
     "She turns her back on me and steps out of the room, apparently intent on finishing the conversation in her office. She’s all business - as if I’m not even here."
 
-    show alx bitter1 with vpunch:
+    play music bgmspirits_wra
+
+    show alx bitter1 close with vpunch:
         ypos (1.2)
 
     "When she vanishes down the corridor, the biting, screaming sensation of a migraine hits me in full force - so overwhelmingly devastating it forces me to my knees."
@@ -183,7 +187,7 @@ label CaelumIsDeadX:
         ypos (1.0)
 
     voice "C-12-21.mp3" #Alex (Bonnie Mitchel)
-    alx "::Screams::"
+    alx "Aaaaaauuuughhhh!"
 
     "For a moment, I snap back to reality; I’m standing here, warm and alive, in this abandoned room - and the terror is enough that I dash back across the hall."
 
@@ -192,6 +196,8 @@ label CaelumIsDeadX:
     scene spirits alex bedroom clean with dissolve
 
     show alx scared1 with dissolve
+
+    stop music fadeout 1.0
 
     "Once there, the miasma fades away. The migraine subsides into a light buzzing. I’m alone once again."
 
@@ -329,8 +335,6 @@ label BuddingRelationshipX:
 
         "I’m staring dumbfoundedly at the diary when Caelum steps into the room."
 
-        play music bgmspirits_cae
-
         voice "C-12-46.mp3" #Caelum (Daniel Acosta)
         cae "Alex, you okay?"
 
@@ -388,6 +392,8 @@ label BuddingRelationshipX:
 
         voice "C-12-57.mp3" #Alex (Bonnie Mitchel)
         alx "Hmm?"
+
+        play music bgmspirits_cae        
 
         voice "C-12-58.mp3" #Caelum (Daniel Acosta)
         cae "I don’t… Um, do you really feel like you have to do this? I mean, you have the diary; can’t you just give it to the authorities and let them figure things out from here?"
