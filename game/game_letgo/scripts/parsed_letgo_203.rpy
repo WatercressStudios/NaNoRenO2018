@@ -102,7 +102,7 @@ label letgo_203:
     show may normal1 with dissolve
 
     voice "C-203-15.mp3" #Old Woman (Ashe Thurman)
-    ow "So, young lady, would you like something to drink? It's actual cocoa in the white cups, but the ones with a black band are made from the sugar-free powder."
+    ow "So, young lady, would you like hot cocoa or cider? It's actual cider in the white cups but the ones with a black band are made from the sugar free powder."
 
     show may happy2 with dissolve
 

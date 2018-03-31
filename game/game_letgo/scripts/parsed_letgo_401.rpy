@@ -158,7 +158,7 @@
     may "What if you knew… what if you knew someone you love is about to die?"
 
     voice "C-401-20.mp3" #Elijah (Michael Potok)
-    eli "...What?"
+    eli "...May?"
 
     voice "C-401-21.mp3" #Maya (shiena)
     may "What if you knew that, no matter how hard you fought - no matter what you did, that person would {i}always{/i} die? That you'd never be able to save them?"
