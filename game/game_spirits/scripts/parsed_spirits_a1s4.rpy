@@ -179,8 +179,8 @@ label SpiritsHowded:
     voice "C-5-6.mp3" #Alex (Bonnie Mitchel)
     alx "How did you die?" 
 
-    play sound "game_letgo/sfx/Genevieve Scream.ogg"
-    show alx scared1 close with dissolve
+    play sound "game_spirits/sfx/Genevieve Scream.ogg"
+    show alx scared1 close with hpunch
     #play sound gen scream 
 
     #show alex pjs scared
@@ -227,8 +227,8 @@ label SpiritsGTFO:
 
     "I’ve never understood why they don’t take the Buddhist route and let go."
 
-    play sound "game_letgo/sfx/Genevieve Scream.ogg"
-    show alx scared1 close with dissolve
+    play sound "game_spirits/sfx/Genevieve Scream.ogg"
+    show alx scared1 close with hpunch
     #play sound gen scream
 
     #show alex pjs scared

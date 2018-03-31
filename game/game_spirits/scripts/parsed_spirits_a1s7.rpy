@@ -127,7 +127,8 @@ label spirits_a1s7:
 
     stop ambience fadeout 3.0
 
-    show spirits test pattern with Dissolve (3.0)
+    #show spirits test pattern with Dissolve (3.0)
+    scene spirits alex bedroom night clean with Dissolve(3.0)
 
     play ambience "game_letgo/ambience/Park Night.ogg" fadein 0.1 fadeout 0.1
 
