@@ -25,7 +25,7 @@ label spirits_a1s0:
 
     "It’s the first time I’ve been here in my new uniform: a red shirt and red tie, with a grey checkered skirt - and the mark of a school I hadn’t heard of until earlier this week."
 
-    scene spirits test pattern with Dissolve(3.0)
+    #scene spirits test pattern with Dissolve(3.0)
     #scene graveyard cg
 
     voice "C-1-1.mp3" #Alex (Bonnie Mitchel)
