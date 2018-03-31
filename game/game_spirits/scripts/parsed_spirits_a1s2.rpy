@@ -1,9 +1,17 @@
 label spirits_a1s2:
+    stop music fadeout 4.0
+
     "I’m probably being ridiculous..."
 
     "It’s an old building. I can’t be jumping at shadows just because I found some weird stuff in a room."
 
-    "I’ll bet that old box wasn’t even used to store a gun, like I thought! Some of the little velvet compartments look like ones you’d keep jewelry in - or maybe a pack of cards."
+    if openedBox == True:
+
+        "I’ll bet that old box wasn’t even used to store a gun, like I thought! Some of the little velvet compartments look like ones you’d keep jewelry in - or maybe a pack of cards."
+
+    else:
+
+        "That box is probably just full of old tools or something. Who cares?"
 
     "Still, I’ll feel better if I bring it up to somebody."
 
@@ -382,7 +390,7 @@ label spirits_a1s2:
     alx "It really was!"
 
     play sound "game_spirits/sfx/Open Door.ogg"
-    
+
     scene spirits alex bedroom clean with dissolve
     #scene alex’s bedroom
 
@@ -398,7 +406,7 @@ label spirits_a1s2:
 
     "Hopefully we can be friends..."
 
-    "I continue unpacking. I have way too many clothes; I really ought to give some away." 
+    "I continue unpacking. I have way too many clothes; I really ought to give some away."
 
     scene black with dissolve
     "The time quickly passes, and soon it’s six o’clock. I head downstairs for dinner."
