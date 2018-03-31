@@ -139,28 +139,34 @@ label spirits_a2s5:
 
     "Something keeps urging me to look at it. Ugh, do I really have to?"
 
+    stop music fadeout 1.0
+
     menu:
         "Read the note.":
+
+            play music bgmspirits_main fadein 1.0
 
             $ hasLetter = True
 
             $ duties += 1
 
-            "\"{i}To My Dearest Cornelius Bourlon,{/i}\""
+            nvl clear
 
-            "\"{i}I hope this letter finds you well. I must admit, I was quite shocked when I received your previous correspondence.{/i}\""
+            n "\"{i}To My Dearest Cornelius Bourlon,{/i}"
 
-            "\"{i}While she visited before her passing, Mrs. Bourlon did not leave the grounds of my estate. I assure you, no inappropriate conduct of any sort took place.{/i}\""
+            n "{i}I hope this letter finds you well. I must admit, I was quite shocked when I received your previous correspondence.{/i}"
 
-            "\"{i}Furthermore, I must confess that she hardly seemed to be the sort of woman to commit the acts you inquired about.{/i}\""
+            n "{i}While she visited before her passing, Mrs. Bourlon did not leave the grounds of my estate. I assure you, no inappropriate conduct of any sort took place.{/i}"
 
-            "\"{i}I am aware this is a delicate subject...{/i}\""
+            n "{i}Furthermore, I must confess that she hardly seemed to be the sort of woman to commit the acts you inquired about.{/i}"
 
-            "\"{i}But I knew Mrs. Bourlon to be a respectable, kind, forgiving woman. I am certain she would never even think of betraying your trust.{/i}\""
+            n "{i}I am aware this is a delicate subject...{/i}"
 
-            "\"{i}Please pass along my dearest wishes to young Miss Genevieve.{/i}\""
+            n "{i}But I knew Mrs. Bourlon to be a respectable, kind, forgiving woman. I am certain she would never even think of betraying your trust.{/i}"
 
-            "\"{i}Sincerely, Mrs. Jonathan Balister{/i}\""
+            n "{i}Please pass along my dearest wishes to young Miss Genevieve.{/i}"
+
+            n "{i}Sincerely, Mrs. Jonathan Balister{/i}\""
 
             if 'urname' not in questionFlags and hasDiary == False:
 
@@ -197,6 +203,7 @@ label spirits_a2s5:
             "Quickly folding the letter into my pocket, I heave up the boxes I can and make my way toward the stepladder."
 
         "Check it later.":
+            play music bgmspirits_relax fadein 1.0
             $ hasLetter = False
             $ life += 1
             "I decide to put one box down and pick up the paper. I want to hurry up because I have other, more important things to do - but…"
