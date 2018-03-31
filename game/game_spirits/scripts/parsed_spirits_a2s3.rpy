@@ -1,5 +1,15 @@
 label spirits_a2s3:
+    scene black with dissolve
+
     play music bgmspirits_main fadeout 0.5
+
+    "I spend the rest of the morning trying to lose myself in the mundanity of my lessons, but it's no use."
+
+    "It's kind of hard to focus on my studies with the threat of expulsion looming over me."
+
+    "Eventually the bell rings, and I realize I don't have a clue what today's lecture was even about."
+
+    play ambience "game_spirits/ambience/Classroom.ogg" fadeout 2.0 fadein 2.0
 
     scene spirits school hallway with dissolve
 
@@ -25,7 +35,15 @@ label spirits_a2s3:
 
         "I think Caelum might (understandably) be a little reticent to hang around here, too, after last night…"
 
+    play ambience "game_letgo/ambience/Park Day.ogg" fadeout 2.0 fadein 2.0
+
+    scene black with dissolve
+
     "There are a couple of other girls coming back with me down the walkway, but I don't know any of them. One of them waves at me when she notices me looking, so I tentatively wave back."
+
+    stop ambience
+
+    play sound "game_spirits/sfx/Open Door.ogg"
 
     scene spirits foyer with dissolve
 
@@ -185,7 +203,11 @@ label spirits_a2s3:
 
         n "{i}\"It all just seems a little strange to me. I suppose he hasn’t acted quite right since Mrs. Bourlon passed...\"{/i}"
 
+        stop music fadeout 1.0
+
         "Geez… what the heck could have happened? I skim ahead a few pages, looking for any other mention of Genevieve’s name."
+
+        play music bgmspirits_sthings
 
         nvl clear
 
@@ -209,6 +231,8 @@ label spirits_a2s3:
 
         nvl clear
 
+        show alx scared1 with dissolve
+
         "Crap crap crap crap… I have had {i}quite{/i} enough of that."
 
         "Ugh. I guess that ends the mystery of what happened to Genevieve."
@@ -225,7 +249,7 @@ label spirits_a2s3:
 
         n "{i}\"He claimed he relieved them of duty, but I heard the gunshots go off somewhere deep in the bowels of the house. \"{/i}"
 
-        n "{i}\"Every night since then, another maidservant has vanished. I pray that at least some of them have simply escaped this horrible place in the night - but in my heart I hold little hope. \"{/i}"
+        n "{i}\"Every night since then, one of the maidservants has vanished. I pray that at least some of them have simply escaped this horrible place in the night - but in my heart I hold little hope. \"{/i}"
 
         n "{i}\"If only he hadn’t sold the horses, I’d have some hope at freedom… But there’s none to be found, and no way of taking the automobile. \"{/i}"
 
@@ -234,6 +258,8 @@ label spirits_a2s3:
         n "{i}\"Everett, if I fail in my task, know that you’re the only man I ever loved. \"{/i}"
 
         nvl clear
+
+        play music bgmspirits_main
 
         show alx sad1 with dissolve
 
