@@ -26,7 +26,7 @@ label spirits_a1s0:
     "It’s the last time I'll be here before donning my new uniform: a red shirt and red tie, with a grey checkered skirt - and the mark of a school I'd only ever dreamed of until earlier this week."
 
     #scene spirits test pattern with Dissolve(3.0)
-    #scene graveyard cg
+    scene spirits graveyard with Dissolve(3.0)
 
     voice "C-1-1.mp3" #Alex (Bonnie Mitchel)
     alx "Hey. Mom, Dad... How are you doing?"
