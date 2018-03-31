@@ -79,7 +79,7 @@ label spirits_a1s0:
 
     play sound "game_spirits/sfx/Text Send.ogg"
 
-    voice "C-1-2.mp3" #Alex (Bonnie Mitchel)
+    #voice "C-1-2.mp3" #Alex (Bonnie Mitchel)
     alx "Thx. Otw."
 
     "I get up and walk back down the hill. I make it back to the car in no time at all, and climb in beside my Naniji."
