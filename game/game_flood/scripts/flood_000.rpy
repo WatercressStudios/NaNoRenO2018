@@ -49,17 +49,17 @@ define oph = Character("oph_name", callback=speaker("oph"), color="#d68385", dyn
 define oli = Character("oli_name", callback=speaker("oli"), color="#aab421", dynamic=True)
 define dai = Character("dai_name", callback=speaker("dai"), color="#55b2ad", dynamic=True)
 define hop = Character("hop_name", callback=speaker("hop"), color="#ca483d", dynamic=True)
-define wai = Character("Waitress", color="#ddd")
-define grl = Character("Little Girl", color="#ddd") #Hope
-define vce = Character("Voice", color="#ddd") #Hope's Dad
-define dad = Character("Dad", color="#ddd")
-define mom = Character("Mom", color="#ddd")
-define sis = Character("Sister", color="#ddd")
-define ogl = Character("Other Girl", color="#ddd")
-define per = Character("Performer", color="#ddd") #Daisy
-define dsy = Character("Daisy", color="#ddd") #idk why there are two daisy tags
-define old = Character("Old Man", color="#ddd") #Oliver
-define mgr = Character("Manager", color="#ddd")
+define wai = Character("Waitress", callback=speaker("wai"), color="#ddd")
+define grl = Character("Little Girl", callback=speaker("grl"), color="#ddd") #Hope
+define vce = Character("Voice", callback=speaker("vce"), color="#ddd") #Hope's Dad
+define dad = Character("Dad", callback=speaker("dad"), color="#ddd")
+define mom = Character("Mom", callback=speaker("mom"), color="#ddd")
+define sis = Character("Sister", callback=speaker("sis"), color="#ddd")
+define ogl = Character("Other Girl", callback=speaker("ogl"), color="#ddd")
+define per = Character("Performer", callback=speaker("per"), color="#ddd") #Daisy
+define dsy = Character("Daisy", callback=speaker("dsy"), color="#ddd") #idk why there are two daisy tags
+define old = Character("Old Man", callback=speaker("old"), color="#ddd") #Oliver
+define mgr = Character("Manager", callback=speaker("mgr"), color="#ddd")
 
 image white = "#fff"
 

@@ -199,9 +199,9 @@
 
 define eli = Character("Elijah", callback=speaker("eli"), color="#6e973c")
 define may = Character("Maya", callback=speaker("may"), color="#dbabd5")
-define om = Character("Old Man", color="#748fd9")
-define ow = Character("Old Woman", color="#ddbe97")
-define mom = Character("Mom", color="#ddd")
+define om = Character("Old Man", callback=speaker("om"), color="#748fd9")
+define ow = Character("Old Woman", callback=speaker("ow"), color="#ddbe97")
+define mom = Character("Mom", callback=speaker("mom"), color="#ddd")
 
 image white = "#fff"
 
