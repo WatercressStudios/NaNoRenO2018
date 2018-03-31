@@ -187,6 +187,59 @@ image alx sheepish1 close = AlxPose1("game_spirits/sprites/Alex/Pose 1/eyes sad 
 image alx sheepish1 blush = AlxPose1("alx eyes sad1", "alx mouth happy1", "game_spirits/sprites/Alex/Pose 1/blush.png")
 image alx sheepish1 close blush = AlxPose1("game_spirits/sprites/Alex/Pose 1/eyes sad close.png", "alx mouth happy1", "game_spirits/sprites/Alex/Pose 1/blush.png")
 
+###############################
+#
+# ALX POSE 2 SPRITES
+#
+###############################
+
+init python:
+    AlxPose2 = BaseCSprite("alx", "game_spirits/sprites/Alex/Pose 2/base.png", (608, 1080))
+
+image alx neutral2 = AlxPose2("alx eyes neutral1", "alx mouth neutral1")
+image alx neutral2 close = AlxPose2("game_spirits/sprites/Alex/Pose 1/eyes neutral close.png", "alx mouth neutral1")
+image alx neutral2 blush = AlxPose2("alx eyes neutral1", "alx mouth neutral1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+image alx neutral2 close blush = AlxPose2("game_spirits/sprites/Alex/Pose 1/eyes neutral close.png", "alx mouth neutral1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+
+image alx happy2 = AlxPose2("alx eyes happy1", "alx mouth happy1")
+image alx happy2 close = AlxPose2("game_spirits/sprites/Alex/Pose 1/eyes happy close.png", "alx mouth happy1")
+image alx happy2 blush = AlxPose2("alx eyes happy1", "alx mouth happy1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+image alx happy2 close blush = AlxPose2("game_spirits/sprites/Alex/Pose 1/eyes happy close.png", "alx mouth happy1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+
+image alx sad2 = AlxPose2("alx eyes sad1", "alx mouth sad1")
+image alx sad2 close = AlxPose2("game_spirits/sprites/Alex/Pose 1/eyes sad close.png", "alx mouth sad1")
+image alx sad2 blush = AlxPose2("alx eyes sad1", "alx mouth sad1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+image alx sad2 close blush = AlxPose2("game_spirits/sprites/Alex/Pose 1/eyes sad close.png", "alx mouth sad1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+
+image alx angry2 = AlxPose2("alx eyes angry1", "alx mouth angry1")
+image alx angry2 close = AlxPose2("game_spirits/sprites/Alex/Pose 1/eyes angry close.png", "alx mouth angry1")
+image alx angry2 blush = AlxPose2("alx eyes angry1", "alx mouth angry1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+image alx angry2 close blush = AlxPose2("game_spirits/sprites/Alex/Pose 1/eyes angry close.png", "alx mouth angry1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+
+image alx bitter2 = AlxPose2("alx eyes angry1", "alx mouth bitter1")
+image alx bitter2 close = AlxPose2("game_spirits/sprites/Alex/Pose 1/eyes angry close.png", "alx mouth bitter1")
+image alx bitter1  blush = AlxPose2("alx eyes angry1", "alx mouth bitter1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+image alx bitter2 close blush = AlxPose2("game_spirits/sprites/Alex/Pose 1/eyes angry close.png", "alx mouth bitter1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+
+image alx scared2 = AlxPose2("alx eyes scared1", "alx mouth scared1")
+image alx scared2 close = AlxPose2("game_spirits/sprites/Alex/Pose 1/eyes scared close.png", "alx mouth scared1")
+image alx scared2 blush = AlxPose2("alx eyes scared1", "alx mouth scared1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+image alx scared2 close blush = AlxPose2("game_spirits/sprites/Alex/Pose 1/eyes scared close.png", "alx mouth scared1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+
+image alx surprised2 = AlxPose2("alx eyes neutral1", "alx mouth scared1")
+image alx surprised2 close = AlxPose2("game_spirits/sprites/Alex/Pose 1/eyes neutral close.png", "alx mouth scared1")
+image alx surprised2 blush = AlxPose2("alx eyes neutral1", "alx mouth scared1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+image alx surprised2 close blush = AlxPose2("game_spirits/sprites/Alex/Pose 1/eyes neutral close.png", "alx mouth scared1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+
+image alx sheepish2 = AlxPose2("alx eyes sad1", "alx mouth happy1")
+image alx sheepish2 close = AlxPose2("game_spirits/sprites/Alex/Pose 1/eyes sad close.png", "alx mouth happy1")
+image alx sheepish2 blush = AlxPose2("alx eyes sad1", "alx mouth happy1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+image alx sheepish2 close blush = AlxPose2("game_spirits/sprites/Alex/Pose 1/eyes sad close.png", "alx mouth happy1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+
+image alx naughty2 = AlxPose2("alx eyes angry1", "alx mouth happy1")
+image alx naughty2 close = AlxPose2("game_spirits/sprites/Alex/Pose 1/eyes angry close.png", "alx mouth happy1")
+image alx naughty2 blush = AlxPose2("alx eyes angry1", "alx mouth happy1", "game_spirits/sprites/Alex/Pose 1/blush.png")
+image alx naughty2 close blush = AlxPose2("game_spirits/sprites/Alex/Pose 1/eyes angry close.png", "alx mouth happy1", "game_spirits/sprites/Alex/Pose 1/blush.png")
 
 ###############################
 #
