@@ -295,7 +295,7 @@ label spirits_a2s7:
 
         "Lifting up my phone, I look around." 
 
-        scene spirits cellar with dissolve
+        scene spirits cellar reverse with dissolve
         show alx scared1 at centerleft with dissolve
         show cae scared1 at center with dissolve
         #scene cellar
@@ -320,9 +320,15 @@ label spirits_a2s7:
         voice "C-15-13.mp3" #Caelum (Daniel Acosta)
         cae "Alex…"
 
+        scene spirits cellar empty with dissolve
+
         "One of them is wearing a nightgown - the same as Genevieve’s."
 
         "My stomach sinks and churns. Oh god… here she is."
+
+        scene spirits cellar reverse with dissolve
+        show alx sad1 at center with dissolve
+        show cae scared1 at centerright with dissolve
 
         show alx sad1 with dissolve
         #show alex sad
@@ -368,6 +374,8 @@ label spirits_a2s7:
         voice "C-15-20.mp3" #Alex (Bonnie Mitchel)
         alx "We have to go. Something’s coming, something bad…" 
 
+        scene spirits cellar empty with dissolve
+        scene spirits cellar fog with Dissolve(2.0)
         play music bgmspirits_wra fadeout 0.5
 
         #scene CG wraith 
@@ -381,6 +389,10 @@ label spirits_a2s7:
 
         "A dread sweeps over me, flooding into my veins. I haven’t known sensations like this since I woke up in that hospital bed, without a hand and without parents." 
 
+        scene spirits cellar reverse with dissolve
+        show alx scared1 at center with dissolve
+        show cae scared1 at centerright with dissolve
+
         voice "C-15-21.mp3" #Caelum (Daniel Acosta)
         cae "What the hell is that?" 
 
@@ -391,6 +403,7 @@ label spirits_a2s7:
         voice "C-15-23.mp3" #Caelum (Daniel Acosta)
         cae "Umm… yeah; it’s a giant smoke monster?" 
 
+        scene spirits cellar fog with dissolve
         show red:
             alpha 0.0
             ease 0.2 alpha 0.5
@@ -400,6 +413,10 @@ label spirits_a2s7:
 
         voice "C-15-24.mp3" #Wraith (Kenneth Faircloth)
         wra "You have made a terrible mistake, meddling in matters you do not understand. And now, you shall perish."
+
+        scene spirits cellar reverse with dissolve
+        show alx scared1 at center with dissolve
+        show cae scared1 at centerright with dissolve
 
         show alx angry1 with dissolve
 
@@ -414,6 +431,8 @@ label spirits_a2s7:
 
             voice "C-15-27.mp3" #Caelum (Daniel Acosta)
             cae "Do you know how deeply it cuts to realize your parent {i}hates{/i} you? What gives you the right to judge someone like that?"
+
+            scene spirits cellar fog with dissolve
 
             show red:
                 alpha 0.0
@@ -451,6 +470,10 @@ label spirits_a2s7:
             voice "C-15-32.mp3" #Wraith (Kenneth Faircloth)
             wra "You know nothing of honor, of the pressures to uphold your name--" 
 
+            scene spirits cellar reverse with dissolve
+            show alx angry1 at center with dissolve
+            show cae angry1 at centerright with dissolve
+
             voice "C-15-33.mp3" #Caelum (Daniel Acosta)
             cae "That’s bullshit! You cared more about your family name than your own daughter?" 
 
@@ -480,6 +503,8 @@ label spirits_a2s7:
             cae "You think if we go missing, they won’t look for us? They’ll find this place and the world will know what you did." 
 
             "My fingers shake as I push the bullets into the barrel." 
+
+            scene spirits cellar fog with dissolve
 
             show red:
                 alpha 0.0
@@ -516,6 +541,7 @@ label spirits_a2s7:
             voice "C-15-39.mp3" #Wraith (Kenneth Faircloth)
             wra "Put it down, girl. You stupid girl, put it down, put it--"
 
+            stop voice
             stop music fadeout 0.1
 
             play sound "game_spirits/sfx/Gunshot.ogg"
@@ -524,12 +550,12 @@ label spirits_a2s7:
 
             pause 1.0
 
-            scene spirits cellar with Dissolve(3.0)
+            scene spirits cellar reverse with Dissolve(3.0)
             
             play music bgmspirits_sthings
 
-            show alx scared1 at centerleft with dissolve
-            show cae surprised1 centerright dissolve
+            show alx scared1 at center with dissolve
+            show cae surprised1 at centerright with dissolve
 
             #play sound gunshot 
 
@@ -614,6 +640,7 @@ label spirits_a2s7:
             voice "C-15-48.mp3" #Caelum (Daniel Acosta)
             cae "Do you know how deeply it cuts to realize your parent {i}hates{/i} you? What gives you the right to judge someone like that?"
 
+            scene spirits cellar fog with dissolve
 
             show red:
                 alpha 0.0
@@ -654,6 +681,10 @@ label spirits_a2s7:
             voice "C-15-54.mp3" #Wraith (Kenneth Faircloth)
             wra "Do you not fear me, child?" 
 
+            scene spirits cellar reverse with dissolve
+            show alx angry1 at center with dissolve
+            show cae angry1 at centerright with dissolve
+
             "I’m angry - angrier than I’ve been in a long, long time. I can’t tell if that’s him messing with my emotions, or if it’s just how I feel." 
 
             "I need to {i}end{/i} him. He shouldn’t exist; Genevieve deserves peace, and he deserves nothingness." 
@@ -668,6 +699,9 @@ label spirits_a2s7:
 
             voice "C-15-57.mp3" #Alex (Bonnie Mitchel)
             alx "If we die here, they’ll come looking for us. They’ll find us and this room. They’ll read my notes. You’re finished." 
+
+            scene spirits cellar fog with dissolve
+            play sound "game_spirits/sfx/Wraith Laughs.ogg"
 
             "The wraith just laughs wickedly in response."
 
@@ -684,6 +718,10 @@ label spirits_a2s7:
             voice "C-15-59.mp3" #Wraith (Kenneth Faircloth)
             wra "I have remained hidden for a century. Do you really think I would be thwarted by mongrels like you?"
 
+            scene spirits cellar reverse with dissolve
+            show alx angry1 at center with dissolve
+            show cae angry1 at centerright with dissolve
+
             voice "C-15-60.mp3" #Alex (Bonnie Mitchel)
             alx "You just don’t get it, do you?"
 
@@ -694,6 +732,8 @@ label spirits_a2s7:
 
             voice "C-15-62.mp3" #Alex (Bonnie Mitchel)
             alx "You think I just wrote my notes down on paper? Guess again, dipshit. I made blog posts."
+
+            scene spirits cellar fog with dissolve
 
             show red:
                 alpha 0.0
@@ -717,6 +757,10 @@ label spirits_a2s7:
 
             voice "C-15-65.mp3" #Wraith (Kenneth Faircloth)
             wra "You… You tell fantastical lies…"
+
+            scene spirits cellar reverse with dissolve
+            show alx happy1 at center with dissolve
+            show cae angry1 at centerright with dissolve
 
             show cae happy1 with dissolve
 
@@ -745,6 +789,8 @@ label spirits_a2s7:
             voice "C-15-71.mp3" #Alex (Bonnie Mitchel)
             alx "Nope. This has come to an end. Nothing left for you but to cross over."
 
+            scene spirits cellar fog with dissolve
+
             show red:
                 alpha 0.0
                 ease 0.2 alpha 0.5
@@ -756,6 +802,8 @@ label spirits_a2s7:
             wra "No… You lie. You lie! I’ll kill you all…"
 
             "But it’s too late; many inky, umbral tendrils rise from the ground and start to spool themselves around his bones."
+
+            scene spirits cellar wraith with dissolve
 
             "He thrashes against them - but it’s no use. The obsidian strings leash themselves to him, like a macabre marionette in reverse-gravity."
 
@@ -787,6 +835,7 @@ label spirits_a2s7:
             wra "Genevieve… you worthless bastard child… What have you wrought--"
 
             stop music fadeout 1.0
+            scene spirits cellar empty with dissolve
 
             "And then it’s done. The top of his gaseous skull sinks into the earth."
 
@@ -794,12 +843,12 @@ label spirits_a2s7:
 
             play music bgmspirits_cae
 
-            show cae surprised1 blush with dissolve
+            show cae surprised1 blush at centerleft with dissolve
 
             voice "C-15-76.mp3" #Caelum (Daniel Acosta)
             cae "You know… I don’t {i}actually{/i} have my phone on me."
 
-            show alx happy1 close blush with dissolve
+            show alx happy1 close blush at center with dissolve
 
             voice "C-15-77.mp3" #Alex (Bonnie Mitchel)
             alx "It’s fine. I didn’t actually write a blog, either."
@@ -808,7 +857,7 @@ label spirits_a2s7:
 
             "Genevieve is warmer than I thought it was possible for a wayward spirit to feel."
 
-            show gen happy1 at left with Dissolve(2.0)
+            show gen happy1 at centerright with Dissolve(2.0)
             #show genevieve happy
 
             voice "C-15-78.mp3" #Genevieve (Lasli Tran)
@@ -914,7 +963,7 @@ label spirits_a2s7:
 
         "Lifting up my phone, I look around the room." 
 
-        scene spirits cellar with dissolve
+        scene spirits cellar reverse with dissolve
         show alx scared1 with dissolve
 
         #scene cellar
@@ -926,10 +975,13 @@ label spirits_a2s7:
         voice "C-15-97.mp3" #Alex (Bonnie Mitchel)
         alx "They’re-- They’re not...They can’t be!"   
 
+        scene spirits cellar empty with dissolve
+
         "Staring ahead, I notice one is wearing a nightgown - the same as Genevieve’s."
 
         "My stomach drops and churns. Oh god... Here she is." 
 
+        scene spirits cellar reverse with dissolve
         show alx sad1 with dissolve
         #show alex sad
 
@@ -967,7 +1019,10 @@ label spirits_a2s7:
          
         "What does she mean? Who’s… {i}him{/i}?"
 
-        "All of a sudden, the pain stops." 
+        "All of a sudden, the pain stops."
+
+        scene spirits cellar empty with dissolve
+        scene spirits cellar fog with Dissolve(2.0)
 
         play music bgmspirits_wra fadeout 0.5
 
@@ -987,6 +1042,8 @@ label spirits_a2s7:
         voice "C-15-100.mp3" #Wraith (Kenneth Faircloth)
         wra "You have made a terrible mistake. You have meddled in matters you do not understand. And now, you shall perish."
 
+        scene spirits cellar reverse with dissolve
+        show alx sad1 with dissolve
         show alx scared1 with dissolve
 
         voice "C-15-101.mp3" #Alex (Bonnie Mitchel)
@@ -996,6 +1053,8 @@ label spirits_a2s7:
 
         voice "C-15-102.mp3" #Alex (Bonnie Mitchel)
         alx "You’re a murderer. You killed Caelum! He had nothing to do with any of this." 
+
+        scene spirits cellar fog with dissolve
 
         show red:
             alpha 0.0
@@ -1020,6 +1079,9 @@ label spirits_a2s7:
         voice "C-15-105.mp3" #Wraith (Kenneth Faircloth)
         wra "It is the principle of--"
 
+        scene spirits cellar reverse with dissolve
+        show alx angry1 with dissolve
+
         voice "C-15-106.mp3" #Alex (Bonnie Mitchel)
         alx "And you killed him. You killed him, and nobody knows, nobody really {i}cares{/i}!" 
 
@@ -1028,6 +1090,8 @@ label spirits_a2s7:
 
         voice "C-15-108.mp3" #Alex (Bonnie Mitchel)
         alx "Do you have any idea how much that sucks?" 
+
+        scene spirits cellar fog with dissolve
 
         show red:
             alpha 0.0
@@ -1039,6 +1103,9 @@ label spirits_a2s7:
         voice "C-15-109.mp3" #Wraith (Kenneth Faircloth)
         wra "I do not care--" 
 
+        scene spirits cellar reverse with dissolve
+        show alx angry1 with dissolve
+
         voice "C-15-110.mp3" #Alex (Bonnie Mitchel)
         alx "Well, you should, you asshole. He was a decent person! He cared about people. He cared about {i}me.{/i}" 
 
@@ -1048,6 +1115,8 @@ label spirits_a2s7:
         "I’m angrier than I’ve been in a long, long time. I can’t tell if that’s him messing with my emotions, or if it’s just how I feel." 
 
         "I need to stop him. It’s my duty. Why do I have this power if I don’t use it?" 
+
+        scene spirits cellar fog with dissolve
 
         show red:
             alpha 0.0
@@ -1062,6 +1131,9 @@ label spirits_a2s7:
         "I have to do something." 
 
         if hasAmmo == True:
+
+            scene spirits cellar reverse with dissolve
+            show alx angry1 with dissolve
 
             "The gun is in my back pocket and the ammo is in my other one. I’d forgotten about it, somehow, with everything that’s happened." 
 
@@ -1093,6 +1165,8 @@ label spirits_a2s7:
 
             "I carefully set the gun into my prosthetic hand and point it at the wraith, pulling the hammer back. I don’t know what I’m doing - but at the same time, I’ve never been more sure of myself."
 
+            scene spirits cellar fog with dissolve
+
             show red:
                 alpha 0.0
                 ease 0.2 alpha 0.5
@@ -1116,6 +1190,7 @@ label spirits_a2s7:
             voice "C-15-117.mp3" #Wraith (Kenneth Faircloth)
             wra "Put it down, girl. You stupid girl, put it down, put it--"
 
+            stop voice
             stop music fadeout 0.1
 
             play sound "game_spirits/sfx/Gunshot.ogg"
@@ -1124,7 +1199,7 @@ label spirits_a2s7:
 
             pause 1.0
 
-            scene spirits cellar with Dissolve(3.0)
+            scene spirits cellar reverse with Dissolve(3.0)
             
             play music bgmspirits_sthings
 
@@ -1153,7 +1228,10 @@ label spirits_a2s7:
             "I’m still reeling from what just happened. Did that really work?" 
 
         else:
-        
+
+            scene spirits cellar reverse with dissolve
+            show alx angry1 with dissolve
+
             "This… it can’t end like this."
 
             "This {i}bastard{/i} killed my only friend. I can’t stand the sight of him."
@@ -1191,7 +1269,11 @@ label spirits_a2s7:
             "I don’t remember having picked up the spade, but my prosthetic hand drives it straight into the phantom’s chest."
 
             play sound "game_letgo/sfx/Punch,Shove.ogg"
+            scene spirits cellar fog with hpunch
+
             "Rather than go straight through, it finds purchase in the spectral mass of Mr. Bourlon’s sternum and smashes his gaseous body into the wall. His translucent bones rattle like the model in a biology classroom."
+
+            scene spirits cellar wraith with dissolve
 
             show red:
                 alpha 0.0
@@ -1260,6 +1342,7 @@ label spirits_a2s7:
             "His bones are snapping under the sheer force of my blows."
 
             "At some point, the old spade snaps in half at the wooden handle - and, caught off-balance, I come tumbling down onto the smoking pile of broken bones."
+            scene spirits cellar empty with dissolve
 
             "But the fire inside me doesn’t pale even for a moment. I drive my prosthetic into what remains of the skull, the plastic bending and cracking under the weight of my strikes."
 
