@@ -538,6 +538,8 @@ label spirits_a1s1:
 
             "At very center is a large, oblong depression, shaped kind of like.. a gun?"
 
+            "..."
+
         "Don't open it.":
             $ openedBox = False
 
@@ -549,7 +551,11 @@ label spirits_a1s1:
 
             "I open the lid just a crack - enough to see the old velvet lining on the inside."
 
+            "..."
+
             "All the more reason not to go poking around! It's probably full of family heirlooms, or something."
+
+    play sound "game_spirits/sfx/Alex Sighs.ogg"
 
     "I need to stop freaking out. I’m overreacting to everything."
 
