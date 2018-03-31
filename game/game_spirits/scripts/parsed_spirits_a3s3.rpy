@@ -1,12 +1,12 @@
 # FOREVER/ALEX POSSESSED ENDING
 
 label spirits_a3s3:
-    scene black with dissolve
 
     "I can see my room."
 
-    #bg room
-    scene spirits alex bedroom clean with dissolve
+    scene spirits alex bedroom spectral
+
+    with dissolve
 
     "In front of me. Around me. As if nothing had happened. As if--"
 
@@ -34,13 +34,11 @@ label spirits_a3s3:
 
     "Why? I want to scream, want to move, want to figure out what’s going on, want to--"
 
-    play sound "game_spirits/sfx/Ladder.ogg" #Does this work for footsteps?
-
     "Footsteps. The sound of an unsteady gait, as if someone is limping into the room."
 
     "A shape appears on the fringes of my vision. It stands. Looks down at me with an… expression of sorts."
 
-    show alx sad1 with dissolve
+    show alx bitter2 close with dissolve
 
     "It's… me? I think? I look so pained..."
 
@@ -50,11 +48,11 @@ label spirits_a3s3:
 
     "I clasp it - but I only feel vivid, radiant warmth."
 
-    show alx surprised1 with dissolve
+    show alx surprised2 with dissolve
 
     "My face seems alarmed at the contact, though, as though she wasn’t expecting it."
 
-    show alx neutral1 with dissolve
+    play music bgmspirits_gen fadein 2.0
 
     $ Alex = "Genevieve"
     voice "C-18-1.mp3" #Genevieve (Lasli Tran and Other)
@@ -67,7 +65,7 @@ label spirits_a3s3:
 
     "Why is this--"
 
-    show alx happy1 with dissolve
+    show alx happy2 with dissolve
 
     voice "C-18-3.mp3" #Genevieve (Lasli Tran and Other)
     alx "Thank you."
@@ -76,12 +74,12 @@ label spirits_a3s3:
 
     "Why-- {i}how{/i} am I speaking?"
 
-    show alx neutral1 with dissolve
+    show alx surprised2 with dissolve
 
     voice "C-18-4.mp3" #Genevieve (Lasli Tran and Other)
     alx "Oh… You’re not angry?"
 
-    show alx sad1 with dissolve
+    show alx sad2 with dissolve
 
     voice "C-18-5.mp3" #Genevieve (Lasli Tran and Other)
     alx "Ah, I see what’s going on. Unfortunate."
@@ -109,15 +107,13 @@ label spirits_a3s3:
 
     "I don't get this at all."
 
-    show alx neutral1 with dissolve
-
     voice "C-18-7.mp3" #Genevieve (Lasli Tran and Other)
     alx "So you're figuring it out."
 
     voice "C-18-8.mp3" #Alex (Bonnie Mitchel)
     alx2 "I'm not, I can't--"
 
-    show alx bitter1 with dissolve
+    show alx surprised2 with dissolve
 
     voice "C-18-9.mp3" #Genevieve (Lasli Tran and Other)
     alx "...?"
@@ -142,8 +138,6 @@ label spirits_a3s3:
 
     "I look to the other me, hoping it'll give me an answer."
 
-    show alx neutral1 with dissolve
-
     voice "C-18-12.mp3" #Genevieve (Lasli Tran and Other)
     alx "So this is what the decay looks like on the outside…? This is what happened to me?"
 
@@ -152,12 +146,10 @@ label spirits_a3s3:
 
     "Silence - cold, uncomfortable silence - fills the room in the following seconds. Alex - the other me, the Not-Me - makes full eye contact."
 
-    show alx bitter1 with dissolve
+    show alx sad2 with dissolve
 
     voice "C-18-14.mp3" #Genevieve (Lasli Tran and Other)
     alx "Suppose I'll have to fill in the blanks for you. Maybe it’ll ease the pain, to understand."
-
-    show alx happy1 with dissolve
 
     voice "C-18-15.mp3" #Genevieve (Lasli Tran and Other)
     alx "This was your body. Now it's mine."
@@ -165,8 +157,6 @@ label spirits_a3s3:
     "I feel as if a pit in my stomach should have opened up, but my body doesn't even feel numb. I don't feel the crawling dread I should be, either."
 
     "My body - or what's left of it - only feels nothing."
-
-    show alx neutral1 with dissolve
 
     voice "C-18-16.mp3" #Genevieve (Lasli Tran and Other)
     alx "Now that you're like I was, you're starting to fade."
@@ -198,7 +188,7 @@ label spirits_a3s3:
     voice "C-18-19.mp3" #Alex (Bonnie Mitchel)
     alx2 "You did this…?"
 
-    show alx sad1 with dissolve
+    show alx sheepish2 with dissolve
 
     voice "C-18-20.mp3" #Genevieve (Lasli Tran and Other)
     alx "I did."
@@ -216,24 +206,29 @@ label spirits_a3s3:
 
     "I grip her shimmering hand; it’s solid in a way nothing else is. I bury my nails deep inside the warm flesh and angry black tendrils suddenly dance across the luminous skin."
 
-    show alx bitter1 with dissolve
+    show alx angry2 close with dissolve
+
+    show alx angry2 close:
+        linear 0.1 xpos 0.48
+        linear 0.1 xpos 0.5
+    with vpunch
 
     voice "C-18-22.mp3" #Genevieve (Lasli Tran and Other)
     alx "Unngh…! Augh! Damn this body!"
 
     "Though it’s so hard to feel anything, I relish in the sight of her anguished expression. It feels… cathartic somehow, though I can’t even imagine why.."
 
-    "But then her grimace twists into a mordant smirk."
+    show alx naughty2 with dissolve
 
-    show alx neutral1 with dissolve
+    "But then her grimace twists into a mordant smirk."
 
     voice "C-18-23.mp3" #Genevieve (Lasli Tran and Other)
     alx "I’m a fool for not anticipating that."
 
-    show alx angry1 with dissolve
-
     voice "C-18-24.mp3" #Genevieve (Lasli Tran and Other)
     alx "Well, enjoy your little victory while there’s still some to go around, I guess."
+
+    show alx naughty2 close with dissolve
 
     "She laughs - though it’s a hollow, bitter sound."
 
@@ -242,14 +237,12 @@ label spirits_a3s3:
     voice "C-18-25.mp3" #Alex (Bonnie Mitchel)
     alx2 "…Fuck you."
 
-    "She looks at me, with a… stern? Furious? I don’t know what it is, but there’s a {i}look{/i} in her eye. She sneers at me as she speaks, my own face making strange, unfamiliar expressions."
+    show alx angry2 with dissolve
 
-    show alx neutral1 with dissolve
+    "She looks at me, with a… stern? Furious? I don’t know what it is, but there’s a {i}look{/i} in her eye. She sneers at me as she speaks, my own face making strange, unfamiliar expressions."
 
     voice "C-18-26.mp3" #Genevieve (Lasli Tran and Other)
     alx "You only have yourself to blame for this, you know. All I wanted was to cross over, but you ignored me."
-
-    show alx happy1 with dissolve
 
     voice "C-18-27.mp3" #Genevieve (Lasli Tran and Other)
     alx "But, well, there’s more than one way to take care of unfinished business. If I’ll never have justice, a new life will do just fine."
@@ -265,11 +258,43 @@ label spirits_a3s3:
     voice "C-18-30.mp3" #Genevieve (Lasli Tran and Other)
     alx "Yes, I will. Just watch me."
 
+    show alx bitter2 close:
+        linear 0.2 ypos 1.05
+        linear 0.2 xpos 0.55
+        linear 0.2 ypos 1.00
+        linear 0.2 xpos 0.6
+        linear 0.2 ypos 1.05
+        linear 0.2 xpos 0.65
+        linear 0.2 ypos 1.00
+        linear 0.2 xpos 0.7
+        linear 0.2 ypos 1.05
+        linear 0.2 xpos 0.75
+        linear 0.2 ypos 1.00
+        linear 0.2 xpos 0.8
+
     "As if to punctuate that sentiment, Genevieve snatches her spectral hand back and curtly turns away, stomping laboriously to the door."
 
     "Strange. I wonder how she hurt her leg like that?"
 
+    show alx:
+        ease 0.3 align (0.9,1.0)
+        ease 0.1 align (0.8,1.0)
+    pause 0.3
+    with hpunch
+    play sound "game_letgo/sfx/Punch,Shove.ogg"
+    show alx angry2
+
     "In an effort to stop her, I attempt to grab her hand again - but she swivels with unexpected haste and jabs me right in the solar plexus."
+
+    show alx bitter2 close:
+        linear 0.2 ypos 1.05
+        linear 0.2 xpos 0.775
+        linear 0.2 ypos 1.00
+        linear 0.2 xpos 0.850
+        linear 0.2 ypos 1.05
+        linear 0.2 xpos 0.925
+        linear 0.2 ypos 1.00
+        linear 0.2 xpos 0.975
 
     "Absurdly, I’m knocked backwards, falling toward the floor, while she continues lurching on out of the room."
 
@@ -278,7 +303,7 @@ label spirits_a3s3:
     voice "C-18-31.mp3" #Alex (Bonnie Mitchel)
     alx2 "Wait! Where are you going?!"
 
-    show alx bitter1 with dissolve
+    show alx angry2 with dissolve
 
     voice "C-18-32.mp3" #Genevieve (Lasli Tran and Other)
     alx "Anywhere but here. I’ve spent enough time in this prison of a house.."
@@ -286,9 +311,10 @@ label spirits_a3s3:
     voice "C-18-33.mp3" #Alex (Bonnie Mitchel)
     alx2 "No! You can’t! You can’t!"
 
-    "She sighs, turning around."
+    show alx sad2:
+        easein 0.8 xpos 0.93
 
-    show alx sad1 with dissolve
+    "She sighs, turning around."
 
     voice "C-18-34.mp3" #Genevieve (Lasli Tran and Other)
     alx "For what it’s worth, I’m sorry our paths had to cross. I’ve spent enough time in this body to have a better understanding of who you are - who you were."
@@ -298,12 +324,12 @@ label spirits_a3s3:
 
     "She looks genuinely remorseful as she says those words with my stolen voice, and I see her bring her hand to her temple. Finally, she sighs."
 
-    show alx angry1 with dissolve
+    show alx angry2 with dissolve
 
     voice "C-18-36.mp3" #Genevieve (Lasli Tran and Other)
     alx "Someday, I’m going to see this house burned to the ground. If you’re still here, maybe that will free you."
 
-    show alx sad1 with dissolve
+    show alx sad2 with dissolve
 
     voice "C-18-37.mp3" #Genevieve (Lasli Tran and Other)
     alx "But if your soul should linger even then… I’ll pray for peace, for both of us."
@@ -311,7 +337,7 @@ label spirits_a3s3:
     voice "C-18-38.mp3" #Genevieve (Lasli Tran and Other)
     alx "Goodbye, Alexandra. And good luck."
 
-    hide alx with dissolve
+    hide alx with easeoutright
 
     "She steps out of the room, and the door slams shut."
 
