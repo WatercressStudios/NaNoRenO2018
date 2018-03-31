@@ -128,7 +128,7 @@ label spirits_a1s7:
     stop ambience fadeout 3.0
 
     #show spirits test pattern with Dissolve (3.0)
-    scene spirits alex bedroom night clean with Dissolve(3.0)
+    scene spirits awoken with Dissolve(3.0)
 
     play ambience "game_letgo/ambience/Park Night.ogg" fadein 0.1 fadeout 0.1
 
@@ -304,7 +304,7 @@ label BuddingRelationship:
     cae "Hmm?"
 
     stop ambience fadeout 4.0
-    play music bgmspirits_main
+    play music bgmspirits_main fadein 10.0
 
     voice "C-8-51.mp3" #Alex (Bonnie Mitchel)
     alx "Okay, look, I realize that this is going to sound completely nuts."

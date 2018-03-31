@@ -45,7 +45,7 @@ label spirits_a2s1_alive:
     "I breathe in one more time and twist my doorknob..."
 
     play sound "game_spirits/sfx/Open Door.ogg"
-    play music bgmspirits_cae
+    play music bgmspirits_sthings
 
     show alx surprised1:
         ease 0.2 align (0.2,1.0)
@@ -73,7 +73,7 @@ label spirits_a2s1_alive:
     cae "I held out my crucifix, since I didn’t know what else to do, and when I turned around, it was {i}charging{/i} toward me--"
 
     voice "C-9-7.mp3" #Caelum (Daniel Acosta)
-    cae "And it was holding up something…. sharp? Almost like a spade, I think?"
+    cae "And it was holding up something… sharp? Almost like a spade, I think?"
 
     voice "C-9-8.mp3" #Caelum (Daniel Acosta)
     cae "And I didn't even think. I just hurled my crucifix at it and ran."
