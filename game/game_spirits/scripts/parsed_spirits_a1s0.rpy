@@ -67,7 +67,7 @@ label spirits_a1s0:
 
     play sound "game_spirits/sfx/Text Received.ogg"
 
-    "A text from my grandmother rouses me from my reverie."
+    "A text from my Naniji rouses me from my reverie."
 
     "\"{i}Are you okay, Alex?  Your flight’s in two hours.{/i}\""
 
