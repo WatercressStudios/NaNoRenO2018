@@ -4,6 +4,10 @@ label spirits_a3s5:
     #scene black
     #scene black with dissolve
 
+    "..."
+
+    play ambience "game_letgo/ambience/Downtown Day.ogg" fadeout 0.1 fadein 0.1
+
     "The freezing water runs through my hair and over my body, drenching me, cooling my core as it has the last hundred times."
 
     "I've gotten used to cold showers like this. It's just the way I have to live now."
@@ -17,6 +21,8 @@ label spirits_a3s5:
     "Stepping out of the shower, my feet hit the cold linoleum floor. I efficiently dry myself off and dress for the weather outside."
 
     "With my coat, gloves, and scarf on, I'm prepared for the hike it'll take to get to the right location."
+
+    play music bgmspirits_end45
 
     #show road bg
     scene spirits city street with dissolve
@@ -83,4 +89,3 @@ label spirits_a3s5:
     $ renpy.movie_cutscene("videos/Spirits Credits No Music.mp4")
     "SERVITUDE ENDING"
     jump spiritsMetaNarrative
-
