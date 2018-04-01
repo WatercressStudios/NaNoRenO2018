@@ -15,7 +15,9 @@ label spirits_a3s2:
 
     "But ugh, my leg hurts… Does that mean…?"
 
-    #scene alex_bedroom_vwhatever
+    scene spirits alex bedroom clean
+
+    show cae happy1 at centerright
 
     "I open my eyes. I’m in my room. Lying on my bed."
 
@@ -32,15 +34,19 @@ label spirits_a3s2:
 
     "Except… something’s wrong. His body language - the way he’s looking at me…"
 
-    #show caelum smug
+    show alx surprised1 at left with easeinleft
 
     voice "C-17-3.mp3" #Alex (Bonnie Mitchel)
     alx "…Caelum? What… what’s happened--"
 
     $ Caelum = "Genevieve"
 
+    play music bgmspirits_gen
+
     voice "C-17-4.mp3" #Genevieve (Lasli Tran and Other)
     cae "…Not my name, Alex."
+
+    show alx sad1 with dissolve
 
     "No."
 
@@ -54,18 +60,18 @@ label spirits_a3s2:
     voice "C-17-6.mp3" #Genevieve (Lasli Tran and Other)
     cae "Not sure I’ll keep using that name, either. Doesn’t really seem to fit anymore."
 
-    #show caelum angry
+    show cae angry1 with dissolve
 
     voice "C-17-7.mp3" #Genevieve (Lasli Tran and Other)
     cae "And the man who gave it to me was an ass."
 
     "How dare she…!"
 
-    #show alex pained
+    show alx angry1 close with dissolve
 
     "Outraged, I try to stand up, but my leg howls with pain when I put pressure on it."
 
-    #show caelum smug
+    show cae happy1 with dissolve
 
     voice "C-17-8.mp3" #Genevieve (Lasli Tran and Other)
     cae "You’ll probably want to see a doctor about that. It hurt like hell. Though, I don’t think you broke anything other than pride."
@@ -76,7 +82,19 @@ label spirits_a3s2:
     voice "C-17-10.mp3" #Genevieve (Lasli Tran and Other)
     cae "I know it can be a little disorienting at first."
 
-    #show alex pained
+    show alx angry1:
+        linear 0.2 ypos 1.05
+        linear 0.2 xpos 0.15
+        linear 0.2 ypos 1.00
+        linear 0.2 xpos 0.2
+        linear 0.2 ypos 1.05
+        linear 0.2 xpos 0.25
+        linear 0.2 ypos 1.00
+        linear 0.2 xpos 0.3
+        linear 0.2 ypos 1.05
+        linear 0.2 xpos 0.35
+        linear 0.2 ypos 1.00
+        linear 0.2 xpos 0.4
 
     voice "C-17-11.mp3" #Alex (Bonnie Mitchel)
     alx "You bitch… What have you done to us? Why are you possessing Caelum?"
@@ -97,14 +115,20 @@ label spirits_a3s2:
     voice "C-17-15.mp3" #Genevieve (Lasli Tran and Other)
     cae "I took over your body and threw you out, remember?"
 
+    show cae happy1 close with dissolve
+
     voice "C-17-16.mp3" #Genevieve (Lasli Tran and Other)
     cae "It was practically effortless. Pretty easy to drag your soul away, with part of it hanging out like that."
+
+    show cae happy1 with dissolve
 
     voice "C-17-17.mp3" #Genevieve (Lasli Tran and Other)
     cae "You should be grateful. The only reason you’re not a phantom, trapped forever in this hell with {i}that man{/i} like I was, is because your boyfriend caught me with one foot out the door and refused to let me go."
 
     voice "C-17-18.mp3" #Genevieve (Lasli Tran and Other)
     cae "Of course, there was nothing he could do to {i}force{/i} me out, so he made me a better offer."
+
+    show alx scared1 with dissolve
 
     #show alex horrified
 
@@ -124,6 +148,8 @@ label spirits_a3s2:
 
     voice "C-17-23.mp3" #Alex (Bonnie Mitchel)
     alx "You can’t… let him go, {i}please{/i}! Give him back his body!"
+
+    show cae sad1 with dissolve
 
     voice "C-17-24.mp3" #Genevieve (Lasli Tran and Other)
     cae "Oh, honey, I’m not imprisoning your friend. He’s gone."
@@ -149,7 +175,16 @@ label spirits_a3s2:
 
     "NO!!!"
 
+    show alx angry1:
+        easein 0.2 xpos 0.52
+
+    scene black with dissolve
+
+    play sound "game_letgo/sfx/Punch,Shove.ogg"
+
     "My veins fill with fire; I lunge towards her - but she effortlessly catches my arm in midair with one of her stolen hands, holding my other shoulder back with the other."
+
+    play sound "game_letgo/sfx/Punch,Shove Serious.ogg"
 
     "I thrash wildly against her grip, but she’s too strong and I’m too weak. She’s holding me back like I’m a rag doll."
 
@@ -180,18 +215,20 @@ label spirits_a3s2:
     voice "C-17-34.mp3" #Alex (Bonnie Mitchel)
     alx "What are you--"
 
-    #hide alex
-
     "She unceremoniously drops me there, where I crash relatively painlessly into boxes and clothes. Before I even have a chance to get my bearings, she shuts the door in my face."
 
     voice "C-17-35.mp3" #Alex (Bonnie Mitchel)
     alx "Wait, no!"
 
+    play sound "game_spirits/sfx/Dungeon Door Slam.ogg"
+
     "But it’s no use. I can hear my padlock sliding into place and clicking shut."
 
     "I desperately slam my body against the doors - but they’re solidly built."
 
-    #show caelum bored
+    scene spirits alex bedroom clean
+
+    show cae bitter1 at left with dissolve
 
     voice "C-17-36.mp3" #Genevieve (Lasli Tran and Other)
     cae "Just mellow out in there for a while. Maybe use this time to contemplate how agonizing it is to be trapped somewhere, dependent on the kindness of others to be free."
@@ -199,7 +236,7 @@ label spirits_a3s2:
     voice "C-17-37.mp3" #Alex (Bonnie Mitchel)
     alx "…Fuck you."
 
-    #show caelum angry
+    show cae angry1 with dissolve
 
     voice "C-17-38.mp3" #Genevieve (Lasli Tran and Other)
     cae "You only have yourself to blame for this. All I wanted was to cross over, but you ignored me."
@@ -207,7 +244,7 @@ label spirits_a3s2:
     voice "C-17-39.mp3" #Genevieve (Lasli Tran and Other)
     cae "But, well, there’s more than one way to take care of unfinished business. If I’ll never have justice, a new life will do just fine."
 
-    #show caelum smug
+    show cae happy1 with dissolve
 
     voice "C-17-40.mp3" #Genevieve (Lasli Tran and Other)
     cae "What’s so wrong with that? I thought you said you {i}liked{/i} reincarnation."
@@ -215,10 +252,12 @@ label spirits_a3s2:
     voice "C-17-41.mp3" #Alex (Bonnie Mitchel)
     alx "And when your time finally comes? You really think you’re going to wind up with your mother after this?"
 
-    #show caelum scowl
+    show cae angry1 with dissolve
 
     voice "C-17-42.mp3" #Genevieve (Lasli Tran and Other)
     cae "Pfft. As if you’re in any position to cast judgment, pagan."
+
+    show cae at right with ease
 
     "As if to punctuate that sentiment, Genevieve curtly turns her back on me, casually walking to the door as if I’m just a buzzing voice in her ear."
 
@@ -244,6 +283,8 @@ label spirits_a3s2:
 
     voice "C-17-49.mp3" #Genevieve (Lasli Tran and Other)
     cae "Farewell."
+
+    hide cae with easeoutright
 
     voice "C-17-50.mp3" #Alex (Bonnie Mitchel)
     alx "No! Genevieve! Genevieve!"

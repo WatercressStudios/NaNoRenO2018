@@ -4,6 +4,12 @@ label spirits_a3s4:
     #scene alex’s bedroom v1
     #scene spirits alex bedroom clean with dissolve
 
+    scene spirits alex bedroom night clean
+
+    show alx happy1 at centerleft with dissolve
+
+    show cae happy1 at right with dissolve
+
     voice "C-19-1.mp3" #Alex (Bonnie Mitchel)
     alx "I’ll see you later!"
 
@@ -18,15 +24,27 @@ label spirits_a3s4:
 
     "After giving a small nod, Caelum moves to leave."
 
+    hide cae with easeoutright
+
     #scene black
     scene black with dissolve
 
     "I’m alone again."
 
-    play music bgmspirits_gen
+    play music bgmspirits_end45
 
     #scene alex’s bedroom v1
-    scene spirits alex bedroom clean with dissolve
+    scene spirits alex bedroom night clean
+
+    show alx sad1 at centerright
+
+    with dissolve
+
+    scene spirits alex bedroom clean
+
+    show alx sad1 at centerright
+
+    with dissolve
 
     "I flick the lights on and immediately wither under their radiance."
 
@@ -42,11 +60,16 @@ label spirits_a3s4:
 
     "Is this what it feels like when your soul leaves you?"
 
+    show alx:
+        ease 0.6 align (0.0, 1.0) alpha 0
+
     "I collapse against the mattress and lay there for several long seconds, smothered by a pillow."
 
     "Realistically, I want to sleep - but if these past few days have taught me anything, it’s only going to make waking up even more difficult than usual."
 
     "That is if I don’t dream about recent events…"
+
+    play sound "game_spirits/sfx/Alex Sighs.ogg"
 
     "With a sigh, I force myself to roll over onto my back."
 
@@ -72,6 +95,8 @@ label spirits_a3s4:
 
     "Or rather, I try to - but my body is held to the bed by gravity."
 
+    show alx at centerleft with dissolve
+
     "Keeping with today’s \"theme\" of contrast, I feel floaty when I finally manage to sit up."
 
     "There must be something I can do, right?"
@@ -85,6 +110,8 @@ label spirits_a3s4:
     "It would be so easy to do…"
 
     "As easy as pointing and pulling a trigger."
+
+    show alx at centerright with ease
 
     "On autopilot, I reach over towards a sheet of paper and a pen."
 
