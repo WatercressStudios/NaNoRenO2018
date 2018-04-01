@@ -58,7 +58,7 @@ label letgo_102:
     show eli smile2 with dissolve
 
     voice "C-102-9.mp3" #Elijah (Michael Potok)
-    eli "It was definitely a full house, that’s for sure. Only one argument this year! I was surprised. Mom was pissed at Dad because he burnt the gravy. It worked out though ."
+    eli "It was definitely a full house, that’s for sure. Only one argument this year! I was surprised. Mom was pissed at Dad because he burnt the gravy. It worked out though."
 
     show may suspicious1 with dissolve
 
@@ -72,6 +72,8 @@ label letgo_102:
 
     show eli smile2 with dissolve
     show may normal1 with dissolve
+
+    voice "C-101-eli-laugh.mp3"
 
     "I laugh a little nervously. Even though we’ve known each other for years, I suddenly feel like I don’t know how to be myself."
 
@@ -267,6 +269,7 @@ label letgo_102:
     show eli happy1 close with dissolve
     show may happy2 close with dissolve
 
+    voice "C-101-both-laugh.mp3"
     "We laugh a little and I feel comfortable again."
 
     show eli happy1 with dissolve

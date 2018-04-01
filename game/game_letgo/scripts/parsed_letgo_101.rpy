@@ -240,6 +240,7 @@ label letgo_101:
 
     #Laughing Voice lines from both May and Eli
 
+    voice "C-101-both-laugh.mp3"
     "Maya starts to giggle, then explodes in laughter; I'm quick to follow."
 
     show may happy2 close with dissolve

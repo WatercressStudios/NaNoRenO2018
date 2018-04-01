@@ -78,6 +78,7 @@ label letgo_103:
         repeat
     "I stand behind her and grab the chains. Leaning back, I pull her up high and then let go."
 
+    voice "C-101-may-laugh.mp3"
     "She lets out a little shout, laughing and swinging."
 
     "Her hair blows in the wind, the scarf flying behind her when she moves forward."
@@ -285,7 +286,7 @@ label letgo_103:
 
     "The splashes echo into the quiet dusk."
 
-    stop music fadeout 5.0
+    stop music fadeout 3.0
 
     "I wish for this to last forever..."
 
