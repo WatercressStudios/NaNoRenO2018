@@ -378,8 +378,8 @@
 
     show may worried2 with dissolve
 
-    voice "C-303-60.mp3" #Maya (shiena)
-    may "Well..."
+#     voice "C-303-60.mp3" #Maya (shiena)
+#     may "Well..."
 
     #deep breathin’
     voice "C-303-61.mp3" #Maya (shiena)
@@ -469,9 +469,9 @@
 
     voice "C-303-76.mp3" #Maya (shiena)
     may "It’s all just a fucking cartoon!"
-
-    voice "C-303-77.mp3" #Maya (shiena)
-    may "Hahaha..."
+# 
+#     voice "C-303-77.mp3" #Maya (shiena)
+#     may "Hahaha..."
 
     voice "C-303-78.mp3" #Maya (shiena)
     may "..."
