@@ -136,7 +136,7 @@ label spirits_a2s1_dead:
 
     show alx surprised1 with dissolve
 
-    "How did Caelum even get in here, anywhere?"
+    "How did Caelum even get in here, anyway?"
 
     show alx neutral1 close with dissolve
 
