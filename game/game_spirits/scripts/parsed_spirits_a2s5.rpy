@@ -131,7 +131,7 @@ label spirits_a2s5:
 
     "It smells heavily of dust and mildew. Jianmei climbs up and directs me to a few boxes that she deems takeable."
 
-    "I two small boxes up and tuck them under my arms like suitcases - but then, from the corner of my eye, I see something slip out from underneath one."
+    "I lift two small boxes up and tuck them under my arms like suitcases - but then, from the corner of my eye, I see something slip out from underneath one."
 
     show spirits letter as clue at truecenter with dissolve
 

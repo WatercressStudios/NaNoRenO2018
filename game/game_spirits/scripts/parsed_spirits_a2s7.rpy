@@ -52,7 +52,7 @@ label spirits_a2s7:
 
         "It’s Genevieve. She’s wrangling my whole body. It’s not just my arm; somehow, it’s like she’s physically sitting on my chest."
 
-        "I can the outline of her spirit… she’s not grabbing me at all. In fact, I can’t tell where my arm ends and hers begins."
+        "I can see the outline of her spirit… she’s not grabbing me at all. In fact, I can’t tell where my arm ends and hers begins."
 
         voice "C-15-1.mp3" #Alex (Bonnie Mitchel)
         alx "Genevieve! Cut it out--"
