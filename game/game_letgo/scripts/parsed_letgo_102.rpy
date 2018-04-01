@@ -309,6 +309,6 @@ label letgo_102:
     show may nervous2 with dissolve
 
     voice "C-102-50.mp3" #Maya (shiena)
-    may "Actually, yeah  Let’s go ahead and walk if you’re ready. It seems like a nice night to look at the stars."
+    may "Actually, yeah. Let’s go ahead and walk if you’re ready. It seems like a nice night to look at the stars."
 
     jump letgo_103
