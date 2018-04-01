@@ -4,14 +4,14 @@ label flood_101:
     scene black
     stop music fadeout 5.0
     pause 5.0
-    
+
     play music "game_flood/music/flood.mp3" noloop fadein 1.0
 
     "I'm here again; a familiar sight, a familiar setting, a familiar sound..."
 
     "I don't want to open my eyes. I {i}refuse{/i} to."
 
-    "But every agonizing drop rattles in my skull, creating a cacophonous rhythm that refuses to abate." 
+    "But every agonizing drop rattles in my skull, creating a cacophonous rhythm that refuses to abate."
 
     "I should be sound asleep. I should be resting, idle, and contented - but..."
 
@@ -28,7 +28,7 @@ label flood_101:
 
     "I force my eyes open. I guess there’s no avoiding it now..."
 
-    scene flood sunrise with dissolve #show cg dream (depending on how many variants we get we'll adjust how this plays out)
+    scene flood bedroom with dissolve #show cg dream (depending on how many variants we get we'll adjust how this plays out)
 
     "I'm in my room, but something is different - {i}wrong.{/i}"
 
@@ -59,7 +59,7 @@ label flood_101:
 
     "A fortress - a bastion I can cling to and hold close."
 
-    "But the water continues to rise. Every day, every hour, every second, I remain here; trapped, cast adrift." 
+    "But the water continues to rise. Every day, every hour, every second, I remain here; trapped, cast adrift."
 
     "I think - no, I can see: the flood has crept up to my bedsheets."
 
@@ -73,11 +73,11 @@ label flood_101:
 
     "If anyone else were here, they'd probably make some asinine joke about how I {i}still{/i} wet the bed."
 
-    "But they won't." 
+    "But they won't."
 
     "No one ever comes."
 
-    #show cg dream 
+    #show cg dream
 
     "It’s been like this for as long as I can remember."
 
@@ -123,7 +123,7 @@ label flood_101:
     "And now it's here in my room... Dread washes over me as I realize the horrible truth."
     "I {i}still{/i} can't breathe; there's no air whatsoever!"
 
-    "My room's barely recognizable. The atmosphere is cold. Chilling." 
+    "My room's barely recognizable. The atmosphere is cold. Chilling."
 
     "I feel the oppressive weight of many gallons of water."
 
@@ -182,14 +182,14 @@ label flood_101:
     voice "game_flood/voice/C-101-7.ogg" #Ophelia (Cospcaptor)
     oph "A-ah!?"
     "Gripping the sides of my bed, I realize I'm surrounded by crashing waves."
-    "This is bad. This is really, really bad." 
+    "This is bad. This is really, really bad."
     "I knew I was being optimistic, but now... now things are getting rough."
     "Holding on for dear life, I feel my bed swaying back and forth, jostled violently by enormous waves."
     "They are getting bigger. I gaze off into the distance with a look of abject horror. Some of the distant waves look twenty... no, thirty feet tall!"
     "...Darkness descends on me from behind. I have a gut feeling of what it could be, but I don't want to confirm it."
     "Grimacing, I turn my head to see."
     "It's a towering wave. It looked like it could wash out an entire coastline, but it only had one target."
-    "I know exactly what's coming. Still, knowing never quite prepares you." 
+    "I know exactly what's coming. Still, knowing never quite prepares you."
     stop music fadeout 1.0
     "I close my eyes tight, bracing for impact."
 
