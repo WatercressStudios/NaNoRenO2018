@@ -41,7 +41,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "CautionaryTale-0.9"
+define build.name = "CautionaryTale-0.95"
 
 
 ## Sounds and music ############################################################
