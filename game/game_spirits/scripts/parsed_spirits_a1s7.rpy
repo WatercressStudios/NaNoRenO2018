@@ -24,8 +24,12 @@ label spirits_a1s7:
     voice "C-8-3.mp3" #Mama (N/A)
     ama "...Oh my god."
 
+    show spirits skeleton1 as skelly at center with dissolve
+
     voice "C-8-4.mp3" #Genevieve (Lasli Tran)
     gho "{size=-15}Let me out.{/size}"
+
+    hide skelly with dissolve
 
     voice "C-8-5.mp3" #Mama (N/A)
     ama "That was… Oh my god!"
@@ -41,8 +45,12 @@ label spirits_a1s7:
     voice "C-8-7.mp3" #Mama (N/A)
     ama "Bitiyaa, are you doing okay back there?"
 
+    show spirits skeleton2 as skello at center with dissolve
+
     voice "C-8-8.mp3" #Genevieve (Lasli Tran)
     gho "{size=-10}Let. Me. Out.{/size}"
+
+    hide skello with dissolve
 
     voice "C-8-9.mp3" #Mama (N/A)
     ama "Whew… Let’s just pull over and wait for the storm to--"
@@ -69,12 +77,28 @@ label spirits_a1s7:
     #play sound [pounding angrily on a door]
     play sound "game_spirits/sfx/Banging on Door 2.ogg"
 
+    scene black
+
+    show spirits skeleton3 as skell at center with dissolve
+
+    pause 0.2
+
+    scene white
+
     voice "C-8-11.mp3" #Genevieve (Lasli Tran)
     gho "Let me {i}{b}out!{/b}{/i}"
+
+    scene black
+
+    show spirits skeleton4 as skel at center
+
+    hide skel with easeoutbottom
 
     play sound "game_spirits/sfx/Creepy Clawing.ogg"
 
     pause 5.0
+
+    scene white with dissolve
 
     voice "C-8-12.mp3" #Genevieve (Lasli Tran)
     gho "Let me out! Let me out! Let me out!"
@@ -103,8 +127,14 @@ label spirits_a1s7:
 
     pause 3.0
 
+    scene black
+
+    show spirits skeleton5 as jeff at center
+
     voice "C-8-15.mp3" #Genevieve (Lasli Tran)
     gho "LET ME OUT!"
+
+    scene black with dissolve
 
     play sound "game_spirits/sfx/Wraith Laughs.ogg"
 
