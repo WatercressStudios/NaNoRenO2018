@@ -332,10 +332,7 @@
     show may angry1 close with dissolve
 
     voice "C-303-47.mp3" #Maya (shiena)
-    may "Actually, you know what?"
-
-    voice "C-303-48.mp3" #Maya (shiena)
-    may "Fine. Ask away."
+    may "Actually, you know what? Fine. Ask away."
 
     "Alright, here goes."
 
