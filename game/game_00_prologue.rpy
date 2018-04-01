@@ -390,6 +390,6 @@ label before_main_menu:
     python:
         if not persistent.set_volumes:
             persistent.set_volumes = True
-            _preferences.volumes['music'] *= 0.5 
+            _preferences.volumes['music'] *= 0.4
             _preferences.volumes['sfx'] *= 0.5 
 
