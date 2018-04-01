@@ -3,7 +3,7 @@ label flood_402:
 
     show oph surprised with dissolve:
         align (0.35, 1.0)
-    play music "game_flood/music/oliver.mp3" noloop fadein 1.0
+    play music "game_flood/music/oliver.mp3" fadein 1.0
     "WOW!"
 
     "This place looks a million times better than it does from the outside. Loving the whole ambient lighting thing it's got going on."

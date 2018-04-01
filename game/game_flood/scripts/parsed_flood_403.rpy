@@ -34,7 +34,7 @@ label flood_403:
 
     "...My poor wallet..."
 
-    play music "game_flood/music/riverside.mp3" noloop fadein 1.0
+    play music "game_flood/music/riverside.mp3" fadein 1.0
     play ambience "game_flood/ambience/rain.ogg"
     scene flood street3 with dissolve
     show oli cheerful smile with dissolve:

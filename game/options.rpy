@@ -13,7 +13,7 @@
 ## The _() surrounding the string marks it as eligible for translation.
 
 define config.name = _("Cautionary Tale")
-define config.developer = "True"
+define config.developer = "auto"
 
 define config.debug_sound = False
 define config.voice_filename_format = "game_{current_story}/voice/{filename}"
@@ -41,7 +41,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "CautionaryTale-0.95"
+define build.name = "CautionaryTale"
 
 
 ## Sounds and music ############################################################
@@ -146,7 +146,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "NaNoRenO-2018-1520030711"
+define config.save_directory = "CautionaryTale-2018-1520030711"
 
 
 ## Icon ########################################################################

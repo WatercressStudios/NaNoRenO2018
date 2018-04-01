@@ -41,7 +41,7 @@ label flood_201:
     stop music fadeout 1.0
     "Before I get a chance to do something so cliché, however, I spot her."
 
-    play music "game_flood/music/hope.mp3" noloop fadein 1.0
+    play music "game_flood/music/hope.mp3" fadein 1.0
     "A little girl. She can't be any older than ten."
 
     "What's even more odd's that she's alone, and attempting to assemble a tent."

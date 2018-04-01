@@ -6,7 +6,7 @@ label flood_102:
     "{b}Splash!{/b}"
     #music jazz??? something for a run down coffee shop idk
     
-    play music "game_flood/music/cafe.mp3" noloop fadein 1.0
+    play music "game_flood/music/cafe.mp3" fadein 1.0
     show oph scared close
 
     voice "game_flood/voice/C-102-1.ogg" #Ophelia (Cospcaptor)
@@ -188,7 +188,7 @@ label flood_102:
     voice "game_flood/voice/C-201-2.ogg" #Ophelia (Cospcaptor)
     oph "A… a moth?"
 
-    play music "game_flood/music/moth.mp3" noloop fadein 1.0
+    play music "game_flood/music/moth.mp3" fadein 1.0
     
     "It didn't fly away with my sudden movement. Something must be wrong with it, right? In its eyes, I should be a predator."
 
@@ -309,7 +309,7 @@ label flood_102:
     stop music fadeout 1.0
     "It begins to jump up and down, getting restless again."
     
-    play music "game_flood/music/city.mp3" noloop fadein 1.0
+    play music "game_flood/music/city.mp3" fadein 1.0
     
     "That's my signal. I take a look at my map."
     jump map

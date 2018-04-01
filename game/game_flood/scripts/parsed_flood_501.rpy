@@ -2,28 +2,28 @@ label hopcheck:
     if hope:
         jump daicheck
     else:
-        play music "game_flood/music/city.mp3" noloop fadein 1.0
+        play music "game_flood/music/city.mp3" fadein 1.0
         jump map
         
 label daicheck:
     if daisy:
         jump olicheck
     else:
-        play music "game_flood/music/city.mp3" noloop fadein 1.0
+        play music "game_flood/music/city.mp3" fadein 1.0
         jump map
         
 label olicheck:
     if oliver:
         jump flood_501
     else: 
-        play music "game_flood/music/city.mp3" noloop fadein 1.0
+        play music "game_flood/music/city.mp3" fadein 1.0
         jump map
 
 label flood_501:
     
     scene flood riverside with dissolve
     play ambience "game_flood/ambience/river.ogg"
-    play music "game_flood/music/climax.mp3" noloop fadein 1.0
+    play music "game_flood/music/climax.mp3" fadein 1.0
     "..."
     "... ..."
     "God, what time is it? How long have I been out here for?"
@@ -89,7 +89,7 @@ label flood_501:
     "... ..." 
     "... ... ..."
     "Today is my 18th birthday."
-    play music "game_flood/music/ending.mp3" noloop fadein 1.0
+    play music "game_flood/music/ending.mp3" fadein 1.0
     "It's been... surprisingly uneventful. After my late-night adventures, I ended up sleeping until four in the afternoon."
     "Oversleeping like that's supposed to be bad for you, but... I feel better rested than I've been in a long time."
     "Mom and Dad're gonna throw me a party later. It's been pushed into the back of my mind."

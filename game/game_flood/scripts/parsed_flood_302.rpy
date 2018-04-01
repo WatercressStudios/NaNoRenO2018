@@ -11,7 +11,7 @@ label flood_302:
 
     "Her words don’t sound like they have any malicious intent so I decide to trust her and enter the club."
 
-    play music "game_flood/music/daisy.mp3" noloop fadein 1.0
+    play music "game_flood/music/daisy.mp3" fadein 1.0
     scene flood club with dissolve
     "Almost as soon as we enter, I am introduced to a new world - an unfamiliar yet surprisingly welcome one."
 

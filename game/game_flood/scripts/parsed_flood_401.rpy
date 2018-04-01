@@ -1,7 +1,7 @@
 label flood_401:
     scene flood bridge with dissolve
 
-    play music "game_flood/music/riverside.mp3" noloop fadein 1.0
+    play music "game_flood/music/riverside.mp3" fadein 1.0
     "Pacing myself, I make my way near the riverside. It's been an age since I last strolled through, but it's quiet here and right now I need time to think."
 
     "Together with the soft patter of raindrops, the river drowns out the noise pollution of the city."

@@ -5,7 +5,7 @@ label flood_101:
     stop music fadeout 5.0
     pause 5.0
 
-    play music "game_flood/music/flood.mp3" noloop fadein 1.0
+    play music "game_flood/music/flood.mp3" fadein 1.0
 
     "I'm here again; a familiar sight, a familiar setting, a familiar sound..."
 
