@@ -154,11 +154,11 @@ label flood_301:
      
     "The moth perches itself on the door lantern above me. I glance at him, then back towards the performer." 
 
-    voice "game_flood/voice/C-301-10.ogg" #Ophelia (Cospcaptor)
-    oph "Oh, she's putting it away."
+#     voice "game_flood/voice/C-301-10.ogg" #Ophelia (Cospcaptor)
+#     oph "Oh, she's putting it away."
 
     voice "game_flood/voice/C-301-11.ogg" #Ophelia (Cospcaptor)
-    oph "I really wish she would keep playing."
+    oph "Oh, she's putting it away. I really wish she would keep playing."
 
     show dai disappointed
     "Once she finishes stowing away her instrument, I realize she's in a heated argument with the man in front of the stage."
