@@ -109,7 +109,7 @@ label spirits_a2s6:
         xpos 0.6
     with ease
 
-    pause
+    pause 0.4
 
     play sound "game_spirits/sfx/Smashing Keyboard.ogg"
 
