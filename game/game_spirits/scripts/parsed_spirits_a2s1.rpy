@@ -2,11 +2,20 @@ label spirits_a2s1:
     if caelumAlive == True:
         jump spirits_a2s1_alive
     jump spirits_a2s1_dead
-    
+
 label spirits_a2s1_alive:
+
+    scene black with dissolve
+
     "When Caelum leaves, I realize I’m still nervous; it all returns in an instant - from the knot in my stomach to the lump in my throat."
 
     "What the spirit told me yesterday keeps echoing in my head; I even dreamed of searching for the \"last step.\""
+
+    play music bgmspirits_main fadeout 0.5
+
+    scene spirits alex bedroom clean with dissolve
+
+    show alx neutral1 with dissolve
 
     "Of course, as soon I wake up, I don’t remember what it looks like or the process of finding it."
 
@@ -16,15 +25,32 @@ label spirits_a2s1_alive:
 
     "I guess I’ll have to search for it with every ounce of my energy. "
 
+    show alx neutral1 close with dissolve
+
     "I try doing some breathing exercises while I go through my morning routine."
 
     "After all, the amount of stuff I’ve been dealing with lately should send me to the hospital with some kind of heart trouble."
 
+    show alx neutral1:
+        ease 1 align (0.2,1.0)
+        ease 2 align (0.8,1.0)
+        ease 1 align (0.5,1.0)
+
     "I pace back and forth to burn off nervous energy, because something is telling me I’m just waiting for another surprise."
 
-    "I think I just really need to calm down. A lot." 
+    "I think I just really need to calm down. A lot."
+
+    show alx neutral1 close with dissolve
 
     "I breathe in one more time and twist my doorknob..."
+
+    play sound "game_spirits/sfx/Open Door.ogg"
+    play music bgmspirits_sthings
+
+    show alx surprised1:
+        ease 0.2 align (0.2,1.0)
+
+    show cae scared1 at right with easeinright
 
     voice "C-9-1.mp3" #Caelum (Daniel Acosta)
     cae "OH MY GOD, ALEX."
@@ -47,15 +73,20 @@ label spirits_a2s1_alive:
     cae "I held out my crucifix, since I didn’t know what else to do, and when I turned around, it was {i}charging{/i} toward me--"
 
     voice "C-9-7.mp3" #Caelum (Daniel Acosta)
-    cae "And it was holding up something…. sharp? Almost like a spade, I think?"
+    cae "And it was holding up something… sharp? Almost like a spade, I think?"
 
     voice "C-9-8.mp3" #Caelum (Daniel Acosta)
     cae "And I didn't even think. I just hurled my crucifix at it and ran."
+
+    show alx sad1 with dissolve
 
     "Caelum is wearing a mixture of confusion and fear; he’s second-guessing everything he has just seen - but I believe him. After what I’ve experienced, I almost have to."
 
     voice "C-9-9.mp3" #Caelum (Daniel Acosta)
     cae "N - no biggie, I mean, that crucifix was just a gift from my dad anyway, so I was going to pawn it off first chance I got…"
+
+    show cae scared1:
+        ease 1 align (0.5,1.0)
 
     "I lead him to my bed, give him pillows, and an animal plush… but nothing’s working."
 
@@ -72,25 +103,46 @@ label spirits_a2s1_alive:
 
     "Silence hangs between us for several long moments; we sort of bask in each other’s presence, despite the tension."
 
+    scene spirits dorm hallway with dissolve
+
+    show alx sad1 at right with dissolve
+    show cae scared1 at left with dissolve
+
     "When he finally leaves, I watch him walk down the hall. He looks back at me as if fearing it’ll be the last time we ever see one another…"
 
+    hide cae with dissolve
+
     "But somehow, I don’t think so."
-    
+
+    stop music
+
     jump spirits_a2s2
 
 
 label spirits_a2s1_dead:
     #continuing from Act 1 Scene 7, fade into Genevieve’s theme
 
+    scene spirits alex bedroom night clean with dissolve
+
+    show alx sad1 close with dissolve
+
     "..."
+
+    show alx sad1 with dissolve
 
     "And in the end, I’m wide awake at three in the morning."
 
     "Shit."
 
-    "How did Caelum even get in here, anywhere?"
+    show alx surprised1 with dissolve
+
+    "How did Caelum even get in here, anyway?"
+
+    show alx neutral1 close with dissolve
 
     "Actually, I probably just left my door unlocked. Naniji always used to call me out on it…"
+
+    show alx sad1 close with dissolve
 
     "...And Mom, and Dad too."
 
@@ -99,6 +151,8 @@ label spirits_a2s1_dead:
 
     voice "C-9-14.mp3" #Papa (N/A)
     Dad "{i}Ooooooooh!{/i}"
+
+    show alx sad1 close with dissolve
 
     "...Fuck."
 
@@ -148,19 +202,39 @@ label spirits_a2s1_dead:
 
     "If I can’t, I’ll just… relax until morning."
 
+    scene black with dissolve
+
     "I can figure out what to do then."
 
+    $renpy.pause(1.0, hard = True)
+
     #fade to black, hang here for a while
+
+    show red:
+        alpha 0.8
+
+    play sound "game_letgo/sfx/crush.ogg"
 
     #cut to bloody visual effect or tint the screen dark red with some screen shake, give a gruesome sound-effect like a shovel bashing into a head.
 
     #hang here for a bit more
 
+    $renpy.pause(1.0, hard = True)
+
     "What the hell?"
+
+    stop ambience
+
+    play music bgmspirits_wra
 
     #wraith’s theme
 
     "There’s a sound..."
+
+    play sound "game_letgo/sfx/crush.ogg"
+
+    show red
+    with hpunch
 
     #repeat screen shake and sound effect
 
@@ -170,13 +244,15 @@ label spirits_a2s1_dead:
 
     "Where it is coming from?"
 
-    #repeat repeatedly
+    play sound "game_letgo/sfx/crush.ogg"
 
     "It’s painful."
 
     "It hurts!"
 
     "What is this!?"
+
+    play sound "game_letgo/sfx/crush.ogg"
 
     #repeat repeatedly more
 
@@ -193,6 +269,8 @@ label spirits_a2s1_dead:
     "So painful..."
 
     "And it’s hateful, whatever it is."
+
+    play sound "game_letgo/sfx/crush.ogg"
 
     #repeat repeatedly
 
@@ -216,28 +294,46 @@ label spirits_a2s1_dead:
 
     "How much {i}hate{/i} can one sound hold?"
 
+    play sound "game_letgo/sfx/crush.ogg"
+
+    $renpy.pause(2.0, hard = True)
+
+    play sound "game_letgo/sfx/crush.ogg"
+
+    $renpy.pause(2.0, hard = True)
+
+    play sound "game_letgo/sfx/crush.ogg"
+
     #repeat repeatedly, before shifting back to Alex’s room BG
+
+    play music bgmspirits_main
+
+    show spirits alex bedroom clean with dissolve
+
+    show alx sad1 close with dissolve
 
     "Morning."
 
-    #repeat again
+    play sound "game_letgo/sfx/crush.ogg" fadeout 1.0 fadein 1.0
 
     "The noise has slowed down…"
 
-    #repeat
+    play sound "game_letgo/sfx/crush.ogg" fadeout 1.0 fadein 1.0
 
     "But it refuses to stop."
 
-    #repeat
+    play sound "game_letgo/sfx/crush.ogg" fadeout 1.0 fadein 1.0
 
     "Why won’t it?"
 
-    #repeat
+    play sound "game_letgo/sfx/crush.ogg" fadeout 1.0 fadein 1.0
 
     "I get up and try to ignore it."
 
-    #repeat
+    play sound "game_letgo/sfx/crush.ogg" fadeout 1.0 fadein 1.0
 
     "It’s time to go to school."
-    
+
+    stop music
+
     jump spirits_a2s2

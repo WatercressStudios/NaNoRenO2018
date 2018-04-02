@@ -62,7 +62,7 @@
         xpos 0.8
     with ease
 
-    hide maya
+    #hide may    
     show may worried1:
         xanchor 0.5
         yalign 1.0
@@ -443,8 +443,10 @@ label letgo_302escalator:
 
     show may aww1 at flip with dissolve
 
-    voice "C-302-61.mp3" #Maya (shiena)
-    may "I mean-- Escalators... promote obesity! We should find some stairs and get some cardio!"
+    voice "C-302-61a.mp3" #Maya (shiena)
+    may "I mean--"
+    voice "C-302-61b.mp3" #Maya (shiena)
+    may "Escalators... promote obesity! We should find some stairs and get some cardio!"
 
     voice "C-302-62.mp3" #Elijah (Michael Potok)
     eli "Haha, what?"
@@ -483,7 +485,7 @@ label letgo_302escalator:
     eli "Hey. Mind if I ask you something?"
 
     voice "C-302-68.mp3" #Maya (shiena)
-    may "Huh?"
+    may "Hmm?"
 
     voice "C-302-69.mp3" #Elijah (Michael Potok)
     eli "Is something bothering you?"
@@ -845,10 +847,7 @@ label letgo_302manhole:
     show may aww1 with dissolve
 
     voice "C-302-107.mp3" #Maya (shiena)
-    may "Heh..."
-
-    voice "C-302-108.mp3" #Maya (shiena)
-    may "You still remember that?"
+    may "Heh... You still remember that?"
 
     show eli cool2 with dissolve
 
@@ -939,8 +938,8 @@ label letgo_302manhole:
 
     "She squeezes my hand."
 
-    voice "C-302-128.mp3" #Maya (shiena)
-    may "Okay?"
+#     voice "C-302-128.mp3" #Maya (shiena)
+#     may "Okay?"
 
     "Huh?"
 
@@ -974,10 +973,7 @@ label letgo_302manhole:
     may "Nothing’s wrong."
 
     voice "C-302-133.mp3" #Maya (shiena)
-    may "I’m fine."
-
-    voice "C-302-134.mp3" #Maya (shiena)
-    may "Okay?"
+    may "I’m fine. Okay?"
 
     stop music fadeout 4.0
 

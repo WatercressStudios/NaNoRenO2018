@@ -3,6 +3,9 @@ label spirits_a1s4:
 
     "Unfortunately, though, the guilt only intensifies. I shouldn’t have lied to them - but it’s not like I can tell anyone the truth, either."
 
+    scene spirits alex bedroom clean with dissolve
+    show alx scared1 at centerright with dissolve
+
     #scene alex’s bedroom
 
     #show alex worried/sad/scared
@@ -13,14 +16,15 @@ label spirits_a1s4:
 
     "You know how to deal with this, Alex! Just {i}relax…{/i}"
 
-    #stop music fadeout 2.0
+    stop music fadeout 2.0
 
-    #hide alex 
+    hide alx with dissolve
 
     "I unstrap my prosthetic arm and slide it off, settle down into my newly-made bed, and close my eyes."
 
     "It shouldn’t take {i}too{/i} long to go to sleep, right?"
 
+    scene spirits alex bedroom night messy with Dissolve(2.0)
     #scene alex’s bedroom v3 
 
     "It’s when I’ve woken up that I realized I actually managed to."
@@ -35,6 +39,9 @@ label spirits_a1s4:
 
     "…" 
 
+    play music bgmspirits_gen fadeout 0.5
+    show alx scared1 at centerleft with dissolve
+
     #play music genevieve’s theme
 
     #show alex pjs upset
@@ -45,11 +52,15 @@ label spirits_a1s4:
 
     "I just want a new start; I want to go to school - to be {i}normal!{/i}"
 
+    show alx scared1 close with dissolve
+
     "Why does this have to happen to me, of all people?"
 
     "The hand holding mine begins to tug. The sensation is uncomfortable - almost painful - but certainly isn’t the worst I’ve experienced."
 
     "What do I do? Try to ignore it and go to sleep? It’s-- God, is it really three in the morning? I have class tomorrow!" 
+
+    show alx scared1 with dissolve
 
     "Wait a second…"
 
@@ -57,9 +68,14 @@ label spirits_a1s4:
 
     "All my stuff… it’s everywhere. I have to clean this up, don’t I?"
 
+    show alx angry1 with dissolve
+
     "Ugh, I’ll do it in the morning. I’m not giving whoever - {i}what{/i}ever - did this the satisfaction."
 
     "You can deal with this, Alex. You’ve been doing it for years, after all."
+
+    show alx angry1 close with dissolve
+    scene black with dissolve
 
     "I lie back down and close my eyes. If I can ignore it, it’ll just go away…"
 
@@ -71,6 +87,7 @@ label spirits_a1s4:
 
     "God, it hurts!" 
 
+    $ Genevieve = "Ghost"
     voice "C-5-1.mp3" #Genevieve (Lasli Tran)
     gen "Please." 
 
@@ -95,6 +112,9 @@ label spirits_a1s4:
 
     "Ugh, why can’t I live somewhere without spirits?" 
 
+    scene spirits alex bedroom night messy with dissolve
+    show alx angry1 at centerleft with dissolve
+
     #show alex pjs upset snarky/tense
 
     voice "C-5-5.mp3" #Alex (Bonnie Mitchel)
@@ -110,6 +130,7 @@ label spirits_a1s4:
 
     "It’s {i}never{/i} any use."
 
+    show alx bitter1 with dissolve
     #show alex pjs neutral
 
     $ questionCounter = 0 
@@ -158,6 +179,8 @@ label SpiritsHowded:
     voice "C-5-6.mp3" #Alex (Bonnie Mitchel)
     alx "How did you die?" 
 
+    play sound "game_spirits/sfx/Genevieve Scream.ogg"
+    show alx scared1 close with hpunch
     #play sound gen scream 
 
     #show alex pjs scared
@@ -168,6 +191,7 @@ label SpiritsHowded:
 
     "I guess she doesn’t like that? I suppose it {i}is{/i} pretty rude of me."
 
+    show alx neutral1 with dissolve
     #show alex pjs neutral
 
     if questionCounter < 2:
@@ -179,6 +203,8 @@ label SpiritsUrname:
 
     voice "C-5-7.mp3" #Alex (Bonnie Mitchel)
     alx "What is your name?" 
+
+    $ Genevieve = "Genevieve"
 
     voice "C-5-8.mp3" #Genevieve (Lasli Tran)
     gen "Genevieve. Genevieve {i}Bourlon{/i}."
@@ -201,6 +227,8 @@ label SpiritsGTFO:
 
     "I’ve never understood why they don’t take the Buddhist route and let go."
 
+    play sound "game_spirits/sfx/Genevieve Scream.ogg"
+    show alx scared1 close with hpunch
     #play sound gen scream
 
     #show alex pjs scared
@@ -209,6 +237,7 @@ label SpiritsGTFO:
 
     "No wonder I have nightmares and PTSD. Why do I alone bear this curse?"
 
+    show alx neutral1 with dissolve
     #show alex pjs neutral
 
     if questionCounter < 2:
@@ -268,6 +297,7 @@ label NoMoreQuestions:
     voice "C-5-17.mp3" #Genevieve (Lasli Tran)
     gen "I was killed, here, in my room."
 
+    show alx scared1 with dissolve
     "Someone was murdered in the dormitory? This is supposed to be a {i}school{/i}, isn’t it?"
 
     voice "C-5-18.mp3" #Genevieve (Lasli Tran)
@@ -280,8 +310,10 @@ label NoMoreQuestions:
 
     "Do I take the slow poison, or the quick one?"
 
+    stop music fadeout 5.0
     "Suddenly, a deep cold washes over me. Terror surges in my chest - but in an instant, the spirit’s presence is gone."
 
+    show alx sad1 with dissolve
     #show alex pjs confused
 
     "As she leaves, so does the strange sensation." 
@@ -296,6 +328,7 @@ label NoMoreQuestions:
 
     "If I can."
 
+    scene black with dissolve
     #scene black
     
     jump spirits_a1s5

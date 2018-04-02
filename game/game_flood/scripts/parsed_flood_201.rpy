@@ -1,5 +1,6 @@
 label flood_201:
     scene flood street with dissolve
+    play ambience "game_flood/ambience/traffic.ogg" fadein 2.0
     "Having decided on where to go from here, I find myself in a busy part of town." 
 
     "Holding myself, I struggle to bear the storm of sounds and sights bombarding me. The night lights, the cars, the people, it all makes too much noise."
@@ -26,6 +27,7 @@ label flood_201:
 
     "With a contented sigh, I continue down the path, towards my little friend."
 
+    stop ambience fadeout 2.0
     scene flood park with dissolve
     "We happen upon a small park situated in the dead center of the neighborhood."
     "It's nice. Large enough for a good amount of children, but small enough not to impose itself upon the landscape."
@@ -36,8 +38,10 @@ label flood_201:
 
     show hop hurt downtrodden with dissolve:
         align (0.65, 1.0)
+    stop music fadeout 1.0
     "Before I get a chance to do something so cliché, however, I spot her."
 
+    play music "game_flood/music/hope.mp3" fadein 1.0
     "A little girl. She can't be any older than ten."
 
     "What's even more odd's that she's alone, and attempting to assemble a tent."
@@ -67,23 +71,24 @@ label flood_201:
     "...And she hides behind the part of the tent in her hands."
 
     show oph surprised
-    voice "C-201-20.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-20.ogg" #Ophelia (Cospcaptor)
     oph "Hey, are you okay? Are you lost?"
 
     show hop hurt embarrassed closed with easeinright:
         align (1.0, 1.0)
-    voice "C-201-21.mp3" #Hope (Dani Chambers)
-    grl "I-I'm fine!"
+    voice "game_flood/voice/C-201-21.ogg" #Hope (Dani Chambers)
+    $ hop_name = "Little Girl"
+    hop "I-I'm fine!"
 
     show oph neutral
     "She's not fine."
 
-    voice "C-201-22.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-22.ogg" #Ophelia (Cospcaptor)
     oph "What are you doing here? You're not homeless, are you?"
 
     show hop angry
-    voice "C-201-23.mp3" #Hope (Dani Chambers)
-    grl "Says you? My parents told me not to talk to hobos like you! Get your own spot!"
+    voice "game_flood/voice/C-201-23.ogg" #Hope (Dani Chambers)
+    hop "Says you? My parents told me not to talk to hobos like you! Get your own spot!"
 
     show hop angry clenched
     show oph tiredsmile
@@ -91,12 +96,12 @@ label flood_201:
 
     "Laughing nervously, rubbing the back of my head, I try a different approach."
 
-    voice "C-201-24.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-24.ogg" #Ophelia (Cospcaptor)
     oph "I'm not homeless. If I were, I'd have a big grey beard and some dirty clothes. I'm just wandering, I couldn't sleep."
     
     show hop angry
     show oph weirdedout
-    voice "C-201-25.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-25.ogg" #Ophelia (Cospcaptor)
     oph "Anyways, you're the one camping in a park. If you don't want help, you could at least tell me what you're doing out here so late. Oh, and I'm Ophelia."
 
     show hop hurt downtrodden
@@ -105,7 +110,8 @@ label flood_201:
     show hop neutral with easeinright:
         align (0.8, 1.0)
     show oph smile
-    voice "C-201-26.mp3" #Hope (Dani Chambers)
+    $ hop_name = "Hope"
+    voice "game_flood/voice/C-201-26.ogg" #Hope (Dani Chambers)
     hop "I'm Hope, and I've been doing what you're doing. Just… walking. I don't know where to go, so I came to the park my family comes to."
 
     show hop hurt downtrodden
@@ -117,11 +123,11 @@ label flood_201:
     "Good, she does have a family. She's probably just 'running away', as some young children do. As long as I'm here, she'll be fine. I think."
 
     show oph neutral
-    voice "C-201-27.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-27.ogg" #Ophelia (Cospcaptor)
     oph "Well, I have nothing else to do, so if you don't mind…"
 
     show hop angry
-    voice "C-201-28.mp3" #Hope (Dani Chambers)
+    voice "game_flood/voice/C-201-28.ogg" #Hope (Dani Chambers)
     hop "Yeahhh, you can stay, I guess. I don't need your help, though!"
 
     show oph irritated
@@ -129,7 +135,7 @@ label flood_201:
 
     "Regardless, I continue to help her out."
 
-    voice "C-201-29.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-29.ogg" #Ophelia (Cospcaptor)
     oph "Well, other than this park, is there somewhere you'd want to go? I can walk you there. I'd feel better if you weren't out here alone."
     
     show hop neutral
@@ -138,15 +144,15 @@ label flood_201:
     "Her parents must be terrified. I'm turning eighteen - she's not even ten. God knows what her parents are thinking right now."
 
     show oph tiredsmile
-    voice "C-201-30.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-30.ogg" #Ophelia (Cospcaptor)
     oph "Would you want me to take you to the police station? They'd be able to watch over you infinitely better than I ever could."
 
     show hop angry clenched
-    voice "C-201-31.mp3" #Hope (Dani Chambers)
+    voice "game_flood/voice/C-201-31.ogg" #Hope (Dani Chambers)
     hop "No! I don't need any adults! You're not taking me anywhere like that!"
 
     show oph irritated
-    voice "C-201-32.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-201-32.ogg" #Ophelia (Cospcaptor)
     oph "Okay, okay, I get it. Don't worry, I won't force you to do anything. It's not my place to do that."
 
     show hop angry
@@ -186,12 +192,13 @@ label flood_201:
 
     show hop happy with easeinright:
         align (0.65, 1.0)
-    voice "C-201-33.mp3" #Hope (Dani Chambers)
-    hop "Kitty!"
+    voice "game_flood/voice/C-201-33.ogg" #Hope (Dani Chambers)
+    hop "Ooh! Kitty!"
 
     show oph weirdedout
     "Hope crawls over me, picking up the cat."
 
+    play sound "game_flood/sfx/cat.ogg"
     "It hisses in protest, but Hope has an iron fist on the poor thing. She cuddles it, laying back on the ground, cat on her chest."
     show oph neutral with easeinright:
         align (0.35, 1.0)

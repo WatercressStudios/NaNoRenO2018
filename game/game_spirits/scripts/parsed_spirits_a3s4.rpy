@@ -1,5 +1,14 @@
+# SURRENDER/HOSPITALISATION ENDING
+
 label spirits_a3s4:
     #scene alex’s bedroom v1
+    #scene spirits alex bedroom clean with dissolve
+
+    scene spirits alex bedroom night clean
+
+    show alx happy1 at centerleft with dissolve
+
+    show cae happy1 at right with dissolve
 
     voice "C-19-1.mp3" #Alex (Bonnie Mitchel)
     alx "I’ll see you later!"
@@ -15,11 +24,27 @@ label spirits_a3s4:
 
     "After giving a small nod, Caelum moves to leave."
 
+    hide cae with easeoutright
+
     #scene black
+    scene black with dissolve
 
     "I’m alone again."
 
+    play music bgmspirits_end45
+
     #scene alex’s bedroom v1
+    scene spirits alex bedroom night clean
+
+    show alx sad1 at centerright
+
+    with dissolve
+
+    scene spirits alex bedroom clean
+
+    show alx sad1 at centerright
+
+    with dissolve
 
     "I flick the lights on and immediately wither under their radiance."
 
@@ -35,11 +60,16 @@ label spirits_a3s4:
 
     "Is this what it feels like when your soul leaves you?"
 
+    show alx:
+        ease 0.6 align (0.0, 1.0) alpha 0
+
     "I collapse against the mattress and lay there for several long seconds, smothered by a pillow."
 
     "Realistically, I want to sleep - but if these past few days have taught me anything, it’s only going to make waking up even more difficult than usual."
 
     "That is if I don’t dream about recent events…"
+
+    play sound "game_spirits/sfx/Alex Sighs.ogg"
 
     "With a sigh, I force myself to roll over onto my back."
 
@@ -65,6 +95,8 @@ label spirits_a3s4:
 
     "Or rather, I try to - but my body is held to the bed by gravity."
 
+    show alx at centerleft with dissolve
+
     "Keeping with today’s \"theme\" of contrast, I feel floaty when I finally manage to sit up."
 
     "There must be something I can do, right?"
@@ -78,6 +110,8 @@ label spirits_a3s4:
     "It would be so easy to do…"
 
     "As easy as pointing and pulling a trigger."
+
+    show alx at centerright with ease
 
     "On autopilot, I reach over towards a sheet of paper and a pen."
 
@@ -102,8 +136,10 @@ label spirits_a3s4:
     "Sighing, I cross out the lines and start again."
 
     #scene black
-     
+    scene black with dissolve
+
     #scene alex’s bedroom v1
+    scene spirits alex bedroom clean with dissolve
 
     "By the time I’m finished, the paper is a nearly-illegible mess."
 
@@ -132,12 +168,12 @@ label spirits_a3s4:
     "Should I really be doing this?"
 
     "{i}I have to.{/i}"
-    
+
     if hasAmmo == False:
         "Last night, I discovered that old pine box hadn't been so empty, after all."
-        
+
         "Like serendipity, I found a single, lone bullet tucked away under the loose velvet lining of the interior compartment."
-        
+
         "Who else would that be meant for, if not me?"
 
     else:
@@ -148,6 +184,7 @@ label spirits_a3s4:
     "I close my eyes and wait."
 
     #scene black
+    scene black with dissolve
 
     "How long will it take me to find the nerve?"
 
@@ -156,6 +193,7 @@ label spirits_a3s4:
     "It grows louder, until at last, it consumes me; the world fades away."
 
     #scene alex’s bedroom v1
+    scene spirits alex bedroom clean with dissolve
 
     "And then suddenly, it’s all back."
 
@@ -166,6 +204,7 @@ label spirits_a3s4:
     "{i}Nothing.{/i}"
 
     #pause 10.0
+    pause(10.0)
 
     "No. Not like this."
 
@@ -184,10 +223,12 @@ label spirits_a3s4:
     "Before it can register, I’ve tossed the gun onto the bed and started walking away."
 
     #scene black
+    scene black with dissolve
 
     "Why am I here…?"
 
     #scene hospital
+    scene spirits emergency room with dissolve
 
     "The medicinal smell and pristine walls envelop my senses."
 
@@ -214,7 +255,13 @@ label spirits_a3s4:
     nurse "How can I help you today?"
 
     #scene black
+    scene black with dissolve
 
     "Before I know it, my mouth starts moving on its own."
 
-    jump spirits_a3s5
+    stop ambience fadeout 3.0
+    stop music fadeout 3.0
+    scene black with Dissolve(3.0)
+    $ renpy.movie_cutscene("videos/Spirits Credits No Music.mp4")
+    "SURRENDER ENDING"
+    jump spiritsMetaNarrative

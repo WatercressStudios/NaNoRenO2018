@@ -11,8 +11,6 @@ init offset = -2
 init python:
     gui.init(1920, 1080)
 
-
-
 ################################################################################
 ## GUI Configuration Variables
 ################################################################################
@@ -23,7 +21,8 @@ init python:
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#EB3D00'
+define gui.accent_color = '#e7d4cc'
+define gui.alt_accent_color = '#53302c'
 
 ## The color used for a text button when it is neither selected nor hovered.
 define gui.idle_color = '#333333'
@@ -33,7 +32,7 @@ define gui.idle_color = '#333333'
 define gui.idle_small_color = '#ffffff'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = gui.accent_color
+define gui.hover_color = '#EB3D00'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -149,8 +148,8 @@ define gui.dialogue_text_xalign = 0.0
 define gui.button_width = None
 define gui.button_height = None
 define gui.navigation_button_width = 350
-define gui.radio_button_width = 320
-define gui.check_button_width = 320
+define gui.radio_button_width = 300
+define gui.check_button_width = 300
 
 ## The borders on each side of the button, in left, top, right, bottom order.
 define gui.button_borders = Borders(20, 20, 20, 20)
@@ -182,9 +181,11 @@ define gui.button_text_xalign = 0.5
 ##
 ## These customizations are used by the default interface:
 
-define gui.radio_button_borders = Borders(27, 6, 6, 6)
+define gui.radio_button_borders = Borders(20, 20, 20, 20)
+define gui.radio_button_text_size = 32
 
-define gui.check_button_borders = Borders(27, 6, 6, 6)
+define gui.check_button_borders = Borders(20, 20, 20, 20)
+define gui.check_button_text_size = 32
 
 define gui.confirm_button_text_xalign = 0.5
 
@@ -195,6 +196,9 @@ define gui.quick_button_borders = Borders(15, 6, 15, 0)
 define gui.quick_button_text_size = 21
 define gui.quick_button_text_idle_color = gui.idle_small_color
 define gui.quick_button_text_selected_color = gui.accent_color
+define gui.prologue_quick_button_text_size = 21
+define gui.prologue_quick_button_text_idle_color = "#333"
+define gui.prologue_quick_button_text_selected_color = "#000"
 
 ## You can also add your own customizations, by adding properly-named variables.
 ## For example, you can uncomment the following line to set the width of a
@@ -363,7 +367,7 @@ define gui.history_text_xalign = 0.0
 ## The NVL-mode screen displays the dialogue spoken by NVL-mode characters.
 
 ## The borders of the background of the NVL-mode background window.
-define gui.nvl_borders = Borders(0, 15, 0, 30)
+define gui.nvl_borders = Borders(0, 100, 0, 100)
 
 ## The maximum number of NVL-mode entries Ren'Py will display. When more entries
 ## than this are to be show, the oldest entry will be removed.
@@ -371,7 +375,7 @@ define gui.nvl_list_length = 6
 
 ## The height of an NVL-mode entry. Set this to None to have the entries
 ## dynamically adjust height.
-define gui.nvl_height = 173
+define gui.nvl_height = None
 
 ## The spacing between NVL-mode entries when gui.nvl_height is None, and between
 ## NVL-mode entries and an NVL-mode menu.
@@ -385,10 +389,10 @@ define gui.nvl_name_width = 225
 define gui.nvl_name_xalign = 1.0
 
 ## The position, width, and alignment of the dialogue text.
-define gui.nvl_text_xpos = 675
+define gui.nvl_text_xpos = 960
 define gui.nvl_text_ypos = 12
 define gui.nvl_text_width = 885
-define gui.nvl_text_xalign = 0.0
+define gui.nvl_text_xalign = 0.5
 
 ## The position, width, and alignment of nvl_thought text (the text said by the
 ## nvl_narrator character.)

@@ -1,8 +1,10 @@
 label letgo_101:
     #black screen
     #note: May is pronounced like 'my'
-
-    play ambience "game_letgo/ambience/Town Center Plaza.ogg" fadeout 2.0 fadein 2.0
+    scene black
+    stop music fadeout 5.0
+    play ambience "game_letgo/ambience/Town Center Plaza.ogg" fadeout 2.0 fadein 5.0
+    pause 5.0
 
     voice "C-101-1.mp3" #Elijah (Michael Potok)
     eli "Okay, Eli, relax. This isn't something you haven't done before."
@@ -238,6 +240,7 @@ label letgo_101:
 
     #Laughing Voice lines from both May and Eli
 
+    voice "C-101-both-laugh.mp3"
     "Maya starts to giggle, then explodes in laughter; I'm quick to follow."
 
     show may happy2 close with dissolve

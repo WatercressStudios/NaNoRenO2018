@@ -1,5 +1,12 @@
+# SERVITUDE ENDING
+
 label spirits_a3s5:
     #scene black
+    #scene black with dissolve
+
+    "..."
+
+    play ambience "game_letgo/ambience/Downtown Day.ogg" fadeout 0.1 fadein 0.1
 
     "The freezing water runs through my hair and over my body, drenching me, cooling my core as it has the last hundred times."
 
@@ -15,7 +22,10 @@ label spirits_a3s5:
 
     "With my coat, gloves, and scarf on, I'm prepared for the hike it'll take to get to the right location."
 
+    play music bgmspirits_end45
+
     #show road bg
+    scene spirits city street with dissolve
 
     "It's a ways away, but not far enough to warrant driving. Gas, too, is expensive."
 
@@ -73,4 +83,9 @@ label spirits_a3s5:
 
     "And so, with a grimace, I begin."
 
-    return
+    stop ambience fadeout 3.0
+    stop music fadeout 3.0
+    scene black with Dissolve(3.0)
+    $ renpy.movie_cutscene("videos/Spirits Credits No Music.mp4")
+    "SERVITUDE ENDING"
+    jump spiritsMetaNarrative

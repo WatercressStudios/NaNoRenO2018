@@ -175,9 +175,9 @@
     voice "C-501a3-26.mp3" #Elijah (Michael Potok)
     eli "Oh my god, this is {i}freaking amazing!{/i}"
 
-    "I can't help shouting with joy. The adrenaline is intoxicating - I can feel my heart is pounding!"
+    "I can't help shouting with joy. The adrenaline is intoxicating - I can feel my heart pounding!"
 
-    "Of all the things I thought I'll do, I never once thought I'd fly a kite!"
+    "Of all the things I thought I'll do, I never once thought I'll fly a kite!"
 
     "Maya runs over and nearly knocks me over with her hug."
     play sound "game_letgo/sfx/Punch,Shove.ogg"

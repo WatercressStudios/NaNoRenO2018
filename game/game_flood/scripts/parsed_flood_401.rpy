@@ -1,6 +1,7 @@
 label flood_401:
     scene flood bridge with dissolve
 
+    play music "game_flood/music/riverside.mp3" fadein 1.0
     "Pacing myself, I make my way near the riverside. It's been an age since I last strolled through, but it's quiet here and right now I need time to think."
 
     "Together with the soft patter of raindrops, the river drowns out the noise pollution of the city."
@@ -33,7 +34,7 @@ label flood_401:
 
     "Damn it all."
 
-    #sfx footsteps
+    play ambience "game_flood/ambience/footsteps.ogg"
 
     show oph surprised
     "...footsteps?"
@@ -70,34 +71,35 @@ label flood_401:
     show oph irritated close
     "Silly Ophelia and your ridiculous daydreams."
 
+    stop ambience fadeout 1.0
     show oli serious with dissolve:
         align (0.65, 1.0)
     #tone - worried
-    voice "C-401-1.mp3" #Oliver (Matt Armstrong)
-    old "Excuse me, miss?"
+    voice "game_flood/voice/C-401-1.ogg" #Oliver (Matt Armstrong)
+    oli "Excuse me, miss?"
 
     show oph surprised
     "I whip back around to face the voice"
 
     #sprite Oliver 1 (serious)
 
-    voice "C-401-2.mp3" #Oliver (Matt Armstrong)
-    old "Is everything all right? You look rather troubled."
+    voice "game_flood/voice/C-401-2.ogg" #Oliver (Matt Armstrong)
+    oli "Is everything all right? You look rather troubled."
 
     show oph scared
-    voice "C-401-3.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-401-3.ogg" #Ophelia (Cospcaptor)
     oph "W-Who wouldn't be?! A strange man approaching a woman in the middle of the night?!"
 
     show oph irritated
-    voice "C-401-4.mp3" #Ophelia (Cospcaptor)
+    voice "game_flood/voice/C-401-4.ogg" #Ophelia (Cospcaptor)
     oph "What's more, don't you think it's a little creepy how slow you were going? Anybody would get nervous being watched like that!"
 
     show oli cheerful grin    #sprite Oliver 2 (big smile)
-    voice "C-401-5.mp3" #Oliver (Matt Armstrong)
-    old "Oh, in that case I'm probably not helping."
+    voice "game_flood/voice/C-401-5.ogg" #Oliver (Matt Armstrong)
+    oli "Oh, in that case I'm probably not helping."
 
-    voice "C-401-6.mp3" #Oliver (Matt Armstrong)
-    old "I'm sorry to have bothered you, young lady."
+    voice "game_flood/voice/C-401-6.ogg" #Oliver (Matt Armstrong)
+    oli "I'm sorry to have bothered you, young lady."
     #remove sprite
 
     hide oli with dissolve
@@ -113,7 +115,8 @@ label flood_401:
 
     "People, feral dogs, falling pianos. Even lightning isn't that far fetched in this crappy weather."
 
-    "At any moment, anything could come around and wipe your existence off the face of the planet. The people I see wandering about all share the same quality that I don't seem to have the slightest clue how to understand..."
+    "At any moment, anything could come around and wipe your existence off the face of the planet."
+    "The people I see wandering about all share the same quality that I don't seem to have the slightest clue how to understand..."
 
     "Peace."
 
@@ -147,10 +150,13 @@ label flood_401:
 
     "...Right, let's get this show on the road."
 
+    stop music fadeout 1.0
     "..."
 
+    play sound "game_flood/sfx/chainlink.ogg"
     "Squeezing through the fence is a piece of cake. Next - the door."
 
     "...Oh, it's not locked. Well, don't mind if I do~"
 
+    play sound "game_flood/sfx/operadoor.ogg"
     jump flood_402

@@ -24,8 +24,12 @@ label spirits_a1s7:
     voice "C-8-3.mp3" #Mama (N/A)
     ama "...Oh my god."
 
+    show spirits skeleton1 as skelly at center with dissolve
+
     voice "C-8-4.mp3" #Genevieve (Lasli Tran)
-    gen "{size=-15}Let me out.{/size}"
+    gho "{size=-15}Let me out.{/size}"
+
+    hide skelly with dissolve
 
     voice "C-8-5.mp3" #Mama (N/A)
     ama "That was… Oh my god!"
@@ -41,8 +45,12 @@ label spirits_a1s7:
     voice "C-8-7.mp3" #Mama (N/A)
     ama "Bitiyaa, are you doing okay back there?"
 
+    show spirits skeleton2 as skello at center with dissolve
+
     voice "C-8-8.mp3" #Genevieve (Lasli Tran)
-    gen "{size=-10}Let. Me. Out.{/size}"
+    gho "{size=-10}Let. Me. Out.{/size}"
+
+    hide skello with dissolve
 
     voice "C-8-9.mp3" #Mama (N/A)
     ama "Whew… Let’s just pull over and wait for the storm to--"
@@ -69,18 +77,34 @@ label spirits_a1s7:
     #play sound [pounding angrily on a door]
     play sound "game_spirits/sfx/Banging on Door 2.ogg"
 
+    scene black
+
+    show spirits skeleton3 as skell at center with dissolve
+
+    pause 0.2
+
+    scene white
+
     voice "C-8-11.mp3" #Genevieve (Lasli Tran)
-    gen "Let me {i}{b}out!{/b}{/i}"
+    gho "Let me {i}{b}out!{/b}{/i}"
+
+    scene black
+
+    show spirits skeleton4 as skel at center
+
+    hide skel with easeoutbottom
 
     play sound "game_spirits/sfx/Creepy Clawing.ogg"
 
     pause 5.0
 
+    scene white with dissolve
+
     voice "C-8-12.mp3" #Genevieve (Lasli Tran)
-    gen "Let me out! Let me out! Let me out!"
+    gho "Let me out! Let me out! Let me out!"
 
     #play sound [Hammer of a gun being pulled back, then firing, and a body thumping to the ground]
-    play sound "Click Bang Thump.ogg"
+    play sound "game_spirits/sfx/Click Bang Thump.ogg"
 
     #stop music
 
@@ -89,13 +113,13 @@ label spirits_a1s7:
     play ambience "game_spirits/ambience/EKG Batshit.ogg" noloop
 
     voice "C-8-13.mp3" #Genevieve (Lasli Tran)
-    gen "Let me out! Let me out! Let me out--"
+    gho "Let me out! Let me out! Let me out--"
     #stop music
 
     pause 2.0
 
     voice "C-8-14.mp3" #Genevieve (Lasli Tran)
-    gen "...LETMEOUTLETMEOUTLETMEOUTLETMEOUTLETMEOUT!!!"
+    gho "...LETMEOUTLETMEOUTLETMEOUTLETMEOUTLETMEOUT!!!"
 
     pause 1.5
 
@@ -103,10 +127,18 @@ label spirits_a1s7:
 
     pause 3.0
 
+    scene black
+
+    show spirits skeleton5 as jeff at center
+
     voice "C-8-15.mp3" #Genevieve (Lasli Tran)
-    gen "LET ME OUT!"
+    gho "LET ME OUT!"
+
+    scene black with dissolve
 
     play sound "game_spirits/sfx/Wraith Laughs.ogg"
+
+    pause 3.0
 
     voice "C-8-16.mp3" #Alex (Bonnie Mitchel)
     alx "LET ME OUT LET ME OUT LET ME OUT!"
@@ -123,7 +155,12 @@ label spirits_a1s7:
     voice "C-8-20.mp3" #Alex (Bonnie Mitchel)
     alx "LET--"
 
-    show spirits test pattern with Dissolve (3.0)
+    stop ambience fadeout 3.0
+
+    #show spirits test pattern with Dissolve (3.0)
+    scene spirits awoken with Dissolve(3.0)
+
+    play ambience "game_letgo/ambience/Park Night.ogg" fadein 0.1 fadeout 0.1
 
     voice "C-8-21.mp3" #Alex (Bonnie Mitchel)
     alx "...Caelum?"
@@ -296,6 +333,9 @@ label BuddingRelationship:
     voice "C-8-50.mp3" #Caelum (Daniel Acosta)
     cae "Hmm?"
 
+    stop ambience fadeout 4.0
+    play music bgmspirits_main fadein 10.0
+
     voice "C-8-51.mp3" #Alex (Bonnie Mitchel)
     alx "Okay, look, I realize that this is going to sound completely nuts."
 
@@ -379,11 +419,15 @@ label BuddingRelationship:
     voice "C-8-75.mp3" #Alex (Bonnie Mitchel)
     alx "And she was murdered here. In this room. The person responsible may even still be around, and a danger to all of us."
 
+    stop music fadeout 1.0
+
     voice "C-8-76.mp3" #Alex (Bonnie Mitchel)
     alx "She begged me to help her get justice, but… I don’t even know if that’s possible anymore."
 
     voice "C-8-77.mp3" #Alex (Bonnie Mitchel)
     alx "God, really, I know how this all sounds, but I promise you…"
+
+    play music bgmspirits_cae
 
     voice "C-8-78.mp3" #Caelum (Daniel Acosta)
     cae "What can I do to help?"
@@ -408,6 +452,8 @@ label BuddingRelationship:
 
     "I can feel the tears streaming freely down my cheeks. Before I have a chance to think better of it, I’ve lunged forward to wrap him in a hug."
 
+    scene black with dissolve
+
     voice "C-8-85.mp3" #Caelum (Daniel Acosta)
     cae "Oof! Alex!"
 
@@ -425,5 +471,7 @@ label BuddingRelationship:
 
     voice "C-8-90.mp3" #Alex (Bonnie Mitchel)
     alx "...Yes. Maybe."
+
+    stop music fadeout 1.0
 
     jump spirits_a2s1

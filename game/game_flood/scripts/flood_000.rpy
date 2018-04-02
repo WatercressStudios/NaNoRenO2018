@@ -44,27 +44,31 @@
 #
 ###############################
 
-define oph = Character("Ophelia")
-define oli = Character("Oliver")
-define dai = Character("Daisy")
-define hop = Character("Hope")
-define wai = Character("Waitress")
-define grl = Character("Little Girl") #Hope
-define vce = Character("Voice") #Hope's Dad
-define dad = Character("Dad")
-define mom = Character("Mom")
-define sis = Character("Sister")
-define ogl = Character("Other Girl")
-define per = Character("Performer") #Daisy
-define dsy = Character("Daisy") #idk why there are two daisy tags
-define old = Character("Old Man") #Oliver
-define mgr = Character("Manager")
+
+define oph = Character("oph_name", callback=speaker("oph"), color="#d68385", dynamic=True)
+define oli = Character("oli_name", callback=speaker("oli"), color="#aab421", dynamic=True)
+define dai = Character("dai_name", callback=speaker("dai"), color="#55b2ad", dynamic=True)
+define hop = Character("hop_name", callback=speaker("hop"), color="#ca483d", dynamic=True)
+define wai = Character("Waitress", callback=speaker("wai"), color="#ddd")
+define grl = Character("Little Girl", callback=speaker("grl"), color="#ddd") #Hope
+define vce = Character("Voice", callback=speaker("vce"), color="#ddd") #Hope's Dad
+define dad = Character("Dad", callback=speaker("dad"), color="#ddd")
+define mom = Character("Mom", callback=speaker("mom"), color="#ddd")
+define sis = Character("Sister", callback=speaker("sis"), color="#ddd")
+define ogl = Character("Other Girl", callback=speaker("ogl"), color="#ddd")
+define per = Character("Performer", callback=speaker("per"), color="#ddd") #Daisy
+define dsy = Character("Daisy", callback=speaker("dsy"), color="#ddd") #idk why there are two daisy tags
+define old = Character("Old Man", callback=speaker("old"), color="#ddd") #Oliver
+define mgr = Character("Manager", callback=speaker("mgr"), color="#ddd")
 
 image white = "#fff"
 
 init python:
     define_images("game_flood/bgs", 2, False, ["flood"])
     define_images("game_flood/cgs", 2, False, ["flood"])
+
+init python:
+    renpy.music.set_volume(0.1, delay=0, channel='ambience')
 
 ###############################
 #
@@ -75,6 +79,13 @@ init python:
 default hope = False
 default daisy = False
 default oliver = False
+
+init:
+    $ oph_name = "Ophelia"
+    $ oli_name = "Old Man"
+    $ dai_name = "Performer"
+    $ hop_name = "Little Girl"
+
 
 ###############################
 #
@@ -364,7 +375,9 @@ image hop mouth normal2 = FlapMouth("hop", "game_flood/sprites/Hope/Pose 2/mouth
 label flood_000:
     $ persistent.last_story = "flood"
     $ current_story = "flood"
+    $ config.voice_filename_format = "{filename}"
 
+    jump flood_101
     menu:
         "Show everyone's expressions":
             jump flood_expressions

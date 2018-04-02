@@ -197,11 +197,11 @@
 #
 ###############################
 
-define eli = Character("Elijah", callback=speaker("eli"))
-define may = Character("Maya", callback=speaker("may"))
-define om = Character("Old Man")
-define ow = Character("Old Woman")
-define mom = Character("Mom")
+define eli = Character("Elijah", callback=speaker("eli"), color="#6e973c")
+define may = Character("Maya", callback=speaker("may"), color="#dbabd5")
+define om = Character("Old Man", callback=speaker("om"), color="#748fd9")
+define ow = Character("Old Woman", callback=speaker("ow"), color="#ddbe97")
+define mom = Character("Mom", callback=speaker("mom"), color="#ddd")
 
 image white = "#fff"
 
@@ -253,6 +253,7 @@ image letgo rewind:
 init python:
     define_images("game_letgo/bgs", 2, False, ["letgo"])
     define_images("game_letgo/cgs", 2, False, ["letgo"])
+    letgo_sprite_offset = -150
 
 ###############################
 #
@@ -261,7 +262,7 @@ init python:
 ###############################
 
 init python:
-    EliPose1 = BaseCSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", (578, 1080))
+    EliPose1 = BaseCSprite("eli", "game_letgo/sprites/Eli/Pose 1/base.png", (578, 1080+letgo_sprite_offset))
 
 image eli normal1 = EliPose1("eli eyes normal1", "eli mouth normal1")
 image eli normal1 close = EliPose1("game_letgo/sprites/Eli/Pose 1/eyes normal close.png", "eli mouth normal1")
@@ -293,7 +294,7 @@ image eli goofy1 close = EliPose1("game_letgo/sprites/Eli/Pose 1/eyes angry clos
 #
 ###############################
 init python:
-    EliPose2 = BaseCSprite("eli", "game_letgo/sprites/Eli/Pose 2/base.png", (615, 1080))
+    EliPose2 = BaseCSprite("eli", "game_letgo/sprites/Eli/Pose 2/base.png", (615, 1080+letgo_sprite_offset))
 
 image eli normal2 = EliPose2("eli eyes normal2", "eli mouth normal2")
 image eli normal2 close = EliPose2("game_letgo/sprites/Eli/Pose 2/eyes normal close.png", "eli mouth normal2")
@@ -321,7 +322,7 @@ image eli cool2 close = EliPose2("game_letgo/sprites/Eli/Pose 2/eyes angry close
 ###############################
 
 init python:
-    MayPose1 = BaseCSprite("may", "game_letgo/sprites/May/Pose 1/base.png", (496, 920))
+    MayPose1 = BaseCSprite("may", "game_letgo/sprites/May/Pose 1/base.png", (496, 920+letgo_sprite_offset))
 
 image may normal1 = MayPose1("may eyes normal1", "may mouth smile1")
 image may normal1 close = MayPose1("game_letgo/sprites/May/Pose 1/eyes normal close.png", "may mouth smile1")
@@ -401,7 +402,7 @@ image may suspicious1 close cry = MayPose1("game_letgo/sprites/May/Pose 1/eyes a
 ###############################
 
 init python:
-    MayPose2 = BaseCSprite("may", "game_letgo/sprites/May/Pose 2/base.png", (420, 915))
+    MayPose2 = BaseCSprite("may", "game_letgo/sprites/May/Pose 2/base.png", (420, 915+letgo_sprite_offset))
 
 image may normal2 = MayPose2("may eyes normal2", "may mouth normal2")
 image may normal2 close = MayPose2("game_letgo/sprites/May/Pose 2/eyes normal close.png", "may mouth normal2")
@@ -460,7 +461,7 @@ image may cheeky2 close cry = MayPose2("game_letgo/sprites/May/Pose 2/eyes angry
 ###############################
 
 init python:
-    MayPose3 = BaseCSprite("may", "game_letgo/sprites/May/Pose 3/base.png", (416, 906))
+    MayPose3 = BaseCSprite("may", "game_letgo/sprites/May/Pose 3/base.png", (416, 906+letgo_sprite_offset))
 
 image may normal3 = MayPose3("may eyes normalaway3", "may mouth normal3")
 image may normal3 close = MayPose3("game_letgo/sprites/May/Pose 3/eyes normal close.png", "may mouth normal3")
@@ -516,7 +517,7 @@ image may frustrated3 close cry = MayPose3("game_letgo/sprites/May/Pose 3/eyes a
 ###############################
 
 init python:
-    MayPose4 = BaseCSprite("may", "game_letgo/sprites/May/Pose 4/base.png", (507, 930))
+    MayPose4 = BaseCSprite("may", "game_letgo/sprites/May/Pose 4/base.png", (507, 930+letgo_sprite_offset))
 
 image may normal4 = MayPose4("may eyes frown4", "may mouth normal4")
 image may normal4 close = MayPose4("game_letgo/sprites/May/Pose 4/eyes frown close.png", "may mouth normal4")
@@ -692,9 +693,9 @@ image may mouth smile4 = FlapMouth("may", "game_letgo/sprites/May/Pose 4/mouth s
 label letgo_000:
     $ persistent.last_story = "letgo"
     $ current_story = "letgo"
-    
-    #jump letgo_101
+    $ config.voice_filename_format = "game_letgo/voice/{filename}"
 
+    jump letgo_101
     menu:
         "From beginning":
             jump letgo_101
